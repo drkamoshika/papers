@@ -2,8 +2,10 @@ sources:
   - arxiv
   - pubmed
 
+# Maximum number of papers included in one report.
 max_papers: 20
 
+# Pilot value. For a 3-day production schedule, 4-7 days is usually enough.
 lookback_days: 14
 
 topics:
@@ -12,5 +14,27 @@ topics:
   - medical AI
   - healthcare AI
 
+summary:
+  language: ja
+  fields:
+    - objective
+    - methods
+    - data_or_experiment
+    - key_results
+    - novelty
+    - limitations
+    - why_it_matters
+
+# Recommended production strategy. Do not scan every historical report.
+# Keep a compact list of canonical paper IDs (arXiv IDs / PMIDs) and use it
+# to skip papers that have already been reported.
+deduplication:
+  strategy: seen_id_index
+  seen_file: state/seen_papers.txt
+  canonical_ids:
+    arxiv: arxiv_id
+    pubmed: pmid
+
 notes:
   - Broad pilot configuration. Tune keywords and source balance later.
+  - One GitHub Issue should represent one execution/report, not one paper.
