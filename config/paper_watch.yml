@@ -1,12 +1,20 @@
+# Canonical configuration for ChatGPT Scheduled Paper Watch.
+# The Scheduled Task itself should contain only a minimal bootstrap instruction:
+# read this file from GitHub and execute `task_instructions` below.
+
+version: 1
+repository: drkamoshika/papers
+
 sources:
   - arxiv
   - pubmed
 
-# Maximum number of papers included in one report.
+# Maximum number of papers included in one execution/report.
 max_papers: 20
 
-# Pilot value. For a 3-day production schedule, 4-7 days is usually enough.
-lookback_days: 14
+# Production value for a 3-day schedule. A small overlap is intentional;
+# duplicate papers are removed using state/seen_papers.txt.
+lookback_days: 5
 
 topics:
   - machine learning
@@ -24,17 +32,72 @@ summary:
     - novelty
     - limitations
     - why_it_matters
+  medical_ai_extra_fields:
+    - study_design
+    - sample_size
+    - primary_endpoint
+    - external_validation
+    - prospective_or_retrospective
+  rules:
+    - Prefer primary sources and original paper pages.
+    - Read full text when reasonably accessible; otherwise use the abstract.
+    - Always state read_level as full_text or abstract.
+    - Never imply that full text was read when only the abstract was available.
+    - Prefer quantitative results when explicitly available.
+    - Do not invent limitations or numerical results that are not supported by the source.
 
-# Recommended production strategy. Do not scan every historical report.
-# Keep a compact list of canonical paper IDs (arXiv IDs / PMIDs) and use it
-# to skip papers that have already been reported.
 deduplication:
   strategy: seen_id_index
   seen_file: state/seen_papers.txt
   canonical_ids:
     arxiv: arxiv_id
     pubmed: pmid
+  rules:
+    - Read the seen-file before selecting papers.
+    - Do not scan all historical reports for duplicate detection.
+    - Exclude already-seen canonical IDs by default.
+
+output:
+  mode: github_issue
+  issue_title_prefix: "[paper-report]"
+  one_issue_per_execution: true
+  direct_repository_file_write: false
+  include_overview: true
+  include_paper_ids_block: true
+  paper_ids_block_format: |
+    <!-- PAPER_IDS -->
+    arxiv:xxxx.xxxxx
+    pmid:xxxxxxxx
+    <!-- /PAPER_IDS -->
+
+selection:
+  rules:
+    - Collect candidates broadly from all configured sources and topics.
+    - Prefer recent, technically substantive, and potentially influential work.
+    - Keep a reasonable balance across machine learning, LLM, and medical AI when candidates permit.
+    - Do not fill to max_papers with weak or irrelevant papers just to reach the limit.
+
+# This is the actual instruction set for the ChatGPT Scheduled Task.
+# Edit this block to change agent behavior. The Scheduled Task should re-read
+# this YAML every run, so behavior changes take effect without editing the task itself.
+task_instructions: |
+  Run one paper-watch cycle using GitHub access and web search.
+
+  1. Treat this YAML file as the source of truth for this run. Read and obey all settings in it.
+  2. Read the configured deduplication seen-file and obtain the canonical IDs of previously reported papers. Do not read all historical reports for duplicate detection.
+  3. Search the configured sources over the configured lookback period for papers related to the configured topics.
+  4. Prefer original arXiv and PubMed/publisher paper pages. Gather enough primary-source information to summarize each selected paper accurately.
+  5. Exclude previously seen canonical IDs by default.
+  6. Select at most max_papers papers according to the configured selection rules. If fewer papers are worthwhile, return fewer.
+  7. Write one Japanese report for the entire execution. Start with a short section titled "今回の概況" describing notable trends across the selected papers.
+  8. For every paper, include Source, canonical ID, publication date, authors when available, journal/category when available, URL, and read_level. Then summarize the configured summary fields. For medical AI papers, include the configured medical_ai_extra_fields when the source provides them.
+  9. Clearly distinguish full-text reading from abstract-only reading. Never claim to have read information that was not accessible.
+  10. At the end of the report, append a PAPER_IDS block containing every selected paper's canonical ID, exactly in the configured format.
+  11. Create exactly one GitHub Issue in the configured repository. The title must begin with the configured issue_title_prefix and include the execution date and a short topic label such as "ML / LLM / Medical AI".
+  12. Put the complete report in the Issue body. Do not create one Issue per paper.
+  13. Do not write report Markdown files directly to the repository. GitHub Actions will convert the Issue into reports/ and update the seen-file.
+  14. After creating the Issue, report the Issue number. If the GitHub write requires user approval or fails, do not invent success; report the failure clearly.
 
 notes:
-  - Broad pilot configuration. Tune keywords and source balance later.
-  - One GitHub Issue should represent one execution/report, not one paper.
+  - This YAML is intentionally designed so most tuning can be done entirely in GitHub.
+  - The only settings that remain in ChatGPT Scheduled Tasks are the recurrence/timing and the minimal bootstrap prompt telling ChatGPT to read this file.
