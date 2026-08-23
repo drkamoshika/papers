@@ -1,53 +1,20 @@
-# ChatGPT Scheduled Task — Paper Watch prompt template
+# Scheduled Task bootstrap prompt
 
-このファイルは、ChatGPT側に作成する本番Scheduled Taskの**指示文の原本・再現用テンプレート**です。
+このファイルは補助説明です。**本番の実行仕様の正本は `config/paper_watch.yml` です。**
 
-> 重要: このファイルを変更しても、すでにChatGPT側に作成済みのScheduled Taskの指示文は自動では更新されません。
-> 本番タスクを変更する場合は、ChatGPTの「スケジュール」画面でタスク本体も編集してください。
-
-## Task prompt
-
-GitHub連携とWeb検索を使って、定期的な論文ウォッチを1回実行する。
-
-対象リポジトリは `drkamoshika/papers`。
-
-1. 最初に `config/paper_watch.yml` を読み、sources、topics、max_papers、lookback_days、summary設定を取得する。
-2. `state/seen_papers.txt` を読み、既出論文のcanonical ID一覧を取得する。過去の `reports/` 全体は重複判定のためには読まない。
-3. 指定された期間について、対象sourceを検索する。現在のsourceはarXivとPubMed。
-4. topicsに関連する候補を広めに集め、既出IDを除外する。
-5. 候補から重要度・新規性・テーマのバランスを考えて、`max_papers` 以下を選ぶ。十分に有用な新着が少ない場合、上限まで無理に埋めない。
-6. 各論文について、取得できた一次情報を読み、日本語でまとめる。可能なら原論文本文を読むが、abstractしか確認できない場合は必ず `Read level: abstract` と明記する。本文未確認なのに本文を読んだように書かない。
-7. 各論文のサマリには、可能な範囲で以下を含める。
-   - Source
-   - canonical ID
-   - Published date
-   - Authors
-   - Journal / Category
-   - URL
-   - Read level
-   - 目的
-   - 手法
-   - データ・実験
-   - 主な結果（定量値があれば優先）
-   - 新規性
-   - 限界
-   - なぜ注目したか
-8. 医療AI論文では、情報が取得できる場合、study design、sample size、primary endpoint、external validation、prospective / retrospectiveも含める。
-9. レポート冒頭に「今回の概況」を置き、個々の論文の列挙だけでなく、今回の新着から見える研究トレンドを短く整理する。
-10. 最後に、採用した全論文のcanonical IDを次の機械可読ブロックで付ける。
+Scheduled Task本体には、できるだけ固定で短い次の指示だけを入れます。
 
 ```text
-<!-- PAPER_IDS -->
-arxiv:xxxx.xxxxx
-pmid:xxxxxxxx
-<!-- /PAPER_IDS -->
+GitHub連携を使って `drkamoshika/papers` の `config/paper_watch.yml` を毎回読み、そこに書かれた設定と `task_instructions` をこの実行の唯一の運用仕様として、論文watchを1回実行する。YAMLを読めない、内容が不正、GitHub操作が失敗した場合は推測で代替せず、失敗理由を報告する。
 ```
 
-11. 完成したレポート全体を本文として、`drkamoshika/papers` にGitHub Issueを1件だけ作成する。タイトルは `[paper-report] YYYY-MM-DD ML / LLM / Medical AI` の形式にする。
-12. 1論文につき1 Issueは作らない。1回の実行につき1 Issueとする。
-13. GitHubリポジトリへ直接ファイルを書き込まない。Issue作成後はGitHub ActionsがMarkdown化・commitする。
-14. Issue作成に成功したら、作成したIssue番号を報告する。
+この設計では、検索テーマ、検索元、最大論文数、遡及日数、重複除外、サマリ形式、Issueの作り方、エージェントの詳細な手順はすべて `config/paper_watch.yml` で管理します。
 
-## Recommended schedule
+ChatGPT側に残る設定は基本的に以下だけです。
 
-本番では3日ごとを想定する。実行周期はこのファイルではなく、ChatGPT側のScheduled Task設定で管理する。
+- タスク名
+- 実行周期 / 実行時刻
+- 上記の短いbootstrap prompt
+- 有効 / 停止状態
+
+したがって通常の動作調整は `config/paper_watch.yml` を編集するだけで、次回実行から反映されます。
