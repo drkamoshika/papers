@@ -1,0 +1,39 @@
+# [paper-report] 2026-08-23 ML / LLM / Medical AI
+
+- Issue: #5
+- Source: https://github.com/drkamoshika/papers/issues/5
+- Created at: 2026-08-23T06:48:30Z
+
+# Paper Watch Report — 2026-08-23
+
+## 今回の概況
+
+`config/paper_watch.yml` の設定に従い、直近5日を対象に arXiv / PubMed の機械学習・LLM・医療AI関連論文を検索した。
+
+今回、GitHub上の `state/seen_papers.txt` は空だったため、既出IDは0件として扱った。ただし、arXivのカテゴリ別 `new` / `recent` ページとして取得できた内容はクロール時点が主に2026-08-10までで、設定された5日lookback（2026-08-18〜2026-08-23）の新着を十分な鮮度で検証できなかった。
+
+Web検索でも直近5日に公開された arXiv / PubMed の候補を一次情報として安定して確認できず、YAMLの「一次情報を優先する」「弱い候補で上限を埋めない」「推測で結果や日付を補わない」というルールを優先した。
+
+そのため、今回は新規採用論文を0本とした。
+
+## 実行条件
+
+- Sources: arXiv / PubMed
+- Topics: machine learning / large language models / medical AI / healthcare AI
+- Lookback: 5 days
+- Max papers: 20
+- Deduplication: `state/seen_papers.txt`
+- Selected papers: 0
+
+## ソース確認メモ
+
+- arXiv: `cs.CL/new`, `cs.LG/new`, `cs.AI/new` を確認したが、取得できた一覧は主に2026-08-10時点までで、直近5日分としては鮮度不足だった。
+- PubMed: 直近5日・対象テーマの検索を試みたが、今回の実行環境では新規候補を一次情報として十分に検証できなかった。
+- `state/seen_papers.txt` は今回の実行時点で空だった。
+
+## 今回の判断
+
+検索自体は実行したが、設定期間内の新規論文を一次情報で十分に検証できなかったため、無理に候補を採用せず0本レポートとした。
+
+<!-- PAPER_IDS -->
+<!-- /PAPER_IDS -->
