@@ -1,0 +1,47 @@
+name: Import paper report issue
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+
+jobs:
+  import-report:
+    if: startsWith(github.event.issue.title, '[paper-report]')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Create report Markdown from issue
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+          ISSUE_CREATED_AT: ${{ github.event.issue.created_at }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          mkdir -p reports
+          FILE="reports/issue-${ISSUE_NUMBER}.md"
+          {
+            printf '# %s\n\n' "$ISSUE_TITLE"
+            printf -- '- Issue: #%s\n' "$ISSUE_NUMBER"
+            printf -- '- Source: %s\n' "$ISSUE_URL"
+            printf -- '- Created at: %s\n\n' "$ISSUE_CREATED_AT"
+            printf '%s\n' "$ISSUE_BODY"
+          } > "$FILE"
+
+      - name: Commit report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Import paper report issue #${{ github.event.issue.number }}"
+          git push
