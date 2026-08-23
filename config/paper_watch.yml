@@ -1,0 +1,16 @@
+sources:
+  - arxiv
+  - pubmed
+
+max_papers: 20
+
+lookback_days: 14
+
+topics:
+  - machine learning
+  - large language models
+  - medical AI
+  - healthcare AI
+
+notes:
+  - Broad pilot configuration. Tune keywords and source balance later.
