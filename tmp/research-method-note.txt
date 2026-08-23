@@ -1,0 +1,1 @@
+Discovery method for clean rerun: do not rely only on cached arXiv /list/*/recent pages; discover recent candidates through fresh indexed search and verify each selected item on its individual arXiv page when available.
