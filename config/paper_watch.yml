@@ -14,9 +14,10 @@ max_papers: 20
 
 # Retrieval is count-based rather than date-window-based.
 # For each source, discover the newest relevant candidates and inspect up to this many.
+# 15 per source gives a pool of up to 30 candidates, from which at most 20 are selected.
 retrieval:
   mode: latest_count
-  candidates_per_source: 10
+  candidates_per_source: 15
   sort: newest_first
   rules:
     - Do not use a fixed lookback-days window.
@@ -95,6 +96,7 @@ selection:
     - Collect candidates from every configured source according to the retrieval settings.
     - Prefer recent, technically substantive, and potentially influential work.
     - Keep a reasonable balance across machine learning, LLM, and medical AI when candidates permit.
+    - Aim for roughly max_papers papers on normal runs when enough worthwhile unseen candidates exist.
     - Do not fill to max_papers with weak or irrelevant papers just to reach the limit.
     - candidates_per_source controls candidate inspection, while max_papers controls the final combined report size.
 
@@ -111,7 +113,7 @@ task_instructions: |
   5. For PubMed, use the individual PubMed record and prefer electronic/online publication date when present; otherwise use the publication date shown by PubMed. Do not exclude a paper merely because its journal issue month differs from its online publication date.
   6. Prefer original arXiv and PubMed/publisher paper pages. Gather enough primary-source information to summarize each selected paper accurately.
   7. Exclude previously seen canonical IDs by default.
-  8. From the combined candidate pool, select at most max_papers papers according to the configured selection rules. If fewer papers are worthwhile, return fewer.
+  8. From the combined candidate pool, select at most max_papers papers according to the configured selection rules. Aim for roughly max_papers on normal runs when enough worthwhile unseen papers exist; return fewer if not.
   9. Write one Japanese report for the entire execution. Start with a short section titled "今回の概況" describing notable trends across the selected papers.
   10. For every paper, include Source, canonical ID, publication date, authors when available, journal/category when available, URL, and read_level.
   11. For every paper, first provide the concise original-style block: Tags, Summary, Why interesting.
