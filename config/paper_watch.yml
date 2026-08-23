@@ -2,19 +2,28 @@
 # The Scheduled Task itself should contain only a minimal bootstrap instruction:
 # read this file from GitHub and execute `task_instructions` below.
 
-version: 1
+version: 2
 repository: drkamoshika/papers
 
 sources:
   - arxiv
   - pubmed
 
-# Maximum number of papers included in one execution/report.
+# Maximum number of papers included in one execution/report after combining all sources.
 max_papers: 20
 
-# Production value for a 3-day schedule. A small overlap is intentional;
-# duplicate papers are removed using state/seen_papers.txt.
-lookback_days: 5
+# Retrieval is count-based rather than date-window-based.
+# For each source, discover the newest relevant candidates and inspect up to this many.
+retrieval:
+  mode: latest_count
+  candidates_per_source: 10
+  sort: newest_first
+  rules:
+    - Do not use a fixed lookback-days window.
+    - For each configured source, find up to candidates_per_source of the newest papers relevant to the configured topics.
+    - For arXiv, do not rely only on category recent/new list pages because cached list pages may be stale. Use search to discover recent candidate IDs, then verify selected candidates on their individual arXiv pages.
+    - For PubMed, rank candidates by the most relevant available publication chronology. Prefer electronic publication / online publication date when present; otherwise use the publication date shown by PubMed.
+    - Verify candidate metadata on the individual arXiv or PubMed/publisher paper page before including it.
 
 topics:
   - machine learning
@@ -24,7 +33,15 @@ topics:
 
 summary:
   language: ja
-  fields:
+
+  # Keep the original concise format because it is easy to scan.
+  quick_fields:
+    - tags
+    - summary
+    - why_interesting
+
+  # Then add the more detailed format below it for the same paper.
+  detailed_fields:
     - objective
     - methods
     - data_or_experiment
@@ -32,12 +49,14 @@ summary:
     - novelty
     - limitations
     - why_it_matters
+
   medical_ai_extra_fields:
     - study_design
     - sample_size
     - primary_endpoint
     - external_validation
     - prospective_or_retrospective
+
   rules:
     - Prefer primary sources and original paper pages.
     - Read full text when reasonably accessible; otherwise use the abstract.
@@ -45,6 +64,7 @@ summary:
     - Never imply that full text was read when only the abstract was available.
     - Prefer quantitative results when explicitly available.
     - Do not invent limitations or numerical results that are not supported by the source.
+    - For every paper, show the concise quick summary first, then the detailed summary. Do not replace one with the other.
 
 deduplication:
   strategy: seen_id_index
@@ -72,10 +92,11 @@ output:
 
 selection:
   rules:
-    - Collect candidates broadly from all configured sources and topics.
+    - Collect candidates from every configured source according to the retrieval settings.
     - Prefer recent, technically substantive, and potentially influential work.
     - Keep a reasonable balance across machine learning, LLM, and medical AI when candidates permit.
     - Do not fill to max_papers with weak or irrelevant papers just to reach the limit.
+    - candidates_per_source controls candidate inspection, while max_papers controls the final combined report size.
 
 # This is the actual instruction set for the ChatGPT Scheduled Task.
 # Edit this block to change agent behavior. The Scheduled Task should re-read
@@ -85,18 +106,22 @@ task_instructions: |
 
   1. Treat this YAML file as the source of truth for this run. Read and obey all settings in it.
   2. Read the configured deduplication seen-file and obtain the canonical IDs of previously reported papers. Do not read all historical reports for duplicate detection.
-  3. Search the configured sources over the configured lookback period for papers related to the configured topics.
-  4. Prefer original arXiv and PubMed/publisher paper pages. Gather enough primary-source information to summarize each selected paper accurately.
-  5. Exclude previously seen canonical IDs by default.
-  6. Select at most max_papers papers according to the configured selection rules. If fewer papers are worthwhile, return fewer.
-  7. Write one Japanese report for the entire execution. Start with a short section titled "今回の概況" describing notable trends across the selected papers.
-  8. For every paper, include Source, canonical ID, publication date, authors when available, journal/category when available, URL, and read_level. Then summarize the configured summary fields. For medical AI papers, include the configured medical_ai_extra_fields when the source provides them.
-  9. Clearly distinguish full-text reading from abstract-only reading. Never claim to have read information that was not accessible.
-  10. At the end of the report, append a PAPER_IDS block containing every selected paper's canonical ID, exactly in the configured format.
-  11. Create exactly one GitHub Issue in the configured repository. The title must begin with the configured issue_title_prefix and include the execution date and a short topic label such as "ML / LLM / Medical AI".
-  12. Put the complete report in the Issue body. Do not create one Issue per paper.
-  13. Do not write report Markdown files directly to the repository. GitHub Actions will convert the Issue into reports/ and update the seen-file.
-  14. After creating the Issue, report the Issue number. If the GitHub write requires user approval or fails, do not invent success; report the failure clearly.
+  3. Do not use a fixed date lookback. For each configured source independently, discover up to retrieval.candidates_per_source of the newest candidates related to the configured topics, ordered newest first.
+  4. For arXiv, do not trust only recent/new category listing pages because they may be stale in the search environment. Discover candidate papers through search, then verify each selected candidate using its individual arXiv page.
+  5. For PubMed, use the individual PubMed record and prefer electronic/online publication date when present; otherwise use the publication date shown by PubMed. Do not exclude a paper merely because its journal issue month differs from its online publication date.
+  6. Prefer original arXiv and PubMed/publisher paper pages. Gather enough primary-source information to summarize each selected paper accurately.
+  7. Exclude previously seen canonical IDs by default.
+  8. From the combined candidate pool, select at most max_papers papers according to the configured selection rules. If fewer papers are worthwhile, return fewer.
+  9. Write one Japanese report for the entire execution. Start with a short section titled "今回の概況" describing notable trends across the selected papers.
+  10. For every paper, include Source, canonical ID, publication date, authors when available, journal/category when available, URL, and read_level.
+  11. For every paper, first provide the concise original-style block: Tags, Summary, Why interesting.
+  12. Immediately after that concise block, provide the detailed block: 目的, 手法, データ・実験, 主な結果, 新規性, 限界, なぜ注目したか. For medical AI papers, also include the configured medical_ai_extra_fields when the source provides them.
+  13. Clearly distinguish full-text reading from abstract-only reading. Never claim to have read information that was not accessible.
+  14. At the end of the report, append a PAPER_IDS block containing every selected paper's canonical ID, exactly in the configured format.
+  15. Create exactly one GitHub Issue in the configured repository. The title must begin with the configured issue_title_prefix and include the execution date and a short topic label such as "ML / LLM / Medical AI".
+  16. Put the complete report in the Issue body. Do not create one Issue per paper.
+  17. Do not write report Markdown files directly to the repository. GitHub Actions will convert the Issue into reports/ and update the seen-file.
+  18. After creating the Issue, report the Issue number. If the GitHub write requires user approval or fails, do not invent success; report the failure clearly.
 
 notes:
   - This YAML is intentionally designed so most tuning can be done entirely in GitHub.
