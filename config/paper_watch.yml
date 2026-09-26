@@ -89,6 +89,7 @@ output:
   one_notion_page_per_execution: true
   gmail_recipient: self_connected_account
   gmail_subject_prefix: "[paper-watch]"
+  gmail_digest_top_papers: 5
   gmail_full_report: true
   gmail_include_notion_link: true
   include_overview: true
@@ -131,7 +132,7 @@ task_instructions: |
   15. At the end of the report, append a PAPER_IDS block containing every selected paper's canonical ID, exactly in the configured format.
   16. Create exactly one Notion child page under output.notion_parent_title. The title must begin with output.notion_report_title_prefix and include the execution date and a short topic label such as "ML / LLM / Medical AI". Put the complete report in that Notion page.
   17. After the Notion report page is successfully created, append every selected canonical ID to the Notion state page, preserving existing IDs and avoiding duplicates. Do not modify any GitHub state file.
-  18. Send exactly one Gmail message to the connected Gmail account itself. The subject must begin with output.gmail_subject_prefix and include the execution date. Put the complete report in the email body as well, including the "今回の概況", every selected paper's concise and detailed summaries, and the PAPER_IDS block. Also include a link to the newly created Notion report page.
+  18. Send exactly one Gmail message to the connected Gmail account itself. The subject must begin with output.gmail_subject_prefix and include the execution date. Structure the email in two parts: first a concise digest containing the "今回の概況" and up to output.gmail_digest_top_papers notable papers, then the complete report in full, including every selected paper's concise and detailed summaries and the PAPER_IDS block. Also include a link to the newly created Notion report page.
   19. If YAML reading, candidate verification, Notion lookup/write, state update, or Gmail sending fails, do not invent success or substitute another destination. Report which step failed and any completed steps accurately.
   20. On success, report the Notion page title/URL and that the Gmail notification was sent. Do not create any GitHub Issue or other GitHub write.
 
