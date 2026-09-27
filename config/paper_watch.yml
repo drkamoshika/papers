@@ -68,30 +68,26 @@ summary:
     - For every paper, show the concise quick summary first, then the detailed summary. Do not replace one with the other.
 
 deduplication:
-  strategy: notion_seen_id_page
-  notion_parent_title: "Paper Watch"
-  notion_state_page_title: "Paper Watch — Seen IDs"
+  strategy: gmail_sent_reports
+  gmail_subject_prefix: "[paper-watch]"
   canonical_ids:
     arxiv: arxiv_id
     pubmed: pmid
   rules:
-    - At the start of each run, locate exactly one Notion page titled notion_parent_title and its child page titled notion_state_page_title.
-    - Read canonical IDs from the Notion state page before selecting papers.
-    - Do not use GitHub reports or state files for duplicate detection.
+    - At the start of each run, search the connected Gmail account's Sent mail for prior messages whose subject begins with gmail_subject_prefix.
+    - Read the PAPER_IDS blocks from those prior sent messages and use the canonical IDs found there for duplicate detection.
+    - Do not use GitHub reports, GitHub state files, or Notion for duplicate detection.
     - Exclude already-seen canonical IDs by default.
-    - After the report page is successfully created, append the selected canonical IDs to the Notion state page without duplicating existing IDs.
+    - The current run becomes part of the deduplication history only after its Gmail message is successfully sent.
 
 output:
-  mode: notion_and_gmail
+  mode: gmail_only
   github_write: false
-  notion_parent_title: "Paper Watch"
-  notion_report_title_prefix: "[paper-report]"
-  one_notion_page_per_execution: true
+  notion_write: false
   gmail_recipient: self_connected_account
   gmail_subject_prefix: "[paper-watch]"
   gmail_digest_top_papers: 5
   gmail_full_report: true
-  gmail_include_notion_link: true
   include_overview: true
   include_paper_ids_block: true
   paper_ids_block_format: |
@@ -113,11 +109,11 @@ selection:
 # Edit this block to change agent behavior. The Scheduled Task should re-read
 # this YAML every run, so behavior changes take effect without editing the task itself.
 task_instructions: |
-  Run one paper-watch cycle using GitHub read access, web search, Notion, and Gmail.
+  Run one paper-watch cycle using GitHub read access, web search, and Gmail only.
 
-  1. Treat this YAML file as the source of truth for this run. Read and obey all settings in it. GitHub is read-only for this workflow: do not create Issues, commits, files, pull requests, or other GitHub writes.
-  2. Locate exactly one Notion page whose title equals deduplication.notion_parent_title and, under it, exactly one child page whose title equals deduplication.notion_state_page_title. If either page is missing or ambiguous, stop and report the failure instead of guessing.
-  3. Read the canonical IDs already stored in the Notion state page. Use those IDs for duplicate detection; do not read GitHub historical reports or state files.
+  1. Treat this YAML file as the source of truth for this run. Read and obey all settings in it. GitHub is read-only for the paper-watch execution: do not create Issues, commits, files, pull requests, or other GitHub writes.
+  2. Do not use Notion at all in this workflow.
+  3. Search the connected Gmail account's Sent mail for prior paper-watch messages whose subject begins with deduplication.gmail_subject_prefix. Read their PAPER_IDS blocks and collect the canonical IDs already reported. If Gmail history cannot be read, stop and report the failure instead of guessing.
   4. Do not use a fixed date lookback. For each configured source independently, discover up to retrieval.candidates_per_source of the newest candidates related to the configured topics, ordered newest first.
   5. For arXiv, do not trust only recent/new category listing pages because they may be stale in the search environment. Discover candidate papers through search, then verify each selected candidate using its individual arXiv page.
   6. For PubMed, use the individual PubMed record and prefer electronic/online publication date when present; otherwise use the publication date shown by PubMed. Do not exclude a paper merely because its journal issue month differs from its online publication date.
@@ -130,11 +126,11 @@ task_instructions: |
   13. Immediately after that concise block, provide the detailed block: 目的, 手法, データ・実験, 主な結果, 新規性, 限界, なぜ注目したか. For medical AI papers, also include the configured medical_ai_extra_fields when the source provides them.
   14. Clearly distinguish full-text reading from abstract-only reading. Never claim to have read information that was not accessible.
   15. At the end of the report, append a PAPER_IDS block containing every selected paper's canonical ID, exactly in the configured format.
-  16. Create exactly one Notion child page under output.notion_parent_title. The title must begin with output.notion_report_title_prefix and include the execution date and a short topic label such as "ML / LLM / Medical AI". Put the complete report in that Notion page.
-  17. After the Notion report page is successfully created, append every selected canonical ID to the Notion state page, preserving existing IDs and avoiding duplicates. Do not modify any GitHub state file.
-  18. Send exactly one Gmail message to the connected Gmail account itself. The subject must begin with output.gmail_subject_prefix and include the execution date. Structure the email in two parts: first a concise digest containing the "今回の概況" and up to output.gmail_digest_top_papers notable papers, then the complete report in full, including every selected paper's concise and detailed summaries and the PAPER_IDS block. Also include a link to the newly created Notion report page.
-  19. If YAML reading, candidate verification, Notion lookup/write, state update, or Gmail sending fails, do not invent success or substitute another destination. Report which step failed and any completed steps accurately.
-  20. On success, report the Notion page title/URL and that the Gmail notification was sent. Do not create any GitHub Issue or other GitHub write.
+  16. Send exactly one Gmail message to the connected Gmail account itself. The subject must begin with output.gmail_subject_prefix and include the execution date.
+  17. Structure the email in two parts: first a concise digest containing the "今回の概況" and up to output.gmail_digest_top_papers notable papers; then the complete report in full, including every selected paper's concise and detailed summaries and the PAPER_IDS block.
+  18. Do not create or update anything in Notion. Do not create any GitHub Issue or other GitHub write.
+  19. If YAML reading, Gmail history reading, candidate verification, web search, or Gmail sending fails, do not invent success or substitute another destination. Report which step failed and any completed steps accurately.
+  20. On success, report that the Gmail notification containing both digest and full report was sent. Do not disable the scheduled task merely because one execution fails; allow the next scheduled run to try again.
 
 notes:
   - This YAML is intentionally designed so most tuning can be done entirely in GitHub.
