@@ -6,6 +6,7 @@ import json
 import os
 import re
 import smtplib
+import subprocess
 import sys
 import time
 import xml.etree.ElementTree as ET
@@ -19,7 +20,6 @@ from zoneinfo import ZoneInfo
 import markdown
 import requests
 import yaml
-from openai import OpenAI
 from pypdf import PdfReader
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -270,16 +270,24 @@ def pubmed_candidates(cfg: dict[str, Any]) -> list[dict[str, Any]]:
     return [by_id[x] for x in ids if x in by_id]
 
 
-def call_openai(model: str, prompt: str, *, max_output_tokens: int) -> str:
-    client = OpenAI(api_key=require_env("OPENAI_API_KEY"))
-    response = client.responses.create(
-        model=model,
-        input=prompt,
-        max_output_tokens=max_output_tokens,
+def call_local_model(model: str, prompt: str, *, timeout: int = 3600) -> str:
+    prefix = "/no_think\n" if True else ""
+    proc = subprocess.run(
+        ["ollama", "run", model],
+        input=prefix + prompt,
+        text=True,
+        capture_output=True,
+        timeout=timeout,
+        check=False,
     )
-    text = response.output_text.strip()
+    if proc.returncode != 0:
+        raise PaperWatchError(
+            f"Local Ollama model failed with exit code {proc.returncode}: "
+            f"{proc.stderr[-4000:]}"
+        )
+    text = proc.stdout.strip()
     if not text:
-        raise PaperWatchError(f"OpenAI returned an empty response from model {model}.")
+        raise PaperWatchError(f"Local Ollama model returned an empty response: {model}.")
     return text
 
 
@@ -304,7 +312,7 @@ def select_papers(
     cfg: dict[str, Any], candidates: list[dict[str, Any]]
 ) -> list[str]:
     max_papers = int(cfg["max_papers"])
-    model = cfg.get("llm", {}).get("selection_model", "gpt-5.6-luna")
+    model = cfg.get("llm", {}).get("model", "qwen3:4b")
     compact = [
         {
             "canonical_id": x["canonical_id"],
@@ -340,7 +348,7 @@ Candidate papers:
 {json.dumps(compact, ensure_ascii=False)}
 """.strip()
 
-    obj = parse_json_object(call_openai(model, prompt, max_output_tokens=4000))
+    obj = parse_json_object(call_local_model(model, prompt, timeout=1800))
     selected = obj.get("selected_ids")
     if not isinstance(selected, list) or not all(
         isinstance(x, str) for x in selected
@@ -530,13 +538,12 @@ def generate_report(
     papers: list[dict[str, Any]],
     selected_ids: list[str],
 ) -> str:
-    model = cfg.get("llm", {}).get("report_model", "gpt-5.6-terra")
-    max_out = int(cfg.get("llm", {}).get("max_output_tokens", 50000))
+    model = cfg.get("llm", {}).get("model", "qwen3:4b")
 
-    report = call_openai(
+    report = call_local_model(
         model,
         report_prompt(cfg, papers),
-        max_output_tokens=max_out,
+        timeout=5400,
     )
 
     report_ids = extract_report_ids(report)
@@ -603,8 +610,7 @@ def update_seen(cfg: dict[str, Any], selected_ids: list[str]) -> None:
 def main() -> None:
     cfg = load_config()
 
-    # Fail before network work if required secrets are absent.
-    require_env("OPENAI_API_KEY")
+    # Fail before network work if required Gmail secrets are absent.
     require_env("GMAIL_ADDRESS")
     require_env("GMAIL_APP_PASSWORD")
 
