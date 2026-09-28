@@ -1,6 +1,6 @@
 # papers — GitHub Actions Paper Watch
 
-arXiv / PubMedから関連論文を毎日検索し、OpenAI APIで選定・要約して、Gmailへ**ダイジェスト＋完全版全文**を送る自動論文watchです。
+arXiv / PubMedから関連論文を毎日検索し、GitHub Actions runner内でローカル実行するQwenで選定・要約して、Gmailへ**ダイジェスト＋完全版全文**を送る自動論文watchです。外部LLM APIは使いません。
 
 ChatGPT Scheduled Tasks、Notion、GitHub Issue中継は使いません。
 
@@ -16,9 +16,7 @@ config/paper_watch.yml
         |
         +--> arXiv API / PubMed E-utilities
         |
-        +--> OpenAI API
-        |      ├─ selection_model: gpt-5.6-luna
-        |      └─ report_model: gpt-5.6-terra
+        +--> Ollama + Qwen3 4B（runner内ローカル実行）
         |
         +--> Gmail SMTP
         |      └─ ダイジェスト + 完全版レポート
@@ -38,8 +36,7 @@ github-actions[bot] が seen_papers.txt をcommit
 - `topics`: 検索テーマ
 - `retrieval.candidates_per_source`: sourceごとの候補数
 - `max_papers`: 最終採用上限
-- `llm.selection_model`: 候補選定モデル
-- `llm.report_model`: 詳細レポート生成モデル
+- `llm.model`: Actions runner内でローカル実行するモデル
 - `summary.*`: 要約項目
 - `selection.rules`: 選定方針
 - `task_instructions`: レポート生成・運用指示
@@ -65,11 +62,7 @@ GitHub repositoryの
 
 **Settings → Secrets and variables → Actions → Repository secrets**
 
-に次の3つを登録します。
-
-### OPENAI_API_KEY
-
-OpenAI API key。
+に次の2つだけ登録します。
 
 ### GMAIL_ADDRESS
 
@@ -81,6 +74,8 @@ Gmail SMTP用のGoogleアプリ パスワード。
 
 通常のGoogleアカウントパスワードは登録しません。Googleアカウントで2段階認証を有効にしたうえで、アプリ パスワードを生成して登録します。
 
+LLM用APIキーは不要です。WorkflowがOllamaをインストールし、`qwen3:4b` をGitHub Actions runner内にダウンロードしてローカル実行します。
+
 ## 実行順序と安全性
 
 重要な順序は固定しています。
@@ -90,11 +85,11 @@ seen読み込み
   ↓
 候補取得
   ↓
-OpenAIで選定
+ローカルQwenで選定
   ↓
 可能ならarXiv PDF / PMC本文取得
   ↓
-OpenAIでレポート生成
+ローカルQwenでレポート生成
   ↓
 Gmail送信
   ↓ 成功した場合のみ
@@ -176,7 +171,7 @@ Workflowは推測で処理を続けず失敗します。
 
 - Actions logの `Check required secrets`
 - arXiv / PubMed retrieval
-- OpenAI API
+- Ollama / Qwenローカル推論
 - Gmail SMTP
 - 最後のgit push
 
