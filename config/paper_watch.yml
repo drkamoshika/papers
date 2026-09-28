@@ -1,30 +1,25 @@
-# Canonical configuration for ChatGPT Scheduled Paper Watch.
-# The Scheduled Task itself should contain only a minimal bootstrap instruction:
-# read this file from GitHub and execute `task_instructions` below.
+# Canonical configuration for the GitHub Actions paper-watch.
+# This file is the single operational specification. The runner reads it on every execution.
 
-version: 2
+version: 3
 repository: drkamoshika/papers
 
 sources:
   - arxiv
   - pubmed
 
-# Maximum number of papers included in one execution/report after combining all sources.
 max_papers: 20
 
-# Retrieval is count-based rather than date-window-based.
-# For each source, discover the newest relevant candidates and inspect up to this many.
-# 15 per source gives a pool of up to 30 candidates, from which at most 20 are selected.
 retrieval:
   mode: latest_count
   candidates_per_source: 15
   sort: newest_first
   rules:
     - Do not use a fixed lookback-days window.
-    - For each configured source, find up to candidates_per_source of the newest papers relevant to the configured topics.
-    - For arXiv, do not rely only on category recent/new list pages because cached list pages may be stale. Use search to discover recent candidate IDs, then verify selected candidates on their individual arXiv pages.
-    - For PubMed, rank candidates by the most relevant available publication chronology. Prefer electronic publication / online publication date when present; otherwise use the publication date shown by PubMed.
-    - Verify candidate metadata on the individual arXiv or PubMed/publisher paper page before including it.
+    - For each configured source, retrieve up to candidates_per_source of the newest papers relevant to the configured topics.
+    - For arXiv, use the arXiv API sorted by submittedDate and retain the canonical arXiv ID.
+    - For PubMed, use NCBI E-utilities sorted by publication chronology and prefer electronic/online publication date when present.
+    - Use primary-source metadata from arXiv and PubMed/PMC. Do not infer missing metadata.
 
 topics:
   - machine learning
@@ -32,16 +27,25 @@ topics:
   - medical AI
   - healthcare AI
 
+llm:
+  provider: openai
+  selection_model: gpt-5.6-luna
+  report_model: gpt-5.6-terra
+  max_output_tokens: 50000
+
+runner:
+  timezone: Asia/Tokyo
+  schedule_cron: "0 7 * * *"
+  max_full_text_chars_per_paper: 30000
+  smtp_host: smtp.gmail.com
+  smtp_port: 465
+
 summary:
   language: ja
-
-  # Keep the original concise format because it is easy to scan.
   quick_fields:
     - tags
     - summary
     - why_interesting
-
-  # Then add the more detailed format below it for the same paper.
   detailed_fields:
     - objective
     - methods
@@ -50,22 +54,20 @@ summary:
     - novelty
     - limitations
     - why_it_matters
-
   medical_ai_extra_fields:
     - study_design
     - sample_size
     - primary_endpoint
     - external_validation
     - prospective_or_retrospective
-
   rules:
-    - Prefer primary sources and original paper pages.
-    - Read full text when reasonably accessible; otherwise use the abstract.
+    - Prefer primary sources and original paper records.
+    - Read full text when the automated runner can retrieve and parse it reliably; otherwise use the abstract.
     - Always state read_level as full_text or abstract.
     - Never imply that full text was read when only the abstract was available.
     - Prefer quantitative results when explicitly available.
-    - Do not invent limitations or numerical results that are not supported by the source.
-    - For every paper, show the concise quick summary first, then the detailed summary. Do not replace one with the other.
+    - Do not invent limitations, study details, or numerical results that are not supported by the supplied source text.
+    - For every paper, show the concise quick summary first, then the detailed summary.
 
 deduplication:
   strategy: seen_id_index
@@ -74,18 +76,17 @@ deduplication:
     arxiv: arxiv_id
     pubmed: pmid
   rules:
-    - Read the configured GitHub seen-file before selecting papers.
+    - Read the configured seen-file before selecting papers.
     - Do not scan Gmail history or historical reports for duplicate detection.
     - Exclude already-seen canonical IDs by default.
-    - After the Gmail message for the current run is successfully sent, append the selected canonical IDs to the configured GitHub seen-file without duplicating existing IDs.
-    - If the seen-file cannot be read or updated, report the failure instead of guessing.
+    - Update the seen-file only after the Gmail message for the current run is successfully sent.
+    - Never add the same canonical ID twice.
 
 output:
   mode: gmail_only
   github_write: seen_file_only
   allowed_github_write_path: state/seen_papers.txt
-  notion_write: false
-  gmail_recipient: self_connected_account
+  gmail_recipient: self
   gmail_subject_prefix: "[paper-watch]"
   gmail_digest_top_papers: 5
   gmail_full_report: true
@@ -106,34 +107,28 @@ selection:
     - Do not fill to max_papers with weak or irrelevant papers just to reach the limit.
     - candidates_per_source controls candidate inspection, while max_papers controls the final combined report size.
 
-# This is the actual instruction set for the ChatGPT Scheduled Task.
-# Edit this block to change agent behavior. The Scheduled Task should re-read
-# this YAML every run, so behavior changes take effect without editing the task itself.
 task_instructions: |
-  Run one paper-watch cycle using GitHub, web search, and Gmail.
+  Run one paper-watch cycle from GitHub Actions using this YAML as the source of truth.
 
-  1. Treat this YAML file as the source of truth for this run. Read and obey all settings in it.
-  2. Do not use Notion at all in this workflow.
-  3. Read the configured GitHub deduplication seen-file and collect the canonical IDs already reported. Do not scan Gmail history or historical reports. If the seen-file cannot be read, stop and report the failure instead of guessing.
-  4. Do not use a fixed date lookback. For each configured source independently, discover up to retrieval.candidates_per_source of the newest candidates related to the configured topics, ordered newest first.
-  5. For arXiv, do not trust only recent/new category listing pages because they may be stale in the search environment. Discover candidate papers through search, then verify each selected candidate using its individual arXiv page.
-  6. For PubMed, use the individual PubMed record and prefer electronic/online publication date when present; otherwise use the publication date shown by PubMed. Do not exclude a paper merely because its journal issue month differs from its online publication date.
-  7. Prefer original arXiv and PubMed/publisher paper pages. Gather enough primary-source information to summarize each selected paper accurately.
-  8. Exclude previously seen canonical IDs by default.
-  9. From the combined candidate pool, select at most max_papers papers according to the configured selection rules. Aim for roughly max_papers on normal runs when enough worthwhile unseen papers exist; return fewer if not.
-  10. Write one Japanese report for the entire execution. Start with a short section titled "今回の概況" describing notable trends across the selected papers.
-  11. For every paper, include Source, canonical ID, publication date, authors when available, journal/category when available, URL, and read_level.
-  12. For every paper, first provide the concise original-style block: Tags, Summary, Why interesting.
-  13. Immediately after that concise block, provide the detailed block: 目的, 手法, データ・実験, 主な結果, 新規性, 限界, なぜ注目したか. For medical AI papers, also include the configured medical_ai_extra_fields when the source provides them.
-  14. Clearly distinguish full-text reading from abstract-only reading. Never claim to have read information that was not accessible.
-  15. At the end of the report, append a PAPER_IDS block containing every selected paper's canonical ID, exactly in the configured format.
-  16. Send exactly one Gmail message to the connected Gmail account itself. The subject must begin with output.gmail_subject_prefix and include the execution date.
-  17. Structure the email in two parts: first a concise digest containing the "今回の概況" and up to output.gmail_digest_top_papers notable papers; then the complete report in full, including every selected paper's concise and detailed summaries and the PAPER_IDS block.
-  18. Only after the Gmail message has been successfully sent, update the configured GitHub seen-file by appending every selected canonical ID, preserving existing IDs and avoiding duplicates.
-  19. Do not create or update anything in Notion. Do not create GitHub Issues, report files, pull requests, or other GitHub writes. The only permitted GitHub write is updating output.allowed_github_write_path for deduplication state.
-  20. If YAML reading, seen-file reading/updating, candidate verification, web search, or Gmail sending fails, do not invent success or substitute another destination. Report which step failed and any completed steps accurately.
-  21. On success, report that the Gmail notification containing both digest and full report was sent and that the GitHub seen-file was updated. Do not disable the scheduled task merely because one execution fails; allow the next scheduled run to try again.
+  1. Read state/seen_papers.txt and exclude previously reported canonical IDs.
+  2. Retrieve the newest configured number of candidates independently from arXiv and PubMed without a fixed lookback window.
+  3. Use the configured selection model to choose at most max_papers papers according to selection.rules.
+  4. For selected arXiv papers, attempt to retrieve and parse the PDF. For PubMed papers with a PMCID, attempt to retrieve PMC full text. If full text cannot be parsed reliably, use the abstract and set read_level: abstract.
+  5. Generate one Japanese report for the entire execution.
+  6. Start the email with a section titled "ダイジェスト", containing "今回の概況" and up to output.gmail_digest_top_papers notable papers.
+  7. After the digest, include the complete report in full.
+  8. For every paper include Source, canonical ID, publication date, authors when available, journal/category when available, URL, and read_level.
+  9. For every paper first provide Tags, Summary, Why interesting.
+  10. Immediately after that provide 目的, 手法, データ・実験, 主な結果, 新規性, 限界, なぜ注目したか.
+  11. For medical AI papers also include study design, sample size, primary endpoint, external validation, and prospective/retrospective when supported by the source.
+  12. Clearly distinguish full-text reading from abstract-only reading and never invent unsupported facts.
+  13. End the report with a PAPER_IDS block containing every selected canonical ID.
+  14. Send exactly one Gmail message containing both the digest and complete report.
+  15. Only after Gmail sending succeeds, append the selected canonical IDs to state/seen_papers.txt.
+  16. Do not create GitHub Issues or report files. The only persistent GitHub write produced by a normal run is the seen-file update.
+  17. If retrieval, model inference, Gmail sending, or state update fails, fail the workflow rather than silently substituting another path.
 
 notes:
-  - This YAML is intentionally designed so most tuning can be done entirely in GitHub.
-  - The only settings that remain in ChatGPT Scheduled Tasks are the recurrence/timing and the minimal bootstrap prompt telling ChatGPT to read this file.
+  - GitHub Actions is the execution environment; ChatGPT Scheduled Tasks are not used.
+  - Required GitHub Actions secrets are OPENAI_API_KEY, GMAIL_ADDRESS, and GMAIL_APP_PASSWORD.
+  - The workflow is scheduled for 07:00 Asia/Tokyo and also supports workflow_dispatch for manual testing.
