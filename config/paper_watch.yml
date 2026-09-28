@@ -28,15 +28,14 @@ topics:
   - healthcare AI
 
 llm:
-  provider: openai
-  selection_model: gpt-5.6-luna
-  report_model: gpt-5.6-terra
-  max_output_tokens: 50000
+  provider: local_ollama
+  model: qwen3:4b
+  disable_thinking: true
 
 runner:
   timezone: Asia/Tokyo
   schedule_cron: "0 7 * * *"
-  max_full_text_chars_per_paper: 30000
+  max_full_text_chars_per_paper: 3000
   smtp_host: smtp.gmail.com
   smtp_port: 465
 
@@ -112,9 +111,9 @@ task_instructions: |
 
   1. Read state/seen_papers.txt and exclude previously reported canonical IDs.
   2. Retrieve the newest configured number of candidates independently from arXiv and PubMed without a fixed lookback window.
-  3. Use the configured selection model to choose at most max_papers papers according to selection.rules.
+  3. Use the configured local Ollama model to choose at most max_papers papers according to selection.rules.
   4. For selected arXiv papers, attempt to retrieve and parse the PDF. For PubMed papers with a PMCID, attempt to retrieve PMC full text. If full text cannot be parsed reliably, use the abstract and set read_level: abstract.
-  5. Generate one Japanese report for the entire execution.
+  5. Generate one Japanese report for the entire execution using the configured local Ollama model.
   6. Start the email with a section titled "ダイジェスト", containing "今回の概況" and up to output.gmail_digest_top_papers notable papers.
   7. After the digest, include the complete report in full.
   8. For every paper include Source, canonical ID, publication date, authors when available, journal/category when available, URL, and read_level.
@@ -126,9 +125,10 @@ task_instructions: |
   14. Send exactly one Gmail message containing both the digest and complete report.
   15. Only after Gmail sending succeeds, append the selected canonical IDs to state/seen_papers.txt.
   16. Do not create GitHub Issues or report files. The only persistent GitHub write produced by a normal run is the seen-file update.
-  17. If retrieval, model inference, Gmail sending, or state update fails, fail the workflow rather than silently substituting another path.
+  17. If retrieval, local model inference, Gmail sending, or state update fails, fail the workflow rather than silently substituting another path.
 
 notes:
   - GitHub Actions is the execution environment; ChatGPT Scheduled Tasks are not used.
-  - Required GitHub Actions secrets are OPENAI_API_KEY, GMAIL_ADDRESS, and GMAIL_APP_PASSWORD.
+  - No external LLM API is used. The language model runs locally inside the GitHub Actions runner via Ollama.
+  - Required GitHub Actions secrets are GMAIL_ADDRESS and GMAIL_APP_PASSWORD.
   - The workflow is scheduled for 07:00 Asia/Tokyo and also supports workflow_dispatch for manual testing.
