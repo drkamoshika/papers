@@ -153,3 +153,50 @@
 
 - Markdown: `0860627fcb592c349d555e1e064091829c21e9bb`、JSON同期: `9329e2d0b6282b77af2f7472e0dcaeb650603166`。
 - 全246件の6項目についてJSON上の未記載・nullは0件。ただし、一次資料レビュー記録に未認定の論文が143件あるため、完了とは判定しない。今後はこれらの個別検証を優先する。
+
+
+## 2026-11-14 追加一次資料照合・品質修正（38件）
+
+arXiv原著要旨を個別に開いて38件のタイトル、初回投稿日、目的、方法、主要結果を照合した。うち12件はObjective・Data and results・Novelty・Limitationsを原著要旨に沿って分離・再記述した。また、2026-11-14日次レポート全体から生成時に混入した `Summary:**` 等の不正なラベルを除去し、表示用JSONへ再同期した。PubMed 2件（PMID 42957896、42980310）は今回の取得経路では一次ページ本文を再取得できなかったため、この節の照合済み件数には含めない。
+
+- `arxiv:2611.14514` — https://arxiv.org/abs/2611.14514 — 原著要旨照合済み
+- `arxiv:2611.14492` — https://arxiv.org/abs/2611.14492 — 原著要旨照合済み
+- `arxiv:2611.13410` — https://arxiv.org/abs/2611.13410 — 原著要旨照合済み
+- `arxiv:2611.13001` — https://arxiv.org/abs/2611.13001 — 原著要旨照合済み
+- `arxiv:2611.12304` — https://arxiv.org/abs/2611.12304 — 原著要旨照合済み
+- `arxiv:2611.12177` — https://arxiv.org/abs/2611.12177 — 原著要旨照合済み
+- `arxiv:2611.10866` — https://arxiv.org/abs/2611.10866 — 原著要旨照合済み
+- `arxiv:2611.10486` — https://arxiv.org/abs/2611.10486 — 原著要旨照合済み
+- `arxiv:2611.10193` — https://arxiv.org/abs/2611.10193 — 原著要旨照合済み
+- `arxiv:2611.10015` — https://arxiv.org/abs/2611.10015 — 原著要旨照合済み
+- `arxiv:2611.13885` — https://arxiv.org/abs/2611.13885 — 原著要旨照合済み
+- `arxiv:2611.01527` — https://arxiv.org/abs/2611.01527 — 原著要旨照合済み
+- `arxiv:2611.17041` — https://arxiv.org/abs/2611.17041 — 原著要旨照合済み
+- `arxiv:2611.17007` — https://arxiv.org/abs/2611.17007 — 原著要旨照合済み
+- `arxiv:2611.16409` — https://arxiv.org/abs/2611.16409 — 原著要旨照合済み
+- `arxiv:2611.16433` — https://arxiv.org/abs/2611.16433 — 原著要旨照合済み
+- `arxiv:2611.14925` — https://arxiv.org/abs/2611.14925 — 原著要旨照合済み
+- `arxiv:2611.16369` — https://arxiv.org/abs/2611.16369 — 原著要旨照合済み
+- `arxiv:2611.17316` — https://arxiv.org/abs/2611.17316 — 原著要旨照合済み
+- `arxiv:2611.14326` — https://arxiv.org/abs/2611.14326 — 原著要旨照合済み
+- `arxiv:2611.14320` — https://arxiv.org/abs/2611.14320 — 原著要旨照合済み
+- `arxiv:2611.13994` — https://arxiv.org/abs/2611.13994 — 原著要旨照合済み
+- `arxiv:2611.14009` — https://arxiv.org/abs/2611.14009 — 原著要旨照合済み
+- `arxiv:2611.09891` — https://arxiv.org/abs/2611.09891 — 原著要旨照合済み
+- `arxiv:2611.09721` — https://arxiv.org/abs/2611.09721 — 原著要旨照合済み
+- `arxiv:2611.03618` — https://arxiv.org/abs/2611.03618 — 原著要旨照合済み
+- `arxiv:2611.17128` — https://arxiv.org/abs/2611.17128 — 原著要旨照合済み
+- `arxiv:2611.17031` — https://arxiv.org/abs/2611.17031 — 原著要旨照合済み
+- `arxiv:2611.16935` — https://arxiv.org/abs/2611.16935 — 原著要旨照合済み
+- `arxiv:2611.16460` — https://arxiv.org/abs/2611.16460 — 原著要旨照合済み
+- `arxiv:2611.16393` — https://arxiv.org/abs/2611.16393 — 原著要旨照合済み
+- `arxiv:2611.12640` — https://arxiv.org/abs/2611.12640 — 原著要旨照合済み
+- `arxiv:2611.12307` — https://arxiv.org/abs/2611.12307 — 原著要旨照合済み
+- `arxiv:2611.11833` — https://arxiv.org/abs/2611.11833 — 原著要旨照合済み
+- `arxiv:2611.13006` — https://arxiv.org/abs/2611.13006 — 原著要旨照合済み
+- `arxiv:2611.02011` — https://arxiv.org/abs/2611.02011 — 原著要旨照合済み
+- `arxiv:2611.03983` — https://arxiv.org/abs/2611.03983 — 原著要旨照合済み
+- `arxiv:2611.15009` — https://arxiv.org/abs/2611.15009 — 原著要旨照合済み
+
+- Markdown更新: `828d44e5705e34e672145acedf2b31228a011d97`、ラベル追加修正: `5a6ec8934339687c24b9385f300303dd95e8a121`、`8d95357ab45690b91d4b80c6e68f596e3596ec15`。
+- canonical IDで台帳を再集計すると、今回開始前の照合記録は113件、今回追加38件、未照合は95件。全246件の必須6項目にnull・空文字はないが、未照合95件のうち多数はObjectiveとData and resultsがSummaryの複製であり、完了扱いにしない。
