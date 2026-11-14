@@ -125,3 +125,13 @@
 - GitHub Markdown保存コミット: `5488720032a585f3084a833a325fafe43b67bd0f`。再取得内容一致を確認。
 - 直近の `docs/papers.json` は246件で、6項目にnullまたは「未記載」を含む論文が15件（今回処理前）。今回の2件のMarkdown更新後のJSON再生成は未実施で、JSONとの一致は未検証。少なくとも残り13件の欠損補完と、他の未認定論文の原著照合が必要。
 - 98件の従来レビュー記録と今回2件の記録を合わせても、全246件の原著レビュー完了とは認定しない。自動化停止条件は満たさない。
+
+## 2026-11-14 追加一次資料照合（3件）
+
+- `arxiv:2611.05263` — https://arxiv.org/abs/2611.05263 — 原著arXiv要旨・投稿履歴を確認（全文未精読）。MarkdownのSummary/Objective/Methods/Data and results/Novelty/Limitationsの6項目を修正。著者報告の数値を記載し、独立再現は未実施。保存後再取得一致を確認。
+- `arxiv:2611.05251` — https://arxiv.org/abs/2611.05251 — 原著arXiv要旨・投稿履歴を確認（全文未精読）。MarkdownのSummary/Objective/Methods/Data and results/Novelty/Limitationsの6項目を修正。著者報告の数値を記載し、独立再現は未実施。保存後再取得一致を確認。
+- `arxiv:2611.05036` — https://arxiv.org/abs/2611.05036 — 原著arXiv要旨・投稿履歴を確認（全文未精読）。MarkdownのSummary/Objective/Methods/Data and results/Novelty/Limitationsの6項目を修正。著者報告の数値を記載し、独立再現は未実施。保存後再取得一致を確認。
+
+- 今回: 3論文、18フィールド修正。Markdownコミット `498328392450e8f615f2d3655a73247c6d593548`。
+- `docs/papers.json` は更新前に246件、6項目欠損15件を確認。今回の3件と前回の2件のMarkdown更新がJSONに未反映。専用workflow再生成と全件の整合性検証は未完了。
+- 全246件の個別照合は未完了。自動化は停止しない。
