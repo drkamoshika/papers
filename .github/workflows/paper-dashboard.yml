@@ -7,6 +7,7 @@ on:
       - 'scripts/build_dashboard_index.py'
       - 'scripts/refresh_publication_dates.py'
       - 'docs/paper.schema.json'
+      - 'docs/publication-dates.json'
       - 'docs/PAPER_SCHEMA.md'
       - 'tests/test_paper_schema.py'
       - 'tests/test_publication_dates.py'
