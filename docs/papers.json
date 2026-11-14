@@ -352,7 +352,7 @@
       "reportDate": "2026-08-23",
       "source": "PubMed",
       "id": "pmid:42213562",
-      "date": null,
+      "date": "2026-05-29",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42213562",
       "read_level": "abstract",
       "tags": [
@@ -367,7 +367,7 @@
       "novelty": "医療AIのボトルネックがarchitectureだけでなくdataset qualityにあることを強く意識した研究。",
       "limitations": null,
       "why": "医療AIのボトルネックがarchitectureだけでなくdataset qualityにあることを強く意識した研究。",
-      "details": "Publication date: None\nread_level: abstract\nTags: ['dental imaging', 'dataset', 'deep learning']\nSummary: 歯科periapical radiograph解析で課題となるannotation不足やprojection artifactに対し、datasetとmodelの両面からrobustnessを改善する研究。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 医療AIのボトルネックがarchitectureだけでなくdataset qualityにあることを強く意識した研究。\nLimitations: None"
+      "details": "Publication date: 2026-05-29\nread_level: abstract\nTags: ['dental imaging', 'dataset', 'deep learning']\nSummary: 歯科periapical radiograph解析で課題となるannotation不足やprojection artifactに対し、datasetとmodelの両面からrobustnessを改善する研究。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 医療AIのボトルネックがarchitectureだけでなくdataset qualityにあることを強く意識した研究。\nLimitations: None"
     },
     {
       "title": "When algorithms triage trauma: Diagnostic accuracy, undertriage risk, and prompt fragility in frontier large language models",
@@ -564,7 +564,7 @@
       "reportDate": "2026-08-23",
       "source": "PubMed",
       "id": "pmid:42430567",
-      "date": null,
+      "date": "2026-07-10",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42430567",
       "read_level": "abstract",
       "tags": [],
@@ -575,7 +575,7 @@
       "novelty": null,
       "limitations": null,
       "why": "",
-      "details": "Publication date: None\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: None\nLimitations: None"
+      "details": "Publication date: 2026-07-10\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: None\nLimitations: None"
     },
     {
       "title": "What is Missing from AI Post-Training AI: An Empirical Analysis",
@@ -1779,7 +1779,7 @@
       "reportDate": "2026-08-29",
       "source": "PubMed",
       "id": "pmid:42547906",
-      "date": null,
+      "date": "2026-08-03",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42547906",
       "read_level": "abstract",
       "tags": [
@@ -1795,7 +1795,7 @@
       "novelty": "research prototypeでなくcommercial cleared AIを、implantやboneなど失敗しやすい条件まで含めて検証している。",
       "limitations": null,
       "why": "research prototypeでなくcommercial cleared AIを、implantやboneなど失敗しやすい条件まで含めて検証している。",
-      "details": "Publication date: None\nread_level: abstract\nTags: ['medical imaging', 'synthetic CT', 'radiotherapy', 'commercial AI']\nSummary: FDA 510(k) clearedのTheraPanacea synthetic CTをbrain/prostate MR-only planningで画像・幾何学的に評価。\nObjective: None\nMethods: None\nData and results: None\nNovelty: research prototypeでなくcommercial cleared AIを、implantやboneなど失敗しやすい条件まで含めて検証している。\nLimitations: None"
+      "details": "Publication date: 2026-08-03\nread_level: abstract\nTags: ['medical imaging', 'synthetic CT', 'radiotherapy', 'commercial AI']\nSummary: FDA 510(k) clearedのTheraPanacea synthetic CTをbrain/prostate MR-only planningで画像・幾何学的に評価。\nObjective: None\nMethods: None\nData and results: None\nNovelty: research prototypeでなくcommercial cleared AIを、implantやboneなど失敗しやすい条件まで含めて検証している。\nLimitations: None"
     },
     {
       "title": "AI-assisted VMAT planning incorporating deep learning-based dose prediction for head and neck cancer",
@@ -1803,7 +1803,7 @@
       "reportDate": "2026-08-29",
       "source": "PubMed",
       "id": "pmid:42503595",
-      "date": null,
+      "date": "2026-07-26",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42503595",
       "read_level": "abstract",
       "tags": [
@@ -1819,7 +1819,7 @@
       "novelty": "「完全自動化」ではなく、AIが苦手な不規則症例を人が補正する現実的運用を定量評価。",
       "limitations": null,
       "why": "「完全自動化」ではなく、AIが苦手な不規則症例を人が補正する現実的運用を定量評価。",
-      "details": "Publication date: None\nread_level: abstract\nTags: ['radiotherapy planning', 'deep learning', 'human-in-the-loop', 'head and neck cancer']\nSummary: deep-learning dose predictionを使うRatoGuideでHNC VMAT planを作成し、複雑症例ではphysicistがhotspotを手修正するhuman-in-the-loop workflowを評価。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 「完全自動化」ではなく、AIが苦手な不規則症例を人が補正する現実的運用を定量評価。\nLimitations: None"
+      "details": "Publication date: 2026-07-26\nread_level: abstract\nTags: ['radiotherapy planning', 'deep learning', 'human-in-the-loop', 'head and neck cancer']\nSummary: deep-learning dose predictionを使うRatoGuideでHNC VMAT planを作成し、複雑症例ではphysicistがhotspotを手修正するhuman-in-the-loop workflowを評価。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 「完全自動化」ではなく、AIが苦手な不規則症例を人が補正する現実的運用を定量評価。\nLimitations: None"
     },
     {
       "title": "Scanner-agnostic artificial intelligence approach for fast bone scintigraphy",
@@ -1827,7 +1827,7 @@
       "reportDate": "2026-08-29",
       "source": "PubMed",
       "id": "pmid:42482648",
-      "date": null,
+      "date": "2026-07-22",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42482648",
       "read_level": "abstract",
       "tags": [
@@ -1843,7 +1843,7 @@
       "novelty": "医療画像AIで重要なscanner/domain shiftを、未学習vendorを含むprospective testで正面から評価している。",
       "limitations": null,
       "why": "医療画像AIで重要なscanner/domain shiftを、未学習vendorを含むprospective testで正面から評価している。",
-      "details": "Publication date: None\nread_level: abstract\nTags: ['nuclear medicine', 'denoising', 'multicenter AI', 'prospective validation']\nSummary: scanner-specific retrainingを不要にするadaptive-diffusion U-Netで、骨シンチのhalf-time / half-dose画像をreconstruct。multi-vendor retrospective dataに加え、未学習scannerを含むprospective validationを実施。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 医療画像AIで重要なscanner/domain shiftを、未学習vendorを含むprospective testで正面から評価している。\nLimitations: None"
+      "details": "Publication date: 2026-07-22\nread_level: abstract\nTags: ['nuclear medicine', 'denoising', 'multicenter AI', 'prospective validation']\nSummary: scanner-specific retrainingを不要にするadaptive-diffusion U-Netで、骨シンチのhalf-time / half-dose画像をreconstruct。multi-vendor retrospective dataに加え、未学習scannerを含むprospective validationを実施。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 医療画像AIで重要なscanner/domain shiftを、未学習vendorを含むprospective testで正面から評価している。\nLimitations: None"
     },
     {
       "title": "Subgroup Differences in Agreement Between an Algorithm Guided Large Language Model and Routine Emergency Department Triage",

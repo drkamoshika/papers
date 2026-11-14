@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "policy": "arXiv v1 submitted date; PubMed exact electronic date when present; otherwise verified original publisher first-published/version-of-record date. Report date is never used as paper date.",
+  "policy": "arXiv v1 submitted date; PubMed earliest exact electronic publication date, then exact journal issue date; NEVER reportDate.",
   "records": {
     "arxiv:2608.06253": {
       "date": "2026-08-06",
