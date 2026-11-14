@@ -5,7 +5,7 @@
 
 ## ダイジェスト
 
-選定101件中、以下は原著照合・編集確認を終えた31件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
+選定101件中、以下は原著照合・編集確認を終えた53件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
 
 研究の流れと2026年論文との接続は [文献集の案内](README.md) を参照。
 
@@ -125,6 +125,34 @@
 
 本文の照合箇所: [3、6.6、6.7、7節](https://arxiv.org/html/1607.06450v1)。
 
+### Paper: Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer
+- Source: arXiv
+- Canonical ID: arxiv:1701.06538
+- Publication date: 2017-01-23
+- URL: https://arxiv.org/abs/1701.06538
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 疎なゲート機構を持つMoE層でモデル容量を大幅に向上させる手法を提案した。
+- Objective: 計算量を増やさずにモデルの情報を吸収する能力を高める方法を探求すること。
+- Methods: 最大数千のFFサブネットワークからなるSparsely-Gated MoE層を導入し、学習可能なゲートネットワークが各例ごとにスパースな組み合わせを決定する。
+- Data and results: MoEを適用したモデルは、大規模言語モデリングや機械翻訳で最先端を上回り、計算コストを抑えた高い性能を示した。
+- Novelty: 疎にゲートされたMixture-of-Experts層を用いることで、パラメータ数を大幅に増やしつつ効率的な条件付き計算を実現する点。
+- Limitations: 編者の注意: GPUクラスタ上の言語モデル・翻訳での実証である。条件付き計算が常に小規模端末で速いとは示していない。
+
+### Paper: Deep reinforcement learning from human preferences
+- Source: arXiv
+- Canonical ID: arxiv:1706.03741
+- Publication date: 2017-06-12
+- URL: https://arxiv.org/abs/1706.03741
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 人間の選好に基づく深層強化学習を提案し、複雑なタスク解決に適用可能であることを示した。
+- Objective: 人間が定義するペアの軌道セグメント間の選好を用いて、RLシステムへどのように目標を伝えるかを探求すること。
+- Methods: 短い行動軌跡の対に対する非専門家の選好から学習し、環境の本来の報酬関数へ直接アクセスせずにAtariとシミュレーション運動を訓練する。
+- Data and results: 環境相互作用の1%未満に人間がフィードバックする条件で複雑なRL課題を解いた。約1時間の人間作業で新しい行動を学習できたと報告。
+- Novelty: 本研究は、ペアの軌道セグメント間の非専門家による選好を用いて目標を定義するアプローチを提案し、報酬関数なしでのRL適用を実現した点にある。
+- Limitations: 編者の注意: 人間の選好から得る報酬が代理目標となる。シミュレーションで望ましい行動が得られても、選好の完全性や現実環境での安全性は保証しない。
+
 ### Paper: Attention Is All You Need
 - Source: arXiv
 - Canonical ID: arxiv:1706.03762
@@ -183,6 +211,20 @@
 - Novelty: BERTは全層で左右両方の文脈を同時に考慮する深層双方向表現の事前学習を行う点に新規性がある。
 - Limitations: 編者の注意: 事前学習表現の微調整による理解課題評価であり、自己回帰型の自由生成・ツール実行・長期計画を検証した論文ではない。
 
+### Paper: Parameter-Efficient Transfer Learning for NLP
+- Source: arXiv
+- Canonical ID: arxiv:1902.00751
+- Publication date: 2019-02-02
+- URL: https://arxiv.org/abs/1902.00751
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: アダプターモジュールを用いたパラメータ効率的な転移学習を提案する。
+- Objective: 多数のダウンストリームタスクにおいて、いかにパラメータ効率的にモデルを適応させるか。
+- Methods: 元のBERTの重みを固定し、少数の学習可能なadapterをタスクごとに追加。GLUEを含む26のテキスト分類課題で、全層微調整と資源・精度を比較。
+- Data and results: アダプターは全ファインチューニングの性能に近く、タスクあたりわずか3.6%のパラメータ追加で高い性能を示した。
+- Novelty: 各タスクごとにモデル全体を再学習せず、少数の可訓練パラメータのみを追加する点が新しい。
+- Limitations: 編者の注意: 少数パラメータによる分類課題への転移を評価している。後続LoRAと異なる追加モジュールの実行費用や自由生成への転移は別に比較する必要がある。
+
 ### Paper: XLNet: Generalized Autoregressive Pretraining for Language Understanding
 - Source: arXiv
 - Canonical ID: arxiv:1906.08237
@@ -210,6 +252,20 @@
 - Data and results: BERTが十分に学習されていなかったことを示し、学習条件を見直したモデルでGLUE、RACE、SQuADの当時最高水準を達成した。
 - Novelty: これまで見過ごされてきた設計選択の重要性を強調し、最近報告された改善点の出所に疑問を呈した点。
 - Limitations: 編者の注意: 既存手法の差が学習量・データ・ハイパーパラメータに左右されることを示す再現実験である。後続の全構造改良が無効だと結論するものではない。
+
+### Paper: Fine-Tuning Language Models from Human Preferences
+- Source: arXiv
+- Canonical ID: arxiv:1909.08593
+- Publication date: 2019-09-18
+- URL: https://arxiv.org/abs/1909.08593
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 人間の選好に基づく報酬学習を言語タスクに応用し、RLの実用化を目指した研究である。
+- Objective: 人間による評価で定義される報酬を利用し、自然言語タスクへの強化学習の適用可能性を探ること。
+- Methods: テキスト継続（肯定的感情・物理的記述）と要約タスクに報酬学習を適用し、それぞれ5,000件および60,000件の人間比較データを用いた。
+- Data and results: 文体制御は5000比較で良好な結果。要約は6万比較で、原文の文をコピーして不要な導入を除く振る舞いとなり、ROUGEと人間評価は高かった。
+- Novelty: 生成事前学習モデルの進歩を利用し、自然言語タスクに報酬学習を適用した点。
+- Limitations: 著者は、評価者の単純なヒューリスティクスをモデルが利用している可能性を指摘する。高い選好スコアと望ましい要約の意味が一致しない例として重要である。
 
 ### Paper: ALBERT: A Lite BERT for Self-supervised Learning of Language Representations
 - Source: arXiv
@@ -325,6 +381,62 @@
 - Novelty: モデルのスケールアップにより、タスク固有のファインチューニングなしでの少ショット学習能力が大幅に向上した点。
 - Limitations: 著者はfew-shotでも苦戦するデータセット、およびWebコーパス学習に伴う方法論上の問題を報告する。ニュース生成を人間が見分けにくいことの社会的影響も論じる。
 
+### Paper: GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding
+- Source: arXiv
+- Canonical ID: arxiv:2006.16668
+- Publication date: 2020-06-30
+- URL: https://arxiv.org/abs/2006.16668
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: GShardは、条件付き計算と自動シャーディングで巨大モデルのスケーリングを可能にする。
+- Objective: 大規模なニューラルネットワークの訓練における計算コストや実装効率性の課題を解決すること。
+- Methods: 軽量なアノテーションAPIとXLAコンパイラ拡張を利用し、並列計算パターンを表現する。
+- Data and results: GShardにより6000億パラメータ超のモデルが2048 TPU v3で4日間にわたり訓練され、翻訳品質が向上した。
+- Novelty: 自動シャーディングを用いて、既存コード変更を最小限に抑えつつ巨大モデルのスケーリングを実現した点。
+- Limitations: 編者の注意: 2048 TPU v3を使う多言語翻訳系でのスケール実証である。小さなハードウェアや異なる通信構成で同じ効率を得られるとは限らない。
+
+### Paper: Learning to summarize from human feedback
+- Source: arXiv
+- Canonical ID: arxiv:2009.01325
+- Publication date: 2020-09-02
+- URL: https://arxiv.org/abs/2009.01325
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 人間からのフィードバック最適化で要約品質を大幅に向上させる手法を提案する。
+- Objective: 要約モデルの訓練と評価におけるデータや指標の限界点を明らかにし、真の要約品質向上の方法を探る。
+- Methods: 人間の比較に基づく大規模な高品質データセットを集め、人間が好む要約を予測する報酬モデルを構築し、強化学習でファインチューニングした。
+- Data and results: Reddit TL;DRでは人間参照要約や大きい教師ありモデルより好まれる要約を生成。ニュース用の追加微調整なしでもCNN/DMで人間参照に近い評価と報告。
+- Novelty: 人間が好む出力を最適化する報酬関数を用いることで、従来の指標（ROUGEなど）最適化を超える改善を実現した点。
+- Limitations: 編者の注意: 報酬モデルと評価者の選好が学習目標である。データ間転移の成功は、すべての要約の事実性や未知の読者の価値判断との一致を保証しない。
+
+### Paper: Prefix-Tuning: Optimizing Continuous Prompts for Generation
+- Source: arXiv
+- Canonical ID: arxiv:2101.00190
+- Publication date: 2021-01-01
+- URL: https://arxiv.org/abs/2101.00190
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 本研究は、大規模言語モデルのファインチューニングに代わる軽量な手法としてプレフィックスチューニングを提案した。
+- Objective: 自然言語生成タスクにおいて、全パラメータ更新なしで高い性能を発揮する効率的な学習方法を探求すること。
+- Methods: GPT-2とBARTを用いて、言語モデルのパラメータを固定しつつ、小さな連続的なタスク固有ベクトル（プレフィックス）のみを最適化する手法を適用した。
+- Data and results: 学習パラメータ0.1%で、GPT-2の表から文章生成とBARTの要約において全データ時に全層微調整に近い性能。低データ時や未学習トピックへの外挿でも優位と報告。
+- Novelty: 言語モデルのパラメータを固定し、タスク固有の小さな連続ベクトル（プレフィックス）のみを最適化するアプローチを提案した点。
+- Limitations: 編者の注意: 検証は表から文章生成と要約であり、prefixを最適化する学習は必要。勾配更新なしのin-context learningとは資源・データ利用条件が異なる。
+
+### Paper: Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
+- Source: arXiv
+- Canonical ID: arxiv:2101.03961
+- Publication date: 2021-01-11
+- URL: https://arxiv.org/abs/2101.03961
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: Switch Transformerは、MoEの複雑性やコストを改善し、大規模モデルの実用化を目指した。
+- Objective: MoEの課題である複雑性、通信コスト、訓練不安定性をどのように解決するか。
+- Methods: T5-BaseとT5-Largeを基に改良モデルを設計し、ルーティングアルゴリズムを単純化した。
+- Data and results: 提案手法により、計算リソースを維持したまま事前学習速度が最大7倍向上し、1兆パラメータ級のモデルも訓練可能となった。
+- Novelty: MoEの複雑性を軽減するシンプルなルーターと効率的なスパース性設計を導入した点。
+- Limitations: 編者の注意: 疎な活動による計算効率と、全パラメータの保存や分散通信の費用は別である。最大7倍の高速化は固定した計算資源・比較構成での値。
+
 ### Paper: The Power of Scale for Parameter-Efficient Prompt Tuning
 - Source: arXiv
 - Canonical ID: arxiv:2104.08691
@@ -339,6 +451,34 @@
 - Novelty: 凍結モデルに対してソフトプロンプトで条件付けを行うことで、大規模モデルの共有・利用コストの問題を緩和できる点を示した。
 - Limitations: 編者の注意: 全層微調整との差が縮むという結果はT5の規模実験に基づく。小さいモデルや別の事前学習方式でも同じ関係が成り立つとは示さない。
 
+### Paper: LoRA: Low-Rank Adaptation of Large Language Models
+- Source: arXiv
+- Canonical ID: arxiv:2106.09685
+- Publication date: 2021-06-17
+- URL: https://arxiv.org/abs/2106.09685
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: LoRAは、大規模言語モデルのファインチューニングを効率化する手法である。
+- Objective: 巨大なLLMのタスク適応において、全パラメータ更新が非現実的となる課題を解決すること。
+- Methods: 事前学習済みモデルの重みを固定し、Transformer層に低ランク分解行列を注入して訓練可能なパラメータ数を削減した。
+- Data and results: GPT-3 175BのAdamによる全層微調整比で、学習パラメータを1万分の1、GPUメモリ要件を約3分の1にできたと報告。RoBERTa、DeBERTa、GPT-2/3の評価で全層微調整に同等以上。
+- Novelty: 追加の推論遅延なしに、少ない学習パラメータで高いモデル品質を達成できる点が新規である。
+- Limitations: 編者の注意: 更新を低ランクに制約する方式であり、必要ランクと対象層は課題に依存する。要旨の資源削減率はGPT-3 175Bの特定比較に関する値。
+
+### Paper: Towards a Unified View of Parameter-Efficient Transfer Learning
+- Source: arXiv
+- Canonical ID: arxiv:2110.04366
+- Publication date: 2021-10-08
+- URL: https://arxiv.org/abs/2110.04366
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: PEファインチューニングを統一的に捉え、設計要素間の関連性を明らかにした。
+- Objective: パラメータ効率的な転移学習の成功要因と手法間の繋がりを解明すること。
+- Methods: 各PEFT法を、特定の隠れ状態に加える変更の関数・適用位置などの設計次元で統一。翻訳、要約、言語理解、分類で設計の寄与を比較する。
+- Data and results: 統一的フレームワークにより、既存手法の重要な設計選択肢を特定し、より少ないパラメータで同等の性能を達成する新手法を提案した。
+- Novelty: 各手法を特定の隠れ状態の修正として捉え、その計算関数や適用位置といった設計次元で関連付けた点。
+- Limitations: 編者の注意: 統一はモデル内表現の変更として扱える手法の設計枠組みである。比較した4課題領域以外の性能や全パラメータ効率化法への完全な網羅を保証しない。
+
 ### Paper: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
 - Source: arXiv
 - Canonical ID: arxiv:2201.11903
@@ -352,6 +492,20 @@
 - Data and results: CoTプロンプティングは、算術、常識的、記号的推論タスク全般で性能を向上させ、540BパラメータモデルがGSM8KベンチマークでSOTA精度を達成した。
 - Novelty: Few-shotのCoTデモンストレーションをプロンプトとして提供する「chain of thought prompting」という単純な手法で推論能力を引き出す点。
 - Limitations: 編者の注意: 効果はモデル規模と例示・課題に依存する。生成された説明がモデルの実際の意思決定原因であるか、正しい推論を保証するかは検証対象と異なる。
+
+### Paper: Training language models to follow instructions with human feedback
+- Source: arXiv
+- Canonical ID: arxiv:2203.02155
+- Publication date: 2022-03-04
+- URL: https://arxiv.org/abs/2203.02155
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 人間からのフィードバックで言語モデルをファインチューニングし、ユーザーの意図への適合性を高める手法を提案した。
+- Objective: 大規模なモデルサイズだけではユーザーの意図に従う能力は向上しないため、アライメントの方法を探る。
+- Methods: ラベル作成者によるデモンストレーションとランキングデータを用いて、GPT-3を教師あり学習とRLHFで段階的にファインチューニングした。
+- Data and results: 著者のプロンプト分布の人間評価では1.3B InstructGPTが175B GPT-3より好まれた。真実性向上・有害出力低減も報告するが、単純な誤りは残る。
+- Novelty: 人間のフィードバックを用いたファインチューニングにより、モデルをユーザーの意図へアライメントできることを示した点。
+- Limitations: 著者は単純な誤りが残ると明記する。編者の注意: 好ましさは採用した評価者・プロンプト分布に基づく指標で、客観的な全正答率や安全保証ではない。
 
 ### Paper: Self-Consistency Improves Chain of Thought Reasoning in Language Models
 - Source: arXiv
@@ -395,6 +549,20 @@
 - Novelty: Pathwaysという新しいMLシステムを利用することで、複数のTPU Podにわたる非常に効率的な訓練を実現した点。
 - Limitations: 編者の注意: 540Bモデルと大規模TPU環境での評価であり、小規模予算への直接適用は示さない。BIG-benchの人間平均超過は全実務タスクの人間超越を意味しない。
 
+### Paper: Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning
+- Source: arXiv
+- Canonical ID: arxiv:2205.05638
+- Publication date: 2022-05-11
+- URL: https://arxiv.org/abs/2205.05638
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: PEFTはICLより精度が高く、計算コストも大幅に低いことが示された。
+- Objective: Few-shot ICLとPEFTを比較し、どちらが優れているかを検証すること。
+- Methods: few-shot ICLとPEFTの精度・計算費用を比較。活性化を学習ベクトルで拡縮するIA3と、T0に基づくT-Fewを提案し、未知課題をRAFTで評価する。
+- Data and results: PEFTがICLより高精度かつ低コストと報告。T-FewはRAFTで従来の最良手法より6%絶対改善し、同ベンチマークの人間基準を上回った。
+- Novelty: 活性化を学習済みベクトルでスケーリングする新しいPEFT法(IA)$^3$を提案した点。
+- Limitations: 編者の注意: 指示学習済みT0、few-shot条件、RAFTという評価設定に依存する。人間基準超過を一般的な人間超越や全課題でのPEFT優位と解釈しない。
+
 ### Paper: Least-to-Most Prompting Enables Complex Reasoning in Large Language Models
 - Source: arXiv
 - Canonical ID: arxiv:2205.10625
@@ -408,6 +576,20 @@
 - Data and results: GPT-3 code-davinci-002モデルでleast-to-most promptingを用いると、SCANベンチマークにおいて14個の例示のみで99%以上の精度を達成し、chain-of-thoughtでは16%に留まった。
 - Novelty: 複雑な問題をより単純なサブ問題群に分解し、その解を順次利用することで、プロンプト例を超える難問への汎化を実現した点。
 - Limitations: 編者の注意: 分解できる課題と適切な例示に依存する。SCANでの高成績から、任意の現実課題を正しく分解できる能力までは導けない。
+
+### Paper: Scaling Instruction-Finetuned Language Models
+- Source: arXiv
+- Canonical ID: arxiv:2210.11416
+- Publication date: 2022-10-20
+- URL: https://arxiv.org/abs/2210.11416
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 指示データでのファインチューニングは、モデル性能と汎化能力を大幅に向上させる手法である。
+- Objective: タスク数、モデルサイズ、CoTデータによる指示チューニングの拡張が性能に与える影響を探る。
+- Methods: PaLM, T5, U-PaLMなど多様なクラスで、タスク数のスケーリング、モデルサイズのスケーリング、CoTデータでのファインチューニングを試みた。
+- Data and results: Flan-PaLM 540Bは1.8Kタスクでチューニングされ、PALM 540Bより平均+9.4%の性能向上を示した。
+- Novelty: 指示タスク数・モデル規模・CoT微調整を系統的に変え、複数のモデル系列とzero/few-shot評価に共通する指示学習の効果を調べる。
+- Limitations: 編者の注意: 評価した指示タスク・モデル系列での一般化であり、未知の実務や外部ツールを伴う長期計画の成功を直接検証したものではない。
 
 ### Paper: GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers
 - Source: arXiv
@@ -423,6 +605,20 @@
 - Novelty: 近似された2次情報に基づいたワンショット重み量子化手法GPTQを提案し、これによって大規模モデルの量子化精度と効率性を大幅に向上させた点。
 - Limitations: 編者の注意: 速度向上はA100/A6000と比較精度に依存する。要旨から未知タスク全般での精度保持や量子化後の安全性は確認できない。
 
+### Paper: Constitutional AI: Harmlessness from AI Feedback
+- Source: arXiv
+- Canonical ID: arxiv:2212.08073
+- Publication date: 2022-12-15
+- URL: https://arxiv.org/abs/2212.08073
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: AIの自己改善を通じ、人間によるラベルなしで無害なアシスタントを訓練する手法を提案した。
+- Objective: 人間のラベルに頼らず、いかにして有害でないAIアシスタントを訓練できるかを検証すること。
+- Methods: 教師あり学習と強化学習の二段階プロセスを用い、自己批判と修正を通じてモデルをファインチューニングし、AIフィードバックで報酬信号を得た。
+- Data and results: 原則に基づく自己批判・修正とAI選好によるRLにより、有害な質問へ異議の理由を説明するアシスタントを訓練。要旨に統一した安全性スコアの数値はない。
+- Novelty: 人間によるラベル付けを最小限に抑えつつ、ルールや原則のみを用いてAIの振る舞いを制御できる点にある。
+- Limitations: 編者の注意: 人間の作る原則と評価AIの判断が監督信号になる。人間の個別ラベルを減らすことは、価値判断や監督上の誤りがなくなることを意味しない。
+
 ### Paper: Self-Instruct: Aligning Language Models with Self-Generated Instructions
 - Source: arXiv
 - Canonical ID: arxiv:2212.10560
@@ -436,6 +632,48 @@
 - Data and results: GPT-3でSuper-NaturalInstructionsの性能が元モデルより33%絶対改善と報告。専門家作成の新規指示に対する人間評価でも既存公開指示データを上回り、InstructGPT-001との差は5%だった。
 - Novelty: 本手法は、アノテーションがほとんど不要な方法（almost annotation-free method）で事前学習済みLLMの指示へのアライメントを可能にし、既存の公開データセットを超える性能向上を実現した点にある。
 - Limitations: 編者の注意: モデル自身が作るデータに依存する。評価された指示分布を超える汎化や、合成データ中の誤り・偏りの長期蓄積は要旨から確認できない。
+
+### Paper: LLaMA: Open and Efficient Foundation Language Models
+- Source: arXiv
+- Canonical ID: arxiv:2302.13971
+- Publication date: 2023-02-27
+- URL: https://arxiv.org/abs/2302.13971
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: LLaMAは、公開データのみで高性能な基盤モデルを構築可能であることを示す。
+- Objective: 公開データセットのみを用いて最先端の言語モデルを訓練できるか？
+- Methods: 7B〜65Bの言語モデルを、公開データだけから得た数兆トークンで事前学習し、既存のより大きなモデルとベンチマークで比較する。
+- Data and results: LLaMA-13BがGPT-3 175Bを多くの評価で上回り、LLaMA-65BはChinchilla-70BやPaLM-540Bと競争的だったと報告。
+- Novelty: 独自のプロプライエタリなデータセットに頼らず、公開データのみで高性能モデルの訓練が可能であることを示した点。
+- Limitations: 編者の注意: 公開学習データの利用と、全データの品質・権利・汚染問題の解決は同一ではない。評価成績は採用した課題と比較条件に依存する。
+
+### Paper: QLoRA: Efficient Finetuning of Quantized LLMs
+- Source: arXiv
+- Canonical ID: arxiv:2305.14314
+- Publication date: 2023-05-23
+- URL: https://arxiv.org/abs/2305.14314
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: QLoRAは、メモリ効率を保ちつつ大規模LLMのファインチューニングを可能にする手法である。
+- Objective: いかにしてメモリ使用量を削減しつつ、高性能なLLMのファインチューニングを実現するか？
+- Methods: 4-bitで凍結した事前学習モデルを通してLoRAへ勾配を伝える。NF4、量子化定数の二重量子化、paged optimizerを組み合わせ、1000超の微調整モデルで比較する。
+- Data and results: 65Bモデルを単一48GB GPUで微調整可能と報告。GuanacoはVicuna評価でChatGPTのスコア水準の99.3%に達したが、これは全能力が99.3%という意味ではない。
+- Novelty: 4-bit NormalFloat (NF4)や二重量子化など複数の革新により、メモリ消費を抑えつつ性能維持を実現した点。
+- Limitations: 著者は当時のチャット評価ベンチマークの信頼性に問題を見いだし、GuanacoがChatGPTに失敗する事例も分析する。高い評価スコアを一般的な同等性と解釈しない。
+
+### Paper: Direct Preference Optimization: Your Language Model is Secretly a Reward Model
+- Source: arXiv
+- Canonical ID: arxiv:2305.18290
+- Publication date: 2023-05-29
+- URL: https://arxiv.org/abs/2305.18290
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: DPOは、RLHFの複雑なプロセスを単純な分類損失で代替する手法である。
+- Objective: 大規模言語モデルの振る舞いを人間に好まれるように制御するための効率的な方法論を探求すること。
+- Methods: 選好の報酬モデルを再パラメータ化し、対応する最適方策を閉形式で表す。好まれた・好まれなかった応答の分類損失で方策を直接最適化する。
+- Data and results: PPOベースRLHFより感情制御で優れ、要約・単一ターン対話の品質は同等以上と報告。微調整中のモデルからのサンプリングや別の報酬学習を省ける。
+- Novelty: 報酬モデルから対応する最適ポリシーを閉形式で抽出可能にし、標準的なRLHF問題を単なる分類損失で解けるようにした点。
+- Limitations: 編者の注意: 選好データと定式化した正則化の仮定に依存する。オンライン環境の探索や全安全性課題でPPOを常に上回るという結果ではない。
 
 ### Paper: Orca: Progressive Learning from Complex Explanation Traces of GPT-4
 - Source: arXiv
@@ -451,6 +689,76 @@
 - Novelty: 本研究は、単なる出力の模倣ではなく、GPT-4のような高度なAIモデルが生成するステップバイステップの説明から学習することで、推論プロセスを模倣する点にある。
 - Limitations: 編者の注意: 教師の説明と模倣データの選択に依存する。記述された試験の相対改善を、あらゆる推論能力や正答保証の獲得と解釈しない。
 
+### Paper: Llama 2: Open Foundation and Fine-Tuned Chat Models
+- Source: arXiv
+- Canonical ID: arxiv:2307.09288
+- Publication date: 2023-07-18
+- URL: https://arxiv.org/abs/2307.09288
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: Llama 2は、オープンな基盤モデルとチャット用にファインチューニングされたLLM群を開発・公開した。
+- Objective: どのような大規模言語モデルが、オープンソースでありながら高性能で利用可能か？
+- Methods: 70億から700億パラメータの範囲で事前学習済みおよびファインチューニングされたLLMを提供し、チャット用途に最適化したLlama 2-Chatを開発した。
+- Data and results: テストしたほとんどのベンチマークにおいて、オープンソースのチャットモデルを上回り、有用性と安全性においても閉鎖型モデルの代替となり得る。
+- Novelty: ファインチューニングと安全性の改善アプローチを詳細に記述し、コミュニティによる発展を可能にした点。
+- Limitations: 編者の注意: 有用性と安全性は採用した人間評価とベンチマークに基づく。閉鎖モデルの全利用場面を代替できることや、未知の攻撃への安全性を保証しない。
+
+### Paper: Beyond Reverse KL: Generalizing Direct Preference Optimization with Diverse Divergence Constraints
+- Source: arXiv
+- Canonical ID: arxiv:2309.16240
+- Publication date: 2023-09-28
+- URL: https://arxiv.org/abs/2309.16240
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 多様な発散制約を組み込んだ$f$-DPOにより、LLMの人間嗜好へのアライメントを効率化する。
+- Objective: RLHFやDPOが抱える複雑性や報酬モデル依存性の課題を克服する方法を探る。
+- Methods: Jensen-Shannonやforward KLなど多様な$f$-divergence制約を導入し、KKT条件を扱うことで最適ポリシーへのマッピングを可能にした。
+- Data and results: $f$-DPOはPPOベースの手法より発散効率が高く、制約が期待較正誤差（ECE）に直接影響を与えることが示された。
+- Novelty: 多様な発散制約を取り入れることで、報酬と最適ポリシーの関係を簡略化し、正規化定数の推定を不要とした点。
+- Limitations: 編者の注意: 理論の簡略化は扱うf-divergenceと最適化条件に依存する。発散の効率、生成の多様性、校正は同一指標ではなく、要旨には個別スコアの数値がない。
+
+### Paper: Mistral 7B
+- Source: arXiv
+- Canonical ID: arxiv:2310.06825
+- Publication date: 2023-10-10
+- URL: https://arxiv.org/abs/2310.06825
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: Mistral 7Bは、優れた性能と効率性を備えた7BパラメータのLLMである。
+- Objective: 本モデルが既存の大規模言語モデルと比較してどのような性能向上を達成したか？
+- Methods: グループ化クエリ注意機構（GQA）とスライディングウィンドウアテンション（SWA）を採用し、推論速度と長文処理能力を両立させた。
+- Data and results: Mistral 7Bは、評価された全ベンチマークでLlama 2 13Bを上回り、推論、数学、コード生成ではLlama 1 34Bも凌駕した。
+- Novelty: GQAとSWAの組み合わせにより、高速な推論と任意の長さのシーケンスへの対応を実現している点。
+- Limitations: 編者の注意: SWAによる計算制限と、どの長さでも内容を正しく利用できる能力は区別する。性能優位は評価したモデル版・ベンチマークに対するもの。
+
+### Paper: Mixtral of Experts
+- Source: arXiv
+- Canonical ID: arxiv:2401.04088
+- Publication date: 2024-01-08
+- URL: https://arxiv.org/abs/2401.04088
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: Mixtral 8x7Bは、スパースなMoE構造を持つ大規模言語モデルである。
+- Objective: この新しいSMoEモデルが既存の最先端モデルと比較してどのような性能を示すか？
+- Methods: 各層を8つのエキスパートから構成し、トークンごとにルーターが2つのエキスパートを選択して処理する。
+- Data and results: 32K文脈で学習し、評価全体でLlama 2 70BやGPT-3.5に同等以上と報告。総47Bパラメータへアクセスできるがトークンごとに活動するのは13Bで、数学・コード・多言語ではLlama 2 70Bを上回った。
+- Novelty: 各層で2つのエキスパートのみを使用しながらも、トークンごとに異なるエキスパートを利用可能にした点。
+- Limitations: 編者の注意: 活動パラメータ13Bと全重み47Bの保存・配信コストを混同しない。比較結果は当時のモデル版とベンチマーク条件に依存する。
+
+### Paper: The Llama 3 Herd of Models
+- Source: arXiv
+- Canonical ID: arxiv:2407.21783
+- Publication date: 2024-07-31
+- URL: https://arxiv.org/abs/2407.21783
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: Llama 3は、多言語性やコーディングをネイティブにサポートする大規模モデル群である。
+- Objective: Llama 3が様々なタスクにおいて既存の最先端モデルと同等の性能を発揮するかどうかを検証すること。
+- Methods: 最大405Bのdense Transformerと最大128K文脈を持つモデル群を評価。事前・事後学習モデルと安全性モデルを公開し、画像・動画・音声の構成的統合も実験する。
+- Data and results: Llama 3は、多数のタスクにおいてGPT-4のような主要言語モデルに匹敵する品質を提供することが判明した。
+- Novelty: 本研究では、多言語性、コーディング、推論、ツール使用をネイティブにサポートする新しい大規模モデル群「Llama 3」を発表した点である。
+- Limitations: 原著執筆時点では画像・動画・音声を統合したモデルは開発中で、広く公開されていない。要旨の記述は当時の公開状態であり、現在の提供状況の確認とは別である。
+
 <!-- PAPER_IDS -->
 arxiv:1301.3781
 arxiv:1310.4546
@@ -460,12 +768,16 @@ arxiv:1508.04025
 arxiv:1511.06434
 arxiv:1606.08415
 arxiv:1607.06450
+arxiv:1701.06538
+arxiv:1706.03741
 arxiv:1706.03762
 arxiv:1711.05101
 arxiv:1802.05365
 arxiv:1810.04805
+arxiv:1902.00751
 arxiv:1906.08237
 arxiv:1907.11692
+arxiv:1909.08593
 arxiv:1909.11942
 arxiv:1910.01108
 arxiv:1910.10683
@@ -474,13 +786,31 @@ arxiv:2001.08361
 arxiv:2003.10555
 arxiv:2004.05150
 arxiv:2005.14165
+arxiv:2006.16668
+arxiv:2009.01325
+arxiv:2101.00190
+arxiv:2101.03961
 arxiv:2104.08691
+arxiv:2106.09685
+arxiv:2110.04366
 arxiv:2201.11903
+arxiv:2203.02155
 arxiv:2203.11171
 arxiv:2203.15556
 arxiv:2204.02311
+arxiv:2205.05638
 arxiv:2205.10625
+arxiv:2210.11416
 arxiv:2210.17323
+arxiv:2212.08073
 arxiv:2212.10560
+arxiv:2302.13971
+arxiv:2305.14314
+arxiv:2305.18290
 arxiv:2306.02707
+arxiv:2307.09288
+arxiv:2309.16240
+arxiv:2310.06825
+arxiv:2401.04088
+arxiv:2407.21783
 <!-- /PAPER_IDS -->
