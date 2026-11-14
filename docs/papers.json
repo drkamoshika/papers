@@ -64,11 +64,11 @@
       "reportDate": "2026-08-23",
       "report": "reports/daily/2026-08-23_01.md",
       "details": "- Date: 2026-08-14\n- URL: https://arxiv.org/abs/2608.14354\n- Tags: LLM agent, autonomous research, ML research\n- Summary: 長時間の自動研究で問題になるdead end、状態喪失、計算資源浪費を扱う研究エージェント。研究状態を再実行可能なworkspaceとして保存し、ESTRAという仕組みで継続・巻き戻し・方向転換を選ぶ。MLE-benchでAny-Medal 70.22%を報告。\n- Why interesting: agentを単発のreasoning loopではなく、状態を保存・復旧する長期研究プロセスとして設計している。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "長期にわたる自律的な機械学習研究で、研究状態の喪失、探索の行き詰まり、計算資源の浪費を抑え、継続的に研究を進める。",
+      "methods": "ScienceFlowは実行可能なワークスペースを研究状態として保存・復旧し、ESTRAで現在状態か過去状態を起点に継続・方向転換を判断。進捗と残予算を考慮する実行制御器を組み合わせる。",
+      "results": "機械学習・科学モデリング・数理最適化の長期課題で評価。MLE-bench全体を24時間予算で実行しAny-Medal 70.22%、先行報告より4.92ポイント高いと著者らは報告。",
       "novelty": null,
-      "limitations": null
+      "limitations": "要旨では比較条件の詳細、試行間のばらつき、計算費用の内訳は確認できない。24時間予算以外の設定への一般化は本文確認が必要。"
     },
     {
       "id": "arxiv:2608.14290",
@@ -87,11 +87,11 @@
       "reportDate": "2026-08-23",
       "report": "reports/daily/2026-08-23_01.md",
       "details": "- Date: 2026-08-14\n- URL: https://arxiv.org/abs/2608.14290\n- Tags: architecture, foundation model, reasoning\n- Summary: FFNを知識を保持する共有Memory、Self-Attentionを反復的に推論するReasonerとして分離するMobius構造を提案。7B scratch modelはTransformer baselineの62.6%の学習データで同等水準、Qwen3.5-35Bから継続学習したモデルでは同等性能で約4倍のend-to-end inference speedupを報告。\n- Why interesting: Transformer内部の「知識」と「推論」を構造的に分離しようとするアプローチ。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "言語モデルの知識保存と推論処理を分離し、学習データ効率と推論速度を改善する。",
+      "methods": "共有FFNを知識Memory、複数のSelf-AttentionをReasonerとして構成するMobius-v0を提案。隠れ状態を介して推論器が共有Memoryを反復参照する。7Bモデルのゼロからの学習と、Qwen3.5-35Bからの継続事前学習を評価。",
+      "results": "7Bのゼロからの学習ではTransformerベースラインの62.6%の学習データで同程度の下流スコア。継続事前学習モデルは同程度のスコアでエンドツーエンド推論速度が約4倍と報告。",
       "novelty": null,
-      "limitations": null
+      "limitations": "要旨ではタスク別スコア、モデル間の厳密な比較条件、速度計測環境、メモリ使用量は確認できない。"
     },
     {
       "id": "arxiv:2608.14465",
@@ -133,11 +133,11 @@
       "reportDate": "2026-08-23",
       "report": "reports/daily/2026-08-23_01.md",
       "details": "- Date: 2026-08-13\n- URL: https://arxiv.org/abs/2608.13545\n- Tags: pretraining, controlled data, capability acquisition\n- Summary: Grade 5以下の知識に制限した88B-token corpus LITTLECURRICULUMと、それだけでscratch学習した5B LLMを作り、「モデルが何を学習済みか」を明示的に制御できる実験環境を構築。post-trainingやICLは既存能力の引き出しには効くが、学習範囲外能力を大きく押し上げないと報告。\n- Why interesting: pretraining exposureとpost-training能力の因果を調べるための珍しい制御実験。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "事前学習時の知識曝露を制御し、言語モデルが新知識や能力を獲得する仕組みを検証可能にする。",
+      "methods": "米国小学校5年生までの教材に範囲を制限し、上級概念・事実・語彙を除外した880億トークンのLittleCurriculumを構築。50億パラメータのLittleLearnerをゼロから学習し、事後学習と文脈内学習による知識注入を検証。",
+      "results": "880億トークンの制御コーパスと50億パラメータのモデルで実験。事後学習と文脈内学習は既存知識の活用を改善したが、学習範囲外の能力向上は確認されなかったと報告。要旨にタスク別の数値スコアはない。",
       "novelty": null,
-      "limitations": null
+      "limitations": "米国の小学校教材に基づく知識境界であり、他言語・他領域への一般化は未確認。実験のタスク別定量値や能力境界の測定法は本文確認が必要。"
     },
     {
       "id": "arxiv:2608.11656",
