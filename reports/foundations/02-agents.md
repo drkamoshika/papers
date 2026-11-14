@@ -5,7 +5,7 @@
 
 ## ダイジェスト
 
-選定112件中、以下は原著照合・編集確認を終えた66件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
+選定112件中、以下は原著照合・編集確認を終えた76件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
 
 研究の流れと2026年論文との接続は [文献集の案内](README.md) を参照。
 
@@ -53,6 +53,20 @@
 - Novelty: 本研究では、画像のための新しい入力モジュールを導入し、視覚的質問応答への適用可能性を示した点に新規性がある。
 - Limitations: 編者の注意: supporting-fact supervisionなしという設定でも、QAの教師信号自体がないわけではない。VQA・bAbI-10kでの当時の改善を、任意の視覚推論能力の確立と混同しない。
 
+### Paper: OpenAI Gym
+- Source: arXiv
+- Canonical ID: arxiv:1606.01540
+- Publication date: 2016-06-05
+- URL: https://arxiv.org/abs/1606.01540
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 強化学習研究のためのツールキットであるOpenAI Gymを紹介する。
+- Objective: どのような構成要素と設計上の決定がGymに含まれているか？
+- Methods: ベンチマーク問題のコレクションと共通インターフェースを提供し、結果共有サイトを設けた。
+- Data and results: 共通interfaceを持つRL benchmark群と結果共有の仕組みを提供し、その構成・設計判断をwhitepaperで説明する。要旨に新RL algorithmの性能改善値はない。
+- Novelty: 共通インターフェースを持つ多様なベンチマーク問題を統合した点。
+- Limitations: 編者の注意: 評価toolkitの原著であり、現行softwareのAPI説明や現在の保守状態を示す資料ではない。共通interfaceだけでseed・予算・評価protocolまで一致するとは限らない。
+
 ### Paper: Key-Value Memory Networks for Directly Reading Documents
 - Source: arXiv
 - Canonical ID: arxiv:1606.03126
@@ -66,6 +80,34 @@
 - Data and results: 本手法は既存のWikiQAベンチマークにおいて最先端の結果を達成し、KBや情報抽出とのギャップを縮小させた。
 - Novelty: メモリ読み出し操作のアドレス指定と出力段階に異なるエンコーディングを用いる点。
 - Limitations: 編者の注意: WikiMoviesは映画分野のraw textと前処理KBを揃えた比較用datasetである。KB、抽出情報、文書間の差の縮小を、任意分野での文書理解の解決と解釈できない。要旨に詳細な数値はない。
+
+### Paper: SCAN: Learning Hierarchical Compositional Visual Concepts
+- Source: arXiv
+- Canonical ID: arxiv:1707.03389
+- Publication date: 2017-07-11
+- URL: https://arxiv.org/abs/1707.03389
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: SCANは、視覚ドメインで階層的・構成的な抽象概念を学習する新しいフレームワークである。
+- Objective: 自然界の多様な現象が持つ背後にある、発見可能な抽象的概念をどのように学習できるか？
+- Methods: SCANは、シンボルと画像を関連付け、教師なしで発見された分離された視覚プリミティブを用いて概念を学習する。
+- Data and results: 訓練後、SCANは象徴的記述から画像サンプルを生成し、逆に画像からシンボルの推論も可能である。
+- Novelty: 本アプローチは、シンボルと画像のペアリングが非常に少なくても機能し、シンボル表現の形式について仮定を置かない点にある。
+- Limitations: 編者の注意: 本稿のSCANはSymbol-Concept Association Networkであり、同名の言語指示合成benchmarkとは別である。少数でもsymbol–画像pairを使い、全工程が無監督という意味ではない。
+
+### Paper: Relational inductive biases, deep learning, and graph networks
+- Source: arXiv
+- Canonical ID: arxiv:1806.01261
+- Publication date: 2018-06-04
+- URL: https://arxiv.org/abs/1806.01261
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: entity・関係・合成規則を扱うgraph networkで、関係的帰納biasと組合せ汎化を整理する。
+- Objective: 人間的な知能の鍵である組み合わせ的汎化を実現するためのアプローチを探求すること。
+- Methods: 本稿では、関係性の帰納的バイアスを活用する方法としてグラフネットワークという新しいビルディングブロックを提案した。
+- Data and results: graph上の既存network群を統一・拡張するbuilding blockとlibraryを提示し、関係推論と構成的汎化を支える設計を論じる。位置付け・review・統一が中心で、要旨に一律の性能差はない。
+- Novelty: 「手動設計」と「エンドツーエンド学習」の二者択一を否定し、両者の相補性を活かすアプローチを提唱した点。
+- Limitations: 編者の注意: 構造化biasの有用性を提唱する論文で、人間並みの汎化を完成した実証ではない。graphの表現選択と適切な関係dataが必要である。
 
 ### Paper: Generalization through Memorization: Nearest Neighbor Language Models
 - Source: arXiv
@@ -137,6 +179,48 @@
 - Novelty: パラメータと非パラメトリックメモリを組み合わせた汎用的なファインチューニングレシピを提案した点。
 - Limitations: 編者の注意: Wikipediaと原著のQA・生成taskでの評価であり、検索文書が正しいことや幻覚の解消を保証しない。取得文書と回答の事実的一致を実運用で別途評価する必要がある。
 
+### Paper: DreamCoder: Growing generalizable, interpretable knowledge with wake-sleep Bayesian program learning
+- Source: arXiv
+- Canonical ID: arxiv:2006.08381
+- Publication date: 2020-06-15
+- URL: https://arxiv.org/abs/2006.08381
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: DreamCoderは、プログラム記述を通じて専門知識を習得するシステムである。
+- Objective: 問題と解について考えるための言語を学習することが目的である。
+- Methods: program探索を導く神経networkとdomain言語を共同に学ぶ。wake-sleepで記号的な新抽象を言語へ追加し、想像・再生した問題でnetworkを訓練する。
+- Data and results: 帰納programming、描画、scene構築等を解き、関数型programming・vector代数・古典物理の基本概念を再発見すると報告する。要旨にtask別scoreはない。
+- Novelty: 概念が以前学習したものから構成的に構築され、解釈可能で転移可能な表現を得る点。
+- Limitations: 編者の注意: 用意したdomain・primitive・taskに基づくprogram学習であり、rawな実世界観測から物理法則全般を自律発見した意味ではない。探索言語とdataへの依存がある。
+
+### Paper: BabyAI 1.1
+- Source: arXiv
+- Canonical ID: arxiv:2007.12770
+- Publication date: 2020-07-24
+- URL: https://arxiv.org/abs/2007.12770
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: BabyAI 1.1は、接地された言語指示に従うエージェントのサンプル効率を測定するプラットフォームである。
+- Objective: BabyAIのagent構造を小さく改め、接地言語指示の学習sample効率と難しいlevelの性能を改善する。
+- Methods: BabyAI 1.0の結果をベースに、エージェントのアーキテクチャを3点修正し、性能向上を図った。
+- Data and results: この改善により、強化学習のサンプル効率が最大3倍になり、最も難しいレベルでの模倣学習性能は77%から90.4%に向上した。
+- Novelty: 本プラットフォームは、エージェントのアーキテクチャを改良することで計算効率と性能向上を目指している。
+- Limitations: 編者の注意: 三つの構造修正によるBabyAI内の改善で、どの改良がどれだけ寄与するかは要旨では分からない。最大3倍はRL sample効率で、あらゆる実時間計算が3倍速い意味ではない。
+
+### Paper: ALFWorld: Aligning Text and Embodied Environments for Interactive Learning
+- Source: arXiv
+- Canonical ID: arxiv:2010.03768
+- Publication date: 2020-10-08
+- URL: https://arxiv.org/abs/2010.03768
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: ALFWorldは、テキストによる抽象的推論と視覚環境での具現化を統合するシミュレータである。
+- Objective: エージェントが抽象的な推論能力と具体的な実行能力の両方を習得するためのインフラストラクチャを提供すること。
+- Methods: TextWorldで学習した抽象知識を、ALFREDベンチマークの目標に基づき視覚環境で実行可能にするパイプラインを構築した。
+- Data and results: BUTLERエージェントは、TextWorldで学んだ抽象知識が具現化された行動に対応し、視覚環境のみでの訓練より優れた汎化能力を示すことが実証された。
+- Novelty: 本シミュレータは、テキストベースのポリシー学習とリッチなビジュアル環境での目標実行を可能にし、両者の連携を実現した点にある。
+- Limitations: 編者の注意: textと視覚の対応を揃えたsimulation基盤であり、任意の自然言語世界modelから実robotへ自動転移する保証ではない。BUTLERの各moduleや観測誤差も結果へ影響する。
+
 ### Paper: Retrieval Augmentation Reduces Hallucination in Conversation
 - Source: arXiv
 - Canonical ID: arxiv:2104.07567
@@ -151,6 +235,20 @@
 - Novelty: 検索拡張ループ構造を知識接地型対話に応用し、会話能力と知識性を両立させた点。
 - Limitations: 編者の注意: 幻覚の低減は解消を意味しない。検索sourceの質やmulti-turn queryの失敗を含む現在の実用場面で同じ効果が出るかは、要旨のみでは確かめられない。
 
+### Paper: Decision Transformer: Reinforcement Learning via Sequence Modeling
+- Source: arXiv
+- Canonical ID: arxiv:2106.01345
+- Publication date: 2021-06-02
+- URL: https://arxiv.org/abs/2106.01345
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 強化学習をシーケンスモデリング問題として捉え、Transformerで解く手法を提案した。
+- Objective: 強化学習の問題をどのようにシーケンスモデリングとして定式化できるか？
+- Methods: 希望するreturn、過去の状態・行動を条件に、causal mask付き自己回帰Transformerで次の行動を予測する。value関数fitやpolicy gradientを使う従来法と比較する。
+- Data and results: 本モデルは、Atari、OpenAI Gym、Key-to-Doorタスクで最先端のオフラインRLベースラインと同等以上の性能を示した。
+- Novelty: 価値関数をフィッティングしたりポリシー勾配を計算したりせず、望ましいリターンに条件付けして行動を出力する点が新しい。
+- Limitations: 編者の注意: offline dataに基づく条件付き予測であり、希望returnを指定すれば必ず達成・最適化できる保証ではない。dataの質・coverageや状態表現の条件を伴う。
+
 ### Paper: Improving language models by retrieving from trillions of tokens
 - Source: arXiv
 - Canonical ID: arxiv:2112.04426
@@ -164,6 +262,20 @@
 - Data and results: 2兆tokenの検索DBを用い、The Pileでは25分の1のparameter数でGPT-3、Jurassic-1に相当する性能を報告。微調整後にQAへ転移し、既存Transformerへ検索を追加するRETROfitも示す。
 - Novelty: 検索情報を明示的なメモリとして利用することで、これまでにない大規模なデータを用いて言語モデルを改善できる道を開いた点。
 - Limitations: 編者の注意: 25分の1はモデルparameter数であり、検索DBとindexの格納量や検索計算を含む総資源ではない。The Pileの比較を全downstream taskに一般化できない。
+
+### Paper: WebGPT: Browser-assisted question-answering with human feedback
+- Source: arXiv
+- Canonical ID: arxiv:2112.09332
+- Publication date: 2021-12-17
+- URL: https://arxiv.org/abs/2112.09332
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: WebGPTは、ウェブブラウジング環境でGPT-3をファインチューニングし、質問応答能力を向上させたモデルである。
+- Objective: 人間が実行可能なタスクとして設定することで、模倣学習と人間のフィードバックを用いてモデルの回答品質を最適化することを目指した。
+- Methods: ELi5データセットを用い、行動クローニングでGPT-3をファインチューニングした後、人間の選好を予測する報酬モデルを用いた拒否サンプリングを実施した。
+- Data and results: ELI5でbest modelの回答は、人間実演者の回答との比較で56%の確率、Reddit最高投票回答との比較で69%の確率で好まれた。相対的な品質向上率ではない。
+- Novelty: ウェブブラウジング環境でのファインチューニングと、報酬モデルを用いた拒否サンプリングを組み合わせることで性能を向上させた点である。
+- Limitations: 編者の注意: 人間選好率は事実正確性の保証ではない。参照を集める手順でも各引用が十分に回答を支持するかは別に検証が必要で、text browsing環境の条件にも依存する。
 
 ### Paper: Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
 - Source: arXiv
@@ -319,6 +431,20 @@
 - Novelty: LLMと外部化学ツール群を統合するエージェントフレームワークを提供し、科学的応用を可能にした点。
 - Limitations: 著者はGPT-4評価器が明らかに誤ったGPT-4回答とChemCrowの結果を区別できなかったと報告する。編者の注意: LLM judgeだけで化学taskの正しさを判定する限界を示す。
 
+### Paper: API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs
+- Source: arXiv
+- Canonical ID: arxiv:2304.08244
+- Publication date: 2023-04-14
+- URL: https://arxiv.org/abs/2304.08244
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: API-Bankは、ツール利用LLMのための包括的なベンチマークを提供し、性能評価と学習に役立つ。
+- Objective: 現在のLLMsのツール利用能力や、その限界を明らかにするための質問に取り組むこと。
+- Methods: 評価用に73 API・314対話・753呼出を構築。別に2,138 API/1,000domain由来1,888訓練対話を作り、AlpacaからLynxを学習する。計画・検索・呼出を評価する。
+- Data and results: GPT-3.5はGPT-3より改善を示し、GPT-4が計画に優れる一方、提案モデルLynxはAlpacaより26点以上向上した。
+- Novelty: 本研究では、ツール利用の評価と学習のための包括的なベンチマークAPI-Bankを初めて導入した点。
+- Limitations: 編者の注意: 評価tool数と訓練API数は別である。Lynxの26超はpoint差で相対26%ではない。原著の基盤model・構成に基づく比較で現行tool利用全体を代表しない。
+
 ### Paper: WizardLM: Empowering large pre-trained language models to follow complex instructions
 - Source: arXiv
 - Canonical ID: arxiv:2304.12244
@@ -416,6 +542,20 @@
 - Data and results: 提案された多エージェントシステムは、法廷シミュレーションやソフトウェア開発など多様なドメインでの応用可能性を示した。
 - Novelty: 各エージェントに固有の属性と役割を持たせ、知識交換を通じてLLMの能力向上を図る点。
 - Limitations: 著者はloop、security、scalability、評価等を課題として扱う。編者の注意: case studyと構想が中心であり、要旨には統一benchmarkによる性能向上や費用対効果の数値はない。
+
+### Paper: ToolQA: A Dataset for LLM Question Answering with External Tools
+- Source: arXiv
+- Canonical ID: arxiv:2306.13304
+- Publication date: 2023-06-23
+- URL: https://arxiv.org/abs/2306.13304
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 外部ツール利用能力を評価する新しいデータセットToolQAを提案した。
+- Objective: LLMの内部知識と外部ツール使用が必要な質問を区別し、評価することが目的である。
+- Methods: 13種類の専門ツールを用いた自動的なデータキュレーションプロセスでToolQAを構築した。
+- Data and results: 自動curationと13専門toolによるToolQAを公開し、既存tool利用LMの強み・弱点を診断する。要旨にはmodel別の定量成績や失敗内訳はない。
+- Novelty: 外部ツール使用が必要な質問に特化し、既存知識との重複を最小限に抑えた点が新規である。
+- Limitations: 著者は事前学習dataとの重複を最小化する努力を述べ、完全な非重複を保証していない。編者の注意: 内部知識だけで解ける問題と外部toolが不可欠な問題の区別が評価の中心である。
 
 ### Paper: Reasoning or Reciting? Exploring the Capabilities and Limitations of Language Models Through Counterfactual Tasks
 - Source: arXiv
@@ -945,14 +1085,22 @@
 arxiv:1410.3916
 arxiv:1503.08895
 arxiv:1603.01417
+arxiv:1606.01540
 arxiv:1606.03126
+arxiv:1707.03389
+arxiv:1806.01261
 arxiv:1911.00172
 arxiv:2002.08909
 arxiv:2004.04906
 arxiv:2004.12832
 arxiv:2005.11401
+arxiv:2006.08381
+arxiv:2007.12770
+arxiv:2010.03768
 arxiv:2104.07567
+arxiv:2106.01345
 arxiv:2112.04426
+arxiv:2112.09332
 arxiv:2204.01691
 arxiv:2209.07753
 arxiv:2209.11302
@@ -964,6 +1112,7 @@ arxiv:2303.17580
 arxiv:2304.03442
 arxiv:2304.05128
 arxiv:2304.05376
+arxiv:2304.08244
 arxiv:2304.12244
 arxiv:2305.14325
 arxiv:2305.18323
@@ -971,6 +1120,7 @@ arxiv:2305.14992
 arxiv:2305.16291
 arxiv:2305.16504
 arxiv:2306.03314
+arxiv:2306.13304
 arxiv:2307.02477
 arxiv:2307.03172
 arxiv:2307.05973
