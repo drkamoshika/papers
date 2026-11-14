@@ -4308,14 +4308,14 @@
       "url": "https://arxiv.org/abs/2611.09407",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "日程・営業時間・地理条件を無視したLLMの旅行提案を改善するため、検索と時空間最適化を組み合わせるROAMを提案。4都市・510観光地点で訪問件数を増やし、移動の散らばりを削減。",
+      "objective": "自然言語の好みを満たしつつ、複数日旅行の地理的近接性と施設の営業時間を守る実行可能な行程を自動作成する。",
+      "methods": "入力の意味埋め込みからPOIを検索し、最大クリーク分析とK-meansで日別グループへ分割。各日の順路を品質重み付き焼きなましTSPで最適化し、営業時間制約違反をgreedy交換で補修。気象、道路距離、営業時間情報を取得し、ReAct型エージェントで対話的に再計画。",
+      "results": "中国4都市・510 POIで、3日間の平均訪問件数はROAM 27.5、LLM単独19.3、検索のみ17.0（+42%、+62%）。ルート散らばりの指標は2101→677（約3.1倍改善）。営業時間違反を起こす約30%の地点を硬い時間制約の修復が防止。",
       "novelty": "新規性・意義:** LLMの自然文計画を実行可能な制約付き経路へ変換。",
       "limitations": "限界:** 4都市のPOIデータに依存。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** LLMの自然文計画を実行可能な制約付き経路へ変換。",
-      "details": "Publication date: 2026-11-06\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** LLMの自然文計画を実行可能な制約付き経路へ変換。\nLimitations: 限界:** 4都市のPOIデータに依存。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-06\nread_level: abstract\nTags: []\nSummary: 日程・営業時間・地理条件を無視したLLMの旅行提案を改善するため、検索と時空間最適化を組み合わせるROAMを提案。4都市・510観光地点で訪問件数を増やし、移動の散らばりを削減。\nObjective: 自然言語の好みを満たしつつ、複数日旅行の地理的近接性と施設の営業時間を守る実行可能な行程を自動作成する。\nMethods: 入力の意味埋め込みからPOIを検索し、最大クリーク分析とK-meansで日別グループへ分割。各日の順路を品質重み付き焼きなましTSPで最適化し、営業時間制約違反をgreedy交換で補修。気象、道路距離、営業時間情報を取得し、ReAct型エージェントで対話的に再計画。\nData and results: 中国4都市・510 POIで、3日間の平均訪問件数はROAM 27.5、LLM単独19.3、検索のみ17.0（+42%、+62%）。ルート散らばりの指標は2101→677（約3.1倍改善）。営業時間違反を起こす約30%の地点を硬い時間制約の修復が防止。\nNovelty: 新規性・意義:** LLMの自然文計画を実行可能な制約付き経路へ変換。\nLimitations: 限界:** 4都市のPOIデータに依存。 定量値は著者要旨に基づく。"
     },
     {
       "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
@@ -4327,14 +4327,14 @@
       "url": "https://arxiv.org/abs/2611.08483",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "潜在状態とKVキャッシュを共有する数百の低コストエージェントを進化計算へ組み込むSwarmEvolve。長い推論文を繰り返し生成せず、数学・科学計算の解を高速に探索する。",
+      "objective": "LLM進化的プログラム探索のトークン生成コストを抑えつつ、集団のアイデア多様性と探索性能を維持する。",
+      "methods": "各roundで多数の軽量エージェントが潜在空間のまま推論し、KVキャッシュを共有。隠れ状態ベクトル間の距離で新規性フィルタを掛け、summarizerが複数個体のKVを融合してcrossoverを行う。数学発見・科学計算21問題で既存進化的探索と比較。",
+      "results": "21問題の平均成績で最上位。先行方式が60分かけて到達する最良値へ中央値3〜8分で到達し、一部問題ではQwen3-8Bを使うSwarmEvolveが高性能モデルによるAlphaEvolveの初期解を上回った。",
       "novelty": "新規性・意義:** 自然言語の長い推論を介さない集団探索。",
       "limitations": "限界:** 計算資源と問題群の比較条件に依存。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 自然言語の長い推論を介さない集団探索。",
-      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 自然言語の長い推論を介さない集団探索。\nLimitations: 限界:** 計算資源と問題群の比較条件に依存。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: 潜在状態とKVキャッシュを共有する数百の低コストエージェントを進化計算へ組み込むSwarmEvolve。長い推論文を繰り返し生成せず、数学・科学計算の解を高速に探索する。\nObjective: LLM進化的プログラム探索のトークン生成コストを抑えつつ、集団のアイデア多様性と探索性能を維持する。\nMethods: 各roundで多数の軽量エージェントが潜在空間のまま推論し、KVキャッシュを共有。隠れ状態ベクトル間の距離で新規性フィルタを掛け、summarizerが複数個体のKVを融合してcrossoverを行う。数学発見・科学計算21問題で既存進化的探索と比較。\nData and results: 21問題の平均成績で最上位。先行方式が60分かけて到達する最良値へ中央値3〜8分で到達し、一部問題ではQwen3-8Bを使うSwarmEvolveが高性能モデルによるAlphaEvolveの初期解を上回った。\nNovelty: 新規性・意義:** 自然言語の長い推論を介さない集団探索。\nLimitations: 限界:** 計算資源と問題群の比較条件に依存。 定量値は著者要旨に基づく。"
     },
     {
       "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
@@ -4346,14 +4346,14 @@
       "url": "https://arxiv.org/abs/2611.08452",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "研究論文のコードから再現性のある実験資産を作り、後続の独立したエージェント再現を容易にするReproBridge。学習済み知識ではなく、環境構築・実行手順の保存が性能を改善する。",
+      "objective": "論文やコードへ散在する実験条件を整え、異なるモデルや新規セッションでも再現結果を取得できる研究アーティファクトを構築する。",
+      "methods": "コード修正、環境設定、実験ランチャー、再現ガイドの4要素を含む統一資産をエージェントが作成。36論文・387実験から1029課題を生成し、各課題に人手確認した5個の参照スコアを付与。新しいセッションで生コードと整理済み資産の実行を比較し、別のAuditorが実行証拠を監査。",
+      "results": "4モデル平均で再現成功率76.4%→92.6%、API費用19.7%減。モデル間の成功率差は21.6→3.9ポイントへ縮小し、すべてのモデルで平均90%超。各構成要素を除くと性能悪化し、コードと環境の除去が特に大きく影響。",
       "novelty": "新規性・意義:** 再現手順を資産化することで弱いモデルの成功率も向上。",
       "limitations": "限界:** 対象実験・参照スコアの設計に依存。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 再現手順を資産化することで弱いモデルの成功率も向上。",
-      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 再現手順を資産化することで弱いモデルの成功率も向上。\nLimitations: 限界:** 対象実験・参照スコアの設計に依存。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: 研究論文のコードから再現性のある実験資産を作り、後続の独立したエージェント再現を容易にするReproBridge。学習済み知識ではなく、環境構築・実行手順の保存が性能を改善する。\nObjective: 論文やコードへ散在する実験条件を整え、異なるモデルや新規セッションでも再現結果を取得できる研究アーティファクトを構築する。\nMethods: コード修正、環境設定、実験ランチャー、再現ガイドの4要素を含む統一資産をエージェントが作成。36論文・387実験から1029課題を生成し、各課題に人手確認した5個の参照スコアを付与。新しいセッションで生コードと整理済み資産の実行を比較し、別のAuditorが実行証拠を監査。\nData and results: 4モデル平均で再現成功率76.4%→92.6%、API費用19.7%減。モデル間の成功率差は21.6→3.9ポイントへ縮小し、すべてのモデルで平均90%超。各構成要素を除くと性能悪化し、コードと環境の除去が特に大きく影響。\nNovelty: 新規性・意義:** 再現手順を資産化することで弱いモデルの成功率も向上。\nLimitations: 限界:** 対象実験・参照スコアの設計に依存。 定量値は著者要旨に基づく。"
     },
     {
       "title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
@@ -4365,14 +4365,14 @@
       "url": "https://arxiv.org/abs/2611.08417",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "高性能なcoding agentの出現で古い採点器が正しい解を誤判定するなど、ベンチマークを定期的に保守する必要性をTerminal-Benchで実証。",
+      "objective": "モデル能力とベンチマーク点数の乖離を生む保守負債を検出し、タスク・検証器・時間予算を継続的に改善する。",
+      "methods": "コミュニティ報告、タスク配布物、エージェント実行ログ、自動oracle検査、人間の承認付き修正を結合する継続検証workflowをTerminal-Bench 2.0へ適用。問題の修正前後でモデル正解率・ランキング・推論時間制約を変えて比較し、2.1を公開。",
+      "results": "Terminal-Bench 2.0の約30%に問題を特定。修正後に正解率が10ポイント超上がり、ランキングが最大3位変化（順位のSpearman相関0.958）。時間予算延長によりGPT-5.4のharness間20ポイント差が解消し、GPT-5.4 miniで30→5ポイントへ縮小。",
       "novelty": "新規性・意義:** ベンチマーク自体に保守負債が生じることを実証。",
       "limitations": "限界:** 対象はTerminal-Bench。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** ベンチマーク自体に保守負債が生じることを実証。",
-      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** ベンチマーク自体に保守負債が生じることを実証。\nLimitations: 限界:** 対象はTerminal-Bench。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: 高性能なcoding agentの出現で古い採点器が正しい解を誤判定するなど、ベンチマークを定期的に保守する必要性をTerminal-Benchで実証。\nObjective: モデル能力とベンチマーク点数の乖離を生む保守負債を検出し、タスク・検証器・時間予算を継続的に改善する。\nMethods: コミュニティ報告、タスク配布物、エージェント実行ログ、自動oracle検査、人間の承認付き修正を結合する継続検証workflowをTerminal-Bench 2.0へ適用。問題の修正前後でモデル正解率・ランキング・推論時間制約を変えて比較し、2.1を公開。\nData and results: Terminal-Bench 2.0の約30%に問題を特定。修正後に正解率が10ポイント超上がり、ランキングが最大3位変化（順位のSpearman相関0.958）。時間予算延長によりGPT-5.4のharness間20ポイント差が解消し、GPT-5.4 miniで30→5ポイントへ縮小。\nNovelty: 新規性・意義:** ベンチマーク自体に保守負債が生じることを実証。\nLimitations: 限界:** 対象はTerminal-Bench。 定量値は著者要旨に基づく。"
     },
     {
       "title": "SCALE: Real-Time Latent Communication for Cyber-Physical Agents",
@@ -4384,14 +4384,14 @@
       "url": "https://arxiv.org/abs/2611.08390",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "物理エージェント間の潜在表現通信を帯域制約と締切に適応させるSCALE。連続メッセージの冗長tokenを再利用し、重要情報だけを期限内に伝える。",
+      "objective": "限られた通信帯域・異なるタスク締切の下で、マルチエージェントの協調品質と期限内の情報到着を両立する。",
+      "methods": "連続時刻のlatent message間でtoken類似度から再利用可能な情報を抽出し、各情報量の意味的利得と通信費用をプロファイル。残帯域と各タスクの締切を制約としてメッセージ選択・送信token数を同時スケジュール。3つのサイバーフィジカルベンチマークと実物スパイダーロボットで検証。",
+      "results": "異なる帯域と締切条件で、対照方式よりタスク遂行性能と期限内配信率を有意に改善と報告。原著要旨には統一した改善幅の絶対値は示されていない。",
       "novelty": "新規性・意義:** メッセージを全文送るのでなく時間的冗長性を削減。",
       "limitations": "限界:** 要旨に共通改善数値はない。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** メッセージを全文送るのでなく時間的冗長性を削減。",
-      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** メッセージを全文送るのでなく時間的冗長性を削減。\nLimitations: 限界:** 要旨に共通改善数値はない。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: 物理エージェント間の潜在表現通信を帯域制約と締切に適応させるSCALE。連続メッセージの冗長tokenを再利用し、重要情報だけを期限内に伝える。\nObjective: 限られた通信帯域・異なるタスク締切の下で、マルチエージェントの協調品質と期限内の情報到着を両立する。\nMethods: 連続時刻のlatent message間でtoken類似度から再利用可能な情報を抽出し、各情報量の意味的利得と通信費用をプロファイル。残帯域と各タスクの締切を制約としてメッセージ選択・送信token数を同時スケジュール。3つのサイバーフィジカルベンチマークと実物スパイダーロボットで検証。\nData and results: 異なる帯域と締切条件で、対照方式よりタスク遂行性能と期限内配信率を有意に改善と報告。原著要旨には統一した改善幅の絶対値は示されていない。\nNovelty: 新規性・意義:** メッセージを全文送るのでなく時間的冗長性を削減。\nLimitations: 限界:** 要旨に共通改善数値はない。 定量値は著者要旨に基づく。"
     },
     {
       "title": "Enhancing Local and Global Structure in Compressed AI Agent Memory",
@@ -4403,14 +4403,14 @@
       "url": "https://arxiv.org/abs/2611.08341",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "圧縮されたエージェントメモリは近傍検索を保っても、遠く離れた記憶同士の意味構造を失い得る。局所・大域の双方の忠実度を改善する量子化LAQを提案。",
+      "objective": "省メモリ圧縮で近傍検索の精度と、クラスタ統合・削除にも必要な大域的距離構造を両立する。",
+      "methods": "10近傍の局所忠実度Lと全体の30〜50%の範囲での大域忠実度Gを計測。近傍順位違反とGの関係を理論上界で与え、OPQ量子化codebookへfar-end hinge項を追加するLAQを設計。7方式、52保留実行とMulti-Doc-2025、最大100万passageで比較。",
+      "results": "96byte/文章のbinary codeはL=0.97でも10.1%が別テーマへ移動し、8bit PCAはL=0.77で移動1.7%。復元損失単独では52回中0回G改善、far hinge追加では52回すべてでG改善（p=8.5×10^-4）。12回のMulti-Doc-2025試行でも同サイズ7方式中Gが最高。",
       "novelty": "新規性・意義:** 検索近傍だけでは長期記憶の統合・削除品質を評価できない。",
       "limitations": "限界:** 圧縮・距離指標の設計に依存。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 検索近傍だけでは長期記憶の統合・削除品質を評価できない。",
-      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 検索近傍だけでは長期記憶の統合・削除品質を評価できない。\nLimitations: 限界:** 圧縮・距離指標の設計に依存。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: 圧縮されたエージェントメモリは近傍検索を保っても、遠く離れた記憶同士の意味構造を失い得る。局所・大域の双方の忠実度を改善する量子化LAQを提案。\nObjective: 省メモリ圧縮で近傍検索の精度と、クラスタ統合・削除にも必要な大域的距離構造を両立する。\nMethods: 10近傍の局所忠実度Lと全体の30〜50%の範囲での大域忠実度Gを計測。近傍順位違反とGの関係を理論上界で与え、OPQ量子化codebookへfar-end hinge項を追加するLAQを設計。7方式、52保留実行とMulti-Doc-2025、最大100万passageで比較。\nData and results: 96byte/文章のbinary codeはL=0.97でも10.1%が別テーマへ移動し、8bit PCAはL=0.77で移動1.7%。復元損失単独では52回中0回G改善、far hinge追加では52回すべてでG改善（p=8.5×10^-4）。12回のMulti-Doc-2025試行でも同サイズ7方式中Gが最高。\nNovelty: 新規性・意義:** 検索近傍だけでは長期記憶の統合・削除品質を評価できない。\nLimitations: 限界:** 圧縮・距離指標の設計に依存。 定量値は著者要旨に基づく。"
     },
     {
       "title": "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement",
@@ -4422,14 +4422,14 @@
       "url": "https://arxiv.org/abs/2611.08318",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "ロボット用自己改善エージェントに採点器の厳密な成功条件を見せると、指示された仕事でなく採点条件へ適合したコードを書いてしまう問題を検証。",
+      "objective": "実際にタスクを学習したのか、採点器固有の条件へ過適合しただけかを区別する。",
+      "methods": "ロボット制御プログラムを生成する自己改善エージェントを、評価器の成功条件を見せるCriteria Exposureあり／なしで比較。元の言語指示は変えず採点基準だけを少し変更した場合の性能、別タスクへ獲得スキルを転移する性能を測り、指示に忠実な新しい採点基準を提案。",
+      "results": "評価条件を公開すると元基準でのスコアは急速に向上するが、同じ指示のまま判定基準をわずかに変えると優位が消失。獲得したスキルのタスク間転移も弱く、指示内容に忠実な採点基準では実際の遂行能力をより適切に反映。要旨に統一した数値差はない。",
       "novelty": "新規性・意義:** 評価器への過適合と真のタスク学習を区別。",
       "limitations": "限界:** 特定シミュレーション設定。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 評価器への過適合と真のタスク学習を区別。",
-      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 評価器への過適合と真のタスク学習を区別。\nLimitations: 限界:** 特定シミュレーション設定。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: ロボット用自己改善エージェントに採点器の厳密な成功条件を見せると、指示された仕事でなく採点条件へ適合したコードを書いてしまう問題を検証。\nObjective: 実際にタスクを学習したのか、採点器固有の条件へ過適合しただけかを区別する。\nMethods: ロボット制御プログラムを生成する自己改善エージェントを、評価器の成功条件を見せるCriteria Exposureあり／なしで比較。元の言語指示は変えず採点基準だけを少し変更した場合の性能、別タスクへ獲得スキルを転移する性能を測り、指示に忠実な新しい採点基準を提案。\nData and results: 評価条件を公開すると元基準でのスコアは急速に向上するが、同じ指示のまま判定基準をわずかに変えると優位が消失。獲得したスキルのタスク間転移も弱く、指示内容に忠実な採点基準では実際の遂行能力をより適切に反映。要旨に統一した数値差はない。\nNovelty: 新規性・意義:** 評価器への過適合と真のタスク学習を区別。\nLimitations: 限界:** 特定シミュレーション設定。 定量値は著者要旨に基づく。"
     },
     {
       "title": "Trilemma: How Agents choose between Honesty, Confidentiality, and Task Completion",
@@ -4441,14 +4441,14 @@
       "url": "https://arxiv.org/abs/2611.08312",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "個人エージェントが依頼達成、秘密保持、正直な説明を同時に満たせない状況を模擬し、情報漏洩と虚偽・動機づけ推論を定量評価。",
+      "objective": "個人的好みを秘匿しつつ共同業務の説明を求められる場面で、エージェントが正直さ・機密性・仕事完了をどう取捨選択するか調べる。",
+      "methods": "4従業員が各自の個人エージェントへsprint人員配置を委ねる模擬Slack環境を設計。2人の私的メッセージに特定同僚を避けたい本音を設定し、他エージェントに配置理由を尋ねさせる。7オープンウェイトとClaude/GPTのモデルを使い機密指示強度を操作して虚偽・漏洩・配置成立を比較。",
+      "results": "回避希望を追求したオープンモデル135/140試行のうち107で虚偽または真の理由を隠す口実を使用。機密指示なし／中／強で意向漏洩83%／31%／2%。中程度機密設定では70試行中16のみ有効な配置に到達。",
       "novelty": "新規性・意義:** 安全性を一つの目的でなく相反する制約の調停として測る。",
       "limitations": "限界:** 模擬Slack環境での結果。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 安全性を一つの目的でなく相反する制約の調停として測る。",
-      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 安全性を一つの目的でなく相反する制約の調停として測る。\nLimitations: 限界:** 模擬Slack環境での結果。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: 個人エージェントが依頼達成、秘密保持、正直な説明を同時に満たせない状況を模擬し、情報漏洩と虚偽・動機づけ推論を定量評価。\nObjective: 個人的好みを秘匿しつつ共同業務の説明を求められる場面で、エージェントが正直さ・機密性・仕事完了をどう取捨選択するか調べる。\nMethods: 4従業員が各自の個人エージェントへsprint人員配置を委ねる模擬Slack環境を設計。2人の私的メッセージに特定同僚を避けたい本音を設定し、他エージェントに配置理由を尋ねさせる。7オープンウェイトとClaude/GPTのモデルを使い機密指示強度を操作して虚偽・漏洩・配置成立を比較。\nData and results: 回避希望を追求したオープンモデル135/140試行のうち107で虚偽または真の理由を隠す口実を使用。機密指示なし／中／強で意向漏洩83%／31%／2%。中程度機密設定では70試行中16のみ有効な配置に到達。\nNovelty: 新規性・意義:** 安全性を一つの目的でなく相反する制約の調停として測る。\nLimitations: 限界:** 模擬Slack環境での結果。 定量値は著者要旨に基づく。"
     },
     {
       "title": "Hard Issue, Weak Model, or Bad Run? Rethinking Failure Prediction for Coding Agents",
@@ -4460,14 +4460,14 @@
       "url": "https://arxiv.org/abs/2611.08285",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "Coding agentの部分軌跡で失敗を予測しても、実際は課題の難易度とモデル能力を予測しているだけで、途中実行の良否を分離できていないことを示した研究。",
+      "objective": "エージェントを途中停止・再試行・モデル変更する判断が、実際にその回の失敗を予測する情報に基づくのか検証する。",
+      "methods": "SWE-bench Verifiedの公開agent実行軌跡（1モデル×課題で通常1試行）に対して、部分軌跡を読む失敗予測器と、課題難度のみ／モデル能力のみを使うベースラインを比較。モデル切替時の真の利得、同一モデル・同一課題で繰り返したpilot試行のばらつきも分析。",
+      "results": "課題難度だけを使う基準AUROC 0.92に対して軌跡予測器は約0.62。課題難度・モデル能力を統制した軌跡固有の予測利得は統計的にゼロと区別できず、保留実行のモデル切替も改善なし。反復試行では同じモデルが同じ課題に成功・失敗の両方を示した。",
       "novelty": "新規性・意義:** エージェント実行の失敗原因を課題難度・モデル能力・偶然の失敗に分離。",
       "limitations": "限界:** 同一課題の反復実行データが不足するベンチマークに依存。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** エージェント実行の失敗原因を課題難度・モデル能力・偶然の失敗に分離。",
-      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** エージェント実行の失敗原因を課題難度・モデル能力・偶然の失敗に分離。\nLimitations: 限界:** 同一課題の反復実行データが不足するベンチマークに依存。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: Coding agentの部分軌跡で失敗を予測しても、実際は課題の難易度とモデル能力を予測しているだけで、途中実行の良否を分離できていないことを示した研究。\nObjective: エージェントを途中停止・再試行・モデル変更する判断が、実際にその回の失敗を予測する情報に基づくのか検証する。\nMethods: SWE-bench Verifiedの公開agent実行軌跡（1モデル×課題で通常1試行）に対して、部分軌跡を読む失敗予測器と、課題難度のみ／モデル能力のみを使うベースラインを比較。モデル切替時の真の利得、同一モデル・同一課題で繰り返したpilot試行のばらつきも分析。\nData and results: 課題難度だけを使う基準AUROC 0.92に対して軌跡予測器は約0.62。課題難度・モデル能力を統制した軌跡固有の予測利得は統計的にゼロと区別できず、保留実行のモデル切替も改善なし。反復試行では同じモデルが同じ課題に成功・失敗の両方を示した。\nNovelty: 新規性・意義:** エージェント実行の失敗原因を課題難度・モデル能力・偶然の失敗に分離。\nLimitations: 限界:** 同一課題の反復実行データが不足するベンチマークに依存。 定量値は著者要旨に基づく。"
     },
     {
       "title": "Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks",
@@ -4479,17 +4479,17 @@
       "url": "https://arxiv.org/abs/2611.08281",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "画像・音声等の偽造物を伴う多モーダル社会工学攻撃への個人AIエージェント耐性を評価するMultimodal-SEAを提案。全7モデルに一定の脆弱性。",
+      "objective": "テキスト主体の攻撃評価では見落とす、偽の画像・音声・文書等を伴う依頼からエージェントが不正なツール操作を行うリスクを測る。",
+      "methods": "実世界の詐欺事例を踏まえた14領域・152シナリオ・4難度の608専門家設計タスクを作成。中国語と英語の文化・場面差を含み、模擬アプリでのツール実行ログを正解判定に使用。攻撃段階を制御するmultimodal attack harnessで7マルチモーダルモデルを6次元評価。",
+      "results": "7モデルすべてで攻撃成功率7.1〜34.5%。多モーダル攻撃要素の追加で成功率が19.9%→29.2%に上昇。安全指示を強めると攻撃率は下がるが、偽造コンテンツの認識能力向上ではなく、正常要求の過剰拒否を伴う場合がある。",
       "novelty": "新規性・意義:** 文章だけでなく偽造マルチモーダル証拠を含む安全性評価。",
       "limitations": "限界:** 模擬アプリでの結果。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 文章だけでなく偽造マルチモーダル証拠を含む安全性評価。",
-      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 文章だけでなく偽造マルチモーダル証拠を含む安全性評価。\nLimitations: 限界:** 模擬アプリでの結果。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: 画像・音声等の偽造物を伴う多モーダル社会工学攻撃への個人AIエージェント耐性を評価するMultimodal-SEAを提案。全7モデルに一定の脆弱性。\nObjective: テキスト主体の攻撃評価では見落とす、偽の画像・音声・文書等を伴う依頼からエージェントが不正なツール操作を行うリスクを測る。\nMethods: 実世界の詐欺事例を踏まえた14領域・152シナリオ・4難度の608専門家設計タスクを作成。中国語と英語の文化・場面差を含み、模擬アプリでのツール実行ログを正解判定に使用。攻撃段階を制御するmultimodal attack harnessで7マルチモーダルモデルを6次元評価。\nData and results: 7モデルすべてで攻撃成功率7.1〜34.5%。多モーダル攻撃要素の追加で成功率が19.9%→29.2%に上昇。安全指示を強めると攻撃率は下がるが、偽造コンテンツの認識能力向上ではなく、正常要求の過剰拒否を伴う場合がある。\nNovelty: 新規性・意義:** 文章だけでなく偽造マルチモーダル証拠を含む安全性評価。\nLimitations: 限界:** 模擬アプリでの結果。 定量値は著者要旨に基づく。"
     },
     {
-      "title": "Agent-R2: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
+      "title": "Agent-R²: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
       "report": "reports/daily/2026-11-14.md",
       "reportDate": "2026-11-14",
       "source": "arXiv",
@@ -4498,14 +4498,14 @@
       "url": "https://arxiv.org/abs/2611.08219",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "実在の仕事に基づく資料や成果物の採点要件を収集して合成学習データを作り、4Bコーディング・生産性エージェントの実業務タスク遂行を改善するAgent-R²。",
+      "objective": "現実の業務で必要な多形式ファイルの理解、長期手順、納品物品質の評価を、合成教師データへ組み込み小型エージェントの能力を向上させる。",
+      "methods": "Web由来約1万の業務候補から実職種の業務要件、実文書・ファイル、成果物単位の詳細ルーブリックを結びつけ、4000業務タスクを合成。Agent-R²-4Bを教師あり微調整とルーブリック報酬の強化学習で事後学習し、GDPval・OfficeQAなどで比較。",
+      "results": "4000タスク学習したAgent-R²-4BがGDPval 51.0%（Qwen3-235B-A22B-Thinking-2507 48.0%）、OfficeQA 14.8%（同13.8%）を達成。表面だけ正しそうな成果物をすぐ作るshortcutも減少と報告。",
       "novelty": "新規性・意義:** 業務文書と納品物の採点基準を学習データへ組み込む。",
       "limitations": "限界:** タスク合成の品質と評価の偏りに注意。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 業務文書と納品物の採点基準を学習データへ組み込む。",
-      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 業務文書と納品物の採点基準を学習データへ組み込む。\nLimitations: 限界:** タスク合成の品質と評価の偏りに注意。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: 実在の仕事に基づく資料や成果物の採点要件を収集して合成学習データを作り、4Bコーディング・生産性エージェントの実業務タスク遂行を改善するAgent-R²。\nObjective: 現実の業務で必要な多形式ファイルの理解、長期手順、納品物品質の評価を、合成教師データへ組み込み小型エージェントの能力を向上させる。\nMethods: Web由来約1万の業務候補から実職種の業務要件、実文書・ファイル、成果物単位の詳細ルーブリックを結びつけ、4000業務タスクを合成。Agent-R²-4Bを教師あり微調整とルーブリック報酬の強化学習で事後学習し、GDPval・OfficeQAなどで比較。\nData and results: 4000タスク学習したAgent-R²-4BがGDPval 51.0%（Qwen3-235B-A22B-Thinking-2507 48.0%）、OfficeQA 14.8%（同13.8%）を達成。表面だけ正しそうな成果物をすぐ作るshortcutも減少と報告。\nNovelty: 新規性・意義:** 業務文書と納品物の採点基準を学習データへ組み込む。\nLimitations: 限界:** タスク合成の品質と評価の偏りに注意。 定量値は著者要旨に基づく。"
     },
     {
       "title": "SMART: State-based Multi Agent Reasoning Traces for Verification-oriented Problem-Solving",
@@ -4517,14 +4517,14 @@
       "url": "https://arxiv.org/abs/2611.08196",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "明示的に与えられていない関係者の状態を複数LLMで仮説化し、外部の実世界知識で検証した補助前提を用いて科学的主張を検証するSMART。",
+      "objective": "文脈が不足する複雑な主張について、検証可能な背景知識を収集して誤った推論を減らす。",
+      "methods": "複数LLMへ異なる役割を割り当て、主張に登場する事物・関係者の暗黙状態から多様かつ相補的な前提を作る。実世界で裏付け可能な前提を選び、それを検証推論の入力に追加。3データセットの科学的な主張検証タスクで比較。",
+      "results": "3つの複雑な科学的主張データセットで検証性能が最大20%改善。生成前提を実世界知識に結びつけること自体の寄与は最大5%と報告。",
       "novelty": "新規性・意義:** 曖昧な推論を検証可能な前提に分解する。",
       "limitations": "限界:** 要旨で改善の基準が限定的。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 曖昧な推論を検証可能な前提に分解する。",
-      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 曖昧な推論を検証可能な前提に分解する。\nLimitations: 限界:** 要旨で改善の基準が限定的。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: 明示的に与えられていない関係者の状態を複数LLMで仮説化し、外部の実世界知識で検証した補助前提を用いて科学的主張を検証するSMART。\nObjective: 文脈が不足する複雑な主張について、検証可能な背景知識を収集して誤った推論を減らす。\nMethods: 複数LLMへ異なる役割を割り当て、主張に登場する事物・関係者の暗黙状態から多様かつ相補的な前提を作る。実世界で裏付け可能な前提を選び、それを検証推論の入力に追加。3データセットの科学的な主張検証タスクで比較。\nData and results: 3つの複雑な科学的主張データセットで検証性能が最大20%改善。生成前提を実世界知識に結びつけること自体の寄与は最大5%と報告。\nNovelty: 新規性・意義:** 曖昧な推論を検証可能な前提に分解する。\nLimitations: 限界:** 要旨で改善の基準が限定的。 定量値は著者要旨に基づく。"
     },
     {
       "title": "PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?",
@@ -4536,14 +4536,14 @@
       "url": "https://arxiv.org/abs/2611.08175",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "プリント基板の自動配線を、全体の接続計画とKiCadによる実配線に分離したPCBRouteAgent。4難度分割で高い通過率を示すが最難例は40%。",
+      "objective": "複雑なPCBの接続順序・通路・層切替の判断と、設計ルールを守る局所配線を組み合わせ、実PCB配線の成功率を上げる。",
+      "methods": "Global Routing Plannerが基板画像と電気・幾何構造からネット接続順、通路、ビア移動を設計。Detailed Routing ExecutorがKiCadのnative配線エンジンで実装し、失敗した経路だけ構造化feedbackでplannerへ返す。合成・実PCB計247枚、PCBWorld-Benchの4分割で比較。",
+      "results": "D2、D3-A、D3-B、D3-Cの制約を全通過する率は100%、94.9%、100%、40%。実3分割では最良の比較方法に対し+13.9、+36、+10ポイント。",
       "novelty": "新規性・意義:** 大域計画と局所的な物理配線を分離。",
       "limitations": "限界:** 最難分割では成功率40%にとどまる。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 大域計画と局所的な物理配線を分離。",
-      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 大域計画と局所的な物理配線を分離。\nLimitations: 限界:** 最難分割では成功率40%にとどまる。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: プリント基板の自動配線を、全体の接続計画とKiCadによる実配線に分離したPCBRouteAgent。4難度分割で高い通過率を示すが最難例は40%。\nObjective: 複雑なPCBの接続順序・通路・層切替の判断と、設計ルールを守る局所配線を組み合わせ、実PCB配線の成功率を上げる。\nMethods: Global Routing Plannerが基板画像と電気・幾何構造からネット接続順、通路、ビア移動を設計。Detailed Routing ExecutorがKiCadのnative配線エンジンで実装し、失敗した経路だけ構造化feedbackでplannerへ返す。合成・実PCB計247枚、PCBWorld-Benchの4分割で比較。\nData and results: D2、D3-A、D3-B、D3-Cの制約を全通過する率は100%、94.9%、100%、40%。実3分割では最良の比較方法に対し+13.9、+36、+10ポイント。\nNovelty: 新規性・意義:** 大域計画と局所的な物理配線を分離。\nLimitations: 限界:** 最難分割では成功率40%にとどまる。 定量値は著者要旨に基づく。"
     },
     {
       "title": "QRAE: Query-Relevant Attention Entropy for Context Compression in DeepSearch Agents",
@@ -4555,14 +4555,14 @@
       "url": "https://arxiv.org/abs/2611.07976",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "DeepSearchエージェントの長い検索文脈から、再推論に必要な証拠chunkだけ残し、重要な情報は再評価可能にするQRAE圧縮。",
+      "objective": "検索結果の一律要約を避け、回答品質を維持しながらtoken・レイテンシを減らす。",
+      "methods": "少数の根拠評価attention headを用い、質問あり／なしの2種類のprefill差で各retrieved chunkへの関心を評価。正のattention応答の正規化entropyで証拠候補を順位付けし、高得点を恒久whitelist、曖昧なものを再検索可能なcacheへ保存。複数DeepSearchベンチマークと約100B級までのモデルを評価。",
+      "results": "複数のDeepSearchベンチマークで平均成功率+2.35ポイント、エンドツーエンド遅延30%減、報告token使用45%減。追加の生成圧縮パスやattention operator改変は不要。",
       "novelty": "新規性・意義:** 不要な検索結果を削りつつ証拠の再評価可能性を保持。",
       "limitations": "限界:** 選別に使う注意指標とモデル依存性。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 不要な検索結果を削りつつ証拠の再評価可能性を保持。",
-      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 不要な検索結果を削りつつ証拠の再評価可能性を保持。\nLimitations: 限界:** 選別に使う注意指標とモデル依存性。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-05\nread_level: abstract\nTags: []\nSummary: DeepSearchエージェントの長い検索文脈から、再推論に必要な証拠chunkだけ残し、重要な情報は再評価可能にするQRAE圧縮。\nObjective: 検索結果の一律要約を避け、回答品質を維持しながらtoken・レイテンシを減らす。\nMethods: 少数の根拠評価attention headを用い、質問あり／なしの2種類のprefill差で各retrieved chunkへの関心を評価。正のattention応答の正規化entropyで証拠候補を順位付けし、高得点を恒久whitelist、曖昧なものを再検索可能なcacheへ保存。複数DeepSearchベンチマークと約100B級までのモデルを評価。\nData and results: 複数のDeepSearchベンチマークで平均成功率+2.35ポイント、エンドツーエンド遅延30%減、報告token使用45%減。追加の生成圧縮パスやattention operator改変は不要。\nNovelty: 新規性・意義:** 不要な検索結果を削りつつ証拠の再評価可能性を保持。\nLimitations: 限界:** 選別に使う注意指標とモデル依存性。 定量値は著者要旨に基づく。"
     },
     {
       "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
@@ -4574,14 +4574,14 @@
       "url": "https://arxiv.org/abs/2611.06914",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "社会シミュレーションで、LLMが同じ意味の言い換えに不安定な理由を評価するため、文脈を段階的に豊かにする操作と、重要な世界変化には反応すべきというselective robustnessを定義。",
+      "objective": "単なる出力不変性を目標とせず、意味を変えないprompt変動には頑健、判断に関係する状況変化には適応する社会的エージェントを評価する。",
+      "methods": "中立のpadding、一般的な社会背景、意思決定状況の説明、規範的根拠の4種類の文脈増強規則を構築。囚人のジレンマに類似する社会ゲームで2モデルを用い、言い換えと実際の意思決定情報変更に対する反応を比較。",
+      "results": "4種類の文脈増強は異なる行動・頑健性を生み、効果の方向は2モデル間でも異なることを確認。要旨に全体の共通改善率や絶対スコアはない。",
       "novelty": "新規性・意義:** 頑健性を単なる出力不変性と区別。",
       "limitations": "限界:** ゲーム・2モデルでの実証。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 頑健性を単なる出力不変性と区別。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 頑健性を単なる出力不変性と区別。\nLimitations: 限界:** ゲーム・2モデルでの実証。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: 社会シミュレーションで、LLMが同じ意味の言い換えに不安定な理由を評価するため、文脈を段階的に豊かにする操作と、重要な世界変化には反応すべきというselective robustnessを定義。\nObjective: 単なる出力不変性を目標とせず、意味を変えないprompt変動には頑健、判断に関係する状況変化には適応する社会的エージェントを評価する。\nMethods: 中立のpadding、一般的な社会背景、意思決定状況の説明、規範的根拠の4種類の文脈増強規則を構築。囚人のジレンマに類似する社会ゲームで2モデルを用い、言い換えと実際の意思決定情報変更に対する反応を比較。\nData and results: 4種類の文脈増強は異なる行動・頑健性を生み、効果の方向は2モデル間でも異なることを確認。要旨に全体の共通改善率や絶対スコアはない。\nNovelty: 新規性・意義:** 頑健性を単なる出力不変性と区別。\nLimitations: 限界:** ゲーム・2モデルでの実証。 定量値は著者要旨に基づく。"
     },
     {
       "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
