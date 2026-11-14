@@ -1209,10 +1209,10 @@
     }
   },
   "unresolved": {
-    "pmid:42213562": "Primary-source exact publication date not available",
-    "pmid:42430567": "Primary-source exact publication date not available",
-    "pmid:42482648": "Primary-source exact publication date not available",
-    "pmid:42503595": "Primary-source exact publication date not available",
-    "pmid:42547906": "Primary-source exact publication date not available"
+    "pmid:42213562": "No exact online publication date in PubMed page metadata",
+    "pmid:42430567": "No exact online publication date in PubMed page metadata",
+    "pmid:42482648": "No exact online publication date in PubMed page metadata",
+    "pmid:42503595": "No exact online publication date in PubMed page metadata",
+    "pmid:42547906": "No exact online publication date in PubMed page metadata"
   }
 }
