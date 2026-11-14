@@ -5,11 +5,53 @@
 
 ## ダイジェスト
 
-選定139件中、以下は原著照合・編集確認を終えた24件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
+選定139件中、以下は原著照合・編集確認を終えた66件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
 
 研究の流れと2026年論文との接続は [文献集の案内](README.md) を参照。
 
 ## 完全版レポート
+
+### Paper: Unlocking clinical data from narrative reports: a study of natural language processing
+- Source: PubMed
+- Canonical ID: pmid:7702231
+- Publication date: 1995-05-01
+- URL: https://pubmed.ncbi.nlm.nih.gov/7702231/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 胸部X線レポートから6所見を抽出し、NLPと医師の間の不一致を医師間の不一致と比較した。
+- Objective: 文章に含まれる病態の自動検出が、医師による記録解釈にどこまで近いか調べる。
+- Methods: 入院時レポート200件で、汎用NLP、内科医6人、放射線科医6人、一般人6人、他3手法を比較。1文書あたりの不一致所見数と、医師多数決への感度・特異度を測った。
+- Data and results: 医師間の平均距離0.24、NLP対医師0.26で有意差なし。NLPの感度81%、特異度98%、医師平均は85%・98%。一般人と他手法の不一致は大きかった。
+- Novelty: 人の解釈自体に不一致があることを踏まえ、自動抽出の妥当性を相対的に評価した。
+- Limitations: 著者も胸部画像レポートの6所見に限定された領域とする。編者の注意: 画像の診断研究ではなく文章の抽出研究で、他の記録形式への一般化は未確定。
+
+### Paper: Automated encoding of clinical documents based on natural language processing
+- Source: PubMed
+- Canonical ID: pmid:15187068
+- Publication date: 2004-06-07
+- URL: https://pubmed.ncbi.nlm.nih.gov/15187068/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: MedLEEの構造化出力をUMLSコードと修飾情報へ写像し、文章の検索可能性を高めた。
+- Objective: 臨床文書の所見を最も具体的な概念コードへ、自動で修飾情報も保持して変換する。
+- Methods: MedLEEが抽出する所見・修飾を照合してコードを生成。再現率と適合率を別々の無作為150文で測り、7専門家の参照と比較した。
+- Data and results: 全用語のコード再現率0.77、対応UMLSコードのある用語では0.83。用語抽出の再現率0.84、コード適合率0.89で、専門家間の性能範囲に近かった。
+- Novelty: 単語にコードを貼るだけでなく、構造化された臨床所見と関連修飾をコード化へ接続した。
+- Limitations: 編者の注意: 再現率・適合率は異なる文集合で測定され、文書全体の正確さとは異なる。辞書にコードがない用語の扱いと他施設への適用は別途検討が必要。
+
+### Paper: Automated identification of postoperative complications within an electronic medical record using natural language processing
+- Source: PubMed
+- Canonical ID: pmid:21862746
+- Publication date: 2011-08-24
+- URL: https://pubmed.ncbi.nlm.nih.gov/21862746/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 術後合併症を診療文書から抽出すると、退院コードだけの監視より多くの事例を拾えた。
+- Objective: 患者安全上のイベントを、行政コードに加えて自由記載から把握する価値を調べる。
+- Methods: VHA6施設の入院手術患者2,974人を横断解析。記録レビューを基準に、透析を要する腎不全、血栓塞栓、敗血症、肺炎、心筋梗塞をNLPと退院コード指標で比較した。
+- Data and results: 感度はNLP対コードで腎不全82%対38%、肺炎64%対5%、敗血症89%対34%、心筋梗塞91%対89%。双方とも高い特異度だが、NLPは相対的に低かった。
+- Novelty: 診断コードに記録されにくい合併症を、文章を使う追加監視経路で捕捉した。
+- Limitations: 編者の注意: 過去の合併症を同定する研究であり、発症前の予測ではない。VHAの記録に基づく感度向上と、特異度低下・確認作業の増加を併せて評価する必要がある。
 
 ### Paper: Development and evaluation of a de-identification procedure for a case register sourced from mental health electronic records
 - Source: PubMed
@@ -25,6 +67,34 @@
 - Novelty: 文字列除去のスコアに加え、複数情報の組合せとアクセス保護を含めた研究データの匿名性を評価した。
 - Limitations: 著者は綴り誤りによる識別情報の残存や、匿名化後の推測可能性を認める。高い抽出性能だけでは匿名性を保証できず、セキュリティ運用との併用が必要。
 
+### Paper: An overview of the BIOASQ large-scale biomedical semantic indexing and question answering competition
+- Source: PubMed
+- Canonical ID: pmid:25925131
+- Publication date: 2015-04-30
+- URL: https://pubmed.ncbi.nlm.nih.gov/25925131/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: BioASQの初回競技は医学索引付けと、根拠検索から回答生成までを共通基盤で評価した。
+- Objective: 医学の自然言語質問に対し、論文・オントロジーを使って簡潔で理解可能な回答を返す技術を比較する。
+- Methods: 2013年競技でPubMed新規文書のMeSH自動付与とQAを設定。QAは専門家が作った開発29問・テスト282問で、exact回答と段落形式のideal回答などを評価した。
+- Data and results: 索引付け12チーム46実行のうち1チームがNLMのMTIを継続的に上回った。QAは3チーム11実行で、ideal回答の手動評価が良好と報告。要旨に数値スコアはない。
+- Novelty: 索引、文書・断片・知識検索、短答、要約を、医学QAの一連の構成要素として共通評価した。
+- Limitations: 編者の注意: 初回競技の限られた質問と参加数の結果である。医学専門家向けQAの性能を患者への個別助言の安全性と同一視できない。
+
+### Paper: Locality Sensitive Deep Learning for Detection and Classification of Nuclei in Routine Colon Cancer Histology Images
+- Source: PubMed
+- Canonical ID: pmid:26863654
+- Publication date: 2016-02-04
+- URL: https://pubmed.ncbi.nlm.nih.gov/26863654/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 大腸癌病理で核中心を検出し、近隣の予測を利用して核の種類を分類する方法。
+- Objective: 細胞の多様性が大きいH&E画像で、核の精密な分割なしに位置と分類を推定する。
+- Methods: SC-CNNで核中心付近に高確率が集まるよう回帰し、CNNとNeighboring Ensemble Predictorで分類。4クラス、2万超の注釈核を含む大腸腺癌画像で比較した。
+- Data and results: 検出と分類の組合せで、比較した近年の手法中で最良の平均F1を報告。要旨にF1の具体値やクラス別結果はない。
+- Novelty: 核の境界分割を前提にせず、空間的制約付き中心検出と近隣を使う分類を接続した。
+- Limitations: 編者の注意: 大腸腺癌の注釈画像での結果であり、他臓器や染色条件の変化に対する性能は要旨から不明。定量的組織解析の臨床利益は将来の可能性である。
+
 ### Paper: Prediction of In-hospital Mortality in Emergency Department Patients With Sepsis: A Local Big Data-Driven, Machine Learning Approach
 - Source: PubMed
 - Canonical ID: pmid:26679719
@@ -38,6 +108,20 @@
 - Data and results: 4,676人の5,278受診。検証AUCはランダムフォレスト0.86、CART0.69、回帰0.76、CURB-65 0.73、MEDS0.71、mREMS0.72。各比較でp≤0.003。
 - Novelty: 地域の実診療データから、その施設群に適した高次元予測器を作る実例を示した。
 - Limitations: 著者は前向き評価と患者転帰改善の検証を求める。編者の注意: 受診単位の無作為分割であり、独立した病院への外部検証とは区別する。
+
+### Paper: Lung Pattern Classification for Interstitial Lung Diseases Using a Deep Convolutional Neural Network
+- Source: PubMed
+- Canonical ID: pmid:26955021
+- Publication date: 2016-02-29
+- URL: https://pubmed.ncbi.nlm.nih.gov/26955021/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 間質性肺疾患のCTパッチを、手作業特徴に代えてCNNで7パターンに分類した。
+- Objective: 肺の複雑な組織パターンを自動識別し、鑑別診断支援につながる特徴学習を評価する。
+- Methods: 2×2カーネルの5畳み込み層、LeakyReLU、平均poolingと3全結合層を使用。複数施設・機器の120CTから14,696パッチを抽出し、正常やすりガラス影など7クラスで比較した。
+- Data and results: 分類性能は約85.5%と報告。要旨は旧来手法に対する有効性を述べるが、クラス別性能や患者単位の診断精度は示さない。
+- Novelty: 一般画像の特徴設計を転用するだけでなく、肺パターン分類用の深い畳み込み表現を設計した。
+- Limitations: 著者は3次元化と鑑別診断システムへの統合を今後の課題とする。パッチ分類をCT全体の疾患診断と同一視できず、患者単位の分割条件も本文確認が必要。
 
 ### Paper: Deep Patient: An Unsupervised Representation to Predict the Future of Patients from the Electronic Health Records
 - Source: PubMed
@@ -53,6 +137,20 @@
 - Novelty: 教師なし患者表現を共有し、異なる疾患の予測器へ展開する枠組みを示した。
 - Limitations: 編者の注意: 教師なしなのは表現学習であり、最終的な疾患予測全体を指さない。単一医療システムでの評価で、施設間移植や治療効果は別途検証が必要。
 
+### Paper: Deep learning as a tool for increased accuracy and efficiency of histopathological diagnosis
+- Source: PubMed
+- Canonical ID: pmid:27212078
+- Publication date: 2016-05-23
+- URL: https://pubmed.ncbi.nlm.nih.gov/27212078/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 前立腺生検と乳癌リンパ節の病理で、良性スライドを自動除外する支援の可能性を示した。
+- Objective: 癌病理診断の増大する作業量に対し、精度と効率を両立する深層学習の利用を検討する。
+- Methods: 前立腺癌の同定とセンチネルリンパ節の乳癌転移検出という2事例で、追加免疫染色や人の介入なしの自動解析を評価した。
+- Data and results: 検証した癌含有スライドおよび微小・大転移をすべて検出し、良性・正常スライドの30–40%を除外できた。要旨に全対象数や信頼区間はない。
+- Novelty: 全診断を置き換える用途に限らず、明らかな陰性例の選別で読影負担を減らす設計を示した。
+- Limitations: 編者の注意: 『すべて検出』は研究標本内の結果で、母集団での感度100%を保証しない。実診療の作業時間や見逃しへの影響は追加評価が必要。
+
 ### Paper: Using recurrent neural network models for early detection of heart failure onset
 - Source: PubMed
 - Canonical ID: pmid:27521897
@@ -67,6 +165,49 @@
 - Novelty: 集計された診療コードだけでなく、時刻を持つイベント列から患者の経過を学習する意義を示した。
 - Limitations: 編者の注意: 12・18か月は入力する履歴の長さであり、予測の先行時間ではない。単一医療システムの症例対照設計で、実診療での陽性的中率や転帰改善は未検証。
 - Publication date note: 出版社PDFのAdvance Access Publication Dateを採用。巻号の2017年3月と区別する。出典: https://academic.oup.com/jamia/article/24/2/361/2631499
+
+### Paper: Improved Automated Detection of Diabetic Retinopathy on a Publicly Available Dataset Through Integration of Deep Learning
+- Source: PubMed
+- Canonical ID: pmid:27701631
+- Publication date: 2016-10-01
+- URL: https://pubmed.ncbi.nlm.nih.gov/27701631/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 同じ公開眼底データで、深層学習を加えた糖尿病網膜症検出器を従来版と比較した。
+- Objective: 元のIowa Detection Programの感度を保ちながら特異度を改善できるか検証する。
+- Methods: 学習に用いなかったMessidor-2と網膜専門医3人の既存合意基準を使用し、紹介を要する網膜症についてIDx-DR X2.1を評価した。
+- Data and results: 感度96.8%、特異度87.0%、陰性的中率99.0%、AUC0.980。偽陰性は6/874、重症非増殖・増殖網膜症や黄斑浮腫の見逃しはなかった。感度差は非有意、特異度は従来版より有意に高かった。
+- Novelty: 基本的な検出器を揃えた比較で、深層学習部品の追加が特異度へ与える効果を評価した。
+- Limitations: 編者の注意: 同じ公開データ上の既報との比較であり、前向き導入試験ではない。陰性的中率は有病率に依存し、失明予防効果はこの結果だけでは示せない。
+
+### Paper: Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs
+- Source: PubMed
+- Canonical ID: pmid:27898976
+- Publication date: 2016-11-29
+- URL: https://pubmed.ncbi.nlm.nih.gov/27898976/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 眼底写真から紹介を要する糖尿病網膜症を検出し、閾値による感度と特異度の変化を示した。
+- Objective: 糖尿病網膜症・黄斑浮腫の自動検出を、多数の眼科医による判定基準で検証する。
+- Methods: 128,175画像でCNNを学習し、独立したEyePACS-1とMessidor-2で評価。専門医パネルの多数決を正解とし、高特異度・高感度の2閾値を事前に選択した。
+- Data and results: AUCはEyePACS-1（9,963画像）0.991、Messidor-2（1,748画像）0.990。高感度閾値では感度97.5%・96.1%、特異度93.4%・93.9%だった。
+- Novelty: 大規模な複数医師のラベルと独立画像群を使い、紹介判断に直結する動作点を評価した。
+- Limitations: 著者は臨床導入の実行可能性とケア・転帰改善の追加検証を求める。編者の注意: 評価可能な画像上の検出性能と、撮影不良を含む実運用の性能を区別する。
+- Publication date note: 著者所属機関が公開する出版社版PDFのPublished Online November 29, 2016を採用。12月13日の巻号・訂正日と区別。出典: https://storage.googleapis.com/gweb-research2023-media/pubtools/3679.pdf
+
+### Paper: Natural language processing to extract symptoms of severe mental illness from clinical text: the Clinical Record Interactive Search Comprehensive Data Extraction (CRIS-CODE) project
+- Source: PubMed
+- Canonical ID: pmid:28096249
+- Publication date: 2017-01-17
+- URL: https://pubmed.ncbi.nlm.nih.gov/28096249/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: CRIS-CODEは精神科退院要約から広い症状群を抽出し、病名をまたぐ症状の分布を調べた。
+- Objective: 重症精神疾患の主要症状を診療文書から取り出し、二次研究に利用できるようにする。
+- Methods: 精神科医が50症状を選び、TextHunterとCRISで抽出器を開発。重症精神疾患7,962人の23,128要約と、その他7,575人の13,496要約で分布を記述した。
+- Data and results: 性能不良の4症状を除いた46症状でF1中央値0.88。重症疾患患者の87%、その他の60%から症状を抽出し、多くの症状が診断を横断した。
+- Novelty: 単独症状や病名の抽出から、複数の症状領域を横断して再利用できる臨床表現型へ広げた。
+- Limitations: 編者の注意: 単一提供者の英語退院要約であり、記録されない症状は把握できない。抽出された言及を現在症状や診断の確定と混同しない。
 
 ### Paper: Dermatologist-level classification of skin cancer with deep neural networks
 - Source: PubMed
@@ -96,6 +237,48 @@
 - Novelty: 同じ臨床データ上で手法を比較し、アルゴリズムの高度化だけでは予測力が伸びない例を示した。
 - Limitations: 編者の注意: このレジストリと予測転帰に関する陰性結果であり、機械学習全般の無効性を示さない。無作為分割での検証と新施設への移植も区別する。
 
+### Paper: A Dataset and a Technique for Generalized Nuclear Segmentation for Computational Pathology
+- Source: PubMed
+- Canonical ID: pmid:28287963
+- Publication date: 2017-03-06
+- URL: https://pubmed.ncbi.nlm.nih.gov/28287963/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 多施設・多臓器の核境界データと、画素・物体両方の誤りを評価する分割基盤を提供した。
+- Objective: 密集・接触する核や外観の多様性に対応し、病理画像の核分割を比較可能にする。
+- Methods: 医師が質を確認した21,000超のH&E核境界を公開。物体と画素の誤りを統合する指標と、接触・重複核の境界を重視する深層分割法を提案した。
+- Data and results: 複数病院・患者・病態・臓器の画像を収集し、多様なテスト画像で良好な分割を報告。要旨に具体的なスコアや外部施設別結果はない。
+- Novelty: 核分割アルゴリズムに加え、汎化を促す公開注釈と統一した評価指標を揃えた。
+- Limitations: 編者の注意: 多様な収集元は汎化の期待を高めるが、任意のH&E画像で調整不要という保証ではない。注釈基準と臓器別誤差を確認する必要がある。
+
+### Paper: Fully Automated Detection and Quantification of Macular Fluid in OCT Using Deep Learning
+- Source: PubMed
+- Canonical ID: pmid:29224926
+- Publication date: 2017-12-08
+- URL: https://pubmed.ncbi.nlm.nih.gov/29224926/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: OCTの網膜内・網膜下液を自動検出・定量し、疾患と撮像機器をまたいで評価した。
+- Objective: 眼科で重要な液体の種類・位置・量を、専門家に近い一貫性で測定する。
+- Methods: AMD・DME・網膜静脈閉塞各400件、2機器各600件の計1,200OCTボリュームを使用。盲検評価者2人の手動合意を基準に深層モデルを比較した。
+- Data and results: 網膜内嚢胞状液の平均AUC0.94、適合率0.91、再現率0.84。網膜下液は0.92、0.61、0.81。自動・手動定量の相関はそれぞれ0.90、0.96だった。
+- Novelty: 単なる液体の有無から、液体種別の局在・体積評価を複数疾患・機器へ広げた。
+- Limitations: DMEの網膜下液例は少なく、他疾患より性能が低かった。編者の注意: 高いAUCと相関でも、適合率や体積の絶対誤差まで良好とは限らない。
+
+### Paper: Diagnostic Assessment of Deep Learning Algorithms for Detection of Lymph Node Metastases in Women With Breast Cancer
+- Source: PubMed
+- Canonical ID: pmid:29234806
+- Publication date: 2017-12-12
+- URL: https://pubmed.ncbi.nlm.nih.gov/29234806/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: CAMELYON16は乳癌リンパ節転移の検出を、時間制限の条件を分けて病理医と比較した。
+- Objective: 全スライド病理画像の転移検出で、深層モデルが診断業務をどこまで支援できるか調べる。
+- Methods: オランダ2施設の学習270スライド、独立テスト129スライドを使用。11病理医の2時間の模擬診断と、1病理医の時間無制限判定に対して競技モデルを比較した。
+- Data and results: モデルAUCは0.556–0.994。最良モデルの0.994は時間制限あり病理医の平均0.810を上回り、病変検出では時間無制限の専門医に匹敵した。
+- Novelty: モデル対人の比較で、全スライド分類・病変検出・読影時間という異なる条件を明示した。
+- Limitations: 著者は実臨床での有用性検証が必要とする。競技と診断模擬環境の結果であり、時間無制限の専門医を一律に上回るという結論ではない。
+
 ### Paper: Federated learning of predictive models from federated Electronic Health Records
 - Source: PubMed
 - Canonical ID: pmid:29500022
@@ -124,6 +307,20 @@
 - Novelty: 州規模の共有記録と時間を分けた検証を使い、翌年発症リスクの運用を検討した。
 - Limitations: 編者の注意: 前向きの予測検証や導入は、介入の無作為試験とは異なる。利用頻度・社会経済指標の関連から高血圧の因果的要因を確定できない。
 
+### Paper: CLAMP - a toolkit for efficiently building customized clinical natural language processing pipelines
+- Source: PubMed
+- Canonical ID: pmid:29186491
+- Publication date: 2018-03-01
+- URL: https://pubmed.ncbi.nlm.nih.gov/29186491/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: CLAMPはGUIと臨床NLP部品を提供し、用途に合わせた抽出処理の構築を支援する。
+- Objective: 専門的なNLP技能が限られる利用者でも、既存システムを個別課題へ調整しやすくする。
+- Methods: 名前付き実体認識・概念コード化などの既定部品とGUIを統合。既定処理を評価し、喫煙状態・検査値の2用途でカスタマイズを実演した。
+- Data and results: 既定パイプラインで良好な認識・コード化性能、2用途で効率的な構築を報告。要旨に精度値、作業時間、対象文書数は記載されない。
+- Novelty: 単一の完成済み抽出器ではなく、GUIを介して部品を組み替える臨床NLP開発環境を提供した。
+- Limitations: 編者の注意: 研究利用での公開は、任意の施設で調整不要な精度や臨床運用を保証しない。カスタマイズの効率と出力の品質は用途ごとに確認が必要。
+
 ### Paper: Predicting suicide attempts in adolescents with longitudinal clinical data and machine learning
 - Source: PubMed
 - Canonical ID: pmid:29709069
@@ -138,6 +335,21 @@
 - Novelty: 予測時点、似た症状を持つ対照、確率の校正を同時に評価し、高いAUCだけに依存しない検討を行った。
 - Limitations: 編者の注意: 対照選択でAUCは大きく変わる。後ろ向きの非致死的企図予測であり、自殺死亡の予測精度や支援介入の効果を示す結果ではない。
 
+### Paper: Automated Diagnosis of Plus Disease in Retinopathy of Prematurity Using Deep Convolutional Neural Networks
+- Source: PubMed
+- Canonical ID: pmid:29801159
+- Publication date: 2018-05-02
+- URL: https://pubmed.ncbi.nlm.nih.gov/29801159/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 未熟児網膜症のplus diseaseを眼底写真から判定し、専門医との一致を比較した。
+- Objective: 主観的な血管拡張・蛇行の判定を支援し、plus diseaseの診断のばらつきを減らす。
+- Methods: 8大学施設の5,511写真に専門医合意と臨床診断から参照ラベルを設定。5分割交差検証と独立100画像で評価し、経験豊かな8専門医と比較した。
+- Data and results: 独立テストでplusの感度93%、特異度94%。pre-plus以上は感度100%、特異度94%。3クラスの重み付きκは0.92で、8専門医中6人を上回った。
+- Novelty: 主観差の大きい疾患所見を合意基準で学習し、二値検出と重症度分類を併せて評価した。
+- Limitations: 編者の注意: 独立テストは100画像と小さく、治療判断全体や視力予後の改善は未検証。参照も医師の合意に基づき、全病期の診断能力を示すものではない。
+- Publication date note: PMC掲載原著のオンライン公開日2018-05-02を採用。巻号の2018年7月と区別。出典: https://pmc.ncbi.nlm.nih.gov/articles/6136045/
+
 ### Paper: Scalable and accurate deep learning with electronic health records
 - Source: PubMed
 - Canonical ID: pmid:31304302
@@ -151,6 +363,161 @@
 - Data and results: 24時間以上入院した成人216,221人、約469億データ点。施設別AUROCは院内死亡0.93–0.94、30日予定外再入院0.75–0.76、長期入院0.85–0.86。退院診断の頻度加重AUROCは0.90。
 - Novelty: 課題別の手作業による特徴量選択から、診療録全体を再利用する汎用的な患者系列表現への転換を示した。
 - Limitations: 編者の注意: 2施設での予測性能は、独立した他施設への移植性や介入による患者転帰改善の証明ではない。AUROCだけでは校正や警報負担を評価できない。
+
+### Paper: Identifying Suicide Ideation and Suicidal Attempts in a Psychiatric Clinical Research Database using Natural Language Processing
+- Source: PubMed
+- Canonical ID: pmid:29743531
+- Publication date: 2018-05-09
+- URL: https://pubmed.ncbi.nlm.nih.gov/29743531/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 精神科データベースの自由記載から、自殺念慮と企図の言及を別々のNLP手法で抽出した。
+- Objective: 小規模調査や回想の制約を補い、既存診療記録から大規模な研究用情報を得る。
+- Methods: 念慮はルールベース、企図は機械学習とルールのハイブリッドで分類。症状コードや既知の予測因子を必須とせず、精神科記録内の言及を評価した。
+- Data and results: 両分類器で良好な抽出性能を報告するが、要旨に対象数、F1、感度・特異度の具体値はない。要求に応じて分類条件を修正できるとする。
+- Novelty: 念慮と企図を区別し、記録習慣や研究目的に合わせて調整可能な抽出器を提供した。
+- Limitations: 編者の注意: 記録中の言及を見つける研究で、将来の企図・死亡を予測する研究ではない。他施設への適応には臨床記録の知識が必要と著者も条件付けている。
+
+### Paper: Deep Learning Techniques for Automatic MRI Cardiac Multi-Structures Segmentation and Diagnosis: Is the Problem Solved?
+- Source: PubMed
+- Canonical ID: pmid:29994302
+- Publication date: 2018-05-17
+- URL: https://pubmed.ncbi.nlm.nih.gov/29994302/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: ACDCは心臓MRIの分割と診断を共通データで比較し、自動臨床指標の精度と失敗例を示した。
+- Objective: 心筋・左右心室の分割と病態分類で、深層学習が専門家の解析にどこまで近づいたか測る。
+- Methods: 複数機器の150件の心臓MRIに、2専門医の参照測定と分類を付与。MICCAI 2017の参加法を分割9グループ、分類4グループについて評価した。
+- Data and results: 最良手法では臨床指標の自動抽出と専門家の相関が平均0.97、自動診断accuracyは0.96。失敗する状況も同定し、データと詳細結果を公開した。
+- Novelty: 画素分割だけでなく、測定値と疾患分類まで含めた再利用可能な心臓MRI評価基盤を提供した。
+- Limitations: 編者の注意: 相関0.97はDiceや絶対的な測定一致度ではない。最良モデルの競技成績だけで、心臓MRI解析全体が解決したとは判断できない。
+
+### Paper: Clinically applicable deep learning for diagnosis and referral in retinal disease
+- Source: PubMed
+- Canonical ID: pmid:30104768
+- Publication date: 2018-08-13
+- URL: https://pubmed.ncbi.nlm.nih.gov/30104768/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 3次元OCTを組織分割へ変換し、複数の網膜疾患の紹介判断と機器間の移植性を検討した。
+- Objective: 多数の疾患が混在する眼科紹介経路で、3次元画像から専門家に匹敵する紹介勧告を行う。
+- Methods: 主要眼科病院の14,884スキャンで深層モデルを学習。中間の組織分割を機器に依存しない表現として使い、異なる装置の分割でも判断を評価した。
+- Data and results: 視力を脅かす複数疾患の紹介勧告で専門家に匹敵または上回り、別機器の分割でも精度を維持。要旨に具体的な正解率や対象患者数はない。
+- Novelty: 画像から直接判断するだけでなく、組織表現を介して機器差に対応する臨床経路を設計した。
+- Limitations: 編者の注意: 機器間の移植結果と、任意の施設・疾患での汎化は異なる。紹介勧告の精度は、導入後の視力転帰改善を直接示さない。
+
+### Paper: A comparison of word embeddings for the biomedical natural language processing
+- Source: PubMed
+- Canonical ID: pmid:30217670
+- Publication date: 2018-09-12
+- URL: https://pubmed.ncbi.nlm.nih.gov/30217670/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 医学用語をよく表す埋め込みが、すべての下流NLP課題で最良とは限らないことを示した。
+- Objective: 臨床文書、医学論文、Wikipedia、ニュースのどの学習資源が医学NLPへ有用か比較する。
+- Methods: Mayo EHR、PMC論文、GloVe、Google Newsの埋め込みを、類似語の手動確認、4つの意味類似度データ、情報抽出・検索・関係抽出の共有課題で評価した。
+- Data and results: EHR埋め込みは専門家の類似度判断に近く、臨床抽出F1は最良0.900。一方、検索はどの埋め込みでも改善せず、関係抽出はGoogle Newsが最良F1 0.790だった。
+- Novelty: 語の意味を測る内的評価と実用課題の外的評価を分け、医学コーパスの利点が課題依存であると示した。
+- Limitations: 編者の注意: コーパスと埋め込みの学習条件が異なる比較で、領域適合だけの因果効果ではない。静的単語表現の結果を後年の文脈モデルへ一律に適用できない。
+
+### Paper: Classification and mutation prediction from non-small cell lung cancer histopathology images using deep learning
+- Source: PubMed
+- Canonical ID: pmid:30224757
+- Publication date: 2018-09-17
+- URL: https://pubmed.ncbi.nlm.nih.gov/30224757/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 肺癌の病理画像から組織型を分類し、一部の遺伝子変異まで予測する可能性を示した。
+- Objective: 腺癌・扁平上皮癌・正常組織の識別と、腺癌の変異情報の画像からの推定を調べる。
+- Methods: TCGAの全スライド画像でInception v3を学習。凍結・パラフィン包埋・生検の独立データで組織型を検証し、頻度の高い10変異も学習した。
+- Data and results: 組織型分類の平均AUCは0.97。STK11、EGFR、FAT1、SETBP1、KRAS、TP53の6遺伝子で、保留集団の変異予測AUCは0.733–0.856だった。
+- Novelty: 病理画像の形態情報を、組織型だけでなく分子変異の推定へ接続した。
+- Limitations: 編者の注意: 10遺伝子すべてで成功したわけではなく、画像推定は遺伝子検査の代替を確立しない。他癌種へ適用できるという提案と検証済み範囲を区別する。
+
+### Paper: Deep neural network improves fracture detection by clinicians
+- Source: PubMed
+- Canonical ID: pmid:30348771
+- Publication date: 2018-10-22
+- URL: https://pubmed.ncbi.nlm.nih.gov/30348771/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 骨折検出AIの予測を提示すると、救急臨床家の手関節X線読影が改善した対照実験。
+- Objective: 整形外科専門家の知識を学んだモデルが、一般臨床家の骨折検出を支援できるか調べる。
+- Methods: 専門整形外科医18人が注釈した135,409X線で検出・局在モデルを学習。救急臨床家が支援あり・なしで手関節画像を読む比較実験を行った。
+- Data and results: 平均感度80.8%→91.5%、特異度87.5%→93.9%。誤読率の相対減少は47.0%（95%CI 37.4–53.9%）だった。
+- Novelty: AI単独の専門医比較を超え、専門外の臨床家へ情報を提示したときの改善を直接測定した。
+- Limitations: 編者の注意: 47%は誤読率の相対減少で、精度の47ポイント増加ではない。手関節の読影実験から、全身骨折や実際の治療・回復への利益は確定しない。
+
+### Paper: Deep learning for chest radiograph diagnosis: A retrospective comparison of the CheXNeXt algorithm to practicing radiologists
+- Source: PubMed
+- Canonical ID: pmid:30457988
+- Publication date: 2018-11-20
+- URL: https://pubmed.ncbi.nlm.nih.gov/30457988/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: CheXNeXtは胸部X線14病変を分類し、放射線科医に匹敵する項目と劣る項目を分けて示した。
+- Objective: 胸部X線異常の同時検出を、実務経験のある読影医と同じ画像群で比較する。
+- Methods: ChestX-ray8でCNNを学習し、保留420画像を9人の読影医と比較。胸部専門医3人の多数決を参照とし、病変別AUCを評価した。
+- Data and results: 11病変では医師相当だが3病変で劣った。心拡大・肺気腫・食道裂孔ヘルニアのモデルAUCは0.831・0.704・0.851、医師は0.888・0.911・0.985。無気肺ではモデルが有意に高かった。
+- Novelty: 多数病変を一括で分類し、平均的な『専門医水準』に埋もれる病変別の性能差を示した。
+- Limitations: 著者は単施設評価、病歴と過去画像を双方が使えない条件を限界とする。臨床的な有用性には前向き評価が必要で、全病変で医師を上回ったわけではない。
+
+### Paper: Deep-learning-assisted diagnosis for knee magnetic resonance imaging: Development and retrospective validation of MRNet
+- Source: PubMed
+- Canonical ID: pmid:30481176
+- Publication date: 2018-11-27
+- URL: https://pubmed.ncbi.nlm.nih.gov/30481176/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: MRNetは膝MRIの異常・靱帯・半月板損傷を分類し、施設移植と医師支援を別々に評価した。
+- Objective: MRI系列を迅速に分類し、単独モデルの精度と専門家へ予測を提示した効果を調べる。
+- Methods: Stanfordの1,370検査でCNNを学習し、3系列の出力を回帰で統合。内部120検査とクロアチアの外部183検査を評価し、9臨床家の支援あり・なしも比較した。
+- Data and results: 内部AUCは異常0.937、ACL断裂0.965、半月板断裂0.847。外部ACLでは調整なし0.824、外部データで再学習すると0.911。支援で臨床家のACL特異度が改善した。
+- Novelty: 系列単位の画像表現を検査単位へ統合し、外部移植と人との協働を含めて評価した。
+- Limitations: 著者は前向きの臨床有用性検証を求める。外部データは撮像系列も異なり、移植と再学習の成績を混同しない。医師が上回る感度・特異度の項目もあった。
+
+### Paper: Real-time automatic detection system increases colonoscopic polyp and adenoma detection rates: a prospective randomised controlled study
+- Source: PubMed
+- Canonical ID: pmid:30814121
+- Publication date: 2019-02-27
+- URL: https://pubmed.ncbi.nlm.nih.gov/30814121/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 実時間のポリープ検出支援を加えると腺腫発見率が上がるか、診療中に無作為比較した。
+- Objective: 画像単体の検出率を超え、深層学習支援が内視鏡医のポリープ・腺腫発見を改善するか測る。
+- Methods: 連続患者1,058人を通常内視鏡536人と支援あり522人へ前向き無作為化。検出時に視覚通知・音声警報を出し、腺腫発見率を主要転帰とした非盲検試験。
+- Data and results: 腺腫発見率は支援あり29.1%、通常20.3%。主に微小腺腫の検出増加と、過形成性ポリープの増加を報告した。
+- Novelty: 医療AIの後ろ向き性能評価から、人と組み合わせた実時間支援の無作為試験へ進んだ。
+- Limitations: 著者は費用便益の追加検討を求める。低い基礎腺腫発見率の集団かつ非盲検で、癌死亡の減少や微小病変を多く切除する長期利益は未確定。
+
+### Paper: Stand-Alone Artificial Intelligence for Breast Cancer Detection in Mammography: Comparison With 101 Radiologists
+- Source: PubMed
+- Canonical ID: pmid:30834436
+- Publication date: 2019-03-05
+- URL: https://pubmed.ncbi.nlm.nih.gov/30834436/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: マンモグラフィのAI単独読影を、多国の後ろ向きデータで101人の放射線科医と比較した。
+- Objective: 乳癌検出でAIが平均的な読影医に対し、事前に決めた許容差の範囲で非劣性か評価する。
+- Methods: 7か国・4機器メーカーに由来する9読影研究の2,652検査（悪性653）と28,296判定を統合。非劣性マージン0.05でAUCを比較した。
+- Data and results: AIのAUC0.840、医師平均0.814、差の95%CIは−0.003–0.055で非劣性を示した。AIは医師の61.4%より高いAUCだった。
+- Novelty: 少数の読影医に限らず、多施設・多国の多数の医師を同じ後ろ向き比較へ取り込んだ。
+- Limitations: 著者は実際の検診場面での性能・影響の検証を求める。非劣性は優越性とは異なり、AI単独の読影試験から併用支援の効果は分からない。
+- Publication date note: 出版社PDFのFirst published online March 5, 2019を採用。巻号の2019年9月と区別。出典: https://academic.oup.com/jnci/article-pdf/111/9/916/31963401/djy222.pdf
+
+### Paper: CE-Net: Context Encoder Network for 2D Medical Image Segmentation
+- Source: PubMed
+- Canonical ID: pmid:30843824
+- Publication date: 2019-03-07
+- URL: https://pubmed.ncbi.nlm.nih.gov/30843824/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: CE-Netは多尺度の文脈を取り入れ、2次元医用画像の分割で空間情報の損失に対処する。
+- Objective: 連続するpoolingやstride付き畳み込みで失われる位置情報を補い、高位の文脈も捉える。
+- Methods: 事前学習ResNetの特徴抽出器、dense atrous convolutionとresidual multi-kernel poolingによる文脈抽出器、復号器を組み合わせた。
+- Data and results: 視神経乳頭、血管、肺、細胞輪郭、網膜OCT層の分割で元のU-Netや比較法を上回ると報告。要旨にデータ数・課題別スコアはない。
+- Novelty: encoder–decoder型の分割器へ、拡張畳み込みと複数受容野のpoolingを組み合わせた文脈処理を加えた。
+- Limitations: 編者の注意: 2次元の複数課題の結果であり、3次元処理や別施設への性能を保証しない。計算費用と改善幅の比較には本文の実験条件が必要。
 
 ### Paper: Multitask learning and benchmarking with clinical time series data
 - Source: PubMed
@@ -182,6 +549,20 @@
 
 本文の照合箇所: [Resultsの透析転帰・集団偏り、MethodsのData Description・Ground Truth Labels](https://pmc.ncbi.nlm.nih.gov/articles/PMC6722431/)。
 
+### Paper: MultiResUNet : Rethinking the U-Net architecture for multimodal biomedical image segmentation
+- Source: PubMed
+- Canonical ID: pmid:31536901
+- Publication date: 2019-09-04
+- URL: https://pubmed.ncbi.nlm.nih.gov/31536901/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: MultiResUNetはU-Netの改変を、容易な画像と難しい医用画像で比較した分割モデル。
+- Objective: U-Netが難しい画像で残す不足を補い、異なる医用画像データで性能を改善する。
+- Methods: U-Netの構造を改変したMultiResUNetを提案し、固有の難しさを持つ5データセットで古典的U-Netと定量・定性比較した。要旨に各構成部品の詳細はない。
+- Data and results: 5データの相対改善は10.15%、5.07%、2.63%、1.41%、0.62%。理想的画像での改善は小さく、難しい画像で大きいと報告した。
+- Novelty: 共通のencoder–decoderを維持しつつ、難例の扱いを改善するU-Net拡張の一例を示した。
+- Limitations: 編者の注意: 改善率を絶対ポイントと読み替えない。要旨に指標名・データ別対応がなく、全課題で同じ幅の改善やU-Netの一般的な置換を主張できない。
+
 ### Paper: A data-driven approach to predicting diabetes and cardiovascular disease with machine learning
 - Source: PubMed
 - Canonical ID: pmid:31694707
@@ -209,6 +590,20 @@
 - Data and results: 概念抽出28チーム、他の2課題は各21チーム。最高F1は0.9418、0.9630、0.8905。理由（Reasons）と有害事象（ADE）の概念・関係では性能が低かった。
 - Novelty: 単独の抽出精度と関係分類精度を、実際の一連の抽出処理の精度と分けて比較した。
 - Limitations: 著者は局所文脈だけではReasonsやADEを見落とすと指摘し、広い文脈や外部知識の利用を提案。全体F1の高さを全概念の高性能と解釈できない。
+
+### Paper: Artificial intelligence for diagnosis and grading of prostate cancer in biopsies: a population-based, diagnostic study
+- Source: PubMed
+- Canonical ID: pmid:31926806
+- Publication date: 2020-01-08
+- URL: https://pubmed.ncbi.nlm.nih.gov/31926806/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 前立腺生検の癌検出、癌の長さ、Gleason分類を独立標本と外部標本で検証した。
+- Objective: 病理医不足と分類のばらつきに対応する、臨床的に許容できる生検評価器を作る。
+- Methods: STHLM3の976人6,682スライドなどで学習。独立246人1,631生検、外部73人330生検で評価し、87生検の分類を23人の専門医とも比較した。
+- Data and results: 癌検出AUCは内部0.997、外部0.986。癌長の相関は0.96、0.87。Gleason分類の平均ペアκは0.62で、専門医の0.60–0.73の範囲内だった。
+- Novelty: 癌の有無だけでなく、量と悪性度分類を一連の病理支援として外部検証した。
+- Limitations: 編者の注意: 分類の一致度は専門医間の幅の中にあり、すべての専門医への優越性を示さない。業務負荷や過剰治療・過小治療への実際の影響は追加検証が必要。
 
 ### Paper: Prediction of gestational diabetes based on nationwide electronic health records
 - Source: PubMed
@@ -252,6 +647,34 @@
 - Novelty: Transformerによる患者系列表現、複数疾患予測、事前学習表現の転用を統合した。
 - Limitations: 編者の注意: 診断・処方・測定などを取り込める設計上の柔軟性と、全種類を実証したという主張は区別する。予測改善から早期介入の有効性は確定しない。
 
+### Paper: Efficacy of Real-Time Computer-Aided Detection of Colorectal Neoplasia in a Randomized Trial
+- Source: PubMed
+- Canonical ID: pmid:32371116
+- Publication date: 2020-05-01
+- URL: https://pubmed.ncbi.nlm.nih.gov/32371116/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: イタリア3施設の無作為試験で、AI内視鏡支援が腺腫発見率を高めた。
+- Objective: 実時間CADe支援が腫瘍性病変の発見を増やし、検査時間や不要切除へ影響するか調べる。
+- Methods: 2019年の685人を支援あり・なしへ1:1に無作為化。GI-Geniusが疑わしい病変を表示し、6分以上の抜去時間を要求。組織診を参照し腺腫発見率を主要転帰とした。
+- Data and results: 腺腫発見率は54.8%対40.4%、1検査あたり腺腫は1.07対0.71。抜去時間417対435秒、非腫瘍性病変切除26.0%対28.7%には有意差がなかった。
+- Novelty: 複数施設で人とAIを組み合わせ、検出増加だけでなく時間と不要切除も評価した。
+- Limitations: 編者の注意: この試験の主転帰は病変発見で、癌罹患・死亡の減少ではない。絶対率から単純計算した比を原著の調整済み効果量と混同しない。
+
+### Paper: Pan-cancer image-based detection of clinically actionable genetic alterations
+- Source: PubMed
+- Canonical ID: pmid:33763651
+- Publication date: 2020-07-27
+- URL: https://pubmed.ncbi.nlm.nih.gov/33763651/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 通常のH&E病理画像から、複数癌種の遺伝的変化や分子指標を推定する統合手順を示した。
+- Objective: 日常の組織標本に現れる形態から、治療選択に関わる分子情報を推定できるか調べる。
+- Methods: 開発・最適化・検証・公開を含む深層学習手順を、複数固形癌の5,000人超に適用。変異、分子亜型、遺伝子発現署名、病理バイオマーカーを扱った。
+- Data and results: 複数の分子変化を予測し、他集団への汎化と空間的な推定を報告。モバイル機器への実装可能性も示すが、要旨に各標的のAUCはない。
+- Novelty: 単一癌種・単一変異の研究を、通常染色から多数の分子標的を扱う共通ワークフローへ広げた。
+- Limitations: 編者の注意: モバイル実装の可能性は、現場検査としての承認や治療選択の利益を意味しない。分子検査の代替可否には標的別性能と外部検証が必要。
+
 ### Paper: nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation
 - Source: PubMed
 - Canonical ID: pmid:33288961
@@ -265,6 +688,20 @@
 - Data and results: 国際医用画像分割競技に使われた23公開データセットで、手動介入なしに多くの既存法・専用法を上回った。要旨に課題別Dice値はない。
 - Novelty: 新しい層構造だけでなく、実装・前処理・学習設定を含む一式の適応設計を方法論として確立した。
 - Limitations: 編者の注意: 23データでの結果を任意の画像・施設への優越性と解釈しない。自動設定でも通常の学習用計算資源と正解ラベルを要し、臨床判断の有効性とは別である。
+
+### Paper: Multi-domain clinical natural language processing with MedCAT: The Medical Concept Annotation Toolkit
+- Source: PubMed
+- Canonical ID: pmid:34127232
+- Publication date: 2021-05-01
+- URL: https://pubmed.ncbi.nlm.nih.gov/34127232/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: MedCATは医学概念の自己教師あり抽出と人の注釈を組み合わせ、施設間での転用を調べた。
+- Objective: UMLSやSNOMED-CTの概念を自由記載から抽出し、個別施設の用途に調整できるようにする。
+- Methods: 概念抽出アルゴリズム、注釈画面、CogStack連携を提供。ロンドン3病院の約1,700万記録・88億語で自己教師あり学習し、約6,000の臨床家注釈で微調整した。
+- Data and results: 公開データのUMLS抽出F1は0.448–0.738、比較法0.429–0.650。臨床施設・データ・概念間の転用ではF1>0.94と報告した。
+- Novelty: 大きな医学語彙の抽出と、現場の人が継続的に修正する運用環境を組み合わせた。
+- Limitations: 編者の注意: 公開データと実臨床データのF1は評価範囲が異なり直接比較しない。高い転用成績から任意施設での調整不要や未検証言語への性能を推論できない。
 
 ### Paper: Med-BERT: pretrained contextualized embeddings on large-scale structured electronic health records for disease prediction
 - Source: PubMed
@@ -294,6 +731,62 @@
 - Novelty: 確定した病名定義が乏しい段階で、専門外来の利用を代理指標として大規模EHRから候補を探索した。
 - Limitations: 著者は出力を専門外来での診療を要する可能性の指標と解釈する。編者の注意: 確定診断ではなく、医療アクセスや受診行動の違いを反映する可能性がある。
 
+### Paper: ChatDoctor: A Medical Chat Model Fine-Tuned on a Large Language Model Meta-AI (LLaMA) Using Medical Domain Knowledge
+- Source: PubMed
+- Canonical ID: pmid:37492832
+- Publication date: 2023-06-24
+- URL: https://pubmed.ncbi.nlm.nih.gov/37492832/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: ChatDoctorは患者・医師対話の微調整と情報検索を組み合わせた医療対話モデル。
+- Objective: 一般LLMの医療知識不足に対し、患者相談の理解と情報に基づく応答を改善する。
+- Methods: オンライン相談由来の10万対話を清掃・匿名化してLLaMAを微調整。Wikipediaなどのオンライン情報と整備したオフライン医学データへの自律検索を組み込んだ。
+- Data and results: 実対話による微調整と検索で患者理解・応答精度の改善を報告するが、要旨に評価例数、比較スコア、統計的な改善幅はない。
+- Novelty: 公開基盤モデルの専門対話調整に、更新可能な外部知識の参照を加えた初期の医療LLM例。
+- Limitations: 編者の注意: 原著の改善という結論を、臨床試験による助言の安全性証明へ拡張しない。収集対話の質、検索情報の信頼性、匿名化の残余リスクは別々の課題である。
+
+### Paper: A foundation model for generalizable disease detection from retinal images
+- Source: PubMed
+- Canonical ID: pmid:37704728
+- Publication date: 2023-09-13
+- URL: https://pubmed.ncbi.nlm.nih.gov/37704728/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: RETFoundは大量の未ラベル網膜画像から学び、眼疾患と全身疾患の予測へ適応する基盤モデル。
+- Objective: 課題ごとの専門家ラベル付けを減らし、複数の臨床応用へ転用できる網膜画像表現を得る。
+- Methods: 160万枚の未ラベル画像で自己教師あり学習し、その後ラベル付き課題へ適応。眼疾患の診断・予後と、心不全・心筋梗塞などの新規発症予測を比較した。
+- Data and results: 少ないラベルで複数の比較モデルを一貫して上回ったと報告。要旨には課題別の絶対性能、ラベル削減量や外部検証の具体数はない。
+- Novelty: 網膜画像の単一タスク学習を、多数の眼・全身状態へ展開する自己教師あり事前学習へ拡張した。
+- Limitations: 編者の注意: 網膜からの全身疾患予測は疾患の確定診断や因果的機序の証明ではない。対象集団や撮影条件が変わる場合の校正・転帰への利益も必要。
+
+### Paper: Developing prompts from large language model for extracting clinical information from pathology and ultrasound reports in breast cancer
+- Source: PubMed
+- Canonical ID: pmid:37793630
+- Publication date: 2023-09-21
+- URL: https://pubmed.ncbi.nlm.nih.gov/37793630/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 乳癌の病理・超音波報告からLLMで項目を抽出し、精度と準備作業の費用を評価した。
+- Objective: 臨床研究用データの手作業収集を、プロンプトによる抽出・形式統一で効率化できるか調べる。
+- Methods: 2020–2022年に放射線治療を受けた2,931人の報告で、抽出12・形式統一12プロンプトを開発。無作為340人を完全手作業の情報と比較した。
+- Data and results: 全体accuracy87.7%、脈管侵襲98.2%。プロンプト開発3.5時間、処理15分、API65.8米ドル、推定人件費込み95.4米ドル。時間・費用の比較の一部は推計だった。
+- Novelty: モデルの点数だけでなく、研究者が抽出器を準備・実行する費用を含めて評価した。
+- Limitations: 編者の注意: 単一研究条件の費用を現在価格や別文書へ一般化しない。全体精度と項目別精度は異なり、誤抽出の人手確認を省けるという証拠ではない。
+
+### Paper: A study of generative large language model for medical research and healthcare
+- Source: PubMed
+- Canonical ID: pmid:37973919
+- Publication date: 2023-11-16
+- URL: https://pubmed.ncbi.nlm.nih.gov/37973919/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: GatorTronGPTは大規模臨床文書を含めて学習し、医学NLPと合成文章の有用性を調べた。
+- Objective: 一般用途LLMに依存する評価から、臨床文書で学習した生成モデルの能力を検討する。
+- Methods: 約200万人・126部門由来の臨床820億語と一般英語1,950億語を使い、最大200億パラメータのGPT-3型を学習。200億語の合成文をNLP学習にも使用した。
+- Data and results: 合成文で学習したNLPモデルが実臨床文で学習した比較モデルを上回った。医師評価では可読性6.57対6.93、臨床関連性7.00対6.97で有意差なし（9段階）。
+- Novelty: 臨床生成モデルを文章生成だけでなく、下流NLP用の合成コーパス供給源として検証した。
+- Limitations: 編者の注意: 非有意差は同等性の証明ではなく、人らしい文章も医学的正確性や患者安全性を保証しない。合成文についても個人情報の漏洩評価が別途必要。
+
 ### Paper: Illusory generalizability of clinical prediction models
 - Source: PubMed
 - Canonical ID: pmid:38207039
@@ -307,6 +800,111 @@
 - Data and results: 開発試験内では高精度だったが、別試験では偶然を上回らず、複数試験の統合でも改善しなかった。要旨に試験数や精度の具体値はない。
 - Novelty: 内部検証の成功と、臨床状況をまたぐ汎化の間の隔たりを独立試験群で直接検証した。
 - Limitations: 編者の注意: 統合失調症治療という検証範囲の結果であり、すべての医療予測器が汎化不能とする証拠ではない。予測対象と試験条件を伴って読む必要がある。
+
+### Paper: Use of a Large Language Model to Assess Clinical Acuity of Adults in the Emergency Department
+- Source: PubMed
+- Canonical ID: pmid:38713466
+- Publication date: 2024-05-07
+- URL: https://pubmed.ncbi.nlm.nih.gov/38713466/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 救急記録の2症例を比較して重症な方を選ぶ課題で、GPT-4の判定を評価した。
+- Objective: 来院時の臨床記述から、必要とする医療の緊急度を相対的に識別できるか調べる。
+- Methods: 単施設の成人救急受診から、異なるESI重症度を持つ10,000組を各組合せで均等抽出。匿名化文章を提示し、500組では医師レビューとも比較した横断研究。
+- Data and results: GPT-4は8,940/10,000組で重症な患者を正しく選択し、accuracy0.89。旧モデル0.84。500組ではLLM0.88、医師0.86だった。
+- Novelty: 試験問題から実際の救急記述へ評価を移し、相対的重症度という推論能力を測定した。
+- Limitations: 編者の注意: ESIの異なる2人を均等に組み合わせる課題であり、1人の絶対的なトリアージ区分や現場の患者分布での成績ではない。実運用の安全性には追加検証が必要。
+- Publication date note: PMC掲載原著のPublished May 7, 2024を採用。PubMedの月初表記2024-05-01と区別。出典: https://pmc.ncbi.nlm.nih.gov/articles/PMC11077390/
+
+### Paper: A foundation model for clinical-grade computational pathology and rare cancers detection
+- Source: PubMed
+- Canonical ID: pmid:39039250
+- Publication date: 2024-07-22
+- URL: https://pubmed.ncbi.nlm.nih.gov/39039250/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: Virchowは病理基盤表現を使い、一般的な癌と希少癌の横断的検出を検討した。
+- Objective: 多様な病理画像のパターンを学び、少ないラベルでも希少癌などの課題へ適応する。
+- Methods: 病理基盤モデルの表現で汎癌検出器を作り、バイオマーカー予測と細胞同定も評価。稼働中の組織別モデルと学習データ量を変えて比較した。
+- Data and results: 一般的な9癌種と希少7癌種を合わせた検体単位AUCは0.95。より少ない学習データで組織別モデルと同程度、一部の希少変種で高い性能を報告した。
+- Novelty: 大規模病理表現の価値を、希少癌の少数ラベル適応と汎癌検出で示した。
+- Limitations: 編者の注意: 要旨に事前学習の規模・施設別成績はなく補わない。全体AUC0.95をすべての癌種の精度と読み替えず、稼働モデルとの比較を本モデルの導入実証と混同しない。
+
+### Paper: A pathology foundation model for cancer diagnosis and prognosis prediction
+- Source: PubMed
+- Canonical ID: pmid:39232164
+- Publication date: 2024-09-04
+- URL: https://pubmed.ncbi.nlm.nih.gov/39232164/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: CHIEFはパッチと全スライドの事前学習を組み合わせ、多施設の癌病理課題へ転用した。
+- Objective: 課題・集団・標本作成条件ごとに専用モデルを作る負担と、分布変化での性能低下を減らす。
+- Methods: 19解剖部位60,530全スライド、44TBの画像で、タイルの教師なし学習と全体の弱教師あり学習を併用。24病院・コホートの32独立セット19,491画像で検証した。
+- Data and results: 癌細胞検出、原発推定、分子情報、予後の課題で転用を示し、比較法への改善は最大36.1%と報告。要旨に全課題の絶対値はない。
+- Novelty: 局所形態と全体パターンの相補的な事前学習を、大規模な国際外部検証と結び付けた。
+- Limitations: 編者の注意: 最大改善を全課題の平均や絶対ポイントと解釈しない。外部画像の予測評価は、診療での利益や未経験施設すべてでの性能保証とは異なる。
+
+### Paper: Large Language Model Influence on Diagnostic Reasoning: A Randomized Clinical Trial
+- Source: PubMed
+- Canonical ID: pmid:39466245
+- Publication date: 2024-10-28
+- URL: https://pubmed.ncbi.nlm.nih.gov/39466245/
+- read_level: full_text
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 診断推論の模擬症例試験で、GPT-4を利用できても医師の成績は有意に改善しなかった。
+- Objective: LLM単独の試験成績が、医師の診断支援として実際に改善へつながるか検証する。
+- Methods: 医師50人を通常資料のみとChatGPT Plus（GPT-4）併用へ無作為化。60分で最大6症例を解き、盲検専門家が鑑別・根拠・次の検査を採点した。
+- Data and results: 推論スコア中央値76%対74%、調整差2ポイント（95%CI −4–8、p=0.60）。時間短縮も非有意。探索的なLLM単独の比較では通常資料群より16ポイント高かった。
+- Novelty: LLMの単独解答と、人が自由に利用する支援場面を分けて無作為評価した。
+- Limitations: 著者は単一LLM、6症例、プロンプト技法の明示的訓練なし、使用法を統一しない設計を限界とする。実患者の治療転帰や、あらゆる協働方法の無効性を示す試験ではない。
+- Publication date note: 出版社とPMCのPublished October 28, 2024を採用。PubMedの月初表記2024-10-01とは不一致のため出版社を優先。出典: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2825395
+
+本文の照合箇所: [Methodsのモデル・症例・評価、DiscussionのLimitations、刊行日](https://pmc.ncbi.nlm.nih.gov/articles/PMC11519755/)。
+
+### Paper: Use of natural language processing to translate clinical information from a database of 889,921 chest radiographic reports
+- Source: PubMed
+- Canonical ID: pmid:12091676
+- Publication date: 未記載
+- URL: https://pubmed.ncbi.nlm.nih.gov/12091676/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 約89万件の胸部X線レポートを構造化し、抽出精度と大規模な所見分布を検証した。
+- Objective: 文章の画像診断記録を研究用データベースへ変換し、コード情報より豊かな病態把握を得る。
+- Methods: 単一都市部大学病院の10年分、251,186人の889,921レポートをNLPでコード化。150件を手動確認し、24状態の頻度・併存と既報の疫学傾向を比較した。
+- Data and results: 手動比較で感度0.81、特異度0.99。別の気胸確認ではNLP感度1.00対退院会計コード0.17、特異度は双方0.996。肺癌の右左比3:2など既報との一致も報告した。
+- Novelty: 小標本の抽出評価に加え、大規模な文章由来データの内的・外的な整合性を検証した。
+- Limitations: 編者の注意: 疫学的な傾向の一致は各記録の正確さを保証しない。単施設の画像報告書が対象であり、実画像の診断や未記録疾患の検出を行うものではない。
+- Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2002 Jul。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/12091676/
+
+### Paper: The interaction of domain knowledge and linguistic structure in natural language processing: interpreting hypernymic propositions in biomedical text
+- Source: PubMed
+- Canonical ID: pmid:14759819
+- Publication date: 未記載
+- URL: https://pubmed.ncbi.nlm.nih.gov/14759819/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: UMLSの階層知識と浅い構文解析を使い、医学文章の上位・下位概念関係を解釈した。
+- Objective: 自由記載で『特定概念は一般概念の一種』と述べる命題を機械で扱う。
+- Methods: 不完全指定の構文解析に、Semantic Networkの意味グループによる整合確認とMetathesaurusの階層による方向判定を組み合わせた。
+- Data and results: Chemicals and Drugs意味グループに基づく予備評価で適合率83%。要旨に標本数や再現率はなく、誤り分析と改善案を報告する。
+- Novelty: 言語的な構造だけでも辞書照合だけでもなく、医学概念の互換性と階層を統合して意味命題を解釈した。
+- Limitations: 編者の注意: 化学物質・薬剤の予備評価であり、臨床全域の関係抽出性能ではない。適合率のみから抽出漏れを判断できず、情報検索などの応用は提案段階。
+- Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2003 Dec。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/14759819/
+
+### Paper: Improving case definition of Crohn's disease and ulcerative colitis in electronic medical records using natural language processing: a novel informatics approach
+- Source: PubMed
+- Canonical ID: pmid:23567779
+- Publication date: 未記載
+- URL: https://pubmed.ncbi.nlm.nih.gov/23567779/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 炎症性腸疾患の症例同定に、診断コードと診療ノートのNLP特徴を組み合わせた。
+- Objective: 行政コードだけでは一貫しなかったCrohn病・潰瘍性大腸炎のEHR上の症例定義を改善する。
+- Methods: 2大学施設でICD-9コードを持つ患者を抽出し、各疾患600人の記録レビューを基準に開発・検証。コード・処方・文章特徴をadaptive LASSO回帰で選択した。
+- Data and results: 確認症例はCrohn病399人、潰瘍性大腸炎378人。統合AUC0.95・0.94に対しコードのみ0.89・0.86。同じ精度で6–12%多くの患者を分類できた。
+- Novelty: コード化データと自由記載を相補的に使い、研究コホートの症例数と精度を両立した。
+- Limitations: 編者の注意: 既に少なくとも1つ診断コードがある集団の症例同定であり、一般集団での新規診断や発症予測ではない。コードのない症例の捕捉性能は分からない。
+- Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2013 Jun。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/23567779/
 
 ### Paper: MySurgeryRisk: Development and Validation of a Machine-learning Risk Algorithm for Major Complications and Death After Surgery
 - Source: PubMed
@@ -354,27 +952,69 @@
 - Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2017 Aug。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/33717639/
 
 <!-- PAPER_IDS -->
+pmid:7702231
+pmid:15187068
+pmid:21862746
 pmid:23842533
+pmid:25925131
+pmid:26863654
 pmid:26679719
+pmid:26955021
 pmid:27185194
+pmid:27212078
 pmid:27521897
+pmid:27701631
+pmid:27898976
+pmid:28096249
 pmid:28117445
 pmid:27784047
+pmid:28287963
+pmid:29224926
+pmid:29234806
 pmid:29500022
 pmid:29382633
+pmid:29186491
 pmid:29709069
+pmid:29801159
 pmid:31304302
+pmid:29743531
+pmid:29994302
+pmid:30104768
+pmid:30217670
+pmid:30224757
+pmid:30348771
+pmid:30457988
+pmid:30481176
+pmid:30814121
+pmid:30834436
+pmid:30843824
 pmid:31209213
 pmid:31367026
+pmid:31536901
 pmid:31694707
 pmid:31584655
+pmid:31926806
 pmid:31932807
 pmid:33328078
 pmid:32346050
+pmid:32371116
+pmid:33763651
 pmid:33288961
+pmid:34127232
 pmid:34017034
 pmid:35589549
+pmid:37492832
+pmid:37704728
+pmid:37793630
+pmid:37973919
 pmid:38207039
+pmid:38713466
+pmid:39039250
+pmid:39232164
+pmid:39466245
+pmid:12091676
+pmid:14759819
+pmid:23567779
 pmid:29489489
 pmid:30385537
 pmid:33717639
