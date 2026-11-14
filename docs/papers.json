@@ -1380,13 +1380,13 @@
         "inference efficiency"
       ],
       "summary": "小型モデルが失敗するパターンを構造化して強いモデルの推論時ガイダンスへ変換するCritICLを提案。追加学習なしで、標準ICLや高コストなtest-time scalingより少ない生成回数・tokenで改善を狙う。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "小規模LLMが示す典型的な失敗を強いモデルの推論に活用し、繰り返し生成や外部検証に伴う推論費用を抑える。",
+      "methods": "同じモデル系列の小型モデルから失敗パターンを抽出し、批評付きin-context例として強いLLMへ提示。入力別に失敗型を予測し批評を検索するCritICL-dynamicと、全体の失敗プロファイルを使うCritICL-staticを設計。",
+      "results": "標準的なin-context learningより安定して高性能で、test-time scaling方式に匹敵または上回る性能を少ない生成回数・トークン費用で達成と報告。要旨に各ベンチマークの絶対スコアはない。",
       "novelty": "「弱いモデルの答え」ではなく「弱いモデルがどう失敗するか」を情報資源として使う点が面白い。",
-      "limitations": null,
+      "limitations": "同系列の小型・強モデル間で失敗型が構造的に共有されるという条件に依存する。異系列モデル・未知分布の失敗型への汎化は要旨だけでは判断できない。",
       "why": "「弱いモデルの答え」ではなく「弱いモデルがどう失敗するか」を情報資源として使う点が面白い。",
-      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['test-time adaptation', 'weak-to-strong', 'ICL', 'inference efficiency']\nSummary: 小型モデルが失敗するパターンを構造化して強いモデルの推論時ガイダンスへ変換するCritICLを提案。追加学習なしで、標準ICLや高コストなtest-time scalingより少ない生成回数・tokenで改善を狙う。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 「弱いモデルの答え」ではなく「弱いモデルがどう失敗するか」を情報資源として使う点が面白い。\nLimitations: None"
+      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['test-time adaptation', 'weak-to-strong', 'ICL', 'inference efficiency']\nSummary: 小型モデルが失敗するパターンを構造化して強いモデルの推論時ガイダンスへ変換するCritICLを提案。追加学習なしで、標準ICLや高コストなtest-time scalingより少ない生成回数・tokenで改善を狙う。\nObjective: 小規模LLMが示す典型的な失敗を強いモデルの推論に活用し、繰り返し生成や外部検証に伴う推論費用を抑える。\nMethods: 同じモデル系列の小型モデルから失敗パターンを抽出し、批評付きin-context例として強いLLMへ提示。入力別に失敗型を予測し批評を検索するCritICL-dynamicと、全体の失敗プロファイルを使うCritICL-staticを設計。\nData and results: 標準的なin-context learningより安定して高性能で、test-time scaling方式に匹敵または上回る性能を少ない生成回数・トークン費用で達成と報告。要旨に各ベンチマークの絶対スコアはない。\nNovelty: 「弱いモデルの答え」ではなく「弱いモデルがどう失敗するか」を情報資源として使う点が面白い。\nLimitations: 同系列の小型・強モデル間で失敗型が構造的に共有されるという条件に依存する。異系列モデル・未知分布の失敗型への汎化は要旨だけでは判断できない。"
     },
     {
       "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
@@ -1404,13 +1404,13 @@
         "knowledge base"
       ],
       "summary": "agentの経験を一過性のtrajectoryで終わらせず、永続wikiと実行可能skillへコンパイルし、両者を共進化させるWikiSkillを提案。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "エージェントが作業を重ねて得た経験を一過性の軌跡として終わらせず、持続的に参照できる知識と実行可能なスキルへ継承する。",
+      "methods": "WikiSkillでは実行軌跡、wiki形式の蓄積知識、実行用スキルを分け、経験からwikiへ知見を統合し、次のスキル更新で参照する共進化プロセスを構築。",
+      "results": "原著要旨から確認できる主要成果はwiki・スキルを共進化させる枠組みの提案。定量ベンチマークの比較値は要旨から確認できないため記載しない。",
       "novelty": "agent memoryを「検索する履歴」ではなく、再利用可能な知識とskillへ編集する方向に進めている。",
-      "limitations": null,
+      "limitations": "経験からwikiへ蓄積する情報の誤りや陳腐化、長期運用での品質低下について、要旨から定量的検証を確認できない。",
       "why": "agent memoryを「検索する履歴」ではなく、再利用可能な知識とskillへ編集する方向に進めている。",
-      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['LLM agent', 'skill evolution', 'persistent memory', 'knowledge base']\nSummary: agentの経験を一過性のtrajectoryで終わらせず、永続wikiと実行可能skillへコンパイルし、両者を共進化させるWikiSkillを提案。\nObjective: None\nMethods: None\nData and results: None\nNovelty: agent memoryを「検索する履歴」ではなく、再利用可能な知識とskillへ編集する方向に進めている。\nLimitations: None"
+      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['LLM agent', 'skill evolution', 'persistent memory', 'knowledge base']\nSummary: agentの経験を一過性のtrajectoryで終わらせず、永続wikiと実行可能skillへコンパイルし、両者を共進化させるWikiSkillを提案。\nObjective: エージェントが作業を重ねて得た経験を一過性の軌跡として終わらせず、持続的に参照できる知識と実行可能なスキルへ継承する。\nMethods: WikiSkillでは実行軌跡、wiki形式の蓄積知識、実行用スキルを分け、経験からwikiへ知見を統合し、次のスキル更新で参照する共進化プロセスを構築。\nData and results: 原著要旨から確認できる主要成果はwiki・スキルを共進化させる枠組みの提案。定量ベンチマークの比較値は要旨から確認できないため記載しない。\nNovelty: agent memoryを「検索する履歴」ではなく、再利用可能な知識とskillへ編集する方向に進めている。\nLimitations: 経験からwikiへ蓄積する情報の誤りや陳腐化、長期運用での品質低下について、要旨から定量的検証を確認できない。"
     },
     {
       "title": "TTPO: Test-Time Policy Optimization",
@@ -1428,13 +1428,13 @@
         "self-supervision"
       ],
       "summary": "test-timeに複数rolloutの一致・不一致を利用してpolicyを最適化するTTPOを提案。教師ラベルなしで推論能力をその場で更新する。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "正解ラベルのない推論時にもモデルの方策を更新し、誤った多数決擬似ラベルによる学習悪化を抑える。",
+      "methods": "TTPOは複数回答の多数決ラベルに一致するロールアウトをOPSDで蒸留し、不一致の回答をGrouped RLで抑制する非対称損失を用いる。トークン別重み付けで収束済み箇所と高確信誤りを選択。",
+      "results": "5つの競技数学ベンチマークでラベル付きOPSDに匹敵。Qwen3-1.7Bの推論時学習で正答率38.0%→45.2%、思考モードなしの設定で+25.2〜36.4%の改善と報告。",
       "novelty": "test-time computeを「たくさん考える」だけでなく「その場でpolicy更新する」方向へ拡張している。",
-      "limitations": null,
+      "limitations": "多数決が一定の情報を持つ候補生成を前提とし、数学推論以外の曖昧な正解判定タスクへの適用は要旨で十分検証されていない。",
       "why": "test-time computeを「たくさん考える」だけでなく「その場でpolicy更新する」方向へ拡張している。",
-      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['test-time training', 'policy optimization', 'reasoning', 'self-supervision']\nSummary: test-timeに複数rolloutの一致・不一致を利用してpolicyを最適化するTTPOを提案。教師ラベルなしで推論能力をその場で更新する。\nObjective: None\nMethods: None\nData and results: None\nNovelty: test-time computeを「たくさん考える」だけでなく「その場でpolicy更新する」方向へ拡張している。\nLimitations: None"
+      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['test-time training', 'policy optimization', 'reasoning', 'self-supervision']\nSummary: test-timeに複数rolloutの一致・不一致を利用してpolicyを最適化するTTPOを提案。教師ラベルなしで推論能力をその場で更新する。\nObjective: 正解ラベルのない推論時にもモデルの方策を更新し、誤った多数決擬似ラベルによる学習悪化を抑える。\nMethods: TTPOは複数回答の多数決ラベルに一致するロールアウトをOPSDで蒸留し、不一致の回答をGrouped RLで抑制する非対称損失を用いる。トークン別重み付けで収束済み箇所と高確信誤りを選択。\nData and results: 5つの競技数学ベンチマークでラベル付きOPSDに匹敵。Qwen3-1.7Bの推論時学習で正答率38.0%→45.2%、思考モードなしの設定で+25.2〜36.4%の改善と報告。\nNovelty: test-time computeを「たくさん考える」だけでなく「その場でpolicy更新する」方向へ拡張している。\nLimitations: 多数決が一定の情報を持つ候補生成を前提とし、数学推論以外の曖昧な正解判定タスクへの適用は要旨で十分検証されていない。"
     },
     {
       "title": "Boosting LLM Exploration via Weak-Model Guidance in RLVR",
@@ -1452,13 +1452,13 @@
         "entropy collapse"
       ],
       "summary": "RLVRで探索が早期に狭まる問題に対し、弱いモデルの部分reasoning prefixを注入してtarget modelを異なる探索軌道へ誘導する。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "検証可能報酬でのLLM強化学習で起きる探索多様性の低下（entropy collapse）を、小型モデル由来の外部摂動で改善する。",
+      "methods": "弱い言語モデルが生成した途中までの推論prefixを強モデルの学習用生成に入力し、通常と異なる探索軌道を誘発してRLVR訓練する。モデル間の分布差が探索へ及ぼす影響を分析。",
+      "results": "複数の数学ベンチマークで通常のRLVRを一貫して上回り、候補生成数kが増えるほどpass@kの優位性が拡大。追加SFTや複雑な報酬設計を使わずエントロピー崩壊を緩和。要旨に絶対スコアはない。",
       "novelty": "弱モデルをteacherではなくexploration perturbationとして使うため、強モデルの多様性を保つ発想が明快。",
-      "limitations": null,
+      "limitations": "数学的な検証可能課題と、弱モデルが多様なprefixを供給できる条件での評価。医療・自由文生成など報酬が曖昧な領域への一般化は未確認。",
       "why": "弱モデルをteacherではなくexploration perturbationとして使うため、強モデルの多様性を保つ発想が明快。",
-      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['RLVR', 'exploration', 'weak model', 'entropy collapse']\nSummary: RLVRで探索が早期に狭まる問題に対し、弱いモデルの部分reasoning prefixを注入してtarget modelを異なる探索軌道へ誘導する。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 弱モデルをteacherではなくexploration perturbationとして使うため、強モデルの多様性を保つ発想が明快。\nLimitations: None"
+      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['RLVR', 'exploration', 'weak model', 'entropy collapse']\nSummary: RLVRで探索が早期に狭まる問題に対し、弱いモデルの部分reasoning prefixを注入してtarget modelを異なる探索軌道へ誘導する。\nObjective: 検証可能報酬でのLLM強化学習で起きる探索多様性の低下（entropy collapse）を、小型モデル由来の外部摂動で改善する。\nMethods: 弱い言語モデルが生成した途中までの推論prefixを強モデルの学習用生成に入力し、通常と異なる探索軌道を誘発してRLVR訓練する。モデル間の分布差が探索へ及ぼす影響を分析。\nData and results: 複数の数学ベンチマークで通常のRLVRを一貫して上回り、候補生成数kが増えるほどpass@kの優位性が拡大。追加SFTや複雑な報酬設計を使わずエントロピー崩壊を緩和。要旨に絶対スコアはない。\nNovelty: 弱モデルをteacherではなくexploration perturbationとして使うため、強モデルの多様性を保つ発想が明快。\nLimitations: 数学的な検証可能課題と、弱モデルが多様なprefixを供給できる条件での評価。医療・自由文生成など報酬が曖昧な領域への一般化は未確認。"
     },
     {
       "title": "Consolidating RLVR Capabilities Across Domains: A Deep Dive into Fusion Paradigms",
@@ -1476,13 +1476,13 @@
         "multi-domain reasoning"
       ],
       "summary": "domain別RLVRで獲得した能力をMerge、mixed RL、MOPDなどで統合し、どの融合方法が能力保持に効くかを比較。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "ドメイン別にRLVRで獲得した推論能力を統合する際、モデルの重み・学習データ・教師を再利用する3方式のトレードオフを比較する。",
+      "methods": "専門モデルのtask vectorを合成するMerge、混合したデータで再強化学習するMix RL、複数教師からオンポリシー蒸留するMOPDを、共通の専門家とデータ・複数モデル規模で比較。",
+      "results": "全体平均の性能差は最大1.4ポイントだが、単一ベンチマークでは最大8.6ポイント。Mix RLはドメイン混合比に左右され、MOPDは教師性能が上界、Mergeは専門更新を一つのパラメータ集合へ圧縮。全方式でPass@1は改善したが解候補の網羅性向上は検出されなかった。",
       "novelty": "「専門モデルをどう統合するか」を平均scoreだけでなくdomain別の差として丁寧に見ている。",
-      "limitations": null,
+      "limitations": "専門家・学習データが共通という実験設定における比較。ドメイン間関係とデータ混合比が結果に大きく影響するため、統合方法の普遍的な最適解はない。",
       "why": "「専門モデルをどう統合するか」を平均scoreだけでなくdomain別の差として丁寧に見ている。",
-      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['RLVR', 'model merging', 'capability fusion', 'multi-domain reasoning']\nSummary: domain別RLVRで獲得した能力をMerge、mixed RL、MOPDなどで統合し、どの融合方法が能力保持に効くかを比較。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 「専門モデルをどう統合するか」を平均scoreだけでなくdomain別の差として丁寧に見ている。\nLimitations: None"
+      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['RLVR', 'model merging', 'capability fusion', 'multi-domain reasoning']\nSummary: domain別RLVRで獲得した能力をMerge、mixed RL、MOPDなどで統合し、どの融合方法が能力保持に効くかを比較。\nObjective: ドメイン別にRLVRで獲得した推論能力を統合する際、モデルの重み・学習データ・教師を再利用する3方式のトレードオフを比較する。\nMethods: 専門モデルのtask vectorを合成するMerge、混合したデータで再強化学習するMix RL、複数教師からオンポリシー蒸留するMOPDを、共通の専門家とデータ・複数モデル規模で比較。\nData and results: 全体平均の性能差は最大1.4ポイントだが、単一ベンチマークでは最大8.6ポイント。Mix RLはドメイン混合比に左右され、MOPDは教師性能が上界、Mergeは専門更新を一つのパラメータ集合へ圧縮。全方式でPass@1は改善したが解候補の網羅性向上は検出されなかった。\nNovelty: 「専門モデルをどう統合するか」を平均scoreだけでなくdomain別の差として丁寧に見ている。\nLimitations: 専門家・学習データが共通という実験設定における比較。ドメイン間関係とデータ混合比が結果に大きく影響するため、統合方法の普遍的な最適解はない。"
     },
     {
       "title": "How Language Models Organize and Structure Moral Knowledge",
@@ -1500,13 +1500,13 @@
         "probing"
       ],
       "summary": "LLM内部で複数のmoral foundationがどのように表現されるかをlinear probeと方向ベクトルで分析し、独立性と共通成分の両方を示す。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "LLMの内部表現で道徳概念が単一の『道徳性』と独立した基礎概念のどちらとして構造化されているかを調べる。",
+      "methods": "Moral Foundations Theoryの6カテゴリそれぞれに独立の線形probeを学習し、潜在表現の方向ベクトルの独立性・内積・事前学習過程での変化と、非道徳概念の対照群を比較。複数基礎が衝突する道徳的ジレンマも解析。",
+      "results": "6方向は高い線形独立性を保ちつつ共通の正成分を持ち、平均ペアcosineは道徳0.26対非道徳0.013。ジレンマ方向は構成基礎との整合が対照の2.7倍だが、残差の大半は葛藤固有。MFTの個人化／結束の二分法の証拠は得られず、分割候補数が少なく検出力不足。",
       "novelty": "alignmentを出力評価だけでなく「内部で価値概念がどう幾何学的に配置されるか」から見る研究。",
-      "limitations": null,
+      "limitations": "線形probeの方向から潜在概念を解釈する研究であり、モデルの道徳判断の正しさや行動の安全性を直接検証するものではない。二分法検定は統計的に弱いと著者自身が認める。",
       "why": "alignmentを出力評価だけでなく「内部で価値概念がどう幾何学的に配置されるか」から見る研究。",
-      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['interpretability', 'representation', 'moral knowledge', 'probing']\nSummary: LLM内部で複数のmoral foundationがどのように表現されるかをlinear probeと方向ベクトルで分析し、独立性と共通成分の両方を示す。\nObjective: None\nMethods: None\nData and results: None\nNovelty: alignmentを出力評価だけでなく「内部で価値概念がどう幾何学的に配置されるか」から見る研究。\nLimitations: None"
+      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['interpretability', 'representation', 'moral knowledge', 'probing']\nSummary: LLM内部で複数のmoral foundationがどのように表現されるかをlinear probeと方向ベクトルで分析し、独立性と共通成分の両方を示す。\nObjective: LLMの内部表現で道徳概念が単一の『道徳性』と独立した基礎概念のどちらとして構造化されているかを調べる。\nMethods: Moral Foundations Theoryの6カテゴリそれぞれに独立の線形probeを学習し、潜在表現の方向ベクトルの独立性・内積・事前学習過程での変化と、非道徳概念の対照群を比較。複数基礎が衝突する道徳的ジレンマも解析。\nData and results: 6方向は高い線形独立性を保ちつつ共通の正成分を持ち、平均ペアcosineは道徳0.26対非道徳0.013。ジレンマ方向は構成基礎との整合が対照の2.7倍だが、残差の大半は葛藤固有。MFTの個人化／結束の二分法の証拠は得られず、分割候補数が少なく検出力不足。\nNovelty: alignmentを出力評価だけでなく「内部で価値概念がどう幾何学的に配置されるか」から見る研究。\nLimitations: 線形probeの方向から潜在概念を解釈する研究であり、モデルの道徳判断の正しさや行動の安全性を直接検証するものではない。二分法検定は統計的に弱いと著者自身が認める。"
     },
     {
       "title": "Making Clinical Language Models Auditable: Concept-Guided Fine-Tuning for Robust Prediction",
@@ -1524,13 +1524,13 @@
         "auditability"
       ],
       "summary": "SAE featureを臨床conceptへ対応づけ、artifact latentを抑制しながらfine-tuningするCASTを提案。prediction精度とconcept-level audit trailを両立する。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "臨床言語モデルが退院要約のテンプレート・区切り記号など非臨床的アーティファクトに依存することを減らし、予測と根拠を監査可能にする。",
+      "methods": "CASTはTransformer中間表現にSparse Autoencoderを適用し、LLM補助説明とICD-10検索制約で特徴を臨床概念とアーティファクトに分類。確認済みartifact latentを残差から減算して微調整し、予測寄与を概念単位で監査。",
+      "results": "MIMIC-IV退院要約からの死亡予測で対応する微調整encoderベースラインを上回り、強いLLMベースラインと競争力のある性能を保持しながら、予測に関与した臨床概念・抑制されたartifactsの監査証跡を提示。要旨に絶対AUCはない。",
       "novelty": "医療LMの説明可能性をpost-hoc説明だけでなく、fine-tuning時のfeature制御に組み込んでいる。",
-      "limitations": null,
+      "limitations": "アーティファクト潜在の同定はLLMによる解釈とICD-10参照に依存し、見逃した非臨床潜在の抑制効果や外部施設への頑健性は要旨で未確認。",
       "why": "医療LMの説明可能性をpost-hoc説明だけでなく、fine-tuning時のfeature制御に組み込んでいる。",
-      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['medical AI', 'clinical NLP', 'sparse autoencoder', 'auditability']\nSummary: SAE featureを臨床conceptへ対応づけ、artifact latentを抑制しながらfine-tuningするCASTを提案。prediction精度とconcept-level audit trailを両立する。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 医療LMの説明可能性をpost-hoc説明だけでなく、fine-tuning時のfeature制御に組み込んでいる。\nLimitations: None"
+      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['medical AI', 'clinical NLP', 'sparse autoencoder', 'auditability']\nSummary: SAE featureを臨床conceptへ対応づけ、artifact latentを抑制しながらfine-tuningするCASTを提案。prediction精度とconcept-level audit trailを両立する。\nObjective: 臨床言語モデルが退院要約のテンプレート・区切り記号など非臨床的アーティファクトに依存することを減らし、予測と根拠を監査可能にする。\nMethods: CASTはTransformer中間表現にSparse Autoencoderを適用し、LLM補助説明とICD-10検索制約で特徴を臨床概念とアーティファクトに分類。確認済みartifact latentを残差から減算して微調整し、予測寄与を概念単位で監査。\nData and results: MIMIC-IV退院要約からの死亡予測で対応する微調整encoderベースラインを上回り、強いLLMベースラインと競争力のある性能を保持しながら、予測に関与した臨床概念・抑制されたartifactsの監査証跡を提示。要旨に絶対AUCはない。\nNovelty: 医療LMの説明可能性をpost-hoc説明だけでなく、fine-tuning時のfeature制御に組み込んでいる。\nLimitations: アーティファクト潜在の同定はLLMによる解釈とICD-10参照に依存し、見逃した非臨床潜在の抑制効果や外部施設への頑健性は要旨で未確認。"
     },
     {
       "title": "LeVJEPA: Efficient & Scalable Video Pretraining without the Heuristics",
@@ -1548,13 +1548,13 @@
         "efficiency"
       ],
       "summary": "複雑なheuristicを減らした単一encoder型video pretrainingを提案し、V-JEPA2より大幅に少ないcomputeで競合性能を狙う。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "複雑なターゲットencoderやpixel復元を使わず、表現崩壊を防ぎながら動画自己教師学習を省計算で実現する。",
+      "methods": "LeVJEPAでは単一encoderとprojectorを使い、同一動画のグローバル／局所viewの表現整合損失にSIGReg正則化を加える。入力tokenをランダムに削減し、block-causal attentionでも学習。ViT-S/B/LでV-JEPA2等と同一データ・計算量条件を比較。",
+      "results": "同じepochではV-JEPA2と同等以上の精度を5.6〜20.8倍少ない事前学習計算で達成。FLOPsを揃えたViT-BではImageNet-1Kで+7.6ポイント（61.0%）、Kinetics-400は44.6%、SSv2は40.4%と報告。",
       "novelty": "video foundation modelで「性能を上げる複雑さ」より「単純化してscaleする」方向を示している。",
-      "limitations": null,
+      "limitations": "事前学習条件と下流probeの設定に依存し、長期的な動画理解や実ロボットの行動制御性能は要旨からは判断できない。",
       "why": "video foundation modelで「性能を上げる複雑さ」より「単純化してscaleする」方向を示している。",
-      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['video pretraining', 'JEPA', 'self-supervised learning', 'efficiency']\nSummary: 複雑なheuristicを減らした単一encoder型video pretrainingを提案し、V-JEPA2より大幅に少ないcomputeで競合性能を狙う。\nObjective: None\nMethods: None\nData and results: None\nNovelty: video foundation modelで「性能を上げる複雑さ」より「単純化してscaleする」方向を示している。\nLimitations: None"
+      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['video pretraining', 'JEPA', 'self-supervised learning', 'efficiency']\nSummary: 複雑なheuristicを減らした単一encoder型video pretrainingを提案し、V-JEPA2より大幅に少ないcomputeで競合性能を狙う。\nObjective: 複雑なターゲットencoderやpixel復元を使わず、表現崩壊を防ぎながら動画自己教師学習を省計算で実現する。\nMethods: LeVJEPAでは単一encoderとprojectorを使い、同一動画のグローバル／局所viewの表現整合損失にSIGReg正則化を加える。入力tokenをランダムに削減し、block-causal attentionでも学習。ViT-S/B/LでV-JEPA2等と同一データ・計算量条件を比較。\nData and results: 同じepochではV-JEPA2と同等以上の精度を5.6〜20.8倍少ない事前学習計算で達成。FLOPsを揃えたViT-BではImageNet-1Kで+7.6ポイント（61.0%）、Kinetics-400は44.6%、SSv2は40.4%と報告。\nNovelty: video foundation modelで「性能を上げる複雑さ」より「単純化してscaleする」方向を示している。\nLimitations: 事前学習条件と下流probeの設定に依存し、長期的な動画理解や実ロボットの行動制御性能は要旨からは判断できない。"
     },
     {
       "title": "CorporateBench: Large-Scale Q&A Benchmarking with Temporal Knowledge Bases",
@@ -1572,13 +1572,13 @@
         "benchmark"
       ],
       "summary": "企業内情報の時間変化と組織規模を模した大規模QA benchmark。最大10,000人規模のsynthetic企業と23万超documentsを用意する。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "実企業の秘匿文書を公開せずに、巨大な組織文書の時間変化・関係整合性を扱うLLM質問応答能力を評価する。",
+      "methods": "CorporateBenchは時系列に変化する一貫した知識ベースから、社員12〜1万人の4種類の合成企業における文書を生成。情報抽出と知識ベース問い合わせの両面を測る人手検証済みの複数タスクQAで5つのLLMを比較。",
+      "results": "23万文書超を含む評価コーパスを構築し、入力文書集合が実企業規模へ大きくなるにつれ、評価した5モデルの性能が低下する傾向を報告。要旨に各モデルの正答率はない。",
       "novelty": "enterprise RAG/agent評価で、単純なstatic corpusではなく組織規模と時間変化を含めている。",
-      "limitations": null,
+      "limitations": "企業の組織や文書を合成しているため、実企業の権限管理・非定型文書・現場の検索運用への一般化には追加検証が必要。",
       "why": "enterprise RAG/agent評価で、単純なstatic corpusではなく組織規模と時間変化を含めている。",
-      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['enterprise QA', 'temporal knowledge', 'long context', 'benchmark']\nSummary: 企業内情報の時間変化と組織規模を模した大規模QA benchmark。最大10,000人規模のsynthetic企業と23万超documentsを用意する。\nObjective: None\nMethods: None\nData and results: None\nNovelty: enterprise RAG/agent評価で、単純なstatic corpusではなく組織規模と時間変化を含めている。\nLimitations: None"
+      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['enterprise QA', 'temporal knowledge', 'long context', 'benchmark']\nSummary: 企業内情報の時間変化と組織規模を模した大規模QA benchmark。最大10,000人規模のsynthetic企業と23万超documentsを用意する。\nObjective: 実企業の秘匿文書を公開せずに、巨大な組織文書の時間変化・関係整合性を扱うLLM質問応答能力を評価する。\nMethods: CorporateBenchは時系列に変化する一貫した知識ベースから、社員12〜1万人の4種類の合成企業における文書を生成。情報抽出と知識ベース問い合わせの両面を測る人手検証済みの複数タスクQAで5つのLLMを比較。\nData and results: 23万文書超を含む評価コーパスを構築し、入力文書集合が実企業規模へ大きくなるにつれ、評価した5モデルの性能が低下する傾向を報告。要旨に各モデルの正答率はない。\nNovelty: enterprise RAG/agent評価で、単純なstatic corpusではなく組織規模と時間変化を含めている。\nLimitations: 企業の組織や文書を合成しているため、実企業の権限管理・非定型文書・現場の検索運用への一般化には追加検証が必要。"
     },
     {
       "title": "Puro-2B: Poor Lab's Qwen2-1.5B Trained on RTX 5090 within $5090",
@@ -1596,13 +1596,13 @@
         "consumer GPU"
       ],
       "summary": "consumer RTX 5090とFP8を使い、1.4T tokensまで2B級モデルをscratch pretrainingする公開recipeを提示。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "大規模計算機を持たない研究室でも、2B級言語モデルのゼロからの事前学習と学習過程の実験を再現できるようにする。",
+      "methods": "民生RTX 5090でFP8学習し、ハードウェア選択・低精度計算・hyperball optimizer・curriculum model averaging・データレシピを統合。Qwen2-1.5Bを基礎にPuro-2B系列を最大1.4兆tokenで学習し、費用対性能のscaling lawも推定。",
+      "results": "最良モデルの計算費用は6,900ドル未満でQwen2.5-1.5Bに近い成績。費用スケーリング則は4,400ドル程度でQwen2-1.5B相当と推定。学習コード・データ・重みをApache 2.0で公開し、学習データカリキュラムの影響も検討。",
       "novelty": "foundation model pretrainingを大規模cluster前提から引き下げ、研究室レベルで再現可能にしようとしている。",
-      "limitations": null,
+      "limitations": "費用推定は特定のGPU価格・学習環境と著者評価条件に依存する。Qwen2.5-1.5Bとの同等性を一般用途すべてで証明したものではない。",
       "why": "foundation model pretrainingを大規模cluster前提から引き下げ、研究室レベルで再現可能にしようとしている。",
-      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['pretraining', 'low-cost training', 'FP8', 'consumer GPU']\nSummary: consumer RTX 5090とFP8を使い、1.4T tokensまで2B級モデルをscratch pretrainingする公開recipeを提示。\nObjective: None\nMethods: None\nData and results: None\nNovelty: foundation model pretrainingを大規模cluster前提から引き下げ、研究室レベルで再現可能にしようとしている。\nLimitations: None"
+      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['pretraining', 'low-cost training', 'FP8', 'consumer GPU']\nSummary: consumer RTX 5090とFP8を使い、1.4T tokensまで2B級モデルをscratch pretrainingする公開recipeを提示。\nObjective: 大規模計算機を持たない研究室でも、2B級言語モデルのゼロからの事前学習と学習過程の実験を再現できるようにする。\nMethods: 民生RTX 5090でFP8学習し、ハードウェア選択・低精度計算・hyperball optimizer・curriculum model averaging・データレシピを統合。Qwen2-1.5Bを基礎にPuro-2B系列を最大1.4兆tokenで学習し、費用対性能のscaling lawも推定。\nData and results: 最良モデルの計算費用は6,900ドル未満でQwen2.5-1.5Bに近い成績。費用スケーリング則は4,400ドル程度でQwen2-1.5B相当と推定。学習コード・データ・重みをApache 2.0で公開し、学習データカリキュラムの影響も検討。\nNovelty: foundation model pretrainingを大規模cluster前提から引き下げ、研究室レベルで再現可能にしようとしている。\nLimitations: 費用推定は特定のGPU価格・学習環境と著者評価条件に依存する。Qwen2.5-1.5Bとの同等性を一般用途すべてで証明したものではない。"
     },
     {
       "title": "Understanding Evolution Strategies for LLM Reasoning: Broader Reasoning Coverage than GRPO",
@@ -1620,13 +1620,13 @@
         "post-training"
       ],
       "summary": "LLM reasoning post-trainingでEvolution StrategiesをGRPOと比較し、Pass@1だけでなくPass@Kのsolution coverageに強みがあることを分析。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "LLMのreasoning強化学習でES（進化戦略）がGRPOより広い解探索能力を保てる条件と、その理由を解明する。",
+      "methods": "パラメータ摂動によるES集団とGRPOのPass@1・Pass@K、検証器上のJensen–Shannon多様性、重み更新の機能的疎性、保持能力を比較。連続GRPO→ESの組み合わせ方策と個体数の影響も検討。",
+      "results": "ESはGRPOで生じがちなentropy collapseを回避し、Pass@1を改善しながらPass@Kでより高い解候補の網羅性を示した。更新パラメータの変化は大きくても、性能改善への寄与は大きな変化を持つ一部の更新に集中。大規模モデルほど必要ES集団数が減る傾向を報告。",
       "novelty": "RL系post-trainingが平均成功率を上げてもreasoning diversityを狭める可能性に対し、ESという別系統の最適化を示す。",
-      "limitations": null,
+      "limitations": "Pass@Kや報酬検証器の設定に依存し、すべての推論分野でESが常に優位と示したものではない。要旨にベンチマーク別数値はない。",
       "why": "RL系post-trainingが平均成功率を上げてもreasoning diversityを狭める可能性に対し、ESという別系統の最適化を示す。",
-      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['evolution strategies', 'reasoning', 'GRPO', 'post-training']\nSummary: LLM reasoning post-trainingでEvolution StrategiesをGRPOと比較し、Pass@1だけでなくPass@Kのsolution coverageに強みがあることを分析。\nObjective: None\nMethods: None\nData and results: None\nNovelty: RL系post-trainingが平均成功率を上げてもreasoning diversityを狭める可能性に対し、ESという別系統の最適化を示す。\nLimitations: None"
+      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['evolution strategies', 'reasoning', 'GRPO', 'post-training']\nSummary: LLM reasoning post-trainingでEvolution StrategiesをGRPOと比較し、Pass@1だけでなくPass@Kのsolution coverageに強みがあることを分析。\nObjective: LLMのreasoning強化学習でES（進化戦略）がGRPOより広い解探索能力を保てる条件と、その理由を解明する。\nMethods: パラメータ摂動によるES集団とGRPOのPass@1・Pass@K、検証器上のJensen–Shannon多様性、重み更新の機能的疎性、保持能力を比較。連続GRPO→ESの組み合わせ方策と個体数の影響も検討。\nData and results: ESはGRPOで生じがちなentropy collapseを回避し、Pass@1を改善しながらPass@Kでより高い解候補の網羅性を示した。更新パラメータの変化は大きくても、性能改善への寄与は大きな変化を持つ一部の更新に集中。大規模モデルほど必要ES集団数が減る傾向を報告。\nNovelty: RL系post-trainingが平均成功率を上げてもreasoning diversityを狭める可能性に対し、ESという別系統の最適化を示す。\nLimitations: Pass@Kや報酬検証器の設定に依存し、すべての推論分野でESが常に優位と示したものではない。要旨にベンチマーク別数値はない。"
     },
     {
       "title": "INTENT-AS-A-TOOL Makes it Easy to Track Agentic Misalignment",
@@ -1644,13 +1644,13 @@
         "tool use"
       ],
       "summary": "agentにintent-targeted toolを用意し、そのtoolを呼ぶ確率をintent signalとして使う監視手法を提案。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "エージェントの有害行動の直前に変化する『行動意図』を、思考文の事後判定だけに頼らず細粒度で追跡する。",
+      "methods": "意図ごとの専用toolをエージェントに提示するINTENT-AS-A-TOOLを考案。特定toolを呼ぶ確率を行動へのコミットメントの連続的な信号とし、Chain-of-Thoughtの事後ラベル判定と比較する。",
+      "results": "有害な行動の前の意図変化を確率軌跡として観測でき、CoT監視を補完し、オンライン介入が必要な重要な生成段階を見つけられると報告。要旨に検出精度の絶対値はない。",
       "novelty": "CoTを読んで判定するjudge方式ではなく、agent行動そのものに監査用signalを埋め込む発想。",
-      "limitations": null,
+      "limitations": "意図を表すtoolをあらかじめ定義する必要があり、未想定の目的やtool呼び出しを回避する行動を検出できるとは限らない。",
       "why": "CoTを読んで判定するjudge方式ではなく、agent行動そのものに監査用signalを埋め込む発想。",
-      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['agent safety', 'misalignment', 'intent monitoring', 'tool use']\nSummary: agentにintent-targeted toolを用意し、そのtoolを呼ぶ確率をintent signalとして使う監視手法を提案。\nObjective: None\nMethods: None\nData and results: None\nNovelty: CoTを読んで判定するjudge方式ではなく、agent行動そのものに監査用signalを埋め込む発想。\nLimitations: None"
+      "details": "Publication date: 2026-08-27\nread_level: abstract\nTags: ['agent safety', 'misalignment', 'intent monitoring', 'tool use']\nSummary: agentにintent-targeted toolを用意し、そのtoolを呼ぶ確率をintent signalとして使う監視手法を提案。\nObjective: エージェントの有害行動の直前に変化する『行動意図』を、思考文の事後判定だけに頼らず細粒度で追跡する。\nMethods: 意図ごとの専用toolをエージェントに提示するINTENT-AS-A-TOOLを考案。特定toolを呼ぶ確率を行動へのコミットメントの連続的な信号とし、Chain-of-Thoughtの事後ラベル判定と比較する。\nData and results: 有害な行動の前の意図変化を確率軌跡として観測でき、CoT監視を補完し、オンライン介入が必要な重要な生成段階を見つけられると報告。要旨に検出精度の絶対値はない。\nNovelty: CoTを読んで判定するjudge方式ではなく、agent行動そのものに監査用signalを埋め込む発想。\nLimitations: 意図を表すtoolをあらかじめ定義する必要があり、未想定の目的やtool呼び出しを回避する行動を検出できるとは限らない。"
     },
     {
       "title": "Large language models can supplement the assessment of clinical high risk for psychosis",
