@@ -44,8 +44,8 @@ input{flex:1;min-width:220px}select{min-width:185px}
     <select id="sort" aria-label="並び替え">
       <option value="date-new">論文公開日：新しい順</option>
       <option value="date-old">論文公開日：古い順</option>
-      <option value="report-new">収録日：新しい順</option>
-      <option value="report-old">収録日：古い順</option>
+      <option value="report-new">レポート日：新しい順</option>
+      <option value="report-old">レポート日：古い順</option>
       <option value="title">タイトル順</option>
     </select>
   </div>
@@ -54,7 +54,7 @@ input{flex:1;min-width:220px}select{min-width:185px}
     <div class="panel list" id="list" aria-label="論文一覧"></div>
     <article class="panel detail" id="detail"><div class="empty">論文を選択すると詳細を表示します。</div></article>
   </div>
-  <p class="notice">一覧は出典・公開日・タイトルのみ表示。研究目的・手法・結果・新規性・限界は論文を選択すると表示します。公開日未確認の論文は公開日順では末尾になります。</p>
+  <p class="notice">一覧は出典・論文公開日・レポート日・タイトルのみ表示。研究目的・手法・結果・新規性・限界は論文を選択すると表示します。公開日未確認の論文は公開日順では末尾になります。</p>
 </main><script>
 let papers = [], selected = null, sourceFilter = "";
 const $ = id => document.getElementById(id);
@@ -69,7 +69,7 @@ function detail(p) {
   const fields = [["研究目的",p.objective],["手法・研究デザイン",p.methods],["実験・主な結果",p.results],["新規性",p.novelty],["限界",p.limitations]];
   const sections = fields.map(([label,val]) => "<h4>"+esc(label)+"</h4><p>"+esc(val || "未記載")+"</p>").join("");
   $("detail").innerHTML =
-    '<div class="meta">'+esc(sourceName(p))+' · 公開 '+esc(validDate(p.date) || "未確認")+' · 収録 '+esc(p.reportDate || "未確認")+' · '+esc(p.id)+' · '+esc(p.read_level || "")+'</div>'+
+    '<div class="meta">'+esc(sourceName(p))+' · 論文公開日 '+esc(validDate(p.date) || "未確認")+' · レポート日 '+esc(p.reportDate || "未確認")+' · '+esc(p.id)+' · '+esc(p.read_level || "")+'</div>'+
     '<h2>'+esc(p.title)+'</h2>'+
     '<div>'+tagList(p).map(t => '<span class="tag">'+esc(t)+'</span>').join("")+'</div>'+
     '<h4>概要</h4><p>'+esc(p.summary || "未記載")+'</p>'+sections+
@@ -96,7 +96,7 @@ function renderList() {
     const d=validDate(p.date);
     return '<button type="button" class="paper '+(p.id===selected?"active":"")+'" data-id="'+esc(p.id)+'" aria-pressed="'+(p.id===selected)+'">'+
       '<span class="paper-meta"><span class="source-label '+(p.source==="PubMed"?"pubmed":"")+'">'+esc(sourceName(p))+'</span>'+
-      '<span class="paper-date">'+(d ? "公開 "+esc(d) : "公開日未確認")+'</span></span>'+
+      '<span class="paper-date">論文公開日 '+(d ? esc(d) : "未確認")+'</span><span class="paper-date">レポート日 '+esc(p.reportDate || "未確認")+'</span></span>'+
       '<span class="paper-title">'+esc(p.title)+'</span></button>';
   }).join("") : '<div class="empty">該当する論文がありません。</div>';
   for (const e of $("list").querySelectorAll("[data-id]")) e.onclick = () => {
