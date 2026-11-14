@@ -5,7 +5,7 @@
 
 ## ダイジェスト
 
-選定101件中、以下は原著照合・編集確認を終えた53件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
+選定101件中、以下は原著照合・編集確認を終えた85件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
 
 研究の流れと2026年論文との接続は [文献集の案内](README.md) を参照。
 
@@ -67,6 +67,66 @@
 - Novelty: 系列構造に最小限の仮定しか置かない、汎用的なエンドツーエンドな系列学習アプローチを提案した点。
 - Limitations: 編者の注意: 原著の主な検証は翻訳であり、固定長の中間表現を使う。この論文単独では、後続のattention方式や現代の長期エージェントへの優位性は評価されない。
 
+### Paper: Adam: A Method for Stochastic Optimization
+- Source: arXiv
+- Canonical ID: arxiv:1412.6980
+- Publication date: 2014-12-22
+- URL: https://arxiv.org/abs/1412.6980
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: Adamは、適応的な低次モーメント推定に基づく最適化手法である。
+- Objective: 確率的目的関数の勾配ベースの最適化のための新しいアルゴリズムを提案すること。
+- Methods: 勾配の低次モーメントの適応的推定を利用し、実装が容易で計算効率が高い方法を用いる。
+- Data and results: 実証結果から、Adamは他の確率的最適化手法と比較して良好に機能することが示された。
+- Novelty: 勾配の低次モーメントの適応的な推定を使い、データ・パラメータ規模、勾配の疎性やノイズへ対応する更新則を設計する。
+- Limitations: 編者の注意: 要旨で述べる理論的なregret解析はオンライン凸最適化の枠組みに属する。大規模な非凸ニューラルネットワークで常に最適解へ収束するという保証ではない。
+
+### Paper: Trust Region Policy Optimization
+- Source: arXiv
+- Canonical ID: arxiv:1502.05477
+- Publication date: 2015-02-19
+- URL: https://arxiv.org/abs/1502.05477
+- read_level: full_text
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 理論的に単調改善する方策更新を出発点に、実用的な近似アルゴリズムTRPOを構成する。
+- Objective: どのようにして理論的に正当化されたポリシー最適化の手順を実用的なアルゴリズムに近似できるか？
+- Methods: 新旧方策のKLで更新幅を制約し、実装では全状態での最大KLを平均KLへ近似する。目的・制約をサンプルで推定して、大きい非線形方策を最適化する。
+- Data and results: シミュレーションロボットの遊泳、ホッピング、歩行ガイト学習やAtariゲームでのプレイにおいて堅牢な性能を示した。
+- Novelty: 理論的根拠に基づいた手順を近似し、実用的なTRPOアルゴリズムとして開発された点。
+- Limitations: 最大KLに基づく理論と平均KL等の実用近似を区別する。本文のAtari比較は各課題1試行で、時間制約により誤差統計を得られず、試行間変動が大きいと著者が明記する。
+
+本文の照合箇所: [4、5、8.1、8.2節・表1注記](https://arxiv.org/pdf/1502.05477)。
+
+### Paper: Distilling the Knowledge in a Neural Network
+- Source: arXiv
+- Canonical ID: arxiv:1503.02531
+- Publication date: 2015-03-09
+- URL: https://arxiv.org/abs/1503.02531
+- read_level: full_text
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 複数のモデルの知識を単一モデルに圧縮する手法を提案し、性能向上を目指す。
+- Objective: アンサンブル学習の予測を計算コストを抑えつつ実現する方法を探る。
+- Methods: 教師のsoftmax温度を上げたsoft target分布へ生徒を合わせ、正解ラベルがあればhard targetの交差エントロピーも組み合わせる。推論時は温度1に戻す。
+- Data and results: MNISTの小型ネットでは通常学習の146誤りが蒸留で74誤り、教師は67誤り。音響実験では10モデルensembleのWER 10.7%を単一蒸留モデルでも達成し、通常単体10.9%を改善。
+- Novelty: 教師の正答クラスだけでなく低確率のクラス間関係もsoft targetで渡す。温度を使った分布の移転と、専門家ensembleの構成を提示する。
+- Limitations: 本文では小さすぎる生徒が教師を完全には模倣できず、温度の選択で効果が変わることを示す。主な実証はMNIST・音響等であり、教師の誤りや偏りの除去を保証しない。
+
+本文の照合箇所: [1、2、3、4.1節・表1](https://arxiv.org/html/1503.02531v1)。
+
+### Paper: You Only Look Once: Unified, Real-Time Object Detection
+- Source: arXiv
+- Canonical ID: arxiv:1506.02640
+- Publication date: 2015-06-08
+- URL: https://arxiv.org/abs/1506.02640
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: YOLOは物体検出を回帰問題として捉え、単一ネットワークでリアルタイムに実行する手法である。
+- Objective: 従来の物体検出アプローチの課題を克服し、高速かつ高精度な統一的な検出フレームワークを提案すること。
+- Methods: 物体検出をバウンディングボックスとクラス確率の回帰問題として定式化し、単一ニューラルネットワークで全画像から直接予測する。
+- Data and results: ベースモデルは45 fpsでリアルタイム処理が可能であり、Fast YOLOは155 fpsを達成し、他の実時間検出器より高いmAPを示した。
+- Novelty: 物体検出パイプライン全体を単一のネットワークとして最適化できるため、極めて高速な統一アーキテクチャを実現した点。
+- Limitations: 著者は当時の最先端検出系より位置推定の誤りが多い一方、存在しない対象への誤検出が少ないと報告。fpsは原著のモデル・実行条件であり、現行端末での値ではない。
+
 ### Paper: Effective Approaches to Attention-based Neural Machine Translation
 - Source: arXiv
 - Canonical ID: arxiv:1508.04025
@@ -94,6 +154,34 @@
 - Data and results: 提案された敵対的ペアが、ジェネレータとディスクリミネータの両方において、物体部分からシーンに至る階層的な表現を学習することを示した。これらの特徴は新規タスクにも適用可能である。
 - Novelty: 特定のアーキテクチャ制約を持つ深層畳み込み敵対的生成ネットワーク（DCGANs）というクラスのCNNを導入した点。
 - Limitations: 編者の注意: 提案するCNN構造と画像データでの教師なし表現評価である。画像の視覚的な良さと、密度推定や生成の完全性は同一指標ではない。
+
+### Paper: An Analysis of Deep Neural Network Models for Practical Applications
+- Source: arXiv
+- Canonical ID: arxiv:1605.07678
+- Publication date: 2016-05-24
+- URL: https://arxiv.org/abs/1605.07678
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: DNNの性能評価には、精度以外にリソース利用の考慮が重要である。
+- Objective: 実用的な応用において、単なる精度だけでなくどのような指標を考慮すべきか？
+- Methods: 本研究では、精度、メモリフットプリント、パラメータ数、演算回数、推論時間、消費電力といった複数の重要な指標を用いて包括的な分析を行った。
+- Data and results: 評価したDNNの測定から、精度と推論時間の関係、エネルギー制約と到達可能な精度・複雑性、演算量と推論時間の関係を分析。精度以外の資源指標を設計判断に含める必要性を示す。
+- Novelty: 本研究は、効率的なDNNの設計とエンジニアリングを支援する情報を提供する点にある。
+- Limitations: 編者の注意: 原著の画像分類モデル・実測環境に関する経験的分析である。電力とバッチサイズ等の関係を、すべての現代LLM・ハードウェアで成り立つ法則と解釈しない。
+
+### Paper: Concrete Problems in AI Safety
+- Source: arXiv
+- Canonical ID: arxiv:1606.06565
+- Publication date: 2016-06-21
+- URL: https://arxiv.org/abs/1606.06565
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: AIの事故リスクに関する具体的な研究課題を分類し、議論する論文である。
+- Objective: 機械学習システムにおける意図しない有害な振る舞いという事故リスクの問題点を特定すること。
+- Methods: 誤った目的関数、評価困難性、学習中の望ましくない挙動に基づき、5つの実用的な研究問題として分類した。
+- Data and results: 副作用の回避、報酬ハッキングの回避、拡張可能な監督、安全な探索、分布変化の5課題を整理。原因を目的関数、監督の費用、学習中の挙動に分けて先行研究と方向性を示す。
+- Novelty: 事故リスクの原因を目的関数の誤りや学習過程の問題に分類し、体系的に議論している点。
+- Limitations: 編者の注意: 課題を定義する研究アジェンダであり、5課題を解決する単一手法や事故率の定量的低減を実証した研究ではない。
 
 ### Paper: Gaussian Error Linear Units (GELUs)
 - Source: arXiv
@@ -124,6 +212,20 @@
 - Limitations: 本文6.7節のCNN予備実験ではbatch normalizationが上回った。著者は空間位置ごとの統計の違いを挙げ、ConvNetでの追加研究が必要と述べる。
 
 本文の照合箇所: [3、6.6、6.7、7節](https://arxiv.org/html/1607.06450v1)。
+
+### Paper: Variational Lossy Autoencoder
+- Source: arXiv
+- Canonical ID: arxiv:1611.02731
+- Publication date: 2016-11-08
+- URL: https://arxiv.org/abs/1611.02731
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: VAEと自己回帰モデルを組み合わせ、グローバルな表現学習を実現する手法を提案した。
+- Objective: データからタスクに適したグローバルな潜在表現をどのように学習できるかを探求すること。
+- Methods: VAEにRNNやMADEなどのニューラル自己回帰モデルを組み込み、事前分布$p(z)$とデコード分布$p(x|z)$として利用する。
+- Data and results: このアプローチにより、MNISTなどで最先端の結果を達成し、グローバルな潜在コードがテクスチャのような無関係な情報を破棄できることを示した。
+- Novelty: VAEに自己回帰モデルを統合することで、潜在空間の学習内容を制御し、情報損失型のエンコーディングが可能になった点。
+- Limitations: 編者の注意: 潜在表現が捨てる情報はアーキテクチャで誘導される。ある画像課題で不要なテクスチャが、別の臨床・科学課題でも不要とは限らない。
 
 ### Paper: Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer
 - Source: arXiv
@@ -169,6 +271,36 @@
 
 本文の照合箇所: [3.2.3、3.3、6、7節](https://arxiv.org/html/1706.03762v7)。
 
+### Paper: Proximal Policy Optimization Algorithms
+- Source: arXiv
+- Canonical ID: arxiv:1707.06347
+- Publication date: 2017-07-20
+- URL: https://arxiv.org/abs/1707.06347
+- read_level: full_text
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: PPOは、データサンプリングと代理目的関数最適化を繰り返す新しい方策勾配法である。
+- Objective: 標準的な方策勾配法の課題を克服し、効率的で実装しやすい学習手法を提案すること。
+- Methods: 新旧方策の行動確率比とadvantageを用いる代理目的を作り、clipした場合との小さい方を採用して大きすぎる更新の利益を抑える。同じrolloutに複数epochのminibatch更新を行う。KLペナルティ版も比較。
+- Data and results: PPOは、ロボットの運動やAtariゲームなど複数のベンチマークタスクで他のオンライン方策勾配法を上回り、性能を示した。
+- Novelty: TRPOの利点を持ちながら実装が容易で汎用性が高く、サンプル効率が良い新しい目的関数を提案した点。
+- Limitations: 本文のclipは確率比の変化を好む誘因を抑える設計で、全状態のKLへの厳密な制約ではない。実験上の安定性を、報酬の正しさや各更新での単調改善保証と同一視しない。
+
+本文の照合箇所: [2.2、3、4、5、6.1節](https://arxiv.org/pdf/1707.06347)。
+
+### Paper: Searching for Activation Functions
+- Source: arXiv
+- Canonical ID: arxiv:1710.05941
+- Publication date: 2017-10-16
+- URL: https://arxiv.org/abs/1710.05941
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 活性化関数を自動探索し、比較した深いモデルでReLUより改善傾向を示すSwishを得る。
+- Objective: 深層ネットワークにおける最適な活性化関数を特定することが目的である。
+- Methods: 網羅的検索と強化学習を組み合わせた手法で新しい活性化関数を探索・検証した。
+- Data and results: SwishはImageNetのtop-1精度でMobile NASNet-Aを0.9%、Inception-ResNet-v2を0.6%改善したと報告。
+- Novelty: 自動検索技術を用いて、従来の設計に頼らない新たな活性化関数を発見した点。
+- Limitations: 編者の注意: 比較した深いネットワークで改善傾向を示す結果であり、全モデルで最良の活性化関数という保証ではない。探索費用と個別実行の費用も別に考える。
+
 ### Paper: Decoupled Weight Decay Regularization
 - Source: arXiv
 - Canonical ID: arxiv:1711.05101
@@ -182,6 +314,20 @@
 - Data and results: 提案手法は、(i) 標準SGDとAdamの両方で重み減衰因子の最適選択を学習率設定から分離し、(ii) Adamの汎化性能を大幅に改善させ、画像分類データセットにおいてSGD with momentumに匹敵する性能を示した。
 - Novelty: 重み減衰を最適化ステップからデカップリングすることで、適応的勾配法における重み減衰の本来の定式化を回復させた点。
 - Limitations: 編者の注意: 理論上の同値性の区別と、画像分類での実証を分ける。重み減衰を分離するだけで、すべてのモデル・データで最適な汎化が保証されるわけではない。
+
+### Paper: Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm
+- Source: arXiv
+- Canonical ID: arxiv:1712.01815
+- Publication date: 2017-12-05
+- URL: https://arxiv.org/abs/1712.01815
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: AlphaZeroは、自己対戦による学習でチェスや将棋も攻略可能である。
+- Objective: ゲームのルールのみから、様々な難易度のゲームで超人的な性能を達成できるか？
+- Methods: ランダムなプレイから開始し、ドメイン知識なしに自己対戦を通じてアルファゼロを訓練した。
+- Data and results: AlphaZeroは24時間以内にチェスや将棋などで人間を超えるレベルのプレイを達成し、世界チャンピオンプログラムに勝利した。
+- Novelty: 単一のアルファゼロアルゴリズムで、複数の異なるゲーム（チェス、将棋、囲碁）に対応できる汎用性を実現した点。
+- Limitations: 編者の注意: 既知のルールと明確な勝敗を持つ完全情報ゲームでの自己対戦である。24時間という学習時間も計算資源とセットで読み、未知の現実環境における同じ汎用性を仮定しない。
 
 ### Paper: Deep contextualized word representations
 - Source: arXiv
@@ -324,6 +470,20 @@
 - Data and results: GLUEおよびSQuADにおいてRoBERTaと同等の性能を示し、要約タスクでは最大6 ROUGEの向上を達成した。機械翻訳でも1.1 BLEUの改善が見られた。
 - Novelty: テキスト破損と再構築というノイズ除去オートエンコーダの枠組みを用いることで、BERTやGPTなどの既存手法を包括的にカバーする汎用的な事前学習フレームワークを提供した点。
 - Limitations: 編者の注意: ノイズ付加・復元の選択と課題で性能が変わる。生成のベンチマーク改善は、すべての出力の事実性や安全性を保証するものではない。
+
+### Paper: Fast Transformer Decoding: One Write-Head is All You Need
+- Source: arXiv
+- Canonical ID: arxiv:1911.02150
+- Publication date: 2019-11-06
+- URL: https://arxiv.org/abs/1911.02150
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: マルチクエリ注意機構を提案し、推論時のメモリ帯域幅を削減した。
+- Objective: Transformerの逐次推論における計算速度低下の原因と対策は何か？
+- Methods: キーとバリューテンソルを全アテンションヘッドで共有するマルチクエリ注意機構を採用した。
+- Data and results: この手法によりデコードが大幅に高速化し、品質劣化は軽微であることが実験的に確認された。
+- Novelty: キーとバリューを共有することで、メモリ帯域幅の要求を大きく削減できる点。
+- Limitations: 著者はdecodeの高速化と同時に、baselineから小さい品質低下があると報告する。編者の注意: KVの共有による効率化と、出力分布を完全に保存する手法は区別する。
 
 ### Paper: Scaling Laws for Neural Language Models
 - Source: arXiv
@@ -521,6 +681,20 @@
 - Novelty: 思考連鎖プロンプティングにおける貪欲なデコーディングを、多様なパスから最も一貫性のある答えを選択する自己一貫性に置き換えた点。
 - Limitations: 編者の注意: 複数の推論を生成するため単発生成より計算を要する。同じ誤答へ多数の経路が収束する場合、多数決だけでは正しさを保証できない。
 
+### Paper: STaR: Bootstrapping Reasoning With Reasoning
+- Source: arXiv
+- Canonical ID: arxiv:2203.14465
+- Publication date: 2022-03-28
+- URL: https://arxiv.org/abs/2203.14465
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: STaRは、少数の例と大規模データから推論能力を段階的に向上させる手法である。
+- Objective: 複雑な推論タスクでモデルの推論生成能力をいかにして引き出すか？
+- Methods: 少数の説明例から推論を生成。誤答時は正解を与えて説明を再生成し、最終的に正解へ至る説明で微調整するループを繰り返す。
+- Data and results: 直接最終解を学習する比較系より複数データで改善し、CommonsenseQAでは30倍大きいモデルの微調整に近い成績を報告した。
+- Novelty: 自己生成した推論過程からモデル自身に能力を改善させる点が新しい。
+- Limitations: 編者の注意: 生成した説明の採用には正答の情報を使う。正解ラベルなしで自律的に新知識を発見・検証したことや、説明自体の正しさの保証とは区別する。
+
 ### Paper: Training Compute-Optimal Large Language Models
 - Source: arXiv
 - Canonical ID: arxiv:2203.15556
@@ -577,6 +751,78 @@
 - Novelty: 複雑な問題をより単純なサブ問題群に分解し、その解を順次利用することで、プロンプト例を超える難問への汎化を実現した点。
 - Limitations: 編者の注意: 分解できる課題と適切な例示に依存する。SCANでの高成績から、任意の現実課題を正しく分解できる能力までは導けない。
 
+### Paper: Large Language Models are Zero-Shot Reasoners
+- Source: arXiv
+- Canonical ID: arxiv:2205.11916
+- Publication date: 2022-05-24
+- URL: https://arxiv.org/abs/2205.11916
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: LLMは「Let's think step by step」追加のみで高度な推論が可能である。
+- Objective: LLMがFew-shot学習に依存せず、ゼロショットでの複雑な多段階推論能力を持つか検証する。
+- Methods: 各ベンチマークタスクに対し、「Let's think step by step」を前置した単一プロンプト（Zero-shot-CoT）を用いて評価した。
+- Data and results: text-davinci-002でMultiArithが17.7%から78.7%、GSM8Kが10.4%から40.7%へ向上。PaLM 540Bでも同程度の改善を報告した。
+- Novelty: Few-shot例なしで「Let's think step by step」を追加するだけで、LLMの基本的なゼロショット推論能力を抽出できる点。
+- Limitations: 編者の注意: 効果は比較したモデルと算術・記号・論理ベンチマークに基づく。同じ短い指示が将来の全モデルや実務の難問でも同じ改善を生むとは限らない。
+
+### Paper: FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness
+- Source: arXiv
+- Canonical ID: arxiv:2205.14135
+- Publication date: 2022-05-27
+- URL: https://arxiv.org/abs/2205.14135
+- read_level: full_text
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: IO効率を考慮した正確なアテンション機構FlashAttentionを提案し、Transformerの高速化を実現した。
+- Objective: 正確なattentionを維持しながら、GPU階層メモリ間の読み書きを減らして実時間・メモリ利用を改善する。
+- Methods: Q/K/Vをブロックに分けてSRAMへ読み込み、softmaxを統計量で逐次集約する。逆伝播では巨大な中間行列をHBMへ保存せず、必要な値を再計算する。
+- Data and results: BERT-large長512では学習全体の実時間15%改善、GPT-2長1Kでは3倍高速化と報告。モデルや系列長が異なる値を一律の高速化率として扱わない。
+- Novelty: 計算量だけでなくGPUメモリ間のI/Oアクセスを考慮したアプローチが本研究の新規性である。
+- Limitations: 編者の注意: exact版とblock-sparse近似版を区別する。主な改良はI/Oであり、attentionの算術計算量すべてを系列長に対して線形にしたという主張ではない。
+
+本文の照合箇所: [2.2、3.1、付録B.1〜B.3節](https://arxiv.org/html/2205.14135v2)。
+
+### Paper: Formal Algorithms for Transformers
+- Source: arXiv
+- Canonical ID: arxiv:2207.09238
+- Publication date: 2022-07-19
+- URL: https://arxiv.org/abs/2207.09238
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: トランスフォーマーの構造とアルゴリズムを数学的に解説する包括的な資料である。
+- Objective: 読者がトランスフォーマーの基本概念、学習方法、応用分野を理解するための指針を提供すること。
+- Methods: 基本的な機械学習用語に精通していることを前提とし、MLPなどの既知のニューラルネットワーク構造と比較しながら説明を進める。
+- Data and results: トランスフォーマーがどのようなものか、どのように訓練され、主要な構成要素や著名なモデル群について概説されている。
+- Novelty: 貢献はTransformerの構造・学習・主要モデルを自己完結した数学的アルゴリズムとして整理することにあり、新しい最高性能モデルの提案ではない。
+- Limitations: 著者はアーキテクチャとアルゴリズムの概説であり、実験結果を扱う資料ではないと明記する。基本的なML用語やMLPの理解を前提とする。
+
+### Paper: ReAct: Synergizing Reasoning and Acting in Language Models
+- Source: arXiv
+- Canonical ID: arxiv:2210.03629
+- Publication date: 2022-10-06
+- URL: https://arxiv.org/abs/2210.03629
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: ReActは、推論と行動を交互に組み合わせることでLLMの能力を高める手法である。
+- Objective: LLMにおける推論と行動の統合的な利用可能性を探求すること。
+- Methods: ReActでは、思考過程（reasoning traces）とタスク固有のアクションをインターリーブさせ、外部情報源との連携を行う。
+- Data and results: Wikipedia APIを使うHotpotQA・FEVERで幻覚や誤り伝播を減らしたと報告。ALFWorldとWebShopでは1〜2例の提示で、比較した模倣・RL手法より成功率が34%・10%絶対改善。
+- Novelty: 推論トレースが行動計画の追跡と例外処理を助け、外部アクションが情報収集を可能にする点。
+- Limitations: 編者の注意: 取得する外部情報と実行環境に依存する。選定課題での幻覚低減は、全出力の事実性や悪意あるツール入力への安全性を保証しない。
+
+### Paper: Measuring and Narrowing the Compositionality Gap in Language Models
+- Source: arXiv
+- Canonical ID: arxiv:2210.03350
+- Publication date: 2022-10-07
+- URL: https://arxiv.org/abs/2210.03350
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 言語モデルの構成的推論能力を測定し、そのギャップを埋める手法を提案した。
+- Objective: モデルがサブ問題は解けても全体解を出せない「構成性ギャップ」を定量的に評価すること。
+- Methods: 多段階質問を用いて構成性ギャップを算出し、Chain-of-ThoughtやSelf-Askといったプロンプティングで改善を試みた。
+- Data and results: GPT-3ではモデルサイズ増加に伴い構成性ギャップは減らず、Self-Askが検索エンジンと統合することで精度向上を示した。
+- Novelty: 自己質問（self-ask）という構造化プロンプティングにより、推論過程の明示的な記述でギャップを埋める点を提案した。
+- Limitations: 編者の注意: GPT-3系列と、多数の事実を組み合わせるよう設計した質問での評価である。規模拡大がすべての種類の推論を改善しないという一般定理ではない。
+
 ### Paper: Scaling Instruction-Finetuned Language Models
 - Source: arXiv
 - Canonical ID: arxiv:2210.11416
@@ -604,6 +850,34 @@
 - Data and results: 本手法により、1750億パラメータのモデルのビット幅を3〜4ビットまで削減しつつ、非圧縮ベースラインと比較して無視できる精度の低下に留まる。これにより、単一GPUでの生成推論が可能となり、FP16比で高性能GPUでは約3.25倍、A6000では4.5倍の高速化を達成した。
 - Novelty: 近似された2次情報に基づいたワンショット重み量子化手法GPTQを提案し、これによって大規模モデルの量子化精度と効率性を大幅に向上させた点。
 - Limitations: 編者の注意: 速度向上はA100/A6000と比較精度に依存する。要旨から未知タスク全般での精度保持や量子化後の安全性は確認できない。
+
+### Paper: PAL: Program-aided Language Models
+- Source: arXiv
+- Canonical ID: arxiv:2211.10435
+- Publication date: 2022-11-18
+- URL: https://arxiv.org/abs/2211.10435
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: PALはLLMに問題分解をさせ、解法実行をPythonインタープリタで行う手法である。
+- Objective: LLMの推論過程における論理的・算術的な誤りをどう克服するか？
+- Methods: 自然言語の問題からプログラムを生成し、その実行ステップをPythonインタープリタで処理する。
+- Data and results: 数学・記号・アルゴリズムの13課題で、大きい言語モデルによる推論より正確だったと報告。Codexを使うPALはGSM8KでPaLM-540BのCoTより15%絶対改善。
+- Novelty: LLMによる問題分解とシンボリックインタープリタの実行結果を組み合わせる点。
+- Limitations: 編者の注意: インタープリタは生成されたコードを正確に実行するが、問題の読み違いや誤ったコード生成まで防ぐものではない。ツール実行の費用と信頼境界も別に評価する。
+
+### Paper: Fast Inference from Transformers via Speculative Decoding
+- Source: arXiv
+- Canonical ID: arxiv:2211.17192
+- Publication date: 2022-11-30
+- URL: https://arxiv.org/abs/2211.17192
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 推論速度を向上させるため、並列計算を利用したスペキュラティブデコーディング法を提案する。
+- Objective: 自己回帰モデルのトークン生成における遅延の問題を解決する方法を探る。
+- Methods: 軽量な近似モデルの候補列を大型モデルで並列に評価し、元の大型モデルの出力分布を変えないサンプリングにより複数トークンの生成を進める。
+- Data and results: T5-XXLで実証し、標準実装と比較して2倍から3倍の加速を達成した。
+- Novelty: 既存モデルの再学習やアーキテクチャ変更なしに、並列実行により高速推論を実現する点。
+- Limitations: 編者の注意: 正確さの主張は出力分布の保存に関するもの。高速化率は候補モデル、受理される候補、並列計算とメモリの条件に依存し、全ワークロードで2〜3倍を保証しない。
 
 ### Paper: Constitutional AI: Harmlessness from AI Feedback
 - Source: arXiv
@@ -647,6 +921,48 @@
 - Novelty: 独自のプロプライエタリなデータセットに頼らず、公開データのみで高性能モデルの訓練が可能であることを示した点。
 - Limitations: 編者の注意: 公開学習データの利用と、全データの品質・権利・汚染問題の解決は同一ではない。評価成績は採用した課題と比較条件に依存する。
 
+### Paper: Reflexion: Language Agents with Verbal Reinforcement Learning
+- Source: arXiv
+- Canonical ID: arxiv:2303.11366
+- Publication date: 2023-03-20
+- URL: https://arxiv.org/abs/2303.11366
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: Reflexionは、言語エージェントを重み更新なしに言語的フィードバックで強化するフレームワークである。
+- Objective: 従来の強化学習の課題を克服し、効率的に試行錯誤から学習する方法を探る。
+- Methods: エージェントがタスクのフィードバック信号について口頭で反省し、これをエピソード記憶バッファに保持して次の試行に利用する。
+- Data and results: HumanEvalコーディングベンチマークで91%のpass@1精度を達成し、GPT-4（80%）を上回った。
+- Novelty: 重み更新ではなく、言語的なフィードバックを通じてエージェントを強化するというアプローチを採用した点。
+- Limitations: 編者の注意: 反省を次の試行へ渡す構成であるため、モデルだけでなく試行回数、利用できる評価器、記憶の有無を揃えて比較する必要がある。誤った反省の蓄積も別の課題となる。
+
+### Paper: Tree of Thoughts: Deliberate Problem Solving with Large Language Models
+- Source: arXiv
+- Canonical ID: arxiv:2305.10601
+- Publication date: 2023-05-17
+- URL: https://arxiv.org/abs/2305.10601
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: ToTは、LLMの推論を思考の木構造で拡張し、計画的な問題解決を可能にするフレームワークである。
+- Objective: 初期決定が重要なタスクや探索が必要な課題において、LLMの限界を超える方法を探ること。
+- Methods: 文としての中間思考を節点にし、複数候補を生成・自己評価して探索する。先読みや後戻りを用い、Game of 24、創作文、Mini Crosswordsで評価する。
+- Data and results: Game of 24では、CoTプロンプティングで4%だった成功率が、本手法により74%に大幅に向上したことが示された。
+- Novelty: ToTは、単なる逐次的な思考連鎖を超え、複数の推論パスを探索し、グローバルな選択を行うことを可能にした点にある。
+- Limitations: 編者の注意: 3種類の探索課題での実証であり、候補生成と自己評価に複数モデル呼び出しを要する。74%はGame of 24の設定で、一般的な問題解決率ではない。
+
+### Paper: Goat: Fine-tuned LLaMA Outperforms GPT-4 on Arithmetic Tasks
+- Source: arXiv
+- Canonical ID: arxiv:2305.14201
+- Publication date: 2023-05-23
+- URL: https://arxiv.org/abs/2305.14201
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: ファインチューニングしたLLaMAモデル「Goat」が算術タスクでGPT-4を上回る性能を示した。
+- Objective: 本研究の目的は、算術タスクにおいて既存の大規模言語モデルを超える性能を持つ新しいモデルを提案することである。
+- Methods: LLaMAを合成算術データで微調整。学習可能性によって課題を分け、複雑な乗除算を基本算術に分解する。Goat-7BはLoRAにより24GB VRAM GPUで学習可能と報告。
+- Data and results: Goat-7BはゼロショットでPaLM-540BのFew-shotと同等以上の精度を達成し、大規模な加減算でほぼ完璧な精度を示した。
+- Novelty: 本研究は、学習困難なタスクを基本原理に基づき複数の学習可能なタスクに分解するアプローチを提案した点にある。
+- Limitations: 編者の注意: 算術課題に特化した比較であり、論文タイトルのGPT-4超過を一般的な知能全体の優位性と解釈しない。数値のtokenizationと問題分解の条件に依存する。
+
 ### Paper: QLoRA: Efficient Finetuning of Quantized LLMs
 - Source: arXiv
 - Canonical ID: arxiv:2305.14314
@@ -675,6 +991,36 @@
 - Novelty: 報酬モデルから対応する最適ポリシーを閉形式で抽出可能にし、標準的なRLHF問題を単なる分類損失で解けるようにした点。
 - Limitations: 編者の注意: 選好データと定式化した正則化の仮定に依存する。オンライン環境の探索や全安全性課題でPPOを常に上回るという結果ではない。
 
+### Paper: Let's Verify Step by Step
+- Source: arXiv
+- Canonical ID: arxiv:2305.20050
+- Publication date: 2023-05-31
+- URL: https://arxiv.org/abs/2305.20050
+- read_level: full_text
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: MATHの候補解選別において、中間ステップへの教師信号が最終結果だけの教師信号より有効かを比較する。
+- Objective: LLMの論理的誤りを減らすため、結果か過程のどちらで教師信号を与えるべきかを比較すること。
+- Methods: PRM800Kの80万ステップラベルでprocess reward modelを学習し、候補解を段階の得点から選ぶ。大規模比較に加え、学習データ等を揃えた小規模合成監督でも比較する。
+- Data and results: MATHテスト部分集合のbest-of-1860ではprocess監督78.2%、outcome監督72.4%、多数決69.6%。これは1回だけ生成したモデルの正答率ではなく、1860候補からの選別性能である。
+- Novelty: プロセス監視がアウトカム監視よりも優位であり、アクティブラーニングもその効果を高めることを示した点。
+- Limitations: 本文4節は大規模比較でPRM/ORMの学習データが直接比較できず、能動学習などが交絡すると指摘。合成監督で要因を分離するが、ラベル費用・採点器・候補数を揃えた比較が重要。
+
+本文の照合箇所: [3、4、付録F.2・表4](https://arxiv.org/html/2305.20050v1)。
+
+### Paper: AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration
+- Source: arXiv
+- Canonical ID: arxiv:2306.00978
+- Publication date: 2023-06-01
+- URL: https://arxiv.org/abs/2306.00978
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: AWQは、LLMの量子化誤差を低減する活性化認識型の重み量子化手法である。
+- Objective: LLMのオンデバイス展開におけるモデルサイズとリソース制約という課題を解決する方法を探る。
+- Methods: 活性化分布を参照し、重要な重みチャネルを特定した後、等価変換を用いてスケーリングすることでAWQを適用する。
+- Data and results: 言語・コード・数学や多モダリティで量子化を評価。併設のTinyChatはkernel fusion等も用い、デスクトップ・モバイルGPUでHugging Face FP16実装より3倍超高速と報告。
+- Novelty: 本手法は、バックプロパゲーションや再構築に依存せず、活性化統計からスケールを決定できる点が新規である。
+- Limitations: 編者の注意: 重要な1%を保護するという表現は混合精度を残す設計ではなく、チャネルのスケーリングを使う。TinyChatの速度は量子化だけでなく実装・プラットフォームの効果も含む。
+
 ### Paper: Orca: Progressive Learning from Complex Explanation Traces of GPT-4
 - Source: arXiv
 - Canonical ID: arxiv:2306.02707
@@ -702,6 +1048,34 @@
 - Data and results: テストしたほとんどのベンチマークにおいて、オープンソースのチャットモデルを上回り、有用性と安全性においても閉鎖型モデルの代替となり得る。
 - Novelty: ファインチューニングと安全性の改善アプローチを詳細に記述し、コミュニティによる発展を可能にした点。
 - Limitations: 編者の注意: 有用性と安全性は採用した人間評価とベンチマークに基づく。閉鎖モデルの全利用場面を代替できることや、未知の攻撃への安全性を保証しない。
+
+### Paper: Graph of Thoughts: Solving Elaborate Problems with Large Language Models
+- Source: arXiv
+- Canonical ID: arxiv:2308.09687
+- Publication date: 2023-08-18
+- URL: https://arxiv.org/abs/2308.09687
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: GoTはLLMの思考を任意グラフとしてモデル化し、複雑な問題解決能力を向上させるフレームワークである。
+- Objective: LLMの推論能力を、既存の手法を超える形でどのように進展させられるかを探る。
+- Methods: LLMが生成する情報を頂点、依存関係を辺とする任意グラフで表し、思考の結合、ネットワーク全体からの抽出、フィードバックによる改良を行う。
+- Data and results: GoTはToTよりソートの質を62%向上させつつ、コストを31%以上削減できることを示した。
+- Novelty: 本手法はLLMの思考を任意グラフで表現し、ネットワーク全体から本質的な出力を抽出可能にした点にある。
+- Limitations: 編者の注意: 62%の品質向上と31%超の費用減は比較したソート課題の例である。グラフ表現の有効性は、脳の機構を再現したことを意味しない。
+
+### Paper: Efficient Memory Management for Large Language Model Serving with PagedAttention
+- Source: arXiv
+- Canonical ID: arxiv:2309.06180
+- Publication date: 2023-09-12
+- URL: https://arxiv.org/abs/2309.06180
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: PagedAttentionとvLLMにより、KVキャッシュのメモリ効率を大幅に改善した。
+- Objective: 大規模言語モデルのサービングにおけるKVキャッシュのメモリ管理問題を解決すること。
+- Methods: 仮想メモリやページング技術に着想を得たPagedAttentionアルゴリズムを提案し、これを用いたvLLMシステムを構築した。
+- Data and results: vLLMは、既存手法比でスループットが2-4倍向上し、レイテンシは同等に保たれた。
+- Novelty: 仮想メモリのページング技術を応用し、KVキャッシュの断片化と重複を削減する点。
+- Limitations: 編者の注意: 2〜4倍は同程度のlatency条件でのスループット比較である。単一要求の応答時間や外部ツールを含むエージェント全体の所要時間が同率で短くなることを意味しない。
 
 ### Paper: Beyond Reverse KL: Generalizing Direct Preference Optimization with Diverse Divergence Constraints
 - Source: arXiv
@@ -745,6 +1119,76 @@
 - Novelty: 各層で2つのエキスパートのみを使用しながらも、トークンごとに異なるエキスパートを利用可能にした点。
 - Limitations: 編者の注意: 活動パラメータ13Bと全重み47Bの保存・配信コストを混同しない。比較結果は当時のモデル版とベンチマーク条件に依存する。
 
+### Paper: KTO: Model Alignment as Prospect Theoretic Optimization
+- Source: arXiv
+- Canonical ID: arxiv:2402.01306
+- Publication date: 2024-02-02
+- URL: https://arxiv.org/abs/2402.01306
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: LLMアライメントの目的関数をプロスペクト理論に基づき最適化するKTO法を提案した。
+- Objective: 人間のフィードバックに基づくLLMのアライメントにおいて、どのような損失関数が最も適切か？
+- Methods: カネマン・トヴェルスキーのモデルを用い、選好の対数尤度最大化ではなく生成物の効用を直接最大化するHALOを設計し適用した。
+- Data and results: KTOは1Bから30Bスケールで、バイナリ信号のみ学習しても既存の選好ベース手法と同等以上の性能を示した。
+- Novelty: 従来の目的関数が対数尤度最大化であったのに対し、本研究では生成物の効用を直接最大化する損失関数を提案した点である。
+- Limitations: 著者はすべての状況で優れる単一のHALOはなく、適切な帰納バイアスによって最良の損失が変わると指摘する。望ましいか否かの二値信号も、その判断者と分布に依存する。
+
+### Paper: DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models
+- Source: arXiv
+- Canonical ID: arxiv:2402.03300
+- Publication date: 2024-02-05
+- URL: https://arxiv.org/abs/2402.03300
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: DeepSeekMath 7Bは、数学的推論能力を向上させたオープンLLMである。
+- Objective: 言語モデルの複雑な構造を持つ数学的推論という課題にどう対処するか。
+- Methods: DeepSeek-Coder-Base-v1.5 7Bを120Bの数学関連トークンで継続事前学習し、GRPOを導入した。
+- Data and results: 外部ツールや投票なしのMATH精度51.7%を報告。64サンプルのself-consistencyを用いると60.9%で、単発と複数試行の計算条件は異なる。
+- Novelty: データ選択パイプラインと、メモリ効率を最適化したGroup Relative Policy Optimization (GRPO)の導入が特徴的である。
+- Limitations: 編者の注意: 主な証拠は数学データ選別とMATH評価であり、GRPOの利点を全てのエージェント環境へ直接外挿しない。複数候補の投票は追加推論費用を要する。
+
+### Paper: Smaug: Fixing Failure Modes of Preference Optimisation with DPO-Positive
+- Source: arXiv
+- Canonical ID: arxiv:2402.13228
+- Publication date: 2024-02-20
+- URL: https://arxiv.org/abs/2402.13228
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: DPOの失敗モードを修正するDPOPを提案し、性能向上を実現した。
+- Objective: 標準DPO損失が持つ、好ましい例の尤度低下という問題点を特定すること。
+- Methods: 標準DPOでは相対的な選好確率が上がっても望ましい応答そのものの尤度が下がることを理論・実験で示す。編集距離の小さい対で顕著な失敗を抑えるDPO-Positiveを設計。
+- Data and results: DPOPは様々なデータセットやタスクでDPOを上回り、MT-Benchのような独立ベンチマークでも優位性を示した。
+- Novelty: 標準DPOの失敗モードを回避するDPOPを提案し、よりロバストなファインチューニング手法を提供した点。
+- Limitations: 編者の注意: 失敗の抑制と評価改善は調べたデータ・モデルに関する結果である。Smaugの当時のleaderboard成績は、現在の順位や全能力の保証を意味しない。
+
+### Paper: Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone
+- Source: arXiv
+- Canonical ID: arxiv:2404.14219
+- Publication date: 2024-04-22
+- URL: https://arxiv.org/abs/2404.14219
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 38億パラメータのphi-3-miniは、小型ながら高性能なLLMであり、様々なタスクで高い能力を示す。
+- Objective: スマートフォンでの展開を可能にしつつ、MixtralやGPT-3.5に匹敵する性能を持つモデルを開発すること。
+- Methods: 訓練データセットはフィルタリングされたウェブデータと合成データから構成され、ロバスト性、安全性、チャット形式へのアライメントが追加で行われた。
+- Data and results: phi-3-miniはMMLUで69%、MT-benchで8.38を達成し、小型モデルながら高い性能を示した。
+- Novelty: 厳しく選別したWebデータと合成データを使い、端末に載る3.8Bモデルで強い言語評価を目指す。後続改訂ではPhi-3.5系列も追加報告されている。
+- Limitations: 編者の注意: 要旨は後の改訂内容も含み、公開日はv1の初回投稿日である。学術・内部評価での同等性を、全利用条件での大規模モデル代替やスマートフォン上の全性能と解釈しない。
+
+### Paper: WPO: Enhancing RLHF with Weighted Preference Optimization
+- Source: arXiv
+- Canonical ID: arxiv:2406.11827
+- Publication date: 2024-06-17
+- URL: https://arxiv.org/abs/2406.11827
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: WPOは、オフポリシーデータでRLHFの分布ギャップを是正する手法である。
+- Objective: オフポリシーでの好み最適化が抱える分布ギャップの問題をどう解決するか？
+- Methods: 現在のポリシーに基づき、好みのペアを重み付け再調整し、オンポリシー学習をシミュレーションする。
+- Data and results: Alpaca Eval 2でDPOを最大5.6%上回ると報告。Gemma-2-9b-itを基にしたモデルのGPT-4-turboへのlength-controlled勝率は76.7%。
+- Novelty: オフポリシーデータに重み付けを行うことで、分布ギャップを是正しつつ最適化を強化する点。
+- Limitations: 編者の注意: 勝率は特定の評価器・対戦相手・長さ補正条件の値である。再重み付けによる分布補正の効果を、すべての人間の選好との一致と解釈しない。
+
 ### Paper: The Llama 3 Herd of Models
 - Source: arXiv
 - Canonical ID: arxiv:2407.21783
@@ -759,19 +1203,43 @@
 - Novelty: 本研究では、多言語性、コーディング、推論、ツール使用をネイティブにサポートする新しい大規模モデル群「Llama 3」を発表した点である。
 - Limitations: 原著執筆時点では画像・動画・音声を統合したモデルは開発中で、広く公開されていない。要旨の記述は当時の公開状態であり、現在の提供状況の確認とは別である。
 
+### Paper: Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters
+- Source: arXiv
+- Canonical ID: arxiv:2408.03314
+- Publication date: 2024-08-06
+- URL: https://arxiv.org/abs/2408.03314
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 問題の難易度に応じた推論時計算の配分により、一定条件ではモデル大型化より効率的に性能を伸ばせることを示す。
+- Objective: 固定された推論時間計算量を許容した場合、LLMの性能向上度はどの程度か？
+- Methods: 密な検証器報酬モデルに対する検索と、プロンプトに応じた応答分布の適応的更新という2つのメカニズムを分析した。
+- Data and results: 「計算量最適」戦略を用いることで、ベスト・オブ-Nベースラインより効率が4倍以上向上し、FLOPs同等で小型モデルが大型モデルを上回ることも示した。
+- Novelty: プロンプトの難易度に応じてテスト時計算量を適応的に配分する「計算量最適」戦略を提案した点。
+- Limitations: 著者の14倍大きいモデル超過は、小型モデルにも一定の成功率がある問題をFLOPs一致で比べた条件の結果である。最難関問題を含むすべての条件で推論時計算が大型化を代替するとは示さない。
+
 <!-- PAPER_IDS -->
 arxiv:1301.3781
 arxiv:1310.4546
 arxiv:1409.0473
 arxiv:1409.3215
+arxiv:1412.6980
+arxiv:1502.05477
+arxiv:1503.02531
+arxiv:1506.02640
 arxiv:1508.04025
 arxiv:1511.06434
+arxiv:1605.07678
+arxiv:1606.06565
 arxiv:1606.08415
 arxiv:1607.06450
+arxiv:1611.02731
 arxiv:1701.06538
 arxiv:1706.03741
 arxiv:1706.03762
+arxiv:1707.06347
+arxiv:1710.05941
 arxiv:1711.05101
+arxiv:1712.01815
 arxiv:1802.05365
 arxiv:1810.04805
 arxiv:1902.00751
@@ -782,6 +1250,7 @@ arxiv:1909.11942
 arxiv:1910.01108
 arxiv:1910.10683
 arxiv:1910.13461
+arxiv:1911.02150
 arxiv:2001.08361
 arxiv:2003.10555
 arxiv:2004.05150
@@ -796,21 +1265,42 @@ arxiv:2110.04366
 arxiv:2201.11903
 arxiv:2203.02155
 arxiv:2203.11171
+arxiv:2203.14465
 arxiv:2203.15556
 arxiv:2204.02311
 arxiv:2205.05638
 arxiv:2205.10625
+arxiv:2205.11916
+arxiv:2205.14135
+arxiv:2207.09238
+arxiv:2210.03629
+arxiv:2210.03350
 arxiv:2210.11416
 arxiv:2210.17323
+arxiv:2211.10435
+arxiv:2211.17192
 arxiv:2212.08073
 arxiv:2212.10560
 arxiv:2302.13971
+arxiv:2303.11366
+arxiv:2305.10601
+arxiv:2305.14201
 arxiv:2305.14314
 arxiv:2305.18290
+arxiv:2305.20050
+arxiv:2306.00978
 arxiv:2306.02707
 arxiv:2307.09288
+arxiv:2308.09687
+arxiv:2309.06180
 arxiv:2309.16240
 arxiv:2310.06825
 arxiv:2401.04088
+arxiv:2402.01306
+arxiv:2402.03300
+arxiv:2402.13228
+arxiv:2404.14219
+arxiv:2406.11827
 arxiv:2407.21783
+arxiv:2408.03314
 <!-- /PAPER_IDS -->
