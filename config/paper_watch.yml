@@ -1,5 +1,5 @@
 # Canonical configuration for ChatGPT Scheduled Paper Watch.
-# ChatGPT reads this file on every run. This file is read-only during scheduled execution.
+# ChatGPT reads this file on every run. The scheduled task may write daily reports to GitHub; this config is read during execution.
 
 version: 4
 repository: drkamoshika/papers
@@ -7,8 +7,8 @@ repository: drkamoshika/papers
 execution:
   platform: chatgpt_scheduled_task
   schedule: daily_0700_asia_tokyo
-  external_writes: false
-  delivery: chatgpt_task_result
+  external_writes: github_daily_report_only
+  delivery: github_markdown_and_chatgpt_digest
 
 sources:
   - arxiv
@@ -80,11 +80,12 @@ deduplication:
     - Keep at most max_seen_ids most recent IDs in task state.
 
 output:
-  mode: chatgpt_task_result
+  mode: github_markdown_and_chatgpt_digest
   include_overview: true
   include_digest: true
   digest_top_papers: 5
   include_full_report: true
+  github_report_path: reports/daily/paper_watch_YYYY-MM-DD.md
   include_paper_ids_block: true
   paper_ids_block_format: |
     <!-- PAPER_IDS -->
@@ -105,13 +106,13 @@ task_instructions: |
   Run one paper-watch cycle inside ChatGPT.
 
   1. Treat this YAML file as the source of truth for retrieval, selection, and report format.
-  2. Do not use Gmail, Notion, GitHub write actions, local models, or external LLM APIs.
+  2. Do not use Gmail, Notion, local models, or external LLM APIs. GitHub writes are allowed only for the daily Markdown report.
   3. Use the Scheduled Task prompt's embedded seen-ID state for duplicate detection.
   4. Search the web for relevant arXiv and PubMed candidates according to retrieval settings.
   5. Verify every selected paper using its individual arXiv or PubMed/publisher primary page.
   6. Exclude canonical IDs already present in the task's seen-ID state.
   7. Select at most max_papers according to selection.rules.
-  8. Produce one Japanese task result containing both a digest and the complete report.
+  8. Generate one complete Japanese Markdown report and save it to GitHub at output.github_report_path with YYYY-MM-DD replaced by the run date in Asia/Tokyo.
   9. Begin with "## ダイジェスト", including "### 今回の概況" and up to output.digest_top_papers notable papers.
   10. Then include "# 完全版レポート" and every selected paper.
   11. For each paper include Source, canonical ID, publication date, authors when available, journal/category when available, URL, and read_level.
@@ -119,9 +120,11 @@ task_instructions: |
   13. For medical AI papers include the configured medical_ai_extra_fields when supported by the source.
   14. End with a PAPER_IDS block containing every selected canonical ID.
   15. Only after the report is successfully generated, update this Scheduled Task's own seen-ID state by unioning the new IDs and retaining at most deduplication.max_seen_ids most recent IDs.
-  16. Do not perform any external write action. The report itself is the Scheduled Task result.
-  17. If web search, primary-source verification, or internal task-state update fails, report the failure accurately and do not invent success.
+  16. After generating the complete report, use GitHub create_file to save it. If the date's report already exists, fetch its SHA and update_file instead. Fetch the saved file and verify its content. Only after successful verification, update internal seen-ID state. If saving fails, report the failure and do not mark new IDs as seen.
+  17. Return a short ChatGPT digest with the date, number of papers, 2-3 notable topics, and a GitHub link to the saved report. Do not reproduce the full report in chat unless GitHub saving fails.
+  18. Do not change any other repository files.
+  19. If web search, primary-source verification, GitHub saving, or internal task-state update fails, report the failure accurately and do not invent success.
 
 notes:
   - ChatGPT Scheduled Tasks can send built-in push/email notifications; delivery does not rely on a Gmail write action.
-  - GitHub is used only as a read-only configuration source during scheduled runs.
+  - GitHub is used as a configuration source and as the storage for daily Markdown reports.
