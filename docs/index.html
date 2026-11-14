@@ -6,6 +6,7 @@ header h1{font-size:25px;margin:0 0 5px;letter-spacing:-.5px}header p{font-size:
 .wrap{max-width:1160px;margin:auto;padding:22px 20px}
 .catalog-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:13px}
 .catalog-top h2{font-size:18px;margin:0}.total{font-size:13px;color:#64748b}
+.collection-switch{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.collection-tab{border:1px solid #cbd5e1;background:white;border-radius:9px;padding:11px 16px;cursor:pointer;color:#40546b;font-weight:600}.collection-tab[aria-pressed="true"]{background:#163e5c;color:white;border-color:#163e5c}.collection-note{font-size:13px;line-height:1.8;color:#52667a;margin:0 0 16px}.collection-note a{color:#1768a3}.source-label.other{background:#f3ecdf;color:#805c22}[hidden]{display:none!important}
 .source-switch{display:flex;gap:5px;flex-wrap:wrap;background:#e8edf3;border-radius:11px;padding:5px;margin-bottom:12px}
 .source-tab{border:0;background:transparent;border-radius:8px;color:#40546b;cursor:pointer;padding:10px 17px;font-weight:600;font-size:14px}
 .source-tab:hover{background:#f7fafc}.source-tab[aria-pressed="true"]{background:#fff;color:#123e63;box-shadow:0 1px 5px #102b3a1c}
@@ -34,13 +35,21 @@ input{flex:1;min-width:220px}select{min-width:185px}
 <header><h1>Paper Watch <span style="font-weight:400;opacity:.65">/ Research Library</span></h1><p>機械学習・LLM・医療AIの論文アーカイブ</p></header>
 <main class="wrap">
   <div class="catalog-top"><h2>論文一覧</h2><span class="total" id="total">読み込み中...</span></div>
+  <nav class="collection-switch" aria-label="文献集">
+    <button type="button" class="collection-tab" data-collection="daily" aria-pressed="true">新着論文 <span id="daily-count"></span></button>
+    <button type="button" class="collection-tab" data-collection="foundations" aria-pressed="false">基礎文献 <span id="foundations-count"></span></button>
+    <button type="button" class="collection-tab" data-collection="" aria-pressed="false">両方</button>
+  </nav>
+  <p class="collection-note" id="collection-note">定期レポートで紹介した新着論文を掲載しています。</p>
   <nav class="source-switch" aria-label="論文の出典">
     <button type="button" class="source-tab" data-source="" aria-pressed="true">すべて <span id="all-count"></span></button>
     <button type="button" class="source-tab" data-source="arXiv" aria-pressed="false">arXiv <span id="arxiv-count"></span></button>
     <button type="button" class="source-tab" data-source="PubMed" aria-pressed="false">PubMed <span id="pubmed-count"></span></button>
+    <button type="button" class="source-tab" data-source="other" aria-pressed="false">出版社・その他 <span id="other-count"></span></button>
   </nav>
   <div class="filters">
     <input id="search" type="search" aria-label="論文検索" placeholder="タイトル・論文ID・本文などを検索">
+    <select id="field" aria-label="基礎文献の分野" hidden><option value="">すべての分野</option></select>
     <select id="sort" aria-label="並び替え">
       <option value="date-new">論文公開日：新しい順</option>
       <option value="date-old">論文公開日：古い順</option>
@@ -56,24 +65,31 @@ input{flex:1;min-width:220px}select{min-width:185px}
   </div>
   <p class="notice">一覧は出典・論文公開日・レポート日・タイトルのみ表示。研究目的・手法・結果・新規性・限界は論文を選択すると表示します。公開日未確認の論文は公開日順では末尾になります。</p>
 </main><script>
-let papers = [], selected = null, sourceFilter = "";
+let papers = [], selected = null, sourceFilter = "", collectionFilter = "daily";
 const $ = id => document.getElementById(id);
 const tagList = p => Array.isArray(p.tags) ? p.tags : String(p.tags || "").split(",").map(s => s.trim()).filter(Boolean);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const repo = "https://github.com/drkamoshika/papers/blob/main/";
 const validDate = value => /^\d{4}-\d{2}-\d{2}$/.test(String(value || "")) ? value : "";
-const sourceName = p => p.source === "PubMed" ? "PubMed" : "arXiv";
+const sourceName = p => p.source || "出典未確認";
+const sourceClass = p => p.source === "PubMed" ? "pubmed" : p.source === "arXiv" ? "" : "other";
+const readLevel = p => ({abstract:"要旨確認",full_text:"本文の関連箇所確認",bibliographic:"書誌情報のみ"}[p.read_level] || "確認範囲未記載");
+const hasCollection = (p,c) => !c || p.collections.includes(c);
+const safeUrl = url => /^https:\/\//.test(String(url || "")) ? url : "#";
 function detail(p) {
   if (!p) return;
   selected = p.id;
   const fields = [["研究目的",p.objective],["手法・研究デザイン",p.methods],["実験・主な結果",p.results],["新規性",p.novelty],["限界",p.limitations]];
   const sections = fields.map(([label,val]) => "<h4>"+esc(label)+"</h4><p>"+esc(val || "未記載")+"</p>").join("");
   $("detail").innerHTML =
-    '<div class="meta">'+esc(sourceName(p))+' · 論文公開日 '+esc(validDate(p.date) || "未確認")+' · レポート日 '+esc(p.reportDate || "未確認")+' · '+esc(p.id)+' · '+esc(p.read_level || "")+'</div>'+
+    '<div class="meta">'+esc(sourceName(p))+' · 論文公開日 '+esc(validDate(p.date) || "未確認")+' · レポート日 '+esc(p.reportDate || "未確認")+' · '+esc(p.id)+' · '+esc(readLevel(p))+'</div>'+
     '<h2>'+esc(p.title)+'</h2>'+
     '<div>'+tagList(p).map(t => '<span class="tag">'+esc(t)+'</span>').join("")+'</div>'+
     '<h4>概要</h4><p>'+esc(p.summary || "未記載")+'</p>'+sections+
-    '<p><a href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">論文原文 ↗</a>　<a href="'+esc(repo+encodeURI(p.report))+'" target="_blank" rel="noopener noreferrer">元レポート ↗</a></p>';
+    (p.dateNote ? '<p class="meta">'+esc(p.dateNote)+'</p>' : '')+
+    (p.sourceSections ? '<p class="meta">本文の確認箇所: '+esc(p.sourceSections)+'</p>' : '')+
+    '<p><a href="'+esc(safeUrl(p.url))+'" target="_blank" rel="noopener noreferrer">論文原文 ↗</a>　<a href="'+esc(repo+encodeURI(p.report))+'" target="_blank" rel="noopener noreferrer">元レポート ↗</a>'+
+    (p.extraSource ? '　<a href="'+esc(safeUrl(p.extraSource))+'" target="_blank" rel="noopener noreferrer">確認した本文 ↗</a>' : '')+'</p>';
   renderList();
 }
 function compareDate(a,b,key,descending) {
@@ -84,8 +100,10 @@ function compareDate(a,b,key,descending) {
 }
 function renderList() {
   const q = $("search").value.trim().toLowerCase(), sort=$("sort").value;
-  const list = papers.filter(p =>
-    (!sourceFilter || p.source === sourceFilter) &&
+  const base = papers.filter(p => hasCollection(p,collectionFilter));
+  const list = base.filter(p =>
+    (!sourceFilter || (sourceFilter === "other" ? !["arXiv","PubMed"].includes(p.source) : p.source === sourceFilter)) &&
+    (collectionFilter !== "foundations" || !$("field").value || (p.fields || []).includes($("field").value)) &&
     (!q || [p.title,p.id,tagList(p).join(" "),p.summary,p.objective,p.methods,p.results,p.novelty,p.limitations].join(" ").toLowerCase().includes(q))
   );
   list.sort((a,b) => sort === "title" ? a.title.localeCompare(b.title) :
@@ -95,7 +113,7 @@ function renderList() {
   $("list").innerHTML = list.length ? list.map(p => {
     const d=validDate(p.date);
     return '<button type="button" class="paper '+(p.id===selected?"active":"")+'" data-id="'+esc(p.id)+'" aria-pressed="'+(p.id===selected)+'">'+
-      '<span class="paper-meta"><span class="source-label '+(p.source==="PubMed"?"pubmed":"")+'">'+esc(sourceName(p))+'</span>'+
+      '<span class="paper-meta"><span class="source-label '+sourceClass(p)+'">'+esc(sourceName(p))+'</span>'+
       '<span class="paper-date">論文公開日 '+(d ? esc(d) : "未確認")+'</span><span class="paper-date">レポート日 '+esc(p.reportDate || "未確認")+'</span></span>'+
       '<span class="paper-title">'+esc(p.title)+'</span></button>';
   }).join("") : '<div class="empty">該当する論文がありません。</div>';
@@ -104,23 +122,52 @@ function renderList() {
     if (window.matchMedia("(max-width:750px)").matches) $("detail").scrollIntoView({behavior:"smooth",block:"start"});
   };
   for (const e of document.querySelectorAll("[data-source]")) e.setAttribute("aria-pressed",String(e.dataset.source === sourceFilter));
+  for (const e of document.querySelectorAll("[data-collection]")) e.setAttribute("aria-pressed",String(e.dataset.collection === collectionFilter));
+  $("all-count").textContent = "("+base.length+")";
+  $("arxiv-count").textContent = "("+base.filter(p=>p.source==="arXiv").length+")";
+  $("pubmed-count").textContent = "("+base.filter(p=>p.source==="PubMed").length+")";
+  $("other-count").textContent = "("+base.filter(p=>!["arXiv","PubMed"].includes(p.source)).length+")";
+  $("field").hidden = collectionFilter !== "foundations";
 }
+for (const e of document.querySelectorAll("[data-collection]")) e.onclick = () => {
+  collectionFilter=e.dataset.collection; sourceFilter=""; $("field").value="";
+  $("collection-note").innerHTML = collectionFilter === "foundations" ?
+    '最新研究の前提となる手法・評価・研究の転換点をまとめています。確認済みの文献のみ掲載。<a href="'+repo+'reports/foundations/README.md" target="_blank" rel="noopener noreferrer">研究の流れと読み順 ↗</a>' :
+    collectionFilter === "daily" ? '定期レポートで紹介した新着論文を掲載しています。' : '新着論文と基礎文献をまとめて検索できます。';
+  renderList();
+};
 for (const e of document.querySelectorAll("[data-source]")) e.onclick = () => {sourceFilter=e.dataset.source;renderList()};
 $("search").addEventListener("input",renderList);
 $("sort").addEventListener("change",renderList);
-$("clear").onclick = () => {sourceFilter="";$("search").value="";$("sort").value="date-new";renderList()};
-fetch("./papers.json").then(r=>{if(!r.ok)throw Error(r.status);return r.json()})
-  .then(data=>{
-    papers = data.papers || [];
+$("field").addEventListener("change",renderList);
+$("clear").onclick = () => {sourceFilter="";$("search").value="";$("field").value="";$("sort").value="date-new";renderList()};
+const loadCollection = async (file,collection) => {
+  const r=await fetch(file);if(!r.ok)throw Error(file+": "+r.status);
+  const data=await r.json();if(!Array.isArray(data.papers))throw Error(file+": invalid papers");
+  return data.papers.map(p=>({...p,collections:[collection]}));
+};
+Promise.allSettled([loadCollection("./papers.json","daily"),loadCollection("./foundations.json","foundations")])
+  .then(results=>{
+    const merged=new Map();
+    for (const result of results) if(result.status==="fulfilled") for(const p of result.value) {
+      const old=merged.get(p.id);
+      if(old) merged.set(p.id,{...old,collections:[...new Set([...old.collections,...p.collections])],fields:[...new Set([...(old.fields||[]),...(p.fields||[])])]});
+      else merged.set(p.id,p);
+    }
+    papers = [...merged.values()];
+    if(!papers.length)throw Error("文献データを読み込めませんでした");
     $("total").textContent = "全 " + papers.length + " 件";
-    $("all-count").textContent = "(" + papers.length + ")";
-    $("arxiv-count").textContent = "(" + papers.filter(p=>p.source==="arXiv").length + ")";
-    $("pubmed-count").textContent = "(" + papers.filter(p=>p.source==="PubMed").length + ")";
+    $("daily-count").textContent = "("+papers.filter(p=>hasCollection(p,"daily")).length+")";
+    $("foundations-count").textContent = "("+papers.filter(p=>hasCollection(p,"foundations")).length+")";
+    const fields=[...new Set(papers.filter(p=>hasCollection(p,"foundations")).flatMap(p=>p.fields||[]))];
+    $("field").innerHTML = '<option value="">すべての分野</option>'+fields.map(f=>'<option value="'+esc(f)+'">'+esc(f)+'</option>').join("");
+    if(results[0].status==="rejected")collectionFilter="foundations";
+    if(results.some(r=>r.status==="rejected"))$("collection-note").textContent="一部の文献集を読み込めませんでした。読み込めた文献を表示しています。再読み込みで再試行できます。";
     renderList();
   })
   .catch(e=>{
     $("count").textContent="読み込み失敗";
-    $("list").innerHTML='<div class="empty">papers.jsonを読み込めませんでした。ページを再読み込みしてください。</div>';
+    $("list").innerHTML='<div class="empty">文献データを読み込めませんでした。ページを再読み込みしてください。</div>';
     console.error(e);
   });
 </script></body></html>
