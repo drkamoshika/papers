@@ -4593,14 +4593,14 @@
       "url": "https://arxiv.org/abs/2611.06910",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "物理研究をエージェントが端から端まで遂行できるか、文献調査・研究計画・実験・論文化を含むFrontierPhysicsで評価。既存モデルは研究の厳密性や専門的判断に課題。",
+      "objective": "単なる物理知識QAではなく、公開可能な物理研究として妥当な成果をAIエージェントが独立して完成できるか測定する。",
+      "methods": "物理研究の課題を提示し、文献レビュー、研究計画、実験・計算、構造化成果物・論文原稿まで要求。機械的verifierと専門家ルーブリックを組み合わせて正しさ・出版可能性を評価。22モデル・26構成を合計168実行で比較し、人手で途中の失敗原因を検査。",
+      "results": "26構成・168ロールアウトのうち、最良構成も成功46回を超えなかった。実行ログの人手監査では、ボトルネックは基礎物理知識や単純ツールミスより厳密な推論と専門家の直観の不足と判断。",
       "novelty": "新規性・意義:** 研究エージェントの端から端までの研究品質を評価対象にする。",
       "limitations": "限界:** 要旨の残りを精査せずに成功率を断定しない。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 研究エージェントの端から端までの研究品質を評価対象にする。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 研究エージェントの端から端までの研究品質を評価対象にする。\nLimitations: 限界:** 要旨の残りを精査せずに成功率を断定しない。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: 物理研究をエージェントが端から端まで遂行できるか、文献調査・研究計画・実験・論文化を含むFrontierPhysicsで評価。既存モデルは研究の厳密性や専門的判断に課題。\nObjective: 単なる物理知識QAではなく、公開可能な物理研究として妥当な成果をAIエージェントが独立して完成できるか測定する。\nMethods: 物理研究の課題を提示し、文献レビュー、研究計画、実験・計算、構造化成果物・論文原稿まで要求。機械的verifierと専門家ルーブリックを組み合わせて正しさ・出版可能性を評価。22モデル・26構成を合計168実行で比較し、人手で途中の失敗原因を検査。\nData and results: 26構成・168ロールアウトのうち、最良構成も成功46回を超えなかった。実行ログの人手監査では、ボトルネックは基礎物理知識や単純ツールミスより厳密な推論と専門家の直観の不足と判断。\nNovelty: 新規性・意義:** 研究エージェントの端から端までの研究品質を評価対象にする。\nLimitations: 限界:** 要旨の残りを精査せずに成功率を断定しない。 定量値は著者要旨に基づく。"
     },
     {
       "title": "MCP-Eco: A Linked Dataset of MCP Servers, Consumers, and Development Activity",
@@ -4612,14 +4612,14 @@
       "url": "https://arxiv.org/abs/2611.06897",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "MCPツールサーバ、呼出側リポジトリの設定、開発履歴を結びつけるMCP-Eco公開データセットを構築。潜在的なサーバと実際の設定対応を区別して追跡可能にする。",
+      "objective": "公開ツールの定義、サーバ実装、消費側の設定、メンテナンス行動を接続し、MCPエコシステムの実態を再現可能に調査できるようにする。",
+      "methods": "ディレクトリ、パッケージregistry、リポジトリ、設定ファイルと履歴を収集し19Parquetテーブルで相互リンク。server capabilityの出典が掲載情報か実機probeかを区別し、設定宣言と候補サーバの対応を記録。pull request・レビュー・issue・commitも収録。",
+      "results": "合計1688万899レコード、候補サーバ7万8302件、候補consumerリポジトリ1万6165件、設定宣言9200件。設定宣言5975件が、5138の一意なリポジトリ–サーバ組へ対応付いた。",
       "novelty": "新規性・意義:** MCPエコシステムの実装・採用・保守を出典付きで分析できる。",
       "limitations": "限界:** 候補サーバと実際に動作するサーバは同一ではない。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** MCPエコシステムの実装・採用・保守を出典付きで分析できる。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** MCPエコシステムの実装・採用・保守を出典付きで分析できる。\nLimitations: 限界:** 候補サーバと実際に動作するサーバは同一ではない。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: MCPツールサーバ、呼出側リポジトリの設定、開発履歴を結びつけるMCP-Eco公開データセットを構築。潜在的なサーバと実際の設定対応を区別して追跡可能にする。\nObjective: 公開ツールの定義、サーバ実装、消費側の設定、メンテナンス行動を接続し、MCPエコシステムの実態を再現可能に調査できるようにする。\nMethods: ディレクトリ、パッケージregistry、リポジトリ、設定ファイルと履歴を収集し19Parquetテーブルで相互リンク。server capabilityの出典が掲載情報か実機probeかを区別し、設定宣言と候補サーバの対応を記録。pull request・レビュー・issue・commitも収録。\nData and results: 合計1688万899レコード、候補サーバ7万8302件、候補consumerリポジトリ1万6165件、設定宣言9200件。設定宣言5975件が、5138の一意なリポジトリ–サーバ組へ対応付いた。\nNovelty: 新規性・意義:** MCPエコシステムの実装・採用・保守を出典付きで分析できる。\nLimitations: 限界:** 候補サーバと実際に動作するサーバは同一ではない。 定量値は著者要旨に基づく。"
     },
     {
       "title": "VABAR: A Variational Automation Benchmark for Agentic Robotics",
@@ -4631,14 +4631,14 @@
       "url": "https://arxiv.org/abs/2611.06881",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "産業・医療・インフラの現実的なロボット操作を再現可能に評価するVABARベンチマークを提案。物体操作6類型と33の再利用可能スキルを実装。",
+      "objective": "エージェント型ロボットの実験を、現実の物理制約を保ちつつ低コスト・標準化された比較として可能にする。",
+      "methods": "Newton物理エンジンによるオープンなシミュレータで、工具仕分け、工具掛け、ギア組付け、注射器梱包、ケーブル挿入、ケーブル配線の6クラスを設計。タスク変形と難度段階、達成指標、33の人手実装された基準skillを公開し、Graph-as-PolicyやIsaac Lab Arenaで初期比較。",
+      "results": "物理的に実現可能な操作を想定した6クラスと33skill、難度別ベンチマークを提供。要旨はベンチマークの設計・再現可能性が中心で、モデル間の絶対成功率や統計的な改善幅は記載されない。",
       "novelty": "新規性・意義:** 産業・医療の現実的な物体形状や配置変化を評価。",
       "limitations": "限界:** 主にシミュレーション環境。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 産業・医療の現実的な物体形状や配置変化を評価。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 産業・医療の現実的な物体形状や配置変化を評価。\nLimitations: 限界:** 主にシミュレーション環境。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: 産業・医療・インフラの現実的なロボット操作を再現可能に評価するVABARベンチマークを提案。物体操作6類型と33の再利用可能スキルを実装。\nObjective: エージェント型ロボットの実験を、現実の物理制約を保ちつつ低コスト・標準化された比較として可能にする。\nMethods: Newton物理エンジンによるオープンなシミュレータで、工具仕分け、工具掛け、ギア組付け、注射器梱包、ケーブル挿入、ケーブル配線の6クラスを設計。タスク変形と難度段階、達成指標、33の人手実装された基準skillを公開し、Graph-as-PolicyやIsaac Lab Arenaで初期比較。\nData and results: 物理的に実現可能な操作を想定した6クラスと33skill、難度別ベンチマークを提供。要旨はベンチマークの設計・再現可能性が中心で、モデル間の絶対成功率や統計的な改善幅は記載されない。\nNovelty: 新規性・意義:** 産業・医療の現実的な物体形状や配置変化を評価。\nLimitations: 限界:** 主にシミュレーション環境。 定量値は著者要旨に基づく。"
     },
     {
       "title": "SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification",
@@ -4650,14 +4650,14 @@
       "url": "https://arxiv.org/abs/2611.06876",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "エージェントの長期対話履歴を小さく圧縮する際、slot単位の並列草稿と大モデル検証で圧縮時間を減らすSpecCompact。",
+      "objective": "必要な記憶情報を保持しつつ、大型LLMで対話履歴全体を逐次要約する処理遅延を短縮する。",
+      "methods": "小型drafterを微調整し、構造化要約slotを同時生成。targetモデルが提案した各行を検証し、却下行だけ修復、その後のslot案へ更新prefixを渡す。文脈の重複処理・モデル呼出も削減し、AppWorld・τ³で2モデル比較とHermesでの利用者研究を実施。",
+      "results": "Hermes方式の要約に対しAppWorld・τ³で圧縮処理2.04〜5.63倍高速化。Hermesでのuser studyでは圧縮中央値8.68倍高速化。後続タスク成績にはモデル・タスクごとのトレードオフが生じた。",
       "novelty": "新規性・意義:** 文脈圧縮を単一長文生成でなく検証可能な小片へ分割。",
       "limitations": "限界:** タスクによって後段性能にトレードオフ。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 文脈圧縮を単一長文生成でなく検証可能な小片へ分割。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 文脈圧縮を単一長文生成でなく検証可能な小片へ分割。\nLimitations: 限界:** タスクによって後段性能にトレードオフ。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: エージェントの長期対話履歴を小さく圧縮する際、slot単位の並列草稿と大モデル検証で圧縮時間を減らすSpecCompact。\nObjective: 必要な記憶情報を保持しつつ、大型LLMで対話履歴全体を逐次要約する処理遅延を短縮する。\nMethods: 小型drafterを微調整し、構造化要約slotを同時生成。targetモデルが提案した各行を検証し、却下行だけ修復、その後のslot案へ更新prefixを渡す。文脈の重複処理・モデル呼出も削減し、AppWorld・τ³で2モデル比較とHermesでの利用者研究を実施。\nData and results: Hermes方式の要約に対しAppWorld・τ³で圧縮処理2.04〜5.63倍高速化。Hermesでのuser studyでは圧縮中央値8.68倍高速化。後続タスク成績にはモデル・タスクごとのトレードオフが生じた。\nNovelty: 新規性・意義:** 文脈圧縮を単一長文生成でなく検証可能な小片へ分割。\nLimitations: 限界:** タスクによって後段性能にトレードオフ。 定量値は著者要旨に基づく。"
     },
     {
       "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
@@ -4669,14 +4669,14 @@
       "url": "https://arxiv.org/abs/2611.06868",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "LLMエージェントが各行動turnで複数候補を生成し、別モデルが一つを選ぶturn-level Best-of-Nにより、長期タスクの成功率・安定性を改善。",
+      "objective": "最終回答だけでなく途中の次行動に推論計算を投じ、失敗を早期に回避して長期ツール操作を改善する。",
+      "methods": "generatorとselectorの2つのLLMを使用。各turnでgeneratorがN個の行動を生成し、selectorが候補を直接比較して一つを選択、環境で実行する。追加学習なしのオープンウェイトモデルで長期terminalエージェントタスクを複数回実行し、単一候補との比較と軌跡分析。",
+      "results": "長期terminalタスクの正答率を5〜10%改善し、反復時の安定性も向上。行動軌跡では試行回数減少、指示順守、デバッグ、テスト実施が改善したと報告。",
       "novelty": "新規性・意義:** 行動選択時点に推論計算を配分。",
       "limitations": "限界:** 候補生成・選択の追加計算費用が必要。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 行動選択時点に推論計算を配分。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 行動選択時点に推論計算を配分。\nLimitations: 限界:** 候補生成・選択の追加計算費用が必要。 定量値は著者要旨に基づく。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: LLMエージェントが各行動turnで複数候補を生成し、別モデルが一つを選ぶturn-level Best-of-Nにより、長期タスクの成功率・安定性を改善。\nObjective: 最終回答だけでなく途中の次行動に推論計算を投じ、失敗を早期に回避して長期ツール操作を改善する。\nMethods: generatorとselectorの2つのLLMを使用。各turnでgeneratorがN個の行動を生成し、selectorが候補を直接比較して一つを選択、環境で実行する。追加学習なしのオープンウェイトモデルで長期terminalエージェントタスクを複数回実行し、単一候補との比較と軌跡分析。\nData and results: 長期terminalタスクの正答率を5〜10%改善し、反復時の安定性も向上。行動軌跡では試行回数減少、指示順守、デバッグ、テスト実施が改善したと報告。\nNovelty: 新規性・意義:** 行動選択時点に推論計算を配分。\nLimitations: 限界:** 候補生成・選択の追加計算費用が必要。 定量値は著者要旨に基づく。"
     },
     {
       "title": "GH-AWTrace: A Large-Scale Dataset of GitHub Agentic Workflow Execution Logs",
@@ -4688,14 +4688,14 @@
       "url": "https://arxiv.org/abs/2611.06866",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "GitHub上でスケジュール・イベント実行されるagent workflowの実行ログを集約したGH-AWTrace。失敗要因や委任・ツール利用を追跡する。",
+      "objective": "ワークフロー定義や最終成果だけでなく、実行途中の失敗、ツール拒否、モデル挙動を研究可能な形で保存する。",
+      "methods": "検証済みのGitHub Agentic Workflowの設定、実行run、保存済みlog archiveを対応づけ、リポジトリメタデータとツール実行の観測結果を結合したデータセットを構築。実行ログ保持期限による欠損を明記し、複数事例で実行軌跡を分析。",
+      "results": "5051リポジトリに含まれる2万5014件のワークフロー、411万2526件のrun、56万2877件の空でないlog archiveを記録。provider失敗、tool denial、エージェント間の委任、推論方針変更を観測できることを示した。",
       "novelty": "新規性・意義:** 定期エージェント実行の失敗・ツール拒否・実行経路を実証研究できる。",
       "limitations": "限界:** ログ保持期限があり完全な実行軌跡ではない。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 定期エージェント実行の失敗・ツール拒否・実行経路を実証研究できる。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 定期エージェント実行の失敗・ツール拒否・実行経路を実証研究できる。\nLimitations: 限界:** ログ保持期限があり完全な実行軌跡ではない。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: GitHub上でスケジュール・イベント実行されるagent workflowの実行ログを集約したGH-AWTrace。失敗要因や委任・ツール利用を追跡する。\nObjective: ワークフロー定義や最終成果だけでなく、実行途中の失敗、ツール拒否、モデル挙動を研究可能な形で保存する。\nMethods: 検証済みのGitHub Agentic Workflowの設定、実行run、保存済みlog archiveを対応づけ、リポジトリメタデータとツール実行の観測結果を結合したデータセットを構築。実行ログ保持期限による欠損を明記し、複数事例で実行軌跡を分析。\nData and results: 5051リポジトリに含まれる2万5014件のワークフロー、411万2526件のrun、56万2877件の空でないlog archiveを記録。provider失敗、tool denial、エージェント間の委任、推論方針変更を観測できることを示した。\nNovelty: 新規性・意義:** 定期エージェント実行の失敗・ツール拒否・実行経路を実証研究できる。\nLimitations: 限界:** ログ保持期限があり完全な実行軌跡ではない。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "CompressionBench: How can your coding agents compress LLMs?",
@@ -4707,14 +4707,14 @@
       "url": "https://arxiv.org/abs/2611.06858",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "AIコーディングエージェントが言語モデルを自動圧縮できるか、実行可能な重み・推論コードを成果物として評価するCompressionBench。",
+      "objective": "元のモデル動作を保ちながら限られた保存容量に収める圧縮を、エージェントが実験・設計・実装まで独力で行えるか測定する。",
+      "methods": "元checkpoint、保存制約、推論環境、時間制約をcoding agentへ提供。圧縮後の重みと実行可能な推論コードを提出させ、perplexityで探索を誘導し独立検証で最終成果を判定。6エージェント×6モデル・サイズ条件と局所修正・generationテストを分析。",
+      "results": "36提出中29件が検証通過。最低perplexityの成果物平均はBF16比perplexity+3.4%、下流正解率77.33%（BF16 79.56%）。24改良中21でperplexity減少したが、全モデル評価で局所順位79件中17件が逆転。生成テストでは尤度指標で見逃す不具合を発見。",
       "novelty": "新規性・意義:** モデル圧縮をエージェントが自律実装・実験できるか測る。",
       "limitations": "限界:** 圧縮後の実行テストではperplexityだけでは見えない失敗がある。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** モデル圧縮をエージェントが自律実装・実験できるか測る。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** モデル圧縮をエージェントが自律実装・実験できるか測る。\nLimitations: 限界:** 圧縮後の実行テストではperplexityだけでは見えない失敗がある。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: AIコーディングエージェントが言語モデルを自動圧縮できるか、実行可能な重み・推論コードを成果物として評価するCompressionBench。\nObjective: 元のモデル動作を保ちながら限られた保存容量に収める圧縮を、エージェントが実験・設計・実装まで独力で行えるか測定する。\nMethods: 元checkpoint、保存制約、推論環境、時間制約をcoding agentへ提供。圧縮後の重みと実行可能な推論コードを提出させ、perplexityで探索を誘導し独立検証で最終成果を判定。6エージェント×6モデル・サイズ条件と局所修正・generationテストを分析。\nData and results: 36提出中29件が検証通過。最低perplexityの成果物平均はBF16比perplexity+3.4%、下流正解率77.33%（BF16 79.56%）。24改良中21でperplexity減少したが、全モデル評価で局所順位79件中17件が逆転。生成テストでは尤度指標で見逃す不具合を発見。\nNovelty: 新規性・意義:** モデル圧縮をエージェントが自律実装・実験できるか測る。\nLimitations: 限界:** 圧縮後の実行テストではperplexityだけでは見えない失敗がある。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "ServerBench: How can your coding agents design specialized LLM serving systems?",
@@ -4726,14 +4726,14 @@
       "url": "https://arxiv.org/abs/2611.06841",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "エージェントがLLM推論サーバを設計・最適化する能力を、品質・速度だけでなくGPUコスト当たりの有効出力として評価するServerBench。",
+      "objective": "セッション依存・遅延・正確性の制約がある実serving環境で、coding agentが自律的に高効率なサービスを作れるか評価する。",
+      "methods": "推論サービスの実装、配置、負荷選択をagentが実験。セッション依存を保つstateful replayと独立verifierを採用し、所定のレイテンシ条件を満たすtoken価値/GPU費用を『dollars per dollar』で採点。11エージェント×3配備環境で比較。",
+      "results": "Gemma E4BでClaude Sonnet 5.5が2.97 dollars per dollarを達成し、vLLM参照の4.87倍。33試行中22件の検証済みシステムが提出され、13件が最強ベースラインを上回った。",
       "novelty": "新規性・意義:** 単純なコード品質ではなく、費用あたりの有効推論性能を測る。",
       "limitations": "限界:** ハードウェア・ワークロード・検証条件に依存。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 単純なコード品質ではなく、費用あたりの有効推論性能を測る。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 単純なコード品質ではなく、費用あたりの有効推論性能を測る。\nLimitations: 限界:** ハードウェア・ワークロード・検証条件に依存。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: エージェントがLLM推論サーバを設計・最適化する能力を、品質・速度だけでなくGPUコスト当たりの有効出力として評価するServerBench。\nObjective: セッション依存・遅延・正確性の制約がある実serving環境で、coding agentが自律的に高効率なサービスを作れるか評価する。\nMethods: 推論サービスの実装、配置、負荷選択をagentが実験。セッション依存を保つstateful replayと独立verifierを採用し、所定のレイテンシ条件を満たすtoken価値/GPU費用を『dollars per dollar』で採点。11エージェント×3配備環境で比較。\nData and results: Gemma E4BでClaude Sonnet 5.5が2.97 dollars per dollarを達成し、vLLM参照の4.87倍。33試行中22件の検証済みシステムが提出され、13件が最強ベースラインを上回った。\nNovelty: 新規性・意義:** 単純なコード品質ではなく、費用あたりの有効推論性能を測る。\nLimitations: 限界:** ハードウェア・ワークロード・検証条件に依存。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "WISE: An Agentic Framework for Whole-page Multimodal Search Experience Attribution",
@@ -4745,14 +4745,14 @@
       "url": "https://arxiv.org/abs/2611.06777",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "検索の利用者体験が悪化した原因を、画像・テキスト・内部ランキング処理のどこにあるかまで追跡するWISE診断エージェント。",
+      "objective": "検索結果の品質問題を検出するだけでなく、システム内のモデル・処理段階のどこが原因か帰属して改善につなげる。",
+      "methods": "システム品質診断（SQD）を定義。ユーザー向け検索結果と内部pipeline traceを結び、ReTraceで一貫した診断軌跡を生成し、Adaptive Harness-Policy Optimizationで失敗ケースに応じharnessとmodelを調整。専門家の原因ラベル付きマルチモーダルWISE-BENCHで評価。",
+      "results": "Qwen3.5-35B-A3Bでエンドツーエンド原因診断正解率75.20%。複数モデル規模で改善し、実運用における品質監査・下流関連度モデル改善で費用低下を報告。",
       "novelty": "新規性・意義:** 出力の品質低下をコンポーネント原因に帰属する。",
       "limitations": "限界:** 検索サービスに特化した評価。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 出力の品質低下をコンポーネント原因に帰属する。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 出力の品質低下をコンポーネント原因に帰属する。\nLimitations: 限界:** 検索サービスに特化した評価。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: 検索の利用者体験が悪化した原因を、画像・テキスト・内部ランキング処理のどこにあるかまで追跡するWISE診断エージェント。\nObjective: 検索結果の品質問題を検出するだけでなく、システム内のモデル・処理段階のどこが原因か帰属して改善につなげる。\nMethods: システム品質診断（SQD）を定義。ユーザー向け検索結果と内部pipeline traceを結び、ReTraceで一貫した診断軌跡を生成し、Adaptive Harness-Policy Optimizationで失敗ケースに応じharnessとmodelを調整。専門家の原因ラベル付きマルチモーダルWISE-BENCHで評価。\nData and results: Qwen3.5-35B-A3Bでエンドツーエンド原因診断正解率75.20%。複数モデル規模で改善し、実運用における品質監査・下流関連度モデル改善で費用低下を報告。\nNovelty: 新規性・意義:** 出力の品質低下をコンポーネント原因に帰属する。\nLimitations: 限界:** 検索サービスに特化した評価。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World",
@@ -4764,14 +4764,14 @@
       "url": "https://arxiv.org/abs/2611.06768",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "ロボットが実物環境で動かしながらプログラムを修正し、過去の操作経験を再利用可能なスキルへ蓄積するPyRUA-REAL。",
+      "objective": "物理的な探索と失敗から得られた知識を、次のロボットタスクへ転用できる持続的な能力改善に結び付ける。",
+      "methods": "coding agentがロボットの実物操作から結果と失敗を収集し、コード修正、再展開、永続メモリと実行可能なskill保存を反復。エージェントの協力、タスク仕様や既存skillの再利用の影響を検証し、実8タスクとRoboDojoの42タスクを評価。",
+      "results": "実ロボット操作8課題の平均成功率91.1%、RoboDojoの42課題で84.4%。改善後の実行プログラムはオンラインagentの逐次判断なしでも展開可能と報告。",
       "novelty": "新規性・意義:** 実世界での探索結果を継続的なスキル改善へつなぐ。",
       "limitations": "限界:** 課題セットと実機環境に依存。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 実世界での探索結果を継続的なスキル改善へつなぐ。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 実世界での探索結果を継続的なスキル改善へつなぐ。\nLimitations: 限界:** 課題セットと実機環境に依存。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: ロボットが実物環境で動かしながらプログラムを修正し、過去の操作経験を再利用可能なスキルへ蓄積するPyRUA-REAL。\nObjective: 物理的な探索と失敗から得られた知識を、次のロボットタスクへ転用できる持続的な能力改善に結び付ける。\nMethods: coding agentがロボットの実物操作から結果と失敗を収集し、コード修正、再展開、永続メモリと実行可能なskill保存を反復。エージェントの協力、タスク仕様や既存skillの再利用の影響を検証し、実8タスクとRoboDojoの42タスクを評価。\nData and results: 実ロボット操作8課題の平均成功率91.1%、RoboDojoの42課題で84.4%。改善後の実行プログラムはオンラインagentの逐次判断なしでも展開可能と報告。\nNovelty: 新規性・意義:** 実世界での探索結果を継続的なスキル改善へつなぐ。\nLimitations: 限界:** 課題セットと実機環境に依存。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "Rethinking Access Control for AI Agents: Recent Advances and Open Challenges",
@@ -4783,14 +4783,14 @@
       "url": "https://arxiv.org/abs/2611.06764",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "AIエージェントのデータ・ツール利用を制御するためのアクセス制御研究を、policy、ID、実行、情報フローの観点から整理したサーベイ。",
+      "objective": "実行経路や環境条件が変わるエージェントにおいて、許可の範囲が処理全体を通じて保持されるための原則を明確にする。",
+      "methods": "アクセス制御研究をpolicy仕様・生成、IDと委任、行動・資源の強制、情報フロー制御の4領域でレビュー。権限がplan選択へ与える影響、情報は権限と別物であること、UIやAPIを跨ぐ権限制約と動的な再認証を比較し研究課題を提示。",
+      "results": "4領域にわたる既存機構と不足点を体系化し、行動だけでなく未実行の無許可効果の可能性まで含む評価指標を提唱。新規の実験スコアや比較改善率を測定する原著実験ではない。",
       "novelty": "新規性・意義:** 認可の境界を実行中に維持するための研究課題を体系化。",
       "limitations": "限界:** レビューであり新たな性能実験ではない。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 認可の境界を実行中に維持するための研究課題を体系化。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 認可の境界を実行中に維持するための研究課題を体系化。\nLimitations: 限界:** レビューであり新たな性能実験ではない。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: AIエージェントのデータ・ツール利用を制御するためのアクセス制御研究を、policy、ID、実行、情報フローの観点から整理したサーベイ。\nObjective: 実行経路や環境条件が変わるエージェントにおいて、許可の範囲が処理全体を通じて保持されるための原則を明確にする。\nMethods: アクセス制御研究をpolicy仕様・生成、IDと委任、行動・資源の強制、情報フロー制御の4領域でレビュー。権限がplan選択へ与える影響、情報は権限と別物であること、UIやAPIを跨ぐ権限制約と動的な再認証を比較し研究課題を提示。\nData and results: 4領域にわたる既存機構と不足点を体系化し、行動だけでなく未実行の無許可効果の可能性まで含む評価指標を提唱。新規の実験スコアや比較改善率を測定する原著実験ではない。\nNovelty: 新規性・意義:** 認可の境界を実行中に維持するための研究課題を体系化。\nLimitations: 限界:** レビューであり新たな性能実験ではない。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents",
@@ -4802,14 +4802,14 @@
       "url": "https://arxiv.org/abs/2611.06682",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "LLMが複数toolを呼ぶ際、権限の意味と状態依存を実行時に解釈するSecureGARD。未完了の義務は待機状態にして再計画を許しつつ、禁止行動を遮断する。",
+      "objective": "異なるtoolの形式やprompt injectionを跨いでも、実際の実行行動が権限とtask状態の条件を守れるようにする。",
+      "methods": "tool callを共通のontologyで意味化し、現在のエピソード状態からready/waiting/forbiddenを決定論的に判定。学習時の失敗からLLMが新しいontology公理を提案するが、整合性・既存の保護論理・保留検証を通ったものだけ採用して本番で凍結。AgentDojo・ASB・AgentDynで評価。",
+      "results": "3ベンチマークすべてで攻撃成功率0%と報告。既存ベースラインと比べ攻撃下での正当なタスク達成性能も改善した。",
       "novelty": "新規性・意義:** 実行時の意味的な権限制御と学習済みルール更新を分離。",
       "limitations": "限界:** ベンチマーク条件での0%であり一般的な無敵性を示さない。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 実行時の意味的な権限制御と学習済みルール更新を分離。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 実行時の意味的な権限制御と学習済みルール更新を分離。\nLimitations: 限界:** ベンチマーク条件での0%であり一般的な無敵性を示さない。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: LLMが複数toolを呼ぶ際、権限の意味と状態依存を実行時に解釈するSecureGARD。未完了の義務は待機状態にして再計画を許しつつ、禁止行動を遮断する。\nObjective: 異なるtoolの形式やprompt injectionを跨いでも、実際の実行行動が権限とtask状態の条件を守れるようにする。\nMethods: tool callを共通のontologyで意味化し、現在のエピソード状態からready/waiting/forbiddenを決定論的に判定。学習時の失敗からLLMが新しいontology公理を提案するが、整合性・既存の保護論理・保留検証を通ったものだけ採用して本番で凍結。AgentDojo・ASB・AgentDynで評価。\nData and results: 3ベンチマークすべてで攻撃成功率0%と報告。既存ベースラインと比べ攻撃下での正当なタスク達成性能も改善した。\nNovelty: 新規性・意義:** 実行時の意味的な権限制御と学習済みルール更新を分離。\nLimitations: 限界:** ベンチマーク条件での0%であり一般的な無敵性を示さない。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "AgentTrustCI: Build-Time Policy, Grounding, and Trajectory Tests for Java LLM Agents",
@@ -4821,14 +4821,14 @@
       "url": "https://arxiv.org/abs/2611.06674",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "JavaのAIエージェントがルールに従ってtoolを選び、根拠を使用し、正しい順序で実行するかをCIで検証するAgentTrustCI。",
+      "objective": "ツール接続が安全でも、アプリ固有の許可・根拠・実行手順の違反は残るため、それらをビルド時の自動回帰検査で検知する。",
+      "methods": "Java/JUnit5でpolicy、grounding、trajectoryの3層を記録済みトレースから検査し、決定論的なreplayで再現。7業務領域の55人工ケース（不正30、正常25）を用い、critical指定12ケースも別評価。optionalなLLM judgeは独立した拡張点とする。",
+      "results": "55ケースすべてを正しく分類し、critical 12件をすべて検出。単一層の検査では35件しか分類できず、複数層の必要性を示す。これは著者が作った人工検査群の達成率で本番精度ではない。",
       "novelty": "新規性・意義:** エージェントの振る舞いをCIの回帰テストに落とす。",
       "limitations": "限界:** 人工ケースでの成功は本番環境の精度を保証しない。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** エージェントの振る舞いをCIの回帰テストに落とす。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** エージェントの振る舞いをCIの回帰テストに落とす。\nLimitations: 限界:** 人工ケースでの成功は本番環境の精度を保証しない。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: JavaのAIエージェントがルールに従ってtoolを選び、根拠を使用し、正しい順序で実行するかをCIで検証するAgentTrustCI。\nObjective: ツール接続が安全でも、アプリ固有の許可・根拠・実行手順の違反は残るため、それらをビルド時の自動回帰検査で検知する。\nMethods: Java/JUnit5でpolicy、grounding、trajectoryの3層を記録済みトレースから検査し、決定論的なreplayで再現。7業務領域の55人工ケース（不正30、正常25）を用い、critical指定12ケースも別評価。optionalなLLM judgeは独立した拡張点とする。\nData and results: 55ケースすべてを正しく分類し、critical 12件をすべて検出。単一層の検査では35件しか分類できず、複数層の必要性を示す。これは著者が作った人工検査群の達成率で本番精度ではない。\nNovelty: 新規性・意義:** エージェントの振る舞いをCIの回帰テストに落とす。\nLimitations: 限界:** 人工ケースでの成功は本番環境の精度を保証しない。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
@@ -4840,14 +4840,14 @@
       "url": "https://arxiv.org/abs/2611.06585",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "コード署名されたMCPツールも、正規の宛先への送信に機密情報を混入できる。tool実行をデータのない元processから隔離複製するgermline executionを提案。",
+      "objective": "ツールの署名・ソース信頼性に依存せず、各宛先へ送信可能な情報の量を実行構造上で制限する。",
+      "methods": "MCPの各tool呼び出しごとにdata-free germline processから一時的なcopyを分岐し、その実行が送信する宛先に許可された情報だけをcopyへ与える。実行中のコード内容を信頼せず、sink noninterferenceの定理と再現可能な違反例の検証を導き、MCPGuard等の実行時防御と比較。",
+      "results": "153攻撃実行でgermline方式は許可外漏洩0件、対照・構成要素除去では5.9〜74.5%。単一copyでのtool実行は10〜49msで、毎回プロセスを完全再起動する方式より2〜28倍高速。",
       "novelty": "新規性・意義:** ツールの署名とデータアクセス権限を分離。",
       "limitations": "限界:** 隔離・プロセスコピーに関する仮定に依存。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** ツールの署名とデータアクセス権限を分離。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** ツールの署名とデータアクセス権限を分離。\nLimitations: 限界:** 隔離・プロセスコピーに関する仮定に依存。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: []\nSummary: コード署名されたMCPツールも、正規の宛先への送信に機密情報を混入できる。tool実行をデータのない元processから隔離複製するgermline executionを提案。\nObjective: ツールの署名・ソース信頼性に依存せず、各宛先へ送信可能な情報の量を実行構造上で制限する。\nMethods: MCPの各tool呼び出しごとにdata-free germline processから一時的なcopyを分岐し、その実行が送信する宛先に許可された情報だけをcopyへ与える。実行中のコード内容を信頼せず、sink noninterferenceの定理と再現可能な違反例の検証を導き、MCPGuard等の実行時防御と比較。\nData and results: 153攻撃実行でgermline方式は許可外漏洩0件、対照・構成要素除去では5.9〜74.5%。単一copyでのtool実行は10〜49msで、毎回プロセスを完全再起動する方式より2〜28倍高速。\nNovelty: 新規性・意義:** ツールの署名とデータアクセス権限を分離。\nLimitations: 限界:** 隔離・プロセスコピーに関する仮定に依存。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
@@ -4859,14 +4859,14 @@
       "url": "https://arxiv.org/abs/2611.05345",
       "read_level": "abstract",
       "tags": [],
-      "summary": null,
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "summary": "推測的デコードの検証時の数値誤差が長期エージェントの推論内容を変えることに着目し、重要な思考箇所ではdraftを意図的に拒否させ高精度に計算する方式。",
+      "objective": "単なる生成高速化ではなく、長い推論軌跡で重要な判断だけをtargetモデルの数値誤差の少ない条件で実行してタスク成功を改善する。",
+      "methods": "長期agent traceから重要な判断点を特定し、draftモデルをその箇所でtargetと異なる候補を出すよう学習。推測検証が不一致で再開される際の高精度処理を活用し、target側モデルや正規の出力分布を変えず、コーディングベンチマークで比較。学習対象はホスト済みパラメータの0.06〜0.28%。",
+      "results": "約30推論ステップ以降、検証窓内の数値誤差が出力分布へ蓄積することを確認。重要箇所でのdraft拒否誘導により長期coding taskのエンドツーエンド成功率を改善。要旨に共通の成功率差は示されない。",
       "novelty": "新規性・意義:** 推測デコードを速度だけでなく長期推論品質の制御に使う。",
       "limitations": "限界:** 要旨に一般化した成功率差はない。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 推測デコードを速度だけでなく長期推論品質の制御に使う。",
-      "details": "Publication date: 2026-11-03\nread_level: abstract\nTags: []\nSummary: None\nObjective: None\nMethods: None\nData and results: None\nNovelty: 新規性・意義:** 推測デコードを速度だけでなく長期推論品質の制御に使う。\nLimitations: 限界:** 要旨に一般化した成功率差はない。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Publication date: 2026-11-03\nread_level: abstract\nTags: []\nSummary: 推測的デコードの検証時の数値誤差が長期エージェントの推論内容を変えることに着目し、重要な思考箇所ではdraftを意図的に拒否させ高精度に計算する方式。\nObjective: 単なる生成高速化ではなく、長い推論軌跡で重要な判断だけをtargetモデルの数値誤差の少ない条件で実行してタスク成功を改善する。\nMethods: 長期agent traceから重要な判断点を特定し、draftモデルをその箇所でtargetと異なる候補を出すよう学習。推測検証が不一致で再開される際の高精度処理を活用し、target側モデルや正規の出力分布を変えず、コーディングベンチマークで比較。学習対象はホスト済みパラメータの0.06〜0.28%。\nData and results: 約30推論ステップ以降、検証窓内の数値誤差が出力分布へ蓄積することを確認。重要箇所でのdraft拒否誘導により長期coding taskのエンドツーエンド成功率を改善。要旨に共通の成功率差は示されない。\nNovelty: 新規性・意義:** 推測デコードを速度だけでなく長期推論品質の制御に使う。\nLimitations: 限界:** 要旨に一般化した成功率差はない。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
