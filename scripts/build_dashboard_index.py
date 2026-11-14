@@ -11,13 +11,9 @@ SCHEMA = ROOT / "docs" / "paper.schema.json"
 ID = re.compile(r"^(?:arxiv:\d{4}\.\d{4,5}|pmid:\d{6,9})$")
 URL = re.compile(r"https?://(?:arxiv\.org/abs/\d{4}\.\d{4,5}|pubmed\.ncbi\.nlm\.nih\.gov/\d+)")
 CANON = re.compile(r"^### Paper: (.+)$", re.M)
-KEYS = {
-    "Source": "source", "Canonical ID": "id", "Publication date": "date",
-    "URL": "url", "read_level": "read_level", "Tags": "tags",
-    "Summary": "summary", "Objective": "objective", "Methods": "methods",
-    "Data and results": "results", "Novelty": "novelty",
-    "Limitations": "limitations",
-}
+SCHEMA_DATA = json.loads(SCHEMA.read_text(encoding="utf-8"))
+KEYS = {definition["x-markdown-label"]: key for key, definition in SCHEMA_DATA["properties"].items() if "x-markdown-label" in definition}
+
 REQUIRED = ("id", "title", "url", "source", "read_level")
 EMPTY = {"", "未記載", "不明", "N/A"}
 def canonical(text, report, date):
@@ -114,7 +110,7 @@ def build():
                 if score(row) > score(old):
                     rows[row["id"]] = row
     # Validate the generated data against the single machine-readable contract.
-    schema = json.loads(SCHEMA.read_text(encoding="utf-8"))
+    schema = SCHEMA_DATA
     try:
         from jsonschema import Draft202012Validator, FormatChecker
     except ImportError as exc:
