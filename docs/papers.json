@@ -948,13 +948,13 @@
         "post-training"
       ],
       "summary": "GRPOのようなgroup-based RLがcriticを避ける一方、1 promptあたり複数responseを必要とする問題に対し、criticを安定に学習するBest Practice Critic Optimization (BPCO)を提示。1 response/promptでもgroup-based baselineに匹敵または上回る結果を報告する。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "複数回答を生成するGRPO系の計算費用を抑えながら、LLM強化学習におけるcritic（価値予測器）を安定して学習する。",
+      "methods": "Best Practice Critic Optimization（BPCO）としてDPPO、価値予測の上限・下限制御、Monte Carloターゲット、非正規化アドバンテージ、応答長に応じたGAEなどを組み合わせる。訓練時のcriticには採点ルーブリックや参照解答も条件として与え、1プロンプト当たり1回答で学習する。",
+      "results": "数学的推論などに対して1.5Bから30B-A3B規模のモデルで比較。1プロンプト1応答の設定でも複数応答を使うgroup-based強化学習に匹敵または上回り、従来のcritic方式より安定した性能を報告。原著要旨にベンチマーク別スコアの絶対値はない。",
       "novelty": "critic-free RLが主流化する中、「critic自体が悪いのではなくtraining recipeが不安定だった」という実務的に重要な再評価。",
-      "limitations": null,
+      "limitations": "criticに訓練時のルーブリック・参照解答を与える設定に依存する。要旨では実タスク別の数値スコアや学習費用の詳細比較は確認できない。",
       "why": "critic-free RLが主流化する中、「critic自体が悪いのではなくtraining recipeが不安定だった」という実務的に重要な再評価。",
-      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['LLM', 'reinforcement learning', 'critic', 'GRPO', 'post-training']\nSummary: GRPOのようなgroup-based RLがcriticを避ける一方、1 promptあたり複数responseを必要とする問題に対し、criticを安定に学習するBest Practice Critic Optimization (BPCO)を提示。1 response/promptでもgroup-based baselineに匹敵または上回る結果を報告する。\nObjective: None\nMethods: None\nData and results: None\nNovelty: critic-free RLが主流化する中、「critic自体が悪いのではなくtraining recipeが不安定だった」という実務的に重要な再評価。\nLimitations: None"
+      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['LLM', 'reinforcement learning', 'critic', 'GRPO', 'post-training']\nSummary: GRPOのようなgroup-based RLがcriticを避ける一方、1 promptあたり複数responseを必要とする問題に対し、criticを安定に学習するBest Practice Critic Optimization (BPCO)を提示。1 response/promptでもgroup-based baselineに匹敵または上回る結果を報告する。\nObjective: 複数回答を生成するGRPO系の計算費用を抑えながら、LLM強化学習におけるcritic（価値予測器）を安定して学習する。\nMethods: Best Practice Critic Optimization（BPCO）としてDPPO、価値予測の上限・下限制御、Monte Carloターゲット、非正規化アドバンテージ、応答長に応じたGAEなどを組み合わせる。訓練時のcriticには採点ルーブリックや参照解答も条件として与え、1プロンプト当たり1回答で学習する。\nData and results: 数学的推論などに対して1.5Bから30B-A3B規模のモデルで比較。1プロンプト1応答の設定でも複数応答を使うgroup-based強化学習に匹敵または上回り、従来のcritic方式より安定した性能を報告。原著要旨にベンチマーク別スコアの絶対値はない。\nNovelty: critic-free RLが主流化する中、「critic自体が悪いのではなくtraining recipeが不安定だった」という実務的に重要な再評価。\nLimitations: criticに訓練時のルーブリック・参照解答を与える設定に依存する。要旨では実タスク別の数値スコアや学習費用の詳細比較は確認できない。"
     },
     {
       "title": "Provably adaptive sampling with uniform and remasking discrete diffusion models",
@@ -972,13 +972,13 @@
         "information theory"
       ],
       "summary": "離散diffusionのsampling complexityをambient dimensionではなくtarget distributionのdual total correlationで特徴づけるadaptive guaranteeを示す。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "離散拡散モデルの並列サンプリングに必要な反復数を、変数次元だけでなく対象分布の依存構造に応じて保証する。",
+      "methods": "uniform maskingとremasking型離散拡散で、leave-one-out型の一次denoiserを用いる適応的並列更新を解析。分布の依存度をdual total correlation（DTC）で表し、スコア推定誤差と総変動距離の上界を導く。構造化した合成分布でも検証。",
+      "results": "対数因子を除くサンプリング複雑性をO(DTC(X₀)/ε)、分布誤差をO(ε_score+ε)とする理論保証を提示。構造化合成分布の実験で、次元だけに比例する悲観的反復数を回避できる適応性を示した。",
       "novelty": "discrete diffusionの並列生成を理論面から支える結果で、dimension依存の悲観的なlower boundを回避できる可能性を示す。",
-      "limitations": null,
+      "limitations": "理論上界はdenoiserの推定誤差や分布条件に依存し、自然言語の大規模生成で同じ計算優位が保証されるわけではない。要旨に実モデルでの計算時間比較はない。",
       "why": "discrete diffusionの並列生成を理論面から支える結果で、dimension依存の悲観的なlower boundを回避できる可能性を示す。",
-      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['discrete diffusion', 'sampling theory', 'generative models', 'information theory']\nSummary: 離散diffusionのsampling complexityをambient dimensionではなくtarget distributionのdual total correlationで特徴づけるadaptive guaranteeを示す。\nObjective: None\nMethods: None\nData and results: None\nNovelty: discrete diffusionの並列生成を理論面から支える結果で、dimension依存の悲観的なlower boundを回避できる可能性を示す。\nLimitations: None"
+      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['discrete diffusion', 'sampling theory', 'generative models', 'information theory']\nSummary: 離散diffusionのsampling complexityをambient dimensionではなくtarget distributionのdual total correlationで特徴づけるadaptive guaranteeを示す。\nObjective: 離散拡散モデルの並列サンプリングに必要な反復数を、変数次元だけでなく対象分布の依存構造に応じて保証する。\nMethods: uniform maskingとremasking型離散拡散で、leave-one-out型の一次denoiserを用いる適応的並列更新を解析。分布の依存度をdual total correlation（DTC）で表し、スコア推定誤差と総変動距離の上界を導く。構造化した合成分布でも検証。\nData and results: 対数因子を除くサンプリング複雑性をO(DTC(X₀)/ε)、分布誤差をO(ε_score+ε)とする理論保証を提示。構造化合成分布の実験で、次元だけに比例する悲観的反復数を回避できる適応性を示した。\nNovelty: discrete diffusionの並列生成を理論面から支える結果で、dimension依存の悲観的なlower boundを回避できる可能性を示す。\nLimitations: 理論上界はdenoiserの推定誤差や分布条件に依存し、自然言語の大規模生成で同じ計算優位が保証されるわけではない。要旨に実モデルでの計算時間比較はない。"
     },
     {
       "title": "ConvergeFlow: Language Flow with Provable Convergence to Token Embeddings",
@@ -996,13 +996,13 @@
         "diffusion"
       ],
       "summary": "flow trajectoryがvalid token embeddingへ収束するよう制約し、cross-entropy decoderなしで直接token predictionを可能にするConvergeFlowを提案。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "連続flowを使った言語生成で、最終表現が実際の語彙埋め込みに収束するよう保証し、追加のcross-entropy decoderを不要にする。",
+      "methods": "ConvergeFlowでは予測ベクトルをトークン埋め込みの凸包内に制約し、flow-matchingの平均二乗誤差だけで学習する。予測誤差を含む条件下でトークン埋め込みへの収束を理論解析し、多様性と尤度の調整が異なる3種類の生成方法を比較。",
+      "results": "適切な正則性条件の下で語彙埋め込みへの収束を示す理論保証を提示。OpenWebTextで連続・離散拡散型言語モデルに比較可能な生成性能を報告。原著要旨にperplexityの具体値はない。",
       "novelty": "autoregressive以外のlanguage modelingで、continuous flowとdiscrete tokenの境界を理論保証付きで扱う。",
-      "limitations": null,
+      "limitations": "収束の保証には仮定条件があり、語彙規模・長文推論・推論速度での利点は要旨だけでは判断できない。",
       "why": "autoregressive以外のlanguage modelingで、continuous flowとdiscrete tokenの境界を理論保証付きで扱う。",
-      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['language modeling', 'flow matching', 'continuous LM', 'diffusion']\nSummary: flow trajectoryがvalid token embeddingへ収束するよう制約し、cross-entropy decoderなしで直接token predictionを可能にするConvergeFlowを提案。\nObjective: None\nMethods: None\nData and results: None\nNovelty: autoregressive以外のlanguage modelingで、continuous flowとdiscrete tokenの境界を理論保証付きで扱う。\nLimitations: None"
+      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['language modeling', 'flow matching', 'continuous LM', 'diffusion']\nSummary: flow trajectoryがvalid token embeddingへ収束するよう制約し、cross-entropy decoderなしで直接token predictionを可能にするConvergeFlowを提案。\nObjective: 連続flowを使った言語生成で、最終表現が実際の語彙埋め込みに収束するよう保証し、追加のcross-entropy decoderを不要にする。\nMethods: ConvergeFlowでは予測ベクトルをトークン埋め込みの凸包内に制約し、flow-matchingの平均二乗誤差だけで学習する。予測誤差を含む条件下でトークン埋め込みへの収束を理論解析し、多様性と尤度の調整が異なる3種類の生成方法を比較。\nData and results: 適切な正則性条件の下で語彙埋め込みへの収束を示す理論保証を提示。OpenWebTextで連続・離散拡散型言語モデルに比較可能な生成性能を報告。原著要旨にperplexityの具体値はない。\nNovelty: autoregressive以外のlanguage modelingで、continuous flowとdiscrete tokenの境界を理論保証付きで扱う。\nLimitations: 収束の保証には仮定条件があり、語彙規模・長文推論・推論速度での利点は要旨だけでは判断できない。"
     },
     {
       "title": "Interpretable AI with Local Distillation",
@@ -1020,13 +1020,13 @@
         "high-stakes AI"
       ],
       "summary": "black-box teacherの予測をquery点ごとのsparse linear studentへlocal distillationし、accuracyを維持しつつ人間が読める局所説明を生成する。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "ブラックボックスの高精度な予測を維持しながら、各予測点に対して読める少数特徴の局所線形説明を得る。",
+      "methods": "対象クエリ近傍に摂動を与え、教師モデルの予測を疎な線形studentに局所蒸留する。Gaussianノイズ下で特徴選択頻度を用いて説明の安定性を測り、Lasso型の選択安定性を理論解析。17データセットと癌の遺伝子発現サブグループで実証。",
+      "results": "17データセットで教師モデルに近い予測精度を保ちつつ、少数特徴の局所説明を生成したと報告。患者サブグループの遺伝子発現解析も実施。要旨には絶対精度や選択安定性の数値はない。",
       "novelty": "post-hoc explanationではなく「予測器そのものを局所的に単純化する」方向で解釈可能性を扱う。",
-      "limitations": null,
+      "limitations": "局所線形近似と選択された摂動分布に依存するため、強い非線形性や分布外予測の説明妥当性は別途検証が必要。",
       "why": "post-hoc explanationではなく「予測器そのものを局所的に単純化する」方向で解釈可能性を扱う。",
-      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['interpretable ML', 'distillation', 'local models', 'high-stakes AI']\nSummary: black-box teacherの予測をquery点ごとのsparse linear studentへlocal distillationし、accuracyを維持しつつ人間が読める局所説明を生成する。\nObjective: None\nMethods: None\nData and results: None\nNovelty: post-hoc explanationではなく「予測器そのものを局所的に単純化する」方向で解釈可能性を扱う。\nLimitations: None"
+      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['interpretable ML', 'distillation', 'local models', 'high-stakes AI']\nSummary: black-box teacherの予測をquery点ごとのsparse linear studentへlocal distillationし、accuracyを維持しつつ人間が読める局所説明を生成する。\nObjective: ブラックボックスの高精度な予測を維持しながら、各予測点に対して読める少数特徴の局所線形説明を得る。\nMethods: 対象クエリ近傍に摂動を与え、教師モデルの予測を疎な線形studentに局所蒸留する。Gaussianノイズ下で特徴選択頻度を用いて説明の安定性を測り、Lasso型の選択安定性を理論解析。17データセットと癌の遺伝子発現サブグループで実証。\nData and results: 17データセットで教師モデルに近い予測精度を保ちつつ、少数特徴の局所説明を生成したと報告。患者サブグループの遺伝子発現解析も実施。要旨には絶対精度や選択安定性の数値はない。\nNovelty: post-hoc explanationではなく「予測器そのものを局所的に単純化する」方向で解釈可能性を扱う。\nLimitations: 局所線形近似と選択された摂動分布に依存するため、強い非線形性や分布外予測の説明妥当性は別途検証が必要。"
     },
     {
       "title": "Predicting Multiple Clinical Outcomes Related to Functional Recovery and Social Isolation Among Older Adults After Lower-Limb Fracture or Hip Replacement",
@@ -1044,13 +1044,13 @@
         "multi-output prediction"
       ],
       "summary": "術後高齢者のsensor dataから、身体機能とsocial isolationを含む5 clinical outcomesを同時予測。multi-output学習が個別予測より良好だった。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "下肢骨折・人工股関節置換後の高齢者について、身体機能回復と社会的孤立に関連する複数の転帰を家庭内センサから同時予測する。",
+      "methods": "MAISON-LLFの高齢者18人を最大8週間観察し、動作、加速度、歩数、心拍、移動、睡眠などから46個の1日特徴量を抽出。Oxford hip/knee指標、Timed Up and Go、椅子立ち上がり、社会的孤立など5転帰を、単一出力と複数出力学習で比較しSHAP解析。",
+      "results": "最大1,008人日を使い、複数出力モデルではMSE 3.96、MAE 1.02と単一タスクモデルを上回ったと報告。重要特徴量には日中活動・移動・睡眠などが含まれる。",
       "novelty": "身体回復だけでなく社会的孤立を同じ予測問題に入れ、在宅rehabilitationをmultimodalに扱う。",
-      "limitations": null,
+      "limitations": "18人の小規模な術後高齢者サンプルであり、患者単位の外部検証と転帰ごとの精度を十分に確認する必要がある。",
       "why": "身体回復だけでなく社会的孤立を同じ予測問題に入れ、在宅rehabilitationをmultimodalに扱う。",
-      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['medical AI', 'multimodal sensors', 'rehabilitation', 'multi-output prediction']\nSummary: 術後高齢者のsensor dataから、身体機能とsocial isolationを含む5 clinical outcomesを同時予測。multi-output学習が個別予測より良好だった。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 身体回復だけでなく社会的孤立を同じ予測問題に入れ、在宅rehabilitationをmultimodalに扱う。\nLimitations: None"
+      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['medical AI', 'multimodal sensors', 'rehabilitation', 'multi-output prediction']\nSummary: 術後高齢者のsensor dataから、身体機能とsocial isolationを含む5 clinical outcomesを同時予測。multi-output学習が個別予測より良好だった。\nObjective: 下肢骨折・人工股関節置換後の高齢者について、身体機能回復と社会的孤立に関連する複数の転帰を家庭内センサから同時予測する。\nMethods: MAISON-LLFの高齢者18人を最大8週間観察し、動作、加速度、歩数、心拍、移動、睡眠などから46個の1日特徴量を抽出。Oxford hip/knee指標、Timed Up and Go、椅子立ち上がり、社会的孤立など5転帰を、単一出力と複数出力学習で比較しSHAP解析。\nData and results: 最大1,008人日を使い、複数出力モデルではMSE 3.96、MAE 1.02と単一タスクモデルを上回ったと報告。重要特徴量には日中活動・移動・睡眠などが含まれる。\nNovelty: 身体回復だけでなく社会的孤立を同じ予測問題に入れ、在宅rehabilitationをmultimodalに扱う。\nLimitations: 18人の小規模な術後高齢者サンプルであり、患者単位の外部検証と転帰ごとの精度を十分に確認する必要がある。"
     },
     {
       "title": "Primal--Dual Alternating Neural Learning for Timely Classification with Performance Guarantees",
@@ -1068,13 +1068,13 @@
         "constrained optimization"
       ],
       "summary": "「早く判定する価値」と「追加観測する価値」をsensitivity・specificity・monitoring costのmulti-objective problemとして定式化し、RNN + primal-dual更新で制約付きtimely classifierを学習する。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "連続的に情報が届く分類で、感度・特異度に加えて観測費用を考慮し、いつ判定を確定するかを最適化する。",
+      "methods": "判定を続けるか停止するかのBellman型価値再帰を用いて、感度と測定費用の制約の下で特異度を最大化。RNN分類器とprimal-dual交互更新で学習し、シミュレーションおよび連続血糖モニタリングによる低血糖検知で評価。",
+      "results": "早期判定と性能制約を両立する学習アルゴリズムについて性能保証を提示。合成データと低血糖検知への適用を報告するが、原著要旨では具体的な感度・特異度の数値は示されない。",
       "novelty": "医療predictionでaccuracyだけでなく「いつ判定するか」を性能保証付きで直接扱う。",
-      "limitations": null,
+      "limitations": "性能保証は設定した制約と最適化仮定に依存する。臨床実装時のアラーム疲労や患者転帰への影響は要旨で未評価。",
       "why": "医療predictionでaccuracyだけでなく「いつ判定するか」を性能保証付きで直接扱う。",
-      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['clinical monitoring', 'sequential classification', 'RNN', 'constrained optimization']\nSummary: 「早く判定する価値」と「追加観測する価値」をsensitivity・specificity・monitoring costのmulti-objective problemとして定式化し、RNN + primal-dual更新で制約付きtimely classifierを学習する。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 医療predictionでaccuracyだけでなく「いつ判定するか」を性能保証付きで直接扱う。\nLimitations: None"
+      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['clinical monitoring', 'sequential classification', 'RNN', 'constrained optimization']\nSummary: 「早く判定する価値」と「追加観測する価値」をsensitivity・specificity・monitoring costのmulti-objective problemとして定式化し、RNN + primal-dual更新で制約付きtimely classifierを学習する。\nObjective: 連続的に情報が届く分類で、感度・特異度に加えて観測費用を考慮し、いつ判定を確定するかを最適化する。\nMethods: 判定を続けるか停止するかのBellman型価値再帰を用いて、感度と測定費用の制約の下で特異度を最大化。RNN分類器とprimal-dual交互更新で学習し、シミュレーションおよび連続血糖モニタリングによる低血糖検知で評価。\nData and results: 早期判定と性能制約を両立する学習アルゴリズムについて性能保証を提示。合成データと低血糖検知への適用を報告するが、原著要旨では具体的な感度・特異度の数値は示されない。\nNovelty: 医療predictionでaccuracyだけでなく「いつ判定するか」を性能保証付きで直接扱う。\nLimitations: 性能保証は設定した制約と最適化仮定に依存する。臨床実装時のアラーム疲労や患者転帰への影響は要旨で未評価。"
     },
     {
       "title": "MetaCaster: Meta-Harness-Optimized Agent for End-to-End Few-Shot Learning of Lightweight Time Series Forecasters",
@@ -1092,13 +1092,13 @@
         "synthetic data"
       ],
       "summary": "foundation modelをforecastに直接使うのでなく、agentがfew-shot例とtext contextからsynthetic training dataを作り、軽量な専用forecasterを自動構築するMetaCasterを提案。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "少数例しかない時系列で、重い基盤モデルを推論時に使わず、小型で個別化された予測モデルを自動作成する。",
+      "methods": "MetaCasterは少数の観測例とテキスト文脈からエージェントが合成学習データを生成し、そのデータで専門の軽量時系列予測器を学習するメタハーネス最適化型マルチエージェント構成。",
+      "results": "18データセット、23種類の軽量予測器、14ベースラインで比較し、予測品質を維持しながら学習データ効率と計算効率を改善と報告。要旨にMAE・MSEなどの絶対値はない。",
       "novelty": "agentを「推論器」ではなく「小型modelを作る自動ML engineer」として使う設計。",
-      "limitations": null,
+      "limitations": "合成データの品質と少数観測・テキスト記述の適合性に左右される。要旨のみではデータセット別成績や合成データの失敗例は確認できない。",
       "why": "agentを「推論器」ではなく「小型modelを作る自動ML engineer」として使う設計。",
-      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['agentic ML', 'few-shot learning', 'time series', 'synthetic data']\nSummary: foundation modelをforecastに直接使うのでなく、agentがfew-shot例とtext contextからsynthetic training dataを作り、軽量な専用forecasterを自動構築するMetaCasterを提案。\nObjective: None\nMethods: None\nData and results: None\nNovelty: agentを「推論器」ではなく「小型modelを作る自動ML engineer」として使う設計。\nLimitations: None"
+      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['agentic ML', 'few-shot learning', 'time series', 'synthetic data']\nSummary: foundation modelをforecastに直接使うのでなく、agentがfew-shot例とtext contextからsynthetic training dataを作り、軽量な専用forecasterを自動構築するMetaCasterを提案。\nObjective: 少数例しかない時系列で、重い基盤モデルを推論時に使わず、小型で個別化された予測モデルを自動作成する。\nMethods: MetaCasterは少数の観測例とテキスト文脈からエージェントが合成学習データを生成し、そのデータで専門の軽量時系列予測器を学習するメタハーネス最適化型マルチエージェント構成。\nData and results: 18データセット、23種類の軽量予測器、14ベースラインで比較し、予測品質を維持しながら学習データ効率と計算効率を改善と報告。要旨にMAE・MSEなどの絶対値はない。\nNovelty: agentを「推論器」ではなく「小型modelを作る自動ML engineer」として使う設計。\nLimitations: 合成データの品質と少数観測・テキスト記述の適合性に左右される。要旨のみではデータセット別成績や合成データの失敗例は確認できない。"
     },
     {
       "title": "RAD: Rule-Augmented Relational Anomaly Detection",
@@ -1116,13 +1116,13 @@
         "graph learning"
       ],
       "summary": "relational DBをflattenせずheterogeneous graphで保持し、random-forest path由来のsymbolic ruleをgraph representationへ注入するanomaly detector。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "複数テーブルにまたがる関係的な文脈と、人が解釈できる行動規則の両方を利用して異常なエンティティやイベントを検知する。",
+      "methods": "RADでは関係データベースをheterogeneous graphとして学習し、評価対象の表形式集約に対するrandom forestの決定経路からコンパクトな述語規則を抽出・精緻化。規則特徴をグラフ表現へ注入し、再構成とペアランキングで異常スコアを学習。",
+      "results": "LANLサイバーセキュリティイベントと、Amazon・H&Mの関係データ由来のユーザー離脱異常の計3設定で評価。AUROC・AUPRCの平均順位で表形式検出器と関係モデルを上回り、規則注入とランキング損失が重要であった。",
       "novelty": "neural relational representationと人間が読めるrule evidenceを組み合わせるneuro-symbolic寄りの実装。",
-      "limitations": null,
+      "limitations": "比較は3設定の自然なクラス不均衡下の異常順位付けに限定。規則候補は表形式の集約結果に依存し、edge reconstructionの効果は一貫しなかった。",
       "why": "neural relational representationと人間が読めるrule evidenceを組み合わせるneuro-symbolic寄りの実装。",
-      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['relational ML', 'anomaly detection', 'symbolic rules', 'graph learning']\nSummary: relational DBをflattenせずheterogeneous graphで保持し、random-forest path由来のsymbolic ruleをgraph representationへ注入するanomaly detector。\nObjective: None\nMethods: None\nData and results: None\nNovelty: neural relational representationと人間が読めるrule evidenceを組み合わせるneuro-symbolic寄りの実装。\nLimitations: None"
+      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['relational ML', 'anomaly detection', 'symbolic rules', 'graph learning']\nSummary: relational DBをflattenせずheterogeneous graphで保持し、random-forest path由来のsymbolic ruleをgraph representationへ注入するanomaly detector。\nObjective: 複数テーブルにまたがる関係的な文脈と、人が解釈できる行動規則の両方を利用して異常なエンティティやイベントを検知する。\nMethods: RADでは関係データベースをheterogeneous graphとして学習し、評価対象の表形式集約に対するrandom forestの決定経路からコンパクトな述語規則を抽出・精緻化。規則特徴をグラフ表現へ注入し、再構成とペアランキングで異常スコアを学習。\nData and results: LANLサイバーセキュリティイベントと、Amazon・H&Mの関係データ由来のユーザー離脱異常の計3設定で評価。AUROC・AUPRCの平均順位で表形式検出器と関係モデルを上回り、規則注入とランキング損失が重要であった。\nNovelty: neural relational representationと人間が読めるrule evidenceを組み合わせるneuro-symbolic寄りの実装。\nLimitations: 比較は3設定の自然なクラス不均衡下の異常順位付けに限定。規則候補は表形式の集約結果に依存し、edge reconstructionの効果は一貫しなかった。"
     },
     {
       "title": "ProxyFormer: A Dual-Stream Proxy Architecture for Ultra-Long Context and High-Resolution Generation",
@@ -1140,13 +1140,13 @@
         "proxy tokens"
       ],
       "summary": "local fine-grained streamを残しつつ、global interactionだけを圧縮proxy token上で行うdual-stream architecture。超長文contextのattention/KV costを削減する。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "超長文や高解像度生成における二乗計算量・KVキャッシュ費用を削減しながら、局所情報の不可逆的な消失を抑える。",
+      "methods": "ProxyFormerは各層で局所系列を少数のproxy tokenに圧縮し、proxy間だけでグローバル注意を計算、結果を局所系列へ戻すdual-stream構造。段階的圧縮、動的圧縮率、非対称埋め込み、proxy専用KVキャッシュを組み合わせる。",
+      "results": "16GB GPU・batch 1で通常decoderは約2万tokenまでの学習に対し、圧縮率64で約70万tokenへ拡張。64K窓で学習したモデルの約105万token multi-needle retrievalは正解率92〜95%、8K窓から256Kへの外挿で94%超と報告。画像生成の予備実験も提示。",
       "novelty": "one-shot compressionで情報を捨てず、local streamを各layerに維持する点が特徴。",
-      "limitations": null,
+      "limitations": "超長文検索と予備的な画像生成実験中心であり、一般的な推論・知識理解能力への影響や大規模分散学習での利点は要旨だけでは確認できない。",
       "why": "one-shot compressionで情報を捨てず、local streamを各layerに維持する点が特徴。",
-      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['long context', 'transformer efficiency', 'KV cache', 'proxy tokens']\nSummary: local fine-grained streamを残しつつ、global interactionだけを圧縮proxy token上で行うdual-stream architecture。超長文contextのattention/KV costを削減する。\nObjective: None\nMethods: None\nData and results: None\nNovelty: one-shot compressionで情報を捨てず、local streamを各layerに維持する点が特徴。\nLimitations: None"
+      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['long context', 'transformer efficiency', 'KV cache', 'proxy tokens']\nSummary: local fine-grained streamを残しつつ、global interactionだけを圧縮proxy token上で行うdual-stream architecture。超長文contextのattention/KV costを削減する。\nObjective: 超長文や高解像度生成における二乗計算量・KVキャッシュ費用を削減しながら、局所情報の不可逆的な消失を抑える。\nMethods: ProxyFormerは各層で局所系列を少数のproxy tokenに圧縮し、proxy間だけでグローバル注意を計算、結果を局所系列へ戻すdual-stream構造。段階的圧縮、動的圧縮率、非対称埋め込み、proxy専用KVキャッシュを組み合わせる。\nData and results: 16GB GPU・batch 1で通常decoderは約2万tokenまでの学習に対し、圧縮率64で約70万tokenへ拡張。64K窓で学習したモデルの約105万token multi-needle retrievalは正解率92〜95%、8K窓から256Kへの外挿で94%超と報告。画像生成の予備実験も提示。\nNovelty: one-shot compressionで情報を捨てず、local streamを各layerに維持する点が特徴。\nLimitations: 超長文検索と予備的な画像生成実験中心であり、一般的な推論・知識理解能力への影響や大規模分散学習での利点は要旨だけでは確認できない。"
     },
     {
       "title": "Diversity-Based Active Learning: An Evaluation of Metric Spaces for Active Learning Selection",
@@ -1164,13 +1164,13 @@
         "classification"
       ],
       "summary": "Greedy K-center active learningで、raw/LDA空間よりもmodel probability space + entropy weightingがしばしば有効と実証。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "ラベル付け予算を抑える能動学習で、Greedy K-centerの距離計算に最も有効な特徴表現を比較する。",
+      "methods": "生の入力特徴空間、線形判別分析（LDA）空間、予測確率空間、確率空間にエントロピー重みを付けた場合のGreedy K-centerを比較。Random Forestを評価用分類器として合成・実データセットに適用。",
+      "results": "予測確率空間に写像してエントロピーで重み付けする方式が、多くの評価条件で他の空間を上回ると報告。要旨では個別データセットの正確率数値は提示されていない。",
       "novelty": "label budgetが小さい場面で、単純なdiversity samplingをどのrepresentation空間で行うべきかを比較している。",
-      "limitations": null,
+      "limitations": "Random Forestを使う分類実験とGreedy K-centerを対象とした比較であり、深層ネットワークや別の多様性選択方式でも同様の結果になるかは未確認。",
       "why": "label budgetが小さい場面で、単純なdiversity samplingをどのrepresentation空間で行うべきかを比較している。",
-      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['active learning', 'small data', 'sample selection', 'classification']\nSummary: Greedy K-center active learningで、raw/LDA空間よりもmodel probability space + entropy weightingがしばしば有効と実証。\nObjective: None\nMethods: None\nData and results: None\nNovelty: label budgetが小さい場面で、単純なdiversity samplingをどのrepresentation空間で行うべきかを比較している。\nLimitations: None"
+      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['active learning', 'small data', 'sample selection', 'classification']\nSummary: Greedy K-center active learningで、raw/LDA空間よりもmodel probability space + entropy weightingがしばしば有効と実証。\nObjective: ラベル付け予算を抑える能動学習で、Greedy K-centerの距離計算に最も有効な特徴表現を比較する。\nMethods: 生の入力特徴空間、線形判別分析（LDA）空間、予測確率空間、確率空間にエントロピー重みを付けた場合のGreedy K-centerを比較。Random Forestを評価用分類器として合成・実データセットに適用。\nData and results: 予測確率空間に写像してエントロピーで重み付けする方式が、多くの評価条件で他の空間を上回ると報告。要旨では個別データセットの正確率数値は提示されていない。\nNovelty: label budgetが小さい場面で、単純なdiversity samplingをどのrepresentation空間で行うべきかを比較している。\nLimitations: Random Forestを使う分類実験とGreedy K-centerを対象とした比較であり、深層ネットワークや別の多様性選択方式でも同様の結果になるかは未確認。"
     },
     {
       "title": "Traceable Spectral Inference via Influence Functions: Efficient Data Attribution and Error Proxies for the Ariel Mission",
@@ -1188,13 +1188,13 @@
         "uncertainty"
       ],
       "summary": "ground truthが運用中に得られないspace mission向けに、prediction influenceを使ってtraining sample attributionとlabel-free error proxyを構築。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "宇宙ミッション中に正解ラベルが得られない分光予測で、どの学習例が予測に影響したかを追跡し、ラベル不要の誤差代理指標を作る。",
+      "methods": "訓練損失ではなく予測値に対するinfluence functionを定義し、Extreme Learning Machineのridge閉形式解により計算を効率化。学習残差と予測感度から保守的な誤差代理値を導き、模擬分光スペクトルで検証。",
+      "results": "模擬スペクトルでは代理誤差がスペクトルのスケール・形状誤差と強く相関し、予測に最も影響した訓練試料や有害な試料を近似的に特定できたと報告。相関係数の具体値は要旨にない。",
       "novelty": "explainabilityをfeature attributionではなく「どのtraining dataがこの予測に効いたか」に向ける実運用型研究。",
-      "limitations": null,
+      "limitations": "模擬分光データとridge解のあるExtreme Learning Machineに依存するため、実宇宙観測や他の大規模非線形モデルへの外挿は未検証。",
       "why": "explainabilityをfeature attributionではなく「どのtraining dataがこの予測に効いたか」に向ける実運用型研究。",
-      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['data attribution', 'influence functions', 'scientific ML', 'uncertainty']\nSummary: ground truthが運用中に得られないspace mission向けに、prediction influenceを使ってtraining sample attributionとlabel-free error proxyを構築。\nObjective: None\nMethods: None\nData and results: None\nNovelty: explainabilityをfeature attributionではなく「どのtraining dataがこの予測に効いたか」に向ける実運用型研究。\nLimitations: None"
+      "details": "Publication date: 2026-08-24\nread_level: abstract\nTags: ['data attribution', 'influence functions', 'scientific ML', 'uncertainty']\nSummary: ground truthが運用中に得られないspace mission向けに、prediction influenceを使ってtraining sample attributionとlabel-free error proxyを構築。\nObjective: 宇宙ミッション中に正解ラベルが得られない分光予測で、どの学習例が予測に影響したかを追跡し、ラベル不要の誤差代理指標を作る。\nMethods: 訓練損失ではなく予測値に対するinfluence functionを定義し、Extreme Learning Machineのridge閉形式解により計算を効率化。学習残差と予測感度から保守的な誤差代理値を導き、模擬分光スペクトルで検証。\nData and results: 模擬スペクトルでは代理誤差がスペクトルのスケール・形状誤差と強く相関し、予測に最も影響した訓練試料や有害な試料を近似的に特定できたと報告。相関係数の具体値は要旨にない。\nNovelty: explainabilityをfeature attributionではなく「どのtraining dataがこの予測に効いたか」に向ける実運用型研究。\nLimitations: 模擬分光データとridge解のあるExtreme Learning Machineに依存するため、実宇宙観測や他の大規模非線形モデルへの外挿は未検証。"
     },
     {
       "title": "The application of artificial intelligence in healthcare practice: A mapping review of systematic reviews",
