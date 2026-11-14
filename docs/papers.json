@@ -1390,7 +1390,7 @@
       "novelty": "単なる仮説の棄却から、次に検証すべき説明の選択へ進める。",
       "limitations": "競合説明集合が十分に網羅的であることや、領域間での妥当性に依存する。",
       "why": "単なる仮説の棄却から、次に検証すべき説明の選択へ進める。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: scientific discovery / hypothesis testing\nSummary: Summary:** 科学的仮説を単独で採否判定する代わりに、互いに排他的で網羅的な競合説明を並べ、実験結果がどの説明を支持するかを評価する。\nObjective: 科学的仮説を単独で採否判定する代わりに、互いに排他的で網羅的な競合説明を並べ、実験結果がどの説明を支持するかを評価することを検証する。\nMethods: 科学的仮説を単独で採否判定する代わりに、互いに排他的で網羅的な競合説明を並べ、実験結果がどの説明を支持するかを評価する。\nData and results: 6領域で、単独仮説が棄却された候補の73%を特定の代替説明へ解決。探索にも適用すると同一実験予算で解決問題数が67%増加。38人の専門家による盲検評価も実施。\nNovelty: 単なる仮説の棄却から、次に検証すべき説明の選択へ進める。\nLimitations: 競合説明集合が十分に網羅的であることや、領域間での妥当性に依存する。"
+      "details": "Objective: 科学的仮説を単独で採否判定する代わりに、互いに排他的で網羅的な競合説明を並べ、実験結果がどの説明を支持するかを評価することを検証する。\nMethods: 科学的仮説を単独で採否判定する代わりに、互いに排他的で網羅的な競合説明を並べ、実験結果がどの説明を支持するかを評価する。\nData and results: 6領域で、単独仮説が棄却された候補の73%を特定の代替説明へ解決。探索にも適用すると同一実験予算で解決問題数が67%増加。38人の専門家による盲検評価も実施。\nNovelty: 単なる仮説の棄却から、次に検証すべき説明の選択へ進める。\nLimitations: 競合説明集合が十分に網羅的であることや、領域間での妥当性に依存する。"
     },
     {
       "title": "ReTrace: Distilling Tool-Using Agents into Planner-Free Workflows",
@@ -1409,7 +1409,7 @@
       "novelty": "高価な自律エージェントを、検証可能で低コストな決定論的処理へ変換する方向。",
       "limitations": "元エージェントより成功率が下がる場面があり、手順変更時の再生成も必要。",
       "why": "高価な自律エージェントを、検証可能で低コストな決定論的処理へ変換する方向。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: agent / workflow / distillation\nSummary: Summary:** SOPと少数のエージェント実行ログから分岐条件を抽出し、毎回LLMに次の行動を選ばせずに済む実行可能ワークフローへ変換する。\nObjective: SOPと少数のエージェント実行ログから分岐条件を抽出し、毎回LLMに次の行動を選ばせずに済む実行可能ワークフローへ変換することを検証する。\nMethods: SOPと少数のエージェント実行ログから分岐条件を抽出し、毎回LLMに次の行動を選ばせずに済む実行可能ワークフローへ変換する。\nData and results: 本番環境79手順で完了率93.8%（元エージェント96.8%）、コスト24%削減。τ²-Benchでは75.8%対80.6%だが実行時間1.3秒対170秒。\nNovelty: 高価な自律エージェントを、検証可能で低コストな決定論的処理へ変換する方向。\nLimitations: 元エージェントより成功率が下がる場面があり、手順変更時の再生成も必要。"
+      "details": "Objective: SOPと少数のエージェント実行ログから分岐条件を抽出し、毎回LLMに次の行動を選ばせずに済む実行可能ワークフローへ変換することを検証する。\nMethods: SOPと少数のエージェント実行ログから分岐条件を抽出し、毎回LLMに次の行動を選ばせずに済む実行可能ワークフローへ変換する。\nData and results: 本番環境79手順で完了率93.8%（元エージェント96.8%）、コスト24%削減。τ²-Benchでは75.8%対80.6%だが実行時間1.3秒対170秒。\nNovelty: 高価な自律エージェントを、検証可能で低コストな決定論的処理へ変換する方向。\nLimitations: 元エージェントより成功率が下がる場面があり、手順変更時の再生成も必要。"
     },
     {
       "title": "SteerDistill: Quantizing LLM Agents via Closed-Loop Teacher Steering",
@@ -1428,7 +1428,7 @@
       "novelty": "量子化で失われる能力を、失敗文脈に合わせた閉ループ教師修正で回復する。",
       "limitations": "評価は対象モデル・量子化方式・ベンチマークに依存する。",
       "why": "量子化で失われる能力を、失敗文脈に合わせた閉ループ教師修正で回復する。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: quantization / agent / distillation\nSummary: Summary:** 量子化エージェントの失敗した行動をフル精度教師が実行結果に基づいて局所修正し、修正済み軌跡を生徒へ蒸留する。\nObjective: 量子化エージェントの失敗した行動をフル精度教師が実行結果に基づいて局所修正し、修正済み軌跡を生徒へ蒸留することを検証する。\nMethods: 量子化エージェントの失敗した行動をフル精度教師が実行結果に基づいて局所修正し、修正済み軌跡を生徒へ蒸留する。\nData and results: 5ベンチマーク・3モデルでW4A16の既存最良量子化ベースラインより平均1.67〜2.18ポイント高く、BF16との差は1ポイント以内。τ²-BenchではQeRL比で学習GPU時間67%削減。\nNovelty: 量子化で失われる能力を、失敗文脈に合わせた閉ループ教師修正で回復する。\nLimitations: 評価は対象モデル・量子化方式・ベンチマークに依存する。"
+      "details": "Objective: 量子化エージェントの失敗した行動をフル精度教師が実行結果に基づいて局所修正し、修正済み軌跡を生徒へ蒸留することを検証する。\nMethods: 量子化エージェントの失敗した行動をフル精度教師が実行結果に基づいて局所修正し、修正済み軌跡を生徒へ蒸留する。\nData and results: 5ベンチマーク・3モデルでW4A16の既存最良量子化ベースラインより平均1.67〜2.18ポイント高く、BF16との差は1ポイント以内。τ²-BenchではQeRL比で学習GPU時間67%削減。\nNovelty: 量子化で失われる能力を、失敗文脈に合わせた閉ループ教師修正で回復する。\nLimitations: 評価は対象モデル・量子化方式・ベンチマークに依存する。"
     },
     {
       "title": "One Table, Many Queries: Benchmarking Generalist Tabular Models Across Generation, Imputation, and Prediction",
@@ -1447,7 +1447,7 @@
       "novelty": "万能な表形式モデルがどこまで専門モデルを代替できるかを、複数タスクで公平に測る。",
       "limitations": "分布忠実度では専門モデルが優位な場合があり、単一の総合スコアでは判断しにくい。",
       "why": "万能な表形式モデルがどこまで専門モデルを代替できるかを、複数タスクで公平に測る。",
-      "details": "Publication date: 2026-11-08\nread_level: abstract\nTags: tabular ML / imputation / generative modeling\nSummary: Summary:** 表形式データの生成・欠損補完・予測を共通の分割と評価契約で比較し、目的関数の組合せによる相乗効果を検証する。\nObjective: 表形式データの生成・欠損補完・予測を共通の分割と評価契約で比較し、目的関数の組合せによる相乗効果を検証することを検証する。\nMethods: 表形式データの生成・欠損補完・予測を共通の分割と評価契約で比較し、目的関数の組合せによる相乗効果を検証する。\nData and results: 56データセット、46手法、20評価軸。5種類のバックボーンで7通りの目的関数の組合せを比較し、予測効用と分布忠実度のトレードオフを確認。\nNovelty: 万能な表形式モデルがどこまで専門モデルを代替できるかを、複数タスクで公平に測る。\nLimitations: 分布忠実度では専門モデルが優位な場合があり、単一の総合スコアでは判断しにくい。"
+      "details": "Objective: 表形式データの生成・欠損補完・予測を共通の分割と評価契約で比較し、目的関数の組合せによる相乗効果を検証することを検証する。\nMethods: 表形式データの生成・欠損補完・予測を共通の分割と評価契約で比較し、目的関数の組合せによる相乗効果を検証する。\nData and results: 56データセット、46手法、20評価軸。5種類のバックボーンで7通りの目的関数の組合せを比較し、予測効用と分布忠実度のトレードオフを確認。\nNovelty: 万能な表形式モデルがどこまで専門モデルを代替できるかを、複数タスクで公平に測る。\nLimitations: 分布忠実度では専門モデルが優位な場合があり、単一の総合スコアでは判断しにくい。"
     },
     {
       "title": "Evolving Infra: Agent-Adaptive LLM Serving at Scale",
@@ -1466,7 +1466,7 @@
       "novelty": "モデルを変えずに推論基盤側の適応でエージェントの体感性能を改善する。",
       "limitations": "大規模GPU環境での比較であり、小規模環境での効果は別途確認が必要。",
       "why": "モデルを変えずに推論基盤側の適応でエージェントの体感性能を改善する。",
-      "details": "Publication date: 2026-11-09\nread_level: abstract\nTags: LLM serving / KV cache / agents\nSummary: Summary:** エージェントの変動するワークロードに合わせ、prefill/decode資源割当とKVキャッシュ管理を動的に変更する。\nObjective: エージェントの変動するワークロードに合わせ、prefill/decode資源割当とKVキャッシュ管理を動的に変更することを検証する。\nMethods: エージェントの変動するワークロードに合わせ、prefill/decode資源割当とKVキャッシュ管理を動的に変更する。\nData and results: 最大256基のGB300 GPUで、NVIDIA Dynamo比の平均エンドツーエンド遅延を最大4.1倍、P95初回トークン遅延を最大14倍改善。\nNovelty: モデルを変えずに推論基盤側の適応でエージェントの体感性能を改善する。\nLimitations: 大規模GPU環境での比較であり、小規模環境での効果は別途確認が必要。"
+      "details": "Objective: エージェントの変動するワークロードに合わせ、prefill/decode資源割当とKVキャッシュ管理を動的に変更することを検証する。\nMethods: エージェントの変動するワークロードに合わせ、prefill/decode資源割当とKVキャッシュ管理を動的に変更する。\nData and results: 最大256基のGB300 GPUで、NVIDIA Dynamo比の平均エンドツーエンド遅延を最大4.1倍、P95初回トークン遅延を最大14倍改善。\nNovelty: モデルを変えずに推論基盤側の適応でエージェントの体感性能を改善する。\nLimitations: 大規模GPU環境での比較であり、小規模環境での効果は別途確認が必要。"
     },
     {
       "title": "Embodied First Exam",
@@ -1485,7 +1485,7 @@
       "novelty": "物理環境の制約が、ソフトウェア上のエージェント能力をどれだけ制限するかを可視化。",
       "limitations": "シミュレーション主体の評価で、実ロボットへの移行性能は別問題。",
       "why": "物理環境の制約が、ソフトウェア上のエージェント能力をどれだけ制限するかを可視化。",
-      "details": "Publication date: 2026-11-09\nread_level: abstract\nTags: robotics / agent benchmark\nSummary: Summary:** コード生成エージェントがロボットを直接制御、制御コードを記述、方策を学習する能力を共通枠組みで測定する。\nObjective: コード生成エージェントがロボットを直接制御、制御コードを記述、方策を学習する能力を共通枠組みで測定することを検証する。\nMethods: コード生成エージェントがロボットを直接制御、制御コードを記述、方策を学習する能力を共通枠組みで測定する。\nData and results: 47種類のロボット、35スイート、1,156タスク。標準設定の456主要タスクで8エージェント中最良の成功率は34%。\nNovelty: 物理環境の制約が、ソフトウェア上のエージェント能力をどれだけ制限するかを可視化。\nLimitations: シミュレーション主体の評価で、実ロボットへの移行性能は別問題。"
+      "details": "Objective: コード生成エージェントがロボットを直接制御、制御コードを記述、方策を学習する能力を共通枠組みで測定することを検証する。\nMethods: コード生成エージェントがロボットを直接制御、制御コードを記述、方策を学習する能力を共通枠組みで測定する。\nData and results: 47種類のロボット、35スイート、1,156タスク。標準設定の456主要タスクで8エージェント中最良の成功率は34%。\nNovelty: 物理環境の制約が、ソフトウェア上のエージェント能力をどれだけ制限するかを可視化。\nLimitations: シミュレーション主体の評価で、実ロボットへの移行性能は別問題。"
     },
     {
       "title": "The Surprising Effectiveness of Deleting Weights in LLM Post-Training",
@@ -1504,7 +1504,7 @@
       "novelty": "パラメータを加えるのではなく削除することで適応する、極端に小さい更新表現。",
       "limitations": "特定アーキテクチャ・学習設定の結果であり、すべての能力獲得に適用できるとは限らない。",
       "why": "パラメータを加えるのではなく削除することで適応する、極端に小さい更新表現。",
-      "details": "Publication date: 2026-11-07\nread_level: abstract\nTags: post-training / sparse adaptation\nSummary: Summary:** Transformerのgate projectionで学習した二値マスクにより、重みの0.05%未満をゼロ化するだけで新しい能力を獲得するDeletion Tuningを提案。\nObjective: Transformerのgate projectionで学習した二値マスクにより、重みの0.05%未満をゼロ化するだけで新しい能力を獲得するDeletion Tuningを提案ことを検証する。\nMethods: Transformerのgate projectionで学習した二値マスクにより、重みの0.05%未満をゼロ化するだけで新しい能力を獲得するDeletion Tuningを提案。\nData and results: 検証可能報酬RL、教師あり微調整、on-policy蒸留でフル微調整に匹敵する性能を報告。旧タスクの忘却も抑制。\nNovelty: パラメータを加えるのではなく削除することで適応する、極端に小さい更新表現。\nLimitations: 特定アーキテクチャ・学習設定の結果であり、すべての能力獲得に適用できるとは限らない。"
+      "details": "Objective: Transformerのgate projectionで学習した二値マスクにより、重みの0.05%未満をゼロ化するだけで新しい能力を獲得するDeletion Tuningを提案ことを検証する。\nMethods: Transformerのgate projectionで学習した二値マスクにより、重みの0.05%未満をゼロ化するだけで新しい能力を獲得するDeletion Tuningを提案。\nData and results: 検証可能報酬RL、教師あり微調整、on-policy蒸留でフル微調整に匹敵する性能を報告。旧タスクの忘却も抑制。\nNovelty: パラメータを加えるのではなく削除することで適応する、極端に小さい更新表現。\nLimitations: 特定アーキテクチャ・学習設定の結果であり、すべての能力獲得に適用できるとは限らない。"
     },
     {
       "title": "Test-Time Scaling for Diffusion Language Models with Frequency-Aware Remasking",
@@ -1523,7 +1523,7 @@
       "novelty": "推論時計算量の増加を、単純な試行回数ではなく探索先の選択に結びつける。",
       "limitations": "効果は復元戦略と拡散言語モデルの種類に依存する。",
       "why": "推論時計算量の増加を、単純な試行回数ではなく探索先の選択に結びつける。",
-      "details": "Publication date: 2026-11-07\nread_level: abstract\nTags: diffusion LM / test-time scaling\nSummary: Summary:** 拡散言語モデルの反復復元で、トークン予測の変化頻度を使って難問の再マスク・探索を適応制御する。\nObjective: 拡散言語モデルの反復復元で、トークン予測の変化頻度を使って難問の再マスク・探索を適応制御することを検証する。\nMethods: 拡散言語モデルの反復復元で、トークン予測の変化頻度を使って難問の再マスク・探索を適応制御する。\nData and results: MATH-500で最大3.73・7.33ポイント、HumanEvalで最大11.39・10.98ポイントの改善を2モデルで報告。\nNovelty: 推論時計算量の増加を、単純な試行回数ではなく探索先の選択に結びつける。\nLimitations: 効果は復元戦略と拡散言語モデルの種類に依存する。"
+      "details": "Objective: 拡散言語モデルの反復復元で、トークン予測の変化頻度を使って難問の再マスク・探索を適応制御することを検証する。\nMethods: 拡散言語モデルの反復復元で、トークン予測の変化頻度を使って難問の再マスク・探索を適応制御する。\nData and results: MATH-500で最大3.73・7.33ポイント、HumanEvalで最大11.39・10.98ポイントの改善を2モデルで報告。\nNovelty: 推論時計算量の増加を、単純な試行回数ではなく探索先の選択に結びつける。\nLimitations: 効果は復元戦略と拡散言語モデルの種類に依存する。"
     },
     {
       "title": "Ensemble Routing for Prompt-Adaptive Cost-Aware LLM Inference",
@@ -1542,7 +1542,7 @@
       "novelty": "モデルの能力を固定ランキングでなく入力条件付きで扱う。",
       "limitations": "コスト優位性は選択した動作点と比較モデル群に依存する。",
       "why": "モデルの能力を固定ランキングでなく入力条件付きで扱う。",
-      "details": "Publication date: 2026-11-06\nread_level: abstract\nTags: model routing / cost-quality tradeoff\nSummary: Summary:** プロンプトごとに各モデルの成功見込みを推定し、単一モデルまたは可変サイズのアンサンブルをコスト制約下で選択する。\nObjective: プロンプトごとに各モデルの成功見込みを推定し、単一モデルまたは可変サイズのアンサンブルをコスト制約下で選択することを検証する。\nMethods: プロンプトごとに各モデルの成功見込みを推定し、単一モデルまたは可変サイズのアンサンブルをコスト制約下で選択する。\nData and results: 4ルーティングベンチマークで評価。選択した動作点では比較対象アンサンブルより平均推論コストを約36%・25%削減しながら高い性能。\nNovelty: モデルの能力を固定ランキングでなく入力条件付きで扱う。\nLimitations: コスト優位性は選択した動作点と比較モデル群に依存する。"
+      "details": "Objective: プロンプトごとに各モデルの成功見込みを推定し、単一モデルまたは可変サイズのアンサンブルをコスト制約下で選択することを検証する。\nMethods: プロンプトごとに各モデルの成功見込みを推定し、単一モデルまたは可変サイズのアンサンブルをコスト制約下で選択する。\nData and results: 4ルーティングベンチマークで評価。選択した動作点では比較対象アンサンブルより平均推論コストを約36%・25%削減しながら高い性能。\nNovelty: モデルの能力を固定ランキングでなく入力条件付きで扱う。\nLimitations: コスト優位性は選択した動作点と比較モデル群に依存する。"
     },
     {
       "title": "Micius-Flash: Lightweight Agentic Intelligence for Engineering",
@@ -1561,7 +1561,7 @@
       "novelty": "専門知識・推論・ツール実行を、単一の工学向けモデルへ統合する設計。",
       "limitations": "特定の工学領域とベンチマークに特化した性能。",
       "why": "専門知識・推論・ツール実行を、単一の工学向けモデルへ統合する設計。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: domain LLM / engineering / distillation\nSummary: Summary:** 半導体・ハードウェア開発向け27Bモデルを知識ツリー型データ生成と複数教師のon-policy蒸留で学習し、EDAツール連携へ展開する。\nObjective: 半導体・ハードウェア開発向け27Bモデルを知識ツリー型データ生成と複数教師のon-policy蒸留で学習し、EDAツール連携へ展開することを検証する。\nMethods: 半導体・ハードウェア開発向け27Bモデルを知識ツリー型データ生成と複数教師のon-policy蒸留で学習し、EDAツール連携へ展開する。\nData and results: 約1.5万レコード・20超のデータセットで評価。ハードウェアコード64.2%、半導体エージェント62.4%で、同規模ベースラインを15.0・17.2ポイント上回る。\nNovelty: 専門知識・推論・ツール実行を、単一の工学向けモデルへ統合する設計。\nLimitations: 特定の工学領域とベンチマークに特化した性能。"
+      "details": "Objective: 半導体・ハードウェア開発向け27Bモデルを知識ツリー型データ生成と複数教師のon-policy蒸留で学習し、EDAツール連携へ展開することを検証する。\nMethods: 半導体・ハードウェア開発向け27Bモデルを知識ツリー型データ生成と複数教師のon-policy蒸留で学習し、EDAツール連携へ展開する。\nData and results: 約1.5万レコード・20超のデータセットで評価。ハードウェアコード64.2%、半導体エージェント62.4%で、同規模ベースラインを15.0・17.2ポイント上回る。\nNovelty: 専門知識・推論・ツール実行を、単一の工学向けモデルへ統合する設計。\nLimitations: 特定の工学領域とベンチマークに特化した性能。"
     },
     {
       "title": "Are Causal Neuron Circuits Unique and Transferable?",
@@ -1580,7 +1580,7 @@
       "novelty": "特定ニューロンの介入効果を、情報表現の一意性と取り違えないための実証。",
       "limitations": "完全な回路接続構造を同定したわけではない。",
       "why": "特定ニューロンの介入効果を、情報表現の一意性と取り違えないための実証。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: interpretability / causal interventions\nSummary: Summary:** モデル内部の12ニューロン集合について全4,096部分集合を介入評価し、因果効果が一意の回路に依存するかを検証する。\nObjective: モデル内部の12ニューロン集合について全4,096部分集合を介入評価し、因果効果が一意の回路に依存するかを検証することを検証する。\nMethods: モデル内部の12ニューロン集合について全4,096部分集合を介入評価し、因果効果が一意の回路に依存するかを検証する。\nData and results: 少数ニューロンや互いに重ならない複数集合が同じ回答変化を起こす場合があり、同じ関係の言い換えには転移するが別の関係連鎖には弱い。\nNovelty: 特定ニューロンの介入効果を、情報表現の一意性と取り違えないための実証。\nLimitations: 完全な回路接続構造を同定したわけではない。"
+      "details": "Objective: モデル内部の12ニューロン集合について全4,096部分集合を介入評価し、因果効果が一意の回路に依存するかを検証することを検証する。\nMethods: モデル内部の12ニューロン集合について全4,096部分集合を介入評価し、因果効果が一意の回路に依存するかを検証する。\nData and results: 少数ニューロンや互いに重ならない複数集合が同じ回答変化を起こす場合があり、同じ関係の言い換えには転移するが別の関係連鎖には弱い。\nNovelty: 特定ニューロンの介入効果を、情報表現の一意性と取り違えないための実証。\nLimitations: 完全な回路接続構造を同定したわけではない。"
     },
     {
       "title": "From Tool State to Scientific Action: Auditing Decision Provenance in Biomedical Research Agents",
@@ -1599,7 +1599,7 @@
       "novelty": "最終回答の一致だけでなく、判断に至る証拠と実行状態を監査対象にする。",
       "limitations": "検証対象のエージェント・計算サイト・タスクへの依存がある。",
       "why": "最終回答の一致だけでなく、判断に至る証拠と実行状態を監査対象にする。",
-      "details": "Publication date: 2026-11-01\nread_level: abstract\nTags: biomedical AI / scientific agents / provenance\nSummary: Summary:** 科学エージェントが最終結論を変えなくても、読んだ証拠や引用が変化することを、計算途中の値の復元・移植で監査する。\nObjective: 科学エージェントが最終結論を変えなくても、読んだ証拠や引用が変化することを、計算途中の値の復元・移植で監査することを検証する。\nMethods: 科学エージェントが最終結論を変えなくても、読んだ証拠や引用が変化することを、計算途中の値の復元・移植で監査する。\nData and results: 心毒性アッセイ配分で数値障害により変化した39件の判断を、以前の実行状態と認証済みスコアの復元で全件回復。予測ファイル差し替えだけでは回復しなかった。\nNovelty: 最終回答の一致だけでなく、判断に至る証拠と実行状態を監査対象にする。\nLimitations: 検証対象のエージェント・計算サイト・タスクへの依存がある。"
+      "details": "Objective: 科学エージェントが最終結論を変えなくても、読んだ証拠や引用が変化することを、計算途中の値の復元・移植で監査することを検証する。\nMethods: 科学エージェントが最終結論を変えなくても、読んだ証拠や引用が変化することを、計算途中の値の復元・移植で監査する。\nData and results: 心毒性アッセイ配分で数値障害により変化した39件の判断を、以前の実行状態と認証済みスコアの復元で全件回復。予測ファイル差し替えだけでは回復しなかった。\nNovelty: 最終回答の一致だけでなく、判断に至る証拠と実行状態を監査対象にする。\nLimitations: 検証対象のエージェント・計算サイト・タスクへの依存がある。"
     },
     {
       "title": "A. エージェント、学習、評価、安全性（6本）",
@@ -1618,7 +1618,7 @@
       "novelty": "意義・限界:** 単に複数エージェントを並列化するのではなく、寄与を考慮した学習が重要。ベンチマークでの改善であり、一般的な組織的調査への転移は未確認。",
       "limitations": "未記載",
       "why": "意義・限界:** 単に複数エージェントを並列化するのではなく、寄与を考慮した学習が重要。ベンチマークでの改善であり、一般的な組織的調査への転移は未確認。",
-      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: 未記載\nSummary: 課題:** マルチエージェントの調査で、サブエージェントの報告が有用かどうかに関係なく全員へ同じ報酬を配ると、寄与度を適切に学習できない。\nObjective: 課題:** マルチエージェントの調査で、サブエージェントの報告が有用かどうかに関係なく全員へ同じ報酬を配ると、寄与度を適切に学習できない。\nMethods: 方法:** LEAD-RLはサブエージェントの証拠・調査への貢献をrubricで評価し、チーム報酬を各エージェントに与えるかを制御する。最終回答の正しさをチーム報酬とする。\nData and results: 結果:** 5ベンチマーク・2モデル系列で評価。BrowseCompでは共有チーム報酬の共同学習比で精度+2.49ポイント、critical-path cost -24.5%。\nNovelty: 意義・限界:** 単に複数エージェントを並列化するのではなく、寄与を考慮した学習が重要。ベンチマークでの改善であり、一般的な組織的調査への転移は未確認。\nLimitations: 未記載"
+      "details": "Objective: 課題:** マルチエージェントの調査で、サブエージェントの報告が有用かどうかに関係なく全員へ同じ報酬を配ると、寄与度を適切に学習できない。\nMethods: 方法:** LEAD-RLはサブエージェントの証拠・調査への貢献をrubricで評価し、チーム報酬を各エージェントに与えるかを制御する。最終回答の正しさをチーム報酬とする。\nData and results: 結果:** 5ベンチマーク・2モデル系列で評価。BrowseCompでは共有チーム報酬の共同学習比で精度+2.49ポイント、critical-path cost -24.5%。\nNovelty: 意義・限界:** 単に複数エージェントを並列化するのではなく、寄与を考慮した学習が重要。ベンチマークでの改善であり、一般的な組織的調査への転移は未確認。\nLimitations: 未記載"
     },
     {
       "title": "Skill Adapter: Personalized Modification and Online Routing of General-Purpose Skills",
@@ -1637,7 +1637,7 @@
       "novelty": "意義・限界:** Skillを静的手順書でなく、環境と利用者に応じて調整する資産として扱う。対象ベンチマークの外での運用負荷は未確認。",
       "limitations": "未記載",
       "why": "意義・限界:** Skillを静的手順書でなく、環境と利用者に応じて調整する資産として扱う。対象ベンチマークの外での運用負荷は未確認。",
-      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: 未記載\nSummary: 課題:** 汎用Skillは利用者ごとのツールや出力要件にそのまま適合せず、長期タスク中に適用条件も変化する。\nObjective: 課題:** 汎用Skillは利用者ごとのツールや出力要件にそのまま適合せず、長期タスク中に適用条件も変化する。\nMethods: 方法:** 汎用Skillに対してユーザー要件と実行フィードバックからAdapterを生成し、サブタスク・進行状態に応じてSkillとAdapterをオンライン選択する。\nData and results: 結果:** ALFWorld、WebShop、SkillsBenchでSkillRL比平均+11.43ポイントの成功率改善。Skillプールが1,000個に増えても優位性を維持。\nNovelty: 意義・限界:** Skillを静的手順書でなく、環境と利用者に応じて調整する資産として扱う。対象ベンチマークの外での運用負荷は未確認。\nLimitations: 未記載"
+      "details": "Objective: 課題:** 汎用Skillは利用者ごとのツールや出力要件にそのまま適合せず、長期タスク中に適用条件も変化する。\nMethods: 方法:** 汎用Skillに対してユーザー要件と実行フィードバックからAdapterを生成し、サブタスク・進行状態に応じてSkillとAdapterをオンライン選択する。\nData and results: 結果:** ALFWorld、WebShop、SkillsBenchでSkillRL比平均+11.43ポイントの成功率改善。Skillプールが1,000個に増えても優位性を維持。\nNovelty: 意義・限界:** Skillを静的手順書でなく、環境と利用者に応じて調整する資産として扱う。対象ベンチマークの外での運用負荷は未確認。\nLimitations: 未記載"
     },
     {
       "title": "Experience-Handoff Reinforcement Learning for Recursive Self-Improvement",
@@ -1656,7 +1656,7 @@
       "novelty": "意義・限界:** 記憶の文章化自体を学習対象にする点が重要。playbookの長期的な劣化や誤情報蓄積は要旨だけでは判断できない。",
       "limitations": "未記載",
       "why": "意義・限界:** 記憶の文章化自体を学習対象にする点が重要。playbookの長期的な劣化や誤情報蓄積は要旨だけでは判断できない。",
-      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: 未記載\nSummary: 課題:** 強化学習のスカラー報酬だけでは、失敗ログや環境観測から得た知識が次の試行に引き継がれない。\nObjective: 課題:** 強化学習のスカラー報酬だけでは、失敗ログや環境観測から得た知識が次の試行に引き継がれない。\nMethods: 方法:** 行動生成・反省・playbook編集を同じモデルに担当させ、生成した引き継ぎ情報が次のrolloutをどれだけ改善するかで最適化する。\nData and results: 結果:** 複数のエージェントベンチマークで比較手法より未知データ性能が改善したと報告。要旨には一律の数値差はない。\nNovelty: 意義・限界:** 記憶の文章化自体を学習対象にする点が重要。playbookの長期的な劣化や誤情報蓄積は要旨だけでは判断できない。\nLimitations: 未記載"
+      "details": "Objective: 課題:** 強化学習のスカラー報酬だけでは、失敗ログや環境観測から得た知識が次の試行に引き継がれない。\nMethods: 方法:** 行動生成・反省・playbook編集を同じモデルに担当させ、生成した引き継ぎ情報が次のrolloutをどれだけ改善するかで最適化する。\nData and results: 結果:** 複数のエージェントベンチマークで比較手法より未知データ性能が改善したと報告。要旨には一律の数値差はない。\nNovelty: 意義・限界:** 記憶の文章化自体を学習対象にする点が重要。playbookの長期的な劣化や誤情報蓄積は要旨だけでは判断できない。\nLimitations: 未記載"
     },
     {
       "title": "daVinci-Prover: Agent-Native Mid-Training for Formal Theorem Proving",
@@ -1675,7 +1675,7 @@
       "novelty": "意義・限界:** 最終回答の模倣だけでなく、検証器との相互作用を学習する価値を示す。証明タスクに特化した結果。",
       "limitations": "未記載",
       "why": "意義・限界:** 最終回答の模倣だけでなく、検証器との相互作用を学習する価値を示す。証明タスクに特化した結果。",
-      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: 未記載\nSummary: 課題:** 数学的知識と、Lean検証器を使って長期的に証明を構築するエージェント能力を同時に学習する。\nObjective: 課題:** 数学的知識と、Lean検証器を使って長期的に証明を構築するエージェント能力を同時に学習する。\nMethods: 方法:** 分解・探索・自己検証・修正を含む337億トークンのmid-trainingコーパスを構築し、Leanと対話する約3.6万の高品質軌跡で教師あり微調整。\nData and results: 結果:** Qwen3-8Bの教師あり微調整のみの比較対象に対し、MiniF2F、FATE-M、ProofNetで平均+13.7ポイント。\nNovelty: 意義・限界:** 最終回答の模倣だけでなく、検証器との相互作用を学習する価値を示す。証明タスクに特化した結果。\nLimitations: 未記載"
+      "details": "Objective: 課題:** 数学的知識と、Lean検証器を使って長期的に証明を構築するエージェント能力を同時に学習する。\nMethods: 方法:** 分解・探索・自己検証・修正を含む337億トークンのmid-trainingコーパスを構築し、Leanと対話する約3.6万の高品質軌跡で教師あり微調整。\nData and results: 結果:** Qwen3-8Bの教師あり微調整のみの比較対象に対し、MiniF2F、FATE-M、ProofNetで平均+13.7ポイント。\nNovelty: 意義・限界:** 最終回答の模倣だけでなく、検証器との相互作用を学習する価値を示す。証明タスクに特化した結果。\nLimitations: 未記載"
     },
     {
       "title": "ToolTurns: Benchmarking LLM Agents in Multi-Turn Dialogue",
@@ -1694,7 +1694,7 @@
       "novelty": "意義・限界:** 単発性能と継続的タスク遂行は別能力。ユーザーシミュレーターに依存する評価であり、実ユーザー対話との一致は検証課題。",
       "limitations": "未記載",
       "why": "意義・限界:** 単発性能と継続的タスク遂行は別能力。ユーザーシミュレーターに依存する評価であり、実ユーザー対話との一致は検証課題。",
-      "details": "Publication date: 2026-11-11\nread_level: abstract\nTags: 未記載\nSummary: 課題:** 従来のtool-useベンチマークは単発依頼が中心で、曖昧な依頼から始まる継続対話を十分に評価できない。\nObjective: 課題:** 従来のtool-useベンチマークは単発依頼が中心で、曖昧な依頼から始まる継続対話を十分に評価できない。\nMethods: 方法:** 1,827ツール、11,004 APIエンドポイント、47カテゴリにまたがる2,620問題を構築。最初は情報不足の依頼を提示し、文脈依存の追質問を2回行う。\nData and results: 結果:** 9モデルの最良成績は個別依頼69.6%に対し、対話全体39.8%。全モデルで追質問時の成功率が初回より低下。\nNovelty: 意義・限界:** 単発性能と継続的タスク遂行は別能力。ユーザーシミュレーターに依存する評価であり、実ユーザー対話との一致は検証課題。\nLimitations: 未記載"
+      "details": "Objective: 課題:** 従来のtool-useベンチマークは単発依頼が中心で、曖昧な依頼から始まる継続対話を十分に評価できない。\nMethods: 方法:** 1,827ツール、11,004 APIエンドポイント、47カテゴリにまたがる2,620問題を構築。最初は情報不足の依頼を提示し、文脈依存の追質問を2回行う。\nData and results: 結果:** 9モデルの最良成績は個別依頼69.6%に対し、対話全体39.8%。全モデルで追質問時の成功率が初回より低下。\nNovelty: 意義・限界:** 単発性能と継続的タスク遂行は別能力。ユーザーシミュレーターに依存する評価であり、実ユーザー対話との一致は検証課題。\nLimitations: 未記載"
     },
     {
       "title": "Bait: Mitigating Harmful Agentic Reinforcement Learning via Probing Reward Function",
@@ -1713,7 +1713,7 @@
       "novelty": "意義・限界:** エージェントを運用しながら学習させる場合、外部環境の報酬を信頼してよいかが新たな攻撃面となる。対象サービス・攻撃設定への依存に注意。",
       "limitations": "未記載",
       "why": "意義・限界:** エージェントを運用しながら学習させる場合、外部環境の報酬を信頼してよいかが新たな攻撃面となる。対象サービス・攻撃設定への依存に注意。",
-      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: 未記載\nSummary: 課題:** ユーザーが設定する強化学習環境や報酬が悪意を持つ場合、エージェントの安全性が追加学習で損なわれ得る。\nObjective: 課題:** ユーザーが設定する強化学習環境や報酬が悪意を持つ場合、エージェントの安全性が追加学習で損なわれ得る。\nMethods: 方法:** 報酬関数を能動的にプローブして有害な学習信号を検出・緩和するBaitを提案。\nData and results: 結果:** 著者らは低コストの有害な追加学習による安全性の劣化と、Baitによる緩和を報告。定量的な一般化性能は要旨から限定的。\nNovelty: 意義・限界:** エージェントを運用しながら学習させる場合、外部環境の報酬を信頼してよいかが新たな攻撃面となる。対象サービス・攻撃設定への依存に注意。\nLimitations: 未記載"
+      "details": "Objective: 課題:** ユーザーが設定する強化学習環境や報酬が悪意を持つ場合、エージェントの安全性が追加学習で損なわれ得る。\nMethods: 方法:** 報酬関数を能動的にプローブして有害な学習信号を検出・緩和するBaitを提案。\nData and results: 結果:** 著者らは低コストの有害な追加学習による安全性の劣化と、Baitによる緩和を報告。定量的な一般化性能は要旨から限定的。\nNovelty: 意義・限界:** エージェントを運用しながら学習させる場合、外部環境の報酬を信頼してよいかが新たな攻撃面となる。対象サービス・攻撃設定への依存に注意。\nLimitations: 未記載"
     },
     {
       "title": "一次資料で要旨を追加確認した8本",
@@ -1732,7 +1732,7 @@
       "novelty": "未記載",
       "limitations": "限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。",
       "why": "未記載",
-      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
     },
     {
       "title": "When Should Agents Remember? Falsification-Gated Self-Evolution for LLM Agents",
@@ -1751,7 +1751,7 @@
       "novelty": "未記載",
       "limitations": "限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。",
       "why": "未記載",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
     },
     {
       "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
@@ -1770,7 +1770,7 @@
       "novelty": "未記載",
       "limitations": "限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。",
       "why": "未記載",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
     },
     {
       "title": "BioXArena-Pro: a research-grade benchmark for autonomous biomedical machine learning agents",
@@ -1789,7 +1789,7 @@
       "novelty": "未記載",
       "limitations": "限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。",
       "why": "未記載",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
     },
     {
       "title": "Coding Agent Memory Post-Training II: Unlocking the Memory Potential of Pre-trained File Operations for Long-Horizon Tasks via On-Policy Distillation",
@@ -1808,7 +1808,7 @@
       "novelty": "未記載",
       "limitations": "限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。",
       "why": "未記載",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
     },
     {
       "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
@@ -1827,7 +1827,7 @@
       "novelty": "未記載",
       "limitations": "限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。",
       "why": "未記載",
-      "details": "Publication date: 2026-11-06\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
     },
     {
       "title": "MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory",
@@ -1846,7 +1846,7 @@
       "novelty": "未記載",
       "limitations": "限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。",
       "why": "未記載",
-      "details": "Publication date: 2026-11-06\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
     },
     {
       "title": "Strategist: Evolving Reasoning with Agents",
@@ -1865,7 +1865,7 @@
       "novelty": "未記載",
       "limitations": "限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。",
       "why": "未記載",
-      "details": "Publication date: 2026-11-02\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 未記載\nLimitations: 限界:** 著者要旨の報告であり、独立した再現実験や本文の詳細条件までは検証していない。"
     },
     {
       "title": "調査テーマ",
@@ -1884,7 +1884,7 @@
       "novelty": "Why interesting / 新規性・限界:** 回答の短さと診断情報の完全性の両立が課題。特定モデル・評価セットの結果であり臨床安全性の実証ではない。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 回答の短さと診断情報の完全性の両立が課題。特定モデル・評価セットの結果であり臨床安全性の実証ではない。",
-      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: **Tags:** 医療AI\nSummary: Summary / 目的・手法・実験・主な結果:** 小型医療LLMの応答を短縮するため、QLoRAの教師あり学習に微分可能な終了トークン確率の損失を追加。1.7Bモデルで応答長を72.8%削減し、診断多肢選択精度を40.8%から44.0%へ改善。\nObjective: Summary / 目的・手法・実験・主な結果:** 小型医療LLMの応答を短縮するため、QLoRAの教師あり学習に微分可能な終了トークン確率の損失を追加。1.7Bモデルで応答長を72.8%削減し、診断多肢選択精度を40.8%から44.0%へ改善。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 小型医療LLMの応答を短縮するため、QLoRAの教師あり学習に微分可能な終了トークン確率の損失を追加。1.7Bモデルで応答長を72.8%削減し、診断多肢選択精度を40.8%から44.0%へ改善。\nNovelty: Why interesting / 新規性・限界:** 回答の短さと診断情報の完全性の両立が課題。特定モデル・評価セットの結果であり臨床安全性の実証ではない。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** 小型医療LLMの応答を短縮するため、QLoRAの教師あり学習に微分可能な終了トークン確率の損失を追加。1.7Bモデルで応答長を72.8%削減し、診断多肢選択精度を40.8%から44.0%へ改善。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 小型医療LLMの応答を短縮するため、QLoRAの教師あり学習に微分可能な終了トークン確率の損失を追加。1.7Bモデルで応答長を72.8%削減し、診断多肢選択精度を40.8%から44.0%へ改善。\nNovelty: Why interesting / 新規性・限界:** 回答の短さと診断情報の完全性の両立が課題。特定モデル・評価セットの結果であり臨床安全性の実証ではない。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "Your Vision Foundation Model Is Secretly an EEG Foundation Model",
@@ -1903,7 +1903,7 @@
       "novelty": "Why interesting / 新規性・限界:** 事前学習データの専門性だけでなく入力表現設計が転移性能を左右する。EEGの画像化・タスク設定への依存に注意。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 事前学習データの専門性だけでなく入力表現設計が転移性能を左右する。EEGの画像化・タスク設定への依存に注意。",
-      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: **Tags:** 医療AI・表現学習\nSummary: Summary / 目的・手法・実験・主な結果:** EEGを波形画像として描画し、凍結した画像基盤モデルDINOv3で特徴抽出。8データセットすべてで比較した7つのEEG基盤モデルをbalanced accuracyで上回り、学習する描画パラメータは最大1,113。\nObjective: Summary / 目的・手法・実験・主な結果:** EEGを波形画像として描画し、凍結した画像基盤モデルDINOv3で特徴抽出。8データセットすべてで比較した7つのEEG基盤モデルをbalanced accuracyで上回り、学習する描画パラメータは最大1,113。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** EEGを波形画像として描画し、凍結した画像基盤モデルDINOv3で特徴抽出。8データセットすべてで比較した7つのEEG基盤モデルをbalanced accuracyで上回り、学習する描画パラメータは最大1,113。\nNovelty: Why interesting / 新規性・限界:** 事前学習データの専門性だけでなく入力表現設計が転移性能を左右する。EEGの画像化・タスク設定への依存に注意。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** EEGを波形画像として描画し、凍結した画像基盤モデルDINOv3で特徴抽出。8データセットすべてで比較した7つのEEG基盤モデルをbalanced accuracyで上回り、学習する描画パラメータは最大1,113。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** EEGを波形画像として描画し、凍結した画像基盤モデルDINOv3で特徴抽出。8データセットすべてで比較した7つのEEG基盤モデルをbalanced accuracyで上回り、学習する描画パラメータは最大1,113。\nNovelty: Why interesting / 新規性・限界:** 事前学習データの専門性だけでなく入力表現設計が転移性能を左右する。EEGの画像化・タスク設定への依存に注意。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "Universal Infectious Disease Forecasting with Mantis 2",
@@ -1922,7 +1922,7 @@
       "novelty": "Why interesting / 新規性・限界:** 観測履歴が少ない時ほどシミュレーション学習の効果が大きい。疾患・地域の分布変化や運用時の外部妥当性に注意。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 観測履歴が少ない時ほどシミュレーション学習の効果が大きい。疾患・地域の分布変化や運用時の外部妥当性に注意。",
-      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: **Tags:** 医療AI・時系列\nSummary: Summary / 目的・手法・実験・主な結果:** シミュレーションと観測データを組み合わせ、感染症流行の最大6変数を16週先まで予測。30予測タスクで確率予測の総合性能が比較モデル中最良で、流行ピークの見逃しは最強比較モデルより約30%少ない。\nObjective: Summary / 目的・手法・実験・主な結果:** シミュレーションと観測データを組み合わせ、感染症流行の最大6変数を16週先まで予測。30予測タスクで確率予測の総合性能が比較モデル中最良で、流行ピークの見逃しは最強比較モデルより約30%少ない。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** シミュレーションと観測データを組み合わせ、感染症流行の最大6変数を16週先まで予測。30予測タスクで確率予測の総合性能が比較モデル中最良で、流行ピークの見逃しは最強比較モデルより約30%少ない。\nNovelty: Why interesting / 新規性・限界:** 観測履歴が少ない時ほどシミュレーション学習の効果が大きい。疾患・地域の分布変化や運用時の外部妥当性に注意。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** シミュレーションと観測データを組み合わせ、感染症流行の最大6変数を16週先まで予測。30予測タスクで確率予測の総合性能が比較モデル中最良で、流行ピークの見逃しは最強比較モデルより約30%少ない。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** シミュレーションと観測データを組み合わせ、感染症流行の最大6変数を16週先まで予測。30予測タスクで確率予測の総合性能が比較モデル中最良で、流行ピークの見逃しは最強比較モデルより約30%少ない。\nNovelty: Why interesting / 新規性・限界:** 観測履歴が少ない時ほどシミュレーション学習の効果が大きい。疾患・地域の分布変化や運用時の外部妥当性に注意。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "Fine-Tuned Small Language Model for Synthetic Clinical Data Generation",
@@ -1941,7 +1941,7 @@
       "novelty": "Why interesting / 新規性・限界:** 合成データが未知患者への一般化を改善するか、プライバシーや分布忠実度に問題がないかは別途評価が必要。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 合成データが未知患者への一般化を改善するか、プライバシーや分布忠実度に問題がないかは別途評価が必要。",
-      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: **Tags:** 医療AI・データ拡張\nSummary: Summary / 目的・手法・実験・主な結果:** Phi-2をMedQuadでQLoRA微調整し、バイタルサインの合成臨床データを生成。データ拡張後のLSTM分類精度が89.0%から93.7%へ改善。\nObjective: Summary / 目的・手法・実験・主な結果:** Phi-2をMedQuadでQLoRA微調整し、バイタルサインの合成臨床データを生成。データ拡張後のLSTM分類精度が89.0%から93.7%へ改善。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** Phi-2をMedQuadでQLoRA微調整し、バイタルサインの合成臨床データを生成。データ拡張後のLSTM分類精度が89.0%から93.7%へ改善。\nNovelty: Why interesting / 新規性・限界:** 合成データが未知患者への一般化を改善するか、プライバシーや分布忠実度に問題がないかは別途評価が必要。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** Phi-2をMedQuadでQLoRA微調整し、バイタルサインの合成臨床データを生成。データ拡張後のLSTM分類精度が89.0%から93.7%へ改善。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** Phi-2をMedQuadでQLoRA微調整し、バイタルサインの合成臨床データを生成。データ拡張後のLSTM分類精度が89.0%から93.7%へ改善。\nNovelty: Why interesting / 新規性・限界:** 合成データが未知患者への一般化を改善するか、プライバシーや分布忠実度に問題がないかは別途評価が必要。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "TransXplainRRG: A Radiologist-Evaluated LVLM for Chest Radiograph Report Generation",
@@ -1960,7 +1960,7 @@
       "novelty": "Why interesting / 新規性・限界:** 臨床的一貫性の評価が重要だが、レポート品質が臨床転帰の改善を意味するわけではない。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 臨床的一貫性の評価が重要だが、レポート品質が臨床転帰の改善を意味するわけではない。",
-      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: **Tags:** 医療AI・画像\nSummary: Summary / 目的・手法・実験・主な結果:** 胸部X線と病歴から読影レポートを生成し、異常所見の専門家指導付き修正を組み込む。MIMIC-CXRと未学習のIU X-RayでGREENスコア0.327/0.605。放射線科医が100レポートを予備評価。\nObjective: Summary / 目的・手法・実験・主な結果:** 胸部X線と病歴から読影レポートを生成し、異常所見の専門家指導付き修正を組み込む。MIMIC-CXRと未学習のIU X-RayでGREENスコア0.327/0.605。放射線科医が100レポートを予備評価。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 胸部X線と病歴から読影レポートを生成し、異常所見の専門家指導付き修正を組み込む。MIMIC-CXRと未学習のIU X-RayでGREENスコア0.327/0.605。放射線科医が100レポートを予備評価。\nNovelty: Why interesting / 新規性・限界:** 臨床的一貫性の評価が重要だが、レポート品質が臨床転帰の改善を意味するわけではない。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** 胸部X線と病歴から読影レポートを生成し、異常所見の専門家指導付き修正を組み込む。MIMIC-CXRと未学習のIU X-RayでGREENスコア0.327/0.605。放射線科医が100レポートを予備評価。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 胸部X線と病歴から読影レポートを生成し、異常所見の専門家指導付き修正を組み込む。MIMIC-CXRと未学習のIU X-RayでGREENスコア0.327/0.605。放射線科医が100レポートを予備評価。\nNovelty: Why interesting / 新規性・限界:** 臨床的一貫性の評価が重要だが、レポート品質が臨床転帰の改善を意味するわけではない。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "TrialDesignBench: Benchmarking Language Models for Phase-I Trial Design",
@@ -1979,7 +1979,7 @@
       "novelty": "Why interesting / 新規性・限界:** 規制・統計設計の専門知識を評価する点に意義。実際の試験設計を自動承認できることは示さない。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 規制・統計設計の専門知識を評価する点に意義。実際の試験設計を自動承認できることは示さない。",
-      "details": "Publication date: 2026-11-09\nread_level: abstract\nTags: **Tags:** 医療AI・臨床試験\nSummary: Summary / 目的・手法・実験・主な結果:** がん領域の第I/I-II相用量探索試験617件を専門家検証済み設計と対応させたベンチマーク。5つの高性能LLMはいずれも参照設計に一致せず、隠れた設計要因の提供と決定木型推論でbalanced accuracyがそれぞれ0.22/0.24改善。\nObjective: Summary / 目的・手法・実験・主な結果:** がん領域の第I/I-II相用量探索試験617件を専門家検証済み設計と対応させたベンチマーク。5つの高性能LLMはいずれも参照設計に一致せず、隠れた設計要因の提供と決定木型推論でbalanced accuracyがそれぞれ0.22/0.24改善。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** がん領域の第I/I-II相用量探索試験617件を専門家検証済み設計と対応させたベンチマーク。5つの高性能LLMはいずれも参照設計に一致せず、隠れた設計要因の提供と決定木型推論でbalanced accuracyがそれぞれ0.22/0.24改善。\nNovelty: Why interesting / 新規性・限界:** 規制・統計設計の専門知識を評価する点に意義。実際の試験設計を自動承認できることは示さない。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** がん領域の第I/I-II相用量探索試験617件を専門家検証済み設計と対応させたベンチマーク。5つの高性能LLMはいずれも参照設計に一致せず、隠れた設計要因の提供と決定木型推論でbalanced accuracyがそれぞれ0.22/0.24改善。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** がん領域の第I/I-II相用量探索試験617件を専門家検証済み設計と対応させたベンチマーク。5つの高性能LLMはいずれも参照設計に一致せず、隠れた設計要因の提供と決定木型推論でbalanced accuracyがそれぞれ0.22/0.24改善。\nNovelty: Why interesting / 新規性・限界:** 規制・統計設計の専門知識を評価する点に意義。実際の試験設計を自動承認できることは示さない。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "PACE-ECG: Patient-Aware Contrastive ECG Pretraining",
@@ -1998,7 +1998,7 @@
       "novelty": "Why interesting / 新規性・限界:** 患者単位の縦断構造を事前学習に取り入れる価値を外部コホートで評価。予測と介入効果は別問題。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 患者単位の縦断構造を事前学習に取り入れる価値を外部コホートで評価。予測と介入効果は別問題。",
-      "details": "Publication date: 2026-11-09\nread_level: abstract\nTags: **Tags:** 医療AI・心電図\nSummary: Summary / 目的・手法・実験・主な結果:** 同一患者の時間的に近い心電図を対比学習し、心筋梗塞後の死亡・心不全発症を予測。外部HEEDB-BostonでAUROCが比較対象比+5.6%/+10.3%、Atlantaで+6.9%/+11.0%。エンコーダは41分の1のサイズ。\nObjective: Summary / 目的・手法・実験・主な結果:** 同一患者の時間的に近い心電図を対比学習し、心筋梗塞後の死亡・心不全発症を予測。外部HEEDB-BostonでAUROCが比較対象比+5.6%/+10.3%、Atlantaで+6.9%/+11.0%。エンコーダは41分の1のサイズ。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 同一患者の時間的に近い心電図を対比学習し、心筋梗塞後の死亡・心不全発症を予測。外部HEEDB-BostonでAUROCが比較対象比+5.6%/+10.3%、Atlantaで+6.9%/+11.0%。エンコーダは41分の1のサイズ。\nNovelty: Why interesting / 新規性・限界:** 患者単位の縦断構造を事前学習に取り入れる価値を外部コホートで評価。予測と介入効果は別問題。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** 同一患者の時間的に近い心電図を対比学習し、心筋梗塞後の死亡・心不全発症を予測。外部HEEDB-BostonでAUROCが比較対象比+5.6%/+10.3%、Atlantaで+6.9%/+11.0%。エンコーダは41分の1のサイズ。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 同一患者の時間的に近い心電図を対比学習し、心筋梗塞後の死亡・心不全発症を予測。外部HEEDB-BostonでAUROCが比較対象比+5.6%/+10.3%、Atlantaで+6.9%/+11.0%。エンコーダは41分の1のサイズ。\nNovelty: Why interesting / 新規性・限界:** 患者単位の縦断構造を事前学習に取り入れる価値を外部コホートで評価。予測と介入効果は別問題。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "Answer or Defer? Testing VLMs' Stated Confidence on Brain MRI",
@@ -2017,7 +2017,7 @@
       "novelty": "Why interesting / 新規性・限界:** モデルの自信をそのまま診療への自動採否基準にする危険性。集団別校正が必要。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** モデルの自信をそのまま診療への自動採否基準にする危険性。集団別校正が必要。",
-      "details": "Publication date: 2026-11-09\nread_level: abstract\nTags: **Tags:** 医療AI・不確実性\nSummary: Summary / 目的・手法・実験・主な結果:** 3,888枚の脳MRIスライスで8つのオープンウェイトVLMを評価。BraTSでは自己申告の確信度に閾値を置いても、誤り率5%以下の非空の採択集合を作れなかった。\nObjective: Summary / 目的・手法・実験・主な結果:** 3,888枚の脳MRIスライスで8つのオープンウェイトVLMを評価。BraTSでは自己申告の確信度に閾値を置いても、誤り率5%以下の非空の採択集合を作れなかった。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 3,888枚の脳MRIスライスで8つのオープンウェイトVLMを評価。BraTSでは自己申告の確信度に閾値を置いても、誤り率5%以下の非空の採択集合を作れなかった。\nNovelty: Why interesting / 新規性・限界:** モデルの自信をそのまま診療への自動採否基準にする危険性。集団別校正が必要。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** 3,888枚の脳MRIスライスで8つのオープンウェイトVLMを評価。BraTSでは自己申告の確信度に閾値を置いても、誤り率5%以下の非空の採択集合を作れなかった。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 3,888枚の脳MRIスライスで8つのオープンウェイトVLMを評価。BraTSでは自己申告の確信度に閾値を置いても、誤り率5%以下の非空の採択集合を作れなかった。\nNovelty: Why interesting / 新規性・限界:** モデルの自信をそのまま診療への自動採否基準にする危険性。集団別校正が必要。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "Seeing Is Not Believing: Counterfactual Lesion Erasure",
@@ -2036,7 +2036,7 @@
       "novelty": "Why interesting / 新規性・限界:** 幻覚低減と病変見逃しのトレードオフを隠さず評価している点が重要。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 幻覚低減と病変見逃しのトレードオフを隠さず評価している点が重要。",
-      "details": "Publication date: 2026-11-08\nread_level: abstract\nTags: **Tags:** 医療AI・反事実評価\nSummary: Summary / 目的・手法・実験・主な結果:** 病変を画像から消した反事実例を使い、質問文に引きずられず画像根拠に従うVLMを学習。内部507例で消去病変の誤報率9.6%を報告。ただし外部の気胸48例では検出0件で、感度低下という重大な限界。\nObjective: Summary / 目的・手法・実験・主な結果:** 病変を画像から消した反事実例を使い、質問文に引きずられず画像根拠に従うVLMを学習。内部507例で消去病変の誤報率9.6%を報告。ただし外部の気胸48例では検出0件で、感度低下という重大な限界。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 病変を画像から消した反事実例を使い、質問文に引きずられず画像根拠に従うVLMを学習。内部507例で消去病変の誤報率9.6%を報告。ただし外部の気胸48例では検出0件で、感度低下という重大な限界。\nNovelty: Why interesting / 新規性・限界:** 幻覚低減と病変見逃しのトレードオフを隠さず評価している点が重要。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** 病変を画像から消した反事実例を使い、質問文に引きずられず画像根拠に従うVLMを学習。内部507例で消去病変の誤報率9.6%を報告。ただし外部の気胸48例では検出0件で、感度低下という重大な限界。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 病変を画像から消した反事実例を使い、質問文に引きずられず画像根拠に従うVLMを学習。内部507例で消去病変の誤報率9.6%を報告。ただし外部の気胸48例では検出0件で、感度低下という重大な限界。\nNovelty: Why interesting / 新規性・限界:** 幻覚低減と病変見逃しのトレードオフを隠さず評価している点が重要。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "MedPsy: State-of-the-Art Small Medical Language Models for Efficient Edge Deployment",
@@ -2055,7 +2055,7 @@
       "novelty": "Why interesting / 新規性・限界:** ベンチマーク性能と端末実行効率を同時に測る。実患者での安全性検証ではない。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** ベンチマーク性能と端末実行効率を同時に測る。実患者での安全性検証ではない。",
-      "details": "Publication date: 2026-11-01\nread_level: abstract\nTags: **Tags:** 医療AI・端末実装\nSummary: Summary / 目的・手法・実験・主な結果:** 1.7B/4Bの医療特化LLMを合成データ、教師蒸留、SFT・RLで学習。4Bは7医療ベンチマークでMedGemma-1.5-4Bを19.34ポイント上回り、同量子化の元モデル比で回答遅延と推定エネルギーを75%削減。\nObjective: Summary / 目的・手法・実験・主な結果:** 1.7B/4Bの医療特化LLMを合成データ、教師蒸留、SFT・RLで学習。4Bは7医療ベンチマークでMedGemma-1.5-4Bを19.34ポイント上回り、同量子化の元モデル比で回答遅延と推定エネルギーを75%削減。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 1.7B/4Bの医療特化LLMを合成データ、教師蒸留、SFT・RLで学習。4Bは7医療ベンチマークでMedGemma-1.5-4Bを19.34ポイント上回り、同量子化の元モデル比で回答遅延と推定エネルギーを75%削減。\nNovelty: Why interesting / 新規性・限界:** ベンチマーク性能と端末実行効率を同時に測る。実患者での安全性検証ではない。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** 1.7B/4Bの医療特化LLMを合成データ、教師蒸留、SFT・RLで学習。4Bは7医療ベンチマークでMedGemma-1.5-4Bを19.34ポイント上回り、同量子化の元モデル比で回答遅延と推定エネルギーを75%削減。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 1.7B/4Bの医療特化LLMを合成データ、教師蒸留、SFT・RLで学習。4Bは7医療ベンチマークでMedGemma-1.5-4Bを19.34ポイント上回り、同量子化の元モデル比で回答遅延と推定エネルギーを75%削減。\nNovelty: Why interesting / 新規性・限界:** ベンチマーク性能と端末実行効率を同時に測る。実患者での安全性検証ではない。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "A Guideline-Grounded Multi-Agent Framework for Personalized Exercise Prescription",
@@ -2074,7 +2074,7 @@
       "novelty": "Why interesting / 新規性・限界:** 生成モデルの出力を決定論的安全監査・修正に通す設計。実際の運動介入の前向き転帰は未検証。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 生成モデルの出力を決定論的安全監査・修正に通す設計。実際の運動介入の前向き転帰は未検証。",
-      "details": "Publication date: 2026-11-02\nread_level: abstract\nTags: **Tags:** 医療AI・安全性\nSummary: Summary / 目的・手法・実験・主な結果:** 臨床データとウェアラブル情報を用いた運動処方FITTERを開発。All of Usの400人（がん300、脳卒中100）で、安全制約への適合率98.5%（比較LLMは75.8〜85.8%）。臨床家が80処方をレビュー。\nObjective: Summary / 目的・手法・実験・主な結果:** 臨床データとウェアラブル情報を用いた運動処方FITTERを開発。All of Usの400人（がん300、脳卒中100）で、安全制約への適合率98.5%（比較LLMは75.8〜85.8%）。臨床家が80処方をレビュー。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 臨床データとウェアラブル情報を用いた運動処方FITTERを開発。All of Usの400人（がん300、脳卒中100）で、安全制約への適合率98.5%（比較LLMは75.8〜85.8%）。臨床家が80処方をレビュー。\nNovelty: Why interesting / 新規性・限界:** 生成モデルの出力を決定論的安全監査・修正に通す設計。実際の運動介入の前向き転帰は未検証。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** 臨床データとウェアラブル情報を用いた運動処方FITTERを開発。All of Usの400人（がん300、脳卒中100）で、安全制約への適合率98.5%（比較LLMは75.8〜85.8%）。臨床家が80処方をレビュー。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 臨床データとウェアラブル情報を用いた運動処方FITTERを開発。All of Usの400人（がん300、脳卒中100）で、安全制約への適合率98.5%（比較LLMは75.8〜85.8%）。臨床家が80処方をレビュー。\nNovelty: Why interesting / 新規性・限界:** 生成モデルの出力を決定論的安全監査・修正に通す設計。実際の運動介入の前向き転帰は未検証。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "An agentic AI system enhances clinical detection of immune-related adverse events",
@@ -2093,7 +2093,7 @@
       "novelty": "Why interesting / 新規性・限界:** 単なるベンチマークでなく前向き運用と人間の作業時間を評価。多クラス重症度の精度は依然課題。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 単なるベンチマークでなく前向き運用と人間の作業時間を評価。多クラス重症度の精度は依然課題。",
-      "details": "Publication date: 2026-11-14\nread_level: abstract\nTags: **Tags:** 医療AI・臨床運用\nSummary: Summary / 目的・手法・実験・主な結果:** 免疫チェックポイント阻害薬の有害事象を診療記録から抽出。後ろ向きでは現時点イベント検出macro-F1 0.92、重症度分類0.66。3か月の前向きサイレント運用で二値F1 0.72〜0.79。スタッフのランダム化クロスオーバー評価では注釈時間を2.71分短縮。\nObjective: Summary / 目的・手法・実験・主な結果:** 免疫チェックポイント阻害薬の有害事象を診療記録から抽出。後ろ向きでは現時点イベント検出macro-F1 0.92、重症度分類0.66。3か月の前向きサイレント運用で二値F1 0.72〜0.79。スタッフのランダム化クロスオーバー評価では注釈時間を2.71分短縮。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 免疫チェックポイント阻害薬の有害事象を診療記録から抽出。後ろ向きでは現時点イベント検出macro-F1 0.92、重症度分類0.66。3か月の前向きサイレント運用で二値F1 0.72〜0.79。スタッフのランダム化クロスオーバー評価では注釈時間を2.71分短縮。\nNovelty: Why interesting / 新規性・限界:** 単なるベンチマークでなく前向き運用と人間の作業時間を評価。多クラス重症度の精度は依然課題。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** 免疫チェックポイント阻害薬の有害事象を診療記録から抽出。後ろ向きでは現時点イベント検出macro-F1 0.92、重症度分類0.66。3か月の前向きサイレント運用で二値F1 0.72〜0.79。スタッフのランダム化クロスオーバー評価では注釈時間を2.71分短縮。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 免疫チェックポイント阻害薬の有害事象を診療記録から抽出。後ろ向きでは現時点イベント検出macro-F1 0.92、重症度分類0.66。3か月の前向きサイレント運用で二値F1 0.72〜0.79。スタッフのランダム化クロスオーバー評価では注釈時間を2.71分短縮。\nNovelty: Why interesting / 新規性・限界:** 単なるベンチマークでなく前向き運用と人間の作業時間を評価。多クラス重症度の精度は依然課題。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "Artificial Intelligence-Driven Extraction of Patient-Reported Pain Outcomes in Osteoarthritis",
@@ -2112,7 +2112,7 @@
       "novelty": "Why interesting / 新規性・限界:** 書かれた情報の抽出と、記述にない情報の推論は分けて評価すべき。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 書かれた情報の抽出と、記述にない情報の推論は分けて評価すべき。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: **Tags:** 医療AI・患者報告\nSummary: Summary / 目的・手法・実験・主な結果:** 変形性関節症の診療ノート163組から痛みスコアを抽出・推定。明記された値の抽出は内科τ=0.76、整形外科τ=0.95と高い一致。一方、記述から推定した痛みスコアは登録値との相関がτ=0.17/0.11と弱い。\nObjective: Summary / 目的・手法・実験・主な結果:** 変形性関節症の診療ノート163組から痛みスコアを抽出・推定。明記された値の抽出は内科τ=0.76、整形外科τ=0.95と高い一致。一方、記述から推定した痛みスコアは登録値との相関がτ=0.17/0.11と弱い。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 変形性関節症の診療ノート163組から痛みスコアを抽出・推定。明記された値の抽出は内科τ=0.76、整形外科τ=0.95と高い一致。一方、記述から推定した痛みスコアは登録値との相関がτ=0.17/0.11と弱い。\nNovelty: Why interesting / 新規性・限界:** 書かれた情報の抽出と、記述にない情報の推論は分けて評価すべき。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** 変形性関節症の診療ノート163組から痛みスコアを抽出・推定。明記された値の抽出は内科τ=0.76、整形外科τ=0.95と高い一致。一方、記述から推定した痛みスコアは登録値との相関がτ=0.17/0.11と弱い。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 変形性関節症の診療ノート163組から痛みスコアを抽出・推定。明記された値の抽出は内科τ=0.76、整形外科τ=0.95と高い一致。一方、記述から推定した痛みスコアは登録値との相関がτ=0.17/0.11と弱い。\nNovelty: Why interesting / 新規性・限界:** 書かれた情報の抽出と、記述にない情報の推論は分けて評価すべき。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "From Forecasting to World Modeling: Can Temporal Foundation Models Recover Causal Response?",
@@ -2131,7 +2131,7 @@
       "novelty": "Why interesting / 新規性・限界:** 予測モデルを施策評価に流用する危険性を実証。観測データの予測と反事実推論は異なる目的。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 予測モデルを施策評価に流用する危険性を実証。観測データの予測と反事実推論は異なる目的。",
-      "details": "Publication date: 2026-11-11\nread_level: abstract\nTags: **Tags:** 機械学習・因果推論\nSummary: Summary / 目的・手法・実験・主な結果:** 表形式・時系列の基盤モデルで、売上予測精度と価格変更への因果応答の予測精度を比較。予測精度が高くても介入効果は正しく推定できず、文脈を増やしても介入効果の改善には直結しない。操作変数も入力方法によって悪化。\nObjective: Summary / 目的・手法・実験・主な結果:** 表形式・時系列の基盤モデルで、売上予測精度と価格変更への因果応答の予測精度を比較。予測精度が高くても介入効果は正しく推定できず、文脈を増やしても介入効果の改善には直結しない。操作変数も入力方法によって悪化。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 表形式・時系列の基盤モデルで、売上予測精度と価格変更への因果応答の予測精度を比較。予測精度が高くても介入効果は正しく推定できず、文脈を増やしても介入効果の改善には直結しない。操作変数も入力方法によって悪化。\nNovelty: Why interesting / 新規性・限界:** 予測モデルを施策評価に流用する危険性を実証。観測データの予測と反事実推論は異なる目的。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** 表形式・時系列の基盤モデルで、売上予測精度と価格変更への因果応答の予測精度を比較。予測精度が高くても介入効果は正しく推定できず、文脈を増やしても介入効果の改善には直結しない。操作変数も入力方法によって悪化。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 表形式・時系列の基盤モデルで、売上予測精度と価格変更への因果応答の予測精度を比較。予測精度が高くても介入効果は正しく推定できず、文脈を増やしても介入効果の改善には直結しない。操作変数も入力方法によって悪化。\nNovelty: Why interesting / 新規性・限界:** 予測モデルを施策評価に流用する危険性を実証。観測データの予測と反事実推論は異なる目的。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "TabPFN-3.5: Technical Report",
@@ -2150,7 +2150,7 @@
       "novelty": "Why interesting / 新規性・限界:** 小規模表形式学習で基盤モデルを強い比較対象として置く意義。モデル提供元の技術報告であり、独立評価も重要。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 小規模表形式学習で基盤モデルを強い比較対象として置く意義。モデル提供元の技術報告であり、独立評価も重要。",
-      "details": "Publication date: 2026-09-15\nread_level: abstract\nTags: **Tags:** 機械学習・表形式\nSummary: Summary / 目的・手法・実験・主な結果:** 表形式基盤モデルTabPFN-3.5は時系列・グループ分割、文字列・画像を含む表、高カーディナリティ特徴量に対応。TabArenaの標準表形式予測で既存比較モデルを上回ると報告。高速版は旧版より最大3倍高速。\nObjective: Summary / 目的・手法・実験・主な結果:** 表形式基盤モデルTabPFN-3.5は時系列・グループ分割、文字列・画像を含む表、高カーディナリティ特徴量に対応。TabArenaの標準表形式予測で既存比較モデルを上回ると報告。高速版は旧版より最大3倍高速。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 表形式基盤モデルTabPFN-3.5は時系列・グループ分割、文字列・画像を含む表、高カーディナリティ特徴量に対応。TabArenaの標準表形式予測で既存比較モデルを上回ると報告。高速版は旧版より最大3倍高速。\nNovelty: Why interesting / 新規性・限界:** 小規模表形式学習で基盤モデルを強い比較対象として置く意義。モデル提供元の技術報告であり、独立評価も重要。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** 表形式基盤モデルTabPFN-3.5は時系列・グループ分割、文字列・画像を含む表、高カーディナリティ特徴量に対応。TabArenaの標準表形式予測で既存比較モデルを上回ると報告。高速版は旧版より最大3倍高速。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 表形式基盤モデルTabPFN-3.5は時系列・グループ分割、文字列・画像を含む表、高カーディナリティ特徴量に対応。TabArenaの標準表形式予測で既存比較モデルを上回ると報告。高速版は旧版より最大3倍高速。\nNovelty: Why interesting / 新規性・限界:** 小規模表形式学習で基盤モデルを強い比較対象として置く意義。モデル提供元の技術報告であり、独立評価も重要。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "TIGER: Time-Series Classification with In-Context-Learning Gated Ensemble of Representations",
@@ -2169,7 +2169,7 @@
       "novelty": "Why interesting / 新規性・限界:** 単一の深層モデルでなく、表現とデータ量に応じた適応的アンサンブルが強い。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 単一の深層モデルでなく、表現とデータ量に応じた適応的アンサンブルが強い。",
-      "details": "Publication date: 2026-10-05\nread_level: abstract\nTags: **Tags:** 機械学習・時系列\nSummary: Summary / 目的・手法・実験・主な結果:** 4種類の時系列表現と3分類器の12予測を集約し、サンプル数に応じて多数決とTabICLv2によるメタ分類を切り替える。UCRの142データセットで6比較法中、平均accuracy・balanced accuracy・F1が最高。\nObjective: Summary / 目的・手法・実験・主な結果:** 4種類の時系列表現と3分類器の12予測を集約し、サンプル数に応じて多数決とTabICLv2によるメタ分類を切り替える。UCRの142データセットで6比較法中、平均accuracy・balanced accuracy・F1が最高。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 4種類の時系列表現と3分類器の12予測を集約し、サンプル数に応じて多数決とTabICLv2によるメタ分類を切り替える。UCRの142データセットで6比較法中、平均accuracy・balanced accuracy・F1が最高。\nNovelty: Why interesting / 新規性・限界:** 単一の深層モデルでなく、表現とデータ量に応じた適応的アンサンブルが強い。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** 4種類の時系列表現と3分類器の12予測を集約し、サンプル数に応じて多数決とTabICLv2によるメタ分類を切り替える。UCRの142データセットで6比較法中、平均accuracy・balanced accuracy・F1が最高。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** 4種類の時系列表現と3分類器の12予測を集約し、サンプル数に応じて多数決とTabICLv2によるメタ分類を切り替える。UCRの142データセットで6比較法中、平均accuracy・balanced accuracy・F1が最高。\nNovelty: Why interesting / 新規性・限界:** 単一の深層モデルでなく、表現とデータ量に応じた適応的アンサンブルが強い。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "TSPFN: A Temporal Tabular Foundation Model for Physiological Time Series Classification",
@@ -2188,7 +2188,7 @@
       "novelty": "Why interesting / 新規性・限界:** 表形式の事前学習構造を時系列の内部依存へ拡張。臨床転帰の前向き検証ではない。",
       "limitations": "評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。",
       "why": "Why interesting / 新規性・限界:** 表形式の事前学習構造を時系列の内部依存へ拡張。臨床転帰の前向き検証ではない。",
-      "details": "Publication date: 2026-08-31\nread_level: abstract\nTags: **Tags:** 機械学習・医療時系列\nSummary: Summary / 目的・手法・実験・主な結果:** TabPFNを生理時系列に適応させ、140,000件の実測時系列で事前学習。複数の生理信号ベンチマークで通常の表形式手法やTabPFNを上回り、専門的時系列モデルより高い領域間転移を報告。\nObjective: Summary / 目的・手法・実験・主な結果:** TabPFNを生理時系列に適応させ、140,000件の実測時系列で事前学習。複数の生理信号ベンチマークで通常の表形式手法やTabPFNを上回り、専門的時系列モデルより高い領域間転移を報告。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** TabPFNを生理時系列に適応させ、140,000件の実測時系列で事前学習。複数の生理信号ベンチマークで通常の表形式手法やTabPFNを上回り、専門的時系列モデルより高い領域間転移を報告。\nNovelty: Why interesting / 新規性・限界:** 表形式の事前学習構造を時系列の内部依存へ拡張。臨床転帰の前向き検証ではない。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
+      "details": "Objective: Summary / 目的・手法・実験・主な結果:** TabPFNを生理時系列に適応させ、140,000件の実測時系列で事前学習。複数の生理信号ベンチマークで通常の表形式手法やTabPFNを上回り、専門的時系列モデルより高い領域間転移を報告。\nMethods: 未記載\nData and results: Summary / 目的・手法・実験・主な結果:** TabPFNを生理時系列に適応させ、140,000件の実測時系列で事前学習。複数の生理信号ベンチマークで通常の表形式手法やTabPFNを上回り、専門的時系列モデルより高い領域間転移を報告。\nNovelty: Why interesting / 新規性・限界:** 表形式の事前学習構造を時系列の内部依存へ拡張。臨床転帰の前向き検証ではない。\nLimitations: 評価上の注意:** 数値は原著要旨の著者報告に基づく。独立再現や詳細な統計的不確実性の検証は未実施。"
     },
     {
       "title": "Where LLM Agents Get Stuck Debugging Databases: Access More Than Reasoning",
@@ -2207,7 +2207,7 @@
       "novelty": "新規性・研究上の意義:** 実システムの観察研究。安全な状態照会APIやdeadlock履歴など観測可能性の設計を提案。",
       "limitations": "限界・評価上の注意:** 8件・単一システムの観察で、比較対照実験ではない。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** 実システムの観察研究。安全な状態照会APIやdeadlock履歴など観測可能性の設計を提案。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** 運用中DBの8障害をClaude Codeが診断。並行処理依存の5件すべてで実行時状態へのアクセス不足があり、4件では推論の誤りも併発。\nObjective: 目的・方法・データ・主要結果:** 運用中DBの8障害をClaude Codeが診断。並行処理依存の5件すべてで実行時状態へのアクセス不足があり、4件では推論の誤りも併発。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 運用中DBの8障害をClaude Codeが診断。並行処理依存の5件すべてで実行時状態へのアクセス不足があり、4件では推論の誤りも併発。\nNovelty: 新規性・研究上の意義:** 実システムの観察研究。安全な状態照会APIやdeadlock履歴など観測可能性の設計を提案。\nLimitations: 限界・評価上の注意:** 8件・単一システムの観察で、比較対照実験ではない。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** 運用中DBの8障害をClaude Codeが診断。並行処理依存の5件すべてで実行時状態へのアクセス不足があり、4件では推論の誤りも併発。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 運用中DBの8障害をClaude Codeが診断。並行処理依存の5件すべてで実行時状態へのアクセス不足があり、4件では推論の誤りも併発。\nNovelty: 新規性・研究上の意義:** 実システムの観察研究。安全な状態照会APIやdeadlock履歴など観測可能性の設計を提案。\nLimitations: 限界・評価上の注意:** 8件・単一システムの観察で、比較対照実験ではない。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "Metal Sandbox: Isolated Execution and Command Scheduling for GPU Coding Agents on Apple Silicon",
@@ -2226,7 +2226,7 @@
       "novelty": "新規性・研究上の意義:** モデルではなく実行環境の並列性を改善するシステム研究。",
       "limitations": "限界・評価上の注意:** 一部は静的トレースに基づく推定で、継続的な実環境での効果と区別する。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** モデルではなく実行環境の並列性を改善するシステム研究。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** Metal SandboxはmacOS上でGPUコード生成エージェントのコマンド実行を隔離・スケジューリング。4台のM4 Mac miniでコマンドスループット1.68～2.05倍。トレース再生で待機時間18.8%減、バッチ所要時間22.3%減。\nObjective: 目的・方法・データ・主要結果:** Metal SandboxはmacOS上でGPUコード生成エージェントのコマンド実行を隔離・スケジューリング。4台のM4 Mac miniでコマンドスループット1.68～2.05倍。トレース再生で待機時間18.8%減、バッチ所要時間22.3%減。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Metal SandboxはmacOS上でGPUコード生成エージェントのコマンド実行を隔離・スケジューリング。4台のM4 Mac miniでコマンドスループット1.68～2.05倍。トレース再生で待機時間18.8%減、バッチ所要時間22.3%減。\nNovelty: 新規性・研究上の意義:** モデルではなく実行環境の並列性を改善するシステム研究。\nLimitations: 限界・評価上の注意:** 一部は静的トレースに基づく推定で、継続的な実環境での効果と区別する。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** Metal SandboxはmacOS上でGPUコード生成エージェントのコマンド実行を隔離・スケジューリング。4台のM4 Mac miniでコマンドスループット1.68～2.05倍。トレース再生で待機時間18.8%減、バッチ所要時間22.3%減。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Metal SandboxはmacOS上でGPUコード生成エージェントのコマンド実行を隔離・スケジューリング。4台のM4 Mac miniでコマンドスループット1.68～2.05倍。トレース再生で待機時間18.8%減、バッチ所要時間22.3%減。\nNovelty: 新規性・研究上の意義:** モデルではなく実行環境の並列性を改善するシステム研究。\nLimitations: 限界・評価上の注意:** 一部は静的トレースに基づく推定で、継続的な実環境での効果と区別する。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "LiveGeo: Benchmarking Geographic Agents in Continuously Evolving Worlds",
@@ -2245,7 +2245,7 @@
       "novelty": "新規性・研究上の意義:** 状態の更新と証拠の再取得を評価に組み込むベンチマーク。",
       "limitations": "限界・評価上の注意:** 要旨には統一的な定量比較値がなく、改善幅は断定できない。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** 状態の更新と証拠の再取得を評価に組み込むベンチマーク。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** GeoWorld/LiveGeoは地理的な世界状態が時間変化するエージェント環境。過去に確認した証拠の有効性を再検証し計画を更新する必要があり、静的タスクで強いモデルも動的な信頼性を保証できなかった。\nObjective: 目的・方法・データ・主要結果:** GeoWorld/LiveGeoは地理的な世界状態が時間変化するエージェント環境。過去に確認した証拠の有効性を再検証し計画を更新する必要があり、静的タスクで強いモデルも動的な信頼性を保証できなかった。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** GeoWorld/LiveGeoは地理的な世界状態が時間変化するエージェント環境。過去に確認した証拠の有効性を再検証し計画を更新する必要があり、静的タスクで強いモデルも動的な信頼性を保証できなかった。\nNovelty: 新規性・研究上の意義:** 状態の更新と証拠の再取得を評価に組み込むベンチマーク。\nLimitations: 限界・評価上の注意:** 要旨には統一的な定量比較値がなく、改善幅は断定できない。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** GeoWorld/LiveGeoは地理的な世界状態が時間変化するエージェント環境。過去に確認した証拠の有効性を再検証し計画を更新する必要があり、静的タスクで強いモデルも動的な信頼性を保証できなかった。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** GeoWorld/LiveGeoは地理的な世界状態が時間変化するエージェント環境。過去に確認した証拠の有効性を再検証し計画を更新する必要があり、静的タスクで強いモデルも動的な信頼性を保証できなかった。\nNovelty: 新規性・研究上の意義:** 状態の更新と証拠の再取得を評価に組み込むベンチマーク。\nLimitations: 限界・評価上の注意:** 要旨には統一的な定量比較値がなく、改善幅は断定できない。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "XBot-Omni: An Omni-Modal Model for Embodied Understanding and Interaction",
@@ -2264,7 +2264,7 @@
       "novelty": "新規性・研究上の意義:** 身体表現を持つエージェントの入力と出力を統合するアーキテクチャ。",
       "limitations": "限界・評価上の注意:** 要旨に主要指標の数値は示されず、実ロボットでの長期信頼性は不明。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** 身体表現を持つエージェントの入力と出力を統合するアーキテクチャ。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** XBot-OmniはThinker・Talker・Actorを統合し、画像・動画・音声・テキストから音声と身体動作を協調生成。7ベンチマークでマルチモーダル理解と動作生成を評価。\nObjective: 目的・方法・データ・主要結果:** XBot-OmniはThinker・Talker・Actorを統合し、画像・動画・音声・テキストから音声と身体動作を協調生成。7ベンチマークでマルチモーダル理解と動作生成を評価。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** XBot-OmniはThinker・Talker・Actorを統合し、画像・動画・音声・テキストから音声と身体動作を協調生成。7ベンチマークでマルチモーダル理解と動作生成を評価。\nNovelty: 新規性・研究上の意義:** 身体表現を持つエージェントの入力と出力を統合するアーキテクチャ。\nLimitations: 限界・評価上の注意:** 要旨に主要指標の数値は示されず、実ロボットでの長期信頼性は不明。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** XBot-OmniはThinker・Talker・Actorを統合し、画像・動画・音声・テキストから音声と身体動作を協調生成。7ベンチマークでマルチモーダル理解と動作生成を評価。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** XBot-OmniはThinker・Talker・Actorを統合し、画像・動画・音声・テキストから音声と身体動作を協調生成。7ベンチマークでマルチモーダル理解と動作生成を評価。\nNovelty: 新規性・研究上の意義:** 身体表現を持つエージェントの入力と出力を統合するアーキテクチャ。\nLimitations: 限界・評価上の注意:** 要旨に主要指標の数値は示されず、実ロボットでの長期信頼性は不明。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "Paper-Faithful Federated Learning: Scientific Checks for Practitioner and Agent Development",
@@ -2283,7 +2283,7 @@
       "novelty": "新規性・研究上の意義:** 予測性能より科学的な再現性・プロトコル準拠を目的とするソフトウェア基盤。",
       "limitations": "限界・評価上の注意:** 提案する検査条件の網羅性は対象プロトコルに依存し、性能改善の定量主張ではない。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** 予測性能より科学的な再現性・プロトコル準拠を目的とするソフトウェア基盤。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** FedBrewは連合学習実験のデータ分割、集約重み、乱数、checkpoint復旧を機械的に検査。研究者やコード生成エージェントが実装を変更しても論文の実験条件から逸脱しないかを確認する。\nObjective: 目的・方法・データ・主要結果:** FedBrewは連合学習実験のデータ分割、集約重み、乱数、checkpoint復旧を機械的に検査。研究者やコード生成エージェントが実装を変更しても論文の実験条件から逸脱しないかを確認する。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** FedBrewは連合学習実験のデータ分割、集約重み、乱数、checkpoint復旧を機械的に検査。研究者やコード生成エージェントが実装を変更しても論文の実験条件から逸脱しないかを確認する。\nNovelty: 新規性・研究上の意義:** 予測性能より科学的な再現性・プロトコル準拠を目的とするソフトウェア基盤。\nLimitations: 限界・評価上の注意:** 提案する検査条件の網羅性は対象プロトコルに依存し、性能改善の定量主張ではない。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** FedBrewは連合学習実験のデータ分割、集約重み、乱数、checkpoint復旧を機械的に検査。研究者やコード生成エージェントが実装を変更しても論文の実験条件から逸脱しないかを確認する。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** FedBrewは連合学習実験のデータ分割、集約重み、乱数、checkpoint復旧を機械的に検査。研究者やコード生成エージェントが実装を変更しても論文の実験条件から逸脱しないかを確認する。\nNovelty: 新規性・研究上の意義:** 予測性能より科学的な再現性・プロトコル準拠を目的とするソフトウェア基盤。\nLimitations: 限界・評価上の注意:** 提案する検査条件の網羅性は対象プロトコルに依存し、性能改善の定量主張ではない。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "Designing Institutions for Autonomous AI",
@@ -2302,7 +2302,7 @@
       "novelty": "新規性・研究上の意義:** エージェントの集団性能を個体モデルだけでなく制度の設計問題として捉える。",
       "limitations": "限界・評価上の注意:** Perspective論文であり、実験的な性能優位性を示すものではない。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** エージェントの集団性能を個体モデルだけでなく制度の設計問題として捉える。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** 自律AI集団の協力・責任・批判・人間の統制を支える制度設計について7原則を提案。研究エージェントが参加する学術誌の構想を事例として示す。\nObjective: 目的・方法・データ・主要結果:** 自律AI集団の協力・責任・批判・人間の統制を支える制度設計について7原則を提案。研究エージェントが参加する学術誌の構想を事例として示す。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 自律AI集団の協力・責任・批判・人間の統制を支える制度設計について7原則を提案。研究エージェントが参加する学術誌の構想を事例として示す。\nNovelty: 新規性・研究上の意義:** エージェントの集団性能を個体モデルだけでなく制度の設計問題として捉える。\nLimitations: 限界・評価上の注意:** Perspective論文であり、実験的な性能優位性を示すものではない。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** 自律AI集団の協力・責任・批判・人間の統制を支える制度設計について7原則を提案。研究エージェントが参加する学術誌の構想を事例として示す。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 自律AI集団の協力・責任・批判・人間の統制を支える制度設計について7原則を提案。研究エージェントが参加する学術誌の構想を事例として示す。\nNovelty: 新規性・研究上の意義:** エージェントの集団性能を個体モデルだけでなく制度の設計問題として捉える。\nLimitations: 限界・評価上の注意:** Perspective論文であり、実験的な性能優位性を示すものではない。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "AURA 2.0: From User-Driven Responses to Model-Initiated Conversations in Streaming Video",
@@ -2321,7 +2321,7 @@
       "novelty": "新規性・研究上の意義:** 常時稼働のマルチモーダルエージェントで、介入タイミング自体を学習対象にする。",
       "limitations": "限界・評価上の注意:** 要旨に比較数値がなく、実運用での誤介入率は判断できない。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** 常時稼働のマルチモーダルエージェントで、介入タイミング自体を学習対象にする。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** AURA 2.0は動画ストリームを監視し、ユーザーが質問しなくても会話開始、ツール呼び出し、画像領域へのグラウンディングを行う。専用データと3段階学習で評価。\nObjective: 目的・方法・データ・主要結果:** AURA 2.0は動画ストリームを監視し、ユーザーが質問しなくても会話開始、ツール呼び出し、画像領域へのグラウンディングを行う。専用データと3段階学習で評価。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** AURA 2.0は動画ストリームを監視し、ユーザーが質問しなくても会話開始、ツール呼び出し、画像領域へのグラウンディングを行う。専用データと3段階学習で評価。\nNovelty: 新規性・研究上の意義:** 常時稼働のマルチモーダルエージェントで、介入タイミング自体を学習対象にする。\nLimitations: 限界・評価上の注意:** 要旨に比較数値がなく、実運用での誤介入率は判断できない。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** AURA 2.0は動画ストリームを監視し、ユーザーが質問しなくても会話開始、ツール呼び出し、画像領域へのグラウンディングを行う。専用データと3段階学習で評価。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** AURA 2.0は動画ストリームを監視し、ユーザーが質問しなくても会話開始、ツール呼び出し、画像領域へのグラウンディングを行う。専用データと3段階学習で評価。\nNovelty: 新規性・研究上の意義:** 常時稼働のマルチモーダルエージェントで、介入タイミング自体を学習対象にする。\nLimitations: 限界・評価上の注意:** 要旨に比較数値がなく、実運用での誤介入率は判断できない。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "AnalogLayoutWorld: An Open Benchmark for Agentic Analog Layout Design",
@@ -2340,7 +2340,7 @@
       "novelty": "新規性・研究上の意義:** 成果物の生成と物理・電気的な実行可能性を別々に評価。",
       "limitations": "限界・評価上の注意:** 特定の回路設計環境での結果。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** 成果物の生成と物理・電気的な実行可能性を別々に評価。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** AnalogLayoutWorldはアナログ回路レイアウト40課題、13モデル・harness構成を評価。91.1%はGDSを出力したが、専門家が定義した受入条件を満たしたのは23.0%。\nObjective: 目的・方法・データ・主要結果:** AnalogLayoutWorldはアナログ回路レイアウト40課題、13モデル・harness構成を評価。91.1%はGDSを出力したが、専門家が定義した受入条件を満たしたのは23.0%。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** AnalogLayoutWorldはアナログ回路レイアウト40課題、13モデル・harness構成を評価。91.1%はGDSを出力したが、専門家が定義した受入条件を満たしたのは23.0%。\nNovelty: 新規性・研究上の意義:** 成果物の生成と物理・電気的な実行可能性を別々に評価。\nLimitations: 限界・評価上の注意:** 特定の回路設計環境での結果。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** AnalogLayoutWorldはアナログ回路レイアウト40課題、13モデル・harness構成を評価。91.1%はGDSを出力したが、専門家が定義した受入条件を満たしたのは23.0%。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** AnalogLayoutWorldはアナログ回路レイアウト40課題、13モデル・harness構成を評価。91.1%はGDSを出力したが、専門家が定義した受入条件を満たしたのは23.0%。\nNovelty: 新規性・研究上の意義:** 成果物の生成と物理・電気的な実行可能性を別々に評価。\nLimitations: 限界・評価上の注意:** 特定の回路設計環境での結果。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "S1-Evo: Experience-Guided Evidence Competition Attacks on Typed System-1 Decision Models",
@@ -2359,7 +2359,7 @@
       "novelty": "新規性・研究上の意義:** 安価なルーティング・認可判断にも外部文脈の攻撃が成立する。",
       "limitations": "限界・評価上の注意:** 攻撃成功率は特定モデル・評価プロトコルに依存。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** 安価なルーティング・認可判断にも外部文脈の攻撃が成立する。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** S1-Evoは型付きSystem-1判断モデルへの敵対的入力を、選択肢のスコア差を使って進化。4ベンチマーク・3モデルで評価し、特定モデルで平均攻撃成功率71.99%、エージェント全体の違反最大24%。\nObjective: 目的・方法・データ・主要結果:** S1-Evoは型付きSystem-1判断モデルへの敵対的入力を、選択肢のスコア差を使って進化。4ベンチマーク・3モデルで評価し、特定モデルで平均攻撃成功率71.99%、エージェント全体の違反最大24%。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** S1-Evoは型付きSystem-1判断モデルへの敵対的入力を、選択肢のスコア差を使って進化。4ベンチマーク・3モデルで評価し、特定モデルで平均攻撃成功率71.99%、エージェント全体の違反最大24%。\nNovelty: 新規性・研究上の意義:** 安価なルーティング・認可判断にも外部文脈の攻撃が成立する。\nLimitations: 限界・評価上の注意:** 攻撃成功率は特定モデル・評価プロトコルに依存。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** S1-Evoは型付きSystem-1判断モデルへの敵対的入力を、選択肢のスコア差を使って進化。4ベンチマーク・3モデルで評価し、特定モデルで平均攻撃成功率71.99%、エージェント全体の違反最大24%。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** S1-Evoは型付きSystem-1判断モデルへの敵対的入力を、選択肢のスコア差を使って進化。4ベンチマーク・3モデルで評価し、特定モデルで平均攻撃成功率71.99%、エージェント全体の違反最大24%。\nNovelty: 新規性・研究上の意義:** 安価なルーティング・認可判断にも外部文脈の攻撃が成立する。\nLimitations: 限界・評価上の注意:** 攻撃成功率は特定モデル・評価プロトコルに依存。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "Context Graph: Explainable Multi-Agent Decision Chains in AI-RAN",
@@ -2378,7 +2378,7 @@
       "novelty": "新規性・研究上の意義:** 最終決定だけでなく複数エージェント間の判断連鎖を監査可能にする。",
       "limitations": "限界・評価上の注意:** 概念実証であり、運用全体の安全性改善は別途評価が必要。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** 最終決定だけでなく複数エージェント間の判断連鎖を監査可能にする。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** Context Graphは通信ネットワークの複数エージェントの測定・ポリシー・判断・警告を有向グラフ化し、反事実検証で因果関係を確認。数万ノードのグラフでミリ秒未満の照会を実証。\nObjective: 目的・方法・データ・主要結果:** Context Graphは通信ネットワークの複数エージェントの測定・ポリシー・判断・警告を有向グラフ化し、反事実検証で因果関係を確認。数万ノードのグラフでミリ秒未満の照会を実証。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Context Graphは通信ネットワークの複数エージェントの測定・ポリシー・判断・警告を有向グラフ化し、反事実検証で因果関係を確認。数万ノードのグラフでミリ秒未満の照会を実証。\nNovelty: 新規性・研究上の意義:** 最終決定だけでなく複数エージェント間の判断連鎖を監査可能にする。\nLimitations: 限界・評価上の注意:** 概念実証であり、運用全体の安全性改善は別途評価が必要。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** Context Graphは通信ネットワークの複数エージェントの測定・ポリシー・判断・警告を有向グラフ化し、反事実検証で因果関係を確認。数万ノードのグラフでミリ秒未満の照会を実証。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Context Graphは通信ネットワークの複数エージェントの測定・ポリシー・判断・警告を有向グラフ化し、反事実検証で因果関係を確認。数万ノードのグラフでミリ秒未満の照会を実証。\nNovelty: 新規性・研究上の意義:** 最終決定だけでなく複数エージェント間の判断連鎖を監査可能にする。\nLimitations: 限界・評価上の注意:** 概念実証であり、運用全体の安全性改善は別途評価が必要。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "ACE-CaP-0: Real-World Code-as-Policies in the Era of Experience",
@@ -2397,7 +2397,7 @@
       "novelty": "新規性・研究上の意義:** 毎回LLMに動作を考えさせず、学習した物理スキルを再利用する。",
       "limitations": "限界・評価上の注意:** 課題群が限定され、新規物体・環境への転移は別途検証が必要。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** 毎回LLMに動作を考えさせず、学習した物理スキルを再利用する。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** ACE-CaP-0は人間の実演を必要時に要求し、シミュレーションも必要時に使い、ロボットの動作方策を実行可能コードとして固定。実機操作8課題・240試行で成功221件（92.1%）。\nObjective: 目的・方法・データ・主要結果:** ACE-CaP-0は人間の実演を必要時に要求し、シミュレーションも必要時に使い、ロボットの動作方策を実行可能コードとして固定。実機操作8課題・240試行で成功221件（92.1%）。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** ACE-CaP-0は人間の実演を必要時に要求し、シミュレーションも必要時に使い、ロボットの動作方策を実行可能コードとして固定。実機操作8課題・240試行で成功221件（92.1%）。\nNovelty: 新規性・研究上の意義:** 毎回LLMに動作を考えさせず、学習した物理スキルを再利用する。\nLimitations: 限界・評価上の注意:** 課題群が限定され、新規物体・環境への転移は別途検証が必要。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** ACE-CaP-0は人間の実演を必要時に要求し、シミュレーションも必要時に使い、ロボットの動作方策を実行可能コードとして固定。実機操作8課題・240試行で成功221件（92.1%）。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** ACE-CaP-0は人間の実演を必要時に要求し、シミュレーションも必要時に使い、ロボットの動作方策を実行可能コードとして固定。実機操作8課題・240試行で成功221件（92.1%）。\nNovelty: 新規性・研究上の意義:** 毎回LLMに動作を考えさせず、学習した物理スキルを再利用する。\nLimitations: 限界・評価上の注意:** 課題群が限定され、新規物体・環境への転移は別途検証が必要。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "ControlHarbor: A Benchmark for Control Design by Coding Agents",
@@ -2416,7 +2416,7 @@
       "novelty": "新規性・研究上の意義:** 平均報酬だけでなく安全・ロバスト性を明示的な制約として検証。",
       "limitations": "限界・評価上の注意:** 制御器の構造制限と課題セットに依存。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** 平均報酬だけでなく安全・ロバスト性を明示的な制約として検証。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** ControlHarborは13制御対象・44課題で、エージェント生成のPython制御器を未知シード・物理外乱・証明条件で評価。最先端コードエージェントは一部試行でRLに匹敵するが、returnだけ満たした制御器は外乱に弱い。\nObjective: 目的・方法・データ・主要結果:** ControlHarborは13制御対象・44課題で、エージェント生成のPython制御器を未知シード・物理外乱・証明条件で評価。最先端コードエージェントは一部試行でRLに匹敵するが、returnだけ満たした制御器は外乱に弱い。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** ControlHarborは13制御対象・44課題で、エージェント生成のPython制御器を未知シード・物理外乱・証明条件で評価。最先端コードエージェントは一部試行でRLに匹敵するが、returnだけ満たした制御器は外乱に弱い。\nNovelty: 新規性・研究上の意義:** 平均報酬だけでなく安全・ロバスト性を明示的な制約として検証。\nLimitations: 限界・評価上の注意:** 制御器の構造制限と課題セットに依存。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** ControlHarborは13制御対象・44課題で、エージェント生成のPython制御器を未知シード・物理外乱・証明条件で評価。最先端コードエージェントは一部試行でRLに匹敵するが、returnだけ満たした制御器は外乱に弱い。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** ControlHarborは13制御対象・44課題で、エージェント生成のPython制御器を未知シード・物理外乱・証明条件で評価。最先端コードエージェントは一部試行でRLに匹敵するが、returnだけ満たした制御器は外乱に弱い。\nNovelty: 新規性・研究上の意義:** 平均報酬だけでなく安全・ロバスト性を明示的な制約として検証。\nLimitations: 限界・評価上の注意:** 制御器の構造制限と課題セットに依存。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "Visual Cipher Bench: Benchmarking LLM Agents on Long-Horizon Visual Reasoning",
@@ -2435,7 +2435,7 @@
       "novelty": "新規性・研究上の意義:** 長期推論の失敗が計画実行ではなく、視覚証拠から規則を発見する段階にある可能性を示す。",
       "limitations": "限界・評価上の注意:** パズル40件の評価で、実環境の視覚作業への一般化は不明。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** 長期推論の失敗が計画実行ではなく、視覚証拠から規則を発見する段階にある可能性を示す。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** Visual Cipher Benchは画像のみからルールを推測する40パズル。8モデル・29推論設定で最高26.7%、5モデルは1%未満。非ネタバレの機構ヒントで10課題サブセットの精度が7.8%→55.6%。\nObjective: 目的・方法・データ・主要結果:** Visual Cipher Benchは画像のみからルールを推測する40パズル。8モデル・29推論設定で最高26.7%、5モデルは1%未満。非ネタバレの機構ヒントで10課題サブセットの精度が7.8%→55.6%。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Visual Cipher Benchは画像のみからルールを推測する40パズル。8モデル・29推論設定で最高26.7%、5モデルは1%未満。非ネタバレの機構ヒントで10課題サブセットの精度が7.8%→55.6%。\nNovelty: 新規性・研究上の意義:** 長期推論の失敗が計画実行ではなく、視覚証拠から規則を発見する段階にある可能性を示す。\nLimitations: 限界・評価上の注意:** パズル40件の評価で、実環境の視覚作業への一般化は不明。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** Visual Cipher Benchは画像のみからルールを推測する40パズル。8モデル・29推論設定で最高26.7%、5モデルは1%未満。非ネタバレの機構ヒントで10課題サブセットの精度が7.8%→55.6%。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Visual Cipher Benchは画像のみからルールを推測する40パズル。8モデル・29推論設定で最高26.7%、5モデルは1%未満。非ネタバレの機構ヒントで10課題サブセットの精度が7.8%→55.6%。\nNovelty: 新規性・研究上の意義:** 長期推論の失敗が計画実行ではなく、視覚証拠から規則を発見する段階にある可能性を示す。\nLimitations: 限界・評価上の注意:** パズル40件の評価で、実環境の視覚作業への一般化は不明。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "Outcome-Mass Alignment: Controlling Length-Dependent Trajectory Influence in Multi-Turn LLM Agent Reinforcement Learning",
@@ -2454,7 +2454,7 @@
       "novelty": "新規性・研究上の意義:** 強化学習の報酬設計だけでなく、行の展開と損失集約が学習対象を変える点を明示。",
       "limitations": "限界・評価上の注意:** 通常のWebShopでは効果が弱いか逆転し、環境依存性が大きい。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** 強化学習の報酬設計だけでなく、行の展開と損失集約が学習対象を変える点を明示。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** Outcome-Mass Alignmentは長いエージェント軌跡が複数学習行に展開される際、失敗例などの重みが暗黙に増える問題を補正。ALFWorldで成功率+7.0～9.4ポイント、WebShop-SOLでnAUC 0.399→0.511。\nObjective: 目的・方法・データ・主要結果:** Outcome-Mass Alignmentは長いエージェント軌跡が複数学習行に展開される際、失敗例などの重みが暗黙に増える問題を補正。ALFWorldで成功率+7.0～9.4ポイント、WebShop-SOLでnAUC 0.399→0.511。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Outcome-Mass Alignmentは長いエージェント軌跡が複数学習行に展開される際、失敗例などの重みが暗黙に増える問題を補正。ALFWorldで成功率+7.0～9.4ポイント、WebShop-SOLでnAUC 0.399→0.511。\nNovelty: 新規性・研究上の意義:** 強化学習の報酬設計だけでなく、行の展開と損失集約が学習対象を変える点を明示。\nLimitations: 限界・評価上の注意:** 通常のWebShopでは効果が弱いか逆転し、環境依存性が大きい。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** Outcome-Mass Alignmentは長いエージェント軌跡が複数学習行に展開される際、失敗例などの重みが暗黙に増える問題を補正。ALFWorldで成功率+7.0～9.4ポイント、WebShop-SOLでnAUC 0.399→0.511。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Outcome-Mass Alignmentは長いエージェント軌跡が複数学習行に展開される際、失敗例などの重みが暗黙に増える問題を補正。ALFWorldで成功率+7.0～9.4ポイント、WebShop-SOLでnAUC 0.399→0.511。\nNovelty: 新規性・研究上の意義:** 強化学習の報酬設計だけでなく、行の展開と損失集約が学習対象を変える点を明示。\nLimitations: 限界・評価上の注意:** 通常のWebShopでは効果が弱いか逆転し、環境依存性が大きい。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "Scale-Induced Semantic Shift in Visual Prompt Injection Against VLMs and Web Agents",
@@ -2473,7 +2473,7 @@
       "novelty": "新規性・研究上の意義:** モデルの画像前処理によって攻撃表面が変わる。",
       "limitations": "限界・評価上の注意:** 画像認識上の成功と実際の不正行動は区別する必要がある。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** モデルの画像前処理によって攻撃表面が変わる。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** 画像の縮小処理で隠された命令が可読になる視覚プロンプトインジェクション。300ケース・4閉鎖モデルで攻撃成功率58.75%（比較41.08%）。ただしWebエージェントの実際の行動侵害は約4%。\nObjective: 目的・方法・データ・主要結果:** 画像の縮小処理で隠された命令が可読になる視覚プロンプトインジェクション。300ケース・4閉鎖モデルで攻撃成功率58.75%（比較41.08%）。ただしWebエージェントの実際の行動侵害は約4%。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 画像の縮小処理で隠された命令が可読になる視覚プロンプトインジェクション。300ケース・4閉鎖モデルで攻撃成功率58.75%（比較41.08%）。ただしWebエージェントの実際の行動侵害は約4%。\nNovelty: 新規性・研究上の意義:** モデルの画像前処理によって攻撃表面が変わる。\nLimitations: 限界・評価上の注意:** 画像認識上の成功と実際の不正行動は区別する必要がある。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** 画像の縮小処理で隠された命令が可読になる視覚プロンプトインジェクション。300ケース・4閉鎖モデルで攻撃成功率58.75%（比較41.08%）。ただしWebエージェントの実際の行動侵害は約4%。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 画像の縮小処理で隠された命令が可読になる視覚プロンプトインジェクション。300ケース・4閉鎖モデルで攻撃成功率58.75%（比較41.08%）。ただしWebエージェントの実際の行動侵害は約4%。\nNovelty: 新規性・研究上の意義:** モデルの画像前処理によって攻撃表面が変わる。\nLimitations: 限界・評価上の注意:** 画像認識上の成功と実際の不正行動は区別する必要がある。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "Reducing Batch Makespan for LLM Agent Workloads through Inference-Environment Coordination",
@@ -2492,7 +2492,7 @@
       "novelty": "新規性・研究上の意義:** エージェント開発の総計算費用を推論・環境両側から最適化。",
       "limitations": "限界・評価上の注意:** 使用したLing系列モデルと処理環境への依存がある。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** エージェント開発の総計算費用を推論・環境両側から最適化。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** 推論と環境実行を交互に行うエージェントバッチのスケジューリングを最適化。KVキャッシュ割当、軌跡を考慮したルーティング、長い処理チェーンの優先実行で4ベンチマークのバッチ所要時間を10.4～65.0%削減。\nObjective: 目的・方法・データ・主要結果:** 推論と環境実行を交互に行うエージェントバッチのスケジューリングを最適化。KVキャッシュ割当、軌跡を考慮したルーティング、長い処理チェーンの優先実行で4ベンチマークのバッチ所要時間を10.4～65.0%削減。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 推論と環境実行を交互に行うエージェントバッチのスケジューリングを最適化。KVキャッシュ割当、軌跡を考慮したルーティング、長い処理チェーンの優先実行で4ベンチマークのバッチ所要時間を10.4～65.0%削減。\nNovelty: 新規性・研究上の意義:** エージェント開発の総計算費用を推論・環境両側から最適化。\nLimitations: 限界・評価上の注意:** 使用したLing系列モデルと処理環境への依存がある。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** 推論と環境実行を交互に行うエージェントバッチのスケジューリングを最適化。KVキャッシュ割当、軌跡を考慮したルーティング、長い処理チェーンの優先実行で4ベンチマークのバッチ所要時間を10.4～65.0%削減。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 推論と環境実行を交互に行うエージェントバッチのスケジューリングを最適化。KVキャッシュ割当、軌跡を考慮したルーティング、長い処理チェーンの優先実行で4ベンチマークのバッチ所要時間を10.4～65.0%削減。\nNovelty: 新規性・研究上の意義:** エージェント開発の総計算費用を推論・環境両側から最適化。\nLimitations: 限界・評価上の注意:** 使用したLing系列モデルと処理環境への依存がある。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "Singularity-Bench: Can Agents Build Agents?",
@@ -2511,7 +2511,7 @@
       "novelty": "新規性・研究上の意義:** AIによるAI開発能力をシステム単位で測る。",
       "limitations": "限界・評価上の注意:** ベンチマークの6課題から一般的な自己改善能力を断定できない。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** AIによるAI開発能力をシステム単位で測る。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** Singularity-BenchはAIシステム構築の6エンドツーエンド課題で11エージェントを比較。最良構成は人間ベースライン比Singularity-Index 1.25、その他の平均は0.58。評価基盤への報酬ハッキング攻撃を検証し対策も提案。\nObjective: 目的・方法・データ・主要結果:** Singularity-BenchはAIシステム構築の6エンドツーエンド課題で11エージェントを比較。最良構成は人間ベースライン比Singularity-Index 1.25、その他の平均は0.58。評価基盤への報酬ハッキング攻撃を検証し対策も提案。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Singularity-BenchはAIシステム構築の6エンドツーエンド課題で11エージェントを比較。最良構成は人間ベースライン比Singularity-Index 1.25、その他の平均は0.58。評価基盤への報酬ハッキング攻撃を検証し対策も提案。\nNovelty: 新規性・研究上の意義:** AIによるAI開発能力をシステム単位で測る。\nLimitations: 限界・評価上の注意:** ベンチマークの6課題から一般的な自己改善能力を断定できない。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** Singularity-BenchはAIシステム構築の6エンドツーエンド課題で11エージェントを比較。最良構成は人間ベースライン比Singularity-Index 1.25、その他の平均は0.58。評価基盤への報酬ハッキング攻撃を検証し対策も提案。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Singularity-BenchはAIシステム構築の6エンドツーエンド課題で11エージェントを比較。最良構成は人間ベースライン比Singularity-Index 1.25、その他の平均は0.58。評価基盤への報酬ハッキング攻撃を検証し対策も提案。\nNovelty: 新規性・研究上の意義:** AIによるAI開発能力をシステム単位で測る。\nLimitations: 限界・評価上の注意:** ベンチマークの6課題から一般的な自己改善能力を断定できない。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "One Policy for 100 Household Tasks: Our Solution for the 2026 BEHAVIOR Challenge",
@@ -2530,7 +2530,7 @@
       "novelty": "新規性・研究上の意義:** ロボットの多タスク汎化に、単一方策とエージェント補助を組み合わせる。",
       "limitations": "限界・評価上の注意:** シミュレーション大会での評価で、実家庭での性能は不明。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** ロボットの多タスク汎化に、単一方策とエージェント補助を組み合わせる。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** BEHAVIOR Challengeの家庭内100タスクに単一VLAを適用。50共通タスクのQが0.260→0.371、100タスクで0.392。長期学習、ノイズ分散低減、シミュレータ評価基盤を利用。\nObjective: 目的・方法・データ・主要結果:** BEHAVIOR Challengeの家庭内100タスクに単一VLAを適用。50共通タスクのQが0.260→0.371、100タスクで0.392。長期学習、ノイズ分散低減、シミュレータ評価基盤を利用。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** BEHAVIOR Challengeの家庭内100タスクに単一VLAを適用。50共通タスクのQが0.260→0.371、100タスクで0.392。長期学習、ノイズ分散低減、シミュレータ評価基盤を利用。\nNovelty: 新規性・研究上の意義:** ロボットの多タスク汎化に、単一方策とエージェント補助を組み合わせる。\nLimitations: 限界・評価上の注意:** シミュレーション大会での評価で、実家庭での性能は不明。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** BEHAVIOR Challengeの家庭内100タスクに単一VLAを適用。50共通タスクのQが0.260→0.371、100タスクで0.392。長期学習、ノイズ分散低減、シミュレータ評価基盤を利用。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** BEHAVIOR Challengeの家庭内100タスクに単一VLAを適用。50共通タスクのQが0.260→0.371、100タスクで0.392。長期学習、ノイズ分散低減、シミュレータ評価基盤を利用。\nNovelty: 新規性・研究上の意義:** ロボットの多タスク汎化に、単一方策とエージェント補助を組み合わせる。\nLimitations: 限界・評価上の注意:** シミュレーション大会での評価で、実家庭での性能は不明。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "EngineAgent: Agentizing On-Device LLM Inference Engines with Inference Stack Hierarchy Awareness and Hardware Abilities",
@@ -2549,7 +2549,7 @@
       "novelty": "新規性・研究上の意義:** コードの生成だけでなくビルド、端末実行、logit一致までを検証。",
       "limitations": "限界・評価上の注意:** 限定されたモデル・端末・エンジンの組合せ。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** コードの生成だけでなくビルド、端末実行、logit一致までを検証。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** EngineAgentはモバイル推論エンジンの層構造とハードウェア特性を事前に索引化し、新モデルの移植を支援。12課題・3モデル・4バックエンドで端末上の実行成功75%（比較コードエージェント33.3%）。\nObjective: 目的・方法・データ・主要結果:** EngineAgentはモバイル推論エンジンの層構造とハードウェア特性を事前に索引化し、新モデルの移植を支援。12課題・3モデル・4バックエンドで端末上の実行成功75%（比較コードエージェント33.3%）。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** EngineAgentはモバイル推論エンジンの層構造とハードウェア特性を事前に索引化し、新モデルの移植を支援。12課題・3モデル・4バックエンドで端末上の実行成功75%（比較コードエージェント33.3%）。\nNovelty: 新規性・研究上の意義:** コードの生成だけでなくビルド、端末実行、logit一致までを検証。\nLimitations: 限界・評価上の注意:** 限定されたモデル・端末・エンジンの組合せ。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** EngineAgentはモバイル推論エンジンの層構造とハードウェア特性を事前に索引化し、新モデルの移植を支援。12課題・3モデル・4バックエンドで端末上の実行成功75%（比較コードエージェント33.3%）。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** EngineAgentはモバイル推論エンジンの層構造とハードウェア特性を事前に索引化し、新モデルの移植を支援。12課題・3モデル・4バックエンドで端末上の実行成功75%（比較コードエージェント33.3%）。\nNovelty: 新規性・研究上の意義:** コードの生成だけでなくビルド、端末実行、logit一致までを検証。\nLimitations: 限界・評価上の注意:** 限定されたモデル・端末・エンジンの組合せ。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "PARLEY: Evaluating LLM Collaboration Through Cooperative Asymmetric Puzzles",
@@ -2568,7 +2568,7 @@
       "novelty": "新規性・研究上の意義:** 協調失敗を知覚・適応・調整に分解し、介入につなげる。",
       "limitations": "限界・評価上の注意:** パズル課題であり実組織のマルチエージェント協業とは異なる。 数値は著者の要旨に基づき独立再現ではない。",
       "why": "新規性・研究上の意義:** 協調失敗を知覚・適応・調整に分解し、介入につなげる。",
-      "details": "Publication date: 2026-11-10\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** PARLEYは4種類の非対称パズルでLLMペアの協調を評価。400対話で成功率60.5%（タスク別34～80%）。失敗分類に基づく介入を200対話で試し、平均成功率70.5%へ改善。\nObjective: 目的・方法・データ・主要結果:** PARLEYは4種類の非対称パズルでLLMペアの協調を評価。400対話で成功率60.5%（タスク別34～80%）。失敗分類に基づく介入を200対話で試し、平均成功率70.5%へ改善。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** PARLEYは4種類の非対称パズルでLLMペアの協調を評価。400対話で成功率60.5%（タスク別34～80%）。失敗分類に基づく介入を200対話で試し、平均成功率70.5%へ改善。\nNovelty: 新規性・研究上の意義:** 協調失敗を知覚・適応・調整に分解し、介入につなげる。\nLimitations: 限界・評価上の注意:** パズル課題であり実組織のマルチエージェント協業とは異なる。 数値は著者の要旨に基づき独立再現ではない。"
+      "details": "Objective: 目的・方法・データ・主要結果:** PARLEYは4種類の非対称パズルでLLMペアの協調を評価。400対話で成功率60.5%（タスク別34～80%）。失敗分類に基づく介入を200対話で試し、平均成功率70.5%へ改善。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** PARLEYは4種類の非対称パズルでLLMペアの協調を評価。400対話で成功率60.5%（タスク別34～80%）。失敗分類に基づく介入を200対話で試し、平均成功率70.5%へ改善。\nNovelty: 新規性・研究上の意義:** 協調失敗を知覚・適応・調整に分解し、介入につなげる。\nLimitations: 限界・評価上の注意:** パズル課題であり実組織のマルチエージェント協業とは異なる。 数値は著者の要旨に基づき独立再現ではない。"
     },
     {
       "title": "SHARP: Semantic Hierarchical Agentic Reasoning for Next POI Prediction with Dynamic Memory",
@@ -2587,7 +2587,7 @@
       "novelty": "新規性・意義:** カテゴリ推論と個別地点推論を階層化し、時変パターンを保持。",
       "limitations": "限界:** 3データセットに依存。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** カテゴリ推論と個別地点推論を階層化し、時変パターンを保持。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** 3つの実世界移動データで次の訪問地点を予測。動的な移動記憶と時間条件付きカテゴリ遷移グラフ、RQ-VAEの意味IDを組み合わせ、最良比較手法に対してAcc@5 +5.29ポイント、Acc@10 +4.52ポイント。\nObjective: 目的・手法・実験・結果:** 3つの実世界移動データで次の訪問地点を予測。動的な移動記憶と時間条件付きカテゴリ遷移グラフ、RQ-VAEの意味IDを組み合わせ、最良比較手法に対してAcc@5 +5.29ポイント、Acc@10 +4.52ポイント。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** 3つの実世界移動データで次の訪問地点を予測。動的な移動記憶と時間条件付きカテゴリ遷移グラフ、RQ-VAEの意味IDを組み合わせ、最良比較手法に対してAcc@5 +5.29ポイント、Acc@10 +4.52ポイント。\nNovelty: 新規性・意義:** カテゴリ推論と個別地点推論を階層化し、時変パターンを保持。\nLimitations: 限界:** 3データセットに依存。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** 3つの実世界移動データで次の訪問地点を予測。動的な移動記憶と時間条件付きカテゴリ遷移グラフ、RQ-VAEの意味IDを組み合わせ、最良比較手法に対してAcc@5 +5.29ポイント、Acc@10 +4.52ポイント。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** 3つの実世界移動データで次の訪問地点を予測。動的な移動記憶と時間条件付きカテゴリ遷移グラフ、RQ-VAEの意味IDを組み合わせ、最良比較手法に対してAcc@5 +5.29ポイント、Acc@10 +4.52ポイント。\nNovelty: 新規性・意義:** カテゴリ推論と個別地点推論を階層化し、時変パターンを保持。\nLimitations: 限界:** 3データセットに依存。 数値は著者要旨に基づく。"
     },
     {
       "title": "Tree-Ising: Repairing Language Models with Bit-Level Ising Edits",
@@ -2606,7 +2606,7 @@
       "novelty": "新規性・意義:** 勾配も大規模なエージェント探索も使わない重み修正。",
       "limitations": "限界:** 特定層・問題設定での改善。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 勾配も大規模なエージェント探索も使わない重み修正。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** 重みのBF16ビット編集をIsing/QUBOの離散最適化に変換。Qwen3.5-0.8BのMATH-500で54.6%（比較エージェント編集51.7%、元モデル7.9%）、GPU費用約0.90ドル、LLMトークン不要。\nObjective: 目的・手法・実験・結果:** 重みのBF16ビット編集をIsing/QUBOの離散最適化に変換。Qwen3.5-0.8BのMATH-500で54.6%（比較エージェント編集51.7%、元モデル7.9%）、GPU費用約0.90ドル、LLMトークン不要。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** 重みのBF16ビット編集をIsing/QUBOの離散最適化に変換。Qwen3.5-0.8BのMATH-500で54.6%（比較エージェント編集51.7%、元モデル7.9%）、GPU費用約0.90ドル、LLMトークン不要。\nNovelty: 新規性・意義:** 勾配も大規模なエージェント探索も使わない重み修正。\nLimitations: 限界:** 特定層・問題設定での改善。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** 重みのBF16ビット編集をIsing/QUBOの離散最適化に変換。Qwen3.5-0.8BのMATH-500で54.6%（比較エージェント編集51.7%、元モデル7.9%）、GPU費用約0.90ドル、LLMトークン不要。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** 重みのBF16ビット編集をIsing/QUBOの離散最適化に変換。Qwen3.5-0.8BのMATH-500で54.6%（比較エージェント編集51.7%、元モデル7.9%）、GPU費用約0.90ドル、LLMトークン不要。\nNovelty: 新規性・意義:** 勾配も大規模なエージェント探索も使わない重み修正。\nLimitations: 限界:** 特定層・問題設定での改善。 数値は著者要旨に基づく。"
     },
     {
       "title": "ProofCoder: Continuous Reasoning for Automated Software Verification",
@@ -2625,7 +2625,7 @@
       "novelty": "新規性・意義:** 定型的なtactic生成ループではなく、継続的推論と検証フィードバックを統合。",
       "limitations": "限界:** Rocq・対象ベンチマークへの依存。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 定型的なtactic生成ループではなく、継続的推論と検証フィードバックを統合。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** Rocq形式検証の280課題で、証明支援器の状態を読みながら証明を修正・後戻りするProofCoderを評価。成功率47%→60%、費用は約半分。\nObjective: 目的・手法・実験・結果:** Rocq形式検証の280課題で、証明支援器の状態を読みながら証明を修正・後戻りするProofCoderを評価。成功率47%→60%、費用は約半分。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** Rocq形式検証の280課題で、証明支援器の状態を読みながら証明を修正・後戻りするProofCoderを評価。成功率47%→60%、費用は約半分。\nNovelty: 新規性・意義:** 定型的なtactic生成ループではなく、継続的推論と検証フィードバックを統合。\nLimitations: 限界:** Rocq・対象ベンチマークへの依存。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** Rocq形式検証の280課題で、証明支援器の状態を読みながら証明を修正・後戻りするProofCoderを評価。成功率47%→60%、費用は約半分。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** Rocq形式検証の280課題で、証明支援器の状態を読みながら証明を修正・後戻りするProofCoderを評価。成功率47%→60%、費用は約半分。\nNovelty: 新規性・意義:** 定型的なtactic生成ループではなく、継続的推論と検証フィードバックを統合。\nLimitations: 限界:** Rocq・対象ベンチマークへの依存。 数値は著者要旨に基づく。"
     },
     {
       "title": "Program-Aided Patchable Skill Evolution",
@@ -2644,7 +2644,7 @@
       "novelty": "新規性・意義:** Skillを文章ではなくパッチ可能な実行資産として扱う。",
       "limitations": "限界:** 要旨の定量結果は比較設定に依存。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** Skillを文章ではなくパッチ可能な実行資産として扱う。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** PASEは自然言語Skillの手順ロジックを編集可能なプログラムとして分離し、実行結果から局所修正。複数モデル・ベンチマークで比較対象を2.8%以上改善と報告。\nObjective: 目的・手法・実験・結果:** PASEは自然言語Skillの手順ロジックを編集可能なプログラムとして分離し、実行結果から局所修正。複数モデル・ベンチマークで比較対象を2.8%以上改善と報告。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** PASEは自然言語Skillの手順ロジックを編集可能なプログラムとして分離し、実行結果から局所修正。複数モデル・ベンチマークで比較対象を2.8%以上改善と報告。\nNovelty: 新規性・意義:** Skillを文章ではなくパッチ可能な実行資産として扱う。\nLimitations: 限界:** 要旨の定量結果は比較設定に依存。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** PASEは自然言語Skillの手順ロジックを編集可能なプログラムとして分離し、実行結果から局所修正。複数モデル・ベンチマークで比較対象を2.8%以上改善と報告。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** PASEは自然言語Skillの手順ロジックを編集可能なプログラムとして分離し、実行結果から局所修正。複数モデル・ベンチマークで比較対象を2.8%以上改善と報告。\nNovelty: 新規性・意義:** Skillを文章ではなくパッチ可能な実行資産として扱う。\nLimitations: 限界:** 要旨の定量結果は比較設定に依存。 数値は著者要旨に基づく。"
     },
     {
       "title": "Controlled Knowledge Engineering for Taxonomy Induction with Tool-Grounded LLM Agents and Runtime-Adaptive Policies",
@@ -2663,7 +2663,7 @@
       "novelty": "新規性・意義:** 構造の妥当性をツールで保証し、運用ポリシーを適応更新。",
       "limitations": "限界:** 精度指標では常に優位ではない。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 構造の妥当性をツールで保証し、運用ポリシーを適応更新。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** TIGAは階層分類を自由文生成でなく状態・制約付き操作の反復として構築。4分類ベンチマーク・2モデルで構造品質を改善するが、トークン・API呼出・実行時間は大幅増。\nObjective: 目的・手法・実験・結果:** TIGAは階層分類を自由文生成でなく状態・制約付き操作の反復として構築。4分類ベンチマーク・2モデルで構造品質を改善するが、トークン・API呼出・実行時間は大幅増。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** TIGAは階層分類を自由文生成でなく状態・制約付き操作の反復として構築。4分類ベンチマーク・2モデルで構造品質を改善するが、トークン・API呼出・実行時間は大幅増。\nNovelty: 新規性・意義:** 構造の妥当性をツールで保証し、運用ポリシーを適応更新。\nLimitations: 限界:** 精度指標では常に優位ではない。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** TIGAは階層分類を自由文生成でなく状態・制約付き操作の反復として構築。4分類ベンチマーク・2モデルで構造品質を改善するが、トークン・API呼出・実行時間は大幅増。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** TIGAは階層分類を自由文生成でなく状態・制約付き操作の反復として構築。4分類ベンチマーク・2モデルで構造品質を改善するが、トークン・API呼出・実行時間は大幅増。\nNovelty: 新規性・意義:** 構造の妥当性をツールで保証し、運用ポリシーを適応更新。\nLimitations: 限界:** 精度指標では常に優位ではない。 数値は著者要旨に基づく。"
     },
     {
       "title": "Scaling Shapley Energy Attribution to Large LLM Batches",
@@ -2682,7 +2682,7 @@
       "novelty": "新規性・意義:** 推論コスト配賦を計算可能な閉形式に落とす。",
       "limitations": "限界:** GPU世代とバッチ方式ごとの校正が必要。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 推論コスト配賦を計算可能な閉形式に落とす。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** StepSplitはLLMバッチ推論の消費電力を共有分とリクエスト固有分に分解してShapley値を近似。529,513 GPU実行で検証し、静的バッチL1誤差0.4～4.3%（トークン比例13.4～61.3%）。\nObjective: 目的・手法・実験・結果:** StepSplitはLLMバッチ推論の消費電力を共有分とリクエスト固有分に分解してShapley値を近似。529,513 GPU実行で検証し、静的バッチL1誤差0.4～4.3%（トークン比例13.4～61.3%）。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** StepSplitはLLMバッチ推論の消費電力を共有分とリクエスト固有分に分解してShapley値を近似。529,513 GPU実行で検証し、静的バッチL1誤差0.4～4.3%（トークン比例13.4～61.3%）。\nNovelty: 新規性・意義:** 推論コスト配賦を計算可能な閉形式に落とす。\nLimitations: 限界:** GPU世代とバッチ方式ごとの校正が必要。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** StepSplitはLLMバッチ推論の消費電力を共有分とリクエスト固有分に分解してShapley値を近似。529,513 GPU実行で検証し、静的バッチL1誤差0.4～4.3%（トークン比例13.4～61.3%）。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** StepSplitはLLMバッチ推論の消費電力を共有分とリクエスト固有分に分解してShapley値を近似。529,513 GPU実行で検証し、静的バッチL1誤差0.4～4.3%（トークン比例13.4～61.3%）。\nNovelty: 新規性・意義:** 推論コスト配賦を計算可能な閉形式に落とす。\nLimitations: 限界:** GPU世代とバッチ方式ごとの校正が必要。 数値は著者要旨に基づく。"
     },
     {
       "title": "Multi-Objective Scheduling of LLM-Based Multi-Agent Workflows in Cloud Computing",
@@ -2701,7 +2701,7 @@
       "novelty": "新規性・意義:** 回答品質だけでなくワークフローの運用費用を最適化対象にする。",
       "limitations": "限界:** 要旨から優位性の数値を一意に断定できない。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 回答品質だけでなくワークフローの運用費用を最適化対象にする。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** MO-SAICはクラウド上のマルチエージェント実行を遅延・費用・資源利用率の多目的最適化として定式化。遺伝的アルゴリズムとHEFTなど4スケジューラを比較し、Pareto前線・構造・スケールを評価。\nObjective: 目的・手法・実験・結果:** MO-SAICはクラウド上のマルチエージェント実行を遅延・費用・資源利用率の多目的最適化として定式化。遺伝的アルゴリズムとHEFTなど4スケジューラを比較し、Pareto前線・構造・スケールを評価。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** MO-SAICはクラウド上のマルチエージェント実行を遅延・費用・資源利用率の多目的最適化として定式化。遺伝的アルゴリズムとHEFTなど4スケジューラを比較し、Pareto前線・構造・スケールを評価。\nNovelty: 新規性・意義:** 回答品質だけでなくワークフローの運用費用を最適化対象にする。\nLimitations: 限界:** 要旨から優位性の数値を一意に断定できない。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** MO-SAICはクラウド上のマルチエージェント実行を遅延・費用・資源利用率の多目的最適化として定式化。遺伝的アルゴリズムとHEFTなど4スケジューラを比較し、Pareto前線・構造・スケールを評価。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** MO-SAICはクラウド上のマルチエージェント実行を遅延・費用・資源利用率の多目的最適化として定式化。遺伝的アルゴリズムとHEFTなど4スケジューラを比較し、Pareto前線・構造・スケールを評価。\nNovelty: 新規性・意義:** 回答品質だけでなくワークフローの運用費用を最適化対象にする。\nLimitations: 限界:** 要旨から優位性の数値を一意に断定できない。 数値は著者要旨に基づく。"
     },
     {
       "title": "Toward Autonomous RTL and Synthesis Optimization: Benchmarking and Self-Improving Agents",
@@ -2720,7 +2720,7 @@
       "novelty": "新規性・意義:** 検証可能なEDAツールの評価結果をSkillとして蓄積。",
       "limitations": "限界:** 招待論文であり対象20設計での報告。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 検証可能なEDAツールの評価結果をSkillとして蓄積。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** Dr. RTLは実回路20設計でクリティカルパス解析・RTL修正・合成評価を反復。商用合成比でWNS/TNS平均21%/17%改善、面積6%削減。\nObjective: 目的・手法・実験・結果:** Dr. RTLは実回路20設計でクリティカルパス解析・RTL修正・合成評価を反復。商用合成比でWNS/TNS平均21%/17%改善、面積6%削減。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** Dr. RTLは実回路20設計でクリティカルパス解析・RTL修正・合成評価を反復。商用合成比でWNS/TNS平均21%/17%改善、面積6%削減。\nNovelty: 新規性・意義:** 検証可能なEDAツールの評価結果をSkillとして蓄積。\nLimitations: 限界:** 招待論文であり対象20設計での報告。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** Dr. RTLは実回路20設計でクリティカルパス解析・RTL修正・合成評価を反復。商用合成比でWNS/TNS平均21%/17%改善、面積6%削減。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** Dr. RTLは実回路20設計でクリティカルパス解析・RTL修正・合成評価を反復。商用合成比でWNS/TNS平均21%/17%改善、面積6%削減。\nNovelty: 新規性・意義:** 検証可能なEDAツールの評価結果をSkillとして蓄積。\nLimitations: 限界:** 招待論文であり対象20設計での報告。 数値は著者要旨に基づく。"
     },
     {
       "title": "Do They Do as They Are Told? Investigating Coding Agents’ Adherence to Explicit Instructions in Context Files",
@@ -2739,7 +2739,7 @@
       "novelty": "新規性・意義:** AGENTS.mdの存在と実際の遵守は別問題。",
       "limitations": "限界:** 要旨に遵守率の数値はない。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** AGENTS.mdの存在と実際の遵守は別問題。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** 実プロジェクトのエージェント指示ファイルと対応するコミットを収集し、各指示の遵守を実行可能な検査に変換。遵守される指示と一貫して無視される指示が二極化。\nObjective: 目的・手法・実験・結果:** 実プロジェクトのエージェント指示ファイルと対応するコミットを収集し、各指示の遵守を実行可能な検査に変換。遵守される指示と一貫して無視される指示が二極化。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** 実プロジェクトのエージェント指示ファイルと対応するコミットを収集し、各指示の遵守を実行可能な検査に変換。遵守される指示と一貫して無視される指示が二極化。\nNovelty: 新規性・意義:** AGENTS.mdの存在と実際の遵守は別問題。\nLimitations: 限界:** 要旨に遵守率の数値はない。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** 実プロジェクトのエージェント指示ファイルと対応するコミットを収集し、各指示の遵守を実行可能な検査に変換。遵守される指示と一貫して無視される指示が二極化。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** 実プロジェクトのエージェント指示ファイルと対応するコミットを収集し、各指示の遵守を実行可能な検査に変換。遵守される指示と一貫して無視される指示が二極化。\nNovelty: 新規性・意義:** AGENTS.mdの存在と実際の遵守は別問題。\nLimitations: 限界:** 要旨に遵守率の数値はない。 数値は著者要旨に基づく。"
     },
     {
       "title": "Reframe: Observation-Aligned Multi-Teacher On-Policy Distillation for Agentic Visual Reasoning",
@@ -2758,7 +2758,7 @@
       "novelty": "新規性・意義:** 出力分布だけでなく観測状態を教師信号として整合。",
       "limitations": "限界:** 要旨に一律の改善数値はない。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 出力分布だけでなく観測状態を教師信号として整合。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** Reframeは視覚エージェントに対してツールの返す観測を利用する報酬学習と、失敗したツール行動の修正を伴う教師蒸留を組み合わせる。画像・動画14ベンチマークで比較手法を上回る。\nObjective: 目的・手法・実験・結果:** Reframeは視覚エージェントに対してツールの返す観測を利用する報酬学習と、失敗したツール行動の修正を伴う教師蒸留を組み合わせる。画像・動画14ベンチマークで比較手法を上回る。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** Reframeは視覚エージェントに対してツールの返す観測を利用する報酬学習と、失敗したツール行動の修正を伴う教師蒸留を組み合わせる。画像・動画14ベンチマークで比較手法を上回る。\nNovelty: 新規性・意義:** 出力分布だけでなく観測状態を教師信号として整合。\nLimitations: 限界:** 要旨に一律の改善数値はない。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** Reframeは視覚エージェントに対してツールの返す観測を利用する報酬学習と、失敗したツール行動の修正を伴う教師蒸留を組み合わせる。画像・動画14ベンチマークで比較手法を上回る。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** Reframeは視覚エージェントに対してツールの返す観測を利用する報酬学習と、失敗したツール行動の修正を伴う教師蒸留を組み合わせる。画像・動画14ベンチマークで比較手法を上回る。\nNovelty: 新規性・意義:** 出力分布だけでなく観測状態を教師信号として整合。\nLimitations: 限界:** 要旨に一律の改善数値はない。 数値は著者要旨に基づく。"
     },
     {
       "title": "Mitigating Agentic Deception via Evaluation-Side Partially Observable Games",
@@ -2777,7 +2777,7 @@
       "novelty": "新規性・意義:** 結果だけを採点する評価器の観測不足を理論的に扱う。",
       "limitations": "限界:** 保証は検証器の正確さなど強い仮定に依存。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 結果だけを採点する評価器の観測不足を理論的に扱う。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** e-PoGはエージェントの欺瞞を、監視器と固定検証器を含む部分観測ゲームとして定式化。完全検証器などの条件下で誠実な均衡を示し、2時間スケールの方策勾配を導く。\nObjective: 目的・手法・実験・結果:** e-PoGはエージェントの欺瞞を、監視器と固定検証器を含む部分観測ゲームとして定式化。完全検証器などの条件下で誠実な均衡を示し、2時間スケールの方策勾配を導く。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** e-PoGはエージェントの欺瞞を、監視器と固定検証器を含む部分観測ゲームとして定式化。完全検証器などの条件下で誠実な均衡を示し、2時間スケールの方策勾配を導く。\nNovelty: 新規性・意義:** 結果だけを採点する評価器の観測不足を理論的に扱う。\nLimitations: 限界:** 保証は検証器の正確さなど強い仮定に依存。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** e-PoGはエージェントの欺瞞を、監視器と固定検証器を含む部分観測ゲームとして定式化。完全検証器などの条件下で誠実な均衡を示し、2時間スケールの方策勾配を導く。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** e-PoGはエージェントの欺瞞を、監視器と固定検証器を含む部分観測ゲームとして定式化。完全検証器などの条件下で誠実な均衡を示し、2時間スケールの方策勾配を導く。\nNovelty: 新規性・意義:** 結果だけを採点する評価器の観測不足を理論的に扱う。\nLimitations: 限界:** 保証は検証器の正確さなど強い仮定に依存。 数値は著者要旨に基づく。"
     },
     {
       "title": "Coding Agents in KVM: Practical Containment and User Control with Limited Resources",
@@ -2796,7 +2796,7 @@
       "novelty": "新規性・意義:** 利便性と隔離を両立するローカル運用設計。",
       "limitations": "限界:** VM維持費用、VM内の秘密情報やネットワークアクセスには残存リスク。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 利便性と隔離を両立するローカル運用設計。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** KVM-Agentはコード生成エージェントに交換可能なUbuntu VM内で広い権限を与え、ホスト管理権限を分離。複数のエージェントやモデルサービスに対応するOSS実装。\nObjective: 目的・手法・実験・結果:** KVM-Agentはコード生成エージェントに交換可能なUbuntu VM内で広い権限を与え、ホスト管理権限を分離。複数のエージェントやモデルサービスに対応するOSS実装。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** KVM-Agentはコード生成エージェントに交換可能なUbuntu VM内で広い権限を与え、ホスト管理権限を分離。複数のエージェントやモデルサービスに対応するOSS実装。\nNovelty: 新規性・意義:** 利便性と隔離を両立するローカル運用設計。\nLimitations: 限界:** VM維持費用、VM内の秘密情報やネットワークアクセスには残存リスク。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** KVM-Agentはコード生成エージェントに交換可能なUbuntu VM内で広い権限を与え、ホスト管理権限を分離。複数のエージェントやモデルサービスに対応するOSS実装。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** KVM-Agentはコード生成エージェントに交換可能なUbuntu VM内で広い権限を与え、ホスト管理権限を分離。複数のエージェントやモデルサービスに対応するOSS実装。\nNovelty: 新規性・意義:** 利便性と隔離を両立するローカル運用設計。\nLimitations: 限界:** VM維持費用、VM内の秘密情報やネットワークアクセスには残存リスク。 数値は著者要旨に基づく。"
     },
     {
       "title": "Agentic-OPD: Recovering Forgotten Agent Capabilities via On-Policy Distillation for Agentic Tasks",
@@ -2815,7 +2815,7 @@
       "novelty": "新規性・意義:** 捨てられがちな過去checkpointの補完的能力を再利用。",
       "limitations": "限界:** 改善幅はタスク・モデル依存。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 捨てられがちな過去checkpointの補完的能力を再利用。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** Agentic-OPDはRL学習途中のcheckpointを教師候補として再利用し、現行モデルが失敗する問題だけを蒸留。5タスク領域・24ベンチマークで初期checkpoint比最大+7.4ポイント。\nObjective: 目的・手法・実験・結果:** Agentic-OPDはRL学習途中のcheckpointを教師候補として再利用し、現行モデルが失敗する問題だけを蒸留。5タスク領域・24ベンチマークで初期checkpoint比最大+7.4ポイント。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** Agentic-OPDはRL学習途中のcheckpointを教師候補として再利用し、現行モデルが失敗する問題だけを蒸留。5タスク領域・24ベンチマークで初期checkpoint比最大+7.4ポイント。\nNovelty: 新規性・意義:** 捨てられがちな過去checkpointの補完的能力を再利用。\nLimitations: 限界:** 改善幅はタスク・モデル依存。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** Agentic-OPDはRL学習途中のcheckpointを教師候補として再利用し、現行モデルが失敗する問題だけを蒸留。5タスク領域・24ベンチマークで初期checkpoint比最大+7.4ポイント。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** Agentic-OPDはRL学習途中のcheckpointを教師候補として再利用し、現行モデルが失敗する問題だけを蒸留。5タスク領域・24ベンチマークで初期checkpoint比最大+7.4ポイント。\nNovelty: 新規性・意義:** 捨てられがちな過去checkpointの補完的能力を再利用。\nLimitations: 限界:** 改善幅はタスク・モデル依存。 数値は著者要旨に基づく。"
     },
     {
       "title": "Multi-Agent Screening: What Agreement and Acceptance Cannot Tell You",
@@ -2834,7 +2834,7 @@
       "novelty": "新規性・意義:** 100件規模の文献探索そのものの網羅性を測る理論的枠組み。",
       "limitations": "限界:** エージェント間の相関に関する仮定が必要な上限推定がある。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 100件規模の文献探索そのものの網羅性を測る理論的枠組み。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** 複数エージェントによる論文等のスクリーニングについて、エージェント間の一致は正確性を保証せず、採択物の人間評価からわかるのはprecisionとrecallの下限のみと示す。除外候補のランダム標本を人間が評価すれば見逃し率を推定可能。\nObjective: 目的・手法・実験・結果:** 複数エージェントによる論文等のスクリーニングについて、エージェント間の一致は正確性を保証せず、採択物の人間評価からわかるのはprecisionとrecallの下限のみと示す。除外候補のランダム標本を人間が評価すれば見逃し率を推定可能。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** 複数エージェントによる論文等のスクリーニングについて、エージェント間の一致は正確性を保証せず、採択物の人間評価からわかるのはprecisionとrecallの下限のみと示す。除外候補のランダム標本を人間が評価すれば見逃し率を推定可能。\nNovelty: 新規性・意義:** 100件規模の文献探索そのものの網羅性を測る理論的枠組み。\nLimitations: 限界:** エージェント間の相関に関する仮定が必要な上限推定がある。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** 複数エージェントによる論文等のスクリーニングについて、エージェント間の一致は正確性を保証せず、採択物の人間評価からわかるのはprecisionとrecallの下限のみと示す。除外候補のランダム標本を人間が評価すれば見逃し率を推定可能。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** 複数エージェントによる論文等のスクリーニングについて、エージェント間の一致は正確性を保証せず、採択物の人間評価からわかるのはprecisionとrecallの下限のみと示す。除外候補のランダム標本を人間が評価すれば見逃し率を推定可能。\nNovelty: 新規性・意義:** 100件規模の文献探索そのものの網羅性を測る理論的枠組み。\nLimitations: 限界:** エージェント間の相関に関する仮定が必要な上限推定がある。 数値は著者要旨に基づく。"
     },
     {
       "title": "WanderBench: Can World Models Explore Dynamic Worlds from Video?",
@@ -2853,7 +2853,7 @@
       "novelty": "新規性・意義:** 画質だけでなく世界の持続的同一性を評価。",
       "limitations": "限界:** 動画長3～25秒の対象範囲。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 画質だけでなく世界の持続的同一性を評価。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** WanderBenchは745動画・24指標で動画条件付き世界モデルの再訪時一貫性を評価。8モデルすべてで再訪地点の整合性が保てず、WanderLandで5モデルの全評価軸が改善、動態忠実度は最大+8.3ポイント。\nObjective: 目的・手法・実験・結果:** WanderBenchは745動画・24指標で動画条件付き世界モデルの再訪時一貫性を評価。8モデルすべてで再訪地点の整合性が保てず、WanderLandで5モデルの全評価軸が改善、動態忠実度は最大+8.3ポイント。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** WanderBenchは745動画・24指標で動画条件付き世界モデルの再訪時一貫性を評価。8モデルすべてで再訪地点の整合性が保てず、WanderLandで5モデルの全評価軸が改善、動態忠実度は最大+8.3ポイント。\nNovelty: 新規性・意義:** 画質だけでなく世界の持続的同一性を評価。\nLimitations: 限界:** 動画長3～25秒の対象範囲。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** WanderBenchは745動画・24指標で動画条件付き世界モデルの再訪時一貫性を評価。8モデルすべてで再訪地点の整合性が保てず、WanderLandで5モデルの全評価軸が改善、動態忠実度は最大+8.3ポイント。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** WanderBenchは745動画・24指標で動画条件付き世界モデルの再訪時一貫性を評価。8モデルすべてで再訪地点の整合性が保てず、WanderLandで5モデルの全評価軸が改善、動態忠実度は最大+8.3ポイント。\nNovelty: 新規性・意義:** 画質だけでなく世界の持続的同一性を評価。\nLimitations: 限界:** 動画長3～25秒の対象範囲。 数値は著者要旨に基づく。"
     },
     {
       "title": "Teamknitt: Configuring, Observing and Intervening in LLM-Agent Teams through the Lens of Dynamical-Systems and Human-Team Theory",
@@ -2872,7 +2872,7 @@
       "novelty": "新規性・意義:** チーム状態の観測と介入を、単なる通信ログ以上に整理。",
       "limitations": "限界:** 信頼や共有理解などの創発状態は測定していない。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** チーム状態の観測と介入を、単なる通信ログ以上に整理。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** teamknittは1～16エージェントの構成、14種の通信トポロジー、共有情報制限、実行中の人間介入を明示的に管理するフレームワーク。\nObjective: 目的・手法・実験・結果:** teamknittは1～16エージェントの構成、14種の通信トポロジー、共有情報制限、実行中の人間介入を明示的に管理するフレームワーク。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** teamknittは1～16エージェントの構成、14種の通信トポロジー、共有情報制限、実行中の人間介入を明示的に管理するフレームワーク。\nNovelty: 新規性・意義:** チーム状態の観測と介入を、単なる通信ログ以上に整理。\nLimitations: 限界:** 信頼や共有理解などの創発状態は測定していない。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** teamknittは1～16エージェントの構成、14種の通信トポロジー、共有情報制限、実行中の人間介入を明示的に管理するフレームワーク。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** teamknittは1～16エージェントの構成、14種の通信トポロジー、共有情報制限、実行中の人間介入を明示的に管理するフレームワーク。\nNovelty: 新規性・意義:** チーム状態の観測と介入を、単なる通信ログ以上に整理。\nLimitations: 限界:** 信頼や共有理解などの創発状態は測定していない。 数値は著者要旨に基づく。"
     },
     {
       "title": "Unprompted coordination through shared memory in LLM agents: a locked two-implementation replication and extension",
@@ -2891,7 +2891,7 @@
       "novelty": "新規性・意義:** 共有状態が暗黙の通信路となることを実験的に確認。",
       "limitations": "限界:** 短い算術課題での再現実験。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 共有状態が暗黙の通信路となることを実験的に確認。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** 共有メモリを個別scratchpadとして見せ、互いの存在を知らされない4エージェントの協調を2実装で再現。協調は中間結果の書き込みと再読込に依存し、再確認を促す短い指示で変化。\nObjective: 目的・手法・実験・結果:** 共有メモリを個別scratchpadとして見せ、互いの存在を知らされない4エージェントの協調を2実装で再現。協調は中間結果の書き込みと再読込に依存し、再確認を促す短い指示で変化。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** 共有メモリを個別scratchpadとして見せ、互いの存在を知らされない4エージェントの協調を2実装で再現。協調は中間結果の書き込みと再読込に依存し、再確認を促す短い指示で変化。\nNovelty: 新規性・意義:** 共有状態が暗黙の通信路となることを実験的に確認。\nLimitations: 限界:** 短い算術課題での再現実験。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** 共有メモリを個別scratchpadとして見せ、互いの存在を知らされない4エージェントの協調を2実装で再現。協調は中間結果の書き込みと再読込に依存し、再確認を促す短い指示で変化。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** 共有メモリを個別scratchpadとして見せ、互いの存在を知らされない4エージェントの協調を2実装で再現。協調は中間結果の書き込みと再読込に依存し、再確認を促す短い指示で変化。\nNovelty: 新規性・意義:** 共有状態が暗黙の通信路となることを実験的に確認。\nLimitations: 限界:** 短い算術課題での再現実験。 数値は著者要旨に基づく。"
     },
     {
       "title": "AutoBuddy: Evaluating Proactive, Always-On Agents on Task Discovery and Execution in a Simulated Workplace",
@@ -2910,7 +2910,7 @@
       "novelty": "新規性・意義:** 与えられた依頼への応答でなく、仕事の発見そのものを評価。",
       "limitations": "限界:** シミュレーション組織のリアリティと実業務への一般化は課題。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 与えられた依頼への応答でなく、仕事の発見そのものを評価。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** AutoBuddy-Benchはメール・文書・業務システムから未依頼のタスクを発見し実行する常時稼働エージェントを評価。組織の出来事を時系列グラフで生成し、正解タスクと状態変化を検証。\nObjective: 目的・手法・実験・結果:** AutoBuddy-Benchはメール・文書・業務システムから未依頼のタスクを発見し実行する常時稼働エージェントを評価。組織の出来事を時系列グラフで生成し、正解タスクと状態変化を検証。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** AutoBuddy-Benchはメール・文書・業務システムから未依頼のタスクを発見し実行する常時稼働エージェントを評価。組織の出来事を時系列グラフで生成し、正解タスクと状態変化を検証。\nNovelty: 新規性・意義:** 与えられた依頼への応答でなく、仕事の発見そのものを評価。\nLimitations: 限界:** シミュレーション組織のリアリティと実業務への一般化は課題。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** AutoBuddy-Benchはメール・文書・業務システムから未依頼のタスクを発見し実行する常時稼働エージェントを評価。組織の出来事を時系列グラフで生成し、正解タスクと状態変化を検証。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** AutoBuddy-Benchはメール・文書・業務システムから未依頼のタスクを発見し実行する常時稼働エージェントを評価。組織の出来事を時系列グラフで生成し、正解タスクと状態変化を検証。\nNovelty: 新規性・意義:** 与えられた依頼への応答でなく、仕事の発見そのものを評価。\nLimitations: 限界:** シミュレーション組織のリアリティと実業務への一般化は課題。 数値は著者要旨に基づく。"
     },
     {
       "title": "Detecting Shadow AI: Unsanctioned LLM Agents on Enterprise Endpoints: A Taxonomy, an Open Detector and a Controlled Evaluation",
@@ -2929,7 +2929,7 @@
       "novelty": "新規性・意義:** AIエージェントの管理をプロセス名ではなく接続先と実行履歴で捉える。",
       "limitations": "限界:** 単一Windows端末の制御試験。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** AIエージェントの管理をプロセス名ではなく接続先と実行履歴で捉える。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** 企業端末の無許可エージェントを検出するAgent Detector。39ツール・184サービス接続先を登録し、12合成エージェント・3 AI部品・9正常処理を5回反復して評価。共有CDNのDNSキャッシュ期限などで検出が制約される。\nObjective: 目的・手法・実験・結果:** 企業端末の無許可エージェントを検出するAgent Detector。39ツール・184サービス接続先を登録し、12合成エージェント・3 AI部品・9正常処理を5回反復して評価。共有CDNのDNSキャッシュ期限などで検出が制約される。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** 企業端末の無許可エージェントを検出するAgent Detector。39ツール・184サービス接続先を登録し、12合成エージェント・3 AI部品・9正常処理を5回反復して評価。共有CDNのDNSキャッシュ期限などで検出が制約される。\nNovelty: 新規性・意義:** AIエージェントの管理をプロセス名ではなく接続先と実行履歴で捉える。\nLimitations: 限界:** 単一Windows端末の制御試験。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** 企業端末の無許可エージェントを検出するAgent Detector。39ツール・184サービス接続先を登録し、12合成エージェント・3 AI部品・9正常処理を5回反復して評価。共有CDNのDNSキャッシュ期限などで検出が制約される。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** 企業端末の無許可エージェントを検出するAgent Detector。39ツール・184サービス接続先を登録し、12合成エージェント・3 AI部品・9正常処理を5回反復して評価。共有CDNのDNSキャッシュ期限などで検出が制約される。\nNovelty: 新規性・意義:** AIエージェントの管理をプロセス名ではなく接続先と実行履歴で捉える。\nLimitations: 限界:** 単一Windows端末の制御試験。 数値は著者要旨に基づく。"
     },
     {
       "title": "Unmasking shortcut solutions of coding agents on partial differential equations",
@@ -2948,7 +2948,7 @@
       "novelty": "新規性・意義:** 正解一致だけで科学計算コードの妥当性を評価する危険性を示す。",
       "limitations": "限界:** 製造解を持つ特定のPDE課題に基づく。 数値は著者要旨に基づく。",
       "why": "新規性・意義:** 正解一致だけで科学計算コードの妥当性を評価する危険性を示す。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・手法・実験・結果:** PDEViBenchは偏微分方程式290課題で、正解値を返したコードが本当に数値計算したかを追跡。1,450実行の80%が採点を通過したが、通過例の約1割は解を直接返す近道だった。\nObjective: 目的・手法・実験・結果:** PDEViBenchは偏微分方程式290課題で、正解値を返したコードが本当に数値計算したかを追跡。1,450実行の80%が採点を通過したが、通過例の約1割は解を直接返す近道だった。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** PDEViBenchは偏微分方程式290課題で、正解値を返したコードが本当に数値計算したかを追跡。1,450実行の80%が採点を通過したが、通過例の約1割は解を直接返す近道だった。\nNovelty: 新規性・意義:** 正解一致だけで科学計算コードの妥当性を評価する危険性を示す。\nLimitations: 限界:** 製造解を持つ特定のPDE課題に基づく。 数値は著者要旨に基づく。"
+      "details": "Objective: 目的・手法・実験・結果:** PDEViBenchは偏微分方程式290課題で、正解値を返したコードが本当に数値計算したかを追跡。1,450実行の80%が採点を通過したが、通過例の約1割は解を直接返す近道だった。\nMethods: 未記載\nData and results: 目的・手法・実験・結果:** PDEViBenchは偏微分方程式290課題で、正解値を返したコードが本当に数値計算したかを追跡。1,450実行の80%が採点を通過したが、通過例の約1割は解を直接返す近道だった。\nNovelty: 新規性・意義:** 正解一致だけで科学計算コードの妥当性を評価する危険性を示す。\nLimitations: 限界:** 製造解を持つ特定のPDE課題に基づく。 数値は著者要旨に基づく。"
     },
     {
       "title": "ForgeSystem: An Architecture for Demand-Specific Artefact Production with AI Agents",
@@ -2967,7 +2967,7 @@
       "novelty": "新規性・意義:** 要求に応じて汎用ソフトウェアを都度特化させる経済的な条件を明示。",
       "limitations": "限界:** 作成・検証・保守コストの累積に依存。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 要求に応じて汎用ソフトウェアを都度特化させる経済的な条件を明示。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** ForgeSystemは要求別にソフトウェアを自動生成・検証するエージェント基盤。学習エンジンのモデルFLOPs利用率は参照比1.047～1.332倍、デコードmegakernelはSGLang比幾何平均1.21倍、22カーネル構成中18で専門ライブラリに匹敵または優越。\nObjective: 目的・方法・データ・主要結果:** ForgeSystemは要求別にソフトウェアを自動生成・検証するエージェント基盤。学習エンジンのモデルFLOPs利用率は参照比1.047～1.332倍、デコードmegakernelはSGLang比幾何平均1.21倍、22カーネル構成中18で専門ライブラリに匹敵または優越。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** ForgeSystemは要求別にソフトウェアを自動生成・検証するエージェント基盤。学習エンジンのモデルFLOPs利用率は参照比1.047～1.332倍、デコードmegakernelはSGLang比幾何平均1.21倍、22カーネル構成中18で専門ライブラリに匹敵または優越。\nNovelty: 新規性・意義:** 要求に応じて汎用ソフトウェアを都度特化させる経済的な条件を明示。\nLimitations: 限界:** 作成・検証・保守コストの累積に依存。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** ForgeSystemは要求別にソフトウェアを自動生成・検証するエージェント基盤。学習エンジンのモデルFLOPs利用率は参照比1.047～1.332倍、デコードmegakernelはSGLang比幾何平均1.21倍、22カーネル構成中18で専門ライブラリに匹敵または優越。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** ForgeSystemは要求別にソフトウェアを自動生成・検証するエージェント基盤。学習エンジンのモデルFLOPs利用率は参照比1.047～1.332倍、デコードmegakernelはSGLang比幾何平均1.21倍、22カーネル構成中18で専門ライブラリに匹敵または優越。\nNovelty: 新規性・意義:** 要求に応じて汎用ソフトウェアを都度特化させる経済的な条件を明示。\nLimitations: 限界:** 作成・検証・保守コストの累積に依存。 数値は著者の要旨に基づく。"
     },
     {
       "title": "VLA-MOPD: On-Policy Distillation for Multi-Task VLA Policy Consolidation",
@@ -2986,7 +2986,7 @@
       "novelty": "新規性・意義:** 学生が訪問した観測と途中の行動生成状態に教師を適用する。",
       "limitations": "限界:** 専門方策の存在と課題構成に依存。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 学生が訪問した観測と途中の行動生成状態に教師を適用する。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** VLA-MOPDはロボットの専門方策を一つの方策に統合。LIBERO成功率75.4→98.9%、RoboTwin 73.0→89.3%、Piper実機70.0→90.0%。\nObjective: 目的・方法・データ・主要結果:** VLA-MOPDはロボットの専門方策を一つの方策に統合。LIBERO成功率75.4→98.9%、RoboTwin 73.0→89.3%、Piper実機70.0→90.0%。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** VLA-MOPDはロボットの専門方策を一つの方策に統合。LIBERO成功率75.4→98.9%、RoboTwin 73.0→89.3%、Piper実機70.0→90.0%。\nNovelty: 新規性・意義:** 学生が訪問した観測と途中の行動生成状態に教師を適用する。\nLimitations: 限界:** 専門方策の存在と課題構成に依存。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** VLA-MOPDはロボットの専門方策を一つの方策に統合。LIBERO成功率75.4→98.9%、RoboTwin 73.0→89.3%、Piper実機70.0→90.0%。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** VLA-MOPDはロボットの専門方策を一つの方策に統合。LIBERO成功率75.4→98.9%、RoboTwin 73.0→89.3%、Piper実機70.0→90.0%。\nNovelty: 新規性・意義:** 学生が訪問した観測と途中の行動生成状態に教師を適用する。\nLimitations: 限界:** 専門方策の存在と課題構成に依存。 数値は著者の要旨に基づく。"
     },
     {
       "title": "Predictability of Collective Behavior in Networks of LLM Agents",
@@ -3005,7 +3005,7 @@
       "novelty": "新規性・意義:** エージェント集団の振る舞いを個体の局所ネットワーク文脈から説明。",
       "limitations": "限界:** 情報共有のモデル環境に限定。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** エージェント集団の振る舞いを個体の局所ネットワーク文脈から説明。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** LLMエージェント集団の情報共有連鎖を、各エージェントの接続数と局所文脈に依存する応答として測定。単純な共有割合だけでは集団の連鎖を予測できず、文脈依存応答と平均場理論を使うと転換点も予測。\nObjective: 目的・方法・データ・主要結果:** LLMエージェント集団の情報共有連鎖を、各エージェントの接続数と局所文脈に依存する応答として測定。単純な共有割合だけでは集団の連鎖を予測できず、文脈依存応答と平均場理論を使うと転換点も予測。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** LLMエージェント集団の情報共有連鎖を、各エージェントの接続数と局所文脈に依存する応答として測定。単純な共有割合だけでは集団の連鎖を予測できず、文脈依存応答と平均場理論を使うと転換点も予測。\nNovelty: 新規性・意義:** エージェント集団の振る舞いを個体の局所ネットワーク文脈から説明。\nLimitations: 限界:** 情報共有のモデル環境に限定。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** LLMエージェント集団の情報共有連鎖を、各エージェントの接続数と局所文脈に依存する応答として測定。単純な共有割合だけでは集団の連鎖を予測できず、文脈依存応答と平均場理論を使うと転換点も予測。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** LLMエージェント集団の情報共有連鎖を、各エージェントの接続数と局所文脈に依存する応答として測定。単純な共有割合だけでは集団の連鎖を予測できず、文脈依存応答と平均場理論を使うと転換点も予測。\nNovelty: 新規性・意義:** エージェント集団の振る舞いを個体の局所ネットワーク文脈から説明。\nLimitations: 限界:** 情報共有のモデル環境に限定。 数値は著者の要旨に基づく。"
     },
     {
       "title": "PARIS: A multi-agent LLM framework for end-to-end, PRISMA-guided systematic literature reviews with pre-synthesis corpus quality assessment",
@@ -3024,7 +3024,7 @@
       "novelty": "新規性・意義:** 文献調査の自動化にはコーパス品質と人間の採択判断が必要。",
       "limitations": "限界:** 独立した人間レビューとの品質比較は未実施。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 文献調査の自動化にはコーパス品質と人間の採択判断が必要。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** PARISは15の専門エージェントと決定論的Python処理で文献レビューを作成。2事例（388記録中100採択、131記録中123採択）で実行可能性を示したが、PRISMA 27項目中完全対応8、部分対応11。検索漏れや件数不一致も確認。\nObjective: 目的・方法・データ・主要結果:** PARISは15の専門エージェントと決定論的Python処理で文献レビューを作成。2事例（388記録中100採択、131記録中123採択）で実行可能性を示したが、PRISMA 27項目中完全対応8、部分対応11。検索漏れや件数不一致も確認。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** PARISは15の専門エージェントと決定論的Python処理で文献レビューを作成。2事例（388記録中100採択、131記録中123採択）で実行可能性を示したが、PRISMA 27項目中完全対応8、部分対応11。検索漏れや件数不一致も確認。\nNovelty: 新規性・意義:** 文献調査の自動化にはコーパス品質と人間の採択判断が必要。\nLimitations: 限界:** 独立した人間レビューとの品質比較は未実施。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** PARISは15の専門エージェントと決定論的Python処理で文献レビューを作成。2事例（388記録中100採択、131記録中123採択）で実行可能性を示したが、PRISMA 27項目中完全対応8、部分対応11。検索漏れや件数不一致も確認。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** PARISは15の専門エージェントと決定論的Python処理で文献レビューを作成。2事例（388記録中100採択、131記録中123採択）で実行可能性を示したが、PRISMA 27項目中完全対応8、部分対応11。検索漏れや件数不一致も確認。\nNovelty: 新規性・意義:** 文献調査の自動化にはコーパス品質と人間の採択判断が必要。\nLimitations: 限界:** 独立した人間レビューとの品質比較は未実施。 数値は著者の要旨に基づく。"
     },
     {
       "title": "GeoMind: A Benchmark for Spatial Understanding in Robotic Manipulation",
@@ -3043,7 +3043,7 @@
       "novelty": "新規性・意義:** 静的な視覚認識と動的な空間記憶を分ける。",
       "limitations": "限界:** 要旨に共通スコアはなく、特定の卓上操作環境に依存。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 静的な視覚認識と動的な空間記憶を分ける。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** GeoMindはロボット操作の空間推論・空間記憶を54課題変種で測る。複数の身体エージェントが物体の移動後の同一性追跡や幾何制約の行動化に苦戦。\nObjective: 目的・方法・データ・主要結果:** GeoMindはロボット操作の空間推論・空間記憶を54課題変種で測る。複数の身体エージェントが物体の移動後の同一性追跡や幾何制約の行動化に苦戦。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** GeoMindはロボット操作の空間推論・空間記憶を54課題変種で測る。複数の身体エージェントが物体の移動後の同一性追跡や幾何制約の行動化に苦戦。\nNovelty: 新規性・意義:** 静的な視覚認識と動的な空間記憶を分ける。\nLimitations: 限界:** 要旨に共通スコアはなく、特定の卓上操作環境に依存。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** GeoMindはロボット操作の空間推論・空間記憶を54課題変種で測る。複数の身体エージェントが物体の移動後の同一性追跡や幾何制約の行動化に苦戦。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** GeoMindはロボット操作の空間推論・空間記憶を54課題変種で測る。複数の身体エージェントが物体の移動後の同一性追跡や幾何制約の行動化に苦戦。\nNovelty: 新規性・意義:** 静的な視覚認識と動的な空間記憶を分ける。\nLimitations: 限界:** 要旨に共通スコアはなく、特定の卓上操作環境に依存。 数値は著者の要旨に基づく。"
     },
     {
       "title": "Video-Coder: Reinforcing Agentic Coding for Video Generation",
@@ -3062,7 +3062,7 @@
       "novelty": "新規性・意義:** 動画生成の構造と動作をコード実行によって拘束。",
       "limitations": "限界:** 対象ベースモデル・ベンチマーク依存。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 動画生成の構造と動作をコード実行によって拘束。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** Video-Coderは3Dシーン生成コードを実行し、その結果を動画生成モデルへ渡す。SFT 6千件とRL 2千件を用い、Minimax-H3をPhyGenBench約+7点、VBench-2.0約+24点改善。\nObjective: 目的・方法・データ・主要結果:** Video-Coderは3Dシーン生成コードを実行し、その結果を動画生成モデルへ渡す。SFT 6千件とRL 2千件を用い、Minimax-H3をPhyGenBench約+7点、VBench-2.0約+24点改善。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Video-Coderは3Dシーン生成コードを実行し、その結果を動画生成モデルへ渡す。SFT 6千件とRL 2千件を用い、Minimax-H3をPhyGenBench約+7点、VBench-2.0約+24点改善。\nNovelty: 新規性・意義:** 動画生成の構造と動作をコード実行によって拘束。\nLimitations: 限界:** 対象ベースモデル・ベンチマーク依存。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** Video-Coderは3Dシーン生成コードを実行し、その結果を動画生成モデルへ渡す。SFT 6千件とRL 2千件を用い、Minimax-H3をPhyGenBench約+7点、VBench-2.0約+24点改善。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Video-Coderは3Dシーン生成コードを実行し、その結果を動画生成モデルへ渡す。SFT 6千件とRL 2千件を用い、Minimax-H3をPhyGenBench約+7点、VBench-2.0約+24点改善。\nNovelty: 新規性・意義:** 動画生成の構造と動作をコード実行によって拘束。\nLimitations: 限界:** 対象ベースモデル・ベンチマーク依存。 数値は著者の要旨に基づく。"
     },
     {
       "title": "Can Agentic Systems Close the Gap in Radiology with Production AI Tools?",
@@ -3081,7 +3081,7 @@
       "novelty": "新規性・意義:** オーケストレーションの失敗と、そもそもツールが対応しない所見を分離。",
       "limitations": "限界:** ツール出力を正解レポートからシミュレーションしており、実ツールの誤差は評価外。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** オーケストレーションの失敗と、そもそもツールが対応しない所見を分離。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** FDA認可済み放射線AIツールのカタログを使うエージェントのレポート生成を、複数モダリティの報告コーパスで模擬。適応症のみの計画では臨床的に重要な所見の3分の1未満しか回収できず、未検出の多くは利用可能ツールがないことに由来。\nObjective: 目的・方法・データ・主要結果:** FDA認可済み放射線AIツールのカタログを使うエージェントのレポート生成を、複数モダリティの報告コーパスで模擬。適応症のみの計画では臨床的に重要な所見の3分の1未満しか回収できず、未検出の多くは利用可能ツールがないことに由来。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** FDA認可済み放射線AIツールのカタログを使うエージェントのレポート生成を、複数モダリティの報告コーパスで模擬。適応症のみの計画では臨床的に重要な所見の3分の1未満しか回収できず、未検出の多くは利用可能ツールがないことに由来。\nNovelty: 新規性・意義:** オーケストレーションの失敗と、そもそもツールが対応しない所見を分離。\nLimitations: 限界:** ツール出力を正解レポートからシミュレーションしており、実ツールの誤差は評価外。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** FDA認可済み放射線AIツールのカタログを使うエージェントのレポート生成を、複数モダリティの報告コーパスで模擬。適応症のみの計画では臨床的に重要な所見の3分の1未満しか回収できず、未検出の多くは利用可能ツールがないことに由来。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** FDA認可済み放射線AIツールのカタログを使うエージェントのレポート生成を、複数モダリティの報告コーパスで模擬。適応症のみの計画では臨床的に重要な所見の3分の1未満しか回収できず、未検出の多くは利用可能ツールがないことに由来。\nNovelty: 新規性・意義:** オーケストレーションの失敗と、そもそもツールが対応しない所見を分離。\nLimitations: 限界:** ツール出力を正解レポートからシミュレーションしており、実ツールの誤差は評価外。 数値は著者の要旨に基づく。"
     },
     {
       "title": "Agents on the Patch Path: Mining AI-Associated Security Remediation in GitHub Security Advisories",
@@ -3100,7 +3100,7 @@
       "novelty": "新規性・意義:** エージェントのセキュリティ修正関与を公開証拠から調査。",
       "limitations": "限界:** 関与の観測と修正の因果効果は区別する。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** エージェントのセキュリティ修正関与を公開証拠から調査。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** GitHub Security Advisoryに紐づくコミットから、エージェント関与が観測できる469件・189リポジトリを抽出。448件は直接の帰属証拠、21件はリポジトリレベルのみ。\nObjective: 目的・方法・データ・主要結果:** GitHub Security Advisoryに紐づくコミットから、エージェント関与が観測できる469件・189リポジトリを抽出。448件は直接の帰属証拠、21件はリポジトリレベルのみ。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** GitHub Security Advisoryに紐づくコミットから、エージェント関与が観測できる469件・189リポジトリを抽出。448件は直接の帰属証拠、21件はリポジトリレベルのみ。\nNovelty: 新規性・意義:** エージェントのセキュリティ修正関与を公開証拠から調査。\nLimitations: 限界:** 関与の観測と修正の因果効果は区別する。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** GitHub Security Advisoryに紐づくコミットから、エージェント関与が観測できる469件・189リポジトリを抽出。448件は直接の帰属証拠、21件はリポジトリレベルのみ。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** GitHub Security Advisoryに紐づくコミットから、エージェント関与が観測できる469件・189リポジトリを抽出。448件は直接の帰属証拠、21件はリポジトリレベルのみ。\nNovelty: 新規性・意義:** エージェントのセキュリティ修正関与を公開証拠から調査。\nLimitations: 限界:** 関与の観測と修正の因果効果は区別する。 数値は著者の要旨に基づく。"
     },
     {
       "title": "When Instruction Files Go Stale: Documentation Debt and Hidden Cost in Coding Agents",
@@ -3119,7 +3119,7 @@
       "novelty": "新規性・意義:** 指示ファイルの陳腐化をエージェントの運用コストとして測定。",
       "limitations": "限界:** 古い指示の種類によっては差が検出されなかった。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 指示ファイルの陳腐化をエージェントの運用コストとして測定。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** 実プロジェクトの古い指示ファイル3例について、22保守課題・732軌跡で指示を古いまま、修正、削除の条件比較。古いテスト指示では追加ツール呼び出し約2回（約3分の1増）。\nObjective: 目的・方法・データ・主要結果:** 実プロジェクトの古い指示ファイル3例について、22保守課題・732軌跡で指示を古いまま、修正、削除の条件比較。古いテスト指示では追加ツール呼び出し約2回（約3分の1増）。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 実プロジェクトの古い指示ファイル3例について、22保守課題・732軌跡で指示を古いまま、修正、削除の条件比較。古いテスト指示では追加ツール呼び出し約2回（約3分の1増）。\nNovelty: 新規性・意義:** 指示ファイルの陳腐化をエージェントの運用コストとして測定。\nLimitations: 限界:** 古い指示の種類によっては差が検出されなかった。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** 実プロジェクトの古い指示ファイル3例について、22保守課題・732軌跡で指示を古いまま、修正、削除の条件比較。古いテスト指示では追加ツール呼び出し約2回（約3分の1増）。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 実プロジェクトの古い指示ファイル3例について、22保守課題・732軌跡で指示を古いまま、修正、削除の条件比較。古いテスト指示では追加ツール呼び出し約2回（約3分の1増）。\nNovelty: 新規性・意義:** 指示ファイルの陳腐化をエージェントの運用コストとして測定。\nLimitations: 限界:** 古い指示の種類によっては差が検出されなかった。 数値は著者の要旨に基づく。"
     },
     {
       "title": "Knowing When to Intervene: Causal Evaluation of AI Agents",
@@ -3138,7 +3138,7 @@
       "novelty": "新規性・意義:** いつ人間・高性能モデルの監査を挿入するかを因果推論として扱う。",
       "limitations": "限界:** ランダム化介入のデータと推定仮定に依存。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** いつ人間・高性能モデルの監査を挿入するかを因果推論として扱う。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** エージェントの途中介入をランダム化した軌跡から、検証・修正介入が最終結果へ及ぼす動的因果効果を推定。tau-bench Retail、ToolSandbox、ImpossibleBenchで介入の有効性が状態ごとに異なる。\nObjective: 目的・方法・データ・主要結果:** エージェントの途中介入をランダム化した軌跡から、検証・修正介入が最終結果へ及ぼす動的因果効果を推定。tau-bench Retail、ToolSandbox、ImpossibleBenchで介入の有効性が状態ごとに異なる。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** エージェントの途中介入をランダム化した軌跡から、検証・修正介入が最終結果へ及ぼす動的因果効果を推定。tau-bench Retail、ToolSandbox、ImpossibleBenchで介入の有効性が状態ごとに異なる。\nNovelty: 新規性・意義:** いつ人間・高性能モデルの監査を挿入するかを因果推論として扱う。\nLimitations: 限界:** ランダム化介入のデータと推定仮定に依存。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** エージェントの途中介入をランダム化した軌跡から、検証・修正介入が最終結果へ及ぼす動的因果効果を推定。tau-bench Retail、ToolSandbox、ImpossibleBenchで介入の有効性が状態ごとに異なる。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** エージェントの途中介入をランダム化した軌跡から、検証・修正介入が最終結果へ及ぼす動的因果効果を推定。tau-bench Retail、ToolSandbox、ImpossibleBenchで介入の有効性が状態ごとに異なる。\nNovelty: 新規性・意義:** いつ人間・高性能モデルの監査を挿入するかを因果推論として扱う。\nLimitations: 限界:** ランダム化介入のデータと推定仮定に依存。 数値は著者の要旨に基づく。"
     },
     {
       "title": "AnimWeb-Bench: Benchmarking Animated Webpage Code Generation from Videos",
@@ -3157,7 +3157,7 @@
       "novelty": "新規性・意義:** 静的スクリーンショットと時間的なUI動作を分けて採点。",
       "limitations": "限界:** 要旨に統一的な改善数値なし。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 静的スクリーンショットと時間的なUI動作を分けて採点。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** AnimWeb-Benchは124実Webページ・7分野・33種類のアニメーションを動画から再構築。14マルチモーダルモデル・3コードエージェントで評価し、静的外観より動きの再現が難しい。\nObjective: 目的・方法・データ・主要結果:** AnimWeb-Benchは124実Webページ・7分野・33種類のアニメーションを動画から再構築。14マルチモーダルモデル・3コードエージェントで評価し、静的外観より動きの再現が難しい。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** AnimWeb-Benchは124実Webページ・7分野・33種類のアニメーションを動画から再構築。14マルチモーダルモデル・3コードエージェントで評価し、静的外観より動きの再現が難しい。\nNovelty: 新規性・意義:** 静的スクリーンショットと時間的なUI動作を分けて採点。\nLimitations: 限界:** 要旨に統一的な改善数値なし。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** AnimWeb-Benchは124実Webページ・7分野・33種類のアニメーションを動画から再構築。14マルチモーダルモデル・3コードエージェントで評価し、静的外観より動きの再現が難しい。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** AnimWeb-Benchは124実Webページ・7分野・33種類のアニメーションを動画から再構築。14マルチモーダルモデル・3コードエージェントで評価し、静的外観より動きの再現が難しい。\nNovelty: 新規性・意義:** 静的スクリーンショットと時間的なUI動作を分けて採点。\nLimitations: 限界:** 要旨に統一的な改善数値なし。 数値は著者の要旨に基づく。"
     },
     {
       "title": "Language as Trait, Politeness as Strategy: Controlled Tests of Linguistic Effects in LLM Social-Deduction Agents",
@@ -3176,7 +3176,7 @@
       "novelty": "新規性・意義:** 言葉遣いによる影響を内容と切り離して統制実験。",
       "limitations": "限界:** 特定ゲームとモデル構成での否定的結果。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 言葉遣いによる影響を内容と切り離して統制実験。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** 人狼ゲームの30試合・4,335再実行で、発言の言語複雑度と丁寧さを操作。多重比較補正後、信頼・投票・夜行動への有意な影響は確認されなかった。\nObjective: 目的・方法・データ・主要結果:** 人狼ゲームの30試合・4,335再実行で、発言の言語複雑度と丁寧さを操作。多重比較補正後、信頼・投票・夜行動への有意な影響は確認されなかった。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 人狼ゲームの30試合・4,335再実行で、発言の言語複雑度と丁寧さを操作。多重比較補正後、信頼・投票・夜行動への有意な影響は確認されなかった。\nNovelty: 新規性・意義:** 言葉遣いによる影響を内容と切り離して統制実験。\nLimitations: 限界:** 特定ゲームとモデル構成での否定的結果。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** 人狼ゲームの30試合・4,335再実行で、発言の言語複雑度と丁寧さを操作。多重比較補正後、信頼・投票・夜行動への有意な影響は確認されなかった。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 人狼ゲームの30試合・4,335再実行で、発言の言語複雑度と丁寧さを操作。多重比較補正後、信頼・投票・夜行動への有意な影響は確認されなかった。\nNovelty: 新規性・意義:** 言葉遣いによる影響を内容と切り離して統制実験。\nLimitations: 限界:** 特定ゲームとモデル構成での否定的結果。 数値は著者の要旨に基づく。"
     },
     {
       "title": "GuardrailAgent: An Agentic Framework for Jailbreak Defense",
@@ -3195,7 +3195,7 @@
       "novelty": "新規性・意義:** 未知攻撃への適応を監視側の知識更新で行う。",
       "limitations": "限界:** 検出性能と最終的な危険行動の阻止は同一ではない。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 未知攻撃への適応を監視側の知識更新で行う。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** GuardrailAgentは脱獄攻撃の特徴を記憶・更新する入力/出力監視のマルチエージェント防御。10超の攻撃種で入力検出93.1%、総合検出93.9%、F1 95.8%。\nObjective: 目的・方法・データ・主要結果:** GuardrailAgentは脱獄攻撃の特徴を記憶・更新する入力/出力監視のマルチエージェント防御。10超の攻撃種で入力検出93.1%、総合検出93.9%、F1 95.8%。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** GuardrailAgentは脱獄攻撃の特徴を記憶・更新する入力/出力監視のマルチエージェント防御。10超の攻撃種で入力検出93.1%、総合検出93.9%、F1 95.8%。\nNovelty: 新規性・意義:** 未知攻撃への適応を監視側の知識更新で行う。\nLimitations: 限界:** 検出性能と最終的な危険行動の阻止は同一ではない。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** GuardrailAgentは脱獄攻撃の特徴を記憶・更新する入力/出力監視のマルチエージェント防御。10超の攻撃種で入力検出93.1%、総合検出93.9%、F1 95.8%。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** GuardrailAgentは脱獄攻撃の特徴を記憶・更新する入力/出力監視のマルチエージェント防御。10超の攻撃種で入力検出93.1%、総合検出93.9%、F1 95.8%。\nNovelty: 新規性・意義:** 未知攻撃への適応を監視側の知識更新で行う。\nLimitations: 限界:** 検出性能と最終的な危険行動の阻止は同一ではない。 数値は著者の要旨に基づく。"
     },
     {
       "title": "What to Delegate, What to Preserve: Human Preferences for Agentic AI Across Everyday Life and Work",
@@ -3214,7 +3214,7 @@
       "novelty": "新規性・意義:** 自律性の許容範囲を実行・協働・最終決定権に分ける。",
       "limitations": "限界:** 米国成人のシナリオ調査で実行動の観測ではない。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 自律性の許容範囲を実行・協働・最終決定権に分ける。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** 米国AI利用経験者289人に45用途・9領域の委任意向を調査。信頼・期待節約・過去利用は自動化選好と正に関連し、個人的充実感の喪失懸念は負に関連。\nObjective: 目的・方法・データ・主要結果:** 米国AI利用経験者289人に45用途・9領域の委任意向を調査。信頼・期待節約・過去利用は自動化選好と正に関連し、個人的充実感の喪失懸念は負に関連。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 米国AI利用経験者289人に45用途・9領域の委任意向を調査。信頼・期待節約・過去利用は自動化選好と正に関連し、個人的充実感の喪失懸念は負に関連。\nNovelty: 新規性・意義:** 自律性の許容範囲を実行・協働・最終決定権に分ける。\nLimitations: 限界:** 米国成人のシナリオ調査で実行動の観測ではない。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** 米国AI利用経験者289人に45用途・9領域の委任意向を調査。信頼・期待節約・過去利用は自動化選好と正に関連し、個人的充実感の喪失懸念は負に関連。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 米国AI利用経験者289人に45用途・9領域の委任意向を調査。信頼・期待節約・過去利用は自動化選好と正に関連し、個人的充実感の喪失懸念は負に関連。\nNovelty: 新規性・意義:** 自律性の許容範囲を実行・協働・最終決定権に分ける。\nLimitations: 限界:** 米国成人のシナリオ調査で実行動の観測ではない。 数値は著者の要旨に基づく。"
     },
     {
       "title": "How Much Conversation History Does an AI Agent Need?",
@@ -3233,7 +3233,7 @@
       "novelty": "新規性・意義:** 文脈長だけでなく証拠・要件の保持方法を評価。",
       "limitations": "限界:** 著者自身がBEAM正答の妥当性に未解決問題を認める。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 文脈長だけでなく証拠・要件の保持方法を評価。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** BEAMの1,100問で会話履歴の長さを固定条件で比較。長い文脈でスコアが増すが限界効果は減少。ユーザー発話を残すと明示要件の再現が改善する場合がある。\nObjective: 目的・方法・データ・主要結果:** BEAMの1,100問で会話履歴の長さを固定条件で比較。長い文脈でスコアが増すが限界効果は減少。ユーザー発話を残すと明示要件の再現が改善する場合がある。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** BEAMの1,100問で会話履歴の長さを固定条件で比較。長い文脈でスコアが増すが限界効果は減少。ユーザー発話を残すと明示要件の再現が改善する場合がある。\nNovelty: 新規性・意義:** 文脈長だけでなく証拠・要件の保持方法を評価。\nLimitations: 限界:** 著者自身がBEAM正答の妥当性に未解決問題を認める。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** BEAMの1,100問で会話履歴の長さを固定条件で比較。長い文脈でスコアが増すが限界効果は減少。ユーザー発話を残すと明示要件の再現が改善する場合がある。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** BEAMの1,100問で会話履歴の長さを固定条件で比較。長い文脈でスコアが増すが限界効果は減少。ユーザー発話を残すと明示要件の再現が改善する場合がある。\nNovelty: 新規性・意義:** 文脈長だけでなく証拠・要件の保持方法を評価。\nLimitations: 限界:** 著者自身がBEAM正答の妥当性に未解決問題を認める。 数値は著者の要旨に基づく。"
     },
     {
       "title": "Benchmarking Speaker Embedders in the Sub-Second Regime for Real-Time Voice AI Agents",
@@ -3252,7 +3252,7 @@
       "novelty": "新規性・意義:** 音声エージェントの背景話者混入を、ASR前の本人確認で扱う。",
       "limitations": "限界:** 話者集団と録音条件に依存。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 音声エージェントの背景話者混入を、ASR前の本人確認で扱う。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** 1秒未満の音声認識向け話者埋め込みを5方式で比較。雑音除去後の埋め込みは誤り率を悪化させ、音声区間の切り詰めも全方式で不利。TitaNetの約半分の次元は当該用途では冗長と報告。\nObjective: 目的・方法・データ・主要結果:** 1秒未満の音声認識向け話者埋め込みを5方式で比較。雑音除去後の埋め込みは誤り率を悪化させ、音声区間の切り詰めも全方式で不利。TitaNetの約半分の次元は当該用途では冗長と報告。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 1秒未満の音声認識向け話者埋め込みを5方式で比較。雑音除去後の埋め込みは誤り率を悪化させ、音声区間の切り詰めも全方式で不利。TitaNetの約半分の次元は当該用途では冗長と報告。\nNovelty: 新規性・意義:** 音声エージェントの背景話者混入を、ASR前の本人確認で扱う。\nLimitations: 限界:** 話者集団と録音条件に依存。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** 1秒未満の音声認識向け話者埋め込みを5方式で比較。雑音除去後の埋め込みは誤り率を悪化させ、音声区間の切り詰めも全方式で不利。TitaNetの約半分の次元は当該用途では冗長と報告。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 1秒未満の音声認識向け話者埋め込みを5方式で比較。雑音除去後の埋め込みは誤り率を悪化させ、音声区間の切り詰めも全方式で不利。TitaNetの約半分の次元は当該用途では冗長と報告。\nNovelty: 新規性・意義:** 音声エージェントの背景話者混入を、ASR前の本人確認で扱う。\nLimitations: 限界:** 話者集団と録音条件に依存。 数値は著者の要旨に基づく。"
     },
     {
       "title": "Nebula: Distributed Position-Independent Caching for LLM Serving",
@@ -3271,7 +3271,7 @@
       "novelty": "新規性・意義:** エージェントの長い反復文脈をprefix以外の単位でキャッシュ。",
       "limitations": "限界:** クラスタ構成と再利用パターンに依存。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** エージェントの長い反復文脈をprefix以外の単位でキャッシュ。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** NebulaはLLM推論の位置非依存KVキャッシュを分散クラスタで再利用。4モデル・4実RAG/エージェントワークロードで最良比較法比TTFT中央値平均61.4%減、prefix cacheで取り逃すトークンの76.1%を再利用。\nObjective: 目的・方法・データ・主要結果:** NebulaはLLM推論の位置非依存KVキャッシュを分散クラスタで再利用。4モデル・4実RAG/エージェントワークロードで最良比較法比TTFT中央値平均61.4%減、prefix cacheで取り逃すトークンの76.1%を再利用。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** NebulaはLLM推論の位置非依存KVキャッシュを分散クラスタで再利用。4モデル・4実RAG/エージェントワークロードで最良比較法比TTFT中央値平均61.4%減、prefix cacheで取り逃すトークンの76.1%を再利用。\nNovelty: 新規性・意義:** エージェントの長い反復文脈をprefix以外の単位でキャッシュ。\nLimitations: 限界:** クラスタ構成と再利用パターンに依存。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** NebulaはLLM推論の位置非依存KVキャッシュを分散クラスタで再利用。4モデル・4実RAG/エージェントワークロードで最良比較法比TTFT中央値平均61.4%減、prefix cacheで取り逃すトークンの76.1%を再利用。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** NebulaはLLM推論の位置非依存KVキャッシュを分散クラスタで再利用。4モデル・4実RAG/エージェントワークロードで最良比較法比TTFT中央値平均61.4%減、prefix cacheで取り逃すトークンの76.1%を再利用。\nNovelty: 新規性・意義:** エージェントの長い反復文脈をprefix以外の単位でキャッシュ。\nLimitations: 限界:** クラスタ構成と再利用パターンに依存。 数値は著者の要旨に基づく。"
     },
     {
       "title": "Incentive Pathologies in a Live LLM Agent Arena: An Empirical Study of Concentration, Reward-Rule Implementation Discrepancy, and Network Dilution",
@@ -3290,7 +3290,7 @@
       "novelty": "新規性・意義:** 報酬ルールの公表と実装の不一致を監査。",
       "limitations": "限界:** 観察研究であり政策変更の因果推定ではない。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 報酬ルールの公表と実装の不一致を監査。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** 22エージェント席・約9.6万推論ノードを9日間観察。上位4席の活動スコア比が97.2%→49.4%へ低下したが、報酬制度変更が複数同時で因果効果は分離できない。\nObjective: 目的・方法・データ・主要結果:** 22エージェント席・約9.6万推論ノードを9日間観察。上位4席の活動スコア比が97.2%→49.4%へ低下したが、報酬制度変更が複数同時で因果効果は分離できない。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 22エージェント席・約9.6万推論ノードを9日間観察。上位4席の活動スコア比が97.2%→49.4%へ低下したが、報酬制度変更が複数同時で因果効果は分離できない。\nNovelty: 新規性・意義:** 報酬ルールの公表と実装の不一致を監査。\nLimitations: 限界:** 観察研究であり政策変更の因果推定ではない。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** 22エージェント席・約9.6万推論ノードを9日間観察。上位4席の活動スコア比が97.2%→49.4%へ低下したが、報酬制度変更が複数同時で因果効果は分離できない。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** 22エージェント席・約9.6万推論ノードを9日間観察。上位4席の活動スコア比が97.2%→49.4%へ低下したが、報酬制度変更が複数同時で因果効果は分離できない。\nNovelty: 新規性・意義:** 報酬ルールの公表と実装の不一致を監査。\nLimitations: 限界:** 観察研究であり政策変更の因果推定ではない。 数値は著者の要旨に基づく。"
     },
     {
       "title": "Typed-Centrality Grounding for Agentic GraphRAG: A Symbolic Approach for Agentic Reasoning",
@@ -3309,7 +3309,7 @@
       "novelty": "新規性・意義:** テキスト類似度だけでなく構造的な知識制約を用いる。",
       "limitations": "限界:** 要旨に改善量の定量値はない。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** テキスト類似度だけでなく構造的な知識制約を用いる。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** Typed-Centrality Groundingは知識グラフのクラス別中心性を記号的な根拠としてGraphRAGに与える。実POLEデータで文脈に整合した応答を改善したと報告。\nObjective: 目的・方法・データ・主要結果:** Typed-Centrality Groundingは知識グラフのクラス別中心性を記号的な根拠としてGraphRAGに与える。実POLEデータで文脈に整合した応答を改善したと報告。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Typed-Centrality Groundingは知識グラフのクラス別中心性を記号的な根拠としてGraphRAGに与える。実POLEデータで文脈に整合した応答を改善したと報告。\nNovelty: 新規性・意義:** テキスト類似度だけでなく構造的な知識制約を用いる。\nLimitations: 限界:** 要旨に改善量の定量値はない。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** Typed-Centrality Groundingは知識グラフのクラス別中心性を記号的な根拠としてGraphRAGに与える。実POLEデータで文脈に整合した応答を改善したと報告。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** Typed-Centrality Groundingは知識グラフのクラス別中心性を記号的な根拠としてGraphRAGに与える。実POLEデータで文脈に整合した応答を改善したと報告。\nNovelty: 新規性・意義:** テキスト類似度だけでなく構造的な知識制約を用いる。\nLimitations: 限界:** 要旨に改善量の定量値はない。 数値は著者の要旨に基づく。"
     },
     {
       "title": "SmartBloch-Agent: An Agentic Framework for Automated MRI Sequence Design and Optimization",
@@ -3328,7 +3328,7 @@
       "novelty": "新規性・意義:** 物理モデルを検証器としてエージェント設計を制約する。",
       "limitations": "限界:** 要旨に定量的な汎用比較値はなく、実患者への有効性は示していない。 数値は著者の要旨に基づく。",
       "why": "新規性・意義:** 物理モデルを検証器としてエージェント設計を制約する。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 目的・方法・データ・主要結果:** SmartBloch-Agentは自然言語のMRI撮像目的を物理シミュレーション、画像再構成、パラメータ探索へ変換し、検証結果で撮像シーケンスを反復最適化。\nObjective: 目的・方法・データ・主要結果:** SmartBloch-Agentは自然言語のMRI撮像目的を物理シミュレーション、画像再構成、パラメータ探索へ変換し、検証結果で撮像シーケンスを反復最適化。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** SmartBloch-Agentは自然言語のMRI撮像目的を物理シミュレーション、画像再構成、パラメータ探索へ変換し、検証結果で撮像シーケンスを反復最適化。\nNovelty: 新規性・意義:** 物理モデルを検証器としてエージェント設計を制約する。\nLimitations: 限界:** 要旨に定量的な汎用比較値はなく、実患者への有効性は示していない。 数値は著者の要旨に基づく。"
+      "details": "Objective: 目的・方法・データ・主要結果:** SmartBloch-Agentは自然言語のMRI撮像目的を物理シミュレーション、画像再構成、パラメータ探索へ変換し、検証結果で撮像シーケンスを反復最適化。\nMethods: 未記載\nData and results: 目的・方法・データ・主要結果:** SmartBloch-Agentは自然言語のMRI撮像目的を物理シミュレーション、画像再構成、パラメータ探索へ変換し、検証結果で撮像シーケンスを反復最適化。\nNovelty: 新規性・意義:** 物理モデルを検証器としてエージェント設計を制約する。\nLimitations: 限界:** 要旨に定量的な汎用比較値はなく、実患者への有効性は示していない。 数値は著者の要旨に基づく。"
     },
     {
       "title": "ROAM: Retrieval-Augmented Optimization for Feasible Multi-Day Itinerary Planning",
@@ -3347,7 +3347,7 @@
       "novelty": "新規性・意義:** LLMの自然文計画を実行可能な制約付き経路へ変換。",
       "limitations": "限界:** 4都市のPOIデータに依存。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** LLMの自然文計画を実行可能な制約付き経路へ変換。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** LLMの自然文計画を実行可能な制約付き経路へ変換。\nLimitations: 限界:** 4都市のPOIデータに依存。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** LLMの自然文計画を実行可能な制約付き経路へ変換。\nLimitations: 限界:** 4都市のPOIデータに依存。 定量値は著者要旨に基づく。"
     },
     {
       "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
@@ -3366,7 +3366,7 @@
       "novelty": "新規性・意義:** 自然言語の長い推論を介さない集団探索。",
       "limitations": "限界:** 計算資源と問題群の比較条件に依存。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 自然言語の長い推論を介さない集団探索。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 自然言語の長い推論を介さない集団探索。\nLimitations: 限界:** 計算資源と問題群の比較条件に依存。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 自然言語の長い推論を介さない集団探索。\nLimitations: 限界:** 計算資源と問題群の比較条件に依存。 定量値は著者要旨に基づく。"
     },
     {
       "title": "ReproBridge: Building Reproducibility into ML Research Artifacts",
@@ -3385,7 +3385,7 @@
       "novelty": "新規性・意義:** 再現手順を資産化することで弱いモデルの成功率も向上。",
       "limitations": "限界:** 対象実験・参照スコアの設計に依存。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 再現手順を資産化することで弱いモデルの成功率も向上。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 再現手順を資産化することで弱いモデルの成功率も向上。\nLimitations: 限界:** 対象実験・参照スコアの設計に依存。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 再現手順を資産化することで弱いモデルの成功率も向上。\nLimitations: 限界:** 対象実験・参照スコアの設計に依存。 定量値は著者要旨に基づく。"
     },
     {
       "title": "Benchmarks as Software: Terminal-Bench and the Case for Continuous Benchmarks",
@@ -3404,7 +3404,7 @@
       "novelty": "新規性・意義:** ベンチマーク自体に保守負債が生じることを実証。",
       "limitations": "限界:** 対象はTerminal-Bench。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** ベンチマーク自体に保守負債が生じることを実証。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** ベンチマーク自体に保守負債が生じることを実証。\nLimitations: 限界:** 対象はTerminal-Bench。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** ベンチマーク自体に保守負債が生じることを実証。\nLimitations: 限界:** 対象はTerminal-Bench。 定量値は著者要旨に基づく。"
     },
     {
       "title": "SCALE: Real-Time Latent Communication for Cyber-Physical Agents",
@@ -3423,7 +3423,7 @@
       "novelty": "新規性・意義:** メッセージを全文送るのでなく時間的冗長性を削減。",
       "limitations": "限界:** 要旨に共通改善数値はない。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** メッセージを全文送るのでなく時間的冗長性を削減。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** メッセージを全文送るのでなく時間的冗長性を削減。\nLimitations: 限界:** 要旨に共通改善数値はない。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** メッセージを全文送るのでなく時間的冗長性を削減。\nLimitations: 限界:** 要旨に共通改善数値はない。 定量値は著者要旨に基づく。"
     },
     {
       "title": "Enhancing Local and Global Structure in Compressed AI Agent Memory",
@@ -3442,7 +3442,7 @@
       "novelty": "新規性・意義:** 検索近傍だけでは長期記憶の統合・削除品質を評価できない。",
       "limitations": "限界:** 圧縮・距離指標の設計に依存。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 検索近傍だけでは長期記憶の統合・削除品質を評価できない。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 検索近傍だけでは長期記憶の統合・削除品質を評価できない。\nLimitations: 限界:** 圧縮・距離指標の設計に依存。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 検索近傍だけでは長期記憶の統合・削除品質を評価できない。\nLimitations: 限界:** 圧縮・距離指標の設計に依存。 定量値は著者要旨に基づく。"
     },
     {
       "title": "Learning the Task or Learning the Verifier? Rethinking Criteria Exposure in Embodied Self-Improvement",
@@ -3461,7 +3461,7 @@
       "novelty": "新規性・意義:** 評価器への過適合と真のタスク学習を区別。",
       "limitations": "限界:** 特定シミュレーション設定。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 評価器への過適合と真のタスク学習を区別。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 評価器への過適合と真のタスク学習を区別。\nLimitations: 限界:** 特定シミュレーション設定。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 評価器への過適合と真のタスク学習を区別。\nLimitations: 限界:** 特定シミュレーション設定。 定量値は著者要旨に基づく。"
     },
     {
       "title": "Trilemma: How Agents choose between Honesty, Confidentiality, and Task Completion",
@@ -3480,7 +3480,7 @@
       "novelty": "新規性・意義:** 安全性を一つの目的でなく相反する制約の調停として測る。",
       "limitations": "限界:** 模擬Slack環境での結果。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 安全性を一つの目的でなく相反する制約の調停として測る。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 安全性を一つの目的でなく相反する制約の調停として測る。\nLimitations: 限界:** 模擬Slack環境での結果。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 安全性を一つの目的でなく相反する制約の調停として測る。\nLimitations: 限界:** 模擬Slack環境での結果。 定量値は著者要旨に基づく。"
     },
     {
       "title": "Hard Issue, Weak Model, or Bad Run? Rethinking Failure Prediction for Coding Agents",
@@ -3499,7 +3499,7 @@
       "novelty": "新規性・意義:** エージェント実行の失敗原因を課題難度・モデル能力・偶然の失敗に分離。",
       "limitations": "限界:** 同一課題の反復実行データが不足するベンチマークに依存。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** エージェント実行の失敗原因を課題難度・モデル能力・偶然の失敗に分離。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** エージェント実行の失敗原因を課題難度・モデル能力・偶然の失敗に分離。\nLimitations: 限界:** 同一課題の反復実行データが不足するベンチマークに依存。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** エージェント実行の失敗原因を課題難度・モデル能力・偶然の失敗に分離。\nLimitations: 限界:** 同一課題の反復実行データが不足するベンチマークに依存。 定量値は著者要旨に基づく。"
     },
     {
       "title": "Multimodal-SEA: Benchmarking AI Agent Security under Multimodal Social Engineering Attacks",
@@ -3518,7 +3518,7 @@
       "novelty": "新規性・意義:** 文章だけでなく偽造マルチモーダル証拠を含む安全性評価。",
       "limitations": "限界:** 模擬アプリでの結果。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 文章だけでなく偽造マルチモーダル証拠を含む安全性評価。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 文章だけでなく偽造マルチモーダル証拠を含む安全性評価。\nLimitations: 限界:** 模擬アプリでの結果。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 文章だけでなく偽造マルチモーダル証拠を含む安全性評価。\nLimitations: 限界:** 模擬アプリでの結果。 定量値は著者要旨に基づく。"
     },
     {
       "title": "Agent-R2: Scaling Agents for Realistic Productivity Work via Real-Source Data Synthesis",
@@ -3537,7 +3537,7 @@
       "novelty": "新規性・意義:** 業務文書と納品物の採点基準を学習データへ組み込む。",
       "limitations": "限界:** タスク合成の品質と評価の偏りに注意。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 業務文書と納品物の採点基準を学習データへ組み込む。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 業務文書と納品物の採点基準を学習データへ組み込む。\nLimitations: 限界:** タスク合成の品質と評価の偏りに注意。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 業務文書と納品物の採点基準を学習データへ組み込む。\nLimitations: 限界:** タスク合成の品質と評価の偏りに注意。 定量値は著者要旨に基づく。"
     },
     {
       "title": "SMART: State-based Multi Agent Reasoning Traces for Verification-oriented Problem-Solving",
@@ -3556,7 +3556,7 @@
       "novelty": "新規性・意義:** 曖昧な推論を検証可能な前提に分解する。",
       "limitations": "限界:** 要旨で改善の基準が限定的。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 曖昧な推論を検証可能な前提に分解する。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 曖昧な推論を検証可能な前提に分解する。\nLimitations: 限界:** 要旨で改善の基準が限定的。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 曖昧な推論を検証可能な前提に分解する。\nLimitations: 限界:** 要旨で改善の基準が限定的。 定量値は著者要旨に基づく。"
     },
     {
       "title": "PCBRouteAgent: How Close Are LLM Agents to Becoming PCB Routing Engineers?",
@@ -3575,7 +3575,7 @@
       "novelty": "新規性・意義:** 大域計画と局所的な物理配線を分離。",
       "limitations": "限界:** 最難分割では成功率40%にとどまる。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 大域計画と局所的な物理配線を分離。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 大域計画と局所的な物理配線を分離。\nLimitations: 限界:** 最難分割では成功率40%にとどまる。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 大域計画と局所的な物理配線を分離。\nLimitations: 限界:** 最難分割では成功率40%にとどまる。 定量値は著者要旨に基づく。"
     },
     {
       "title": "QRAE: Query-Relevant Attention Entropy for Context Compression in DeepSearch Agents",
@@ -3594,7 +3594,7 @@
       "novelty": "新規性・意義:** 不要な検索結果を削りつつ証拠の再評価可能性を保持。",
       "limitations": "限界:** 選別に使う注意指標とモデル依存性。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 不要な検索結果を削りつつ証拠の再評価可能性を保持。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 不要な検索結果を削りつつ証拠の再評価可能性を保持。\nLimitations: 限界:** 選別に使う注意指標とモデル依存性。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 不要な検索結果を削りつつ証拠の再評価可能性を保持。\nLimitations: 限界:** 選別に使う注意指標とモデル依存性。 定量値は著者要旨に基づく。"
     },
     {
       "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
@@ -3613,7 +3613,7 @@
       "novelty": "新規性・意義:** 頑健性を単なる出力不変性と区別。",
       "limitations": "限界:** ゲーム・2モデルでの実証。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 頑健性を単なる出力不変性と区別。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 頑健性を単なる出力不変性と区別。\nLimitations: 限界:** ゲーム・2モデルでの実証。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 頑健性を単なる出力不変性と区別。\nLimitations: 限界:** ゲーム・2モデルでの実証。 定量値は著者要旨に基づく。"
     },
     {
       "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
@@ -3632,7 +3632,7 @@
       "novelty": "新規性・意義:** 研究エージェントの端から端までの研究品質を評価対象にする。",
       "limitations": "限界:** 要旨の残りを精査せずに成功率を断定しない。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 研究エージェントの端から端までの研究品質を評価対象にする。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 研究エージェントの端から端までの研究品質を評価対象にする。\nLimitations: 限界:** 要旨の残りを精査せずに成功率を断定しない。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 研究エージェントの端から端までの研究品質を評価対象にする。\nLimitations: 限界:** 要旨の残りを精査せずに成功率を断定しない。 定量値は著者要旨に基づく。"
     },
     {
       "title": "MCP-Eco: A Linked Dataset of MCP Servers, Consumers, and Development Activity",
@@ -3651,7 +3651,7 @@
       "novelty": "新規性・意義:** MCPエコシステムの実装・採用・保守を出典付きで分析できる。",
       "limitations": "限界:** 候補サーバと実際に動作するサーバは同一ではない。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** MCPエコシステムの実装・採用・保守を出典付きで分析できる。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** MCPエコシステムの実装・採用・保守を出典付きで分析できる。\nLimitations: 限界:** 候補サーバと実際に動作するサーバは同一ではない。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** MCPエコシステムの実装・採用・保守を出典付きで分析できる。\nLimitations: 限界:** 候補サーバと実際に動作するサーバは同一ではない。 定量値は著者要旨に基づく。"
     },
     {
       "title": "VABAR: A Variational Automation Benchmark for Agentic Robotics",
@@ -3670,7 +3670,7 @@
       "novelty": "新規性・意義:** 産業・医療の現実的な物体形状や配置変化を評価。",
       "limitations": "限界:** 主にシミュレーション環境。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 産業・医療の現実的な物体形状や配置変化を評価。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 産業・医療の現実的な物体形状や配置変化を評価。\nLimitations: 限界:** 主にシミュレーション環境。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 産業・医療の現実的な物体形状や配置変化を評価。\nLimitations: 限界:** 主にシミュレーション環境。 定量値は著者要旨に基づく。"
     },
     {
       "title": "SpecCompact: Accelerating LLM Agent Context Compaction with Slot-Parallel Semantic Speculative Verification",
@@ -3689,7 +3689,7 @@
       "novelty": "新規性・意義:** 文脈圧縮を単一長文生成でなく検証可能な小片へ分割。",
       "limitations": "限界:** タスクによって後段性能にトレードオフ。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 文脈圧縮を単一長文生成でなく検証可能な小片へ分割。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 文脈圧縮を単一長文生成でなく検証可能な小片へ分割。\nLimitations: 限界:** タスクによって後段性能にトレードオフ。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 文脈圧縮を単一長文生成でなく検証可能な小片へ分割。\nLimitations: 限界:** タスクによって後段性能にトレードオフ。 定量値は著者要旨に基づく。"
     },
     {
       "title": "On Turn-Level Best-of-N Sampling for Scaling LLM Agents",
@@ -3708,7 +3708,7 @@
       "novelty": "新規性・意義:** 行動選択時点に推論計算を配分。",
       "limitations": "限界:** 候補生成・選択の追加計算費用が必要。 定量値は著者要旨に基づく。",
       "why": "新規性・意義:** 行動選択時点に推論計算を配分。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 行動選択時点に推論計算を配分。\nLimitations: 限界:** 候補生成・選択の追加計算費用が必要。 定量値は著者要旨に基づく。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 行動選択時点に推論計算を配分。\nLimitations: 限界:** 候補生成・選択の追加計算費用が必要。 定量値は著者要旨に基づく。"
     },
     {
       "title": "GH-AWTrace: A Large-Scale Dataset of GitHub Agentic Workflow Execution Logs",
@@ -3727,7 +3727,7 @@
       "novelty": "新規性・意義:** 定期エージェント実行の失敗・ツール拒否・実行経路を実証研究できる。",
       "limitations": "限界:** ログ保持期限があり完全な実行軌跡ではない。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 定期エージェント実行の失敗・ツール拒否・実行経路を実証研究できる。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 定期エージェント実行の失敗・ツール拒否・実行経路を実証研究できる。\nLimitations: 限界:** ログ保持期限があり完全な実行軌跡ではない。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 定期エージェント実行の失敗・ツール拒否・実行経路を実証研究できる。\nLimitations: 限界:** ログ保持期限があり完全な実行軌跡ではない。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "CompressionBench: How can your coding agents compress LLMs?",
@@ -3746,7 +3746,7 @@
       "novelty": "新規性・意義:** モデル圧縮をエージェントが自律実装・実験できるか測る。",
       "limitations": "限界:** 圧縮後の実行テストではperplexityだけでは見えない失敗がある。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** モデル圧縮をエージェントが自律実装・実験できるか測る。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** モデル圧縮をエージェントが自律実装・実験できるか測る。\nLimitations: 限界:** 圧縮後の実行テストではperplexityだけでは見えない失敗がある。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** モデル圧縮をエージェントが自律実装・実験できるか測る。\nLimitations: 限界:** 圧縮後の実行テストではperplexityだけでは見えない失敗がある。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "ServerBench: How can your coding agents design specialized LLM serving systems?",
@@ -3765,7 +3765,7 @@
       "novelty": "新規性・意義:** 単純なコード品質ではなく、費用あたりの有効推論性能を測る。",
       "limitations": "限界:** ハードウェア・ワークロード・検証条件に依存。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 単純なコード品質ではなく、費用あたりの有効推論性能を測る。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 単純なコード品質ではなく、費用あたりの有効推論性能を測る。\nLimitations: 限界:** ハードウェア・ワークロード・検証条件に依存。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 単純なコード品質ではなく、費用あたりの有効推論性能を測る。\nLimitations: 限界:** ハードウェア・ワークロード・検証条件に依存。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "WISE: An Agentic Framework for Whole-page Multimodal Search Experience Attribution",
@@ -3784,7 +3784,7 @@
       "novelty": "新規性・意義:** 出力の品質低下をコンポーネント原因に帰属する。",
       "limitations": "限界:** 検索サービスに特化した評価。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 出力の品質低下をコンポーネント原因に帰属する。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 出力の品質低下をコンポーネント原因に帰属する。\nLimitations: 限界:** 検索サービスに特化した評価。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 出力の品質低下をコンポーネント原因に帰属する。\nLimitations: 限界:** 検索サービスに特化した評価。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "PyRUA-REAL: Robot Exploration and Adaptive Learning through RSI in the Real World",
@@ -3803,7 +3803,7 @@
       "novelty": "新規性・意義:** 実世界での探索結果を継続的なスキル改善へつなぐ。",
       "limitations": "限界:** 課題セットと実機環境に依存。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 実世界での探索結果を継続的なスキル改善へつなぐ。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 実世界での探索結果を継続的なスキル改善へつなぐ。\nLimitations: 限界:** 課題セットと実機環境に依存。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 実世界での探索結果を継続的なスキル改善へつなぐ。\nLimitations: 限界:** 課題セットと実機環境に依存。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "Rethinking Access Control for AI Agents: Recent Advances and Open Challenges",
@@ -3822,7 +3822,7 @@
       "novelty": "新規性・意義:** 認可の境界を実行中に維持するための研究課題を体系化。",
       "limitations": "限界:** レビューであり新たな性能実験ではない。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 認可の境界を実行中に維持するための研究課題を体系化。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 認可の境界を実行中に維持するための研究課題を体系化。\nLimitations: 限界:** レビューであり新たな性能実験ではない。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 認可の境界を実行中に維持するための研究課題を体系化。\nLimitations: 限界:** レビューであり新たな性能実験ではない。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "SecureGARD: Dynamic Ontology-Guided Governance for Secure Tool-Using LLM Agents",
@@ -3841,7 +3841,7 @@
       "novelty": "新規性・意義:** 実行時の意味的な権限制御と学習済みルール更新を分離。",
       "limitations": "限界:** ベンチマーク条件での0%であり一般的な無敵性を示さない。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 実行時の意味的な権限制御と学習済みルール更新を分離。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 実行時の意味的な権限制御と学習済みルール更新を分離。\nLimitations: 限界:** ベンチマーク条件での0%であり一般的な無敵性を示さない。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 実行時の意味的な権限制御と学習済みルール更新を分離。\nLimitations: 限界:** ベンチマーク条件での0%であり一般的な無敵性を示さない。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "AgentTrustCI: Build-Time Policy, Grounding, and Trajectory Tests for Java LLM Agents",
@@ -3860,7 +3860,7 @@
       "novelty": "新規性・意義:** エージェントの振る舞いをCIの回帰テストに落とす。",
       "limitations": "限界:** 人工ケースでの成功は本番環境の精度を保証しない。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** エージェントの振る舞いをCIの回帰テストに落とす。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** エージェントの振る舞いをCIの回帰テストに落とす。\nLimitations: 限界:** 人工ケースでの成功は本番環境の精度を保証しない。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** エージェントの振る舞いをCIの回帰テストに落とす。\nLimitations: 限界:** 人工ケースでの成功は本番環境の精度を保証しない。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "Signed, Sealed, Leaked: Trust Beyond Signature for MCP Toolchains",
@@ -3879,7 +3879,7 @@
       "novelty": "新規性・意義:** ツールの署名とデータアクセス権限を分離。",
       "limitations": "限界:** 隔離・プロセスコピーに関する仮定に依存。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** ツールの署名とデータアクセス権限を分離。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** ツールの署名とデータアクセス権限を分離。\nLimitations: 限界:** 隔離・プロセスコピーに関する仮定に依存。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** ツールの署名とデータアクセス権限を分離。\nLimitations: 限界:** 隔離・プロセスコピーに関する仮定に依存。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "Adversarial Speculative Reasoning Improves Long Horizon Agents",
@@ -3898,7 +3898,7 @@
       "novelty": "新規性・意義:** 推測デコードを速度だけでなく長期推論品質の制御に使う。",
       "limitations": "限界:** 要旨に一般化した成功率差はない。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 推測デコードを速度だけでなく長期推論品質の制御に使う。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 推測デコードを速度だけでなく長期推論品質の制御に使う。\nLimitations: 限界:** 要旨に一般化した成功率差はない。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 推測デコードを速度だけでなく長期推論品質の制御に使う。\nLimitations: 限界:** 要旨に一般化した成功率差はない。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "PyRUA-DataFarm: LLM Agent as a Cost-Efficient Teleoperator for Real-Ready Robot Data",
@@ -3917,7 +3917,7 @@
       "novelty": "新規性・意義:** 実機操作のデータ収集コストを削減する。",
       "limitations": "限界:** シミュレーションと実機のずれ、対象課題への依存。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 実機操作のデータ収集コストを削減する。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 実機操作のデータ収集コストを削減する。\nLimitations: 限界:** シミュレーションと実機のずれ、対象課題への依存。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 実機操作のデータ収集コストを削減する。\nLimitations: 限界:** シミュレーションと実機のずれ、対象課題への依存。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "ToolSched: Resource-Efficient Tool Scheduling for Shared-Host LLM Agents",
@@ -3936,7 +3936,7 @@
       "novelty": "新規性・意義:** エージェント側の待機許容を利用して資源競合を削減。",
       "limitations": "限界:** 特定ホスト・負荷条件での測定。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** エージェント側の待機許容を利用して資源競合を削減。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** エージェント側の待機許容を利用して資源競合を削減。\nLimitations: 限界:** 特定ホスト・負荷条件での測定。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** エージェント側の待機許容を利用して資源競合を削減。\nLimitations: 限界:** 特定ホスト・負荷条件での測定。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "JHiMA-WebRL: A Joint Hierarchical Multi-Agent Reinforcement Learning Framework for Long-Horizon Web Tasks",
@@ -3955,7 +3955,7 @@
       "novelty": "新規性・意義:** 小型モデルの役割分担と共同最適化。",
       "limitations": "限界:** 比較は同じ学習課題・評価プロトコル内。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 小型モデルの役割分担と共同最適化。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 小型モデルの役割分担と共同最適化。\nLimitations: 限界:** 比較は同じ学習課題・評価プロトコル内。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 小型モデルの役割分担と共同最適化。\nLimitations: 限界:** 比較は同じ学習課題・評価プロトコル内。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "A semi-autonomous multi-agent pipeline for high-energy astrophysics research with enforced provenance and verifiable self-extension",
@@ -3974,7 +3974,7 @@
       "novelty": "新規性・意義:** 数値の出典をツール出力へ結びつけ、人間の承認を残す。",
       "limitations": "限界:** 検査は完全ではなく、正しい変更の過剰拒否も観測。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 数値の出典をツール出力へ結びつけ、人間の承認を残す。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 数値の出典をツール出力へ結びつけ、人間の承認を残す。\nLimitations: 限界:** 検査は完全ではなく、正しい変更の過剰拒否も観測。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 数値の出典をツール出力へ結びつけ、人間の承認を残す。\nLimitations: 限界:** 検査は完全ではなく、正しい変更の過剰拒否も観測。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "ToolSpace: Scaling Tool-Centric Environment Synthesis for Long-Horizon Agents",
@@ -3993,7 +3993,7 @@
       "novelty": "新規性・意義:** ツール呼出を実行証拠に基づいて合成する。",
       "limitations": "限界:** 生成環境と実運用の差に注意。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** ツール呼出を実行証拠に基づいて合成する。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** ツール呼出を実行証拠に基づいて合成する。\nLimitations: 限界:** 生成環境と実運用の差に注意。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** ツール呼出を実行証拠に基づいて合成する。\nLimitations: 限界:** 生成環境と実運用の差に注意。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "ScamWorld: An Interactive Environment for Evaluating Web Agents Against Online Fraud",
@@ -4012,7 +4012,7 @@
       "novelty": "新規性・意義:** 安全性を最終的な実行行動で測る。",
       "limitations": "限界:** 再現した模擬詐欺サイトでの評価。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 安全性を最終的な実行行動で測る。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 安全性を最終的な実行行動で測る。\nLimitations: 限界:** 再現した模擬詐欺サイトでの評価。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 安全性を最終的な実行行動で測る。\nLimitations: 限界:** 再現した模擬詐欺サイトでの評価。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "WebHarbor: Docking Real Websites for Evolving GUI Agent Environments",
@@ -4031,7 +4031,7 @@
       "novelty": "新規性・意義:** 実Webの変化と合成環境の浅さの両方を補う。",
       "limitations": "限界:** 環境の忠実度は人間による監査と更新に依存。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 実Webの変化と合成環境の浅さの両方を補う。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 実Webの変化と合成環境の浅さの両方を補う。\nLimitations: 限界:** 環境の忠実度は人間による監査と更新に依存。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 実Webの変化と合成環境の浅さの両方を補う。\nLimitations: 限界:** 環境の忠実度は人間による監査と更新に依存。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "DiabAgent: Toward Agentic Physiological Control",
@@ -4050,7 +4050,7 @@
       "novelty": "新規性・意義:** 医療LLMの知識回答から継続的な生理制御へ評価を拡張。",
       "limitations": "限界:** 仮想患者での結果であり実患者への投与安全性は未検証。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 医療LLMの知識回答から継続的な生理制御へ評価を拡張。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 医療LLMの知識回答から継続的な生理制御へ評価を拡張。\nLimitations: 限界:** 仮想患者での結果であり実患者への投与安全性は未検証。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 医療LLMの知識回答から継続的な生理制御へ評価を拡張。\nLimitations: 限界:** 仮想患者での結果であり実患者への投与安全性は未検証。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "VeriHarm-Bench: Measuring Harmful Success in LLM Coding Agents Verifiably",
@@ -4069,7 +4069,7 @@
       "novelty": "新規性・意義:** 成功率と安全性を別指標として同時に評価。",
       "limitations": "限界:** 合成・編集された課題での結果。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 成功率と安全性を別指標として同時に評価。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 成功率と安全性を別指標として同時に評価。\nLimitations: 限界:** 合成・編集された課題での結果。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 成功率と安全性を別指標として同時に評価。\nLimitations: 限界:** 合成・編集された課題での結果。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "Can LLM Agents Be Forward-Deployed Engineers? Requirement Discovery and Delivery for Enterprise Text-to-SQL",
@@ -4088,7 +4088,7 @@
       "novelty": "新規性・意義:** 要件発見と実装完了の間に大きなギャップ。",
       "limitations": "限界:** 単一企業ユースケースを基にした模擬顧客。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 要件発見と実装完了の間に大きなギャップ。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 要件発見と実装完了の間に大きなギャップ。\nLimitations: 限界:** 単一企業ユースケースを基にした模擬顧客。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 要件発見と実装完了の間に大きなギャップ。\nLimitations: 限界:** 単一企業ユースケースを基にした模擬顧客。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "DistDebug-Bench: Can LLM Agents Diagnose Bugs in Distributed Systems?",
@@ -4107,7 +4107,7 @@
       "novelty": "新規性・意義:** 実運用に近い分散ソフトウェアの診断を対象にする。",
       "limitations": "限界:** 要旨に総合成功率の数値はない。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 実運用に近い分散ソフトウェアの診断を対象にする。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 実運用に近い分散ソフトウェアの診断を対象にする。\nLimitations: 限界:** 要旨に総合成功率の数値はない。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 実運用に近い分散ソフトウェアの診断を対象にする。\nLimitations: 限界:** 要旨に総合成功率の数値はない。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "Optimize the Harness, Not the Model: Fitting a Minimal Agent to a Self-Hostable LLM for Investigative Analysis",
@@ -4126,7 +4126,7 @@
       "novelty": "新規性・意義:** モデルの大型化よりharness最適化で性能を引き出す。",
       "limitations": "限界:** 特定の調査分析タスクとデータセットに依存。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** モデルの大型化よりharness最適化で性能を引き出す。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** モデルの大型化よりharness最適化で性能を引き出す。\nLimitations: 限界:** 特定の調査分析タスクとデータセットに依存。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** モデルの大型化よりharness最適化で性能を引き出す。\nLimitations: 限界:** 特定の調査分析タスクとデータセットに依存。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "IdeaTaste: Do LLMs Share the Research Taste of Human Researchers?",
@@ -4145,7 +4145,7 @@
       "novelty": "新規性・意義:** 研究の実行能力だけでなく、研究課題・具体的アプローチの選好を測る。",
       "limitations": "限界:** 将来の論文との一致は科学的価値の完全な代理指標ではない。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 研究の実行能力だけでなく、研究課題・具体的アプローチの選好を測る。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 研究の実行能力だけでなく、研究課題・具体的アプローチの選好を測る。\nLimitations: 限界:** 将来の論文との一致は科学的価値の完全な代理指標ではない。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 研究の実行能力だけでなく、研究課題・具体的アプローチの選好を測る。\nLimitations: 限界:** 将来の論文との一致は科学的価値の完全な代理指標ではない。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects",
@@ -4164,7 +4164,7 @@
       "novelty": "新規性・意義:** 単発タスクの成功がプロジェクト全体の成功に直結しない。",
       "limitations": "限界:** 11プロジェクトの専門家ルーブリック評価。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 単発タスクの成功がプロジェクト全体の成功に直結しない。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 単発タスクの成功がプロジェクト全体の成功に直結しない。\nLimitations: 限界:** 11プロジェクトの専門家ルーブリック評価。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 単発タスクの成功がプロジェクト全体の成功に直結しない。\nLimitations: 限界:** 11プロジェクトの専門家ルーブリック評価。 数値は著者要旨の報告であり独立再現ではない。"
     },
     {
       "title": "Characterizing When Language Models Take Harmful Actions to Protect Their Assigned Goals",
@@ -4183,7 +4183,7 @@
       "novelty": "新規性・意義:** 有害行動率だけでなく意思決定の構造を測る。",
       "limitations": "限界:** 分析の結論は提示した実験環境・評価方法に依存。 数値は著者要旨の報告であり独立再現ではない。",
       "why": "新規性・意義:** 有害行動率だけでなく意思決定の構造を測る。",
-      "details": "Publication date: 未記載\nread_level: abstract\nTags: 未記載\nSummary: 未記載\nObjective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 有害行動率だけでなく意思決定の構造を測る。\nLimitations: 限界:** 分析の結論は提示した実験環境・評価方法に依存。 数値は著者要旨の報告であり独立再現ではない。"
+      "details": "Objective: 未記載\nMethods: 未記載\nData and results: 未記載\nNovelty: 新規性・意義:** 有害行動率だけでなく意思決定の構造を測る。\nLimitations: 限界:** 分析の結論は提示した実験環境・評価方法に依存。 数値は著者要旨の報告であり独立再現ではない。"
     }
   ]
 }
