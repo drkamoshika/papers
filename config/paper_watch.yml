@@ -89,6 +89,8 @@ output:
   include_paper_ids_block: true
   schema_version: 1
   canonical_format: docs/PAPER_SCHEMA.md
+  publication_date_policy: arxiv_v1_or_pubmed_verified_electronic_never_report_date
+  report_date_header: "> report_date: YYYY-MM-DD"
   paper_ids_block_format: |
     <!-- PAPER_IDS -->
     arxiv:xxxx.xxxxx
@@ -115,6 +117,7 @@ task_instructions: |
   6. Exclude canonical IDs already present in the task's seen-ID state.
   7. Select at most max_papers according to selection.rules.
   8. Generate one complete Japanese Markdown report and save it to GitHub at output.github_report_path with YYYY-MM-DD replaced by the run date in Asia/Tokyo.
+  8a. At the beginning of the report, add a `> report_date: YYYY-MM-DD` header with the report date. For each paper, `Publication date` MUST be the original arXiv v1 submission date or exact PubMed electronic/print publication date verified on that paper record; never copy the report date, PubMed indexing date, or most recent arXiv revision date. Mark as 未記載 when unverified.
   9. Begin with "## ダイジェスト", including "### 今回の概況" and up to output.digest_top_papers notable papers.
   10. Then include "## 完全版レポート" and every selected paper. Each paper MUST start with exactly "### Paper: <title>". Do not add other headings beginning with "### Paper:".
   11. Follow docs/PAPER_SCHEMA.md exactly: one fixed-order bullet per field, including Source, Canonical ID, Publication date, URL, read_level, Tags, Summary, Objective, Methods, Data and results, Novelty, Limitations. Use 未記載 for unknown values, not guessed facts. Never combine fields on one line. Do not put a paper in a table or a differently formatted appendix.
