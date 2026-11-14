@@ -16,13 +16,13 @@
         "evaluation"
       ],
       "summary": "LLMの文体パーソナライズが「対象人物らしさ」を本当に再現できているかを、著者識別モデル、LLM judge、stylometricsの3方向から評価するベンチマーク。出力は人物ごとに差別化されるものの、人間本人の文章との距離は依然大きく、モデル自身の文体指紋が支配的だと報告している。",
-      "objective": null,
-      "methods": null,
-      "results": null,
-      "novelty": "personalizationを好みや正答率ではなく「著者性」で測る点が面白い。LLMの擬似人格やstyle transferの限界を見る上でも有用。",
-      "limitations": null,
-      "why": "personalizationを好みや正答率ではなく「著者性」で測る点が面白い。LLMの擬似人格やstyle transferの限界を見る上でも有用。",
-      "details": "Publication date: 2026-08-20\nread_level: abstract\nTags: ['LLM', 'personalization', 'evaluation']\nSummary: LLMの文体パーソナライズが「対象人物らしさ」を本当に再現できているかを、著者識別モデル、LLM judge、stylometricsの3方向から評価するベンチマーク。出力は人物ごとに差別化されるものの、人間本人の文章との距離は依然大きく、モデル自身の文体指紋が支配的だと報告している。\nObjective: None\nMethods: None\nData and results: None\nNovelty: personalizationを好みや正答率ではなく「著者性」で測る点が面白い。LLMの擬似人格やstyle transferの限界を見る上でも有用。\nLimitations: None"
+      "objective": "推論時のパーソナライズ手法が、対象者らしい文章を生成するだけでなく、実際の本人の著者性にどこまで近づくかを測定する。",
+      "methods": "PersonalBenchを構築し、著者識別モデルLUAR、LLMによる判定、文体統計の3観点から推論時パーソナライズを評価。50人の著者、1,000生成、Qwen 3とGLM-4の2モデル系列を使用。",
+      "results": "生成文同士では対象著者を識別できる（LUAR AUC 0.918）が、本人の実文章とのLUAR類似度は0.484～0.508で、人間の異なる著者間の基準値0.626を下回る。手法間のLUARスコア幅は0.024。LUAR自体の著者識別AUCは単一投稿0.76、複数投稿0.96。",
+      "novelty": "好みの一致やLLM判定だけでなく、著者識別モデルで実際の本人文章との距離を校正し、パーソナライズされた生成文の著者性の限界を定量化する。",
+      "limitations": "確認範囲はarXiv要旨。50著者・2モデル系列以外への一般化、対象言語やデータ構成、統計的検定の詳細は要旨だけでは判断できない。LLM judgeとLUARの不一致について、著者らは特性抽出とプロフィール抽出の循環性を指摘。",
+      "why": "好みの一致やLLM判定だけでなく、著者識別モデルで実際の本人文章との距離を校正し、パーソナライズされた生成文の著者性の限界を定量化する。",
+      "details": "Publication date: 2026-08-20\nread_level: abstract\nTags: ['LLM', 'personalization', 'evaluation']\nSummary: LLMの文体パーソナライズが「対象人物らしさ」を本当に再現できているかを、著者識別モデル、LLM judge、stylometricsの3方向から評価するベンチマーク。出力は人物ごとに差別化されるものの、人間本人の文章との距離は依然大きく、モデル自身の文体指紋が支配的だと報告している。\nObjective: 推論時のパーソナライズ手法が、対象者らしい文章を生成するだけでなく、実際の本人の著者性にどこまで近づくかを測定する。\nMethods: PersonalBenchを構築し、著者識別モデルLUAR、LLMによる判定、文体統計の3観点から推論時パーソナライズを評価。50人の著者、1,000生成、Qwen 3とGLM-4の2モデル系列を使用。\nData and results: 生成文同士では対象著者を識別できる（LUAR AUC 0.918）が、本人の実文章とのLUAR類似度は0.484～0.508で、人間の異なる著者間の基準値0.626を下回る。手法間のLUARスコア幅は0.024。LUAR自体の著者識別AUCは単一投稿0.76、複数投稿0.96。\nNovelty: 好みの一致やLLM判定だけでなく、著者識別モデルで実際の本人文章との距離を校正し、パーソナライズされた生成文の著者性の限界を定量化する。\nLimitations: 確認範囲はarXiv要旨。50著者・2モデル系列以外への一般化、対象言語やデータ構成、統計的検定の詳細は要旨だけでは判断できない。LLM judgeとLUARの不一致について、著者らは特性抽出とプロフィール抽出の循環性を指摘。"
     },
     {
       "title": "Understanding Curriculum Learning in Large Language Models via Cross-Difficulty Optimization Dynamics",
@@ -39,13 +39,13 @@
         "optimization"
       ],
       "summary": "easy-to-hard型curriculum learningがなぜ効く場合と効かない場合があるのかを、難易度間の知識移転 Relative Transfer で説明。これを用いてサンプリング比率を動的に変えるTDCSを提案し、複数のreasoning benchmarkで既存scheduleを上回ると報告。",
-      "objective": null,
-      "methods": null,
-      "results": null,
-      "novelty": "「簡単な問題から順番に学べばよい」という経験則を、難易度間transferという測定可能な量に落としている。",
-      "limitations": null,
-      "why": "「簡単な問題から順番に学べばよい」という経験則を、難易度間transferという測定可能な量に落としている。",
-      "details": "Publication date: 2026-08-18\nread_level: abstract\nTags: ['LLM training', 'curriculum learning', 'optimization']\nSummary: easy-to-hard型curriculum learningがなぜ効く場合と効かない場合があるのかを、難易度間の知識移転 Relative Transfer で説明。これを用いてサンプリング比率を動的に変えるTDCSを提案し、複数のreasoning benchmarkで既存scheduleを上回ると報告。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 「簡単な問題から順番に学べばよい」という経験則を、難易度間transferという測定可能な量に落としている。\nLimitations: None"
+      "objective": "大規模言語モデルの推論課題において、易しい問題から難しい問題へ進むカリキュラム学習の効果が課題ごとに異なる理由を、最適化過程から説明する。",
+      "methods": "異なる難易度間の学習移転をRelative Transferとして定式化し、移転関係の推定に応じて難易度別のサンプリング分布を動的に調整するTransfer-aware Dynamic Curriculum Sampling（TDCS）を提案。複数の推論ベンチマーク、モデル規模、学習方式で比較。",
+      "results": "著者らは、複数の推論ベンチマークでTDCSが代表的なカリキュラムスケジューリング手法を一貫して上回ったと報告。要旨にはベンチマーク別スコア、試行数、効果量の数値は示されていない。",
+      "novelty": "難易度の順序そのものではなく、難易度間の知識移転を測定して最適化ダイナミクスを説明し、その推定値を学習データの動的選択に利用する。",
+      "limitations": "確認範囲はarXiv要旨。各ベンチマークの定量差、推定コスト、移転量の安定性、統計的ばらつきは要旨に記載がなく、本文確認が必要。",
+      "why": "難易度の順序そのものではなく、難易度間の知識移転を測定して最適化ダイナミクスを説明し、その推定値を学習データの動的選択に利用する。",
+      "details": "Publication date: 2026-08-18\nread_level: abstract\nTags: ['LLM training', 'curriculum learning', 'optimization']\nSummary: easy-to-hard型curriculum learningがなぜ効く場合と効かない場合があるのかを、難易度間の知識移転 Relative Transfer で説明。これを用いてサンプリング比率を動的に変えるTDCSを提案し、複数のreasoning benchmarkで既存scheduleを上回ると報告。\nObjective: 大規模言語モデルの推論課題において、易しい問題から難しい問題へ進むカリキュラム学習の効果が課題ごとに異なる理由を、最適化過程から説明する。\nMethods: 異なる難易度間の学習移転をRelative Transferとして定式化し、移転関係の推定に応じて難易度別のサンプリング分布を動的に調整するTransfer-aware Dynamic Curriculum Sampling（TDCS）を提案。複数の推論ベンチマーク、モデル規模、学習方式で比較。\nData and results: 著者らは、複数の推論ベンチマークでTDCSが代表的なカリキュラムスケジューリング手法を一貫して上回ったと報告。要旨にはベンチマーク別スコア、試行数、効果量の数値は示されていない。\nNovelty: 難易度の順序そのものではなく、難易度間の知識移転を測定して最適化ダイナミクスを説明し、その推定値を学習データの動的選択に利用する。\nLimitations: 確認範囲はarXiv要旨。各ベンチマークの定量差、推定コスト、移転量の安定性、統計的ばらつきは要旨に記載がなく、本文確認が必要。"
     },
     {
       "title": "ScienceFlow: A long-horizon agent for ML research, scientific discovery and beyond",
@@ -108,13 +108,13 @@
         "representation"
       ],
       "summary": "frozen LLMの中間表現に介入してreasoningを改善するsteeringと、情報不足時に回答を控えるabstentionを1 forward passで両立するYOPOを提案。steering前のresidual表現を小型networkで再構成し、abstention判定への干渉を抑える。",
-      "objective": null,
-      "methods": null,
-      "results": null,
-      "novelty": "hallucination対策を追加の生成や外部judgeではなく、内部表現のread/writeで統合しようとしている。",
-      "limitations": null,
-      "why": "hallucination対策を追加の生成や外部judgeではなく、内部表現のread/writeで統合しようとしている。",
-      "details": "Publication date: 2026-08-14\nread_level: abstract\nTags: ['LLM reliability', 'abstention', 'representation']\nSummary: frozen LLMの中間表現に介入してreasoningを改善するsteeringと、情報不足時に回答を控えるabstentionを1 forward passで両立するYOPOを提案。steering前のresidual表現を小型networkで再構成し、abstention判定への干渉を抑える。\nObjective: None\nMethods: None\nData and results: None\nNovelty: hallucination対策を追加の生成や外部judgeではなく、内部表現のread/writeで統合しようとしている。\nLimitations: None"
+      "objective": "既存の重みを凍結したLLMで、潜在表現にある推論手掛かりの活用と、回答不能時の回答保留を、追加の推論パスなしで両立する。",
+      "methods": "YOPOは中間層の残差表現に条件付きsteering probeを適用し、書き換え前の残差表現を小規模ネットワークで復元する。steeringあり／なしの表現ペアによる平均二乗誤差で復元器を学習し、固定した回答可能性判定方向を復元表現に適用する。Qwen2.5の1.5B／3B／7Bと他の計10モデルを評価。",
+      "results": "arXiv原著要旨（改訂版）ではαNLIの1.5Bモデルで3クラス正解率が0.375から0.798へ向上し、1回推論のYOPOが2回推論の参照法を各モデル規模で上回る（1.5B: 0.798対0.753、3B: 0.830対0.790、7B: 0.893対0.863）。6モデル系列の計10バックボーンと4領域のQAで評価。",
+      "novelty": "重み更新を伴わないsteeringと回答保留を同じ残差表現上で統合し、steeringに伴う判定信号の汚染をラベル不要の表現復元で取り除き、単一forward passで実現。",
+      "limitations": "著者らはαNLIデータ構築に表層的手掛かりの漏洩を発見したと記述しており、一般化の評価にはSQuAD2・RepLiQA・MuSiQue等の元ラベルを持つデータでの追試が重要。要旨だけでは全実験の条件詳細は確認できない。",
+      "why": "重み更新を伴わないsteeringと回答保留を同じ残差表現上で統合し、steeringに伴う判定信号の汚染をラベル不要の表現復元で取り除き、単一forward passで実現。",
+      "details": "Publication date: 2026-08-14\nread_level: abstract\nTags: ['LLM reliability', 'abstention', 'representation']\nSummary: frozen LLMの中間表現に介入してreasoningを改善するsteeringと、情報不足時に回答を控えるabstentionを1 forward passで両立するYOPOを提案。steering前のresidual表現を小型networkで再構成し、abstention判定への干渉を抑える。\nObjective: 既存の重みを凍結したLLMで、潜在表現にある推論手掛かりの活用と、回答不能時の回答保留を、追加の推論パスなしで両立する。\nMethods: YOPOは中間層の残差表現に条件付きsteering probeを適用し、書き換え前の残差表現を小規模ネットワークで復元する。steeringあり／なしの表現ペアによる平均二乗誤差で復元器を学習し、固定した回答可能性判定方向を復元表現に適用する。Qwen2.5の1.5B／3B／7Bと他の計10モデルを評価。\nData and results: arXiv原著要旨（改訂版）ではαNLIの1.5Bモデルで3クラス正解率が0.375から0.798へ向上し、1回推論のYOPOが2回推論の参照法を各モデル規模で上回る（1.5B: 0.798対0.753、3B: 0.830対0.790、7B: 0.893対0.863）。6モデル系列の計10バックボーンと4領域のQAで評価。\nNovelty: 重み更新を伴わないsteeringと回答保留を同じ残差表現上で統合し、steeringに伴う判定信号の汚染をラベル不要の表現復元で取り除き、単一forward passで実現。\nLimitations: 著者らはαNLIデータ構築に表層的手掛かりの漏洩を発見したと記述しており、一般化の評価にはSQuAD2・RepLiQA・MuSiQue等の元ラベルを持つデータでの追試が重要。要旨だけでは全実験の条件詳細は確認できない。"
     },
     {
       "title": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
@@ -154,13 +154,13 @@
         "multimodal AI"
       ],
       "summary": "EEGを離散tokenへ無理に変換せず、連続latent空間で予測しつつ自然言語semanticsと整合させるBLPMを提案。CELP encoderとMQSD moduleにより、複数EEG taskを共通のsemantic embedding predictionとして扱う。",
-      "objective": null,
-      "methods": null,
-      "results": null,
-      "novelty": "生体信号とlanguage modelをつなぐ際の「連続信号 vs 離散token」のギャップを正面から扱っている。",
-      "limitations": null,
-      "why": "生体信号とlanguage modelをつなぐ際の「連続信号 vs 離散token」のギャップを正面から扱っている。",
-      "details": "Publication date: 2026-08-12\nread_level: abstract\nTags: ['EEG', 'foundation model', 'multimodal AI']\nSummary: EEGを離散tokenへ無理に変換せず、連続latent空間で予測しつつ自然言語semanticsと整合させるBLPMを提案。CELP encoderとMQSD moduleにより、複数EEG taskを共通のsemantic embedding predictionとして扱う。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 生体信号とlanguage modelをつなぐ際の「連続信号 vs 離散token」のギャップを正面から扱っている。\nLimitations: None"
+      "objective": "EEGの連続的な脳活動信号を、離散トークン化による情報損失や単純再構成の偏りなしに、自然言語の意味表現と整合させ、複数のEEG解読タスクへ転移可能にする。",
+      "methods": "Brain Latent Predictive Model（BLPM）を提案。CELPエンコーダで連続EEG表現の潜在ターゲット予測を学習し、Multi-Query Semantic Decomposition（MQSD）でタスク関連情報を抽出して言語側の意味埋め込みと共通潜在空間に整列させる。",
+      "results": "原著要旨では複数のEEGベンチマーク・タスクで一貫した汎化性能を報告。ただし要旨には被験者数、データセット別の指標値、比較モデルとの差分数値は示されておらず、定量的な優位幅は本文確認が必要。",
+      "novelty": "EEG復元や離散トークン予測ではなく、連続潜在表現の予測とテキスト意味空間への分解・整列を共通学習目標にする点。",
+      "limitations": "要旨には被験者間・施設間の詳細な分割条件、データ規模、タスク別の精度と失敗例が提示されていないため、適用範囲の判断には本文の実験表が必要。",
+      "why": "EEG復元や離散トークン予測ではなく、連続潜在表現の予測とテキスト意味空間への分解・整列を共通学習目標にする点。",
+      "details": "Publication date: 2026-08-12\nread_level: abstract\nTags: ['EEG', 'foundation model', 'multimodal AI']\nSummary: EEGを離散tokenへ無理に変換せず、連続latent空間で予測しつつ自然言語semanticsと整合させるBLPMを提案。CELP encoderとMQSD moduleにより、複数EEG taskを共通のsemantic embedding predictionとして扱う。\nObjective: EEGの連続的な脳活動信号を、離散トークン化による情報損失や単純再構成の偏りなしに、自然言語の意味表現と整合させ、複数のEEG解読タスクへ転移可能にする。\nMethods: Brain Latent Predictive Model（BLPM）を提案。CELPエンコーダで連続EEG表現の潜在ターゲット予測を学習し、Multi-Query Semantic Decomposition（MQSD）でタスク関連情報を抽出して言語側の意味埋め込みと共通潜在空間に整列させる。\nData and results: 原著要旨では複数のEEGベンチマーク・タスクで一貫した汎化性能を報告。ただし要旨には被験者数、データセット別の指標値、比較モデルとの差分数値は示されておらず、定量的な優位幅は本文確認が必要。\nNovelty: EEG復元や離散トークン予測ではなく、連続潜在表現の予測とテキスト意味空間への分解・整列を共通学習目標にする点。\nLimitations: 要旨には被験者間・施設間の詳細な分割条件、データ規模、タスク別の精度と失敗例が提示されていないため、適用範囲の判断には本文の実験表が必要。"
     },
     {
       "title": "MetaboLLM: a metabolomics-specialized large language model for biochemical knowledge integration and predictive metabolite graph construction",
@@ -177,13 +177,13 @@
         "domain LLM"
       ],
       "summary": "metabolomics向けにcontinual pretraining、SFT、retrievalで特化したLLMを作り、生成した生化学記述からmetabolite graphを構成して患者予測へ利用。stress hyperglycemia predictionなどで既存構成より高いAUCを報告。",
-      "objective": null,
-      "methods": null,
-      "results": null,
-      "novelty": "domain LLMを単なるQAにせず、医学知識をstructured graphへ変換して予測モデルへ接続している。",
-      "limitations": null,
-      "why": "domain LLMを単なるQAにせず、医学知識をstructured graphへ変換して予測モデルへ接続している。",
-      "details": "Publication date: 2026-08-06\nread_level: abstract\nTags: ['medical AI', 'metabolomics', 'domain LLM']\nSummary: metabolomics向けにcontinual pretraining、SFT、retrievalで特化したLLMを作り、生成した生化学記述からmetabolite graphを構成して患者予測へ利用。stress hyperglycemia predictionなどで既存構成より高いAUCを報告。\nObjective: None\nMethods: None\nData and results: None\nNovelty: domain LLMを単なるQAにせず、医学知識をstructured graphへ変換して予測モデルへ接続している。\nLimitations: None"
+      "objective": "異種の生化学・メタボロミクス知識を予測可能で解釈可能な患者レベルの代謝物グラフへ統合する。",
+      "methods": "MetaboLLMを継続事前学習・教師あり微調整・構造化検索によって専門化。生成した生化学記述から代謝物グラフを構成し、Graph Isomorphism Networkを用いるMetaboLLM-GINで患者予測を行う。4系列の基盤モデルや汎用／医療向けモデルとの比較と外部公開ベンチマークへの転移を検証。",
+      "results": "心臓バイパス手術後のストレス高血糖予測でAUC 0.8616、閉経後ホルモン治療レジメンの分類でAUC 0.8123。従来モデル、代替グラフ構成、非特化／検索なしのLLM生成グラフより高い性能と著者らは報告。外部公開ベンチマークへの転移評価も実施。",
+      "novelty": "メタボロミクス専門LLMを単独のQA用途に留めず、生化学記述をグラフ化して予測モデルへ受け渡す構成。検索・ドメイン適応・GNNを統合。",
+      "limitations": "要旨では臨床課題2種での結果が中心であり、患者数・施設間外部検証・前向き評価などの詳細条件は示されていない。",
+      "why": "メタボロミクス専門LLMを単独のQA用途に留めず、生化学記述をグラフ化して予測モデルへ受け渡す構成。検索・ドメイン適応・GNNを統合。",
+      "details": "Publication date: 2026-08-06\nread_level: abstract\nTags: ['medical AI', 'metabolomics', 'domain LLM']\nSummary: metabolomics向けにcontinual pretraining、SFT、retrievalで特化したLLMを作り、生成した生化学記述からmetabolite graphを構成して患者予測へ利用。stress hyperglycemia predictionなどで既存構成より高いAUCを報告。\nObjective: 異種の生化学・メタボロミクス知識を予測可能で解釈可能な患者レベルの代謝物グラフへ統合する。\nMethods: MetaboLLMを継続事前学習・教師あり微調整・構造化検索によって専門化。生成した生化学記述から代謝物グラフを構成し、Graph Isomorphism Networkを用いるMetaboLLM-GINで患者予測を行う。4系列の基盤モデルや汎用／医療向けモデルとの比較と外部公開ベンチマークへの転移を検証。\nData and results: 心臓バイパス手術後のストレス高血糖予測でAUC 0.8616、閉経後ホルモン治療レジメンの分類でAUC 0.8123。従来モデル、代替グラフ構成、非特化／検索なしのLLM生成グラフより高い性能と著者らは報告。外部公開ベンチマークへの転移評価も実施。\nNovelty: メタボロミクス専門LLMを単独のQA用途に留めず、生化学記述をグラフ化して予測モデルへ受け渡す構成。検索・ドメイン適応・GNNを統合。\nLimitations: 要旨では臨床課題2種での結果が中心であり、患者数・施設間外部検証・前向き評価などの詳細条件は示されていない。"
     },
     {
       "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
@@ -200,13 +200,13 @@
         "heart failure"
       ],
       "summary": "心不全EHRからfeature engineeringを自動化するmulti-agent pipelineを提案。生成featureにprovenanceとrubricを持たせ、HFrEF/HFpEF phenotypingでAUROC改善を報告している。",
-      "objective": null,
-      "methods": null,
-      "results": null,
-      "novelty": "medical agentを「回答生成」ではなく、再現性と根拠追跡が必要な研究データ処理に使っている。",
-      "limitations": null,
-      "why": "medical agentを「回答生成」ではなく、再現性と根拠追跡が必要な研究データ処理に使っている。",
-      "details": "Publication date: 2026-08-06\nread_level: abstract\nTags: ['EHR', 'agentic AI', 'heart failure']\nSummary: 心不全EHRからfeature engineeringを自動化するmulti-agent pipelineを提案。生成featureにprovenanceとrubricを持たせ、HFrEF/HFpEF phenotypingでAUROC改善を報告している。\nObjective: None\nMethods: None\nData and results: None\nNovelty: medical agentを「回答生成」ではなく、再現性と根拠追跡が必要な研究データ処理に使っている。\nLimitations: None"
+      "objective": "複数EHRテーブルに分散した心不全診療情報から、医学的根拠と追跡可能性を保持しつつ特徴量作成を自動化する。",
+      "methods": "Nimblemind Multi-Agent System（nMAS）を開発。9種のEHRテーブルに由来する500件のダミー患者記録を用い、構造化特徴132個とルーブリック評価付き集約特徴70個を生成。構造整合性・評価基準への準拠・データ出典を検証し、制約付きLLMで監査した。",
+      "results": "心不全表現型分類の保留データにおいて、集約特徴追加によりHFrEFのAUROCが0.895→0.963、HFpEFが0.870→0.910に改善。根拠妥当性などの独立したLLMルーブリック評価では最高得点の81.5%。",
+      "novelty": "生成した特徴量ごとにルーブリックと証拠の出所を結び付け、単なる自動特徴量生成ではなく監査・再確認可能なEHR処理パイプラインを実装。",
+      "limitations": "著者らが単一施設コホートでの評価に限定されると明記しており、施設外データでの外部検証が必要。評価入力は500件のダミー患者記録であり、実臨床における有用性は別途確認が必要。",
+      "why": "生成した特徴量ごとにルーブリックと証拠の出所を結び付け、単なる自動特徴量生成ではなく監査・再確認可能なEHR処理パイプラインを実装。",
+      "details": "Publication date: 2026-08-06\nread_level: abstract\nTags: ['EHR', 'agentic AI', 'heart failure']\nSummary: 心不全EHRからfeature engineeringを自動化するmulti-agent pipelineを提案。生成featureにprovenanceとrubricを持たせ、HFrEF/HFpEF phenotypingでAUROC改善を報告している。\nObjective: 複数EHRテーブルに分散した心不全診療情報から、医学的根拠と追跡可能性を保持しつつ特徴量作成を自動化する。\nMethods: Nimblemind Multi-Agent System（nMAS）を開発。9種のEHRテーブルに由来する500件のダミー患者記録を用い、構造化特徴132個とルーブリック評価付き集約特徴70個を生成。構造整合性・評価基準への準拠・データ出典を検証し、制約付きLLMで監査した。\nData and results: 心不全表現型分類の保留データにおいて、集約特徴追加によりHFrEFのAUROCが0.895→0.963、HFpEFが0.870→0.910に改善。根拠妥当性などの独立したLLMルーブリック評価では最高得点の81.5%。\nNovelty: 生成した特徴量ごとにルーブリックと証拠の出所を結び付け、単なる自動特徴量生成ではなく監査・再確認可能なEHR処理パイプラインを実装。\nLimitations: 著者らが単一施設コホートでの評価に限定されると明記しており、施設外データでの外部検証が必要。評価入力は500件のダミー患者記録であり、実臨床における有用性は別途確認が必要。"
     },
     {
       "title": "Improving the Realism of Synthetic Clinical Benchmarks Under Utility Constraints",
@@ -223,13 +223,13 @@
         "benchmark"
       ],
       "summary": "synthetic clinical benchmarkはutility testを通過しても、missingnessやtemplatingなど構造面で非現実的なことがあると指摘。utilityを一定以上保ちながらrealismを改善する問題として再定式化している。",
-      "objective": null,
-      "methods": null,
-      "results": null,
-      "novelty": "医療AI評価では「task scoreが良い synthetic data」だけでは不十分という、実運用上重要な論点。",
-      "limitations": null,
-      "why": "医療AI評価では「task scoreが良い synthetic data」だけでは不十分という、実運用上重要な論点。",
-      "details": "Publication date: 2026-08-06\nread_level: abstract\nTags: ['synthetic data', 'healthcare AI', 'benchmark']\nSummary: synthetic clinical benchmarkはutility testを通過しても、missingnessやtemplatingなど構造面で非現実的なことがあると指摘。utilityを一定以上保ちながらrealismを改善する問題として再定式化している。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 医療AI評価では「task scoreが良い synthetic data」だけでは不十分という、実運用上重要な論点。\nLimitations: None"
+      "objective": "実用上の下流検査に合格しても構造的に不自然な合成臨床データについて、下流効用を維持しながら現実らしさを高める方法を検討する。",
+      "methods": "ユーティリティの下限を制約として置いた合成ベンチマーク修正を定式化。Synthea由来患者をデモEHRワークフローに通したcare-gapベンチマークで、欠損構造、単純さ、構造的妥当性、集団整合性を測り、2種類の決定的修正と単純なデータ密化を比較。",
+      "results": "基準データのペア欠損率は79.44%、実際に対応可能な行は12.75%、対応可能な測定項目がゼロの患者は38.94%、上位3トークン集中度は100%。決定的修正2種は下流効用の下限を維持しながら現実らしさを改善した一方、単純密化ではテンプレート性が残存。",
+      "novelty": "合成臨床ベンチマークの品質について、下流で使えることを十分条件とせず、効用を制約、現実らしさを明示的な改善目標として分離した点。",
+      "limitations": "Syntheaから構築したcare-gapのデモEHRワークフローに基づく検証であり、異なる疾患・病院・運用データへ直ちに一般化できるとは示されていない。原著要旨では修正法の詳細条件や有意差検定は確認できない。",
+      "why": "合成臨床ベンチマークの品質について、下流で使えることを十分条件とせず、効用を制約、現実らしさを明示的な改善目標として分離した点。",
+      "details": "Publication date: 2026-08-06\nread_level: abstract\nTags: ['synthetic data', 'healthcare AI', 'benchmark']\nSummary: synthetic clinical benchmarkはutility testを通過しても、missingnessやtemplatingなど構造面で非現実的なことがあると指摘。utilityを一定以上保ちながらrealismを改善する問題として再定式化している。\nObjective: 実用上の下流検査に合格しても構造的に不自然な合成臨床データについて、下流効用を維持しながら現実らしさを高める方法を検討する。\nMethods: ユーティリティの下限を制約として置いた合成ベンチマーク修正を定式化。Synthea由来患者をデモEHRワークフローに通したcare-gapベンチマークで、欠損構造、単純さ、構造的妥当性、集団整合性を測り、2種類の決定的修正と単純なデータ密化を比較。\nData and results: 基準データのペア欠損率は79.44%、実際に対応可能な行は12.75%、対応可能な測定項目がゼロの患者は38.94%、上位3トークン集中度は100%。決定的修正2種は下流効用の下限を維持しながら現実らしさを改善した一方、単純密化ではテンプレート性が残存。\nNovelty: 合成臨床ベンチマークの品質について、下流で使えることを十分条件とせず、効用を制約、現実らしさを明示的な改善目標として分離した点。\nLimitations: Syntheaから構築したcare-gapのデモEHRワークフローに基づく検証であり、異なる疾患・病院・運用データへ直ちに一般化できるとは示されていない。原著要旨では修正法の詳細条件や有意差検定は確認できない。"
     },
     {
       "title": "Moving artificial intelligence from research to real-world clinical use in neurology",
