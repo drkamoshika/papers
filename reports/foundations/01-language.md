@@ -5,7 +5,7 @@
 
 ## ダイジェスト
 
-選定101件中、以下は原著照合・編集確認を終えた85件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
+選定101件中、以下は原著照合・編集確認を終えた101件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
 
 研究の流れと2026年論文との接続は [文献集の案内](README.md) を参照。
 
@@ -112,6 +112,20 @@
 - Limitations: 本文では小さすぎる生徒が教師を完全には模倣できず、温度の選択で効果が変わることを示す。主な実証はMNIST・音響等であり、教師の誤りや偏りの除去を保証しない。
 
 本文の照合箇所: [1、2、3、4.1節・表1](https://arxiv.org/html/1503.02531v1)。
+
+### Paper: Deep Unsupervised Learning using Nonequilibrium Thermodynamics
+- Source: arXiv
+- Canonical ID: arxiv:1503.03585
+- Publication date: 2015-03-12
+- URL: https://arxiv.org/abs/1503.03585
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 非平衡熱力学に着想を得た拡散過程で深層生成モデルを構築する手法。
+- Objective: 柔軟性と計算可能性を両立できるデータ分布モデリング手法の提案。
+- Methods: データ分布から構造を徐々に破壊する順方向拡散プロセスと、それを元に戻す逆拡散プロセスを学習させる。
+- Data and results: 数千の層または時刻を持つ生成モデルで学習・sampling・確率評価を扱えると報告。学習済みモデルの条件付き確率・事後確率の計算と参照実装も示す。
+- Novelty: 非平衡統計物理学のアイデアに基づき、構造破壊と復元を通じて柔軟性と計算可能性を両立させた点。
+- Limitations: 編者の注意: 後年の拡散モデルの高解像度画像品質をこの研究の実験結果と遡及して混同しない。要旨にはdataset別の尤度、生成品質、実測速度の数値は示されない。
 
 ### Paper: You Only Look Once: Unified, Real-Time Object Detection
 - Source: arXiv
@@ -287,6 +301,20 @@
 
 本文の照合箇所: [2.2、3、4、5、6.1節](https://arxiv.org/pdf/1707.06347)。
 
+### Paper: Mixed Precision Training
+- Source: arXiv
+- Canonical ID: arxiv:1710.03740
+- Publication date: 2017-10-10
+- URL: https://arxiv.org/abs/1710.03740
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 半精度浮動小数点数を用いた深層学習モデルの効率的な訓練手法を提案する。
+- Objective: 大規模化に伴うメモリ・計算資源の増大に対し、どのような技術で対応できるか。
+- Methods: 重み、活性化、勾配をIEEE半精度形式で保持し、単精度コピーと損失スケーリングを組み合わせる。
+- Data and results: CNN、RNN、GAN、大規模dataset上の1億超parameterのモデルで検証し、メモリ使用量をおよそ半分にできると報告する。
+- Novelty: 重みの単精度コピー維持と適切な損失スケーリングにより半精度訓練を実現する点。
+- Limitations: 著者は半精度の狭い数値範囲への対処を必要とし、重みの単精度copyとloss scalingを提案する。速度向上は将来の半精度hardwareへの期待としても述べられ、要旨に一律の実測倍率はない。
+
 ### Paper: Searching for Activation Functions
 - Source: arXiv
 - Canonical ID: arxiv:1710.05941
@@ -370,6 +398,34 @@
 - Data and results: アダプターは全ファインチューニングの性能に近く、タスクあたりわずか3.6%のパラメータ追加で高い性能を示した。
 - Novelty: 各タスクごとにモデル全体を再学習せず、少数の可訓練パラメータのみを追加する点が新しい。
 - Limitations: 編者の注意: 少数パラメータによる分類課題への転移を評価している。後続LoRAと異なる追加モジュールの実行費用や自由生成への転移は別に比較する必要がある。
+
+### Paper: Generating Long Sequences with Sparse Transformers
+- Source: arXiv
+- Canonical ID: arxiv:1904.10509
+- Publication date: 2019-04-23
+- URL: https://arxiv.org/abs/1904.10509
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 疎なアテンション行列の因子分解により、長系列生成を可能にするTransformerモデルを提案した。
+- Objective: Transformerが持つ計算量とメモリ使用量の課題を解決し、超長系列のモデリングを目指すこと。
+- Methods: 注意行列の疎な因子分解に加え、深層化用の構造・初期化、注意行列の再計算によるメモリ削減、高速注意kernelを組み合わせる。
+- Data and results: 数百層・数万時刻の系列を扱い、Enwik8、CIFAR-10、ImageNet-64の密度推定で当時の最高成績を報告。画像・音声・byte単位テキストに同じ構造を適用した。
+- Novelty: アテンション行列の疎な因子分解を用いることで、計算量を大幅に削減し長系列処理を実現した点。
+- Limitations: 編者の注意: 百万以上の系列長は原理上の可能性として述べられる。実験で扱った数万時刻と同一視できない。密度推定の成績は現代の言語理解ベンチマークの成績ではない。
+
+### Paper: HellaSwag: Can a Machine Really Finish Your Sentence?
+- Source: arXiv
+- Canonical ID: arxiv:1905.07830
+- Publication date: 2019-05-19
+- URL: https://arxiv.org/abs/1905.07830
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: HellaSwagは、機械の常識推論能力を試す新しいベンチマークデータセットである。
+- Objective: 最先端モデルが真に人間レベルの常識推論を行えるのかを検証すること。
+- Methods: 生成した誤答候補を識別器で反復選別するAdversarial Filteringを用い、長さ・複雑さを調整して人間には明白でもモデルが誤りやすい続きの選択taskを構築する。
+- Data and results: HellaSwagでは、人間の精度は95%超である一方、最先端モデルの精度は48%未満と低い結果が得られた。
+- Novelty: 生成テキストが人間には馬鹿げているが、最先端モデルに誤分類されやすい領域を狙ったデータセット構築法を提案した。
+- Limitations: 編者の注意: 人間95%超・モデル48%未満は発表当時の結果。現行モデルの成績ではない。生成・選別された選択肢を用いるため、一般的な常識能力全体の尺度とは区別する。
 
 ### Paper: XLNet: Generalized Autoregressive Pretraining for Language Understanding
 - Source: arXiv
@@ -485,6 +541,20 @@
 - Novelty: キーとバリューを共有することで、メモリ帯域幅の要求を大きく削減できる点。
 - Limitations: 著者はdecodeの高速化と同時に、baselineから小さい品質低下があると報告する。編者の注意: KVの共有による効率化と、出力分布を完全に保存する手法は区別する。
 
+### Paper: Reformer: The Efficient Transformer
+- Source: arXiv
+- Canonical ID: arxiv:2001.04451
+- Publication date: 2020-01-13
+- URL: https://arxiv.org/abs/2001.04451
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: Reformerは、計算効率を改善したTransformerモデルであり、長文処理に強い点。
+- Objective: どのようにしてTransformerの計算コストを削減し、長系列での性能維持を目指すか。
+- Methods: ドット積アテンションを局所感受性ハッシュを用いたものに置き換え、残差層として可逆的なものを採用した。
+- Data and results: 要旨は、Transformerに匹敵する性能を保ちながら長系列でメモリ効率と実行速度を改善したと報告する。具体的な評価データ名、速度倍率、誤差幅は要旨には示されない。
+- Novelty: 計算量を$O(L^2)$から$O(L ext{log } L)$へ削減するハッシュベースのアテンション機構を導入した点。
+- Limitations: 編者の注意: O(L log L)はLSHによる注意計算の扱いであり、通常の全対全注意と同じ計算を厳密に再現する主張ではない。モデル全体の速度倍率や短系列での優位性は要旨から判断できない。
+
 ### Paper: Scaling Laws for Neural Language Models
 - Source: arXiv
 - Canonical ID: arxiv:2001.08361
@@ -526,6 +596,22 @@
 - Data and results: 文字レベル言語モデリングでtext8およびenwik8においてSOTAを達成したほか、RoBERTaを上回りWikiHopやTriviaQAでSOTAを記録した。
 - Novelty: ローカルウィンドウアテンションとタスク特化型グローバルアテンションの組み合わせにより、計算量を線形にスケールさせた点。
 - Limitations: 編者の注意: 疎な局所・大域attentionの配置が必要である。長文を入力できることは、文中の全情報を正確に利用できることを保証しない。
+
+### Paper: The Cost of Training NLP Models: A Concise Overview
+- Source: arXiv
+- Canonical ID: arxiv:2004.08900
+- Publication date: 2020-04-19
+- URL: https://arxiv.org/abs/2004.08900
+- read_level: full_text
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 大規模言語モデルの学習コストと、その費用を左右する要因について概説した。
+- Objective: NLP分野における最新の大規模モデルの訓練にかかる経済的側面を理解すること。
+- Methods: AI21内部データに基づくBERT学習費用の概算と公開情報からの大型モデル費用推定を示し、データ量・モデル規模・処理token数・反復実験を整理する。
+- Data and results: 当時のクラウド定価で110M BERTの単一学習を約2,500ドル、調整・反復込みを約50,000ドルと概算。単一runとプロジェクト総費用の隔たりを例示する。
+- Novelty: 学習費用を単一runだけでなく、ハイパーパラメータ探索や複数seedによる隠れた費用まで含めて解説する概説である。
+- Limitations: 著者は概算に大きな誤差があり、割引・計算環境で変わると明記。推論費用は対象外。編者の注意: 2020年時点の費用例であり現在価格の見積りには使えない。
+
+本文の照合箇所: [1 Costs、2 Cost Drivers](https://arxiv.org/html/2004.08900v1)。
 
 ### Paper: Language Models are Few-Shot Learners
 - Source: arXiv
@@ -569,6 +655,34 @@
 - Novelty: 人間が好む出力を最適化する報酬関数を用いることで、従来の指標（ROUGEなど）最適化を超える改善を実現した点。
 - Limitations: 編者の注意: 報酬モデルと評価者の選好が学習目標である。データ間転移の成功は、すべての要約の事実性や未知の読者の価値判断との一致を保証しない。
 
+### Paper: Rethinking Attention with Performers
+- Source: arXiv
+- Canonical ID: arxiv:2009.14794
+- Publication date: 2020-09-30
+- URL: https://arxiv.org/abs/2009.14794
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: Performersは、線形計算量でソフトマックス注意機構を推定するTransformerアーキテクチャである。
+- Objective: 事前知識に頼らず、線形空間・時間計算量で正確なソフトマックス注意機構の推定を目指すこと。
+- Methods: FAVOR+の正の直交ランダム特徴によりsoftmax注意kernelを近似し、系列長に線形の時間・空間で評価する。画素予測、テキスト、蛋白質配列で検証した。
+- Data and results: Performersは、他の効率的なスパースおよび密な注意機構と競合する結果を示し、新たな学習パラダイムの有効性を示した。
+- Novelty: 注意行列の疎性・低rankを仮定せず、ランダム特徴による近似と不偏または近似不偏性・収束・分散の理論解析を組み合わせる。
+- Limitations: 編者の注意: exact attentionのkernel実装高速化とは異なり、注意行列を推定する方法である。理論保証と実際のモデル全体の誤差・速度は区別する。要旨にtask別の定量成績はない。
+
+### Paper: An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale
+- Source: arXiv
+- Canonical ID: arxiv:2010.11929
+- Publication date: 2020-10-22
+- URL: https://arxiv.org/abs/2010.11929
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 画像認識に純粋なTransformerを適用し、高い性能と効率性を実現した手法。
+- Objective: 画像分類でCNNを必須とせず、画像patch列に直接適用したTransformerが大規模事前学習後に有効かを検証する。
+- Methods: 画像をパッチシーケンスとして扱い、これに直接Transformerを適用することで分類タスクを行う。
+- Data and results: 大量データで事前学習し、ImageNet、CIFAR-100、VTAB等へ転移すると、当時の先端CNNに対し良好な性能と少ない学習計算資源を報告する。
+- Novelty: 従来のCNNへの依存から脱却し、純粋なTransformerのみで画像認識が可能であることを示した点。
+- Limitations: 編者の注意: 大規模事前学習と転移学習の条件で得た結果であり、小規模データでの一からの学習でもCNNを常に上回るという主張ではない。要旨に詳細な数値はない。
+
 ### Paper: Prefix-Tuning: Optimizing Continuous Prompts for Generation
 - Source: arXiv
 - Canonical ID: arxiv:2101.00190
@@ -611,6 +725,20 @@
 - Novelty: 凍結モデルに対してソフトプロンプトで条件付けを行うことで、大規模モデルの共有・利用コストの問題を緩和できる点を示した。
 - Limitations: 編者の注意: 全層微調整との差が縮むという結果はT5の規模実験に基づく。小さいモデルや別の事前学習方式でも同じ関係が成り立つとは示さない。
 
+### Paper: A Survey of Transformers
+- Source: arXiv
+- Canonical ID: arxiv:2106.04554
+- Publication date: 2021-06-08
+- URL: https://arxiv.org/abs/2106.04554
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: トランスフォーマーの多様な変種を包括的にレビューするサーベイ論文である。
+- Objective: 提案された様々なTransformerバリアントについて、体系的かつ網羅的な文献レビューを提供すること。
+- Methods: 基本Transformerから出発し、変種を構造変更・事前学習・応用の三つの観点で整理する分類体系を提示する。
+- Data and results: アーキテクチャ変更、事前学習、応用という三つの観点から様々なX-formersが紹介され、今後の研究方向性も概説された。
+- Novelty: 本サーベイでは、これまでに不足していたTransformerバリアントに関する体系的かつ包括的な文献レビューを提供する点に新規性がある。
+- Limitations: 編者の注意: 文献の分類と研究方向の整理を主目的とするsurvey。要旨には検索式・採否基準・網羅率がなく、同一条件での全変種の性能比較実験は確認できない。
+
 ### Paper: LoRA: Low-Rank Adaptation of Large Language Models
 - Source: arXiv
 - Canonical ID: arxiv:2106.09685
@@ -625,6 +753,20 @@
 - Novelty: 追加の推論遅延なしに、少ない学習パラメータで高いモデル品質を達成できる点が新規である。
 - Limitations: 編者の注意: 更新を低ランクに制約する方式であり、必要ランクと対象層は課題に依存する。要旨の資源削減率はGPT-3 175Bの特定比較に関する値。
 
+### Paper: Finetuned Language Models Are Zero-Shot Learners
+- Source: arXiv
+- Canonical ID: arxiv:2109.01652
+- Publication date: 2021-09-03
+- URL: https://arxiv.org/abs/2109.01652
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 指示チューニングにより、大規模言語モデルのゼロショット学習能力が大幅に向上することが示された。
+- Objective: 自然言語による指示を用いて事前学習済み言語モデルのゼロショット学習能力をどのように改善できるかを探求する。
+- Methods: 137Bパラメータの事前学習済みモデルを用い、60以上のNLPタスクを自然言語の指示テンプレートで記述したデータセットでファインチューニングを行った。
+- Data and results: 137BのFLANは、評価25task中20でzero-shot 175B GPT-3を上回る。ANLI、RTE、BoolQ、AI2-ARC、OpenbookQA、StoryClozeではfew-shot GPT-3も上回ると報告。
+- Novelty: タスクの説明を自然言語の指示としてファインチューニングする「インストラクションチューニング」という手法を提案し、その有効性を示した。
+- Limitations: 編者の注意: unseen task typeへの汎化の検証であり、任意の指示への追従や安全性の保証ではない。比較にはモデル規模、事前学習、promptの違いもある。
+
 ### Paper: Towards a Unified View of Parameter-Efficient Transfer Learning
 - Source: arXiv
 - Canonical ID: arxiv:2110.04366
@@ -638,6 +780,20 @@
 - Data and results: 統一的フレームワークにより、既存手法の重要な設計選択肢を特定し、より少ないパラメータで同等の性能を達成する新手法を提案した。
 - Novelty: 各手法を特定の隠れ状態の修正として捉え、その計算関数や適用位置といった設計次元で関連付けた点。
 - Limitations: 編者の注意: 統一はモデル内表現の変更として扱える手法の設計枠組みである。比較した4課題領域以外の性能や全パラメータ効率化法への完全な網羅を保証しない。
+
+### Paper: Multitask Prompted Training Enables Zero-Shot Task Generalization
+- Source: arXiv
+- Canonical ID: arxiv:2110.08207
+- Publication date: 2021-10-15
+- URL: https://arxiv.org/abs/2110.08207
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: マルチタスクプロンプティング訓練がゼロショット汎化を可能にすることを示す。
+- Objective: 言語モデルのゼロショット汎化は明示的なマルチタスク学習によって誘発できるか？
+- Methods: 多様な単語表現を持つ複数のプロンプトで構成された大規模な教師ありデータセットを用いて、事前学習済みエンコーダ・デコーダモデルをファインチューニングした。
+- Data and results: 学習に含めないtaskでzero-shot性能を評価。標準datasetでは最大16倍、BIG-benchの一部では最大6倍の規模のモデルを上回る場合を報告する。
+- Novelty: 自然言語タスクを人間が読めるプロンプト形式にマッピングするシステムを開発し、明示的なマルチタスク学習で汎化能力を検証した点。
+- Limitations: 編者の注意: zero-shotは保持したtaskでの評価を意味し、教師ありデータを一切使わない意味ではない。最大16倍という比較を全task共通の優越と解釈できない。
 
 ### Paper: Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
 - Source: arXiv
@@ -893,6 +1049,20 @@
 - Novelty: 人間によるラベル付けを最小限に抑えつつ、ルールや原則のみを用いてAIの振る舞いを制御できる点にある。
 - Limitations: 編者の注意: 人間の作る原則と評価AIの判断が監督信号になる。人間の個別ラベルを減らすことは、価値判断や監督上の誤りがなくなることを意味しない。
 
+### Paper: The case for 4-bit precision: k-bit Inference Scaling Laws
+- Source: arXiv
+- Canonical ID: arxiv:2212.09720
+- Publication date: 2022-12-19
+- URL: https://arxiv.org/abs/2212.09720
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 同じ総ビット数の予算で、モデル規模と重み量子化精度の組合せを比較した研究。
+- Objective: LLMsにおけるゼロショット性能の推論スケーリング則を開発し、最適なビット精度とモデルサイズを決定すること。
+- Methods: 入力を16-bit、重みを3〜8-bitとして、19M〜176B規模のBLOOM、OPT、NeoX/Pythia、GPT-2に35,000超の実験を行う。
+- Data and results: 調査範囲では総モデルビット数とzero-shot精度の釣合いで4-bitがほぼ最適と報告。小ブロックでの独立量子化と量子化データ型による改善を見いだした。
+- Novelty: 最適な性能を得るためには、ブロック分割や量子化データ型を用いることが重要であると示した点。
+- Limitations: 編者の注意: ほぼ普遍的という表現は本実験のモデル群・zero-shot評価・総重みビット予算に関するもの。KV cache、実機latency、現在の全モデルや全タスクで4-bitが最適という保証ではない。
+
 ### Paper: Self-Instruct: Aligning Language Models with Self-Generated Instructions
 - Source: arXiv
 - Canonical ID: arxiv:2212.10560
@@ -906,6 +1076,20 @@
 - Data and results: GPT-3でSuper-NaturalInstructionsの性能が元モデルより33%絶対改善と報告。専門家作成の新規指示に対する人間評価でも既存公開指示データを上回り、InstructGPT-001との差は5%だった。
 - Novelty: 本手法は、アノテーションがほとんど不要な方法（almost annotation-free method）で事前学習済みLLMの指示へのアライメントを可能にし、既存の公開データセットを超える性能向上を実現した点にある。
 - Limitations: 編者の注意: モデル自身が作るデータに依存する。評価された指示分布を超える汎化や、合成データ中の誤り・偏りの長期蓄積は要旨から確認できない。
+
+### Paper: BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models
+- Source: arXiv
+- Canonical ID: arxiv:2301.12597
+- Publication date: 2023-01-30
+- URL: https://arxiv.org/abs/2301.12597
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: BLIP-2は、凍結されたエンコーダを利用し効率的にV-L事前学習を行う手法である。
+- Objective: 大規模モデルのV-L事前学習の高コスト問題を解決する汎用的かつ効率的な戦略を提案すること。
+- Methods: 凍結画像encoderと凍結LLMを軽量Q-Formerで接続する。まず画像言語表現を学習し、次に画像から言語を生成する学習を行う二段階の事前学習である。
+- Data and results: zero-shot VQAv2でFlamingo80Bを8.7%上回ると原著要旨は報告し、学習対象パラメータ数は54分の1。自然言語指示に従う画像からのテキスト生成例も示す。
+- Novelty: 凍結されたコンポーネントを活用し、軽量なQuerying Transformerでモダリティギャップを埋める点。
+- Limitations: 編者の注意: 54分の1は学習するパラメータ数であり、凍結された全モデルの総パラメータ数ではない。VQAv2での改善を全視覚言語taskや総学習計算量に一般化できない。
 
 ### Paper: LLaMA: Open and Efficient Foundation Language Models
 - Source: arXiv
@@ -949,6 +1133,20 @@
 - Novelty: ToTは、単なる逐次的な思考連鎖を超え、複数の推論パスを探索し、グローバルな選択を行うことを可能にした点にある。
 - Limitations: 編者の注意: 3種類の探索課題での実証であり、候補生成と自己評価に複数モデル呼び出しを要する。74%はGame of 24の設定で、一般的な問題解決率ではない。
 
+### Paper: GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints
+- Source: arXiv
+- Canonical ID: arxiv:2305.13245
+- Publication date: 2023-05-22
+- URL: https://arxiv.org/abs/2305.13245
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: GQAはMQAの一般化であり、より高い品質と高速性を両立する手法である。
+- Objective: 既存のマルチヘッドモデルを効率的にMQA化し、性能劣化を防ぐ方法論を提案すること。
+- Methods: 既存のmulti-head checkpointを再学習する手順と、KV head数を1とquery head数の中間に置くGQAを提案する。MQAへの再学習では元の事前学習計算量の5%を使用する。
+- Data and results: アップトレーニングされたGQAは、MHAに近い品質を保ちつつ、MQAに匹敵する速度を実現した。
+- Novelty: GQAはMQAの一般化であり、クエリヘッド数より少ない中間的なK/Vヘッド数を採用することで性能と効率を両立させる点。
+- Limitations: 編者の注意: 品質はMHAに近く、速度はMQAに相当すると報告されるが、品質が完全に同一とは述べていない。5%は再学習の追加計算量であり、推論コストを5%にする意味ではない。
+
 ### Paper: Goat: Fine-tuned LLaMA Outperforms GPT-4 on Arithmetic Tasks
 - Source: arXiv
 - Canonical ID: arxiv:2305.14201
@@ -976,6 +1174,20 @@
 - Data and results: 65Bモデルを単一48GB GPUで微調整可能と報告。GuanacoはVicuna評価でChatGPTのスコア水準の99.3%に達したが、これは全能力が99.3%という意味ではない。
 - Novelty: 4-bit NormalFloat (NF4)や二重量子化など複数の革新により、メモリ消費を抑えつつ性能維持を実現した点。
 - Limitations: 著者は当時のチャット評価ベンチマークの信頼性に問題を見いだし、GuanacoがChatGPTに失敗する事例も分析する。高い評価スコアを一般的な同等性と解釈しない。
+
+### Paper: Improving Factuality and Reasoning in Language Models through Multiagent Debate
+- Source: arXiv
+- Canonical ID: arxiv:2305.14325
+- Publication date: 2023-05-23
+- URL: https://arxiv.org/abs/2305.14325
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: 複数エージェントによる議論でLLMの事実性と推論能力を向上させる手法を提案した。
+- Objective: 複数の言語モデルインスタンスに個別の応答と推論プロセスを議論させ、共通の最終回答を得ることで性能向上が可能か検証する。
+- Methods: 複数の言語モデルインスタンスが複数ラウンドにわたって自身の応答と推論過程を提案し、議論させる手順を採用した。これは既存のブラックボックスモデルにも適用可能である。
+- Data and results: 数学・戦略推論と生成内容の事実性に改善を報告。全taskで同一手順・promptを用い、black-boxモデルにも適用する。要旨にはtask別の数値・検定結果はない。
+- Novelty: 複数の言語モデルインスタンスが応答と推論プロセスを議論する「心の社会」のアプローチを提案した点である。
+- Limitations: 編者の注意: 複数instance・複数roundを使う追加推論費用がある。要旨だけでは同じ計算予算の単一モデル反復との比較や、誤った合意の頻度は判断できない。
 
 ### Paper: Direct Preference Optimization: Your Language Model is Secretly a Reward Model
 - Source: arXiv
@@ -1034,6 +1246,20 @@
 - Data and results: Orcaは、Big-Bench Hard (BBH)などの複雑なゼロショット推論ベンチマークにおいて、Vicuna-13Bより100%以上、AGIEvalでは42%高い性能を示した。また、CoTなしのSAT, LSAT, GRE, GMATでもChatGPTに匹敵する性能を示した。
 - Novelty: 本研究は、単なる出力の模倣ではなく、GPT-4のような高度なAIモデルが生成するステップバイステップの説明から学習することで、推論プロセスを模倣する点にある。
 - Limitations: 編者の注意: 教師の説明と模倣データの選択に依存する。記述された試験の相対改善を、あらゆる推論能力や正答保証の獲得と解釈しない。
+
+### Paper: FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning
+- Source: arXiv
+- Canonical ID: arxiv:2307.08691
+- Publication date: 2023-07-17
+- URL: https://arxiv.org/abs/2307.08691
+- read_level: abstract
+- Tags: 基礎文献, 言語モデルの学習・推論・効率化
+- Summary: FlashAttention-2は、アテンション層の計算効率を向上させ、より高速なTransformer実装を提供する。
+- Objective: 長系列へのスケーリングにおけるアテンション層のボトルネックを解消し、計算効率を改善すること。
+- Methods: 非行列積演算を減らし、単一headの計算も複数thread blockへ分割する。block内のwarp間分担を改め、共有メモリ経由の通信を減らす。
+- Data and results: FlashAttention比で約2倍、A100で理論最大FLOPs/sの50〜73%を報告。GPT型モデルの学習全体では最大225 TFLOPs/s/A100、model FLOPs utilization 72%と報告する。
+- Novelty: アテンション計算を単一ヘッドでも複数のスレッドブロックに並列化する点に新規性がある。
+- Limitations: 編者の注意: 前版の25〜40%という効率を本手法の結果と混同しない。速度と稼働率はA100等の評価条件に依存し、GPU間・系列長間で一定ではない。注意演算の二乗計算量そのものを線形化する手法ではない。
 
 ### Paper: Llama 2: Open Foundation and Fine-Tuned Chat Models
 - Source: arXiv
@@ -1225,6 +1451,7 @@ arxiv:1409.3215
 arxiv:1412.6980
 arxiv:1502.05477
 arxiv:1503.02531
+arxiv:1503.03585
 arxiv:1506.02640
 arxiv:1508.04025
 arxiv:1511.06434
@@ -1237,12 +1464,15 @@ arxiv:1701.06538
 arxiv:1706.03741
 arxiv:1706.03762
 arxiv:1707.06347
+arxiv:1710.03740
 arxiv:1710.05941
 arxiv:1711.05101
 arxiv:1712.01815
 arxiv:1802.05365
 arxiv:1810.04805
 arxiv:1902.00751
+arxiv:1904.10509
+arxiv:1905.07830
 arxiv:1906.08237
 arxiv:1907.11692
 arxiv:1909.08593
@@ -1251,17 +1481,24 @@ arxiv:1910.01108
 arxiv:1910.10683
 arxiv:1910.13461
 arxiv:1911.02150
+arxiv:2001.04451
 arxiv:2001.08361
 arxiv:2003.10555
 arxiv:2004.05150
+arxiv:2004.08900
 arxiv:2005.14165
 arxiv:2006.16668
 arxiv:2009.01325
+arxiv:2009.14794
+arxiv:2010.11929
 arxiv:2101.00190
 arxiv:2101.03961
 arxiv:2104.08691
+arxiv:2106.04554
 arxiv:2106.09685
+arxiv:2109.01652
 arxiv:2110.04366
+arxiv:2110.08207
 arxiv:2201.11903
 arxiv:2203.02155
 arxiv:2203.11171
@@ -1280,16 +1517,21 @@ arxiv:2210.17323
 arxiv:2211.10435
 arxiv:2211.17192
 arxiv:2212.08073
+arxiv:2212.09720
 arxiv:2212.10560
+arxiv:2301.12597
 arxiv:2302.13971
 arxiv:2303.11366
 arxiv:2305.10601
+arxiv:2305.13245
 arxiv:2305.14201
 arxiv:2305.14314
+arxiv:2305.14325
 arxiv:2305.18290
 arxiv:2305.20050
 arxiv:2306.00978
 arxiv:2306.02707
+arxiv:2307.08691
 arxiv:2307.09288
 arxiv:2308.09687
 arxiv:2309.06180
