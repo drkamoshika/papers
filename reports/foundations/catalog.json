@@ -1,5 +1,5 @@
 {
-  "status": "partial_stopped_at_user_request",
+  "status": "review_in_progress",
   "created": "2026-11-14",
   "unique_papers": 568,
   "groups": {
@@ -1959,9 +1959,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2305.15334",
         "date": "2023-05-24",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2306.05301",
@@ -1969,9 +1970,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2306.05301",
         "date": "2023-06-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2305.11554",
@@ -1979,9 +1981,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2305.11554",
         "date": "2023-05-19",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2310.10634",
@@ -1989,9 +1992,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2310.10634",
         "date": "2023-10-16",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2306.06624",
@@ -1999,9 +2003,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2306.06624",
         "date": "2023-06-11",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2304.01904",
@@ -2009,9 +2014,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2304.01904",
         "date": "2023-04-04",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2408.04682",
@@ -2019,9 +2025,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2408.04682",
         "date": "2024-08-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1810.08272",
@@ -2029,9 +2036,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1810.08272",
         "date": "2018-10-18",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2306.06070",
@@ -2039,9 +2047,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2306.06070",
         "date": "2023-06-09",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2401.13649",
@@ -2049,9 +2058,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2401.13649",
         "date": "2024-01-24",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2402.05930",
@@ -2059,9 +2069,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2402.05930",
         "date": "2024-02-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2207.01206",
@@ -2069,9 +2080,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2207.01206",
         "date": "2022-07-04",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2407.05291",
@@ -2079,9 +2091,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2407.05291",
         "date": "2024-07-07",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2404.07972",
@@ -2089,9 +2102,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2404.07972",
         "date": "2024-04-11",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2403.07718",
@@ -2099,9 +2113,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2403.07718",
         "date": "2024-03-12",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2105.13231",
@@ -2109,9 +2124,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2105.13231",
         "date": "2021-05-27",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1806.11532",
@@ -2119,9 +2135,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1806.11532",
         "date": "2018-06-29",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2405.14573",
@@ -2129,9 +2146,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2405.14573",
         "date": "2024-05-23",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2203.07540",
@@ -2139,9 +2157,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2203.07540",
         "date": "2022-03-14",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2303.17760",
@@ -2149,9 +2168,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2303.17760",
         "date": "2023-03-31",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2402.02172",
@@ -2159,9 +2179,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2402.02172",
         "date": "2024-02-03",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2401.18059",
@@ -2169,9 +2190,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2401.18059",
         "date": "2024-01-31",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2404.16130",
@@ -2179,9 +2201,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2404.16130",
         "date": "2024-04-24",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2403.14403",
@@ -2189,9 +2212,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2403.14403",
         "date": "2024-03-21",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2305.10250",
@@ -2199,9 +2223,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2305.10250",
         "date": "2023-05-17",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2410.10813",
@@ -2209,9 +2234,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2410.10813",
         "date": "2024-10-14",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "full_text"
       },
       {
         "id": "arxiv:2207.05608",
@@ -2219,9 +2245,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2207.05608",
         "date": "2022-07-12",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2405.12213",
@@ -2229,9 +2256,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2405.12213",
         "date": "2024-05-20",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2212.06817",
@@ -2239,9 +2267,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2212.06817",
         "date": "2022-12-13",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "full_text"
       },
       {
         "id": "arxiv:2406.09246",
@@ -2249,9 +2278,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2406.09246",
         "date": "2024-06-13",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "full_text"
       },
       {
         "id": "arxiv:2303.04137",
@@ -2259,9 +2289,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2303.04137",
         "date": "2023-03-07",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2401.15884",
@@ -2269,9 +2300,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2401.15884",
         "date": "2024-01-29",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2305.06983",
@@ -2279,9 +2311,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2305.06983",
         "date": "2023-05-11",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2309.15217",
@@ -2289,9 +2322,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2309.15217",
         "date": "2023-09-26",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2404.12457",
@@ -2299,9 +2333,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2404.12457",
         "date": "2024-04-18",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2203.07814",
@@ -2309,9 +2344,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2203.07814",
         "date": "2022-02-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "report": "02-agents.md",
+        "read_level": "abstract"
       }
     ],
     "trust": [
@@ -3469,7 +3505,7 @@
         "date": "2016-03-09",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2106.11959",
@@ -3479,7 +3515,7 @@
         "date": "2021-06-22",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2207.08815",
@@ -3489,7 +3525,7 @@
         "date": "2022-07-18",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1908.07442",
@@ -3499,7 +3535,7 @@
         "date": "2019-08-20",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2012.06678",
@@ -3509,7 +3545,7 @@
         "date": "2020-12-11",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2207.01848",
@@ -3519,7 +3555,7 @@
         "date": "2022-07-05",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1909.06312",
@@ -3529,7 +3565,7 @@
         "date": "2019-09-13",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2210.10723",
@@ -3539,7 +3575,7 @@
         "date": "2022-10-19",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2106.01342",
@@ -3549,7 +3585,7 @@
         "date": "2021-06-02",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2406.05216",
@@ -3559,7 +3595,7 @@
         "date": "2024-06-07",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2311.10609",
@@ -3569,7 +3605,7 @@
         "date": "2023-11-17",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2305.11097",
@@ -3579,7 +3615,7 @@
         "date": "2023-05-18",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2402.11137",
@@ -3589,7 +3625,7 @@
         "date": "2024-02-17",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2310.20447",
@@ -3599,7 +3635,7 @@
         "date": "2023-10-31",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1907.00503",
@@ -3609,7 +3645,7 @@
         "date": "2019-07-01",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2209.15421",
@@ -3619,7 +3655,7 @@
         "date": "2022-09-30",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2210.04018",
@@ -3629,7 +3665,7 @@
         "date": "2022-10-08",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2312.06089",
@@ -3639,7 +3675,7 @@
         "date": "2023-12-11",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2210.06280",
@@ -3649,7 +3685,7 @@
         "date": "2022-10-12",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2304.13188",
@@ -3659,7 +3695,7 @@
         "date": "2023-04-25",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2309.13793",
@@ -3669,7 +3705,7 @@
         "date": "2023-09-25",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2402.14335",
@@ -3679,7 +3715,7 @@
         "date": "2024-02-22",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2312.07577",
@@ -3689,7 +3725,7 @@
         "date": "2023-12-10",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2410.24210",
@@ -3699,7 +3735,7 @@
         "date": "2024-10-31",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2407.04057",
@@ -3709,7 +3745,7 @@
         "date": "2024-07-04",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2105.02584",
@@ -3719,7 +3755,7 @@
         "date": "2021-05-06",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2206.00664",
@@ -3729,7 +3765,7 @@
         "date": "2022-06-01",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1811.11264",
@@ -3739,7 +3775,7 @@
         "date": "2018-11-27",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2204.00401",
@@ -3749,7 +3785,7 @@
         "date": "2022-04-01",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2006.06465",
@@ -3759,7 +3795,7 @@
         "date": "2020-06-11",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2107.11059",
@@ -3769,7 +3805,7 @@
         "date": "2021-07-23",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2206.08564",
@@ -3779,7 +3815,7 @@
         "date": "2022-06-17",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2303.11580",
@@ -3789,7 +3825,7 @@
         "date": "2023-03-21",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2106.15147",
@@ -3799,7 +3835,7 @@
         "date": "2021-06-29",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2312.16702",
@@ -3809,7 +3845,7 @@
         "date": "2023-12-27",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1610.01271",
@@ -3819,7 +3855,7 @@
         "date": "2016-10-05",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1803.01422",
@@ -3829,7 +3865,7 @@
         "date": "2018-03-04",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1701.08687",
@@ -3839,7 +3875,7 @@
         "date": "2017-01-30",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1605.03661",
@@ -3849,7 +3885,7 @@
         "date": "2016-05-12",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1608.00060",
@@ -3859,7 +3895,7 @@
         "date": "2016-07-30",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1705.08821",
@@ -3869,7 +3905,7 @@
         "date": "2017-05-24",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1906.02120",
@@ -3879,7 +3915,7 @@
         "date": "2019-06-05",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1907.02893",
@@ -3889,7 +3925,7 @@
         "date": "2019-07-05",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2007.01434",
@@ -3899,7 +3935,7 @@
         "date": "2020-07-02",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2101.01134",
@@ -3909,7 +3945,7 @@
         "date": "2021-01-04",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2010.05761",
@@ -3919,7 +3955,7 @@
         "date": "2020-10-12",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1606.07035",
@@ -3929,7 +3965,7 @@
         "date": "2016-06-22",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1301.2312",
@@ -3939,7 +3975,7 @@
         "date": "2013-01-10",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1906.04477",
@@ -3949,7 +3985,7 @@
         "date": "2019-06-11",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1702.07306",
@@ -3959,7 +3995,7 @@
         "date": "2017-02-23",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1512.05469",
@@ -3969,7 +4005,7 @@
         "date": "2015-12-17",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1611.04035",
@@ -3979,7 +4015,7 @@
         "date": "2016-11-12",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2006.04697",
@@ -3989,7 +4025,7 @@
         "date": "2020-06-08",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2208.05949",
@@ -3999,7 +4035,7 @@
         "date": "2022-08-11",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2011.08411",
@@ -4009,7 +4045,7 @@
         "date": "2020-11-17",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2202.04208",
@@ -4019,7 +4055,7 @@
         "date": "2022-02-09",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1901.09475",
@@ -4029,7 +4065,7 @@
         "date": "2019-01-28",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2002.12710",
@@ -4039,7 +4075,7 @@
         "date": "2020-02-28",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2009.14461",
@@ -4049,7 +4085,7 @@
         "date": "2020-09-30",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2003.03191",
@@ -4059,7 +4095,7 @@
         "date": "2020-03-06",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2104.10334",
@@ -4069,7 +4105,7 @@
         "date": "2021-04-21",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2101.07732",
@@ -4079,7 +4115,7 @@
         "date": "2021-01-16",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1704.04110",
@@ -4089,7 +4125,7 @@
         "date": "2017-04-13",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1912.09363",
@@ -4099,7 +4135,7 @@
         "date": "2019-12-19",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1905.10437",
@@ -4109,7 +4145,7 @@
         "date": "2019-05-24",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1907.00235",
@@ -4119,7 +4155,7 @@
         "date": "2019-06-29",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2012.07436",
@@ -4129,7 +4165,7 @@
         "date": "2020-12-14",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2106.13008",
@@ -4139,7 +4175,7 @@
         "date": "2021-06-24",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2201.12740",
@@ -4149,7 +4185,7 @@
         "date": "2022-01-30",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2211.14730",
@@ -4159,7 +4195,7 @@
         "date": "2022-11-27",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2205.13504",
@@ -4169,7 +4205,7 @@
         "date": "2022-05-26",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2303.06053",
@@ -4179,7 +4215,7 @@
         "date": "2023-03-10",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2304.08424",
@@ -4189,7 +4225,7 @@
         "date": "2023-04-17",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2310.06625",
@@ -4199,7 +4235,7 @@
         "date": "2023-10-10",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2210.02186",
@@ -4209,7 +4245,7 @@
         "date": "2022-10-05",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2310.01728",
@@ -4219,7 +4255,7 @@
         "date": "2023-10-03",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2302.11939",
@@ -4229,7 +4265,7 @@
         "date": "2023-02-23",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2403.07815",
@@ -4239,7 +4275,7 @@
         "date": "2024-03-12",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2310.10688",
@@ -4249,7 +4285,7 @@
         "date": "2023-10-14",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2402.02592",
@@ -4259,7 +4295,7 @@
         "date": "2024-02-04",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2310.08278",
@@ -4269,7 +4305,7 @@
         "date": "2023-10-12",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2310.03589",
@@ -4279,7 +4315,7 @@
         "date": "2023-10-05",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2402.03885",
@@ -4289,7 +4325,7 @@
         "date": "2024-02-06",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2402.02368",
@@ -4299,7 +4335,7 @@
         "date": "2024-02-04",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2403.00131",
@@ -4309,7 +4345,7 @@
         "date": "2024-02-29",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2106.10466",
@@ -4319,7 +4355,7 @@
         "date": "2021-06-19",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2106.14112",
@@ -4329,7 +4365,7 @@
         "date": "2021-06-26",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2202.01575",
@@ -4339,7 +4375,7 @@
         "date": "2022-02-03",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2106.00750",
@@ -4349,7 +4385,7 @@
         "date": "2021-06-01",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2012.08791",
@@ -4359,7 +4395,7 @@
         "date": "2020-12-16",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2102.00457",
@@ -4369,7 +4405,7 @@
         "date": "2021-01-31",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1606.01865",
@@ -4379,7 +4415,7 @@
         "date": "2016-06-06",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2107.03502",
@@ -4389,7 +4425,7 @@
         "date": "2021-07-07",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2111.00396",
@@ -4399,7 +4435,7 @@
         "date": "2021-10-31",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2312.00752",
@@ -4409,7 +4445,7 @@
         "date": "2023-12-01",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1909.02060",
@@ -4419,7 +4455,7 @@
         "date": "2019-09-04",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1509.09259",
@@ -4429,7 +4465,7 @@
         "date": "2015-09-30",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1908.05659",
@@ -4439,7 +4475,7 @@
         "date": "2019-08-13",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1809.08830",
@@ -4449,7 +4485,7 @@
         "date": "2018-09-24",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1906.06211",
@@ -4459,7 +4495,7 @@
         "date": "2019-06-14",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2006.06981",
@@ -4469,7 +4505,7 @@
         "date": "2020-06-12",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2403.10424",
@@ -4479,7 +4515,7 @@
         "date": "2024-03-15",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2402.06806",
@@ -4489,7 +4525,7 @@
         "date": "2024-02-09",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2306.15636",
@@ -4499,7 +4535,7 @@
         "date": "2023-06-27",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1706.09516",
@@ -4509,7 +4545,7 @@
         "date": "2017-06-28",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2310.09656",
@@ -4519,7 +4555,7 @@
         "date": "2023-10-14",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2307.14338",
@@ -4529,7 +4565,7 @@
         "date": "2023-07-26",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2407.04491",
@@ -4539,7 +4575,7 @@
         "date": "2024-07-05",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2201.12886",
@@ -4549,7 +4585,7 @@
         "date": "2022-01-30",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1910.13051",
@@ -4559,7 +4595,7 @@
         "date": "2019-10-29",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1909.04939",
@@ -4569,7 +4605,7 @@
         "date": "2019-09-11",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1805.10572",
@@ -4579,7 +4615,7 @@
         "date": "2018-05-27",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2202.08516",
@@ -4589,7 +4625,7 @@
         "date": "2022-02-17",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1904.10098",
@@ -4599,7 +4635,7 @@
         "date": "2019-04-22",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1612.09596",
@@ -4609,7 +4645,7 @@
         "date": "2016-12-30",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1605.06336",
@@ -4619,7 +4655,7 @@
         "date": "2016-05-20",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1907.04809",
@@ -4629,7 +4665,7 @@
         "date": "2019-07-10",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1510.04342",
@@ -4639,7 +4675,7 @@
         "date": "2015-10-14",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:2112.10510",
@@ -4649,7 +4685,7 @@
         "date": "2021-12-20",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       }
     ],
     "medical": [
@@ -4661,7 +4697,7 @@
         "date": "2018-05-08",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:31367026",
@@ -4671,7 +4707,7 @@
         "date": "2019-07-31",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:27185194",
@@ -4681,7 +4717,7 @@
         "date": "2016-05-17",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:34017034",
@@ -4691,7 +4727,7 @@
         "date": "2021-05-20",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:27521897",
@@ -4701,7 +4737,7 @@
         "date": "2017-03-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:32346050",
@@ -4711,7 +4747,7 @@
         "date": "2020-04-28",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:31209213",
@@ -4721,7 +4757,7 @@
         "date": "2019-06-17",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:26679719",
@@ -4731,7 +4767,7 @@
         "date": "2016-02-13",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29489489",
@@ -4741,7 +4777,7 @@
         "date": null,
         "status": "unreviewed",
         "date_basis": "No exact electronic or journal day in PubMed XML",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:27784047",
@@ -4751,7 +4787,7 @@
         "date": "2017-02-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30385537",
@@ -4761,7 +4797,7 @@
         "date": null,
         "status": "unreviewed",
         "date_basis": "No exact electronic or journal day in PubMed XML",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:31694707",
@@ -4771,7 +4807,7 @@
         "date": "2019-11-06",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:33328078",
@@ -4781,7 +4817,7 @@
         "date": "2020-03-12",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29500022",
@@ -4791,7 +4827,7 @@
         "date": "2018-01-12",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:31932807",
@@ -4801,7 +4837,7 @@
         "date": "2020-01-13",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:38207039",
@@ -4811,7 +4847,7 @@
         "date": "2024-01-11",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:35589549",
@@ -4821,7 +4857,7 @@
         "date": "2022-05-16",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:33717639",
@@ -4831,7 +4867,7 @@
         "date": null,
         "status": "unreviewed",
         "date_basis": "No exact electronic or journal day in PubMed XML",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29709069",
@@ -4841,7 +4877,7 @@
         "date": "2018-04-30",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29382633",
@@ -4851,7 +4887,7 @@
         "date": "2018-01-30",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:31584655",
@@ -4861,7 +4897,7 @@
         "date": "2020-01-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:23842533",
@@ -4871,7 +4907,7 @@
         "date": "2013-07-11",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:28117445",
@@ -4881,7 +4917,7 @@
         "date": "2017-01-25",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:33288961",
@@ -4891,7 +4927,7 @@
         "date": "2020-12-07",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:27898976",
@@ -4901,7 +4937,7 @@
         "date": "2016-12-13",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30224757",
@@ -4911,7 +4947,7 @@
         "date": "2018-09-17",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29234806",
@@ -4921,7 +4957,7 @@
         "date": "2017-12-12",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30104768",
@@ -4931,7 +4967,7 @@
         "date": "2018-08-13",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29994302",
@@ -4941,7 +4977,7 @@
         "date": "2018-05-17",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30843824",
@@ -4951,7 +4987,7 @@
         "date": "2019-03-07",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:37704728",
@@ -4961,7 +4997,7 @@
         "date": "2023-09-13",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30457988",
@@ -4971,7 +5007,7 @@
         "date": "2018-11-20",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:31536901",
@@ -4981,7 +5017,7 @@
         "date": "2019-09-04",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30814121",
@@ -4991,7 +5027,7 @@
         "date": "2019-02-27",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:27701631",
@@ -5001,7 +5037,7 @@
         "date": "2016-10-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:27212078",
@@ -5011,7 +5047,7 @@
         "date": "2016-05-23",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:33763651",
@@ -5021,7 +5057,7 @@
         "date": "2020-07-27",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:26863654",
@@ -5031,7 +5067,7 @@
         "date": "2016-02-04",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:28287963",
@@ -5041,7 +5077,7 @@
         "date": "2017-03-06",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:32371116",
@@ -5051,7 +5087,7 @@
         "date": "2020-05-01",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:31926806",
@@ -5061,7 +5097,7 @@
         "date": "2020-01-08",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:26955021",
@@ -5071,7 +5107,7 @@
         "date": "2016-02-29",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30834436",
@@ -5081,7 +5117,7 @@
         "date": "2019-09-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30481176",
@@ -5091,7 +5127,7 @@
         "date": "2018-11-27",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29801159",
@@ -5101,7 +5137,7 @@
         "date": "2018-07-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:39232164",
@@ -5111,7 +5147,7 @@
         "date": "2024-09-04",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30348771",
@@ -5121,7 +5157,7 @@
         "date": "2018-10-22",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:39039250",
@@ -5131,7 +5167,7 @@
         "date": "2024-07-22",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29224926",
@@ -5141,7 +5177,7 @@
         "date": "2017-12-08",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:39466245",
@@ -5151,7 +5187,7 @@
         "date": "2024-10-01",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:21862746",
@@ -5161,7 +5197,7 @@
         "date": "2011-08-24",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:15187068",
@@ -5171,7 +5207,7 @@
         "date": "2004-06-07",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:14759819",
@@ -5181,7 +5217,7 @@
         "date": null,
         "status": "unreviewed",
         "date_basis": "No exact electronic or journal day in PubMed XML",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29186491",
@@ -5191,7 +5227,7 @@
         "date": "2018-03-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:37973919",
@@ -5201,7 +5237,7 @@
         "date": "2023-11-16",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:7702231",
@@ -5211,7 +5247,7 @@
         "date": "1995-05-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:37492832",
@@ -5221,7 +5257,7 @@
         "date": "2023-06-24",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:28096249",
@@ -5231,7 +5267,7 @@
         "date": "2017-01-17",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30217670",
@@ -5241,7 +5277,7 @@
         "date": "2018-09-12",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:23567779",
@@ -5251,7 +5287,7 @@
         "date": null,
         "status": "unreviewed",
         "date_basis": "No exact electronic or journal day in PubMed XML",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:25925131",
@@ -5261,7 +5297,7 @@
         "date": "2015-04-30",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:12091676",
@@ -5271,7 +5307,7 @@
         "date": null,
         "status": "unreviewed",
         "date_basis": "No exact electronic or journal day in PubMed XML",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:34127232",
@@ -5281,7 +5317,7 @@
         "date": "2021-05-01",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:38713466",
@@ -5291,7 +5327,7 @@
         "date": "2024-05-01",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29743531",
@@ -5301,7 +5337,7 @@
         "date": "2018-05-09",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:37793630",
@@ -5311,7 +5347,7 @@
         "date": "2023-09-21",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:38587879",
@@ -5321,7 +5357,7 @@
         "date": "2024-04-08",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:28419261",
@@ -5331,7 +5367,7 @@
         "date": "2017-09-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29084046",
@@ -5341,7 +5377,7 @@
         "date": "2018-02-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:16359928",
@@ -5351,7 +5387,7 @@
         "date": "2005-12-05",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:22934236",
@@ -5361,7 +5397,7 @@
         "date": "2012-06-30",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:26187250",
@@ -5371,7 +5407,7 @@
         "date": "2015-07-14",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:37123444",
@@ -5381,7 +5417,7 @@
         "date": "2023-04-14",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:34412834",
@@ -5391,7 +5427,7 @@
         "date": "2021-05-18",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:34265844",
@@ -5401,7 +5437,7 @@
         "date": "2021-07-15",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:36927031",
@@ -5411,7 +5447,7 @@
         "date": "2023-03-16",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:34980915",
@@ -5421,7 +5457,7 @@
         "date": "2022-01-03",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:34293799",
@@ -5431,7 +5467,7 @@
         "date": "2021-07-22",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:31942072",
@@ -5441,7 +5477,7 @@
         "date": "2020-01-15",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:37433327",
@@ -5451,7 +5487,7 @@
         "date": "2023-07-11",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:36108050",
@@ -5461,7 +5497,7 @@
         "date": "2022-09-15",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29629118",
@@ -5471,7 +5507,7 @@
         "date": "2017-10-31",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:32084340",
@@ -5481,7 +5517,7 @@
         "date": "2020-02-20",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:31896580",
@@ -5491,7 +5527,7 @@
         "date": "2020-01-02",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:22400967",
@@ -5501,7 +5537,7 @@
         "date": "2012-01-31",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:31636460",
@@ -5511,7 +5547,7 @@
         "date": "2019-10-21",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:36702895",
@@ -5521,7 +5557,7 @@
         "date": "2023-01-26",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:26392543",
@@ -5531,7 +5567,7 @@
         "date": "2015-09-21",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:35013344",
@@ -5541,7 +5577,7 @@
         "date": "2022-01-10",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:15845847",
@@ -5551,7 +5587,7 @@
         "date": "2005-04-22",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29036616",
@@ -5561,7 +5597,7 @@
         "date": "2017-11-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:35020807",
@@ -5571,7 +5607,7 @@
         "date": "2022-04-12",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:27558503",
@@ -5581,7 +5617,7 @@
         "date": "2016-08-24",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:28056090",
@@ -5591,7 +5627,7 @@
         "date": "2017-01-05",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30617320",
@@ -5601,7 +5637,7 @@
         "date": "2019-01-07",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:28782865",
@@ -5611,7 +5647,7 @@
         "date": "2017-08-07",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:31378392",
@@ -5621,7 +5657,7 @@
         "date": "2019-08-01",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:21810266",
@@ -5631,7 +5667,7 @@
         "date": "2011-08-02",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:28974302",
@@ -5641,7 +5677,7 @@
         "date": "2017-09-27",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:28678710",
@@ -5651,7 +5687,7 @@
         "date": "2017-06-28",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:27900952",
@@ -5661,7 +5697,7 @@
         "date": "2016-11-30",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:34743566",
@@ -5671,7 +5707,7 @@
         "date": "2021-11-08",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29807250",
@@ -5681,7 +5717,7 @@
         "date": "2018-05-17",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:29862307",
@@ -5691,7 +5727,7 @@
         "date": "2018-04-05",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30285102",
@@ -5701,7 +5737,7 @@
         "date": "2018-11-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:16189967",
@@ -5711,7 +5747,7 @@
         "date": null,
         "status": "unreviewed",
         "date_basis": "No exact electronic or journal day in PubMed XML",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30942845",
@@ -5721,7 +5757,7 @@
         "date": "2019-05-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:33588584",
@@ -5731,7 +5767,7 @@
         "date": "2021-02-16",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:32393799",
@@ -5741,7 +5777,7 @@
         "date": "2020-05-11",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30245122",
@@ -5751,7 +5787,7 @@
         "date": "2018-09-15",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:18031824",
@@ -5761,7 +5797,7 @@
         "date": "2007-09-29",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:15188874",
@@ -5771,7 +5807,7 @@
         "date": null,
         "status": "unreviewed",
         "date_basis": "No exact electronic or journal day in PubMed XML",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:32903191",
@@ -5781,7 +5817,7 @@
         "date": "2021-05-11",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:20713314",
@@ -5791,7 +5827,7 @@
         "date": "2010-08-14",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:32064914",
@@ -5801,7 +5837,7 @@
         "date": "2020-02-16",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:32051412",
@@ -5811,7 +5847,7 @@
         "date": "2020-02-12",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:25560730",
@@ -5821,7 +5857,7 @@
         "date": "2015-01-06",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:25569120",
@@ -5831,7 +5867,7 @@
         "date": "2015-01-07",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:31649194",
@@ -5841,7 +5877,7 @@
         "date": "2019-10-25",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30596875",
@@ -5851,7 +5887,7 @@
         "date": "2019-01-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:30596876",
@@ -5861,7 +5897,7 @@
         "date": "2019-01-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:22397946",
@@ -5871,7 +5907,7 @@
         "date": "2012-03-07",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:23496923",
@@ -5881,7 +5917,7 @@
         "date": "2013-03-06",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:35585198",
@@ -5891,7 +5927,7 @@
         "date": "2022-05-18",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:32908283",
@@ -5901,7 +5937,7 @@
         "date": "2020-09-09",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:33564405",
@@ -5911,7 +5947,7 @@
         "date": "2020-11-24",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:34152373",
@@ -5921,7 +5957,7 @@
         "date": "2021-08-01",
         "status": "unreviewed",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:32908284",
@@ -5931,7 +5967,7 @@
         "date": "2020-09-09",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:14505766",
@@ -5941,7 +5977,7 @@
         "date": null,
         "status": "unreviewed",
         "date_basis": "No exact electronic or journal day in PubMed XML",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:15845334",
@@ -5951,7 +5987,7 @@
         "date": null,
         "status": "unreviewed",
         "date_basis": "No exact electronic or journal day in PubMed XML",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:25179855",
@@ -5961,7 +5997,7 @@
         "date": "2014-08-30",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:25441703",
@@ -5971,7 +6007,7 @@
         "date": "2014-10-23",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "pmid:34031906",
@@ -5981,7 +6017,7 @@
         "date": "2021-05-24",
         "status": "unreviewed",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1505.04597",
@@ -5991,7 +6027,7 @@
         "date": "2015-05-18",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1512.03385",
@@ -6001,7 +6037,7 @@
         "date": "2015-12-10",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1608.06993",
@@ -6011,7 +6047,7 @@
         "date": "2016-08-25",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1606.06650",
@@ -6021,7 +6057,7 @@
         "date": "2016-06-21",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1606.04797",
@@ -6031,7 +6067,7 @@
         "date": "2016-06-15",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       },
       {
         "id": "arxiv:1901.07031",
@@ -6041,13 +6077,13 @@
         "date": "2019-01-21",
         "status": "unreviewed",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Stopped at user request before editorial source review; metadata only"
+        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
       }
     ]
   },
   "main_unique_papers": 556,
-  "published_unique_papers": 274,
-  "unreviewed_unique_papers": 294,
+  "published_unique_papers": 310,
+  "unreviewed_unique_papers": 258,
   "historical_appendix": [
     {
       "id": "doi:10.1038/323533a0",
@@ -6178,8 +6214,8 @@
     },
     "agents": {
       "selected": 112,
-      "published": 76,
-      "remaining": 36
+      "published": 112,
+      "remaining": 0
     },
     "trust": {
       "selected": 104,
@@ -6196,5 +6232,6 @@
       "published": 0,
       "remaining": 119
     }
-  }
+  },
+  "updated": "2026-11-15"
 }

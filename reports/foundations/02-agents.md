@@ -5,7 +5,7 @@
 
 ## ダイジェスト
 
-選定112件中、以下は原著照合・編集確認を終えた76件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
+選定112件中、以下は原著照合・編集確認を終えた112件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
 
 研究の流れと2026年論文との接続は [文献集の案内](README.md) を参照。
 
@@ -108,6 +108,34 @@
 - Data and results: graph上の既存network群を統一・拡張するbuilding blockとlibraryを提示し、関係推論と構成的汎化を支える設計を論じる。位置付け・review・統一が中心で、要旨に一律の性能差はない。
 - Novelty: 「手動設計」と「エンドツーエンド学習」の二者択一を否定し、両者の相補性を活かすアプローチを提唱した点。
 - Limitations: 編者の注意: 構造化biasの有用性を提唱する論文で、人間並みの汎化を完成した実証ではない。graphの表現選択と適切な関係dataが必要である。
+
+### Paper: TextWorld: A Learning Environment for Text-based Games
+- Source: arXiv
+- Canonical ID: arxiv:1806.11532
+- Publication date: 2018-06-29
+- URL: https://arxiv.org/abs/1806.11532
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 難度・言語・観測を制御したtext gameを生成し、RLの汎化を測るTextWorld。
+- Objective: 商用text gameの部分観測・疎報酬等を分解し、学習と転移を体系的に調べる。
+- Methods: 対話play、状態追跡、報酬付与を備えるPython libraryを作り、既成gameと手作り・自動生成gameでbaseline agentを評価する。
+- Data and results: 難度・scope・言語を制御したbenchmarkとagent評価を提供し、似ているが異なるgame集合による汎化研究を可能にする。要旨にscore値はない。
+- Novelty: 固定gameの攻略から、生成時に課題要因を制御し比較する実験環境へ移る。
+- Limitations: 編者の注意: text gameの形式的状態と生成規則に依存し、自由な実世界言語理解を全面評価するものではない。観測・報酬を緩めた設定と商用gameの難度も区別する。
+
+### Paper: BabyAI: A Platform to Study the Sample Efficiency of Grounded Language Learning
+- Source: arXiv
+- Canonical ID: arxiv:1810.08272
+- Publication date: 2018-10-18
+- URL: https://arxiv.org/abs/1810.08272
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 合成言語の接地指示を学ぶsample効率を、19段階のBabyAIで測る。
+- Objective: 人間が対話的に教えるために必要なdata量を評価し、構成的な言語学習の難しさを調べる。
+- Methods: 難度が増す19levelと英語の部分集合である合成言語、教師を模擬するheuristic expertを実装。神経agentのbaselineと必要教示量を見積もる。
+- Data and results: 一部levelの学習に必要な人手量を推定し、当時の深層法は構成的言語の学習に十分sample効率が高くないという証拠を報告。要旨に必要例数はない。
+- Novelty: 最終成功率だけでなく、人間から実際に教えられる量かというsample効率を研究対象にする。
+- Limitations: 編者の注意: heuristic教師と合成言語での推定で、現実の人間による教示・自由言語の全費用を測ったものではない。BabyAI 1.1の改良と原版を区別する。
 
 ### Paper: Generalization through Memorization: Nearest Neighbor Language Models
 - Source: arXiv
@@ -235,6 +263,20 @@
 - Novelty: 検索拡張ループ構造を知識接地型対話に応用し、会話能力と知識性を両立させた点。
 - Limitations: 編者の注意: 幻覚の低減は解消を意味しない。検索sourceの質やmulti-turn queryの失敗を含む現在の実用場面で同じ効果が出るかは、要旨のみでは確かめられない。
 
+### Paper: AndroidEnv: A Reinforcement Learning Platform for Android
+- Source: arXiv
+- Canonical ID: arxiv:2105.13231
+- Publication date: 2021-05-27
+- URL: https://arxiv.org/abs/2105.13231
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: touchscreenを共通interfaceとし、多様なAndroid appでRLを研究するAndroidEnv。
+- Objective: 人が使うapp・serviceを、agentの学習と評価に利用できる環境を作る。
+- Methods: Android deviceの現実的simulation上で共通touch入力を提供し、複数taskで既存の代表的RL agentを実験する。
+- Data and results: 環境の機能と設計を概説し、用意したtaskでのRL評価を報告。要旨にはtask数・成功率・実device転移の定量結果はない。
+- Novelty: 個別gameの専用actionから、Android ecosystemの共通touch interfaceへRL環境を広げる。
+- Limitations: 著者は実deviceへの展開を可能性として述べる。編者の注意: simulationで学習できることは、実deviceの全appに安全・正確に転移できた証明ではない。
+
 ### Paper: Decision Transformer: Reinforcement Learning via Sequence Modeling
 - Source: arXiv
 - Canonical ID: arxiv:2106.01345
@@ -277,6 +319,34 @@
 - Novelty: ウェブブラウジング環境でのファインチューニングと、報酬モデルを用いた拒否サンプリングを組み合わせることで性能を向上させた点である。
 - Limitations: 編者の注意: 人間選好率は事実正確性の保証ではない。参照を集める手順でも各引用が十分に回答を支持するかは別に検証が必要で、text browsing環境の条件にも依存する。
 
+### Paper: Competition-Level Code Generation with AlphaCode
+- Source: arXiv
+- Canonical ID: arxiv:2203.07814
+- Publication date: 2022-02-08
+- URL: https://arxiv.org/abs/2203.07814
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 競技programming用dataと大量sampling・挙動filterで複雑問題を解くAlphaCode。
+- Objective: 単純な指示のcode化を超え、algorithm理解が必要な未見問題の解を生成する。
+- Methods: 整理した競技data、大規模で効率的なTransformer、大量の候補生成を組み合わせ、program挙動で絞った少数候補を提出する。Codeforces大会を模擬評価する。
+- Data and results: 5,000超参加者の大会群で、平均上位54.3%の順位を報告。訓練data・architecture・大量samplingとfilterの三要因が重要とする。
+- Novelty: 生成modelの一回の出力より、問題解決の探索空間を多数候補で広げ、挙動で選別するsystemを構成する。
+- Limitations: 編者の注意: 模擬競技の順位で、全開発工程や実際の大会参加の成績ではない。多数候補・filter・少数提出を含むため単発pass@1や同計算量のLM比較とは区別する。
+
+### Paper: ScienceWorld: Is your Agent Smarter than a 5th Grader?
+- Source: arXiv
+- Canonical ID: arxiv:2203.07540
+- Publication date: 2022-03-14
+- URL: https://arxiv.org/abs/2203.07540
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 知識を答えるだけでなく、模擬世界で実験して使う科学推論を測るScienceWorld。
+- Objective: 既知概念を新しい文脈で使う能力と、過去の類似回答の検索に依存する能力を区別する。
+- Methods: 小学校科学相当のinteractive text環境を作り、未知物質の導電性実験等を評価する。interactive学習と静的QA・実演学習を比較する。
+- Data and results: 100,000stepの対話学習をした150万parameter agentが、静的に学習した110億parameter modelを上回る例を報告し、環境への接地の仮説を支持する。
+- Novelty: 科学知識の正答から、実験を計画・実行して概念を再利用する能力へ評価を進める。
+- Limitations: 編者の注意: parameter数以外に学習方法・環境経験が違う比較である。小modelが全taskで大型LMより優れる証明や、実験室での科学発見能力の評価ではない。
+
 ### Paper: Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
 - Source: arXiv
 - Canonical ID: arxiv:2204.01691
@@ -290,6 +360,34 @@
 - Data and results: 実環境のmobile manipulatorの複数taskで、複数stepに及ぶ抽象的な自然言語指示の達成を報告。要旨には成功率の値はなく、long-horizonは長期間の自律稼働を意味しない。
 - Novelty: 低レベルスキルと大規模言語モデルを組み合わせ、価値関数による物理環境への接地を行う点が新規である。
 - Limitations: 編者の注意: 用意・学習したskillとそのvalue推定の範囲に依存する。適切な高水準計画と、低水準動作の安全な実行・未知環境への転移は別に検証する必要がある。
+
+### Paper: WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents
+- Source: arXiv
+- Canonical ID: arxiv:2207.01206
+- Publication date: 2022-07-04
+- URL: https://arxiv.org/abs/2207.01206
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 実商品情報を使う模擬commerce環境WebShopで、指示に沿う探索・購入行動を研究する。
+- Objective: 現実的言語と大規模化を両立したinteractive benchmarkを作る。
+- Methods: 118万商品・12,087指示・1,600超人手実演を用意し、RL・模倣・事前学習modelを比較。軌跡・ablationと実siteへの転移も調べる。
+- Data and results: best model成功率29%、rule-based 9.6%、人間expert59%。Amazon/eBayでも非自明なsim-to-real転移を報告するが、その成功率は要旨にない。
+- Novelty: 商品要件の解釈、query再構成、noisy page処理、探索を一つの実行taskとして評価する。
+- Limitations: 編者の注意: 学習・主評価はsimulationであり、実際の購入取引を全面自律化した実証ではない。成功率29%と後続研究の平均報酬scoreを直接比較しない。
+
+### Paper: Inner Monologue: Embodied Reasoning through Planning with Language Models
+- Source: arXiv
+- Canonical ID: arxiv:2207.05608
+- Publication date: 2022-07-12
+- URL: https://arxiv.org/abs/2207.05608
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 成功判定・scene説明・人間の応答を言語feedbackとして取り込み、robotの計画を閉loop化する。
+- Objective: skillの選択だけでなく、状況変化に合わせた実行時点・計画変更を追加訓練なしで行えるかを調べる。
+- Methods: LLMへ環境から自然言語feedbackを返し、inner monologueとして計画へ反映する。模擬・実卓上操作と実kitchenのmobile manipulationを評価する。
+- Data and results: 三domainで閉loopの言語feedbackが高水準指示の完了を大きく改善と報告。要旨に成功率や費用の数値はない。
+- Novelty: 事前に固定した言語planから、実行結果を受けて言語的に更新する計画へ進める。
+- Limitations: 編者の注意: feedbackを作る成功検出・scene理解・人間入力に依存する。LLMの追加訓練なしでも、用意したskillや知覚moduleが不要という意味ではない。
 
 ### Paper: Code as Policies: Language Model Programs for Embodied Control
 - Source: arXiv
@@ -333,6 +431,22 @@
 - Novelty: 推論トレースが行動計画の追跡と例外処理を助け、外部アクションが情報収集を可能にする点。
 - Limitations: 編者の注意: 取得する外部情報と実行環境に依存する。選定課題での幻覚低減は、全出力の事実性や悪意あるツール入力への安全性を保証しない。
 
+### Paper: RT-1: Robotics Transformer for Real-World Control at Scale
+- Source: arXiv
+- Canonical ID: arxiv:2212.06817
+- Publication date: 2022-12-13
+- URL: https://arxiv.org/abs/2212.06817
+- read_level: full_text
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 画像履歴と指示からtoken化actionを予測し、大規模実robot dataの効果を調べるRT-1。
+- Objective: data量・多様性を吸収し、新task・物体・環境へ汎化するrobot modelを学習する。
+- Methods: 指示で条件付けたEfficientNetの視覚tokenをTokenLearnerで縮約し、decoder-only Transformerへ入力してactionを出す模倣学習を行う。
+- Data and results: 13robot・17か月で130,000超episodeを収集し、700超の指示で97%成功と報告。data多様性を削ると汎化が大きく落ちるablationも示す。
+- Novelty: 言語・画像・actionの簡潔なtoken化と実時間制御を、多様な実robot実演のscale研究に結ぶ。
+- Limitations: 著者は実演者の能力を超えにくい模倣学習、既知概念の組合せに限られる新指示、未見の全く新しい運動への非汎化、器用な操作の不足を挙げる。
+
+本文の照合箇所: [5.1、6.5/Table 7、7 Limitations](https://arxiv.org/html/2212.06817v1)。
+
 ### Paper: Toolformer: Language Models Can Teach Themselves to Use Tools
 - Source: arXiv
 - Canonical ID: arxiv:2302.04761
@@ -361,6 +475,20 @@
 - Novelty: インターネット規模の言語、視覚、および視覚言語ドメインでの共同訓練により、ポジティブトランスファーを示す点。
 - Limitations: 編者の注意: groundingの構成とtaskでの成果であり、任意の物理環境での一般推論や安全動作の保証ではない。562Bは最大構成で、全実験が同じ規模とは限らない。
 
+### Paper: Diffusion Policy: Visuomotor Policy Learning via Action Diffusion
+- Source: arXiv
+- Canonical ID: arxiv:2303.04137
+- Publication date: 2023-03-07
+- URL: https://arxiv.org/abs/2303.04137
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 視覚条件付きのdenoising diffusionとして、多峰性のrobot action分布を学ぶDiffusion Policy。
+- Objective: 高次元で複数の妥当行動があるvisuomotor制御を、安定に模倣学習する。
+- Methods: action分布のscoreを学び、推論時に確率的Langevin stepで反復生成する。receding horizon制御、視覚条件付け、時系列diffusion Transformerを導入する。
+- Data and results: 4操作benchmarkの12taskで当時の先端法を一貫して上回り、平均46.9%改善と要旨は報告。絶対point差という記述ではない。
+- Novelty: 生成画像ではなくaction列をdiffusionで表し、多峰性・高次元性を持つ実制御へ適用する。
+- Limitations: 編者の注意: 反復denoisingは制御時の推論費用を伴う。12taskでの模倣policyの改善を、未知の全行動や安全な長期計画の保証とみなさない。
+
 ### Paper: Reflexion: Language Agents with Verbal Reinforcement Learning
 - Source: arXiv
 - Canonical ID: arxiv:2303.11366
@@ -388,6 +516,34 @@
 - Data and results: 言語・画像・音声等をまたぐtaskの実行例を報告。要旨に統一benchmarkでの数値はなく、AGIへの接続は著者の展望である。
 - Novelty: LLMを制御器として利用し、既存のAIモデル群を接続・協調させるフレームワークを提案した点。
 - Limitations: 編者の注意: 実行例の提示と汎用的な自律解決の保証は区別する。controllerの計画、選択model、外部serviceの可用性に依存し、要旨に失敗率・総費用の数値はない。
+
+### Paper: CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society
+- Source: arXiv
+- Canonical ID: arxiv:2303.17760
+- Publication date: 2023-03-31
+- URL: https://arxiv.org/abs/2303.17760
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 役割とinception promptでagent同士の自律協力と会話data生成を調べるCAMEL。
+- Objective: 人の継続的な会話誘導への依存を減らし、agentの協調を拡張可能に研究する。
+- Methods: role-playingの枠組みでchat agentをtaskへ導き、instruction-following協力のdataと振舞いを分析する公開libraryを提供する。
+- Data and results: 複数agentの協力研究と会話data生成の枠組みを示す。要旨に他方式に対する統一成功率や費用差の数値はない。
+- Novelty: 単一assistantとの対話から、役割を設定したagent間会話を研究・data生成の単位にする。
+- Limitations: 編者の注意: 認知・社会という表現はagent挙動の研究上の類比で、人間の認知過程を直接実証するものではない。役割の指定だけでuser意図の保持を保証しない。
+
+### Paper: REFINER: Reasoning Feedback on Intermediate Representations
+- Source: arXiv
+- Canonical ID: arxiv:2304.01904
+- Publication date: 2023-04-04
+- URL: https://arxiv.org/abs/2304.01904
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: REFINERは、推論過程に自動フィードバックを与えるフレームワークである。
+- Objective: 中間的な推論ステップの誤りを検出し、改善する手法を提案すること。
+- Methods: reasoning LMとcriticモデルを用い、構造化されたフィードバックで反復的に推論を改善させる。
+- Data and results: 三つの推論taskで同規模baselineより改善を報告。学習したcriticをGPT-3.5/ChatGPTへ使う場合はreasonerを微調整せず改善できるとする。要旨にscore値はない。
+- Novelty: 批判的モデルが自動フィードバックを提供し、推論過程の質を高める点が新しい。
+- Limitations: 編者の注意: criticの構造化feedbackを使う反復であり、追加計算とcritic誤りの影響を伴う。人手loop dataなしのcritic訓練は、評価や全taskの教師情報が不要という意味ではない。
 
 ### Paper: Generative Agents: Interactive Simulacra of Human Behavior
 - Source: arXiv
@@ -459,6 +615,48 @@
 - Novelty: 人間ではなくAI自身が指示データを進化させるEvol-Instruct手法を提案し、モデルの能力向上に利用した点。
 - Limitations: 著者は一部でChatGPTに及ばないと述べる。編者の注意: 人手選好とGPT-4 judgeの評価であり、全taskの客観的正答率が90%という意味ではない。生成指示の品質・biasにも依存する。
 
+### Paper: Active Retrieval Augmented Generation
+- Source: arXiv
+- Canonical ID: arxiv:2305.06983
+- Publication date: 2023-05-11
+- URL: https://arxiv.org/abs/2305.06983
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 次の文を予測して根拠を探し、低確信の内容を再生成するactive retrievalのFLARE。
+- Objective: 最初に一回検索するだけでは不足する、長文生成中の継続的な情報取得を設計する。
+- Methods: 今後のsentence予測をqueryに使い、low-confidence tokenを含む場合に関連文書を取得して文を再生成する。四つの知識集約的長文taskで比較する。
+- Data and results: 全四taskで比較法を上回るか競合する性能を報告。いつ・何を取得するかを生成中に決める有効性を示すが、要旨にscoreはない。
+- Novelty: 入力queryだけでなく、生成が向かう先を予測して動的に検索需要を作る。
+- Limitations: 編者の注意: confidenceが高い誤答を必ず検出する仕組みではない。予測文に引かれた検索biasと、反復検索・再生成の計算費用を含めて評価する必要がある。
+
+### Paper: MemoryBank: Enhancing Large Language Models with Long-Term Memory
+- Source: arXiv
+- Canonical ID: arxiv:2305.10250
+- Publication date: 2023-05-17
+- URL: https://arxiv.org/abs/2305.10250
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 対話経験を検索・更新し、忘却と強化を入れる長期記憶MemoryBankを提案する。
+- Objective: 継続的なやり取りで関連情報を保持し、user特性へ適応する会話を支える。
+- Methods: 経過時間と重要性による忘却曲線を模した更新を使う。SiliconFriendを実対話の定性評価とChatGPTで模擬する長期対話の定量評価で調べる。
+- Data and results: 関連記憶の回想、user性格の理解、共感的応答の例を報告。要旨にmetric別の数値や臨床試験結果はない。
+- Novelty: 全履歴を同じように保存するのではなく、重要性と時間で選択的に忘れ・強化する記憶管理を入れる。
+- Limitations: 編者の注意: 心理対話の微調整やcompanionの評価は心理治療の安全性・有効性の実証ではない。模擬user評価と実利用者の長期便益を区別する。
+
+### Paper: ToolkenGPT: Augmenting Frozen Language Models with Massive Tools via Tool Embeddings
+- Source: arXiv
+- Canonical ID: arxiv:2305.11554
+- Publication date: 2023-05-19
+- URL: https://arxiv.org/abs/2305.11554
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: ToolkenGPTは、ツールをトークン化しLLMに組み込む手法である。
+- Objective: 大規模言語モデルの外部ツール利用における課題を解決する方法を探る。
+- Methods: 基盤LMを凍結し、toolごとのtokenに対応する埋め込みを実演dataから学習する。toolkenの出力後にLMが引数を補完しtoolを実行する。
+- Data and results: 数値推論、知識QA、embodied plan生成で、比較baselineを上回るtool利用を報告。要旨にtask別の成功率はない。
+- Novelty: ツールをトークン（toolken）化することで、任意の数のツールを動的に組み込む柔軟性を実現した点。
+- Limitations: 編者の注意: tool追加には埋め込みの学習と実演が必要で、任意数への拡張可能性は無限に費用なく使える保証ではない。引数生成の誤りやtoolの失敗も別に評価する。
+
 ### Paper: Improving Factuality and Reasoning in Language Models through Multiagent Debate
 - Source: arXiv
 - Canonical ID: arxiv:2305.14325
@@ -501,6 +699,20 @@
 - Novelty: LLMにモンテカルロ木探索を組み込むことで、推論空間における戦略的な探索を可能にした点。
 - Limitations: 編者の注意: LLMにworld modelがないという説明は著者の動機付けで、あらゆるmodel内部を証明した結論ではない。探索・報酬と追加推論計算を使うため、基盤model単独の能力差とは区別する。
 
+### Paper: Gorilla: Large Language Model Connected with Massive APIs
+- Source: arXiv
+- Canonical ID: arxiv:2305.15334
+- Publication date: 2023-05-24
+- URL: https://arxiv.org/abs/2305.15334
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: API呼出生成向けに微調整したGorillaを、文書検索と組み合わせて評価する。
+- Objective: LLMsがAPIコールを通じてツールを利用する潜在能力の実現可能性を探ること。
+- Methods: LLaMAをAPI呼出向けに微調整し、API文書retrieverと接続する。Hugging Face、TorchHub、TensorHub由来のAPIBenchで呼出生成と文書更新への適応を調べる。
+- Data and results: Gorillaは、文書検索システムと統合することで、テスト時ドキュメント変更への適応力とハルシネーションの軽減を示した。
+- Novelty: API利用の正確さを専用dataで学習し、推論時の文書検索によるversion変更への適応と組み合わせる。
+- Limitations: 編者の注意: GPT-4超えは原著のAPI呼出生成の比較であり、全taskでの優越ではない。呼出文の正確さと、権限・副作用を含む実行の安全性は別に評価する。要旨にtask別scoreはない。
+
 ### Paper: Voyager: An Open-Ended Embodied Agent with Large Language Models
 - Source: arXiv
 - Canonical ID: arxiv:2305.16291
@@ -542,6 +754,48 @@
 - Data and results: 提案された多エージェントシステムは、法廷シミュレーションやソフトウェア開発など多様なドメインでの応用可能性を示した。
 - Novelty: 各エージェントに固有の属性と役割を持たせ、知識交換を通じてLLMの能力向上を図る点。
 - Limitations: 著者はloop、security、scalability、評価等を課題として扱う。編者の注意: case studyと構想が中心であり、要旨には統一benchmarkによる性能向上や費用対効果の数値はない。
+
+### Paper: ToolAlpaca: Generalized Tool Learning for Language Models with 3000 Simulated Cases
+- Source: arXiv
+- Canonical ID: arxiv:2306.05301
+- Publication date: 2023-06-08
+- URL: https://arxiv.org/abs/2306.05301
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: ToolAlpacaは、小規模LLMに汎用的なツール利用能力を学習させるフレームワークである。
+- Objective: tool-useの共通知識を学習した小型modelが、新しいtoolごとの追加訓練なしに利用できるかを調べる。
+- Methods: multi-agent simulationで50カテゴリ・400超APIから3,938利用例を生成し、7B・13Bを微調整する。学習時に見ないtoolを評価する。
+- Data and results: ToolAlpacaはGPT-3.5に匹敵する効果的な汎用ツール利用能力を示し、実現可能であることを実証した。
+- Novelty: 本手法は、最小限の人的介入で多様なコーパスを自動生成し、小規模モデルでの学習を目指す点にある。
+- Limitations: 編者の注意: unseen toolごとの訓練が不要という意味で、tool-useの訓練全体が不要ではない。simulation dataと評価toolの構成に依存し、原著のGPT-3.5との比較を全modelへ一般化しない。
+
+### Paper: Mind2Web: Towards a Generalist Agent for the Web
+- Source: arXiv
+- Canonical ID: arxiv:2306.06070
+- Publication date: 2023-06-09
+- URL: https://arxiv.org/abs/2306.06070
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 137の実websiteから集めた多様なtaskと行動軌跡で、Web agentの汎化を評価する。
+- Objective: 少数の模擬siteを超え、新しいwebsite・domainにも使えるagentを研究する。
+- Methods: 31domain・137siteの2,000超taskとcrowd行動系列を収集。巨大HTMLを小LMでfilterしてから大LMへ渡す方法を比較する。
+- Data and results: HTML filteringで有効性・効率が改善し、未知site・domainでも一定の成果を報告する一方、真に汎用なagentには改善余地が大きいとする。要旨にscoreはない。
+- Novelty: 実websiteの多様な相互作用と、入力を絞る小modelを組み合わせた一般化testbedを示す。
+- Limitations: 編者の注意: any websiteは研究目標で、全siteの達成保証ではない。収集軌跡による評価とlive siteでのend-to-end実行を同じ成功率とみなさない。
+
+### Paper: RestGPT: Connecting Large Language Models with Real-World RESTful APIs
+- Source: arXiv
+- Canonical ID: arxiv:2306.06624
+- Publication date: 2023-06-11
+- URL: https://arxiv.org/abs/2306.06624
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: RestGPTはLLMと実世界のRESTful APIを接続し、複雑な指示に対応する手法である。
+- Objective: 既存のツール利用型LLMが抱える、現実世界での複雑な指示への対応限界を克服すること。
+- Methods: RestGPTは、LLMの能力を活用し、粗視的から微細なオンライン計画機構でタスク分解とAPI選択を行う。また、RESTful API呼び出しに特化した実行器を持つ。
+- Data and results: 二つの実世界scenarioと人手の指示・gold経路を持つRestBenchを構築し、複雑な指示への成果と頑健性を報告。要旨に具体的な成功率はない。
+- Novelty: 本研究は、LLMを広く採用されているRESTソフトウェアアーキテクチャのAPIに接続する新しいアプローチを提案した点にある。
+- Limitations: 編者の注意: API parameterの構成と応答parseも含むsystemであり、LLM単体の改善と区別する。二scenarioでの結果は任意のREST APIへの正しい実行やAGIを示すものではない。
 
 ### Paper: ToolQA: A Dataset for LLM Question Answering with External Tools
 - Source: arXiv
@@ -797,6 +1051,20 @@
 - Novelty: Agentsは、自律的な言語エージェントの進歩をより広い非専門家層に開くことを目的としている点。
 - Limitations: 編者の注意: 使いやすさ・拡張性は設計上の目標と機能の記述であり、あらゆる利用者が高性能agentを構築できる実証ではない。frameworkの機能数とtask達成能力を分ける。
 
+### Paper: Ragas: Automated Evaluation of Retrieval Augmented Generation
+- Source: arXiv
+- Canonical ID: arxiv:2309.15217
+- Publication date: 2023-09-26
+- URL: https://arxiv.org/abs/2309.15217
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 検索context・根拠への忠実性・生成品質を分け、参照正解なしで評価するRagas。
+- Objective: RAGを単一正答率だけでなく、retrievalとgenerationの複数側面から迅速に評価する。
+- Methods: 関連・focusedなcontextの取得、取得内容の忠実な利用、出力品質を測るmetric群を提案し、人手ground truth annotationを必要としない枠組みを構成する。
+- Data and results: reference-free評価frameworkと指標群の提案が成果。要旨には人手との一致率や評価誤差の数値はない。
+- Novelty: 取得根拠と出力の関係を分解し、正解文を作る費用を抑えた評価cycleを設ける。
+- Limitations: 編者の注意: reference-freeは評価器の誤りや独立検証が不要という意味ではない。文書に忠実でも文書自体が誤っていれば事実正確とは限らず、指標間の意味を区別する。
+
 ### Paper: DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines
 - Source: arXiv
 - Canonical ID: arxiv:2310.03714
@@ -883,6 +1151,20 @@
 - Novelty: 汎用的なX-ロボットポリシーを目指し、標準化されたデータ形式とモデルを提供した点。
 - Limitations: 編者の注意: 標準化dataを用いたrobot間の正の転移であり、全robotへのzero-shot動作保証ではない。原著要旨のtask数表示は解釈が不明瞭なため再掲せず、22robot・21機関・527skillという確認できる規模を記す。
 
+### Paper: OpenAgents: An Open Platform for Language Agents in the Wild
+- Source: arXiv
+- Canonical ID: arxiv:2310.10634
+- Publication date: 2023-10-16
+- URL: https://arxiv.org/abs/2310.10634
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: OpenAgentsは、日常的な環境で言語エージェントを利用・ホストするためのオープンプラットフォームである。
+- Objective: 既存のフレームワークが無視する非専門ユーザーへのアクセスとアプリケーションレベル設計を考慮したエージェント基盤を提供すること。
+- Methods: データ分析用Data Agent（Python/SQL）、200以上のAPIツールを持つPlugins Agent、自律的なWeb Browsingを行うWeb Agentを含む3つのエージェント群を提供する。
+- Data and results: Python/SQL分析、200超API利用、Web閲覧の三agentと利用者向けUI・local deploymentを提供。要旨に利用者試験や統一task成功率の定量結果はない。
+- Novelty: 非専門ユーザーの利用とアプリケーションレベル設計に焦点を当てた、実環境での言語エージェントのためのオープンプラットフォームを提供した点。
+- Limitations: 編者の注意: 実用アクセスを重視したplatformの提案であり、一般利用での失敗・latency・安全性の全てを解決した実証ではない。200超はtool規模で成功数ではない。
+
 ### Paper: Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection
 - Source: arXiv
 - Canonical ID: arxiv:2310.11511
@@ -953,6 +1235,34 @@
 - Novelty: プロセス中の詳細な進捗度を測定する「fine-grained progress rate metric」を提供した点。
 - Limitations: 編者の注意: 進捗の指標は最終的な正しい完了や安全性そのものではない。要旨では進捗の採点規則・失敗ごとの内訳が分からず、その尺度を解釈して比較する必要がある。
 
+### Paper: VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks
+- Source: arXiv
+- Canonical ID: arxiv:2401.13649
+- Publication date: 2024-01-24
+- URL: https://arxiv.org/abs/2401.13649
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 画像を見なければ解けないWeb taskで、multimodal agentを測るVisualWebArena。
+- Objective: text中心の評価では見落とす視覚的groundingを、現実的なWeb実行で調べる。
+- Methods: image-textの理解、指示解釈、site操作が必要なtaskを構成し、text-onlyとmultimodalの上位agentを定量・定性比較する。
+- Data and results: text-only agentの限界と、multimodal agentにも残る能力gapを報告。要旨にはtask数や成功率の具体値はない。
+- Novelty: 画像情報が不可欠なtaskを明示的に含め、視覚model追加の効果を実行taskで評価する。
+- Limitations: 編者の注意: imageを入力できることと正しいGUI操作は別能力である。選定環境の成果を任意siteの操作や実務安全性の保証へ一般化しない。
+
+### Paper: Corrective Retrieval Augmented Generation
+- Source: arXiv
+- Canonical ID: arxiv:2401.15884
+- Publication date: 2024-01-29
+- URL: https://arxiv.org/abs/2401.15884
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 取得文書の品質評価に応じて検索・再構成を変えるCorrective RAGを提案する。
+- Objective: retrievalが誤ったときに、無関係文書へ依存する生成を減らす。
+- Methods: 軽量retrieval evaluatorのconfidenceで知識取得actionを選び、必要に応じWeb検索を追加する。文書を分解・再構成して重要情報へ絞る。
+- Data and results: 短文・長文生成の四datasetで既存RAGの性能を大きく改善と報告。要旨にtask別score・検索費用の数値はない。
+- Novelty: 検索結果を固定して生成するのではなく、品質判定を次の検索行動に接続する補正段階を設ける。
+- Limitations: 編者の注意: evaluatorとWeb sourceも誤りを持ち得る。plug-and-playは適用形式の説明で、全RAG構成への一律改善や、幻覚の完全な解消の保証ではない。
+
 ### Paper: ReGAL: Refactoring Programs to Discover Generalizable Abstractions
 - Source: arXiv
 - Canonical ID: arxiv:2401.16467
@@ -969,6 +1279,20 @@
 
 本文の照合箇所: [4.2 比較条件、5/Table 1、7 Limitations](https://arxiv.org/html/2401.16467v2)。
 
+### Paper: RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval
+- Source: arXiv
+- Canonical ID: arxiv:2401.18059
+- Publication date: 2024-01-31
+- URL: https://arxiv.org/abs/2401.18059
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 文書chunkを再帰的にまとめたtreeから、複数抽象度の情報を検索するRAPTOR。
+- Objective: 短い連続chunkだけの検索で長文全体の文脈を捉えにくい問題を改善する。
+- Methods: chunkをembedding・cluster・要約し、bottom-upのtreeを構築。推論時に異なる要約levelから取得し、長文QA等で従来RAGと比較する。
+- Data and results: 再帰要約検索で複数taskを改善し、GPT-4との組合せでQuALITYの従来best accuracyから絶対20 percentage points改善と要旨は報告する。
+- Novelty: 元chunkの近傍検索に加え、文書をまたぐ階層的要約を検索対象に含める。
+- Limitations: 編者の注意: 要約treeの構築費用と、抽象化で根拠・細部が失われる可能性を別途評価する。20pointは指定benchmark・構成での値で全RAGの改善幅ではない。
+
 ### Paper: RAG-Fusion: a New Take on Retrieval-Augmented Generation
 - Source: arXiv
 - Canonical ID: arxiv:2402.03367
@@ -982,6 +1306,20 @@
 - Data and results: Infineonの製品情報取得の場面で、accuracy・関連性・包括性を手動評価し、多queryで内容が充実する例を報告。要旨にsample数や数値比較はない。
 - Novelty: 本研究は、複数のクエリ生成とReciprocal Rank Fusion (RRF)の組み合わせによる情報検索の高度化を示した点にある。
 - Limitations: 著者は生成queryの関連性が不足するとtopicから逸脱する回答があると報告する。編者の注意: 製品情報の事例評価で、全RAG用途への優越を確立したものではない。
+
+### Paper: CodeAgent: Autonomous Communicative Agents for Code Review
+- Source: arXiv
+- Canonical ID: arxiv:2402.02172
+- Publication date: 2024-02-03
+- URL: https://arxiv.org/abs/2402.02172
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 複数のcode review agentにQA-Checkerを加え、元のreview質問への適合を監督する。
+- Objective: 単一入出力modelでは難しい協調的なcode reviewを自動化する。
+- Methods: commit messageとの不一致、脆弱性導入、style順守、修正提案の四taskを評価し、supervisory agentが各agentの寄与を確認する。
+- Data and results: 四つのreview taskで有効性と当時の先端性能を報告し、data・codeを公開。要旨にmetric別scoreはない。
+- Novelty: role分担だけでなく、初期review目的へ議論を戻す監督componentを組み込む。
+- Limitations: 編者の注意: QA-Checkerによる監督は脆弱性不存在やreview完全性の証明ではない。四taskの範囲・判定基準・追加推論費用を揃えて比較する必要がある。
 
 ### Paper: AnyTool: Self-Reflective, Hierarchical Agents for Large-Scale API Calls
 - Source: arXiv
@@ -1011,6 +1349,34 @@
 - Novelty: 本アプローチは、ロボットシーケンスや大規模動画データなど多様なソースを活用する汎用性が強みである。
 - Limitations: 編者の注意: 三分野での出力例は汎用性の検証の一部であり、未見の任意taskの達成や臨床有効性を保証しない。healthcareの患者転帰や前向き検証は要旨から確認できない。
 
+### Paper: WebLINX: Real-World Website Navigation with Multi-Turn Dialogue
+- Source: arXiv
+- Canonical ID: arxiv:2402.05930
+- Publication date: 2024-02-08
+- URL: https://arxiv.org/abs/2402.05930
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 複数turnのuser指示に従う実Web navigationを、大規模な実演軌跡で評価するWebLINX。
+- Objective: 会話の進行に応じて変わる指示と巨大なWeb入力をagentが扱えるかを調べる。
+- Methods: 150超site・2,300専門家実演・100,000相互作用を収集。関連elementをrankしてHTMLを絞り、screenshot・行動履歴と併せ各modelを評価する。
+- Data and results: 小さな微調整decoderが最良zero-shot LMや一部の大きな微調整multimodal modelを上回るが、全微調整modelが未知siteへの汎化に苦戦すると報告。
+- Novelty: 単発指示から会話型Web navigationへ拡張し、入力選別と人の行動再現を共通dataで比較する。
+- Limitations: 著者は未知site汎化の難しさを明記する。編者の注意: 人の行動再現を測る設定と、live taskの最終成功率は区別し、微調整ありとzero-shotのdata差も考慮する。
+
+### Paper: WorkArena: How Capable Are Web Agents at Solving Common Knowledge Work Tasks?
+- Source: arXiv
+- Canonical ID: arxiv:2403.07718
+- Publication date: 2024-03-12
+- URL: https://arxiv.org/abs/2403.07718
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: ServiceNow上の33taskで企業Web操作を測り、BrowserGymを提供するWorkArena。
+- Objective: 一般的な知識労働の日常taskを、browser agentがどの程度遂行できるか調べる。
+- Methods: remote-hostedのServiceNow benchmarkと、豊富なaction・multimodal観測を備えるBrowserGymを構築し、公開・閉鎖LM agentを比較する。
+- Data and results: 完全自動化には大きなgapがあり、公開・閉鎖LMの性能差も大きいと報告。要旨に各modelの成功率はない。
+- Novelty: 企業softwareの日常操作を共通の評価対象とし、agent設計・評価を行う環境と併せて提供する。
+- Limitations: 編者の注意: 原著の33taskはWorkArena++の682taskとは別。単一platformでの結果を、全企業systemや現場の生産性効果にそのまま一般化しない。
+
 ### Paper: RAFT: Adapting Language Model to Domain Specific RAG
 - Source: arXiv
 - Canonical ID: arxiv:2403.10131
@@ -1024,6 +1390,20 @@
 - Data and results: PubMed, HotpotQA, Gorillaデータセットで一貫して性能が向上し、ドメイン特化型RAGの改善策となる。
 - Novelty: 関連文書から質問への回答に必要な正確な引用を伴う学習プロセスを導入した点。
 - Limitations: 編者の注意: in-domainのopen-book設定での改善であり、未知domainへのzero-shot転移の保証ではない。引用を生成する学習と、実際の引用の正確性・sourceの信頼性は別途評価する。
+
+### Paper: Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity
+- Source: arXiv
+- Canonical ID: arxiv:2403.14403
+- Publication date: 2024-03-21
+- URL: https://arxiv.org/abs/2403.14403
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 質問の複雑さを予測し、検索なし・単回・反復RAGを選ぶAdaptive-RAG。
+- Objective: 単純な質問の余計な計算と、複雑な質問への検索不足を両方減らす。
+- Methods: modelの予測結果とdatasetの性質から自動labelを集め、小LM classifierでquery複雑度を予測する。三種の回答戦略を動的に切り替える。
+- Data and results: 複数難度を含むopen-domain QAで、適応検索を含むbaselineに対して効率とaccuracyを改善すると報告。要旨に具体値はない。
+- Novelty: 検索の有無だけでなく、必要な検索の深さを小型classifierのroute選択として学習する。
+- Limitations: 編者の注意: classifierの誤routeと自動labelのbiasに依存する。queryの見かけの複雑さが必要な根拠量を常に正しく表す保証や、全domainの最適routingではない。
 
 ### Paper: AutoCodeRover: Autonomous Program Improvement
 - Source: arXiv
@@ -1039,6 +1419,48 @@
 - Novelty: ソフトウェアプロジェクトをファイル群としてではなく、プログラム構造（AST）として扱う点に新規性がある。
 - Limitations: 著者はtestを使うfault localizationをtest suiteが利用可能な場合に限定する。編者の注意: 19%はLite版であり、SWE-bench全体の成功率や現在の価格ではない。
 
+### Paper: OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments
+- Source: arXiv
+- Canonical ID: arxiv:2404.07972
+- Publication date: 2024-04-11
+- URL: https://arxiv.org/abs/2404.07972
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 実Web・desktop appとfile操作を含む369taskを、実行結果で採点するOSWorld。
+- Objective: 特定appに限られないcomputer agentの実務能力を、再現可能な環境で調べる。
+- Methods: 初期状態とtaskごとの実行評価scriptを備え、複数OS上の実環境を構成。app横断workflowでLLM/VLM agentと人間を比較する。
+- Data and results: 原著では人間72.36%超に対しbest model12.24%成功を報告し、GUI groundingと操作知識に主な問題を見いだす。
+- Novelty: text回答だけでなく、実computer内での状態変化をtask固有のscriptで評価する統合基盤を提供する。
+- Limitations: 編者の注意: OS対応の範囲と、各OSで同数・同条件のtaskを評価したことは同義ではない。数値は原著時点の設定で、現在のagent一般の成功率ではない。
+
+### Paper: RAGCache: Efficient Knowledge Caching for Retrieval-Augmented Generation
+- Source: arXiv
+- Canonical ID: arxiv:2404.12457
+- Publication date: 2024-04-18
+- URL: https://arxiv.org/abs/2404.12457
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 取得知識の中間状態をGPU・host階層にcacheし、RAGの待ち時間とthroughputを改善する。
+- Objective: 知識を長いcontextへ注入するRAGの計算・memory費用を減らす。
+- Methods: 中間状態をknowledge treeへ整理し、LLM推論と検索patternを考慮する置換policyでcacheする。retrievalとinferenceも動的に重ね、vLLM/Faiss上で評価する。
+- Data and results: vLLMとFaissの統合baselineに対し、TTFTを最大4倍短縮、throughputを最大2.1倍に改善と報告。
+- Novelty: 回答textだけでなく、取得知識の推論中間状態をRAG専用の階層cacheとして再利用する。
+- Limitations: 編者の注意: 最大値はworkload・hit率・memory条件に依存する。TTFT短縮と全回答完了時間は別で、検索・生成の正確性を改善する手法とは異なる。
+
+### Paper: From Local to Global: A Graph RAG Approach to Query-Focused Summarization
+- Source: arXiv
+- Canonical ID: arxiv:2404.16130
+- Publication date: 2024-04-24
+- URL: https://arxiv.org/abs/2404.16130
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: entity graphとcommunity要約で、corpus全体を問うglobalな質問へ答えるGraphRAG。
+- Objective: 個別の根拠取得が中心のRAGと、大量文書のquery-focused summarizationの長所を結ぶ。
+- Methods: LLMでentity knowledge graphを作り、関連entityのcommunity要約を事前生成する。質問ごとに各要約から部分回答を作り、統合回答へまとめる。
+- Data and results: 約100万token規模のdatasetのglobal sensemaking質問で、通常RAGより回答の包括性・多様性が大きく改善と報告。要旨に数値はない。
+- Novelty: 短い関連箇所の取得から、corpus全体の構造を事前要約し集約する検索・生成へ拡張する。
+- Limitations: 編者の注意: 主評価はglobalな質問であり、局所的なfact QAの全てに勝る意味ではない。graph・要約の事前生成費用や抽出誤りを含めて比較する必要がある。
+
 ### Paper: SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering
 - Source: arXiv
 - Canonical ID: arxiv:2405.15793
@@ -1052,6 +1474,50 @@
 - Data and results: SWE-benchとHumanEvalFixでSOTAを達成し、それぞれpass@1率12.5%、87.7%を記録した。
 - Novelty: エージェントの能力を引き出すため、専用のACIを導入し、自律的なコンピューター利用を可能にした点。
 - Limitations: 編者の注意: 12.5%はSWE-bench、87.7%はHumanEvalFixという別taskのpass@1である。SWE-bench Liteや後年のVerified版の値と直接比較せず、model・interface・実行予算を揃える。
+
+### Paper: Octo: An Open-Source Generalist Robot Policy
+- Source: arXiv
+- Canonical ID: arxiv:2405.12213
+- Publication date: 2024-05-20
+- URL: https://arxiv.org/abs/2405.12213
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 多様なrobot経験で事前学習し、新しい観測・action空間へ適応する公開policy Octo。
+- Objective: 新robotごとの一からの学習を減らし、sensorや制御形式が異なる設定へ効率よく移す。
+- Methods: Open X-Embodimentの800,000軌跡でTransformer policyを学習。言語またはgoal画像で指示し、九platformで適応と構造・dataのablationを評価する。
+- Data and results: 新しい観測・action空間へ有効に微調整でき、標準consumer GPUで数時間の適応が可能と報告。要旨に全platform共通の成功率はない。
+- Novelty: 特定robot用policyだけでなく、異なる入力・出力へ微調整しやすい汎用初期値を公開する。
+- Limitations: 編者の注意: generalistは新しい全robotへの無調整成功を意味しない。in-domain dataとfine-tuningの条件、platformごとの評価taskの違いを確認する必要がある。
+
+### Paper: AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents
+- Source: arXiv
+- Canonical ID: arxiv:2405.14573
+- Publication date: 2024-05-23
+- URL: https://arxiv.org/abs/2405.14573
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 20の実Android appでtaskを動的構成し、再現可能な状態評価を行うAndroidWorld。
+- Objective: 固定testだけでは見えないtask変動への頑健性とmobile操作能力を評価する。
+- Methods: 116のparameter化taskに初期化・成功判定・後処理を実装し、状態を変更・検査する。agent比較、desktop agentのmobile適用、task variationを評価する。
+- Data and results: best agentは30.6%成功。desktop由来agentはmobileで劣り、task変形でも成績が大きく変わると報告する。
+- Novelty: 自然言語の表現やtask parameterを変えられる動的構成と、device状態による採点を組み合わせる。
+- Limitations: 編者の注意: 無制限に生成可能なのは設計されたtask族のinstanceで、全app機能や全user意図の網羅ではない。30.6%は原著の評価構成に関する値である。
+
+### Paper: OpenVLA: An Open-Source Vision-Language-Action Model
+- Source: arXiv
+- Canonical ID: arxiv:2406.09246
+- Publication date: 2024-06-13
+- URL: https://arxiv.org/abs/2406.09246
+- read_level: full_text
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 7Bの公開VLAでrobot制御と効率的な適応・量子化を調べるOpenVLA。
+- Objective: 閉鎖VLAへの依存と、新robotへ微調整する費用を減らす。
+- Methods: Llama 2とDINOv2/SigLIP特徴を組み、970,000実演で学習。一般操作、LoRA、低精度推論を評価する。
+- Data and results: 29task等でRT-2-Xより成功率が絶対16.5point高いと要旨は報告。別の縮小構成の8task/80rolloutではBF16 71.3%、int4 71.9%、int8 58.1%で、int8の低速化が制御に影響した。
+- Novelty: 公開VLAの重み・学習基盤と、適応・推論効率を実robot評価まで結び付ける。
+- Limitations: 著者は単一画像入力、高周波制御・器用さ、通常90%未満の信頼性を課題とする。量子化実験は小さいdata混合・SigLIPのみの構成で、主modelと同一条件ではない。
+
+本文の照合箇所: [5.3 脚注4、5.4/Table 2、6 Limitations](https://arxiv.org/html/2406.09246v3)。
 
 ### Paper: $τ$-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains
 - Source: arXiv
@@ -1081,6 +1547,50 @@
 - Novelty: 自律型エージェントに頼らず、単純で解釈可能な三段階プロセスを用いるアプローチを提案した点。
 - Limitations: 著者はSWE-bench Liteの問題文に正解漏出や情報不足・誤誘導がある例を報告する。編者の注意: 最高という主張は当時の比較対象であり、固定手順があらゆる開発taskで勝る意味ではない。
 
+### Paper: WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks
+- Source: arXiv
+- Canonical ID: arxiv:2407.05291
+- Publication date: 2024-07-07
+- URL: https://arxiv.org/abs/2407.05291
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 知識労働の複合workflowを682taskで測るWorkArena++を提案する。
+- Objective: 企業環境で計画・推論が実際の自律task解決へつながるかを評価する。
+- Methods: 計画、論理・算術、検索、文脈理解を要するtaskを構成し、LLM・VLM・人間を比較。正解付き観測・行動traceを大量生成する機構も提供する。
+- Data and results: 上位modelにも職場assistantとしての課題が残ると報告。682taskと訓練用trace生成機構が成果で、要旨にmodel別成功率はない。
+- Novelty: 単純な画面操作から、複数能力を組み合わせる企業のworkflowへ評価を進める。
+- Limitations: 編者の注意: 現実を模したbenchmarkと実企業での生産性・誤操作の影響は異なる。生成された正解軌跡を、唯一の許される手順と解釈しない。
+
+### Paper: ToolSandbox: A Stateful, Conversational, Interactive Evaluation Benchmark for LLM Tool Use Capabilities
+- Source: arXiv
+- Canonical ID: arxiv:2408.04682
+- Publication date: 2024-08-08
+- URL: https://arxiv.org/abs/2408.04682
+- read_level: abstract
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: tool間の状態依存と対話中の実行を含めるToolSandboxで、従来評価の抜けを補う。
+- Objective: 単発・stateless APIや固定対話軌跡では測れない、状態を持つtool利用を評価する。
+- Methods: stateful実行、暗黙のtool間依存、on-policy user simulator、任意軌跡の中間・最終milestone評価を統合する。
+- Data and results: 公開modelとproprietary modelに性能差を報告し、状態依存、canonicalization、情報不足のtaskは上位modelにも難しいと示す。要旨にtask別scoreはない。
+- Novelty: 正しい単一呼出だけでなく、状態と情報が変わる対話・tool系列を評価単位にする。
+- Limitations: 編者の注意: userはsimulationで、実利用者への有効性試験ではない。milestone達成と最終成功・安全性は別尺度であり、評価taskの状態設計にも依存する。
+
+### Paper: LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory
+- Source: arXiv
+- Canonical ID: arxiv:2410.10813
+- Publication date: 2024-10-14
+- URL: https://arxiv.org/abs/2410.10813
+- read_level: full_text
+- Tags: 基礎文献, エージェント・検索・記憶・協調
+- Summary: 長期対話記憶の五能力を500問で測り、索引・検索・読み取りの設計を分解する。
+- Objective: 情報抽出、複数session推論、時間推論、知識更新、棄権を長い履歴で評価する。
+- Methods: 編集した模擬根拠sessionと背景履歴を組み、QAをGPT-4oで採点、検索をRecall/NDCGで評価する。索引分解・key拡張・時間queryを比較する。
+- Data and results: v1のGPT-4oでは根拠sessionのみaccuracy .870に対し約115k token履歴で.606、相対30.3%低下。全履歴を持つことと必要な記憶を使えることの差を示す。
+- Novelty: 長期記憶を保存容量だけでなく、索引・検索・回答という段階別の制御点として評価する。
+- Limitations: 編者の注意: 30.3%は相対低下で30.3pointではない。QAはLLM judge、商用systemは別の97問・短い履歴で、両評価を同条件とみなさない。
+
+本文の照合箇所: [3.3–3.5、Figure 4、4.1](https://arxiv.org/html/2410.10813v1)。
+
 <!-- PAPER_IDS -->
 arxiv:1410.3916
 arxiv:1503.08895
@@ -1089,6 +1599,8 @@ arxiv:1606.01540
 arxiv:1606.03126
 arxiv:1707.03389
 arxiv:1806.01261
+arxiv:1806.11532
+arxiv:1810.08272
 arxiv:1911.00172
 arxiv:2002.08909
 arxiv:2004.04906
@@ -1098,28 +1610,44 @@ arxiv:2006.08381
 arxiv:2007.12770
 arxiv:2010.03768
 arxiv:2104.07567
+arxiv:2105.13231
 arxiv:2106.01345
 arxiv:2112.04426
 arxiv:2112.09332
+arxiv:2203.07814
+arxiv:2203.07540
 arxiv:2204.01691
+arxiv:2207.01206
+arxiv:2207.05608
 arxiv:2209.07753
 arxiv:2209.11302
 arxiv:2210.03629
+arxiv:2212.06817
 arxiv:2302.04761
 arxiv:2303.03378
+arxiv:2303.04137
 arxiv:2303.11366
 arxiv:2303.17580
+arxiv:2303.17760
+arxiv:2304.01904
 arxiv:2304.03442
 arxiv:2304.05128
 arxiv:2304.05376
 arxiv:2304.08244
 arxiv:2304.12244
+arxiv:2305.06983
+arxiv:2305.10250
+arxiv:2305.11554
 arxiv:2305.14325
 arxiv:2305.18323
 arxiv:2305.14992
+arxiv:2305.15334
 arxiv:2305.16291
 arxiv:2305.16504
 arxiv:2306.03314
+arxiv:2306.05301
+arxiv:2306.06070
+arxiv:2306.06624
 arxiv:2306.13304
 arxiv:2307.02477
 arxiv:2307.03172
@@ -1138,24 +1666,42 @@ arxiv:2308.11432
 arxiv:2309.00986
 arxiv:2309.07864
 arxiv:2309.07870
+arxiv:2309.15217
 arxiv:2310.03714
 arxiv:2310.04406
 arxiv:2310.06770
 arxiv:2310.08319
 arxiv:2310.08560
 arxiv:2310.08864
+arxiv:2310.10634
 arxiv:2310.11511
 arxiv:2312.03815
 arxiv:2312.13010
 arxiv:2401.05566
 arxiv:2401.13178
+arxiv:2401.13649
+arxiv:2401.15884
 arxiv:2401.16467
+arxiv:2401.18059
 arxiv:2402.03367
+arxiv:2402.02172
 arxiv:2402.04253
 arxiv:2402.05929
+arxiv:2402.05930
+arxiv:2403.07718
 arxiv:2403.10131
+arxiv:2403.14403
 arxiv:2404.05427
+arxiv:2404.07972
+arxiv:2404.12457
+arxiv:2404.16130
 arxiv:2405.15793
+arxiv:2405.12213
+arxiv:2405.14573
+arxiv:2406.09246
 arxiv:2406.12045
 arxiv:2407.01489
+arxiv:2407.05291
+arxiv:2408.04682
+arxiv:2410.10813
 <!-- /PAPER_IDS -->
