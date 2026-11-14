@@ -23,7 +23,8 @@
   "properties": {
     "id": {
       "type": "string",
-      "pattern": "^(arxiv:[0-9]{4}\\.[0-9]{4,5}|pmid:[0-9]{6,9})$"
+      "pattern": "^(arxiv:[0-9]{4}\\.[0-9]{4,5}|pmid:[0-9]{6,9})$",
+      "x-markdown-label": "Canonical ID"
     },
     "title": {
       "type": "string",
@@ -33,26 +34,30 @@
       "enum": [
         "arXiv",
         "PubMed"
-      ]
+      ],
+      "x-markdown-label": "Source"
     },
     "url": {
       "type": "string",
       "format": "uri",
-      "pattern": "^https://(arxiv\\.org/abs/[0-9]{4}\\.[0-9]{4,5}|pubmed\\.ncbi\\.nlm\\.nih\\.gov/[0-9]{6,9}/?)$"
+      "pattern": "^https://(arxiv\\.org/abs/[0-9]{4}\\.[0-9]{4,5}|pubmed\\.ncbi\\.nlm\\.nih\\.gov/[0-9]{6,9}/?)$",
+      "x-markdown-label": "URL"
     },
     "date": {
       "type": [
         "string",
         "null"
       ],
-      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+      "x-markdown-label": "Publication date"
     },
     "read_level": {
       "enum": [
         "bibliographic",
         "abstract",
         "full_text"
-      ]
+      ],
+      "x-markdown-label": "read_level"
     },
     "tags": {
       "type": "array",
@@ -60,43 +65,50 @@
         "type": "string",
         "minLength": 1
       },
-      "uniqueItems": true
+      "uniqueItems": true,
+      "x-markdown-label": "Tags"
     },
     "summary": {
       "type": [
         "string",
         "null"
-      ]
+      ],
+      "x-markdown-label": "Summary"
     },
     "objective": {
       "type": [
         "string",
         "null"
-      ]
+      ],
+      "x-markdown-label": "Objective"
     },
     "methods": {
       "type": [
         "string",
         "null"
-      ]
+      ],
+      "x-markdown-label": "Methods"
     },
     "results": {
       "type": [
         "string",
         "null"
-      ]
+      ],
+      "x-markdown-label": "Data and results"
     },
     "novelty": {
       "type": [
         "string",
         "null"
-      ]
+      ],
+      "x-markdown-label": "Novelty"
     },
     "limitations": {
       "type": [
         "string",
         "null"
-      ]
+      ],
+      "x-markdown-label": "Limitations"
     },
     "report": {
       "type": "string",
