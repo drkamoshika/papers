@@ -1,0 +1,1218 @@
+{
+  "schema_version": 1,
+  "policy": "arXiv v1 submitted date; PubMed earliest exact electronic publication date, then exact journal issue date; NEVER reportDate.",
+  "records": {
+    "arxiv:2608.06253": {
+      "date": "2026-08-06",
+      "source_url": "https://arxiv.org/abs/2608.06253",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.06265": {
+      "date": "2026-08-06",
+      "source_url": "https://arxiv.org/abs/2608.06265",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.06366": {
+      "date": "2026-08-06",
+      "source_url": "https://arxiv.org/abs/2608.06366",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.11656": {
+      "date": "2026-08-12",
+      "source_url": "https://arxiv.org/abs/2608.11656",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.13545": {
+      "date": "2026-08-13",
+      "source_url": "https://arxiv.org/abs/2608.13545",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.14290": {
+      "date": "2026-08-14",
+      "source_url": "https://arxiv.org/abs/2608.14290",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.14354": {
+      "date": "2026-08-14",
+      "source_url": "https://arxiv.org/abs/2608.14354",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.14465": {
+      "date": "2026-08-14",
+      "source_url": "https://arxiv.org/abs/2608.14465",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.17268": {
+      "date": "2026-08-18",
+      "source_url": "https://arxiv.org/abs/2608.17268",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.18177": {
+      "date": "2026-08-18",
+      "source_url": "https://arxiv.org/abs/2608.18177",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.18433": {
+      "date": "2026-08-19",
+      "source_url": "https://arxiv.org/abs/2608.18433",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.18647": {
+      "date": "2026-08-19",
+      "source_url": "https://arxiv.org/abs/2608.18647",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.18704": {
+      "date": "2026-08-19",
+      "source_url": "https://arxiv.org/abs/2608.18704",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.18919": {
+      "date": "2026-08-19",
+      "source_url": "https://arxiv.org/abs/2608.18919",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.18982": {
+      "date": "2026-08-19",
+      "source_url": "https://arxiv.org/abs/2608.18982",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.19072": {
+      "date": "2026-08-19",
+      "source_url": "https://arxiv.org/abs/2608.19072",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.19746": {
+      "date": "2026-08-20",
+      "source_url": "https://arxiv.org/abs/2608.19746",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.19831": {
+      "date": "2026-08-20",
+      "source_url": "https://arxiv.org/abs/2608.19831",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.19842": {
+      "date": "2026-08-20",
+      "source_url": "https://arxiv.org/abs/2608.19842",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.20274": {
+      "date": "2026-08-20",
+      "source_url": "https://arxiv.org/abs/2608.20274",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.20280": {
+      "date": "2026-08-20",
+      "source_url": "https://arxiv.org/abs/2608.20280",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.20281": {
+      "date": "2026-08-20",
+      "source_url": "https://arxiv.org/abs/2608.20281",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.20290": {
+      "date": "2026-08-20",
+      "source_url": "https://arxiv.org/abs/2608.20290",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.20314": {
+      "date": "2026-08-20",
+      "source_url": "https://arxiv.org/abs/2608.20314",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.20315": {
+      "date": "2026-08-20",
+      "source_url": "https://arxiv.org/abs/2608.20315",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.20316": {
+      "date": "2026-08-20",
+      "source_url": "https://arxiv.org/abs/2608.20316",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.20331": {
+      "date": "2026-08-20",
+      "source_url": "https://arxiv.org/abs/2608.20331",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.23458": {
+      "date": "2026-08-24",
+      "source_url": "https://arxiv.org/abs/2608.23458",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.23461": {
+      "date": "2026-08-24",
+      "source_url": "https://arxiv.org/abs/2608.23461",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.23463": {
+      "date": "2026-08-24",
+      "source_url": "https://arxiv.org/abs/2608.23463",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.23468": {
+      "date": "2026-08-24",
+      "source_url": "https://arxiv.org/abs/2608.23468",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.23473": {
+      "date": "2026-08-24",
+      "source_url": "https://arxiv.org/abs/2608.23473",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.23480": {
+      "date": "2026-08-24",
+      "source_url": "https://arxiv.org/abs/2608.23480",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.23531": {
+      "date": "2026-08-24",
+      "source_url": "https://arxiv.org/abs/2608.23531",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.23538": {
+      "date": "2026-08-24",
+      "source_url": "https://arxiv.org/abs/2608.23538",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.23551": {
+      "date": "2026-08-24",
+      "source_url": "https://arxiv.org/abs/2608.23551",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.23554": {
+      "date": "2026-08-24",
+      "source_url": "https://arxiv.org/abs/2608.23554",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.23566": {
+      "date": "2026-08-24",
+      "source_url": "https://arxiv.org/abs/2608.23566",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.27348": {
+      "date": "2026-08-27",
+      "source_url": "https://arxiv.org/abs/2608.27348",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.27351": {
+      "date": "2026-08-27",
+      "source_url": "https://arxiv.org/abs/2608.27351",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.27370": {
+      "date": "2026-08-27",
+      "source_url": "https://arxiv.org/abs/2608.27370",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.27391": {
+      "date": "2026-08-27",
+      "source_url": "https://arxiv.org/abs/2608.27391",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.27395": {
+      "date": "2026-08-27",
+      "source_url": "https://arxiv.org/abs/2608.27395",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.27397": {
+      "date": "2026-08-27",
+      "source_url": "https://arxiv.org/abs/2608.27397",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.27402": {
+      "date": "2026-08-27",
+      "source_url": "https://arxiv.org/abs/2608.27402",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.27409": {
+      "date": "2026-08-27",
+      "source_url": "https://arxiv.org/abs/2608.27409",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.27420": {
+      "date": "2026-08-27",
+      "source_url": "https://arxiv.org/abs/2608.27420",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.27448": {
+      "date": "2026-08-27",
+      "source_url": "https://arxiv.org/abs/2608.27448",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.27454": {
+      "date": "2026-08-27",
+      "source_url": "https://arxiv.org/abs/2608.27454",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.27455": {
+      "date": "2026-08-27",
+      "source_url": "https://arxiv.org/abs/2608.27455",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2608.31013": {
+      "date": "2026-08-31",
+      "source_url": "https://arxiv.org/abs/2608.31013",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2609.09134": {
+      "date": "2026-09-08",
+      "source_url": "https://arxiv.org/abs/2609.09134",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2609.17895": {
+      "date": "2026-09-15",
+      "source_url": "https://arxiv.org/abs/2609.17895",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2610.06156": {
+      "date": "2026-10-05",
+      "source_url": "https://arxiv.org/abs/2610.06156",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.01527": {
+      "date": "2026-11-01",
+      "source_url": "https://arxiv.org/abs/2611.01527",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.02011": {
+      "date": "2026-11-01",
+      "source_url": "https://arxiv.org/abs/2611.02011",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.03374": {
+      "date": "2026-11-02",
+      "source_url": "https://arxiv.org/abs/2611.03374",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.03412": {
+      "date": "2026-11-02",
+      "source_url": "https://arxiv.org/abs/2611.03412",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.03424": {
+      "date": "2026-11-02",
+      "source_url": "https://arxiv.org/abs/2611.03424",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.03434": {
+      "date": "2026-11-02",
+      "source_url": "https://arxiv.org/abs/2611.03434",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.03523": {
+      "date": "2026-11-02",
+      "source_url": "https://arxiv.org/abs/2611.03523",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.03551": {
+      "date": "2026-11-02",
+      "source_url": "https://arxiv.org/abs/2611.03551",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.03575": {
+      "date": "2026-11-02",
+      "source_url": "https://arxiv.org/abs/2611.03575",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.03601": {
+      "date": "2026-11-02",
+      "source_url": "https://arxiv.org/abs/2611.03601",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.03618": {
+      "date": "2026-11-02",
+      "source_url": "https://arxiv.org/abs/2611.03618",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.03634": {
+      "date": "2026-11-02",
+      "source_url": "https://arxiv.org/abs/2611.03634",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.03983": {
+      "date": "2026-11-02",
+      "source_url": "https://arxiv.org/abs/2611.03983",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.04879": {
+      "date": "2026-11-03",
+      "source_url": "https://arxiv.org/abs/2611.04879",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.05036": {
+      "date": "2026-11-03",
+      "source_url": "https://arxiv.org/abs/2611.05036",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.05251": {
+      "date": "2026-11-03",
+      "source_url": "https://arxiv.org/abs/2611.05251",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.05263": {
+      "date": "2026-11-03",
+      "source_url": "https://arxiv.org/abs/2611.05263",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.05269": {
+      "date": "2026-11-03",
+      "source_url": "https://arxiv.org/abs/2611.05269",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.05320": {
+      "date": "2026-11-03",
+      "source_url": "https://arxiv.org/abs/2611.05320",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.05345": {
+      "date": "2026-11-03",
+      "source_url": "https://arxiv.org/abs/2611.05345",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06585": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06585",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06674": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06674",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06682": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06682",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06764": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06764",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06768": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06768",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06777": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06777",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06841": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06841",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06858": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06858",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06866": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06866",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06868": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06868",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06876": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06876",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06881": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06881",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06897": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06897",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06910": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06910",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.06914": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.06914",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.07976": {
+      "date": "2026-11-05",
+      "source_url": "https://arxiv.org/abs/2611.07976",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.08175": {
+      "date": "2026-11-05",
+      "source_url": "https://arxiv.org/abs/2611.08175",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.08196": {
+      "date": "2026-11-05",
+      "source_url": "https://arxiv.org/abs/2611.08196",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.08219": {
+      "date": "2026-11-05",
+      "source_url": "https://arxiv.org/abs/2611.08219",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.08281": {
+      "date": "2026-11-05",
+      "source_url": "https://arxiv.org/abs/2611.08281",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.08285": {
+      "date": "2026-11-05",
+      "source_url": "https://arxiv.org/abs/2611.08285",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.08312": {
+      "date": "2026-11-05",
+      "source_url": "https://arxiv.org/abs/2611.08312",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.08318": {
+      "date": "2026-11-05",
+      "source_url": "https://arxiv.org/abs/2611.08318",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.08341": {
+      "date": "2026-11-05",
+      "source_url": "https://arxiv.org/abs/2611.08341",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.08390": {
+      "date": "2026-11-05",
+      "source_url": "https://arxiv.org/abs/2611.08390",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.08417": {
+      "date": "2026-11-05",
+      "source_url": "https://arxiv.org/abs/2611.08417",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.08452": {
+      "date": "2026-11-05",
+      "source_url": "https://arxiv.org/abs/2611.08452",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.08483": {
+      "date": "2026-11-05",
+      "source_url": "https://arxiv.org/abs/2611.08483",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09407": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09407",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09413": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09413",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09414": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09414",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09445": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09445",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09474": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09474",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09516": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09516",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09662": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09662",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09721": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09721",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09730": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09730",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09734": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09734",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09768": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09768",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09769": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09769",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09792": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09792",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09802": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09802",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09808": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09808",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09836": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09836",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09891": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09891",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.09894": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.09894",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.10015": {
+      "date": "2026-11-04",
+      "source_url": "https://arxiv.org/abs/2611.10015",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.10193": {
+      "date": "2026-11-06",
+      "source_url": "https://arxiv.org/abs/2611.10193",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.10486": {
+      "date": "2026-11-07",
+      "source_url": "https://arxiv.org/abs/2611.10486",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.10866": {
+      "date": "2026-11-07",
+      "source_url": "https://arxiv.org/abs/2611.10866",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.11833": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.11833",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12175": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12175",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12177": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12177",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12222": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12222",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12256": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12256",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12286": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12286",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12288": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12288",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12304": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12304",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12307": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12307",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12308": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12308",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12377": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12377",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12393": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12393",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12412": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12412",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12545": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12545",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12557": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12557",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12640": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12640",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12705": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12705",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12799": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12799",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12823": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12823",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12835": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12835",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.12886": {
+      "date": "2026-11-09",
+      "source_url": "https://arxiv.org/abs/2611.12886",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.13001": {
+      "date": "2026-11-08",
+      "source_url": "https://arxiv.org/abs/2611.13001",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.13006": {
+      "date": "2026-11-08",
+      "source_url": "https://arxiv.org/abs/2611.13006",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.13410": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.13410",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.13709": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.13709",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.13713": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.13713",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.13740": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.13740",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.13802": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.13802",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.13885": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.13885",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.13966": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.13966",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.13994": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.13994",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.14009": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.14009",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.14019": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.14019",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.14106": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.14106",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.14210": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.14210",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.14220": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.14220",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.14242": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.14242",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.14320": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.14320",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.14326": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.14326",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.14356": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.14356",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.14432": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.14432",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.14492": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.14492",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.14514": {
+      "date": "2026-11-10",
+      "source_url": "https://arxiv.org/abs/2611.14514",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.14925": {
+      "date": "2026-11-11",
+      "source_url": "https://arxiv.org/abs/2611.14925",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.15009": {
+      "date": "2026-11-11",
+      "source_url": "https://arxiv.org/abs/2611.15009",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16369": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16369",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16393": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16393",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16409": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16409",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16433": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16433",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16460": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16460",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16591": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16591",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16661": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16661",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16744": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16744",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16816": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16816",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16861": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16861",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16867": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16867",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16872": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16872",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16879": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16879",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16935": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16935",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16937": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16937",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.16991": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.16991",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.17007": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.17007",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.17031": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.17031",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.17041": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.17041",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.17048": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.17048",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.17114": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.17114",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.17128": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.17128",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.17129": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.17129",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.17160": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.17160",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.17267": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.17267",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.17294": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.17294",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.17304": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.17304",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2611.17316": {
+      "date": "2026-11-12",
+      "source_url": "https://arxiv.org/abs/2611.17316",
+      "basis": "arxiv-v1"
+    },
+    "pmid:41879927": {
+      "date": "2026-03-25",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41879927/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:41880917": {
+      "date": "2026-03-22",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41880917/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:41927986": {
+      "date": "2026-04-02",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/41927986/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42008829": {
+      "date": "2026-04-20",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42008829/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42066927": {
+      "date": "2026-04-29",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42066927/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42107669": {
+      "date": "2026-05-08",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42107669/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42214316": {
+      "date": "2026-05-12",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42214316/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42286322": {
+      "date": "2026-06-12",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42286322/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42303756": {
+      "date": "2026-06-17",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42303756/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42323426": {
+      "date": "2026-06-20",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42323426/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42331228": {
+      "date": "2026-06-22",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42331228/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42373953": {
+      "date": "2026-06-29",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42373953/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42442269": {
+      "date": "2026-07-13",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42442269/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42492159": {
+      "date": "2026-07-18",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42492159/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42509322": {
+      "date": "2026-07-27",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42509322/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42525208": {
+      "date": "2026-07-29",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42525208/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42543469": {
+      "date": "2026-08-03",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42543469/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42545345": {
+      "date": "2026-08-03",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42545345/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42546187": {
+      "date": "2026-08-03",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42546187/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42550187": {
+      "date": "2026-08-04",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42550187/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42550965": {
+      "date": "2026-08-04",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42550965/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42551868": {
+      "date": "2026-08-04",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42551868/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42553746": {
+      "date": "2026-07-22",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42553746/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42560867": {
+      "date": "2026-08-06",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42560867/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42561260": {
+      "date": "2026-08-03",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42561260/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42585053": {
+      "date": "2026-08-12",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42585053/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42588739": {
+      "date": "2026-08-06",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42588739/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42594876": {
+      "date": "2026-08-13",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42594876/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42607036": {
+      "date": "2026-08-17",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42607036/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42607666": {
+      "date": "2026-08-17",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42607666/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42620513": {
+      "date": "2026-08-05",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42620513/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42620545": {
+      "date": "2026-08-05",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42620545/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42623072": {
+      "date": "2026-08-03",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42623072/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42626192": {
+      "date": "2026-08-06",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42626192/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42642916": {
+      "date": "2026-08-26",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42642916/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42709964": {
+      "date": "2026-09-08",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42709964/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42714033": {
+      "date": "2026-09-09",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42714033/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42852999": {
+      "date": "2026-10-09",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42852999/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42853745": {
+      "date": "2026-10-09",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42853745/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42957896": {
+      "date": "2026-10-29",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42957896/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42980310": {
+      "date": "2026-11-04",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42980310/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42982917": {
+      "date": "2026-11-04",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42982917/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42982942": {
+      "date": "2026-11-04",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42982942/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42995166": {
+      "date": "2026-11-06",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42995166/",
+      "basis": "pubmed-article-electronic"
+    }
+  },
+  "unresolved": {
+    "pmid:42213562": "Primary-source exact publication date not available",
+    "pmid:42430567": "Primary-source exact publication date not available",
+    "pmid:42482648": "Primary-source exact publication date not available",
+    "pmid:42503595": "Primary-source exact publication date not available",
+    "pmid:42547906": "Primary-source exact publication date not available"
+  }
+}
