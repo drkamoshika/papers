@@ -4695,9 +4695,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/31304302/",
         "date": "2018-05-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:31367026",
@@ -4705,9 +4706,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/31367026/",
         "date": "2019-07-31",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "full_text"
       },
       {
         "id": "pmid:27185194",
@@ -4715,9 +4717,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/27185194/",
         "date": "2016-05-17",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:34017034",
@@ -4725,19 +4728,21 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/34017034/",
         "date": "2021-05-20",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:27521897",
         "title": "Using recurrent neural network models for early detection of heart failure onset",
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/27521897/",
-        "date": "2017-03-01",
-        "status": "unreviewed",
-        "date_basis": "PubMed exact journal publication date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "date": "2016-08-13",
+        "status": "reviewed_published",
+        "date_basis": "出版社PDFのAdvance Access Publication Dateを採用。巻号の2017年3月と区別する。出典: https://academic.oup.com/jamia/article/24/2/361/2631499",
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:32346050",
@@ -4745,9 +4750,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/32346050/",
         "date": "2020-04-28",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:31209213",
@@ -4755,9 +4761,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/31209213/",
         "date": "2019-06-17",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:26679719",
@@ -4765,9 +4772,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/26679719/",
         "date": "2016-02-13",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:29489489",
@@ -4775,9 +4783,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/29489489/",
         "date": null,
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "No exact electronic or journal day in PubMed XML",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:27784047",
@@ -4785,9 +4794,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/27784047/",
         "date": "2017-02-01",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:30385537",
@@ -4795,9 +4805,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/30385537/",
         "date": null,
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "No exact electronic or journal day in PubMed XML",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:31694707",
@@ -4805,9 +4816,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/31694707/",
         "date": "2019-11-06",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:33328078",
@@ -4815,9 +4827,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/33328078/",
         "date": "2020-03-12",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:29500022",
@@ -4825,9 +4838,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/29500022/",
         "date": "2018-01-12",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:31932807",
@@ -4835,9 +4849,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/31932807/",
         "date": "2020-01-13",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:38207039",
@@ -4845,9 +4860,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/38207039/",
         "date": "2024-01-11",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:35589549",
@@ -4855,9 +4871,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/35589549/",
         "date": "2022-05-16",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:33717639",
@@ -4865,9 +4882,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/33717639/",
         "date": null,
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "No exact electronic or journal day in PubMed XML",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:29709069",
@@ -4875,9 +4893,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/29709069/",
         "date": "2018-04-30",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:29382633",
@@ -4885,9 +4904,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/29382633/",
         "date": "2018-01-30",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:31584655",
@@ -4895,9 +4915,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/31584655/",
         "date": "2020-01-01",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed exact journal publication date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:23842533",
@@ -4905,9 +4926,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/23842533/",
         "date": "2013-07-11",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:28117445",
@@ -4915,9 +4937,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/28117445/",
         "date": "2017-01-25",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:33288961",
@@ -4925,9 +4948,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/33288961/",
         "date": "2020-12-07",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "PubMed ArticleDate Electronic",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "04-medical.md",
+        "read_level": "abstract"
       },
       {
         "id": "pmid:27898976",
@@ -6082,8 +6106,8 @@
     ]
   },
   "main_unique_papers": 556,
-  "published_unique_papers": 310,
-  "unreviewed_unique_papers": 258,
+  "published_unique_papers": 334,
+  "unreviewed_unique_papers": 234,
   "historical_appendix": [
     {
       "id": "doi:10.1038/323533a0",
@@ -6224,8 +6248,8 @@
     },
     "medical": {
       "selected": 139,
-      "published": 0,
-      "remaining": 139
+      "published": 24,
+      "remaining": 115
     },
     "structured": {
       "selected": 119,
