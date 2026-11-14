@@ -17,6 +17,10 @@ KEYS = {definition["x-markdown-label"]: key for key, definition in SCHEMA_DATA["
 REQUIRED = ("id", "title", "url", "source", "read_level")
 EMPTY = {"", "未記載", "不明", "N/A"}
 def canonical(text, report, date):
+    # Report date belongs to the report itself; never infer paper publication dates from it.
+    header_date = re.search(r"^> report_date:\s*(\d{4}-\d{2}-\d{2})\s*$", text, re.M)
+    if header_date and header_date.group(1) != date:
+        raise ValueError(f"{report}: report_date header differs from filename ({date})")
     starts = list(CANON.finditer(text))
     if not starts:
         if "schema_version: 1" in text:
@@ -109,6 +113,14 @@ def build():
                 score = lambda p: sum(len(p.get(k) or "") for k in ("summary", "objective", "methods", "results", "novelty", "limitations"))
                 if score(row) > score(old):
                     rows[row["id"]] = row
+    # A paper publication date is publishable only after primary-source verification.
+    metadata_file = ROOT / "docs" / "publication-dates.json"
+    if not metadata_file.exists():
+        raise RuntimeError("Run scripts/refresh_publication_dates.py --apply first; no verified publication-date provenance found.")
+    verified = json.loads(metadata_file.read_text(encoding="utf-8")).get("records", {})
+    for paper in rows.values():
+        if paper["date"] is not None and verified.get(paper["id"], {}).get("date") != paper["date"]:
+            raise ValueError(f"Unverified or inconsistent publication date for {paper['id']}: {paper['date']}")
     # Validate the generated data against the single machine-readable contract.
     schema = SCHEMA_DATA
     try:
