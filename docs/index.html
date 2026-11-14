@@ -90,6 +90,7 @@ function renderList() {
   );
   list.sort((a,b) => sort === "title" ? a.title.localeCompare(b.title) :
     compareDate(a,b,sort.startsWith("report") ? "reportDate" : "date",sort.endsWith("new")));
+  if (selected && !list.some(p => p.id === selected)) { selected = null; $("detail").innerHTML = '<div class="empty">論文を選択すると詳細を表示します。</div>'; }
   $("count").textContent = list.length + " 件を表示";
   $("list").innerHTML = list.length ? list.map(p => {
     const d=validDate(p.date);
