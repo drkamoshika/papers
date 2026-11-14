@@ -22,7 +22,7 @@ def parse(path):
     if not date:
         date = re.search(r"20\d{2}-\d{2}-\d{2}", text[:700])
     report_date = date.group() if date else ""
-    headings = list(re.finditer(r"^##\s+(?:\d+\.\s+)?(.+)$", text, re.M))
+    headings = list(re.finditer(r"^(?:##\s+(?:\d+\.\s+)?|\d+\.\s+)(.+)$", text, re.M))
     papers = []
     for i, h in enumerate(headings):
         title = h.group(1).strip()
