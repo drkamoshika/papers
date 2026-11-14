@@ -104,7 +104,7 @@ def arxiv_page(key: str) -> tuple[str, dict | None, str | None]:
 def xml_date(node: ET.Element | None) -> str | None:
     if node is None:
         return None
-    y, m, d = (node.findtext(k) or "").strip() for k in ("Year", "Month", "Day")
+    y, m, d = [(node.findtext(k) or "").strip() for k in ("Year", "Month", "Day")]
     if not (y and m and d):
         return None
     try:
