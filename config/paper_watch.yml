@@ -85,7 +85,7 @@ output:
   include_digest: true
   digest_top_papers: 5
   include_full_report: true
-  github_report_path: reports/daily/paper_watch_YYYY-MM-DD.md
+  github_report_path: reports/daily/YYYY-MM-DD.md
   include_paper_ids_block: true
   paper_ids_block_format: |
     <!-- PAPER_IDS -->
