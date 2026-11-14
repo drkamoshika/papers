@@ -1171,6 +1171,45 @@
       "details": "- Source: PubMed\n- canonical ID: pmid:42620513\n- Publication date: 2026-08-05\n- Authors: Satish S Gaikwad, T R Arun, Basavaraj Shrinivasa, Pragya Yadav, Babasaheb Tandale\n- Journal: Frontiers in Veterinary Science\n- URL: https://pubmed.ncbi.nlm.nih.gov/42620513/\n- read_level: abstract\n- Tags: machine learning, spatial epidemiology, One Health, uncertainty, influenza\n- Summary: 2006–2024のIndia HPAI outbreak recordsと94 predictorsを用い、H3 hexagon上でspatial risk mapping。8 base classifiersはいずれもAUC>0.76、Gaussian-process stacked meta-learnerはAUC 0.853で、Random Forest 0.851との差は小さく非有意だったが、uncertainty layerを提供した。\n- Why interesting: 単に最良AUCを競うのではなく、surveillance planningに使えるprediction uncertaintyを同時に地図化している点が実用的。\n\n### 目的\nIndiaにおけるavian influenza surveillanceを支援するnational relative spatial risk mapとuncertainty mapを構築する。\n\n### 手法\n2006-01〜2024-04のoutbreak records、buffered pseudo-absence、H3 resolution-7、94 environmental/livestock/land-cover/anthropogenic predictors。5-fold spatial block CVで8 classifiersとGaussian-process stackingを評価。\n\n### データ・実験\nnational outbreak surveillance data、spatial cross-validation。\n\n### 主な結果\n全base classifier AUC>0.76。GPR stack AUC 0.853、Random Forest AUC 0.851/Brier 0.155/ECE 0.079で差は非有意。GPR posterior SDはensemble disagreementとr=0.74。東部、北東部、沿岸部、南部の一部をpriority areaとして同定。\n\n### 新規性\nspatial risk predictionとmodel uncertaintyを同時にsurveillance layerとして提供する点。\n\n### 限界\npassive-surveillance bias、multicollinearity、prospective validation未実施。\n\n### なぜ注目したか\npublic / One Health領域で、uncertainty-aware MLを意思決定へ直接つなげる好例だから。\n\n**Medical AI extra:** study_design=retrospective spatial epidemiology/modeling; sample_size=outbreak-record countはabstractに明記なし; primary_endpoint=spatial risk prediction performance; external_validation=prospective external validationなし; prospective_or_retrospective=retrospective.\n\n---\n\n<!-- PAPER_IDS -->\npmid:42642916\npmid:42607666\npmid:42594876\npmid:42623072\npmid:42585053\npmid:42588739\npmid:42620545\npmid:42626192\npmid:42607036\npmid:42620513\n<!-- /PAPER_IDS -->"
     },
     {
+      "id": "arxiv:2609.09134",
+      "title": "Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails",
+      "url": "https://arxiv.org/abs/2609.09134",
+      "source": "arXiv",
+      "date": "2026-09-08",
+      "tags": "agent, harness evolution, fine-tuning, on-policy correction",
+      "summary": "エージェントのプロンプト・ツール・実行フックなどのharnessとモデル重みを一緒に改善する際、強いモデルの全軌跡を弱いモデルに模倣させると、改良済みharnessとの適合性が損なわれることを示した。",
+      "why": "モデル単体の学習損失が改善しても、システム全体の性能は悪化し得るという実装上の重要な問題を扱う。",
+      "reportDate": "2026-09-10",
+      "report": "reports/daily/2026-09-10.md",
+      "details": "- Source: arXiv\n- Canonical ID: arxiv:2609.09134\n- Publication date: 2026-09-08\n- Authors: Zhou Yu, Bin Bi, Shiva Kumar Pentyala, et al.\n- Category: cs.AI\n- URL: https://arxiv.org/abs/2609.09134\n- read_level: abstract\n- Tags: agent, harness evolution, fine-tuning, on-policy correction\n- Summary: エージェントのプロンプト・ツール・実行フックなどのharnessとモデル重みを一緒に改善する際、強いモデルの全軌跡を弱いモデルに模倣させると、改良済みharnessとの適合性が損なわれることを示した。\n- Why interesting: モデル単体の学習損失が改善しても、システム全体の性能は悪化し得るという実装上の重要な問題を扱う。\n\n### 目的\n弱いモデル向けに進化させた実行基盤を、モデルの追加学習とどう組み合わせるべきか検証する。\n\n### 手法\n7つの企業向けエージェントタスクでharnessを進化させ、強いモデルの軌跡模倣と、弱いモデル自身の実行軌跡に対する局所的な専門家修正を比較した。\n\n### データ・実験\nQwen3-CoderおよびGemma 4系を含むモデルで7タスクを評価。\n\n### 主な結果\n進化後のharness上で強いモデルの全軌跡を模倣すると、7タスクすべてで4〜30ポイント性能が低下。失敗したターンだけを修正するon-policy方式を提案した。\n\n### 新規性\nharnessとモデルの「適合性」を維持するため、モデル固有の計画様式を残した局所修正を採用する点。\n\n### 限界\n要旨で確認できるのは特定の企業向けタスク群での評価であり、一般のエージェント環境への適用範囲は不明。\n\n### なぜ注目したか\nエージェントの改善を単なるモデル更新として扱わず、周辺の実行環境との共同最適化として捉えている。"
+    },
+    {
+      "id": "pmid:42709964",
+      "title": "Performance, Failures, and Oversight of a Large Language Model Agent for Clinical Data Analysis: Evaluation Study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42709964",
+      "source": "PubMed",
+      "date": "2026-09-08",
+      "tags": "medical AI, clinical data analysis, LLM agent, statistical validation",
+      "summary": "臨床データ解析の5段階でLLMエージェントを評価し、研究課題生成や解析計画の立案は比較的良好でも、統計コード実行と結果報告に系統的な誤りが残ると報告。",
+      "why": "解析計画の品質と実装コードの正確性を分けて検証している。",
+      "reportDate": "2026-09-10",
+      "report": "reports/daily/2026-09-10.md",
+      "details": "- Source: PubMed\n- Canonical ID: pmid:42709964\n- Publication date: 2026-09-08\n- Authors: Yilan Wu, Dun Jack Fu, Yukun Zhou, Siegfried K Wagner, Pearse A Keane\n- Journal: Journal of Medical Internet Research\n- URL: https://pubmed.ncbi.nlm.nih.gov/42709964/\n- read_level: abstract\n- Tags: medical AI, clinical data analysis, LLM agent, statistical validation\n- Summary: 臨床データ解析の5段階でLLMエージェントを評価し、研究課題生成や解析計画の立案は比較的良好でも、統計コード実行と結果報告に系統的な誤りが残ると報告。\n- Why interesting: 解析計画の品質と実装コードの正確性を分けて検証している。\n\n### 目的\nLLMエージェントが臨床統計解析のどこまでを自律的に遂行でき、どこで専門家の監督を必要とするかを明らかにする。\n\n### 手法\n臨床データと検証済みRスクリプトを使い、研究課題の生成、統計解析計画と実行、既存計画に基づく実行を評価。\n\n### データ・実験\n新生血管型加齢黄斑変性の7802眼・12年転帰に関する既存研究のデータを使用。3モード×3プロンプト×3反復の計27実行。\n\n### 主な結果\n9件の統計解析計画はいずれも統計的枠組みを正しく特定。一方、コード実行では系統的な誤りが発生。17件の叙述要約のうち完全に満足できたのは8件で、2件には臨床的に意味のある誤りがあった。\n\n### 新規性\n研究課題・計画・コード・計算結果・叙述の各段階を、参照値と突き合わせて検証した点。\n\n### 限界\n特定の眼科データセットとエージェント設定での評価であり、他診療科や他システムへの一般化には追加検証が必要。\n\n### なぜ注目したか\n医療AIの自律性を議論する際、文章の自然さと統計解析の正確性を混同しないための実証例になる。\n\n### Medical AI extra\n- Study design: retrospective evaluation / agent benchmark\n- Sample size: 7802 eyes in underlying dataset; 27 agent runs\n- Primary endpoint: correctness across clinical data analysis stages\n- External validation: abstractに記載なし\n- Prospective/retrospective: 既存データによる評価"
+    },
+    {
+      "id": "pmid:42714033",
+      "title": "“Small” Large Language Models in the Hospital: Evaluation Study on Real-World Data in a Resource-Constrained Setting",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42714033",
+      "source": "PubMed",
+      "date": "2026-09-09",
+      "tags": "",
+      "summary": "",
+      "why": "",
+      "reportDate": "2026-09-27",
+      "report": "reports/daily/2026-09-27.md",
+      "details": "- Source: PubMed\n\n- Canonical ID: pmid:42714033\n\n- Publication date: 2026-09-09\n\n- Authors: He A Xu et al.\n\n- Journal: Journal of Medical Internet Research\n\n- URL: https://pubmed.ncbi.nlm.nih.gov/42714033/\n\n- read_level: abstract\n\nTags: small language models / local deployment / hospital / clinical NLP\n\nSummary: 8B–24Bのopen-source LLMを、外部APIなしで院内運用する前提で実データ評価。\n\nWhy interesting: privacy・GPU制約がある病院で「小型ローカルLLMは何ならできるか」を具体化。\n\n目的: resource-constrained hospitalでlocally deployable LLMの実用性を評価。\n\n手法: Mistral、Phi4、Falcon3、Llama3.1、Meditron3系6モデルをzero-shotで7 tasks / 4 clinical use casesに適用。\n\nデータ・実験: Swiss tertiary hospitalのdeidentified French discharge letters、clinical notes、structured EHR。\n\n主な結果: needle-in-haystackではLlama3.1 F1=99.81%、Mistral-small=99.71%。一方PHI detectionのbest macro-F1 0.33–0.34（fine-tuned RoBERTa 0.94）、adverse event extraction best macro-F1 0.35、Meditron3-Phi4 translationでは55%にhallucination、discharge summarization best penalized ROUGE 0.169。CDSも一貫して満足水準に達せず。\n\n新規性: 非英語・実院内データ・限られた計算資源という現実条件での横断評価。\n\n限界: 1病院・French data・zero-shot中心で、fine-tuning後の可能性は別途検討が必要。\n\nなぜ注目したか: 小型LLMの「単純検索は強いが複雑clinical reasoningは弱い」という境界が非常に明瞭。\n\nMedical AI extra\n\n- Study design: real-world evaluation study\n\n- Sample size: 6 models / 7 tasks。患者・note総数はabstractで未記載\n\n- Primary endpoint: task-specific clinical NLP/CDS performance\n\n- External validation: なし\n\n- Prospective/retrospective: existing deidentified clinical dataを用いたretrospective evaluation\n\narxiv:2609.30217\n\narxiv:2609.30205\n\narxiv:2609.30218\n\narxiv:2609.30147\n\narxiv:2609.30144\n\narxiv:2609.29802\n\narxiv:2609.29775\n\narxiv:2609.26796\n\narxiv:2609.26718\n\narxiv:2609.26550\n\npmid:42759856\n\npmid:42759259\n\npmid:42758740\n\npmid:42753254\n\npmid:42753021\n\npmid:42752617\n\npmid:42745147\n\npmid:42714033"
+    },
+    {
       "id": "arxiv:2609.30217",
       "title": "Instrumental Monitor Evasion Emerges Under Ordinary Task Pressure",
       "url": "https://arxiv.org/abs/2609.30217",
@@ -1390,19 +1429,6 @@
       "reportDate": "2026-09-27",
       "report": "reports/daily/2026-09-27.md",
       "details": "- Source: PubMed\n\n- Canonical ID: pmid:42745147\n\n- Publication date: 2026-09-15\n\n- Authors: Jonathan Spagnoli et al.\n\n- Journal: Journal of General Internal Medicine\n\n- URL: https://pubmed.ncbi.nlm.nih.gov/42745147/\n\n- read_level: abstract\n\nTags: discharge prediction / prompt optimization / clinical operations / LLM\n\nSummary: same-day discharge predictionでbaseline LLMの失敗原因をclinically分析し、test-time scaling・expert prompt・automated prompt optimizationを比較。\n\nWhy interesting: 医学知識よりclinical operational workflowがerror sourceになることを示す。\n\n目的: discharge predictionの精度改善とerror mechanismの理解。\n\n手法: 30時間分のclinical documentationから06:00時点でsame-day dischargeを予測。\n\nデータ・実験: 2024年入院患者からvalidation n=860、test n=886。\n\n主な結果: baseline GPT-5はvalidationでF1 0.48、sensitivity 0.37。automated prompt optimizationはhold-out testでF1/sensitivityを改善。test-time scalingとexpert prompt engineeringは改善が小さい。\n\n新規性: qualitative error analysisと複数inference optimizationを組み合わせた点。\n\n限界: single tertiary center、retrospective。改善後の絶対値詳細はabstractでは限定。\n\nなぜ注目したか: clinical predictionでは「モデル能力」以外のworkflow contextが主要ボトルネックになり得る。\n\nMedical AI extra\n\n- Study design: retrospective cohort\n\n- Sample size: validation 860 / test 886\n\n- Primary endpoint: same-day discharge prediction performance\n\n- External validation: 外部施設なし\n\n- Prospective/retrospective: retrospective"
-    },
-    {
-      "id": "pmid:42714033",
-      "title": "“Small” Large Language Models in the Hospital: Evaluation Study on Real-World Data in a Resource-Constrained Setting",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42714033",
-      "source": "PubMed",
-      "date": "2026-09-09",
-      "tags": "",
-      "summary": "",
-      "why": "",
-      "reportDate": "2026-09-27",
-      "report": "reports/daily/2026-09-27.md",
-      "details": "- Source: PubMed\n\n- Canonical ID: pmid:42714033\n\n- Publication date: 2026-09-09\n\n- Authors: He A Xu et al.\n\n- Journal: Journal of Medical Internet Research\n\n- URL: https://pubmed.ncbi.nlm.nih.gov/42714033/\n\n- read_level: abstract\n\nTags: small language models / local deployment / hospital / clinical NLP\n\nSummary: 8B–24Bのopen-source LLMを、外部APIなしで院内運用する前提で実データ評価。\n\nWhy interesting: privacy・GPU制約がある病院で「小型ローカルLLMは何ならできるか」を具体化。\n\n目的: resource-constrained hospitalでlocally deployable LLMの実用性を評価。\n\n手法: Mistral、Phi4、Falcon3、Llama3.1、Meditron3系6モデルをzero-shotで7 tasks / 4 clinical use casesに適用。\n\nデータ・実験: Swiss tertiary hospitalのdeidentified French discharge letters、clinical notes、structured EHR。\n\n主な結果: needle-in-haystackではLlama3.1 F1=99.81%、Mistral-small=99.71%。一方PHI detectionのbest macro-F1 0.33–0.34（fine-tuned RoBERTa 0.94）、adverse event extraction best macro-F1 0.35、Meditron3-Phi4 translationでは55%にhallucination、discharge summarization best penalized ROUGE 0.169。CDSも一貫して満足水準に達せず。\n\n新規性: 非英語・実院内データ・限られた計算資源という現実条件での横断評価。\n\n限界: 1病院・French data・zero-shot中心で、fine-tuning後の可能性は別途検討が必要。\n\nなぜ注目したか: 小型LLMの「単純検索は強いが複雑clinical reasoningは弱い」という境界が非常に明瞭。\n\nMedical AI extra\n\n- Study design: real-world evaluation study\n\n- Sample size: 6 models / 7 tasks。患者・note総数はabstractで未記載\n\n- Primary endpoint: task-specific clinical NLP/CDS performance\n\n- External validation: なし\n\n- Prospective/retrospective: existing deidentified clinical dataを用いたretrospective evaluation\n\narxiv:2609.30217\n\narxiv:2609.30205\n\narxiv:2609.30218\n\narxiv:2609.30147\n\narxiv:2609.30144\n\narxiv:2609.29802\n\narxiv:2609.29775\n\narxiv:2609.26796\n\narxiv:2609.26718\n\narxiv:2609.26550\n\npmid:42759856\n\npmid:42759259\n\npmid:42758740\n\npmid:42753254\n\npmid:42753021\n\npmid:42752617\n\npmid:42745147\n\npmid:42714033"
     }
   ]
 }
