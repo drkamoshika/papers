@@ -43,7 +43,7 @@ def parse(path):
     return papers
 
 def main():
-    # Older issue reports are retained as historical sources.
+    # All reports use date-based names under reports/daily/.
     paths = sorted(REPORTS.glob("issue-*.md"), key=lambda p: int(re.search(r"issue-(\d+)", p.name).group(1)))
     paths += sorted((REPORTS / "daily").glob("*.md")) if (REPORTS / "daily").exists() else []
     papers = {}
