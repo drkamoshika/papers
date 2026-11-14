@@ -2112,13 +2112,13 @@
         "on-policy correction"
       ],
       "summary": "エージェントのプロンプト・ツール・実行フックなどのharnessとモデル重みを一緒に改善する際、強いモデルの全軌跡を弱いモデルに模倣させると、改良済みharnessとの適合性が損なわれることを示した。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "弱いモデル向けに最適化したエージェントのharnessと重み更新を両立し、強モデルの軌跡模倣で生じる性能悪化を防ぐ。",
+      "methods": "企業向け7エージェント課題で弱いモデル向けharnessを進化させ、強いモデルの軌跡を模倣した場合を比較。弱モデル自身の失敗ロールアウトの当該turnだけを専門モデルが修正するon-policy expert-correctionをメタエージェントが実施。",
+      "results": "進化harness上での全軌跡模倣はQwen3-Coder・Gemma 4の7課題すべてで4〜30ポイント性能悪化。部分的なon-policy修正ではモデル本来のplanning styleを保ち、harness進化と重み適応の改善を両立したと報告。",
       "novelty": "モデル単体の学習損失が改善しても、システム全体の性能は悪化し得るという実装上の重要な問題を扱う。",
-      "limitations": null,
+      "limitations": "企業向け7課題と対象モデル系列での比較であり、別の業務・モデルへ完全に一般化できるかは未確認。",
       "why": "モデル単体の学習損失が改善しても、システム全体の性能は悪化し得るという実装上の重要な問題を扱う。",
-      "details": "Publication date: 2026-09-08\nread_level: abstract\nTags: ['agent', 'harness evolution', 'fine-tuning', 'on-policy correction']\nSummary: エージェントのプロンプト・ツール・実行フックなどのharnessとモデル重みを一緒に改善する際、強いモデルの全軌跡を弱いモデルに模倣させると、改良済みharnessとの適合性が損なわれることを示した。\nObjective: None\nMethods: None\nData and results: None\nNovelty: モデル単体の学習損失が改善しても、システム全体の性能は悪化し得るという実装上の重要な問題を扱う。\nLimitations: None"
+      "details": "Publication date: 2026-09-08\nread_level: abstract\nTags: ['agent', 'harness evolution', 'fine-tuning', 'on-policy correction']\nSummary: エージェントのプロンプト・ツール・実行フックなどのharnessとモデル重みを一緒に改善する際、強いモデルの全軌跡を弱いモデルに模倣させると、改良済みharnessとの適合性が損なわれることを示した。\nObjective: 弱いモデル向けに最適化したエージェントのharnessと重み更新を両立し、強モデルの軌跡模倣で生じる性能悪化を防ぐ。\nMethods: 企業向け7エージェント課題で弱いモデル向けharnessを進化させ、強いモデルの軌跡を模倣した場合を比較。弱モデル自身の失敗ロールアウトの当該turnだけを専門モデルが修正するon-policy expert-correctionをメタエージェントが実施。\nData and results: 進化harness上での全軌跡模倣はQwen3-Coder・Gemma 4の7課題すべてで4〜30ポイント性能悪化。部分的なon-policy修正ではモデル本来のplanning styleを保ち、harness進化と重み適応の改善を両立したと報告。\nNovelty: モデル単体の学習損失が改善しても、システム全体の性能は悪化し得るという実装上の重要な問題を扱う。\nLimitations: 企業向け7課題と対象モデル系列での比較であり、別の業務・モデルへ完全に一般化できるかは未確認。"
     },
     {
       "title": "Performance, Failures, and Oversight of a Large Language Model Agent for Clinical Data Analysis: Evaluation Study",
@@ -2136,13 +2136,13 @@
         "statistical validation"
       ],
       "summary": "臨床データ解析の5段階でLLMエージェントを評価し、研究課題生成や解析計画の立案は比較的良好でも、統計コード実行と結果報告に系統的な誤りが残ると報告。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "LLMエージェントによる臨床統計解析の各段階での実行能力と系統的な誤りを確認し、専門家監督が必要な地点を特定する。",
+      "methods": "Moorfields眼科病院の7802患者・12年間の加齢黄斑変性データと検証済みRコードを用意。ClaudeのChat／Code／Coworkを、研究疑問生成、解析計画作成＋実行、既存計画実行でそれぞれ3回検証（計27走行）。結果を参照値・ログと照合。",
+      "results": "臨床的に意味のある18質問を7領域で生成し、9つの解析計画は統計枠組みを正しく選択。17の完了走行でKaplan–Meier推定は参照に近かったが、計画品質とコード正確性は一致しない。17要約中8件のみ完全に満足、2走行に臨床的に重大な誤り。",
       "novelty": "解析計画の品質と実装コードの正確性を分けて検証している。",
-      "limitations": null,
+      "limitations": "眼科の単一公開データ・3操作モードでの実験であり、解析式やコホート境界の確認は依然専門家が必要。",
       "why": "解析計画の品質と実装コードの正確性を分けて検証している。",
-      "details": "Publication date: 2026-09-08\nread_level: abstract\nTags: ['medical AI', 'clinical data analysis', 'LLM agent', 'statistical validation']\nSummary: 臨床データ解析の5段階でLLMエージェントを評価し、研究課題生成や解析計画の立案は比較的良好でも、統計コード実行と結果報告に系統的な誤りが残ると報告。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 解析計画の品質と実装コードの正確性を分けて検証している。\nLimitations: None"
+      "details": "Publication date: 2026-09-08\nread_level: abstract\nTags: ['medical AI', 'clinical data analysis', 'LLM agent', 'statistical validation']\nSummary: 臨床データ解析の5段階でLLMエージェントを評価し、研究課題生成や解析計画の立案は比較的良好でも、統計コード実行と結果報告に系統的な誤りが残ると報告。\nObjective: LLMエージェントによる臨床統計解析の各段階での実行能力と系統的な誤りを確認し、専門家監督が必要な地点を特定する。\nMethods: Moorfields眼科病院の7802患者・12年間の加齢黄斑変性データと検証済みRコードを用意。ClaudeのChat／Code／Coworkを、研究疑問生成、解析計画作成＋実行、既存計画実行でそれぞれ3回検証（計27走行）。結果を参照値・ログと照合。\nData and results: 臨床的に意味のある18質問を7領域で生成し、9つの解析計画は統計枠組みを正しく選択。17の完了走行でKaplan–Meier推定は参照に近かったが、計画品質とコード正確性は一致しない。17要約中8件のみ完全に満足、2走行に臨床的に重大な誤り。\nNovelty: 解析計画の品質と実装コードの正確性を分けて検証している。\nLimitations: 眼科の単一公開データ・3操作モードでの実験であり、解析式やコホート境界の確認は依然専門家が必要。"
     },
     {
       "title": "\"Small\" Large Language Models in the Hospital: Evaluation Study on Real-World Data in a Resource-Constrained Setting",
@@ -2160,13 +2160,13 @@
         "information extraction"
       ],
       "summary": "8B〜24Bのオープンモデル6種類を、匿名化した病院実データによる7タスクで評価。単純な検索タスクと複雑な臨床処理で大きな性能差を確認。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "計算資源に制約がある病院で患者情報を外部送信せず使える小型LLMの実タスク性能を比較する。",
+      "methods": "フランス語で匿名化されたスイス病院の臨床記録を使い、Mistral、Phi4、Falcon3、Llama3.1、Meditron3系列の8B〜24Bモデル6種類をゼロショットで評価。7タスクは抽出・翻訳・生成・意思決定支援など4用途を含む。",
+      "results": "単純なneedle-in-haystack検索ではLlama3.1 F1 99.81%、Mistral-small 99.71%。個人情報抽出の最高macro-F1は0.33〜0.34でRoBERTa対照の0.94に劣る。副作用抽出最高macro-F1は0.35、退院文書要約の最高penalized ROUGE 0.169、Meditron3-Phi4翻訳の55%に幻覚を認めた。",
       "novelty": "小型LLMのオンプレミス導入を、モデルサイズだけでなくタスク別の実性能で評価している。",
-      "limitations": null,
+      "limitations": "一病院のフランス語臨床データでのゼロショット比較で、複雑な臨床判断用途で十分な信頼性は認められなかった。",
       "why": "小型LLMのオンプレミス導入を、モデルサイズだけでなくタスク別の実性能で評価している。",
-      "details": "Publication date: 2026-09-09\nread_level: abstract\nTags: ['medical AI', 'local LLM', 'clinical workflow', 'information extraction']\nSummary: 8B〜24Bのオープンモデル6種類を、匿名化した病院実データによる7タスクで評価。単純な検索タスクと複雑な臨床処理で大きな性能差を確認。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 小型LLMのオンプレミス導入を、モデルサイズだけでなくタスク別の実性能で評価している。\nLimitations: None"
+      "details": "Publication date: 2026-09-09\nread_level: abstract\nTags: ['medical AI', 'local LLM', 'clinical workflow', 'information extraction']\nSummary: 8B〜24Bのオープンモデル6種類を、匿名化した病院実データによる7タスクで評価。単純な検索タスクと複雑な臨床処理で大きな性能差を確認。\nObjective: 計算資源に制約がある病院で患者情報を外部送信せず使える小型LLMの実タスク性能を比較する。\nMethods: フランス語で匿名化されたスイス病院の臨床記録を使い、Mistral、Phi4、Falcon3、Llama3.1、Meditron3系列の8B〜24Bモデル6種類をゼロショットで評価。7タスクは抽出・翻訳・生成・意思決定支援など4用途を含む。\nData and results: 単純なneedle-in-haystack検索ではLlama3.1 F1 99.81%、Mistral-small 99.71%。個人情報抽出の最高macro-F1は0.33〜0.34でRoBERTa対照の0.94に劣る。副作用抽出最高macro-F1は0.35、退院文書要約の最高penalized ROUGE 0.169、Meditron3-Phi4翻訳の55%に幻覚を認めた。\nNovelty: 小型LLMのオンプレミス導入を、モデルサイズだけでなくタスク別の実性能で評価している。\nLimitations: 一病院のフランス語臨床データでのゼロショット比較で、複雑な臨床判断用途で十分な信頼性は認められなかった。"
     },
     {
       "title": "Semantic Clinical Knowledge Augmentation Improves Medical Question Answering Across Commercial and Open Large Language Models",
@@ -2183,13 +2183,13 @@
         "医学知識グラフによるLLMの回答補強"
       ],
       "summary": "313問のUSMLE公式サンプル（Step 1:87、Step 2:103、Step 3:123）で、意味的な医学知識をLLMの文脈に追加するSCAIを評価。Geminiは90.7%→97.1%、Llama 3 70Bは82.4%→92.0%、DeepSeek-R1-Distillは55.3%→81.8%と改善した一方、Copilotの差は小さかった。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "意味的な臨床知識の補強SCAIが、汎用・オープンLLMの医師国家試験形式質問での正確性を改善するか検証する。",
+      "methods": "USMLE公式テキスト問題313件（Step1 87、Step2 CK 103、Step3 123）でGemini、Copilot、Llama3 70B、DeepSeek-R1-DistillをSCAIの有無で比較。SCAIはHD-NLP、知識グラフ埋め込み、意味推論LLM、246種類の関係ラベルにわたる約3,302万tripleを使用。",
+      "results": "Gemini 90.7%→97.1%、Llama3 82.4%→92.0%、DeepSeek-R1-Distill 55.3%→81.8%に改善。Copilot 93.6%→94.2%は有意差なし。Llama3＋SCAIのStep3は121/123（98.4%）。",
       "novelty": "知識補強の効果がモデルに依存する点と、推論モデルにも外部知識の構造化が効く点。",
-      "limitations": null,
+      "limitations": "テキストだけの公式国家試験サンプルで、患者の状態変化・画像・現場意思決定や臨床アウトカムを測るものではない。",
       "why": "知識補強の効果がモデルに依存する点と、推論モデルにも外部知識の構造化が効く点。",
-      "details": "Publication date: 2026-10-09\nread_level: abstract\nTags: ['medical AI', 'LLM', '医学知識グラフによるLLMの回答補強']\nSummary: 313問のUSMLE公式サンプル（Step 1:87、Step 2:103、Step 3:123）で、意味的な医学知識をLLMの文脈に追加するSCAIを評価。Geminiは90.7%→97.1%、Llama 3 70Bは82.4%→92.0%、DeepSeek-R1-Distillは55.3%→81.8%と改善した一方、Copilotの差は小さかった。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 知識補強の効果がモデルに依存する点と、推論モデルにも外部知識の構造化が効く点。\nLimitations: None"
+      "details": "Publication date: 2026-10-09\nread_level: abstract\nTags: ['medical AI', 'LLM', '医学知識グラフによるLLMの回答補強']\nSummary: 313問のUSMLE公式サンプル（Step 1:87、Step 2:103、Step 3:123）で、意味的な医学知識をLLMの文脈に追加するSCAIを評価。Geminiは90.7%→97.1%、Llama 3 70Bは82.4%→92.0%、DeepSeek-R1-Distillは55.3%→81.8%と改善した一方、Copilotの差は小さかった。\nObjective: 意味的な臨床知識の補強SCAIが、汎用・オープンLLMの医師国家試験形式質問での正確性を改善するか検証する。\nMethods: USMLE公式テキスト問題313件（Step1 87、Step2 CK 103、Step3 123）でGemini、Copilot、Llama3 70B、DeepSeek-R1-DistillをSCAIの有無で比較。SCAIはHD-NLP、知識グラフ埋め込み、意味推論LLM、246種類の関係ラベルにわたる約3,302万tripleを使用。\nData and results: Gemini 90.7%→97.1%、Llama3 82.4%→92.0%、DeepSeek-R1-Distill 55.3%→81.8%に改善。Copilot 93.6%→94.2%は有意差なし。Llama3＋SCAIのStep3は121/123（98.4%）。\nNovelty: 知識補強の効果がモデルに依存する点と、推論モデルにも外部知識の構造化が効く点。\nLimitations: テキストだけの公式国家試験サンプルで、患者の状態変化・画像・現場意思決定や臨床アウトカムを測るものではない。"
     },
     {
       "title": "Large Language Models as a Clinical Interface for Predictive Modeling: A Feasibility Study in Pediatric Appendicitis",
@@ -2206,13 +2206,13 @@
         "臨床予測モデルへの自然言語インターフェース"
       ],
       "summary": "小児虫垂炎における予測モデリングを、LLMを介して臨床現場から利用する実現可能性研究。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "専門的なML開発経験のない臨床医でも、LLMの助けで術後在院日数を予測するモデルを自力で作れるか実行可能性を検証する。",
+      "methods": "腹腔鏡下虫垂切除の小児228人を後ろ向き解析。術前に分かる10変数を入力し、ChatGPTで前処理と線形回帰・Random Forestのコードを生成。曖昧な指示と構造化promptを比較し、80/20分割、MAE・RMSE・相関・R²を評価。",
+      "results": "非構造化promptは不良。構造化promptではMAE 0.34、RMSE 0.85、相関r=0.85という結果を報告。テストでは線形回帰MAE 1.00、Random Forest 0.77。既知の臨床パターンとの整合は示したが新しい予測知見ではない。",
       "novelty": "予測モデルの精度だけでなく、臨床家が結果にアクセスし解釈するユーザーインターフェースを研究対象にしている。",
-      "limitations": null,
+      "limitations": "小児虫垂炎228人の単一後ろ向きコホートで、外部施設や前向き運用による臨床的有用性は検証されていない。",
       "why": "予測モデルの精度だけでなく、臨床家が結果にアクセスし解釈するユーザーインターフェースを研究対象にしている。",
-      "details": "Publication date: 2026-10-09\nread_level: abstract\nTags: ['medical AI', 'LLM', '臨床予測モデルへの自然言語インターフェース']\nSummary: 小児虫垂炎における予測モデリングを、LLMを介して臨床現場から利用する実現可能性研究。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 予測モデルの精度だけでなく、臨床家が結果にアクセスし解釈するユーザーインターフェースを研究対象にしている。\nLimitations: None"
+      "details": "Publication date: 2026-10-09\nread_level: abstract\nTags: ['medical AI', 'LLM', '臨床予測モデルへの自然言語インターフェース']\nSummary: 小児虫垂炎における予測モデリングを、LLMを介して臨床現場から利用する実現可能性研究。\nObjective: 専門的なML開発経験のない臨床医でも、LLMの助けで術後在院日数を予測するモデルを自力で作れるか実行可能性を検証する。\nMethods: 腹腔鏡下虫垂切除の小児228人を後ろ向き解析。術前に分かる10変数を入力し、ChatGPTで前処理と線形回帰・Random Forestのコードを生成。曖昧な指示と構造化promptを比較し、80/20分割、MAE・RMSE・相関・R²を評価。\nData and results: 非構造化promptは不良。構造化promptではMAE 0.34、RMSE 0.85、相関r=0.85という結果を報告。テストでは線形回帰MAE 1.00、Random Forest 0.77。既知の臨床パターンとの整合は示したが新しい予測知見ではない。\nNovelty: 予測モデルの精度だけでなく、臨床家が結果にアクセスし解釈するユーザーインターフェースを研究対象にしている。\nLimitations: 小児虫垂炎228人の単一後ろ向きコホートで、外部施設や前向き運用による臨床的有用性は検証されていない。"
     },
     {
       "title": "Cross-paradigm audit of large language model judges for clinical text evaluation",
@@ -2229,13 +2229,13 @@
         "臨床テキストに対するLLM評価器の信頼性"
       ],
       "summary": "ドイツ語の臨床文書4データセットで6種類のオープンウェイトモデルを専門家評価と比較。点数評価・対比較などの評価方式を横断すると安定せず、点数評価カテゴリの57.2%が変化し、対比較の勝者の41.7%が入れ替わり、臨床的誤りの10.2%を見逃した。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "ドイツ語臨床文書に対するLLM評価者を、人間専門家の代わりに用いたときの評価基準・方式の違いによる危険な不一致を測る。",
+      "methods": "報告書・看護要約、退院時要約、患者向け文書の4ドイツ語データセットで6オープンウェイトLLMを専門家と比較。3評価paradigm・4prompt設定について、位置・モデル同定バイアスと判断への影響を監査。",
+      "results": "評価者をLLMに置き換えると、点数カテゴリの57.2%、ペア比較勝者の41.7%が変わり、臨床的エラーの10.2%を見逃した。全モデルに位置・同定バイアスがあり、どの設定も全評価方式で安定しなかった。",
       "novelty": "LLM-as-a-judgeを人間の代替にする前に、評価方式ごとの意思決定への影響を検証する必要性を定量化した。",
-      "limitations": null,
+      "limitations": "ドイツ語4データセットと評価したモデル群での監査であり、全言語・すべての臨床テキストへの直接的な外挿はできない。",
       "why": "LLM-as-a-judgeを人間の代替にする前に、評価方式ごとの意思決定への影響を検証する必要性を定量化した。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: ['medical AI', 'LLM', '臨床テキストに対するLLM評価器の信頼性']\nSummary: ドイツ語の臨床文書4データセットで6種類のオープンウェイトモデルを専門家評価と比較。点数評価・対比較などの評価方式を横断すると安定せず、点数評価カテゴリの57.2%が変化し、対比較の勝者の41.7%が入れ替わり、臨床的誤りの10.2%を見逃した。\nObjective: None\nMethods: None\nData and results: None\nNovelty: LLM-as-a-judgeを人間の代替にする前に、評価方式ごとの意思決定への影響を検証する必要性を定量化した。\nLimitations: None"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: ['medical AI', 'LLM', '臨床テキストに対するLLM評価器の信頼性']\nSummary: ドイツ語の臨床文書4データセットで6種類のオープンウェイトモデルを専門家評価と比較。点数評価・対比較などの評価方式を横断すると安定せず、点数評価カテゴリの57.2%が変化し、対比較の勝者の41.7%が入れ替わり、臨床的誤りの10.2%を見逃した。\nObjective: ドイツ語臨床文書に対するLLM評価者を、人間専門家の代わりに用いたときの評価基準・方式の違いによる危険な不一致を測る。\nMethods: 報告書・看護要約、退院時要約、患者向け文書の4ドイツ語データセットで6オープンウェイトLLMを専門家と比較。3評価paradigm・4prompt設定について、位置・モデル同定バイアスと判断への影響を監査。\nData and results: 評価者をLLMに置き換えると、点数カテゴリの57.2%、ペア比較勝者の41.7%が変わり、臨床的エラーの10.2%を見逃した。全モデルに位置・同定バイアスがあり、どの設定も全評価方式で安定しなかった。\nNovelty: LLM-as-a-judgeを人間の代替にする前に、評価方式ごとの意思決定への影響を検証する必要性を定量化した。\nLimitations: ドイツ語4データセットと評価したモデル群での監査であり、全言語・すべての臨床テキストへの直接的な外挿はできない。"
     },
     {
       "title": "Quantized large language models in biomedical natural language processing: evaluation and recommendation",
@@ -2252,13 +2252,13 @@
         "量子化LLMと医療自然言語処理"
       ],
       "summary": "バイオメディカルNLPにおける量子化LLMの評価と運用上の推奨を扱う研究。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "バイオ医療NLPで、4bit・8bit等の量子化がモデル精度、GPUメモリ、推論時間と出力妥当性に与える影響を比較する。",
+      "methods": "汎用・医療LLM12モデルを、固有表現抽出、関係抽出、多ラベル分類、QAを含む8データセットで検証。Transformers＋BitsAndBytesによる4bit・8bit重み量子化と、vLLM上のAWQ、GPTQ、FP8を比較し、無効出力・prompt overhead・few-shotメモリも測定。",
+      "results": "4bit／8bitはGPU peakメモリを大幅に削減し、多くのタスクで精度を維持。ただし推論レイテンシは概して増加し、精度低下はタスク・モデル依存。要旨に共通の削減率・絶対時間の数値はない。",
       "novelty": "計算資源が限られる環境でモデル精度と推論資源のトレードオフを考える実装面の論点。",
-      "limitations": null,
+      "limitations": "量子化でVRAM節約できても速度改善は保証されず、個別のGPU・量子化方式・タスクごとの実測が必要。",
       "why": "計算資源が限られる環境でモデル精度と推論資源のトレードオフを考える実装面の論点。",
-      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: ['medical AI', 'LLM', '量子化LLMと医療自然言語処理']\nSummary: バイオメディカルNLPにおける量子化LLMの評価と運用上の推奨を扱う研究。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 計算資源が限られる環境でモデル精度と推論資源のトレードオフを考える実装面の論点。\nLimitations: None"
+      "details": "Publication date: 2026-11-04\nread_level: abstract\nTags: ['medical AI', 'LLM', '量子化LLMと医療自然言語処理']\nSummary: バイオメディカルNLPにおける量子化LLMの評価と運用上の推奨を扱う研究。\nObjective: バイオ医療NLPで、4bit・8bit等の量子化がモデル精度、GPUメモリ、推論時間と出力妥当性に与える影響を比較する。\nMethods: 汎用・医療LLM12モデルを、固有表現抽出、関係抽出、多ラベル分類、QAを含む8データセットで検証。Transformers＋BitsAndBytesによる4bit・8bit重み量子化と、vLLM上のAWQ、GPTQ、FP8を比較し、無効出力・prompt overhead・few-shotメモリも測定。\nData and results: 4bit／8bitはGPU peakメモリを大幅に削減し、多くのタスクで精度を維持。ただし推論レイテンシは概して増加し、精度低下はタスク・モデル依存。要旨に共通の削減率・絶対時間の数値はない。\nNovelty: 計算資源が限られる環境でモデル精度と推論資源のトレードオフを考える実装面の論点。\nLimitations: 量子化でVRAM節約できても速度改善は保証されず、個別のGPU・量子化方式・タスクごとの実測が必要。"
     },
     {
       "title": "Large language models are unstable as autonomous medical evaluators across clinical tasks",
@@ -2275,13 +2275,13 @@
         "医療LLM評価器のタスク間転移"
       ],
       "summary": "10モデルを医療回答品質300件、PubMedQA研究評価300件、救急トリアージ256件で3回ずつ評価し、計25,680判定を分析。全3タスクで上位3位に入るモデルはなく、最重症トリアージの89.1%が過小評価された。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "ある医療タスクで人間評価に近いLLM評価器が、別の構造を持つ医療タスクでも安全で信頼できるか検証する。",
+      "methods": "ローカル3モデルとAPI7モデルの計10LLMを、LiveQA-Med品質評価300件、PubMedQA研究評価300件、MIMIC-IV-Ext ESIトリアージ256件で評価。各ケース3回、temperature 0で計25,680評価し、cluster bootstrapとweighted κ、多重検定補正を実施。",
+      "results": "3タスクすべてで3位以内に入ったモデルはなし、全モデルがタスク間で3順位以上変動。最重症ESIレベル1の89.1%が過小トリアージ（モデル範囲70.2〜96.9%）。最高のトリアージ一致もClaude Opusのweighted κ=0.60［0.54,0.66］に留まった。",
       "novelty": "評価器の精度を一つの医療タスクで検証しても、別の医療タスクで安全とは限らないことを明確に示す。",
-      "limitations": null,
+      "limitations": "事後評価ベンチマークで、人間ラベルの定義や臨床タスク差に影響される。重症トリアージには高確実性で人間の監督が必要と著者らは結論。",
       "why": "評価器の精度を一つの医療タスクで検証しても、別の医療タスクで安全とは限らないことを明確に示す。",
-      "details": "Publication date: 2026-11-06\nread_level: abstract\nTags: ['medical AI', 'LLM', '医療LLM評価器のタスク間転移']\nSummary: 10モデルを医療回答品質300件、PubMedQA研究評価300件、救急トリアージ256件で3回ずつ評価し、計25,680判定を分析。全3タスクで上位3位に入るモデルはなく、最重症トリアージの89.1%が過小評価された。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 評価器の精度を一つの医療タスクで検証しても、別の医療タスクで安全とは限らないことを明確に示す。\nLimitations: None"
+      "details": "Publication date: 2026-11-06\nread_level: abstract\nTags: ['medical AI', 'LLM', '医療LLM評価器のタスク間転移']\nSummary: 10モデルを医療回答品質300件、PubMedQA研究評価300件、救急トリアージ256件で3回ずつ評価し、計25,680判定を分析。全3タスクで上位3位に入るモデルはなく、最重症トリアージの89.1%が過小評価された。\nObjective: ある医療タスクで人間評価に近いLLM評価器が、別の構造を持つ医療タスクでも安全で信頼できるか検証する。\nMethods: ローカル3モデルとAPI7モデルの計10LLMを、LiveQA-Med品質評価300件、PubMedQA研究評価300件、MIMIC-IV-Ext ESIトリアージ256件で評価。各ケース3回、temperature 0で計25,680評価し、cluster bootstrapとweighted κ、多重検定補正を実施。\nData and results: 3タスクすべてで3位以内に入ったモデルはなし、全モデルがタスク間で3順位以上変動。最重症ESIレベル1の89.1%が過小トリアージ（モデル範囲70.2〜96.9%）。最高のトリアージ一致もClaude Opusのweighted κ=0.60［0.54,0.66］に留まった。\nNovelty: 評価器の精度を一つの医療タスクで検証しても、別の医療タスクで安全とは限らないことを明確に示す。\nLimitations: 事後評価ベンチマークで、人間ラベルの定義や臨床タスク差に影響される。重症トリアージには高確実性で人間の監督が必要と著者らは結論。"
     },
     {
       "title": "Contrastive Discovery: Open-Ended Scientific Discovery over Competing Explanations",
