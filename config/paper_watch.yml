@@ -1,7 +1,7 @@
 # Canonical configuration for ChatGPT Scheduled Paper Watch.
 # ChatGPT reads this file on every run. The scheduled task may write daily reports to GitHub; this config is read during execution.
 
-version: 4
+version: 5
 repository: drkamoshika/papers
 
 execution:
@@ -87,6 +87,8 @@ output:
   include_full_report: true
   github_report_path: reports/daily/YYYY-MM-DD.md
   include_paper_ids_block: true
+  schema_version: 1
+  canonical_format: docs/PAPER_SCHEMA.md
   paper_ids_block_format: |
     <!-- PAPER_IDS -->
     arxiv:xxxx.xxxxx
@@ -114,15 +116,15 @@ task_instructions: |
   7. Select at most max_papers according to selection.rules.
   8. Generate one complete Japanese Markdown report and save it to GitHub at output.github_report_path with YYYY-MM-DD replaced by the run date in Asia/Tokyo.
   9. Begin with "## ダイジェスト", including "### 今回の概況" and up to output.digest_top_papers notable papers.
-  10. Then include "# 完全版レポート" and every selected paper.
-  11. For each paper include Source, canonical ID, publication date, authors when available, journal/category when available, URL, and read_level.
+  10. Then include "## 完全版レポート" and every selected paper. Each paper MUST start with exactly "### Paper: <title>". Do not add other headings beginning with "### Paper:".
+  11. Follow docs/PAPER_SCHEMA.md exactly: one fixed-order bullet per field, including Source, Canonical ID, Publication date, URL, read_level, Tags, Summary, Objective, Methods, Data and results, Novelty, Limitations. Use 未記載 for unknown values, not guessed facts. Never combine fields on one line. Do not put a paper in a table or a differently formatted appendix.
   12. For each paper first provide Tags, Summary, Why interesting, then the configured detailed fields.
   13. For medical AI papers include the configured medical_ai_extra_fields when supported by the source.
-  14. End with a PAPER_IDS block containing every selected canonical ID.
+  14. End with a PAPER_IDS block containing every selected canonical ID exactly once; all IDs in the block MUST match the paper sections exactly.
   15. Only after the report is successfully generated, update this Scheduled Task's own seen-ID state by unioning the new IDs and retaining at most deduplication.max_seen_ids most recent IDs.
   16. After generating the complete report, use GitHub create_file to save it. If the date's report already exists, fetch its SHA and update_file instead. Fetch the saved file and verify its content. Only after successful verification, update internal seen-ID state. If saving fails, report the failure and do not mark new IDs as seen.
   17. Return a short ChatGPT digest with the date, number of papers, 2-3 notable topics, and a GitHub link to the saved report. Do not reproduce the full report in chat unless GitHub saving fails.
-  18. Do not change any other repository files.
+  18. Do not change any other repository files. The scheduled task may only write the daily Markdown report. The dashboard workflow owns docs/papers.json.
   19. If web search, primary-source verification, GitHub saving, or internal task-state update fails, report the failure accurately and do not invent success.
 
 notes:
