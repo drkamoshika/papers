@@ -55,6 +55,8 @@ def canonical(text, report, date):
         for k in ("date", "summary", "objective", "methods", "results", "novelty", "limitations"):
             if row.get(k, "") in EMPTY:
                 row[k] = None
+        if row["date"] is not None and not re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}", row["date"]):
+            raise ValueError(f"{report}: invalid date {row['date']}")
         row["why"] = row.get("novelty") or ""
         row["details"] = "\n".join(f"{k}: {row.get(v,'')}" for k, v in KEYS.items() if k not in ("Source", "Canonical ID", "URL"))
         rows.append(row)
@@ -84,7 +86,7 @@ def legacy(text, report, date):
             x = re.search(r"^- (?:\*\*)?" + re.escape(key) + r"(?:\*\*)?:\s*(.+)$", body, re.M | re.I)
             return x.group(1).strip() if x else ""
         rows.append({"id":cid,"title":m.group(1).strip(),"url":u,
-                     "source":"arXiv" if arxiv else "PubMed","date":fld("Date") or fld("Publication date"),
+                     "source":"arXiv" if arxiv else "PubMed","date":fld("Date") or fld("Publication date") or None,
                      "tags":[t.strip() for t in fld("Tags").split(",") if t.strip()],"summary":fld("Summary") or None,"why":fld("Why interesting"),
                      "objective":None,"methods":None,"results":None,"novelty":fld("Why interesting") or None,"limitations":None,
                      "read_level":fld("read_level") or "abstract",
