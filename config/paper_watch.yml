@@ -118,7 +118,7 @@ task_instructions: |
   9. Begin with "## ダイジェスト", including "### 今回の概況" and up to output.digest_top_papers notable papers.
   10. Then include "## 完全版レポート" and every selected paper. Each paper MUST start with exactly "### Paper: <title>". Do not add other headings beginning with "### Paper:".
   11. Follow docs/PAPER_SCHEMA.md exactly: one fixed-order bullet per field, including Source, Canonical ID, Publication date, URL, read_level, Tags, Summary, Objective, Methods, Data and results, Novelty, Limitations. Use 未記載 for unknown values, not guessed facts. Never combine fields on one line. Do not put a paper in a table or a differently formatted appendix.
-  12. For each paper first provide Tags, Summary, Why interesting, then the configured detailed fields.
+  12. For each paper use ONLY the canonical fields in docs/PAPER_SCHEMA.md, in exactly that order. Put the reason for interest in Novelty, not an extra Why interesting field. Medical details belong in Methods, Data and results, or Limitations; never introduce extra field names.
   13. For medical AI papers include the configured medical_ai_extra_fields when supported by the source.
   14. End with a PAPER_IDS block containing every selected canonical ID exactly once; all IDs in the block MUST match the paper sections exactly.
   15. Only after the report is successfully generated, update this Scheduled Task's own seen-ID state by unioning the new IDs and retaining at most deduplication.max_seen_ids most recent IDs.
