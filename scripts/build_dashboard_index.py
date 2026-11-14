@@ -44,7 +44,7 @@ def parse(path):
 
 def main():
     # All reports use date-based names under reports/daily/.
-    paths = sorted(REPORTS.glob("issue-*.md"), key=lambda p: int(re.search(r"issue-(\d+)", p.name).group(1)))
+    paths = []
     paths += sorted((REPORTS / "daily").glob("*.md")) if (REPORTS / "daily").exists() else []
     papers = {}
     for path in paths:
