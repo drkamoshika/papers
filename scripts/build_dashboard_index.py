@@ -55,7 +55,7 @@ def canonical(text, report, date):
         for k in ("date", "summary", "objective", "methods", "results", "novelty", "limitations"):
             if row.get(k, "") in EMPTY:
                 row[k] = None
-        if row["date"] is not None and not re.fullmatch(r"20\\d{2}-\\d{2}-\\d{2}", row["date"]):
+        if row["date"] is not None and not re.fullmatch(r"20\d{2}-\d{2}-\d{2}", row["date"]):
             raise ValueError(f"{report}: invalid date {row['date']}")
         row["why"] = row.get("novelty") or ""
         row["details"] = "\n".join(f"{k}: {row.get(v,'')}" for k, v in KEYS.items() if k not in ("Source", "Canonical ID", "URL"))
