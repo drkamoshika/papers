@@ -1,60 +1,99 @@
 # 論文一次資料再確認 進捗
 
-- 対象: 246件の論文（レポート全12ファイル）
-- 更新日: 2026-11-14
-- この表で詳細の6項目が記載されているもの: **42件**。別レポートの12件も記載済みだが、一次資料の再照合対象からは除外しない。
-- 「項目が記載済み」は「全文まで精読済み」とは異なる。各論文の一次資料（基本的には原著要旨）を基礎に補完。原著本文の実験詳細が要旨で不明な場合は限界に明示。
-- 完全な完了条件: **全246件**の6項目が埋まり、一次資料の照合状況・根拠URL・Markdown/JSON整合性を確認したこと。
-- 毎回 reports/daily/*.md をGitHub保存・再取得し、GitHub Actionsによる docs/papers.json 再生成状況を別途照合する。
+- 対象: 246件、日次Markdown全12ファイル
+- 最終更新: 2026-11-14
+- 記載補完・原著一次資料要旨を用いた再確認を実施: **80 / 246件**（下表）。全文精読完了を意味しない。
+- 上記以外の論文で既にフィールドが埋まっていても、原著照合が済んだものと扱わない。
+- 数値結果は原著要旨または公開本文で確認した値だけを記載。未公表のベンチマーク数値は創作しない。
+- 完了条件: 全246件の6フィールドの記載、原著URL・確認範囲、MarkdownとJSONの整合性を確認した場合のみ自動処理停止。
+- GitHub Actionsで docs/papers.json を再生成するため、直後の同期は検査してから完了判定する。
 
-## 2026-08-23 レポート4本（42件）
+## 既に原著の要旨・一次書誌情報で内容を確認し、Markdownを補完したレポート（80件）
 
-| 論文ID | 一次資料 | 確認範囲 | 状態 |
+| Canonical ID | 一次資料URL | 確認範囲 | 更新状態 |
 |---|---|---|---|
-| `arxiv:2608.19746` | https://arxiv.org/abs/2608.19746 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.17268` | https://arxiv.org/abs/2608.17268 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.14354` | https://arxiv.org/abs/2608.14354 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.14290` | https://arxiv.org/abs/2608.14290 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.14465` | https://arxiv.org/abs/2608.14465 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.13545` | https://arxiv.org/abs/2608.13545 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.11656` | https://arxiv.org/abs/2608.11656 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.06253` | https://arxiv.org/abs/2608.06253 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.06366` | https://arxiv.org/abs/2608.06366 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.06265` | https://arxiv.org/abs/2608.06265 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42373953` | https://pubmed.ncbi.nlm.nih.gov/42373953 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42442269` | https://pubmed.ncbi.nlm.nih.gov/42442269 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42550187` | https://pubmed.ncbi.nlm.nih.gov/42550187 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42509322` | https://pubmed.ncbi.nlm.nih.gov/42509322 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42331228` | https://pubmed.ncbi.nlm.nih.gov/42331228 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42213562` | https://pubmed.ncbi.nlm.nih.gov/42213562 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42214316` | https://pubmed.ncbi.nlm.nih.gov/42214316 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:41879927` | https://pubmed.ncbi.nlm.nih.gov/41879927 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42545345` | https://pubmed.ncbi.nlm.nih.gov/42545345 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42546187` | https://pubmed.ncbi.nlm.nih.gov/42546187 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.18982` | https://arxiv.org/abs/2608.18982 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.19831` | https://arxiv.org/abs/2608.19831 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.18704` | https://arxiv.org/abs/2608.18704 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42107669` | https://pubmed.ncbi.nlm.nih.gov/42107669 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42066927` | https://pubmed.ncbi.nlm.nih.gov/42066927 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42430567` | https://pubmed.ncbi.nlm.nih.gov/42430567 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.19072` | https://arxiv.org/abs/2608.19072 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.19842` | https://arxiv.org/abs/2608.19842 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.18919` | https://arxiv.org/abs/2608.18919 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.18647` | https://arxiv.org/abs/2608.18647 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.18433` | https://arxiv.org/abs/2608.18433 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.18177` | https://arxiv.org/abs/2608.18177 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.20331` | https://arxiv.org/abs/2608.20331 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.20316` | https://arxiv.org/abs/2608.20316 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.20315` | https://arxiv.org/abs/2608.20315 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.20314` | https://arxiv.org/abs/2608.20314 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.20290` | https://arxiv.org/abs/2608.20290 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.20281` | https://arxiv.org/abs/2608.20281 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.20280` | https://arxiv.org/abs/2608.20280 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `arxiv:2608.20274` | https://arxiv.org/abs/2608.20274 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42543469` | https://pubmed.ncbi.nlm.nih.gov/42543469 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
-| `pmid:42525208` | https://pubmed.ncbi.nlm.nih.gov/42525208 | 要旨・一次書誌情報（全文精読未保証） | 6項目記載・Markdown/JSON反映済 |
+| `arxiv:2608.19746` | https://arxiv.org/abs/2608.19746 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.17268` | https://arxiv.org/abs/2608.17268 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.14354` | https://arxiv.org/abs/2608.14354 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.14290` | https://arxiv.org/abs/2608.14290 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.14465` | https://arxiv.org/abs/2608.14465 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.13545` | https://arxiv.org/abs/2608.13545 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.11656` | https://arxiv.org/abs/2608.11656 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.06253` | https://arxiv.org/abs/2608.06253 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.06366` | https://arxiv.org/abs/2608.06366 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.06265` | https://arxiv.org/abs/2608.06265 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42373953` | https://pubmed.ncbi.nlm.nih.gov/42373953 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42442269` | https://pubmed.ncbi.nlm.nih.gov/42442269 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42550187` | https://pubmed.ncbi.nlm.nih.gov/42550187 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42509322` | https://pubmed.ncbi.nlm.nih.gov/42509322 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42331228` | https://pubmed.ncbi.nlm.nih.gov/42331228 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42213562` | https://pubmed.ncbi.nlm.nih.gov/42213562 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42214316` | https://pubmed.ncbi.nlm.nih.gov/42214316 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:41879927` | https://pubmed.ncbi.nlm.nih.gov/41879927 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42545345` | https://pubmed.ncbi.nlm.nih.gov/42545345 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42546187` | https://pubmed.ncbi.nlm.nih.gov/42546187 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.18982` | https://arxiv.org/abs/2608.18982 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.19831` | https://arxiv.org/abs/2608.19831 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.18704` | https://arxiv.org/abs/2608.18704 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42107669` | https://pubmed.ncbi.nlm.nih.gov/42107669 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42066927` | https://pubmed.ncbi.nlm.nih.gov/42066927 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42430567` | https://pubmed.ncbi.nlm.nih.gov/42430567 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.19072` | https://arxiv.org/abs/2608.19072 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.19842` | https://arxiv.org/abs/2608.19842 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.18919` | https://arxiv.org/abs/2608.18919 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.18647` | https://arxiv.org/abs/2608.18647 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.18433` | https://arxiv.org/abs/2608.18433 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.18177` | https://arxiv.org/abs/2608.18177 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.20331` | https://arxiv.org/abs/2608.20331 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.20316` | https://arxiv.org/abs/2608.20316 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.20315` | https://arxiv.org/abs/2608.20315 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.20314` | https://arxiv.org/abs/2608.20314 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.20290` | https://arxiv.org/abs/2608.20290 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.20281` | https://arxiv.org/abs/2608.20281 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.20280` | https://arxiv.org/abs/2608.20280 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.20274` | https://arxiv.org/abs/2608.20274 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42543469` | https://pubmed.ncbi.nlm.nih.gov/42543469 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42525208` | https://pubmed.ncbi.nlm.nih.gov/42525208 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.23566` | https://arxiv.org/abs/2608.23566 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.23554` | https://arxiv.org/abs/2608.23554 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.23551` | https://arxiv.org/abs/2608.23551 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.23538` | https://arxiv.org/abs/2608.23538 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.23531` | https://arxiv.org/abs/2608.23531 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.23480` | https://arxiv.org/abs/2608.23480 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.23473` | https://arxiv.org/abs/2608.23473 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.23468` | https://arxiv.org/abs/2608.23468 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.23463` | https://arxiv.org/abs/2608.23463 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.23461` | https://arxiv.org/abs/2608.23461 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.23458` | https://arxiv.org/abs/2608.23458 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42492159` | https://pubmed.ncbi.nlm.nih.gov/42492159 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42323426` | https://pubmed.ncbi.nlm.nih.gov/42323426 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42303756` | https://pubmed.ncbi.nlm.nih.gov/42303756 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42286322` | https://pubmed.ncbi.nlm.nih.gov/42286322 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:41927986` | https://pubmed.ncbi.nlm.nih.gov/41927986 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42008829` | https://pubmed.ncbi.nlm.nih.gov/42008829 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:41880917` | https://pubmed.ncbi.nlm.nih.gov/41880917 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.27455` | https://arxiv.org/abs/2608.27455 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.27454` | https://arxiv.org/abs/2608.27454 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.27448` | https://arxiv.org/abs/2608.27448 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.27420` | https://arxiv.org/abs/2608.27420 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.27409` | https://arxiv.org/abs/2608.27409 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.27402` | https://arxiv.org/abs/2608.27402 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.27397` | https://arxiv.org/abs/2608.27397 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.27395` | https://arxiv.org/abs/2608.27395 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.27391` | https://arxiv.org/abs/2608.27391 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.27370` | https://arxiv.org/abs/2608.27370 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.27351` | https://arxiv.org/abs/2608.27351 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `arxiv:2608.27348` | https://arxiv.org/abs/2608.27348 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42560867` | https://pubmed.ncbi.nlm.nih.gov/42560867 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42561260` | https://pubmed.ncbi.nlm.nih.gov/42561260 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42550965` | https://pubmed.ncbi.nlm.nih.gov/42550965 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42551868` | https://pubmed.ncbi.nlm.nih.gov/42551868 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42553746` | https://pubmed.ncbi.nlm.nih.gov/42553746 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42547906` | https://pubmed.ncbi.nlm.nih.gov/42547906 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42503595` | https://pubmed.ncbi.nlm.nih.gov/42503595 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
+| `pmid:42482648` | https://pubmed.ncbi.nlm.nih.gov/42482648 | 原著要旨／一次書誌情報 | 主要6項目を補完・保存 |
 
-## 次回の再開
+## 次の再開先
 
-- `reports/daily/2026-08-26.md` の未記載項目の補完を継続。
-- 進捗は常にGitHubの最新Markdown/JSONから再計算し、過去の「完了」表示は鵜呑みにしない。
+- `reports/daily/2026-09-01.md`（10件）の未記載項目を原著と照合して補完。
+- 続いて9/10、10/09、11/04、11/06、11/14を処理。JSONの更新済件数は常に最新ファイルで照合。
