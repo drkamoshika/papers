@@ -1,0 +1,4681 @@
+{
+  "status": "selected_not_fully_reviewed",
+  "created": "2026-11-14",
+  "unique_papers": 535,
+  "groups": {
+    "language": [
+      {
+        "id": "arxiv:1301.3781",
+        "title": "Efficient Estimation of Word Representations in Vector Space",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1301.3781",
+        "date": "2013-01-16"
+      },
+      {
+        "id": "arxiv:1310.4546",
+        "title": "Distributed Representations of Words and Phrases and their Compositionality",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1310.4546",
+        "date": "2013-10-16"
+      },
+      {
+        "id": "arxiv:1409.0473",
+        "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1409.0473",
+        "date": "2014-09-01"
+      },
+      {
+        "id": "arxiv:1409.3215",
+        "title": "Sequence to Sequence Learning with Neural Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1409.3215",
+        "date": "2014-09-10"
+      },
+      {
+        "id": "arxiv:1508.04025",
+        "title": "Effective Approaches to Attention-based Neural Machine Translation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1508.04025",
+        "date": "2015-08-17"
+      },
+      {
+        "id": "arxiv:1607.06450",
+        "title": "Layer Normalization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1607.06450",
+        "date": "2016-07-21"
+      },
+      {
+        "id": "arxiv:1606.08415",
+        "title": "Gaussian Error Linear Units (GELUs)",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1606.08415",
+        "date": "2016-06-27"
+      },
+      {
+        "id": "arxiv:1706.03762",
+        "title": "Attention Is All You Need",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1706.03762",
+        "date": "2017-06-12"
+      },
+      {
+        "id": "arxiv:1802.05365",
+        "title": "Deep contextualized word representations",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1802.05365",
+        "date": "2018-02-15"
+      },
+      {
+        "id": "arxiv:1810.04805",
+        "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1810.04805",
+        "date": "2018-10-11"
+      },
+      {
+        "id": "arxiv:1907.11692",
+        "title": "RoBERTa: A Robustly Optimized BERT Pretraining Approach",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1907.11692",
+        "date": "2019-07-26"
+      },
+      {
+        "id": "arxiv:1906.08237",
+        "title": "XLNet: Generalized Autoregressive Pretraining for Language Understanding",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1906.08237",
+        "date": "2019-06-19"
+      },
+      {
+        "id": "arxiv:1910.10683",
+        "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1910.10683",
+        "date": "2019-10-23"
+      },
+      {
+        "id": "arxiv:1910.01108",
+        "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1910.01108",
+        "date": "2019-10-02"
+      },
+      {
+        "id": "arxiv:1909.11942",
+        "title": "ALBERT: A Lite BERT for Self-supervised Learning of Language Representations",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1909.11942",
+        "date": "2019-09-26"
+      },
+      {
+        "id": "arxiv:1910.13461",
+        "title": "BART: Denoising Sequence-to-Sequence Pre-training for Natural Language Generation, Translation, and Comprehension",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1910.13461",
+        "date": "2019-10-29"
+      },
+      {
+        "id": "arxiv:2003.10555",
+        "title": "ELECTRA: Pre-training Text Encoders as Discriminators Rather Than Generators",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2003.10555",
+        "date": "2020-03-23"
+      },
+      {
+        "id": "arxiv:2005.14165",
+        "title": "Language Models are Few-Shot Learners",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2005.14165",
+        "date": "2020-05-28"
+      },
+      {
+        "id": "arxiv:2001.08361",
+        "title": "Scaling Laws for Neural Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2001.08361",
+        "date": "2020-01-23"
+      },
+      {
+        "id": "arxiv:2203.15556",
+        "title": "Training Compute-Optimal Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2203.15556",
+        "date": "2022-03-29"
+      },
+      {
+        "id": "arxiv:2210.11416",
+        "title": "Scaling Instruction-Finetuned Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2210.11416",
+        "date": "2022-10-20"
+      },
+      {
+        "id": "arxiv:2302.13971",
+        "title": "LLaMA: Open and Efficient Foundation Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2302.13971",
+        "date": "2023-02-27"
+      },
+      {
+        "id": "arxiv:2307.09288",
+        "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2307.09288",
+        "date": "2023-07-18"
+      },
+      {
+        "id": "arxiv:2407.21783",
+        "title": "The Llama 3 Herd of Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2407.21783",
+        "date": "2024-07-31"
+      },
+      {
+        "id": "arxiv:2310.06825",
+        "title": "Mistral 7B",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.06825",
+        "date": "2023-10-10"
+      },
+      {
+        "id": "arxiv:2401.04088",
+        "title": "Mixtral of Experts",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2401.04088",
+        "date": "2024-01-08"
+      },
+      {
+        "id": "arxiv:2101.03961",
+        "title": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2101.03961",
+        "date": "2021-01-11"
+      },
+      {
+        "id": "arxiv:1701.06538",
+        "title": "Outrageously Large Neural Networks: The Sparsely-Gated Mixture-of-Experts Layer",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1701.06538",
+        "date": "2017-01-23"
+      },
+      {
+        "id": "arxiv:2006.16668",
+        "title": "GShard: Scaling Giant Models with Conditional Computation and Automatic Sharding",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2006.16668",
+        "date": "2020-06-30"
+      },
+      {
+        "id": "arxiv:2106.09685",
+        "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2106.09685",
+        "date": "2021-06-17"
+      },
+      {
+        "id": "arxiv:2305.14314",
+        "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.14314",
+        "date": "2023-05-23"
+      },
+      {
+        "id": "arxiv:1902.00751",
+        "title": "Parameter-Efficient Transfer Learning for NLP",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1902.00751",
+        "date": "2019-02-02"
+      },
+      {
+        "id": "arxiv:2101.00190",
+        "title": "Prefix-Tuning: Optimizing Continuous Prompts for Generation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2101.00190",
+        "date": "2021-01-01"
+      },
+      {
+        "id": "arxiv:2104.08691",
+        "title": "The Power of Scale for Parameter-Efficient Prompt Tuning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2104.08691",
+        "date": "2021-04-18"
+      },
+      {
+        "id": "arxiv:2110.04366",
+        "title": "Towards a Unified View of Parameter-Efficient Transfer Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2110.04366",
+        "date": "2021-10-08"
+      },
+      {
+        "id": "arxiv:2205.05638",
+        "title": "Few-Shot Parameter-Efficient Fine-Tuning is Better and Cheaper than In-Context Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2205.05638",
+        "date": "2022-05-11"
+      },
+      {
+        "id": "arxiv:2203.02155",
+        "title": "Training language models to follow instructions with human feedback",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2203.02155",
+        "date": "2022-03-04"
+      },
+      {
+        "id": "arxiv:1706.03741",
+        "title": "Deep reinforcement learning from human preferences",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1706.03741",
+        "date": "2017-06-12"
+      },
+      {
+        "id": "arxiv:1909.08593",
+        "title": "Fine-Tuning Language Models from Human Preferences",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1909.08593",
+        "date": "2019-09-18"
+      },
+      {
+        "id": "arxiv:2009.01325",
+        "title": "Learning to summarize from human feedback",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2009.01325",
+        "date": "2020-09-02"
+      },
+      {
+        "id": "arxiv:2212.08073",
+        "title": "Constitutional AI: Harmlessness from AI Feedback",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2212.08073",
+        "date": "2022-12-15"
+      },
+      {
+        "id": "arxiv:2305.18290",
+        "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.18290",
+        "date": "2023-05-29"
+      },
+      {
+        "id": "arxiv:2309.16240",
+        "title": "Beyond Reverse KL: Generalizing Direct Preference Optimization with Diverse Divergence Constraints",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2309.16240",
+        "date": "2023-09-28"
+      },
+      {
+        "id": "arxiv:2402.01306",
+        "title": "KTO: Model Alignment as Prospect Theoretic Optimization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.01306",
+        "date": "2024-02-02"
+      },
+      {
+        "id": "arxiv:2402.13228",
+        "title": "Smaug: Fixing Failure Modes of Preference Optimisation with DPO-Positive",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.13228",
+        "date": "2024-02-20"
+      },
+      {
+        "id": "arxiv:2406.11827",
+        "title": "WPO: Enhancing RLHF with Weighted Preference Optimization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2406.11827",
+        "date": "2024-06-17"
+      },
+      {
+        "id": "arxiv:2201.11903",
+        "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2201.11903",
+        "date": "2022-01-28"
+      },
+      {
+        "id": "arxiv:2203.11171",
+        "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2203.11171",
+        "date": "2022-03-21"
+      },
+      {
+        "id": "arxiv:2205.11916",
+        "title": "Large Language Models are Zero-Shot Reasoners",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2205.11916",
+        "date": "2022-05-24"
+      },
+      {
+        "id": "arxiv:2205.10625",
+        "title": "Least-to-Most Prompting Enables Complex Reasoning in Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2205.10625",
+        "date": "2022-05-21"
+      },
+      {
+        "id": "arxiv:2210.03629",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2210.03629",
+        "date": "2022-10-06"
+      },
+      {
+        "id": "arxiv:2203.14465",
+        "title": "STaR: Bootstrapping Reasoning With Reasoning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2203.14465",
+        "date": "2022-03-28"
+      },
+      {
+        "id": "arxiv:2305.10601",
+        "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.10601",
+        "date": "2023-05-17"
+      },
+      {
+        "id": "arxiv:2308.09687",
+        "title": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2308.09687",
+        "date": "2023-08-18"
+      },
+      {
+        "id": "arxiv:2305.20050",
+        "title": "Let's Verify Step by Step",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.20050",
+        "date": "2023-05-31"
+      },
+      {
+        "id": "arxiv:2210.03350",
+        "title": "Measuring and Narrowing the Compositionality Gap in Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2210.03350",
+        "date": "2022-10-07"
+      },
+      {
+        "id": "arxiv:2211.10435",
+        "title": "PAL: Program-aided Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2211.10435",
+        "date": "2022-11-18"
+      },
+      {
+        "id": "arxiv:2305.14201",
+        "title": "Goat: Fine-tuned LLaMA Outperforms GPT-4 on Arithmetic Tasks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.14201",
+        "date": "2023-05-23"
+      },
+      {
+        "id": "arxiv:2303.11366",
+        "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2303.11366",
+        "date": "2023-03-20"
+      },
+      {
+        "id": "arxiv:2306.02707",
+        "title": "Orca: Progressive Learning from Complex Explanation Traces of GPT-4",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2306.02707",
+        "date": "2023-06-05"
+      },
+      {
+        "id": "arxiv:2212.10560",
+        "title": "Self-Instruct: Aligning Language Models with Self-Generated Instructions",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2212.10560",
+        "date": "2022-12-20"
+      },
+      {
+        "id": "arxiv:2402.03300",
+        "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.03300",
+        "date": "2024-02-05"
+      },
+      {
+        "id": "arxiv:2404.14219",
+        "title": "Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2404.14219",
+        "date": "2024-04-22"
+      },
+      {
+        "id": "arxiv:2408.03314",
+        "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2408.03314",
+        "date": "2024-08-06"
+      },
+      {
+        "id": "arxiv:1412.6980",
+        "title": "Adam: A Method for Stochastic Optimization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1412.6980",
+        "date": "2014-12-22"
+      },
+      {
+        "id": "arxiv:1606.06565",
+        "title": "Concrete Problems in AI Safety",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1606.06565",
+        "date": "2016-06-21"
+      },
+      {
+        "id": "arxiv:1503.02531",
+        "title": "Distilling the Knowledge in a Neural Network",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1503.02531",
+        "date": "2015-03-09"
+      },
+      {
+        "id": "arxiv:1711.05101",
+        "title": "Decoupled Weight Decay Regularization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1711.05101",
+        "date": "2017-11-14"
+      },
+      {
+        "id": "arxiv:1710.05941",
+        "title": "Searching for Activation Functions",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1710.05941",
+        "date": "2017-10-16"
+      },
+      {
+        "id": "arxiv:1506.02640",
+        "title": "You Only Look Once: Unified, Real-Time Object Detection",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1506.02640",
+        "date": "2015-06-08"
+      },
+      {
+        "id": "arxiv:1511.06434",
+        "title": "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1511.06434",
+        "date": "2015-11-19"
+      },
+      {
+        "id": "arxiv:1605.07678",
+        "title": "An Analysis of Deep Neural Network Models for Practical Applications",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1605.07678",
+        "date": "2016-05-24"
+      },
+      {
+        "id": "arxiv:1611.02731",
+        "title": "Variational Lossy Autoencoder",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1611.02731",
+        "date": "2016-11-08"
+      },
+      {
+        "id": "arxiv:1707.06347",
+        "title": "Proximal Policy Optimization Algorithms",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1707.06347",
+        "date": "2017-07-20"
+      },
+      {
+        "id": "arxiv:1502.05477",
+        "title": "Trust Region Policy Optimization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1502.05477",
+        "date": "2015-02-19"
+      },
+      {
+        "id": "arxiv:1712.01815",
+        "title": "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1712.01815",
+        "date": "2017-12-05"
+      },
+      {
+        "id": "arxiv:2205.14135",
+        "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2205.14135",
+        "date": "2022-05-27"
+      },
+      {
+        "id": "arxiv:2207.09238",
+        "title": "Formal Algorithms for Transformers",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2207.09238",
+        "date": "2022-07-19"
+      },
+      {
+        "id": "arxiv:2211.17192",
+        "title": "Fast Inference from Transformers via Speculative Decoding",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2211.17192",
+        "date": "2022-11-30"
+      },
+      {
+        "id": "arxiv:2306.00978",
+        "title": "AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2306.00978",
+        "date": "2023-06-01"
+      },
+      {
+        "id": "arxiv:2309.06180",
+        "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2309.06180",
+        "date": "2023-09-12"
+      },
+      {
+        "id": "arxiv:2210.17323",
+        "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2210.17323",
+        "date": "2022-10-31"
+      },
+      {
+        "id": "arxiv:1911.02150",
+        "title": "Fast Transformer Decoding: One Write-Head is All You Need",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1911.02150",
+        "date": "2019-11-06"
+      },
+      {
+        "id": "arxiv:2004.05150",
+        "title": "Longformer: The Long-Document Transformer",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2004.05150",
+        "date": "2020-04-10"
+      },
+      {
+        "id": "arxiv:2001.04451",
+        "title": "Reformer: The Efficient Transformer",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2001.04451",
+        "date": "2020-01-13"
+      },
+      {
+        "id": "arxiv:1904.10509",
+        "title": "Generating Long Sequences with Sparse Transformers",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1904.10509",
+        "date": "2019-04-23"
+      },
+      {
+        "id": "arxiv:2307.08691",
+        "title": "FlashAttention-2: Faster Attention with Better Parallelism and Work Partitioning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2307.08691",
+        "date": "2023-07-17"
+      },
+      {
+        "id": "arxiv:2305.13245",
+        "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.13245",
+        "date": "2023-05-22"
+      },
+      {
+        "id": "arxiv:2212.09720",
+        "title": "The case for 4-bit precision: k-bit Inference Scaling Laws",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2212.09720",
+        "date": "2022-12-19"
+      },
+      {
+        "id": "arxiv:2004.08900",
+        "title": "The Cost of Training NLP Models: A Concise Overview",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2004.08900",
+        "date": "2020-04-19"
+      },
+      {
+        "id": "arxiv:2009.14794",
+        "title": "Rethinking Attention with Performers",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2009.14794",
+        "date": "2020-09-30"
+      },
+      {
+        "id": "arxiv:2301.12597",
+        "title": "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2301.12597",
+        "date": "2023-01-30"
+      },
+      {
+        "id": "arxiv:2106.04554",
+        "title": "A Survey of Transformers",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2106.04554",
+        "date": "2021-06-08"
+      },
+      {
+        "id": "arxiv:2110.08207",
+        "title": "Multitask Prompted Training Enables Zero-Shot Task Generalization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2110.08207",
+        "date": "2021-10-15"
+      },
+      {
+        "id": "arxiv:2204.02311",
+        "title": "PaLM: Scaling Language Modeling with Pathways",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2204.02311",
+        "date": "2022-04-05"
+      },
+      {
+        "id": "arxiv:2109.01652",
+        "title": "Finetuned Language Models Are Zero-Shot Learners",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2109.01652",
+        "date": "2021-09-03"
+      },
+      {
+        "id": "arxiv:2305.14325",
+        "title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.14325",
+        "date": "2023-05-23"
+      },
+      {
+        "id": "arxiv:2010.11929",
+        "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2010.11929",
+        "date": "2020-10-22"
+      },
+      {
+        "id": "arxiv:1905.07830",
+        "title": "HellaSwag: Can a Machine Really Finish Your Sentence?",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1905.07830",
+        "date": "2019-05-19"
+      },
+      {
+        "id": "arxiv:1710.03740",
+        "title": "Mixed Precision Training",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1710.03740",
+        "date": "2017-10-10"
+      },
+      {
+        "id": "arxiv:1503.03585",
+        "title": "Deep Unsupervised Learning using Nonequilibrium Thermodynamics",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1503.03585",
+        "date": "2015-03-12"
+      }
+    ],
+    "agents": [
+      {
+        "id": "arxiv:2005.11401",
+        "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2005.11401",
+        "date": "2020-05-22"
+      },
+      {
+        "id": "arxiv:2004.04906",
+        "title": "Dense Passage Retrieval for Open-Domain Question Answering",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2004.04906",
+        "date": "2020-04-10"
+      },
+      {
+        "id": "arxiv:2002.08909",
+        "title": "REALM: Retrieval-Augmented Language Model Pre-Training",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2002.08909",
+        "date": "2020-02-10"
+      },
+      {
+        "id": "arxiv:2004.12832",
+        "title": "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2004.12832",
+        "date": "2020-04-27"
+      },
+      {
+        "id": "arxiv:2104.07567",
+        "title": "Retrieval Augmentation Reduces Hallucination in Conversation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2104.07567",
+        "date": "2021-04-15"
+      },
+      {
+        "id": "arxiv:2112.04426",
+        "title": "Improving language models by retrieving from trillions of tokens",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2112.04426",
+        "date": "2021-12-08"
+      },
+      {
+        "id": "arxiv:1911.00172",
+        "title": "Generalization through Memorization: Nearest Neighbor Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1911.00172",
+        "date": "2019-11-01"
+      },
+      {
+        "id": "arxiv:1606.03126",
+        "title": "Key-Value Memory Networks for Directly Reading Documents",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1606.03126",
+        "date": "2016-06-09"
+      },
+      {
+        "id": "arxiv:1410.3916",
+        "title": "Memory Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1410.3916",
+        "date": "2014-10-15"
+      },
+      {
+        "id": "arxiv:1503.08895",
+        "title": "End-To-End Memory Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1503.08895",
+        "date": "2015-03-31"
+      },
+      {
+        "id": "arxiv:1603.01417",
+        "title": "Dynamic Memory Networks for Visual and Textual Question Answering",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1603.01417",
+        "date": "2016-03-04"
+      },
+      {
+        "id": "arxiv:2302.04761",
+        "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2302.04761",
+        "date": "2023-02-09"
+      },
+      {
+        "id": "arxiv:2307.16789",
+        "title": "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2307.16789",
+        "date": "2023-07-31"
+      },
+      {
+        "id": "arxiv:2305.16504",
+        "title": "On the Tool Manipulation Capability of Open-source Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.16504",
+        "date": "2023-05-25"
+      },
+      {
+        "id": "arxiv:2308.08155",
+        "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2308.08155",
+        "date": "2023-08-16"
+      },
+      {
+        "id": "arxiv:2308.04026",
+        "title": "AgentSims: An Open-Source Sandbox for Large Language Model Evaluation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2308.04026",
+        "date": "2023-08-08"
+      },
+      {
+        "id": "arxiv:2303.17580",
+        "title": "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2303.17580",
+        "date": "2023-03-30"
+      },
+      {
+        "id": "arxiv:2303.11366",
+        "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2303.11366",
+        "date": "2023-03-20"
+      },
+      {
+        "id": "arxiv:2210.03629",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2210.03629",
+        "date": "2022-10-06"
+      },
+      {
+        "id": "arxiv:2304.03442",
+        "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2304.03442",
+        "date": "2023-04-07"
+      },
+      {
+        "id": "arxiv:2304.05376",
+        "title": "ChemCrow: Augmenting large-language models with chemistry tools",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2304.05376",
+        "date": "2023-04-11"
+      },
+      {
+        "id": "arxiv:2305.16291",
+        "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.16291",
+        "date": "2023-05-25"
+      },
+      {
+        "id": "arxiv:2305.18323",
+        "title": "ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.18323",
+        "date": "2023-05-23"
+      },
+      {
+        "id": "arxiv:2308.00352",
+        "title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2308.00352",
+        "date": "2023-08-01"
+      },
+      {
+        "id": "arxiv:2308.03688",
+        "title": "AgentBench: Evaluating LLMs as Agents",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2308.03688",
+        "date": "2023-08-07"
+      },
+      {
+        "id": "arxiv:2308.11432",
+        "title": "A Survey on Large Language Model based Autonomous Agents",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2308.11432",
+        "date": "2023-08-22"
+      },
+      {
+        "id": "arxiv:2310.08560",
+        "title": "MemGPT: Towards LLMs as Operating Systems",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.08560",
+        "date": "2023-10-12"
+      },
+      {
+        "id": "arxiv:2307.07924",
+        "title": "ChatDev: Communicative Agents for Software Development",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2307.07924",
+        "date": "2023-07-16"
+      },
+      {
+        "id": "arxiv:2307.13854",
+        "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2307.13854",
+        "date": "2023-07-25"
+      },
+      {
+        "id": "arxiv:2307.02477",
+        "title": "Reasoning or Reciting? Exploring the Capabilities and Limitations of Language Models Through Counterfactual Tasks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2307.02477",
+        "date": "2023-07-05"
+      },
+      {
+        "id": "arxiv:2312.03815",
+        "title": "LLM as OS, Agents as Apps: Envisioning AIOS, Agents and the AIOS-Agent Ecosystem",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2312.03815",
+        "date": "2023-12-06"
+      },
+      {
+        "id": "arxiv:2305.14992",
+        "title": "Reasoning with Language Model is Planning with World Model",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.14992",
+        "date": "2023-05-24"
+      },
+      {
+        "id": "arxiv:2405.15793",
+        "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2405.15793",
+        "date": "2024-05-06"
+      },
+      {
+        "id": "arxiv:2407.01489",
+        "title": "Agentless: Demystifying LLM-based Software Engineering Agents",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2407.01489",
+        "date": "2024-07-01"
+      },
+      {
+        "id": "arxiv:2404.05427",
+        "title": "AutoCodeRover: Autonomous Program Improvement",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2404.05427",
+        "date": "2024-04-08"
+      },
+      {
+        "id": "arxiv:2307.03172",
+        "title": "Lost in the Middle: How Language Models Use Long Contexts",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2307.03172",
+        "date": "2023-07-06"
+      },
+      {
+        "id": "arxiv:2401.13178",
+        "title": "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2401.13178",
+        "date": "2024-01-24"
+      },
+      {
+        "id": "arxiv:2402.05929",
+        "title": "An Interactive Agent Foundation Model",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.05929",
+        "date": "2024-02-08"
+      },
+      {
+        "id": "arxiv:2401.16467",
+        "title": "ReGAL: Refactoring Programs to Discover Generalizable Abstractions",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2401.16467",
+        "date": "2024-01-29"
+      },
+      {
+        "id": "arxiv:2406.12045",
+        "title": "$τ$-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2406.12045",
+        "date": "2024-06-17"
+      },
+      {
+        "id": "arxiv:2402.04253",
+        "title": "AnyTool: Self-Reflective, Hierarchical Agents for Large-Scale API Calls",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.04253",
+        "date": "2024-02-06"
+      },
+      {
+        "id": "arxiv:2305.14325",
+        "title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.14325",
+        "date": "2023-05-23"
+      },
+      {
+        "id": "arxiv:2308.10848",
+        "title": "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2308.10848",
+        "date": "2023-08-21"
+      },
+      {
+        "id": "arxiv:2308.02151",
+        "title": "Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2308.02151",
+        "date": "2023-08-04"
+      },
+      {
+        "id": "arxiv:2306.03314",
+        "title": "Multi-Agent Collaboration: Harnessing the Power of Intelligent LLM Agents",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2306.03314",
+        "date": "2023-06-05"
+      },
+      {
+        "id": "arxiv:2310.06770",
+        "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.06770",
+        "date": "2023-10-10"
+      },
+      {
+        "id": "arxiv:2310.03714",
+        "title": "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.03714",
+        "date": "2023-10-05"
+      },
+      {
+        "id": "arxiv:2401.05566",
+        "title": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2401.05566",
+        "date": "2024-01-10"
+      },
+      {
+        "id": "arxiv:2204.01691",
+        "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2204.01691",
+        "date": "2022-04-04"
+      },
+      {
+        "id": "arxiv:2209.07753",
+        "title": "Code as Policies: Language Model Programs for Embodied Control",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2209.07753",
+        "date": "2022-09-16"
+      },
+      {
+        "id": "arxiv:2209.11302",
+        "title": "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2209.11302",
+        "date": "2022-09-22"
+      },
+      {
+        "id": "arxiv:2303.03378",
+        "title": "PaLM-E: An Embodied Multimodal Language Model",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2303.03378",
+        "date": "2023-03-06"
+      },
+      {
+        "id": "arxiv:2304.05128",
+        "title": "Teaching Large Language Models to Self-Debug",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2304.05128",
+        "date": "2023-04-11"
+      },
+      {
+        "id": "arxiv:2307.05973",
+        "title": "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2307.05973",
+        "date": "2023-07-12"
+      },
+      {
+        "id": "arxiv:2307.15818",
+        "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2307.15818",
+        "date": "2023-07-28"
+      },
+      {
+        "id": "arxiv:2310.08864",
+        "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.08864",
+        "date": "2023-10-13"
+      },
+      {
+        "id": "arxiv:2309.07864",
+        "title": "The Rise and Potential of Large Language Model Based Agents: A Survey",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2309.07864",
+        "date": "2023-09-14"
+      },
+      {
+        "id": "arxiv:2310.11511",
+        "title": "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.11511",
+        "date": "2023-10-17"
+      },
+      {
+        "id": "arxiv:2310.04406",
+        "title": "Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.04406",
+        "date": "2023-10-06"
+      },
+      {
+        "id": "arxiv:2402.03367",
+        "title": "RAG-Fusion: a New Take on Retrieval-Augmented Generation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.03367",
+        "date": "2024-01-31"
+      },
+      {
+        "id": "arxiv:2403.10131",
+        "title": "RAFT: Adapting Language Model to Domain Specific RAG",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2403.10131",
+        "date": "2024-03-15"
+      },
+      {
+        "id": "arxiv:2304.12244",
+        "title": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2304.12244",
+        "date": "2023-04-24"
+      },
+      {
+        "id": "arxiv:2310.08319",
+        "title": "Fine-Tuning LLaMA for Multi-Stage Text Retrieval",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.08319",
+        "date": "2023-10-12"
+      },
+      {
+        "id": "arxiv:2312.13010",
+        "title": "AgentCoder: Multi-Agent-based Code Generation with Iterative Testing and Optimisation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2312.13010",
+        "date": "2023-12-20"
+      },
+      {
+        "id": "arxiv:2309.07870",
+        "title": "Agents: An Open-source Framework for Autonomous Language Agents",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2309.07870",
+        "date": "2023-09-14"
+      },
+      {
+        "id": "arxiv:2309.00986",
+        "title": "ModelScope-Agent: Building Your Customizable Agent System with Open-source Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2309.00986",
+        "date": "2023-09-02"
+      },
+      {
+        "id": "arxiv:2106.01345",
+        "title": "Decision Transformer: Reinforcement Learning via Sequence Modeling",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2106.01345",
+        "date": "2021-06-02"
+      },
+      {
+        "id": "arxiv:2006.08381",
+        "title": "DreamCoder: Growing generalizable, interpretable knowledge with wake-sleep Bayesian program learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2006.08381",
+        "date": "2020-06-15"
+      },
+      {
+        "id": "arxiv:2010.03768",
+        "title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2010.03768",
+        "date": "2020-10-08"
+      },
+      {
+        "id": "arxiv:1806.01261",
+        "title": "Relational inductive biases, deep learning, and graph networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1806.01261",
+        "date": "2018-06-04"
+      },
+      {
+        "id": "arxiv:1707.03389",
+        "title": "SCAN: Learning Hierarchical Compositional Visual Concepts",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1707.03389",
+        "date": "2017-07-11"
+      },
+      {
+        "id": "arxiv:1606.01540",
+        "title": "OpenAI Gym",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1606.01540",
+        "date": "2016-06-05"
+      },
+      {
+        "id": "arxiv:2007.12770",
+        "title": "BabyAI 1.1",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2007.12770",
+        "date": "2020-07-24"
+      },
+      {
+        "id": "arxiv:2304.08244",
+        "title": "API-Bank: A Comprehensive Benchmark for Tool-Augmented LLMs",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2304.08244",
+        "date": "2023-04-14"
+      },
+      {
+        "id": "arxiv:2306.13304",
+        "title": "ToolQA: A Dataset for LLM Question Answering with External Tools",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2306.13304",
+        "date": "2023-06-23"
+      },
+      {
+        "id": "arxiv:2112.09332",
+        "title": "WebGPT: Browser-assisted question-answering with human feedback",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2112.09332",
+        "date": "2021-12-17"
+      },
+      {
+        "id": "arxiv:2305.15334",
+        "title": "Gorilla: Large Language Model Connected with Massive APIs",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.15334",
+        "date": "2023-05-24"
+      },
+      {
+        "id": "arxiv:2306.05301",
+        "title": "ToolAlpaca: Generalized Tool Learning for Language Models with 3000 Simulated Cases",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2306.05301",
+        "date": "2023-06-08"
+      },
+      {
+        "id": "arxiv:2305.11554",
+        "title": "ToolkenGPT: Augmenting Frozen Language Models with Massive Tools via Tool Embeddings",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.11554",
+        "date": "2023-05-19"
+      },
+      {
+        "id": "arxiv:2310.10634",
+        "title": "OpenAgents: An Open Platform for Language Agents in the Wild",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.10634",
+        "date": "2023-10-16"
+      },
+      {
+        "id": "arxiv:2306.06624",
+        "title": "RestGPT: Connecting Large Language Models with Real-World RESTful APIs",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2306.06624",
+        "date": "2023-06-11"
+      },
+      {
+        "id": "arxiv:2304.01904",
+        "title": "REFINER: Reasoning Feedback on Intermediate Representations",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2304.01904",
+        "date": "2023-04-04"
+      },
+      {
+        "id": "arxiv:2408.04682",
+        "title": "ToolSandbox: A Stateful, Conversational, Interactive Evaluation Benchmark for LLM Tool Use Capabilities",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2408.04682",
+        "date": "2024-08-08"
+      },
+      {
+        "id": "arxiv:1810.08272",
+        "title": "BabyAI: A Platform to Study the Sample Efficiency of Grounded Language Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1810.08272",
+        "date": "2018-10-18"
+      },
+      {
+        "id": "arxiv:2306.06070",
+        "title": "Mind2Web: Towards a Generalist Agent for the Web",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2306.06070",
+        "date": "2023-06-09"
+      },
+      {
+        "id": "arxiv:2401.13649",
+        "title": "VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2401.13649",
+        "date": "2024-01-24"
+      },
+      {
+        "id": "arxiv:2402.05930",
+        "title": "WebLINX: Real-World Website Navigation with Multi-Turn Dialogue",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.05930",
+        "date": "2024-02-08"
+      },
+      {
+        "id": "arxiv:2207.01206",
+        "title": "WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2207.01206",
+        "date": "2022-07-04"
+      },
+      {
+        "id": "arxiv:2407.05291",
+        "title": "WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2407.05291",
+        "date": "2024-07-07"
+      },
+      {
+        "id": "arxiv:2404.07972",
+        "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2404.07972",
+        "date": "2024-04-11"
+      },
+      {
+        "id": "arxiv:2403.07718",
+        "title": "WorkArena: How Capable Are Web Agents at Solving Common Knowledge Work Tasks?",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2403.07718",
+        "date": "2024-03-12"
+      },
+      {
+        "id": "arxiv:2105.13231",
+        "title": "AndroidEnv: A Reinforcement Learning Platform for Android",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2105.13231",
+        "date": "2021-05-27"
+      },
+      {
+        "id": "arxiv:1806.11532",
+        "title": "TextWorld: A Learning Environment for Text-based Games",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1806.11532",
+        "date": "2018-06-29"
+      },
+      {
+        "id": "arxiv:2405.14573",
+        "title": "AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2405.14573",
+        "date": "2024-05-23"
+      },
+      {
+        "id": "arxiv:2203.07540",
+        "title": "ScienceWorld: Is your Agent Smarter than a 5th Grader?",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2203.07540",
+        "date": "2022-03-14"
+      },
+      {
+        "id": "arxiv:2303.17760",
+        "title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2303.17760",
+        "date": "2023-03-31"
+      },
+      {
+        "id": "arxiv:2402.02172",
+        "title": "CodeAgent: Autonomous Communicative Agents for Code Review",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.02172",
+        "date": "2024-02-03"
+      },
+      {
+        "id": "arxiv:2401.18059",
+        "title": "RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2401.18059",
+        "date": "2024-01-31"
+      },
+      {
+        "id": "arxiv:2404.16130",
+        "title": "From Local to Global: A Graph RAG Approach to Query-Focused Summarization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2404.16130",
+        "date": "2024-04-24"
+      },
+      {
+        "id": "arxiv:2403.14403",
+        "title": "Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2403.14403",
+        "date": "2024-03-21"
+      },
+      {
+        "id": "arxiv:2305.10250",
+        "title": "MemoryBank: Enhancing Large Language Models with Long-Term Memory",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.10250",
+        "date": "2023-05-17"
+      },
+      {
+        "id": "arxiv:2410.10813",
+        "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2410.10813",
+        "date": "2024-10-14"
+      },
+      {
+        "id": "arxiv:2207.05608",
+        "title": "Inner Monologue: Embodied Reasoning through Planning with Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2207.05608",
+        "date": "2022-07-12"
+      },
+      {
+        "id": "arxiv:2405.12213",
+        "title": "Octo: An Open-Source Generalist Robot Policy",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2405.12213",
+        "date": "2024-05-20"
+      },
+      {
+        "id": "arxiv:2212.06817",
+        "title": "RT-1: Robotics Transformer for Real-World Control at Scale",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2212.06817",
+        "date": "2022-12-13"
+      },
+      {
+        "id": "arxiv:2406.09246",
+        "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2406.09246",
+        "date": "2024-06-13"
+      },
+      {
+        "id": "arxiv:2303.04137",
+        "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2303.04137",
+        "date": "2023-03-07"
+      },
+      {
+        "id": "arxiv:2401.15884",
+        "title": "Corrective Retrieval Augmented Generation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2401.15884",
+        "date": "2024-01-29"
+      },
+      {
+        "id": "arxiv:2305.06983",
+        "title": "Active Retrieval Augmented Generation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.06983",
+        "date": "2023-05-11"
+      },
+      {
+        "id": "arxiv:2309.15217",
+        "title": "Ragas: Automated Evaluation of Retrieval Augmented Generation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2309.15217",
+        "date": "2023-09-26"
+      },
+      {
+        "id": "arxiv:2404.12457",
+        "title": "RAGCache: Efficient Knowledge Caching for Retrieval-Augmented Generation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2404.12457",
+        "date": "2024-04-18"
+      },
+      {
+        "id": "arxiv:2203.07814",
+        "title": "Competition-Level Code Generation with AlphaCode",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2203.07814",
+        "date": "2022-02-08"
+      }
+    ],
+    "trust": [
+      {
+        "id": "arxiv:1312.6199",
+        "title": "Intriguing properties of neural networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1312.6199",
+        "date": "2013-12-21"
+      },
+      {
+        "id": "arxiv:1412.6572",
+        "title": "Explaining and Harnessing Adversarial Examples",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1412.6572",
+        "date": "2014-12-20"
+      },
+      {
+        "id": "arxiv:1608.04644",
+        "title": "Towards Evaluating the Robustness of Neural Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1608.04644",
+        "date": "2016-08-16"
+      },
+      {
+        "id": "arxiv:1706.06083",
+        "title": "Towards Deep Learning Models Resistant to Adversarial Attacks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1706.06083",
+        "date": "2017-06-19"
+      },
+      {
+        "id": "arxiv:1902.02918",
+        "title": "Certified Adversarial Robustness via Randomized Smoothing",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1902.02918",
+        "date": "2019-02-08"
+      },
+      {
+        "id": "arxiv:1809.03113",
+        "title": "Certified Adversarial Robustness with Additive Noise",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1809.03113",
+        "date": "2018-09-10"
+      },
+      {
+        "id": "arxiv:1610.08401",
+        "title": "Universal adversarial perturbations",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1610.08401",
+        "date": "2016-10-26"
+      },
+      {
+        "id": "arxiv:2010.03593",
+        "title": "Uncovering the Limits of Adversarial Training against Norm-Bounded Adversarial Examples",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2010.03593",
+        "date": "2020-10-07"
+      },
+      {
+        "id": "arxiv:1704.05712",
+        "title": "Universal Adversarial Perturbations Against Semantic Image Segmentation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1704.05712",
+        "date": "2017-04-19"
+      },
+      {
+        "id": "arxiv:1809.07802",
+        "title": "Playing the Game of Universal Adversarial Perturbations",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1809.07802",
+        "date": "2018-09-20"
+      },
+      {
+        "id": "arxiv:1809.08352",
+        "title": "Unrestricted Adversarial Examples",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1809.08352",
+        "date": "2018-09-22"
+      },
+      {
+        "id": "arxiv:1804.00499",
+        "title": "Semantic Adversarial Examples",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1804.00499",
+        "date": "2018-03-16"
+      },
+      {
+        "id": "arxiv:1907.07174",
+        "title": "Natural Adversarial Examples",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1907.07174",
+        "date": "2019-07-16"
+      },
+      {
+        "id": "arxiv:1807.01697",
+        "title": "Benchmarking Neural Network Robustness to Common Corruptions and Surface Variations",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1807.01697",
+        "date": "2018-07-04"
+      },
+      {
+        "id": "arxiv:1810.12715",
+        "title": "On the Effectiveness of Interval Bound Propagation for Training Verifiably Robust Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1810.12715",
+        "date": "2018-10-30"
+      },
+      {
+        "id": "arxiv:1906.02530",
+        "title": "Can You Trust Your Model's Uncertainty? Evaluating Predictive Uncertainty Under Dataset Shift",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1906.02530",
+        "date": "2019-06-06"
+      },
+      {
+        "id": "arxiv:2004.07780",
+        "title": "Shortcut Learning in Deep Neural Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2004.07780",
+        "date": "2020-04-16"
+      },
+      {
+        "id": "arxiv:1909.12475",
+        "title": "Hidden Stratification Causes Clinically Meaningful Failures in Machine Learning for Medical Imaging",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1909.12475",
+        "date": "2019-09-27"
+      },
+      {
+        "id": "arxiv:1703.04977",
+        "title": "What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1703.04977",
+        "date": "2017-03-15"
+      },
+      {
+        "id": "arxiv:1802.10501",
+        "title": "Predictive Uncertainty Estimation via Prior Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1802.10501",
+        "date": "2018-02-28"
+      },
+      {
+        "id": "arxiv:1506.02142",
+        "title": "Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1506.02142",
+        "date": "2015-06-06"
+      },
+      {
+        "id": "arxiv:1705.08500",
+        "title": "Selective Classification for Deep Neural Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1705.08500",
+        "date": "2017-05-23"
+      },
+      {
+        "id": "arxiv:1901.09192",
+        "title": "SelectiveNet: A Deep Neural Network with an Integrated Reject Option",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1901.09192",
+        "date": "2019-01-26"
+      },
+      {
+        "id": "arxiv:1907.00208",
+        "title": "Deep Gamblers: Learning to Abstain with Portfolio Theory",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1907.00208",
+        "date": "2019-06-29"
+      },
+      {
+        "id": "arxiv:2207.05221",
+        "title": "Language Models (Mostly) Know What They Know",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2207.05221",
+        "date": "2022-07-11"
+      },
+      {
+        "id": "arxiv:2205.14334",
+        "title": "Teaching Models to Express Their Uncertainty in Words",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2205.14334",
+        "date": "2022-05-28"
+      },
+      {
+        "id": "arxiv:2306.10193",
+        "title": "Conformal Language Modeling",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2306.10193",
+        "date": "2023-06-16"
+      },
+      {
+        "id": "arxiv:2202.13415",
+        "title": "Conformal prediction beyond exchangeability",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2202.13415",
+        "date": "2022-02-27"
+      },
+      {
+        "id": "arxiv:1904.06019",
+        "title": "Conformal Prediction Under Covariate Shift",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1904.06019",
+        "date": "2019-04-12"
+      },
+      {
+        "id": "arxiv:0706.3188",
+        "title": "A tutorial on conformal prediction",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/0706.3188",
+        "date": "2007-06-21"
+      },
+      {
+        "id": "arxiv:1111.1418",
+        "title": "Efficient Nonparametric Conformal Prediction Regions",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1111.1418",
+        "date": "2011-11-06"
+      },
+      {
+        "id": "arxiv:1603.04416",
+        "title": "Criteria of efficiency for conformal prediction",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1603.04416",
+        "date": "2016-03-14"
+      },
+      {
+        "id": "arxiv:2010.09107",
+        "title": "Conformal prediction for time series",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2010.09107",
+        "date": "2020-10-18"
+      },
+      {
+        "id": "arxiv:2007.08792",
+        "title": "Uncertainty Quantification and Deep Ensembles",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2007.08792",
+        "date": "2020-07-17"
+      },
+      {
+        "id": "arxiv:1912.02757",
+        "title": "Deep Ensembles: A Loss Landscape Perspective",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1912.02757",
+        "date": "2019-12-05"
+      },
+      {
+        "id": "arxiv:2105.13283",
+        "title": "Deep Ensembles from a Bayesian Perspective",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2105.13283",
+        "date": "2021-05-27"
+      },
+      {
+        "id": "arxiv:2009.03300",
+        "title": "Measuring Massive Multitask Language Understanding",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2009.03300",
+        "date": "2020-09-07"
+      },
+      {
+        "id": "arxiv:2303.08896",
+        "title": "SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2303.08896",
+        "date": "2023-03-15"
+      },
+      {
+        "id": "arxiv:2305.11747",
+        "title": "HaluEval: A Large-Scale Hallucination Evaluation Benchmark for Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.11747",
+        "date": "2023-05-19"
+      },
+      {
+        "id": "arxiv:2109.07958",
+        "title": "TruthfulQA: Measuring How Models Mimic Human Falsehoods",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2109.07958",
+        "date": "2021-09-08"
+      },
+      {
+        "id": "arxiv:2210.09261",
+        "title": "Challenging BIG-Bench Tasks and Whether Chain-of-Thought Can Solve Them",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2210.09261",
+        "date": "2022-10-17"
+      },
+      {
+        "id": "arxiv:2305.14251",
+        "title": "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.14251",
+        "date": "2023-05-23"
+      },
+      {
+        "id": "arxiv:2302.09664",
+        "title": "Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2302.09664",
+        "date": "2023-02-19"
+      },
+      {
+        "id": "arxiv:2211.09110",
+        "title": "Holistic Evaluation of Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2211.09110",
+        "date": "2022-11-16"
+      },
+      {
+        "id": "arxiv:2206.04615",
+        "title": "Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2206.04615",
+        "date": "2022-06-09"
+      },
+      {
+        "id": "arxiv:1905.07830",
+        "title": "HellaSwag: Can a Machine Really Finish Your Sentence?",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1905.07830",
+        "date": "2019-05-19"
+      },
+      {
+        "id": "arxiv:1907.10641",
+        "title": "WinoGrande: An Adversarial Winograd Schema Challenge at Scale",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1907.10641",
+        "date": "2019-07-24"
+      },
+      {
+        "id": "arxiv:1911.11641",
+        "title": "PIQA: Reasoning about Physical Commonsense in Natural Language",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1911.11641",
+        "date": "2019-11-26"
+      },
+      {
+        "id": "arxiv:1905.00537",
+        "title": "SuperGLUE: A Stickier Benchmark for General-Purpose Language Understanding Systems",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1905.00537",
+        "date": "2019-05-02"
+      },
+      {
+        "id": "arxiv:2107.03374",
+        "title": "Evaluating Large Language Models Trained on Code",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2107.03374",
+        "date": "2021-07-07"
+      },
+      {
+        "id": "arxiv:2406.01574",
+        "title": "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2406.01574",
+        "date": "2024-06-03"
+      },
+      {
+        "id": "arxiv:2110.14168",
+        "title": "Training Verifiers to Solve Math Word Problems",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2110.14168",
+        "date": "2021-10-27"
+      },
+      {
+        "id": "arxiv:2311.12022",
+        "title": "GPQA: A Graduate-Level Google-Proof Q&A Benchmark",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2311.12022",
+        "date": "2023-11-20"
+      },
+      {
+        "id": "arxiv:2306.05685",
+        "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2306.05685",
+        "date": "2023-06-09"
+      },
+      {
+        "id": "arxiv:2403.04132",
+        "title": "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2403.04132",
+        "date": "2024-03-07"
+      },
+      {
+        "id": "arxiv:2403.13787",
+        "title": "RewardBench: Evaluating Reward Models for Language Modeling",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2403.13787",
+        "date": "2024-03-20"
+      },
+      {
+        "id": "arxiv:2307.13702",
+        "title": "Measuring Faithfulness in Chain-of-Thought Reasoning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2307.13702",
+        "date": "2023-07-17"
+      },
+      {
+        "id": "arxiv:1809.02156",
+        "title": "Object Hallucination in Image Captioning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1809.02156",
+        "date": "2018-09-06"
+      },
+      {
+        "id": "arxiv:2302.12173",
+        "title": "Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2302.12173",
+        "date": "2023-02-23"
+      },
+      {
+        "id": "arxiv:2403.02691",
+        "title": "InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2403.02691",
+        "date": "2024-03-05"
+      },
+      {
+        "id": "arxiv:2406.13352",
+        "title": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2406.13352",
+        "date": "2024-06-19"
+      },
+      {
+        "id": "arxiv:2307.15043",
+        "title": "Universal and Transferable Adversarial Attacks on Aligned Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2307.15043",
+        "date": "2023-07-27"
+      },
+      {
+        "id": "arxiv:2401.05566",
+        "title": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2401.05566",
+        "date": "2024-01-10"
+      },
+      {
+        "id": "arxiv:2412.14093",
+        "title": "Alignment faking in large language models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2412.14093",
+        "date": "2024-12-18"
+      },
+      {
+        "id": "arxiv:2310.13548",
+        "title": "Towards Understanding Sycophancy in Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.13548",
+        "date": "2023-10-20"
+      },
+      {
+        "id": "arxiv:2202.03286",
+        "title": "Red Teaming Language Models with Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2202.03286",
+        "date": "2022-02-07"
+      },
+      {
+        "id": "arxiv:2209.07858",
+        "title": "Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2209.07858"
+      },
+      {
+        "id": "arxiv:1803.09010",
+        "title": "Datasheets for Datasets",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1803.09010",
+        "date": "2018-03-23"
+      },
+      {
+        "id": "arxiv:1810.03993",
+        "title": "Model Cards for Model Reporting",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1810.03993",
+        "date": "2018-10-05"
+      },
+      {
+        "id": "arxiv:1607.00133",
+        "title": "Deep Learning with Differential Privacy",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1607.00133",
+        "date": "2016-07-01"
+      },
+      {
+        "id": "arxiv:2012.07805",
+        "title": "Extracting Training Data from Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2012.07805",
+        "date": "2020-12-14"
+      },
+      {
+        "id": "arxiv:1610.05820",
+        "title": "Membership Inference Attacks against Machine Learning Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1610.05820",
+        "date": "2016-10-18"
+      },
+      {
+        "id": "arxiv:1104.3913",
+        "title": "Fairness Through Awareness",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1104.3913",
+        "date": "2011-04-20"
+      },
+      {
+        "id": "arxiv:1610.02413",
+        "title": "Equality of Opportunity in Supervised Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1610.02413",
+        "date": "2016-10-07"
+      },
+      {
+        "id": "arxiv:2004.09456",
+        "title": "StereoSet: Measuring stereotypical bias in pretrained language models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2004.09456",
+        "date": "2020-04-20"
+      },
+      {
+        "id": "arxiv:2010.00133",
+        "title": "CrowS-Pairs: A Challenge Dataset for Measuring Social Biases in Masked Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2010.00133",
+        "date": "2020-09-30"
+      },
+      {
+        "id": "arxiv:2110.08193",
+        "title": "BBQ: A Hand-Built Bias Benchmark for Question Answering",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2110.08193",
+        "date": "2021-10-15"
+      },
+      {
+        "id": "arxiv:2101.11718",
+        "title": "BOLD: Dataset and Metrics for Measuring Biases in Open-Ended Language Generation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2101.11718",
+        "date": "2021-01-27"
+      },
+      {
+        "id": "arxiv:2009.11462",
+        "title": "RealToxicityPrompts: Evaluating Neural Toxic Degeneration in Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2009.11462",
+        "date": "2020-09-24"
+      },
+      {
+        "id": "arxiv:1606.06565",
+        "title": "Concrete Problems in AI Safety",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1606.06565",
+        "date": "2016-06-21"
+      },
+      {
+        "id": "arxiv:1611.08219",
+        "title": "The Off-Switch Game",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1611.08219",
+        "date": "2016-11-24"
+      },
+      {
+        "id": "arxiv:1606.03137",
+        "title": "Cooperative Inverse Reinforcement Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1606.03137",
+        "date": "2016-06-09"
+      },
+      {
+        "id": "arxiv:1711.09883",
+        "title": "AI Safety Gridworlds",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1711.09883",
+        "date": "2017-11-27"
+      },
+      {
+        "id": "arxiv:2105.14111",
+        "title": "Goal Misgeneralization in Deep Reinforcement Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2105.14111",
+        "date": "2021-05-28"
+      },
+      {
+        "id": "arxiv:1602.04938",
+        "title": "\"Why Should I Trust You?\": Explaining the Predictions of Any Classifier",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1602.04938",
+        "date": "2016-02-16"
+      },
+      {
+        "id": "arxiv:1705.07874",
+        "title": "A Unified Approach to Interpreting Model Predictions",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1705.07874",
+        "date": "2017-05-22"
+      },
+      {
+        "id": "arxiv:1703.01365",
+        "title": "Axiomatic Attribution for Deep Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1703.01365",
+        "date": "2017-03-04"
+      },
+      {
+        "id": "arxiv:1606.03490",
+        "title": "The Mythos of Model Interpretability",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1606.03490",
+        "date": "2016-06-10"
+      },
+      {
+        "id": "arxiv:2011.03395",
+        "title": "Underspecification Presents Challenges for Credibility in Modern Machine Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2011.03395",
+        "date": "2020-11-06"
+      },
+      {
+        "id": "arxiv:2108.07258",
+        "title": "On the Opportunities and Risks of Foundation Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2108.07258"
+      },
+      {
+        "id": "arxiv:1906.02243",
+        "title": "Energy and Policy Considerations for Deep Learning in NLP",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1906.02243",
+        "date": "2019-06-05"
+      },
+      {
+        "id": "arxiv:2212.08073",
+        "title": "Constitutional AI: Harmlessness from AI Feedback",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2212.08073",
+        "date": "2022-12-15"
+      },
+      {
+        "id": "arxiv:2305.20050",
+        "title": "Let's Verify Step by Step",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.20050",
+        "date": "2023-05-31"
+      },
+      {
+        "id": "arxiv:2212.09720",
+        "title": "The case for 4-bit precision: k-bit Inference Scaling Laws",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2212.09720",
+        "date": "2022-12-19"
+      },
+      {
+        "id": "arxiv:1706.03741",
+        "title": "Deep reinforcement learning from human preferences",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1706.03741",
+        "date": "2017-06-12"
+      },
+      {
+        "id": "arxiv:1909.08593",
+        "title": "Fine-Tuning Language Models from Human Preferences",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1909.08593",
+        "date": "2019-09-18"
+      },
+      {
+        "id": "arxiv:2009.01325",
+        "title": "Learning to summarize from human feedback",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2009.01325",
+        "date": "2020-09-02"
+      },
+      {
+        "id": "arxiv:2203.02155",
+        "title": "Training language models to follow instructions with human feedback",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2203.02155",
+        "date": "2022-03-04"
+      },
+      {
+        "id": "arxiv:2305.18290",
+        "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.18290",
+        "date": "2023-05-29"
+      },
+      {
+        "id": "arxiv:2408.03314",
+        "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2408.03314",
+        "date": "2024-08-06"
+      },
+      {
+        "id": "arxiv:2309.16240",
+        "title": "Beyond Reverse KL: Generalizing Direct Preference Optimization with Diverse Divergence Constraints",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2309.16240",
+        "date": "2023-09-28"
+      },
+      {
+        "id": "arxiv:2203.14465",
+        "title": "STaR: Bootstrapping Reasoning With Reasoning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2203.14465",
+        "date": "2022-03-28"
+      },
+      {
+        "id": "arxiv:2210.03350",
+        "title": "Measuring and Narrowing the Compositionality Gap in Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2210.03350",
+        "date": "2022-10-07"
+      },
+      {
+        "id": "arxiv:2307.02477",
+        "title": "Reasoning or Reciting? Exploring the Capabilities and Limitations of Language Models Through Counterfactual Tasks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2307.02477",
+        "date": "2023-07-05"
+      }
+    ],
+    "structured": [
+      {
+        "id": "arxiv:1603.02754",
+        "title": "XGBoost: A Scalable Tree Boosting System",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1603.02754",
+        "date": "2016-03-09"
+      },
+      {
+        "id": "arxiv:2106.11959",
+        "title": "Revisiting Deep Learning Models for Tabular Data",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2106.11959",
+        "date": "2021-06-22"
+      },
+      {
+        "id": "arxiv:2207.08815",
+        "title": "Why do tree-based models still outperform deep learning on tabular data?",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2207.08815",
+        "date": "2022-07-18"
+      },
+      {
+        "id": "arxiv:1908.07442",
+        "title": "TabNet: Attentive Interpretable Tabular Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1908.07442",
+        "date": "2019-08-20"
+      },
+      {
+        "id": "arxiv:2012.06678",
+        "title": "TabTransformer: Tabular Data Modeling Using Contextual Embeddings",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2012.06678",
+        "date": "2020-12-11"
+      },
+      {
+        "id": "arxiv:2207.01848",
+        "title": "TabPFN: A Transformer That Solves Small Tabular Classification Problems in a Second",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2207.01848",
+        "date": "2022-07-05"
+      },
+      {
+        "id": "arxiv:1909.06312",
+        "title": "Neural Oblivious Decision Ensembles for Deep Learning on Tabular Data",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1909.06312",
+        "date": "2019-09-13"
+      },
+      {
+        "id": "arxiv:2210.10723",
+        "title": "TabLLM: Few-shot Classification of Tabular Data with Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2210.10723",
+        "date": "2022-10-19"
+      },
+      {
+        "id": "arxiv:2106.01342",
+        "title": "SAINT: Improved Neural Networks for Tabular Data via Row Attention and Contrastive Pre-Training",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2106.01342",
+        "date": "2021-06-02"
+      },
+      {
+        "id": "arxiv:2406.05216",
+        "title": "TabPFGen -- Tabular Data Generation with TabPFN",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2406.05216",
+        "date": "2024-06-07"
+      },
+      {
+        "id": "arxiv:2311.10609",
+        "title": "Scaling TabPFN: Sketching and Feature Selection for Tabular Prior-Data Fitted Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2311.10609",
+        "date": "2023-11-17"
+      },
+      {
+        "id": "arxiv:2305.11097",
+        "title": "Statistical Foundations of Prior-Data Fitted Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2305.11097",
+        "date": "2023-05-18"
+      },
+      {
+        "id": "arxiv:2402.11137",
+        "title": "TuneTables: Context Optimization for Scalable Prior-Data Fitted Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.11137",
+        "date": "2024-02-17"
+      },
+      {
+        "id": "arxiv:2310.20447",
+        "title": "Efficient Bayesian Learning Curve Extrapolation using Prior-Data Fitted Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.20447",
+        "date": "2023-10-31"
+      },
+      {
+        "id": "arxiv:1907.00503",
+        "title": "Modeling Tabular data using Conditional GAN",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1907.00503",
+        "date": "2019-07-01"
+      },
+      {
+        "id": "arxiv:2209.15421",
+        "title": "TabDDPM: Modelling Tabular Data with Diffusion Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2209.15421",
+        "date": "2022-09-30"
+      },
+      {
+        "id": "arxiv:2210.04018",
+        "title": "STaSy: Score-based Tabular data Synthesis",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2210.04018",
+        "date": "2022-10-08"
+      },
+      {
+        "id": "arxiv:2312.06089",
+        "title": "TabMT: Generating tabular data with masked transformers",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2312.06089",
+        "date": "2023-12-11"
+      },
+      {
+        "id": "arxiv:2210.06280",
+        "title": "Language Models are Realistic Tabular Data Generators",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2210.06280",
+        "date": "2022-10-12"
+      },
+      {
+        "id": "arxiv:2304.13188",
+        "title": "TABLET: Learning From Instructions For Tabular Data",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2304.13188",
+        "date": "2023-04-25"
+      },
+      {
+        "id": "arxiv:2309.13793",
+        "title": "ReMasker: Imputing Tabular Data with Masked Autoencoding",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2309.13793",
+        "date": "2023-09-25"
+      },
+      {
+        "id": "arxiv:2402.14335",
+        "title": "HyperFast: Instant Classification for Tabular Data",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.14335",
+        "date": "2024-02-22"
+      },
+      {
+        "id": "arxiv:2312.07577",
+        "title": "Benchmarking Distribution Shift in Tabular Data with TableShift",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2312.07577",
+        "date": "2023-12-10"
+      },
+      {
+        "id": "arxiv:2410.24210",
+        "title": "TabM: Advancing Tabular Deep Learning with Parameter-Efficient Ensembling",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2410.24210",
+        "date": "2024-10-31"
+      },
+      {
+        "id": "arxiv:2407.04057",
+        "title": "TALENT: A Tabular Analytics and Learning Toolbox",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2407.04057",
+        "date": "2024-07-04"
+      },
+      {
+        "id": "arxiv:2105.02584",
+        "title": "TABBIE: Pretrained Representations of Tabular Data",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2105.02584",
+        "date": "2021-05-06"
+      },
+      {
+        "id": "arxiv:2206.00664",
+        "title": "Hopular: Modern Hopfield Networks for Tabular Data",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2206.00664",
+        "date": "2022-06-01"
+      },
+      {
+        "id": "arxiv:1811.11264",
+        "title": "Synthesizing Tabular Data using Generative Adversarial Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1811.11264",
+        "date": "2018-11-27"
+      },
+      {
+        "id": "arxiv:2204.00401",
+        "title": "CTAB-GAN+: Enhancing Tabular Data Synthesis",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2204.00401",
+        "date": "2022-04-01"
+      },
+      {
+        "id": "arxiv:2006.06465",
+        "title": "DNF-Net: A Neural Architecture for Tabular Data",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2006.06465",
+        "date": "2020-06-11"
+      },
+      {
+        "id": "arxiv:2107.11059",
+        "title": "LocalGLMnet: interpretable deep learning for tabular data",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2107.11059",
+        "date": "2021-07-23"
+      },
+      {
+        "id": "arxiv:2206.08564",
+        "title": "MET: Masked Encoding for Tabular Data",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2206.08564",
+        "date": "2022-06-17"
+      },
+      {
+        "id": "arxiv:2303.11580",
+        "title": "Efficient Multi-stage Inference on Tabular Data",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2303.11580",
+        "date": "2023-03-21"
+      },
+      {
+        "id": "arxiv:2106.15147",
+        "title": "SCARF: Self-Supervised Contrastive Learning using Random Feature Corruption",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2106.15147",
+        "date": "2021-06-29"
+      },
+      {
+        "id": "arxiv:2312.16702",
+        "title": "Rethinking Tabular Data Understanding with Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2312.16702",
+        "date": "2023-12-27"
+      },
+      {
+        "id": "arxiv:1610.01271",
+        "title": "Generalized Random Forests",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1610.01271",
+        "date": "2016-10-05"
+      },
+      {
+        "id": "arxiv:1803.01422",
+        "title": "DAGs with NO TEARS: Continuous Optimization for Structure Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1803.01422",
+        "date": "2018-03-04"
+      },
+      {
+        "id": "arxiv:1701.08687",
+        "title": "Double/Debiased/Neyman Machine Learning of Treatment Effects",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1701.08687",
+        "date": "2017-01-30"
+      },
+      {
+        "id": "arxiv:1605.03661",
+        "title": "Learning Representations for Counterfactual Inference",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1605.03661",
+        "date": "2016-05-12"
+      },
+      {
+        "id": "arxiv:1608.00060",
+        "title": "Double/Debiased Machine Learning for Treatment and Causal Parameters",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1608.00060",
+        "date": "2016-07-30"
+      },
+      {
+        "id": "arxiv:1705.08821",
+        "title": "Causal Effect Inference with Deep Latent-Variable Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1705.08821",
+        "date": "2017-05-24"
+      },
+      {
+        "id": "arxiv:1906.02120",
+        "title": "Adapting Neural Networks for the Estimation of Treatment Effects",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1906.02120",
+        "date": "2019-06-05"
+      },
+      {
+        "id": "arxiv:1907.02893",
+        "title": "Invariant Risk Minimization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1907.02893",
+        "date": "2019-07-05"
+      },
+      {
+        "id": "arxiv:2007.01434",
+        "title": "In Search of Lost Domain Generalization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2007.01434",
+        "date": "2020-07-02"
+      },
+      {
+        "id": "arxiv:2101.01134",
+        "title": "Does Invariant Risk Minimization Capture Invariance?",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2101.01134",
+        "date": "2021-01-04"
+      },
+      {
+        "id": "arxiv:2010.05761",
+        "title": "The Risks of Invariant Risk Minimization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2010.05761",
+        "date": "2020-10-12"
+      },
+      {
+        "id": "arxiv:1606.07035",
+        "title": "Ancestral Causal Inference",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1606.07035",
+        "date": "2016-06-22"
+      },
+      {
+        "id": "arxiv:1301.2312",
+        "title": "Causal Discovery from Changes",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1301.2312",
+        "date": "2013-01-10"
+      },
+      {
+        "id": "arxiv:1906.04477",
+        "title": "Causal Discovery with Reinforcement Learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1906.04477",
+        "date": "2019-06-11"
+      },
+      {
+        "id": "arxiv:1702.07306",
+        "title": "Causal Discovery Using Proxy Variables",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1702.07306",
+        "date": "2017-02-23"
+      },
+      {
+        "id": "arxiv:1512.05469",
+        "title": "Private Causal Inference",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1512.05469",
+        "date": "2015-12-17"
+      },
+      {
+        "id": "arxiv:1611.04035",
+        "title": "Entropic Causal Inference",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1611.04035",
+        "date": "2016-11-12"
+      },
+      {
+        "id": "arxiv:2006.04697",
+        "title": "Supervised Whole DAG Causal Discovery",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2006.04697",
+        "date": "2020-06-08"
+      },
+      {
+        "id": "arxiv:2208.05949",
+        "title": "Valid Inference After Causal Discovery",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2208.05949",
+        "date": "2022-08-11"
+      },
+      {
+        "id": "arxiv:2011.08411",
+        "title": "Semiparametric proximal causal inference",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2011.08411",
+        "date": "2020-11-17"
+      },
+      {
+        "id": "arxiv:2202.04208",
+        "title": "Validating Causal Inference Methods",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2202.04208",
+        "date": "2022-02-09"
+      },
+      {
+        "id": "arxiv:1901.09475",
+        "title": "Causal Discovery with a Mixture of DAGs",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1901.09475",
+        "date": "2019-01-28"
+      },
+      {
+        "id": "arxiv:2002.12710",
+        "title": "Causal mediation analysis with double machine learning",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2002.12710",
+        "date": "2020-02-28"
+      },
+      {
+        "id": "arxiv:2009.14461",
+        "title": "Double/Debiased Machine Learning for Logistic Partially Linear Model",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2009.14461",
+        "date": "2020-09-30"
+      },
+      {
+        "id": "arxiv:2003.03191",
+        "title": "Double Machine Learning based Program Evaluation under Unconfoundedness",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2003.03191",
+        "date": "2020-03-06"
+      },
+      {
+        "id": "arxiv:2104.10334",
+        "title": "Automatic Double Machine Learning for Continuous Treatment Effects",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2104.10334",
+        "date": "2021-04-21"
+      },
+      {
+        "id": "arxiv:2101.07732",
+        "title": "Out-of-distribution Prediction with Invariant Risk Minimization: The Limitation and An Effective Fix",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2101.07732",
+        "date": "2021-01-16"
+      },
+      {
+        "id": "arxiv:1704.04110",
+        "title": "DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1704.04110",
+        "date": "2017-04-13"
+      },
+      {
+        "id": "arxiv:1912.09363",
+        "title": "Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1912.09363",
+        "date": "2019-12-19"
+      },
+      {
+        "id": "arxiv:1905.10437",
+        "title": "N-BEATS: Neural basis expansion analysis for interpretable time series forecasting",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1905.10437",
+        "date": "2019-05-24"
+      },
+      {
+        "id": "arxiv:1907.00235",
+        "title": "Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1907.00235",
+        "date": "2019-06-29"
+      },
+      {
+        "id": "arxiv:2012.07436",
+        "title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2012.07436",
+        "date": "2020-12-14"
+      },
+      {
+        "id": "arxiv:2106.13008",
+        "title": "Autoformer: Decomposition Transformers with Auto-Correlation for Long-Term Series Forecasting",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2106.13008",
+        "date": "2021-06-24"
+      },
+      {
+        "id": "arxiv:2201.12740",
+        "title": "FEDformer: Frequency Enhanced Decomposed Transformer for Long-term Series Forecasting",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2201.12740",
+        "date": "2022-01-30"
+      },
+      {
+        "id": "arxiv:2211.14730",
+        "title": "A Time Series is Worth 64 Words: Long-term Forecasting with Transformers",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2211.14730",
+        "date": "2022-11-27"
+      },
+      {
+        "id": "arxiv:2205.13504",
+        "title": "Are Transformers Effective for Time Series Forecasting?",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2205.13504",
+        "date": "2022-05-26"
+      },
+      {
+        "id": "arxiv:2303.06053",
+        "title": "TSMixer: An All-MLP Architecture for Time Series Forecasting",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2303.06053",
+        "date": "2023-03-10"
+      },
+      {
+        "id": "arxiv:2304.08424",
+        "title": "Long-term Forecasting with TiDE: Time-series Dense Encoder",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2304.08424",
+        "date": "2023-04-17"
+      },
+      {
+        "id": "arxiv:2310.06625",
+        "title": "iTransformer: Inverted Transformers Are Effective for Time Series Forecasting",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.06625",
+        "date": "2023-10-10"
+      },
+      {
+        "id": "arxiv:2210.02186",
+        "title": "TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2210.02186",
+        "date": "2022-10-05"
+      },
+      {
+        "id": "arxiv:2310.01728",
+        "title": "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.01728",
+        "date": "2023-10-03"
+      },
+      {
+        "id": "arxiv:2302.11939",
+        "title": "One Fits All:Power General Time Series Analysis by Pretrained LM",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2302.11939",
+        "date": "2023-02-23"
+      },
+      {
+        "id": "arxiv:2403.07815",
+        "title": "Chronos: Learning the Language of Time Series",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2403.07815",
+        "date": "2024-03-12"
+      },
+      {
+        "id": "arxiv:2310.10688",
+        "title": "A decoder-only foundation model for time-series forecasting",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.10688",
+        "date": "2023-10-14"
+      },
+      {
+        "id": "arxiv:2402.02592",
+        "title": "Unified Training of Universal Time Series Forecasting Transformers",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.02592",
+        "date": "2024-02-04"
+      },
+      {
+        "id": "arxiv:2310.08278",
+        "title": "Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.08278",
+        "date": "2023-10-12"
+      },
+      {
+        "id": "arxiv:2310.03589",
+        "title": "TimeGPT-1",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2310.03589",
+        "date": "2023-10-05"
+      },
+      {
+        "id": "arxiv:2402.03885",
+        "title": "MOMENT: A Family of Open Time-series Foundation Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.03885",
+        "date": "2024-02-06"
+      },
+      {
+        "id": "arxiv:2402.02368",
+        "title": "Timer: Generative Pre-trained Transformers Are Large Time Series Models",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.02368",
+        "date": "2024-02-04"
+      },
+      {
+        "id": "arxiv:2403.00131",
+        "title": "UniTS: A Unified Multi-Task Time Series Model",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2403.00131",
+        "date": "2024-02-29"
+      },
+      {
+        "id": "arxiv:2106.10466",
+        "title": "TS2Vec: Towards Universal Representation of Time Series",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2106.10466",
+        "date": "2021-06-19"
+      },
+      {
+        "id": "arxiv:2106.14112",
+        "title": "Time-Series Representation Learning via Temporal and Contextual Contrasting",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2106.14112",
+        "date": "2021-06-26"
+      },
+      {
+        "id": "arxiv:2202.01575",
+        "title": "CoST: Contrastive Learning of Disentangled Seasonal-Trend Representations for Time Series Forecasting",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2202.01575",
+        "date": "2022-02-03"
+      },
+      {
+        "id": "arxiv:2106.00750",
+        "title": "Unsupervised Representation Learning for Time Series with Temporal Neighborhood Coding",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2106.00750",
+        "date": "2021-06-01"
+      },
+      {
+        "id": "arxiv:2012.08791",
+        "title": "MINIROCKET: A Very Fast (Almost) Deterministic Transform for Time Series Classification",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2012.08791",
+        "date": "2020-12-16"
+      },
+      {
+        "id": "arxiv:2102.00457",
+        "title": "MultiRocket: Multiple pooling operators and transformations for fast and effective time series classification",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2102.00457",
+        "date": "2021-01-31"
+      },
+      {
+        "id": "arxiv:1606.01865",
+        "title": "Recurrent Neural Networks for Multivariate Time Series with Missing Values",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1606.01865",
+        "date": "2016-06-06"
+      },
+      {
+        "id": "arxiv:2107.03502",
+        "title": "CSDI: Conditional Score-based Diffusion Models for Probabilistic Time Series Imputation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2107.03502",
+        "date": "2021-07-07"
+      },
+      {
+        "id": "arxiv:2111.00396",
+        "title": "Efficiently Modeling Long Sequences with Structured State Spaces",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2111.00396",
+        "date": "2021-10-31"
+      },
+      {
+        "id": "arxiv:2312.00752",
+        "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2312.00752",
+        "date": "2023-12-01"
+      },
+      {
+        "id": "arxiv:1909.02060",
+        "title": "Distributionally Robust Language Modeling",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1909.02060",
+        "date": "2019-09-04"
+      },
+      {
+        "id": "arxiv:1509.09259",
+        "title": "Distributionally Robust Logistic Regression",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1509.09259",
+        "date": "2015-09-30"
+      },
+      {
+        "id": "arxiv:1908.05659",
+        "title": "Distributionally Robust Optimization: A Review",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1908.05659",
+        "date": "2019-08-13"
+      },
+      {
+        "id": "arxiv:1809.08830",
+        "title": "Wasserstein Distributionally Robust Kalman Filtering",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1809.08830",
+        "date": "2018-09-24"
+      },
+      {
+        "id": "arxiv:1906.06211",
+        "title": "Distributionally Robust Counterfactual Risk Minimization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/1906.06211",
+        "date": "2019-06-14"
+      },
+      {
+        "id": "arxiv:2006.06981",
+        "title": "Kernel Distributionally Robust Optimization",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2006.06981",
+        "date": "2020-06-12"
+      },
+      {
+        "id": "arxiv:2403.10424",
+        "title": "Structured Evaluation of Synthetic Tabular Data",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2403.10424",
+        "date": "2024-03-15"
+      },
+      {
+        "id": "arxiv:2402.06806",
+        "title": "Systematic Assessment of Tabular Data Synthesis",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2402.06806",
+        "date": "2024-02-09"
+      },
+      {
+        "id": "arxiv:2306.15636",
+        "title": "On the Usefulness of Synthetic Tabular Data Generation",
+        "source": "arXiv",
+        "url": "https://arxiv.org/abs/2306.15636",
+        "date": "2023-06-27"
+      }
+    ],
+    "medical": [
+      {
+        "id": "pmid:31304302",
+        "title": "Scalable and accurate deep learning with electronic health records",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31304302/",
+        "date": "2018-05-08",
+        "doi": "10.1038/s41746-018-0029-1",
+        "date_provenance": {
+          "date": "2018-05-08",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31304302/"
+        }
+      },
+      {
+        "id": "pmid:31367026",
+        "title": "A clinically applicable approach to continuous prediction of future acute kidney injury",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31367026/",
+        "date": "2019-07-31",
+        "doi": "10.1038/s41586-019-1390-1",
+        "date_provenance": {
+          "date": "2019-07-31",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31367026/"
+        }
+      },
+      {
+        "id": "pmid:27185194",
+        "title": "Deep Patient: An Unsupervised Representation to Predict the Future of Patients from the Electronic Health Records",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27185194/",
+        "date": "2016-05-17",
+        "doi": "10.1038/srep26094",
+        "date_provenance": {
+          "date": "2016-05-17",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27185194/"
+        }
+      },
+      {
+        "id": "pmid:34017034",
+        "title": "Med-BERT: pretrained contextualized embeddings on large-scale structured electronic health records for disease prediction",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34017034/",
+        "date": "2021-05-20",
+        "doi": "10.1038/s41746-021-00455-y",
+        "date_provenance": {
+          "date": "2021-05-20",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/34017034/"
+        }
+      },
+      {
+        "id": "pmid:27521897",
+        "title": "Using recurrent neural network models for early detection of heart failure onset",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27521897/",
+        "date": "2017-03-01",
+        "doi": "10.1093/jamia/ocw112",
+        "date_provenance": {
+          "date": "2017-03-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27521897/"
+        }
+      },
+      {
+        "id": "pmid:32346050",
+        "title": "BEHRT: Transformer for Electronic Health Records",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32346050/",
+        "date": "2020-04-28",
+        "doi": "10.1038/s41598-020-62922-y",
+        "date_provenance": {
+          "date": "2020-04-28",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/32346050/"
+        }
+      },
+      {
+        "id": "pmid:31209213",
+        "title": "Multitask learning and benchmarking with clinical time series data",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31209213/",
+        "date": "2019-06-17",
+        "doi": "10.1038/s41597-019-0103-9",
+        "date_provenance": {
+          "date": "2019-06-17",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31209213/"
+        }
+      },
+      {
+        "id": "pmid:26679719",
+        "title": "Prediction of In-hospital Mortality in Emergency Department Patients With Sepsis: A Local Big Data-Driven, Machine Learning Approach",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26679719/",
+        "date": "2016-02-13",
+        "doi": "10.1111/acem.12876",
+        "date_provenance": {
+          "date": "2016-02-13",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/26679719/"
+        }
+      },
+      {
+        "id": "pmid:29489489",
+        "title": "MySurgeryRisk: Development and Validation of a Machine-learning Risk Algorithm for Major Complications and Death After Surgery",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29489489/",
+        "doi": "10.1097/sla.0000000000002706",
+        "date_provenance": {
+          "date": null,
+          "basis": "No exact electronic or journal day in PubMed XML",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29489489/"
+        }
+      },
+      {
+        "id": "pmid:27784047",
+        "title": "Prediction of 30-Day All-Cause Readmissions in Patients Hospitalized for Heart Failure: Comparison of Machine Learning and Other Statistical Approaches",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27784047/",
+        "date": "2017-02-01",
+        "doi": "10.1001/jamacardio.2016.3956",
+        "date_provenance": {
+          "date": "2017-02-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27784047/"
+        }
+      },
+      {
+        "id": "pmid:30385537",
+        "title": "Predicting Pressure Injury in Critical Care Patients: A Machine-Learning Model",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30385537/",
+        "doi": "10.4037/ajcc2018525",
+        "date_provenance": {
+          "date": null,
+          "basis": "No exact electronic or journal day in PubMed XML",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30385537/"
+        }
+      },
+      {
+        "id": "pmid:31694707",
+        "title": "A data-driven approach to predicting diabetes and cardiovascular disease with machine learning",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31694707/",
+        "date": "2019-11-06",
+        "doi": "10.1186/s12911-019-0918-5",
+        "date_provenance": {
+          "date": "2019-11-06",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31694707/"
+        }
+      },
+      {
+        "id": "pmid:33328078",
+        "title": "Dynamic and explainable machine learning prediction of mortality in patients in the intensive care unit: a retrospective study of high-frequency data in electronic patient records",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33328078/",
+        "date": "2020-03-12",
+        "doi": "10.1016/s2589-7500(20)30018-2",
+        "date_provenance": {
+          "date": "2020-03-12",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/33328078/"
+        }
+      },
+      {
+        "id": "pmid:29500022",
+        "title": "Federated learning of predictive models from federated Electronic Health Records",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29500022/",
+        "date": "2018-01-12",
+        "doi": "10.1016/j.ijmedinf.2018.01.007",
+        "date_provenance": {
+          "date": "2018-01-12",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29500022/"
+        }
+      },
+      {
+        "id": "pmid:31932807",
+        "title": "Prediction of gestational diabetes based on nationwide electronic health records",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31932807/",
+        "date": "2020-01-13",
+        "doi": "10.1038/s41591-019-0724-8",
+        "date_provenance": {
+          "date": "2020-01-13",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31932807/"
+        }
+      },
+      {
+        "id": "pmid:38207039",
+        "title": "Illusory generalizability of clinical prediction models",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38207039/",
+        "date": "2024-01-11",
+        "doi": "10.1126/science.adg8538",
+        "date_provenance": {
+          "date": "2024-01-11",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/38207039/"
+        }
+      },
+      {
+        "id": "pmid:35589549",
+        "title": "Identifying who has long COVID in the USA: a machine learning approach using N3C data",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35589549/",
+        "date": "2022-05-16",
+        "doi": "10.1016/s2589-7500(22)00048-6",
+        "date_provenance": {
+          "date": "2022-05-16",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/35589549/"
+        }
+      },
+      {
+        "id": "pmid:33717639",
+        "title": "GRAM: Graph-based Attention Model for Healthcare Representation Learning",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33717639/",
+        "doi": "10.1145/3097983.3098126",
+        "date_provenance": {
+          "date": null,
+          "basis": "No exact electronic or journal day in PubMed XML",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/33717639/"
+        }
+      },
+      {
+        "id": "pmid:29709069",
+        "title": "Predicting suicide attempts in adolescents with longitudinal clinical data and machine learning",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29709069/",
+        "date": "2018-04-30",
+        "doi": "10.1111/jcpp.12916",
+        "date_provenance": {
+          "date": "2018-04-30",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29709069/"
+        }
+      },
+      {
+        "id": "pmid:29382633",
+        "title": "Prediction of Incident Hypertension Within the Next Year: Prospective Study Using Statewide Electronic Health Records and Machine Learning",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29382633/",
+        "date": "2018-01-30",
+        "doi": "10.2196/jmir.9268",
+        "date_provenance": {
+          "date": "2018-01-30",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29382633/"
+        }
+      },
+      {
+        "id": "pmid:31584655",
+        "title": "2018 n2c2 shared task on adverse drug events and medication extraction in electronic health records",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31584655/",
+        "date": "2020-01-01",
+        "doi": "10.1093/jamia/ocz166",
+        "date_provenance": {
+          "date": "2020-01-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31584655/"
+        }
+      },
+      {
+        "id": "pmid:23842533",
+        "title": "Development and evaluation of a de-identification procedure for a case register sourced from mental health electronic records",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23842533/",
+        "date": "2013-07-11",
+        "doi": "10.1186/1472-6947-13-71",
+        "date_provenance": {
+          "date": "2013-07-11",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/23842533/"
+        }
+      },
+      {
+        "id": "pmid:28117445",
+        "title": "Dermatologist-level classification of skin cancer with deep neural networks",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28117445/",
+        "date": "2017-01-25",
+        "doi": "10.1038/nature21056",
+        "date_provenance": {
+          "date": "2017-01-25",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/28117445/"
+        }
+      },
+      {
+        "id": "pmid:33288961",
+        "title": "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33288961/",
+        "date": "2020-12-07",
+        "doi": "10.1038/s41592-020-01008-z",
+        "date_provenance": {
+          "date": "2020-12-07",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/33288961/"
+        }
+      },
+      {
+        "id": "pmid:27898976",
+        "title": "Development and Validation of a Deep Learning Algorithm for Detection of Diabetic Retinopathy in Retinal Fundus Photographs",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27898976/",
+        "date": "2016-12-13",
+        "doi": "10.1001/jama.2016.17216",
+        "date_provenance": {
+          "date": "2016-12-13",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27898976/"
+        }
+      },
+      {
+        "id": "pmid:30224757",
+        "title": "Classification and mutation prediction from non-small cell lung cancer histopathology images using deep learning",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30224757/",
+        "date": "2018-09-17",
+        "doi": "10.1038/s41591-018-0177-5",
+        "date_provenance": {
+          "date": "2018-09-17",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30224757/"
+        }
+      },
+      {
+        "id": "pmid:29234806",
+        "title": "Diagnostic Assessment of Deep Learning Algorithms for Detection of Lymph Node Metastases in Women With Breast Cancer",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29234806/",
+        "date": "2017-12-12",
+        "doi": "10.1001/jama.2017.14585",
+        "date_provenance": {
+          "date": "2017-12-12",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29234806/"
+        }
+      },
+      {
+        "id": "pmid:30104768",
+        "title": "Clinically applicable deep learning for diagnosis and referral in retinal disease",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30104768/",
+        "date": "2018-08-13",
+        "doi": "10.1038/s41591-018-0107-6",
+        "date_provenance": {
+          "date": "2018-08-13",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30104768/"
+        }
+      },
+      {
+        "id": "pmid:29994302",
+        "title": "Deep Learning Techniques for Automatic MRI Cardiac Multi-Structures Segmentation and Diagnosis: Is the Problem Solved?",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29994302/",
+        "date": "2018-05-17",
+        "doi": "10.1109/tmi.2018.2837502",
+        "date_provenance": {
+          "date": "2018-05-17",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29994302/"
+        }
+      },
+      {
+        "id": "pmid:30843824",
+        "title": "CE-Net: Context Encoder Network for 2D Medical Image Segmentation",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30843824/",
+        "date": "2019-03-07",
+        "doi": "10.1109/tmi.2019.2903562",
+        "date_provenance": {
+          "date": "2019-03-07",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30843824/"
+        }
+      },
+      {
+        "id": "pmid:37704728",
+        "title": "A foundation model for generalizable disease detection from retinal images",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37704728/",
+        "date": "2023-09-13",
+        "doi": "10.1038/s41586-023-06555-x",
+        "date_provenance": {
+          "date": "2023-09-13",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/37704728/"
+        }
+      },
+      {
+        "id": "pmid:30457988",
+        "title": "Deep learning for chest radiograph diagnosis: A retrospective comparison of the CheXNeXt algorithm to practicing radiologists",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30457988/",
+        "date": "2018-11-20",
+        "doi": "10.1371/journal.pmed.1002686",
+        "date_provenance": {
+          "date": "2018-11-20",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30457988/"
+        }
+      },
+      {
+        "id": "pmid:31536901",
+        "title": "MultiResUNet : Rethinking the U-Net architecture for multimodal biomedical image segmentation",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31536901/",
+        "date": "2019-09-04",
+        "doi": "10.1016/j.neunet.2019.08.025",
+        "date_provenance": {
+          "date": "2019-09-04",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31536901/"
+        }
+      },
+      {
+        "id": "pmid:30814121",
+        "title": "Real-time automatic detection system increases colonoscopic polyp and adenoma detection rates: a prospective randomised controlled study",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30814121/",
+        "date": "2019-02-27",
+        "doi": "10.1136/gutjnl-2018-317500",
+        "date_provenance": {
+          "date": "2019-02-27",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30814121/"
+        }
+      },
+      {
+        "id": "pmid:27701631",
+        "title": "Improved Automated Detection of Diabetic Retinopathy on a Publicly Available Dataset Through Integration of Deep Learning",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27701631/",
+        "date": "2016-10-01",
+        "doi": "10.1167/iovs.16-19964",
+        "date_provenance": {
+          "date": "2016-10-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27701631/"
+        }
+      },
+      {
+        "id": "pmid:27212078",
+        "title": "Deep learning as a tool for increased accuracy and efficiency of histopathological diagnosis",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27212078/",
+        "date": "2016-05-23",
+        "doi": "10.1038/srep26286",
+        "date_provenance": {
+          "date": "2016-05-23",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27212078/"
+        }
+      },
+      {
+        "id": "pmid:33763651",
+        "title": "Pan-cancer image-based detection of clinically actionable genetic alterations",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33763651/",
+        "date": "2020-07-27",
+        "doi": "10.1038/s43018-020-0087-6",
+        "date_provenance": {
+          "date": "2020-07-27",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/33763651/"
+        }
+      },
+      {
+        "id": "pmid:26863654",
+        "title": "Locality Sensitive Deep Learning for Detection and Classification of Nuclei in Routine Colon Cancer Histology Images",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26863654/",
+        "date": "2016-02-04",
+        "doi": "10.1109/tmi.2016.2525803",
+        "date_provenance": {
+          "date": "2016-02-04",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/26863654/"
+        }
+      },
+      {
+        "id": "pmid:28287963",
+        "title": "A Dataset and a Technique for Generalized Nuclear Segmentation for Computational Pathology",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28287963/",
+        "date": "2017-03-06",
+        "doi": "10.1109/tmi.2017.2677499",
+        "date_provenance": {
+          "date": "2017-03-06",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/28287963/"
+        }
+      },
+      {
+        "id": "pmid:32371116",
+        "title": "Efficacy of Real-Time Computer-Aided Detection of Colorectal Neoplasia in a Randomized Trial",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32371116/",
+        "date": "2020-05-01",
+        "doi": "10.1053/j.gastro.2020.04.062",
+        "date_provenance": {
+          "date": "2020-05-01",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/32371116/"
+        }
+      },
+      {
+        "id": "pmid:31926806",
+        "title": "Artificial intelligence for diagnosis and grading of prostate cancer in biopsies: a population-based, diagnostic study",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31926806/",
+        "date": "2020-01-08",
+        "doi": "10.1016/s1470-2045(19)30738-7",
+        "date_provenance": {
+          "date": "2020-01-08",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31926806/"
+        }
+      },
+      {
+        "id": "pmid:26955021",
+        "title": "Lung Pattern Classification for Interstitial Lung Diseases Using a Deep Convolutional Neural Network",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26955021/",
+        "date": "2016-02-29",
+        "doi": "10.1109/tmi.2016.2535865",
+        "date_provenance": {
+          "date": "2016-02-29",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/26955021/"
+        }
+      },
+      {
+        "id": "pmid:30834436",
+        "title": "Stand-Alone Artificial Intelligence for Breast Cancer Detection in Mammography: Comparison With 101 Radiologists",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30834436/",
+        "date": "2019-09-01",
+        "doi": "10.1093/jnci/djy222",
+        "date_provenance": {
+          "date": "2019-09-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30834436/"
+        }
+      },
+      {
+        "id": "pmid:30481176",
+        "title": "Deep-learning-assisted diagnosis for knee magnetic resonance imaging: Development and retrospective validation of MRNet",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30481176/",
+        "date": "2018-11-27",
+        "doi": "10.1371/journal.pmed.1002699",
+        "date_provenance": {
+          "date": "2018-11-27",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30481176/"
+        }
+      },
+      {
+        "id": "pmid:29801159",
+        "title": "Automated Diagnosis of Plus Disease in Retinopathy of Prematurity Using Deep Convolutional Neural Networks",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29801159/",
+        "date": "2018-07-01",
+        "doi": "10.1001/jamaophthalmol.2018.1934",
+        "date_provenance": {
+          "date": "2018-07-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29801159/"
+        }
+      },
+      {
+        "id": "pmid:39232164",
+        "title": "A pathology foundation model for cancer diagnosis and prognosis prediction",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39232164/",
+        "date": "2024-09-04",
+        "doi": "10.1038/s41586-024-07894-z",
+        "date_provenance": {
+          "date": "2024-09-04",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/39232164/"
+        }
+      },
+      {
+        "id": "pmid:30348771",
+        "title": "Deep neural network improves fracture detection by clinicians",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30348771/",
+        "date": "2018-10-22",
+        "doi": "10.1073/pnas.1806905115",
+        "date_provenance": {
+          "date": "2018-10-22",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30348771/"
+        }
+      },
+      {
+        "id": "pmid:39039250",
+        "title": "A foundation model for clinical-grade computational pathology and rare cancers detection",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39039250/",
+        "date": "2024-07-22",
+        "doi": "10.1038/s41591-024-03141-0",
+        "date_provenance": {
+          "date": "2024-07-22",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/39039250/"
+        }
+      },
+      {
+        "id": "pmid:29224926",
+        "title": "Fully Automated Detection and Quantification of Macular Fluid in OCT Using Deep Learning",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29224926/",
+        "date": "2017-12-08",
+        "doi": "10.1016/j.ophtha.2017.10.031",
+        "date_provenance": {
+          "date": "2017-12-08",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29224926/"
+        }
+      },
+      {
+        "id": "pmid:39466245",
+        "title": "Large Language Model Influence on Diagnostic Reasoning: A Randomized Clinical Trial",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39466245/",
+        "date": "2024-10-01",
+        "doi": "10.1001/jamanetworkopen.2024.40969",
+        "date_provenance": {
+          "date": "2024-10-01",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/39466245/"
+        }
+      },
+      {
+        "id": "pmid:21862746",
+        "title": "Automated identification of postoperative complications within an electronic medical record using natural language processing",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21862746/",
+        "date": "2011-08-24",
+        "doi": "10.1001/jama.2011.1204",
+        "date_provenance": {
+          "date": "2011-08-24",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/21862746/"
+        }
+      },
+      {
+        "id": "pmid:15187068",
+        "title": "Automated encoding of clinical documents based on natural language processing",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15187068/",
+        "date": "2004-06-07",
+        "doi": "10.1197/jamia.m1552",
+        "date_provenance": {
+          "date": "2004-06-07",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/15187068/"
+        }
+      },
+      {
+        "id": "pmid:14759819",
+        "title": "The interaction of domain knowledge and linguistic structure in natural language processing: interpreting hypernymic propositions in biomedical text",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/14759819/",
+        "doi": "10.1016/j.jbi.2003.11.003",
+        "date_provenance": {
+          "date": null,
+          "basis": "No exact electronic or journal day in PubMed XML",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/14759819/"
+        }
+      },
+      {
+        "id": "pmid:29186491",
+        "title": "CLAMP - a toolkit for efficiently building customized clinical natural language processing pipelines",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29186491/",
+        "date": "2018-03-01",
+        "doi": "10.1093/jamia/ocx132",
+        "date_provenance": {
+          "date": "2018-03-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29186491/"
+        }
+      },
+      {
+        "id": "pmid:37973919",
+        "title": "A study of generative large language model for medical research and healthcare",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37973919/",
+        "date": "2023-11-16",
+        "doi": "10.1038/s41746-023-00958-w",
+        "date_provenance": {
+          "date": "2023-11-16",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/37973919/"
+        }
+      },
+      {
+        "id": "pmid:7702231",
+        "title": "Unlocking clinical data from narrative reports: a study of natural language processing",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/7702231/",
+        "date": "1995-05-01",
+        "doi": "10.7326/0003-4819-122-9-199505010-00007",
+        "date_provenance": {
+          "date": "1995-05-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/7702231/"
+        }
+      },
+      {
+        "id": "pmid:37492832",
+        "title": "ChatDoctor: A Medical Chat Model Fine-Tuned on a Large Language Model Meta-AI (LLaMA) Using Medical Domain Knowledge",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37492832/",
+        "date": "2023-06-24",
+        "doi": "10.7759/cureus.40895",
+        "date_provenance": {
+          "date": "2023-06-24",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/37492832/"
+        }
+      },
+      {
+        "id": "pmid:28096249",
+        "title": "Natural language processing to extract symptoms of severe mental illness from clinical text: the Clinical Record Interactive Search Comprehensive Data Extraction (CRIS-CODE) project",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28096249/",
+        "date": "2017-01-17",
+        "doi": "10.1136/bmjopen-2016-012012",
+        "date_provenance": {
+          "date": "2017-01-17",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/28096249/"
+        }
+      },
+      {
+        "id": "pmid:30217670",
+        "title": "A comparison of word embeddings for the biomedical natural language processing",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30217670/",
+        "date": "2018-09-12",
+        "doi": "10.1016/j.jbi.2018.09.008",
+        "date_provenance": {
+          "date": "2018-09-12",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30217670/"
+        }
+      },
+      {
+        "id": "pmid:23567779",
+        "title": "Improving case definition of Crohn's disease and ulcerative colitis in electronic medical records using natural language processing: a novel informatics approach",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23567779/",
+        "doi": "10.1097/mib.0b013e31828133fd",
+        "date_provenance": {
+          "date": null,
+          "basis": "No exact electronic or journal day in PubMed XML",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/23567779/"
+        }
+      },
+      {
+        "id": "pmid:25925131",
+        "title": "An overview of the BIOASQ large-scale biomedical semantic indexing and question answering competition",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25925131/",
+        "date": "2015-04-30",
+        "doi": "10.1186/s12859-015-0564-6",
+        "date_provenance": {
+          "date": "2015-04-30",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/25925131/"
+        }
+      },
+      {
+        "id": "pmid:12091676",
+        "title": "Use of natural language processing to translate clinical information from a database of 889,921 chest radiographic reports",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12091676/",
+        "doi": "10.1148/radiol.2241011118",
+        "date_provenance": {
+          "date": null,
+          "basis": "No exact electronic or journal day in PubMed XML",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/12091676/"
+        }
+      },
+      {
+        "id": "pmid:34127232",
+        "title": "Multi-domain clinical natural language processing with MedCAT: The Medical Concept Annotation Toolkit",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34127232/",
+        "date": "2021-05-01",
+        "doi": "10.1016/j.artmed.2021.102083",
+        "date_provenance": {
+          "date": "2021-05-01",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/34127232/"
+        }
+      },
+      {
+        "id": "pmid:38713466",
+        "title": "Use of a Large Language Model to Assess Clinical Acuity of Adults in the Emergency Department",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38713466/",
+        "date": "2024-05-01",
+        "doi": "10.1001/jamanetworkopen.2024.8895",
+        "date_provenance": {
+          "date": "2024-05-01",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/38713466/"
+        }
+      },
+      {
+        "id": "pmid:29743531",
+        "title": "Identifying Suicide Ideation and Suicidal Attempts in a Psychiatric Clinical Research Database using Natural Language Processing",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29743531/",
+        "date": "2018-05-09",
+        "doi": "10.1038/s41598-018-25773-2",
+        "date_provenance": {
+          "date": "2018-05-09",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29743531/"
+        }
+      },
+      {
+        "id": "pmid:37793630",
+        "title": "Developing prompts from large language model for extracting clinical information from pathology and ultrasound reports in breast cancer",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37793630/",
+        "date": "2023-09-21",
+        "doi": "10.3857/roj.2023.00633",
+        "date_provenance": {
+          "date": "2023-09-21",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/37793630/"
+        }
+      },
+      {
+        "id": "pmid:38587879",
+        "title": "An Empirical Evaluation of Prompting Strategies for Large Language Models in Zero-Shot Clinical Natural Language Processing: Algorithm Development and Validation Study",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38587879/",
+        "date": "2024-04-08",
+        "doi": "10.2196/55318",
+        "date_provenance": {
+          "date": "2024-04-08",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/38587879/"
+        }
+      },
+      {
+        "id": "pmid:28419261",
+        "title": "Challenges in adapting existing clinical natural language processing systems to multiple, diverse health care settings",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28419261/",
+        "date": "2017-09-01",
+        "doi": "10.1093/jamia/ocx039",
+        "date_provenance": {
+          "date": "2017-09-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/28419261/"
+        }
+      },
+      {
+        "id": "pmid:29084046",
+        "title": "Using Clinical Notes and Natural Language Processing for Automated HIV Risk Assessment",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29084046/",
+        "date": "2018-02-01",
+        "doi": "10.1097/qai.0000000000001580",
+        "date_provenance": {
+          "date": "2018-02-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29084046/"
+        }
+      },
+      {
+        "id": "pmid:16359928",
+        "title": "Natural language processing to extract medical problems from electronic clinical documents: performance evaluation",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16359928/",
+        "date": "2005-12-05",
+        "doi": "10.1016/j.jbi.2005.11.004",
+        "date_provenance": {
+          "date": "2005-12-05",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/16359928/"
+        }
+      },
+      {
+        "id": "pmid:22934236",
+        "title": "The feasibility of using natural language processing to extract clinical information from breast pathology reports",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22934236/",
+        "date": "2012-06-30",
+        "doi": "10.4103/2153-3539.97788",
+        "date_provenance": {
+          "date": "2012-06-30",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/22934236/"
+        }
+      },
+      {
+        "id": "pmid:26187250",
+        "title": "Challenges in clinical natural language processing for automated disorder normalization",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26187250/",
+        "date": "2015-07-14",
+        "doi": "10.1016/j.jbi.2015.07.010",
+        "date_provenance": {
+          "date": "2015-07-14",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/26187250/"
+        }
+      },
+      {
+        "id": "pmid:37123444",
+        "title": "Fine-tuning large neural language models for biomedical natural language processing",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37123444/",
+        "date": "2023-04-14",
+        "doi": "10.1016/j.patter.2023.100729",
+        "date_provenance": {
+          "date": "2023-04-14",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/37123444/"
+        }
+      },
+      {
+        "id": "pmid:34412834",
+        "title": "Med7: A transferable clinical natural language processing model for electronic health records",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34412834/",
+        "date": "2021-05-18",
+        "doi": "10.1016/j.artmed.2021.102086",
+        "date_provenance": {
+          "date": "2021-05-18",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/34412834/"
+        }
+      },
+      {
+        "id": "pmid:34265844",
+        "title": "Highly accurate protein structure prediction with AlphaFold",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34265844/",
+        "date": "2021-07-15",
+        "doi": "10.1038/s41586-021-03819-2",
+        "date_provenance": {
+          "date": "2021-07-15",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/34265844/"
+        }
+      },
+      {
+        "id": "pmid:36927031",
+        "title": "Evolutionary-scale prediction of atomic-level protein structure with a language model",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36927031/",
+        "date": "2023-03-16",
+        "doi": "10.1126/science.ade2574",
+        "date_provenance": {
+          "date": "2023-03-16",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/36927031/"
+        }
+      },
+      {
+        "id": "pmid:34980915",
+        "title": "SignalP 6.0 predicts all five types of signal peptides using protein language models",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34980915/",
+        "date": "2022-01-03",
+        "doi": "10.1038/s41587-021-01156-3",
+        "date_provenance": {
+          "date": "2022-01-03",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/34980915/"
+        }
+      },
+      {
+        "id": "pmid:34293799",
+        "title": "Highly accurate protein structure prediction for the human proteome",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34293799/",
+        "date": "2021-07-22",
+        "doi": "10.1038/s41586-021-03828-1",
+        "date_provenance": {
+          "date": "2021-07-22",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/34293799/"
+        }
+      },
+      {
+        "id": "pmid:31942072",
+        "title": "Improved protein structure prediction using potentials from deep learning",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31942072/",
+        "date": "2020-01-15",
+        "doi": "10.1038/s41586-019-1923-7",
+        "date_provenance": {
+          "date": "2020-01-15",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31942072/"
+        }
+      },
+      {
+        "id": "pmid:37433327",
+        "title": "De novo design of protein structure and function with RFdiffusion",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37433327/",
+        "date": "2023-07-11",
+        "doi": "10.1038/s41586-023-06415-8",
+        "date_provenance": {
+          "date": "2023-07-11",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/37433327/"
+        }
+      },
+      {
+        "id": "pmid:36108050",
+        "title": "Robust deep learning-based protein sequence design using ProteinMPNN",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36108050/",
+        "date": "2022-09-15",
+        "doi": "10.1126/science.add2187",
+        "date_provenance": {
+          "date": "2022-09-15",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/36108050/"
+        }
+      },
+      {
+        "id": "pmid:29629118",
+        "title": "MoleculeNet: a benchmark for molecular machine learning",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29629118/",
+        "date": "2017-10-31",
+        "doi": "10.1039/c7sc02664a",
+        "date_provenance": {
+          "date": "2017-10-31",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29629118/"
+        }
+      },
+      {
+        "id": "pmid:32084340",
+        "title": "A Deep Learning Approach to Antibiotic Discovery",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32084340/",
+        "date": "2020-02-20",
+        "doi": "10.1016/j.cell.2020.01.021",
+        "date_provenance": {
+          "date": "2020-02-20",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/32084340/"
+        }
+      },
+      {
+        "id": "pmid:31896580",
+        "title": "Improved protein structure prediction using predicted interresidue orientations",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31896580/",
+        "date": "2020-01-02",
+        "doi": "10.1073/pnas.1914677117",
+        "date_provenance": {
+          "date": "2020-01-02",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31896580/"
+        }
+      },
+      {
+        "id": "pmid:22400967",
+        "title": "Fast and accurate modeling of molecular atomization energies with machine learning",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22400967/",
+        "date": "2012-01-31",
+        "doi": "10.1103/physrevlett.108.058301",
+        "date_provenance": {
+          "date": "2012-01-31",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/22400967/"
+        }
+      },
+      {
+        "id": "pmid:31636460",
+        "title": "Unified rational protein engineering with sequence-based deep representation learning",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31636460/",
+        "date": "2019-10-21",
+        "doi": "10.1038/s41592-019-0598-1",
+        "date_provenance": {
+          "date": "2019-10-21",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31636460/"
+        }
+      },
+      {
+        "id": "pmid:36702895",
+        "title": "Large language models generate functional protein sequences across diverse families",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36702895/",
+        "date": "2023-01-26",
+        "doi": "10.1038/s41587-022-01618-2",
+        "date_provenance": {
+          "date": "2023-01-26",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/36702895/"
+        }
+      },
+      {
+        "id": "pmid:26392543",
+        "title": "Searching molecular structure databases with tandem mass spectra using CSI:FingerID",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26392543/",
+        "date": "2015-09-21",
+        "doi": "10.1073/pnas.1509788112",
+        "date_provenance": {
+          "date": "2015-09-21",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/26392543/"
+        }
+      },
+      {
+        "id": "pmid:35013344",
+        "title": "Harnessing protein folding neural networks for peptide-protein docking",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35013344/",
+        "date": "2022-01-10",
+        "doi": "10.1038/s41467-021-27838-9",
+        "date_provenance": {
+          "date": "2022-01-10",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/35013344/"
+        }
+      },
+      {
+        "id": "pmid:15845847",
+        "title": "Causal protein-signaling networks derived from multiparameter single-cell data",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15845847/",
+        "date": "2005-04-22",
+        "doi": "10.1126/science.1105809",
+        "date_provenance": {
+          "date": "2005-04-22",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/15845847/"
+        }
+      },
+      {
+        "id": "pmid:29036616",
+        "title": "DeepLoc: prediction of protein subcellular localization using deep learning",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29036616/",
+        "date": "2017-11-01",
+        "doi": "10.1093/bioinformatics/btx431",
+        "date_provenance": {
+          "date": "2017-11-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29036616/"
+        }
+      },
+      {
+        "id": "pmid:35020807",
+        "title": "ProteinBERT: a universal deep-learning model of protein sequence and function",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35020807/",
+        "date": "2022-04-12",
+        "doi": "10.1093/bioinformatics/btac020",
+        "date_provenance": {
+          "date": "2022-04-12",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/35020807/"
+        }
+      },
+      {
+        "id": "pmid:27558503",
+        "title": "Molecular graph convolutions: moving beyond fingerprints",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27558503/",
+        "date": "2016-08-24",
+        "doi": "10.1007/s10822-016-9938-8",
+        "date_provenance": {
+          "date": "2016-08-24",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27558503/"
+        }
+      },
+      {
+        "id": "pmid:28056090",
+        "title": "Accurate De Novo Prediction of Protein Contact Map by Ultra-Deep Learning Model",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28056090/",
+        "date": "2017-01-05",
+        "doi": "10.1371/journal.pcbi.1005324",
+        "date_provenance": {
+          "date": "2017-01-05",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/28056090/"
+        }
+      },
+      {
+        "id": "pmid:30617320",
+        "title": "Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30617320/",
+        "date": "2019-01-07",
+        "doi": "10.1038/s41591-018-0268-3",
+        "date_provenance": {
+          "date": "2019-01-07",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30617320/"
+        }
+      },
+      {
+        "id": "pmid:28782865",
+        "title": "Deep learning with convolutional neural networks for EEG decoding and visualization",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28782865/",
+        "date": "2017-08-07",
+        "doi": "10.1002/hbm.23730",
+        "date_provenance": {
+          "date": "2017-08-07",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/28782865/"
+        }
+      },
+      {
+        "id": "pmid:31378392",
+        "title": "An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31378392/",
+        "date": "2019-08-01",
+        "doi": "10.1016/s0140-6736(19)31721-0",
+        "date_provenance": {
+          "date": "2019-08-01",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31378392/"
+        }
+      },
+      {
+        "id": "pmid:21810266",
+        "title": "Automatic classification of artifactual ICA-components for artifact removal in EEG signals",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21810266/",
+        "date": "2011-08-02",
+        "doi": "10.1186/1744-9081-7-30",
+        "date_provenance": {
+          "date": "2011-08-02",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/21810266/"
+        }
+      },
+      {
+        "id": "pmid:28974302",
+        "title": "Deep convolutional neural network for the automated detection and diagnosis of seizure using EEG signals",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28974302/",
+        "date": "2017-09-27",
+        "doi": "10.1016/j.compbiomed.2017.09.017",
+        "date_provenance": {
+          "date": "2017-09-27",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/28974302/"
+        }
+      },
+      {
+        "id": "pmid:28678710",
+        "title": "DeepSleepNet: A Model for Automatic Sleep Stage Scoring Based on Raw Single-Channel EEG",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28678710/",
+        "date": "2017-06-28",
+        "doi": "10.1109/tnsre.2017.2721116",
+        "date_provenance": {
+          "date": "2017-06-28",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/28678710/"
+        }
+      },
+      {
+        "id": "pmid:27900952",
+        "title": "A novel deep learning approach for classification of EEG motor imagery signals",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/27900952/",
+        "date": "2016-11-30",
+        "doi": "10.1088/1741-2560/14/1/016003",
+        "date_provenance": {
+          "date": "2016-11-30",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/27900952/"
+        }
+      },
+      {
+        "id": "pmid:34743566",
+        "title": "ECG-Based Deep Learning and Clinical Risk Factors to Predict Atrial Fibrillation",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34743566/",
+        "date": "2021-11-08",
+        "doi": "10.1161/circulationaha.121.057480",
+        "date_provenance": {
+          "date": "2021-11-08",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/34743566/"
+        }
+      },
+      {
+        "id": "pmid:29807250",
+        "title": "A Long Short-Term Memory deep learning network for the prediction of epileptic seizures using EEG signals",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29807250/",
+        "date": "2018-05-17",
+        "doi": "10.1016/j.compbiomed.2018.05.019",
+        "date_provenance": {
+          "date": "2018-05-17",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29807250/"
+        }
+      },
+      {
+        "id": "pmid:29862307",
+        "title": "AF Classification from a Short Single Lead ECG Recording: the PhysioNet/Computing in Cardiology Challenge 2017",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29862307/",
+        "date": "2018-04-05",
+        "doi": "10.22489/cinc.2017.065-469",
+        "date_provenance": {
+          "date": "2018-04-05",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/29862307/"
+        }
+      },
+      {
+        "id": "pmid:30285102",
+        "title": "Robust EEG-based cross-site and cross-protocol classification of states of consciousness",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30285102/",
+        "date": "2018-11-01",
+        "doi": "10.1093/brain/awy251",
+        "date_provenance": {
+          "date": "2018-11-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30285102/"
+        }
+      },
+      {
+        "id": "pmid:16189967",
+        "title": "Spatio-spectral filters for improving the classification of single trial EEG",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/16189967/",
+        "doi": "10.1109/tbme.2005.851521",
+        "date_provenance": {
+          "date": null,
+          "basis": "No exact electronic or journal day in PubMed XML",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/16189967/"
+        }
+      },
+      {
+        "id": "pmid:30942845",
+        "title": "Development and Validation of a Deep-Learning Model to Screen for Hyperkalemia From the Electrocardiogram",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30942845/",
+        "date": "2019-05-01",
+        "doi": "10.1001/jamacardio.2019.0640",
+        "date_provenance": {
+          "date": "2019-05-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30942845/"
+        }
+      },
+      {
+        "id": "pmid:33588584",
+        "title": "Deep Neural Networks Can Predict New-Onset Atrial Fibrillation From the 12-Lead ECG and Help Identify Those at Risk of Atrial Fibrillation-Related Stroke",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33588584/",
+        "date": "2021-02-16",
+        "doi": "10.1161/circulationaha.120.047829",
+        "date_provenance": {
+          "date": "2021-02-16",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/33588584/"
+        }
+      },
+      {
+        "id": "pmid:32393799",
+        "title": "Prediction of mortality from 12-lead electrocardiogram voltage data using a deep neural network",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32393799/",
+        "date": "2020-05-11",
+        "doi": "10.1038/s41591-020-0870-z",
+        "date_provenance": {
+          "date": "2020-05-11",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/32393799/"
+        }
+      },
+      {
+        "id": "pmid:30245122",
+        "title": "Arrhythmia detection using deep convolutional neural network with long duration ECG signals",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30245122/",
+        "date": "2018-09-15",
+        "doi": "10.1016/j.compbiomed.2018.09.009",
+        "date_provenance": {
+          "date": "2018-09-15",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30245122/"
+        }
+      },
+      {
+        "id": "pmid:18031824",
+        "title": "Machine learning for real-time single-trial EEG-analysis: from brain-computer interfacing to mental state monitoring",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/18031824/",
+        "date": "2007-09-29",
+        "doi": "10.1016/j.jneumeth.2007.09.022",
+        "date_provenance": {
+          "date": "2007-09-29",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/18031824/"
+        }
+      },
+      {
+        "id": "pmid:15188874",
+        "title": "Noninvasive brain-actuated control of a mobile robot by human EEG",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15188874/",
+        "doi": "10.1109/tbme.2004.827086",
+        "date_provenance": {
+          "date": null,
+          "basis": "No exact electronic or journal day in PubMed XML",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/15188874/"
+        }
+      },
+      {
+        "id": "pmid:32903191",
+        "title": "Deep Learning for ECG Analysis: Benchmarks and Insights from PTB-XL",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32903191/",
+        "date": "2021-05-11",
+        "doi": "10.1109/jbhi.2020.3022989",
+        "date_provenance": {
+          "date": "2021-05-11",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/32903191/"
+        }
+      },
+      {
+        "id": "pmid:20713314",
+        "title": "EEG-based neonatal seizure detection with Support Vector Machines",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/20713314/",
+        "date": "2010-08-14",
+        "doi": "10.1016/j.clinph.2010.06.034",
+        "date_provenance": {
+          "date": "2010-08-14",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/20713314/"
+        }
+      },
+      {
+        "id": "pmid:32064914",
+        "title": "Assessing and Mitigating Bias in Medical Artificial Intelligence: The Effects of Race and Ethnicity on a Deep Learning Model for ECG Analysis",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32064914/",
+        "date": "2020-02-16",
+        "doi": "10.1161/circep.119.007988",
+        "date_provenance": {
+          "date": "2020-02-16",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/32064914/"
+        }
+      },
+      {
+        "id": "pmid:32051412",
+        "title": "A 12-lead electrocardiogram database for arrhythmia research covering more than 10,000 patients",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32051412/",
+        "date": "2020-02-12",
+        "doi": "10.1038/s41597-020-0386-x",
+        "date_provenance": {
+          "date": "2020-02-12",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/32051412/"
+        }
+      },
+      {
+        "id": "pmid:25560730",
+        "title": "Transparent Reporting of a multivariable prediction model for Individual Prognosis or Diagnosis (TRIPOD): explanation and elaboration",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25560730/",
+        "date": "2015-01-06",
+        "doi": "10.7326/m14-0698",
+        "date_provenance": {
+          "date": "2015-01-06",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/25560730/"
+        }
+      },
+      {
+        "id": "pmid:25569120",
+        "title": "Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD): the TRIPOD statement",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25569120/",
+        "date": "2015-01-07",
+        "doi": "10.1136/bmj.g7594",
+        "date_provenance": {
+          "date": "2015-01-07",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/25569120/"
+        }
+      },
+      {
+        "id": "pmid:31649194",
+        "title": "Dissecting racial bias in an algorithm used to manage the health of populations",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31649194/",
+        "date": "2019-10-25",
+        "doi": "10.1126/science.aax2342",
+        "date_provenance": {
+          "date": "2019-10-25",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/31649194/"
+        }
+      },
+      {
+        "id": "pmid:30596875",
+        "title": "PROBAST: A Tool to Assess the Risk of Bias and Applicability of Prediction Model Studies",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30596875/",
+        "date": "2019-01-01",
+        "doi": "10.7326/m18-1376",
+        "date_provenance": {
+          "date": "2019-01-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30596875/"
+        }
+      },
+      {
+        "id": "pmid:30596876",
+        "title": "PROBAST: A Tool to Assess Risk of Bias and Applicability of Prediction Model Studies: Explanation and Elaboration",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30596876/",
+        "date": "2019-01-01",
+        "doi": "10.7326/m18-1377",
+        "date_provenance": {
+          "date": "2019-01-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/30596876/"
+        }
+      },
+      {
+        "id": "pmid:22397946",
+        "title": "Risk prediction models: II. External validation, model updating, and impact assessment",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/22397946/",
+        "date": "2012-03-07",
+        "doi": "10.1136/heartjnl-2011-301247",
+        "date_provenance": {
+          "date": "2012-03-07",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/22397946/"
+        }
+      },
+      {
+        "id": "pmid:23496923",
+        "title": "External validation of a Cox prognostic model: principles and methods",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/23496923/",
+        "date": "2013-03-06",
+        "doi": "10.1186/1471-2288-13-33",
+        "date_provenance": {
+          "date": "2013-03-06",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/23496923/"
+        }
+      },
+      {
+        "id": "pmid:35585198",
+        "title": "Reporting guideline for the early-stage clinical evaluation of decision support systems driven by artificial intelligence: DECIDE-AI",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35585198/",
+        "date": "2022-05-18",
+        "doi": "10.1038/s41591-022-01772-9",
+        "date_provenance": {
+          "date": "2022-05-18",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/35585198/"
+        }
+      },
+      {
+        "id": "pmid:32908283",
+        "title": "Reporting guidelines for clinical trial reports for interventions involving artificial intelligence: the CONSORT-AI extension",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32908283/",
+        "date": "2020-09-09",
+        "doi": "10.1038/s41591-020-1034-x",
+        "date_provenance": {
+          "date": "2020-09-09",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/32908283/"
+        }
+      },
+      {
+        "id": "pmid:33564405",
+        "title": "External validation of prognostic models: what, why, how, when and where?",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/33564405/",
+        "date": "2020-11-24",
+        "doi": "10.1093/ckj/sfaa188",
+        "date_provenance": {
+          "date": "2020-11-24",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/33564405/"
+        }
+      },
+      {
+        "id": "pmid:34152373",
+        "title": "External Validation of a Widely Implemented Proprietary Sepsis Prediction Model in Hospitalized Patients",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34152373/",
+        "date": "2021-08-01",
+        "doi": "10.1001/jamainternmed.2021.2626",
+        "date_provenance": {
+          "date": "2021-08-01",
+          "basis": "PubMed exact journal publication date",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/34152373/"
+        }
+      },
+      {
+        "id": "pmid:32908284",
+        "title": "Guidelines for clinical trial protocols for interventions involving artificial intelligence: the SPIRIT-AI extension",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32908284/",
+        "date": "2020-09-09",
+        "doi": "10.1038/s41591-020-1037-7",
+        "date_provenance": {
+          "date": "2020-09-09",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/32908284/"
+        }
+      },
+      {
+        "id": "pmid:14505766",
+        "title": "External validation is necessary in prediction research: a clinical example",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/14505766/",
+        "doi": "10.1016/s0895-4356(03)00207-5",
+        "date_provenance": {
+          "date": null,
+          "basis": "No exact electronic or journal day in PubMed XML",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/14505766/"
+        }
+      },
+      {
+        "id": "pmid:15845334",
+        "title": "Substantial effective sample sizes were required for external validation studies of predictive logistic regression models",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/15845334/",
+        "doi": "10.1016/j.jclinepi.2004.06.017",
+        "date_provenance": {
+          "date": null,
+          "basis": "No exact electronic or journal day in PubMed XML",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/15845334/"
+        }
+      },
+      {
+        "id": "pmid:25179855",
+        "title": "A new framework to enhance the interpretation of external validation studies of clinical prediction models",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25179855/",
+        "date": "2014-08-30",
+        "doi": "10.1016/j.jclinepi.2014.06.018",
+        "date_provenance": {
+          "date": "2014-08-30",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/25179855/"
+        }
+      },
+      {
+        "id": "pmid:25441703",
+        "title": "External validation of new risk prediction models is infrequent and reveals worse prognostic discrimination",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/25441703/",
+        "date": "2014-10-23",
+        "doi": "10.1016/j.jclinepi.2014.09.007",
+        "date_provenance": {
+          "date": "2014-10-23",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/25441703/"
+        }
+      },
+      {
+        "id": "pmid:34031906",
+        "title": "Minimum sample size for external validation of a clinical prediction model with a binary outcome",
+        "source": "PubMed",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/34031906/",
+        "date": "2021-05-24",
+        "doi": "10.1002/sim.9025",
+        "date_provenance": {
+          "date": "2021-05-24",
+          "basis": "PubMed ArticleDate Electronic",
+          "source_url": "https://pubmed.ncbi.nlm.nih.gov/34031906/"
+        }
+      }
+    ]
+  }
+}
