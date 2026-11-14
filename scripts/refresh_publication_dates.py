@@ -156,6 +156,31 @@ def pubmed_dates(ids: list[str]) -> dict[str, dict]:
     return results
 
 
+
+def pubmed_page(key: str) -> tuple[str, dict | None, str | None]:
+    """Primary PubMed HTML metadata fallback if E-utilities fail."""
+    pmid = key.split(":", 1)[1]
+    url = f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/"
+    try:
+        text = request(url).decode("utf-8", errors="replace")
+        for field in ("citation_online_date", "citation_date", "citation_publication_date"):
+            pattern = re.compile(
+                r'<meta\b(?=[^>]*\bname=["\x27]' + field +
+                r'["\x27])(?=[^>]*\bcontent=["\x27]([^"\x27]+))[^>]*>',
+                re.I,
+            )
+            match = pattern.search(text)
+            if match:
+                raw = match.group(1)
+                candidate = re.search(r"(\d{4})[-/](\d{2})[-/](\d{2})", raw)
+                if candidate:
+                    date = "-".join(candidate.groups())
+                    return key, entry(date, url, "pubmed-html-" + field), None
+        return key, None, "No exact online publication date in PubMed page metadata"
+    except (ValueError, RuntimeError) as exc:
+        return key, None, str(exc)
+
+
 def collect_records() -> tuple[dict[str, dict], dict[str, str]]:
     files = {}
     for path in sorted(REPORTS.glob("*.md")):
@@ -236,6 +261,17 @@ def main() -> None:
         except (RuntimeError, ValueError, ET.ParseError) as exc:
             errors["pubmed-batch"] = str(exc)
             print("PubMed batch error:", exc)
+    missing_pubmed = [k for k in pubmed if k not in records]
+    if missing_pubmed:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+            for future in concurrent.futures.as_completed(
+                {executor.submit(pubmed_page, key): key for key in missing_pubmed}
+            ):
+                key, record, error = future.result()
+                if record:
+                    records[key] = record
+                else:
+                    errors[key] = error
     if arxiv:
         records.update(arxiv_atom(arxiv))
         missing = [k for k in arxiv if k not in records]
