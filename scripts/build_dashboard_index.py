@@ -32,7 +32,7 @@ def canonical(text, report, date):
         body = body.split("<!-- PAPER_IDS -->", 1)[0]
         row = {"title": m.group(1).strip(), "report": report, "reportDate": date}
         for line in body.splitlines():
-            match = re.match(r"^- ([A-Za-z][A-Za-z _]*):\s*(.*)$", line)
+            match = re.match(r"^- ([A-Za-z][A-Za-z0-9_ ]*):\s*(.*)$", line)
             if match and match.group(1) in KEYS:
                 k = KEYS[match.group(1)]
                 if k in row:
