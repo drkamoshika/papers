@@ -7,6 +7,9 @@ The machine-readable source of truth is [`paper.schema.json`](paper.schema.json)
 ```md
 # Paper Watch — 2026-11-14
 
+> schema_version: 1
+> report_date: 2026-11-14
+
 ## ダイジェスト
 
 日本語の概況と注目論文の紹介。自由文可。ただし論文詳細と混在させない。
@@ -40,7 +43,7 @@ arxiv:2611.12705
 3. The canonical ID is `arxiv:YYYY.NNNNN` (4 or 5 digits after the dot) or `pmid:NNNNNNNN` (6–9 digits). IDs must be unique within the daily report.
 4. The URL must be the corresponding arXiv abstract or PubMed record URL. Do not substitute publisher landing pages for this field; link to publisher in the prose if needed.
 5. `read_level` is one of `bibliographic`, `abstract`, `full_text`. Never claim full text was read when only the abstract was read.
-6. `Publication date` uses ISO `YYYY-MM-DD`; if not verified, write `未記載`. The report date and paper publication date are distinct.
+6. **Publication date is NOT the report date.** For arXiv, use the original v1 submission date, not the latest revision. For PubMed, use the exact first electronic publication date where available; otherwise an exact journal publication date. Verify through arXiv/PubMed primary bibliographic metadata. If exact date cannot be established, use `未記載` rather than the report date or a guessed day. Report-level `> report_date: YYYY-MM-DD` is the report date, which is also derived from the report filename. JSON stores separate `date` and `reportDate` fields.
 7. Missing descriptive fields use `未記載`, **not invented text**. For medical AI, put study design, sample size, endpoint, external validation, and prospective/retrospective evidence in Methods / Data and results / Limitations as supported by the source.
 8. The final `PAPER_IDS` block lists exactly the same canonical IDs as the paper sections, once each. The parser fails the build on mismatch or duplicate.
 9. Each paper should be factually verified at its primary source before being marked `abstract` or `full_text`.
@@ -48,7 +51,8 @@ arxiv:2611.12705
 
 ## Indexing and migration
 
-- The dashboard reads only `docs/papers.json`, which is validated against `docs/paper.schema.json` and automatically regenerated when a daily report changes.
+- The dashboard reads `docs/papers.json`, validated against `docs/paper.schema.json`, and displays both `date` (paper publication date) and `reportDate` (report date) on every paper entry. The dates must never be substituted for each other.
+- GitHub Actions runs `scripts/refresh_publication_dates.py --apply` before rebuilding the dashboard, fetching publication dates directly from the primary arXiv/PubMed metadata and saving provenance (`date`, `basis`, `source_url`) to `docs/publication-dates.json`. Old unverified dates are replaced by verified dates or `未記載`.
 - Existing legacy daily reports remain readable via a backward-compatibility parser; new reports MUST use this schema.
 - The 2026-11-14 original is preserved at `reports/archive/2026-11-14_original.md`; its normalized report has **148 distinct parseable paper IDs**, not the previously asserted 154. The missing six were not fabricated to meet the count.
 - If validation fails, GitHub Actions must fail rather than silently dropping papers.
@@ -56,4 +60,4 @@ arxiv:2611.12705
 
 ## Validation
 
-Run `python -m pip install jsonschema` then `python scripts/build_dashboard_index.py`. A valid canonical report must produce one indexed record per unique paper ID and fail on invalid IDs, mismatched URLs, missing required fields, duplicates, or inconsistent PAPER_IDS.
+Run `python scripts/refresh_publication_dates.py --apply` then `python -m pip install jsonschema` and `python scripts/build_dashboard_index.py`. A valid canonical report must produce one indexed record per unique paper ID and fail on invalid IDs, mismatched URLs, missing required fields, duplicates, or inconsistent PAPER_IDS.
