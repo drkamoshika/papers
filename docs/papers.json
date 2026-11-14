@@ -1212,13 +1212,13 @@
         "implementation"
       ],
       "summary": "2019〜2026年2月のsystematic review/meta-analysisを俯瞰し、医療AIの実装領域・データ種別・研究集中を整理。368 reviewsを採用。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "医療AIに関する系統的レビューの研究分野・使用データ・臨床用途・倫理的論点を俯瞰し、実装に必要な研究課題を整理する。",
+      "methods": "2019年〜2026年2月にPubMed、Web of Science、Scopus、IEEE Xplore、CINAHLで発表された英語査読付きの系統的レビュー・メタ解析を検索するmapping review。",
+      "results": "368レビューを採用。画像、EHR、バイオマーカー・検査値が学習データの68%、診断・予後・治療がAI用途の80%超。倫理的問題はレビューの78.5%が言及。刊行数は2025年をピークに増加。",
       "novelty": "個別AI modelではなく、医療AI分野全体がどこまで成熟しているかを俯瞰できる。",
-      "limitations": null,
+      "limitations": "一次試験の新たな統合効果量を推定する研究ではなく、英語査読済みレビューを対象とするため、レビュー間の重複や出版バイアスがあり得る。",
       "why": "個別AI modelではなく、医療AI分野全体がどこまで成熟しているかを俯瞰できる。",
-      "details": "Publication date: 2026-07-18\nread_level: abstract\nTags: ['medical AI', 'mapping review', 'evidence synthesis', 'implementation']\nSummary: 2019〜2026年2月のsystematic review/meta-analysisを俯瞰し、医療AIの実装領域・データ種別・研究集中を整理。368 reviewsを採用。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 個別AI modelではなく、医療AI分野全体がどこまで成熟しているかを俯瞰できる。\nLimitations: None"
+      "details": "Publication date: 2026-07-18\nread_level: abstract\nTags: ['medical AI', 'mapping review', 'evidence synthesis', 'implementation']\nSummary: 2019〜2026年2月のsystematic review/meta-analysisを俯瞰し、医療AIの実装領域・データ種別・研究集中を整理。368 reviewsを採用。\nObjective: 医療AIに関する系統的レビューの研究分野・使用データ・臨床用途・倫理的論点を俯瞰し、実装に必要な研究課題を整理する。\nMethods: 2019年〜2026年2月にPubMed、Web of Science、Scopus、IEEE Xplore、CINAHLで発表された英語査読付きの系統的レビュー・メタ解析を検索するmapping review。\nData and results: 368レビューを採用。画像、EHR、バイオマーカー・検査値が学習データの68%、診断・予後・治療がAI用途の80%超。倫理的問題はレビューの78.5%が言及。刊行数は2025年をピークに増加。\nNovelty: 個別AI modelではなく、医療AI分野全体がどこまで成熟しているかを俯瞰できる。\nLimitations: 一次試験の新たな統合効果量を推定する研究ではなく、英語査読済みレビューを対象とするため、レビュー間の重複や出版バイアスがあり得る。"
     },
     {
       "title": "Human-AI Collaboration in Healthcare: A Scoping Review",
@@ -1236,13 +1236,13 @@
         "trust"
       ],
       "summary": "healthcareのhuman-AI collaboration実証研究をscoping review。17,463 recordsから140 studiesを採用し、診断解釈に研究が偏ることを示した。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "医療現場での人間とAIの共同作業が、どの臨床課題で、どの指標を用いて評価されているかを整理する。",
+      "methods": "Joanna Briggs Institute法とPRISMA-ScRに準拠し、2015年1月〜2025年10月の実証研究を対象とするscoping review。17,463レコードから140研究を採用。",
+      "results": "研究は診断画像などの解釈に偏り、スクリーニング・トリアージ、治療判断、事務運用の評価は少ない。診断解釈では人間-AIチームの利点を報告する研究が多かったが、効果は作業適合性・ワークフロー統合・訓練・信頼の校正に依存。患者・システム転帰まで評価する研究は少なかった。",
       "novelty": "AI単体性能ではなくhuman-AI teamとしての効果とworkflow integrationを中心に整理。",
-      "limitations": null,
+      "limitations": "採用研究間で共同作業の『有効性』定義や測定指標が不統一。ほとんどが短期タスク指標で、責任・患者安全などの倫理的課題の実証評価は乏しい。",
       "why": "AI単体性能ではなくhuman-AI teamとしての効果とworkflow integrationを中心に整理。",
-      "details": "Publication date: 2026-06-20\nread_level: abstract\nTags: ['human-AI collaboration', 'clinical workflow', 'scoping review', 'trust']\nSummary: healthcareのhuman-AI collaboration実証研究をscoping review。17,463 recordsから140 studiesを採用し、診断解釈に研究が偏ることを示した。\nObjective: None\nMethods: None\nData and results: None\nNovelty: AI単体性能ではなくhuman-AI teamとしての効果とworkflow integrationを中心に整理。\nLimitations: None"
+      "details": "Publication date: 2026-06-20\nread_level: abstract\nTags: ['human-AI collaboration', 'clinical workflow', 'scoping review', 'trust']\nSummary: healthcareのhuman-AI collaboration実証研究をscoping review。17,463 recordsから140 studiesを採用し、診断解釈に研究が偏ることを示した。\nObjective: 医療現場での人間とAIの共同作業が、どの臨床課題で、どの指標を用いて評価されているかを整理する。\nMethods: Joanna Briggs Institute法とPRISMA-ScRに準拠し、2015年1月〜2025年10月の実証研究を対象とするscoping review。17,463レコードから140研究を採用。\nData and results: 研究は診断画像などの解釈に偏り、スクリーニング・トリアージ、治療判断、事務運用の評価は少ない。診断解釈では人間-AIチームの利点を報告する研究が多かったが、効果は作業適合性・ワークフロー統合・訓練・信頼の校正に依存。患者・システム転帰まで評価する研究は少なかった。\nNovelty: AI単体性能ではなくhuman-AI teamとしての効果とworkflow integrationを中心に整理。\nLimitations: 採用研究間で共同作業の『有効性』定義や測定指標が不統一。ほとんどが短期タスク指標で、責任・患者安全などの倫理的課題の実証評価は乏しい。"
     },
     {
       "title": "Real-world evaluation of large language model for patients medical and administrative queries in nuclear medicine",
@@ -1260,13 +1260,13 @@
         "nuclear medicine"
       ],
       "summary": "実患者からprospectively収集したmedical/admin queriesに対し、ChatGPT v4.1と医師・事務スタッフの回答を比較評価。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "核医学の実患者から寄せられた医療・事務質問に、ChatGPT-4.1が医師・事務スタッフに比べどの程度適切に回答できるか検証する。",
+      "methods": "患者質問を前向き収集し、核医学医師・事務職員とChatGPT-4.1の回答を比較。医療・事務専門家と独立非専門評価者がQUEST枠組み17軸中15軸をLikert評価し、二項検定とPABAK一致率を解析。",
+      "results": "薬剤相互作用339件、医療42件、事務76件を解析。医療質問では10評価軸中8軸でLLM回答の76〜98%が医療専門家により人間回答と同等以上（p<0.001）。事務質問は非専門家の97%が情報量、86%が総合選好でLLMを評価。医療回答はLLMの方が情報量を評価される一方、人間回答の方が理解しやすいとする評価もあった。",
       "novelty": "benchmark問題ではなく、実際の患者問い合わせを使ったreal-world LLM evaluation。",
-      "limitations": null,
+      "limitations": "核医学領域の実患者質問で、LLM回答の臨床的安全性・患者転帰を前向き介入として検証したわけではない。評価者間の選好差も大きく、臨床利用には追加の検証が必要。",
       "why": "benchmark問題ではなく、実際の患者問い合わせを使ったreal-world LLM evaluation。",
-      "details": "Publication date: 2026-06-17\nread_level: abstract\nTags: ['clinical LLM', 'real-world evaluation', 'patient queries', 'nuclear medicine']\nSummary: 実患者からprospectively収集したmedical/admin queriesに対し、ChatGPT v4.1と医師・事務スタッフの回答を比較評価。\nObjective: None\nMethods: None\nData and results: None\nNovelty: benchmark問題ではなく、実際の患者問い合わせを使ったreal-world LLM evaluation。\nLimitations: None"
+      "details": "Publication date: 2026-06-17\nread_level: abstract\nTags: ['clinical LLM', 'real-world evaluation', 'patient queries', 'nuclear medicine']\nSummary: 実患者からprospectively収集したmedical/admin queriesに対し、ChatGPT v4.1と医師・事務スタッフの回答を比較評価。\nObjective: 核医学の実患者から寄せられた医療・事務質問に、ChatGPT-4.1が医師・事務スタッフに比べどの程度適切に回答できるか検証する。\nMethods: 患者質問を前向き収集し、核医学医師・事務職員とChatGPT-4.1の回答を比較。医療・事務専門家と独立非専門評価者がQUEST枠組み17軸中15軸をLikert評価し、二項検定とPABAK一致率を解析。\nData and results: 薬剤相互作用339件、医療42件、事務76件を解析。医療質問では10評価軸中8軸でLLM回答の76〜98%が医療専門家により人間回答と同等以上（p<0.001）。事務質問は非専門家の97%が情報量、86%が総合選好でLLMを評価。医療回答はLLMの方が情報量を評価される一方、人間回答の方が理解しやすいとする評価もあった。\nNovelty: benchmark問題ではなく、実際の患者問い合わせを使ったreal-world LLM evaluation。\nLimitations: 核医学領域の実患者質問で、LLM回答の臨床的安全性・患者転帰を前向き介入として検証したわけではない。評価者間の選好差も大きく、臨床利用には追加の検証が必要。"
     },
     {
       "title": "General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",
@@ -1284,13 +1284,13 @@
         "real clinical queries"
       ],
       "summary": "OpenEvidence / UpToDate Expert AIとfrontier general-purpose LLMを、MedQA、HealthBench、real clinical queriesで比較し、general-purpose modelsが全評価で上回ったと報告。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "医療特化LLMツールが汎用の最先端LLMに比べて優位であるか、独立した医療ベンチマークと実臨床由来質問で評価する。",
+      "methods": "OpenEvidence、UpToDate Expert AIと、GPT-5.2、Gemini 3.1 Pro、Claude Opus 4.6を比較。MedQA 500問、HealthBench 500問、実診療の匿名化医師質問100問からなるRCQを使用し、RCQは米国の臨床医12人がランダム化盲検採点（計1,800のモデル×質問の評価）。",
+      "results": "3つの評価すべてで汎用最先端LLMが医療特化AIツールを上回った。RCQにおける医療特化ツールの成績はGoogle SearchのAI Overview自動有効設定と同程度と報告。要旨に各モデルの絶対スコアはない。",
       "novelty": "「医療特化modelなら一般modelより強い」という前提を独立比較で検証している。",
-      "limitations": null,
+      "limitations": "対象ツールの特定バージョンとベンチマークに依存し、実患者の転帰に直結する比較ではない。著者らは医療現場導入前の独立実証の必要性を強調。",
       "why": "「医療特化modelなら一般modelより強い」という前提を独立比較で検証している。",
-      "details": "Publication date: 2026-06-12\nread_level: abstract\nTags: ['medical LLM', 'clinical AI', 'benchmark', 'real clinical queries']\nSummary: OpenEvidence / UpToDate Expert AIとfrontier general-purpose LLMを、MedQA、HealthBench、real clinical queriesで比較し、general-purpose modelsが全評価で上回ったと報告。\nObjective: None\nMethods: None\nData and results: None\nNovelty: 「医療特化modelなら一般modelより強い」という前提を独立比較で検証している。\nLimitations: None"
+      "details": "Publication date: 2026-06-12\nread_level: abstract\nTags: ['medical LLM', 'clinical AI', 'benchmark', 'real clinical queries']\nSummary: OpenEvidence / UpToDate Expert AIとfrontier general-purpose LLMを、MedQA、HealthBench、real clinical queriesで比較し、general-purpose modelsが全評価で上回ったと報告。\nObjective: 医療特化LLMツールが汎用の最先端LLMに比べて優位であるか、独立した医療ベンチマークと実臨床由来質問で評価する。\nMethods: OpenEvidence、UpToDate Expert AIと、GPT-5.2、Gemini 3.1 Pro、Claude Opus 4.6を比較。MedQA 500問、HealthBench 500問、実診療の匿名化医師質問100問からなるRCQを使用し、RCQは米国の臨床医12人がランダム化盲検採点（計1,800のモデル×質問の評価）。\nData and results: 3つの評価すべてで汎用最先端LLMが医療特化AIツールを上回った。RCQにおける医療特化ツールの成績はGoogle SearchのAI Overview自動有効設定と同程度と報告。要旨に各モデルの絶対スコアはない。\nNovelty: 「医療特化modelなら一般modelより強い」という前提を独立比較で検証している。\nLimitations: 対象ツールの特定バージョンとベンチマークに依存し、実患者の転帰に直結する比較ではない。著者らは医療現場導入前の独立実証の必要性を強調。"
     },
     {
       "title": "Integrating large language models for enhanced predictive analytics in healthcare",
@@ -1308,13 +1308,13 @@
         "multi-task learning"
       ],
       "summary": "structured EHRをlanguage-model形式で扱い、7B LLaMA architectureをclinical/operational predictionのmulti-task engineとして利用するHopkins LLMを提案。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "構造化EHRの異なる臨床・運用予測タスクを、複数の専用モデルを作る代わりに一つのLLMで扱えるようにする。",
+      "methods": "LLaMA 7Bを基盤とするHopkins LLMを作成し、Johns Hopkins Health Systemの42,160患者データで事前学習後、臨床予測タスクへ微調整。異なる外部医療システム3つ、合計1,329患者で30日再入院、90日死亡、30日ICU入室、治療推奨を評価。",
+      "results": "4つの外部予測タスクの平均ROC-AUCは0.84［0.82, 0.88］、ゼロショット汎用LLM基準より0.28高い（p<0.05）と報告。",
       "novelty": "LLMを自由文生成ではなく、structured EHRの汎用predictive engineとして使う設計。",
-      "limitations": null,
+      "limitations": "外部検証は行われたが、検証対象は4タスクと1,329患者。長期的な実装、患者転帰や他診療領域での汎化は要旨では検証されていない。",
       "why": "LLMを自由文生成ではなく、structured EHRの汎用predictive engineとして使う設計。",
-      "details": "Publication date: 2026-04-02\nread_level: abstract\nTags: ['EHR', 'clinical LLM', 'predictive analytics', 'multi-task learning']\nSummary: structured EHRをlanguage-model形式で扱い、7B LLaMA architectureをclinical/operational predictionのmulti-task engineとして利用するHopkins LLMを提案。\nObjective: None\nMethods: None\nData and results: None\nNovelty: LLMを自由文生成ではなく、structured EHRの汎用predictive engineとして使う設計。\nLimitations: None"
+      "details": "Publication date: 2026-04-02\nread_level: abstract\nTags: ['EHR', 'clinical LLM', 'predictive analytics', 'multi-task learning']\nSummary: structured EHRをlanguage-model形式で扱い、7B LLaMA architectureをclinical/operational predictionのmulti-task engineとして利用するHopkins LLMを提案。\nObjective: 構造化EHRの異なる臨床・運用予測タスクを、複数の専用モデルを作る代わりに一つのLLMで扱えるようにする。\nMethods: LLaMA 7Bを基盤とするHopkins LLMを作成し、Johns Hopkins Health Systemの42,160患者データで事前学習後、臨床予測タスクへ微調整。異なる外部医療システム3つ、合計1,329患者で30日再入院、90日死亡、30日ICU入室、治療推奨を評価。\nData and results: 4つの外部予測タスクの平均ROC-AUCは0.84［0.82, 0.88］、ゼロショット汎用LLM基準より0.28高い（p<0.05）と報告。\nNovelty: LLMを自由文生成ではなく、structured EHRの汎用predictive engineとして使う設計。\nLimitations: 外部検証は行われたが、検証対象は4タスクと1,329患者。長期的な実装、患者転帰や他診療領域での汎化は要旨では検証されていない。"
     },
     {
       "title": "Artificial Intelligence in Health Care: Clinical Opportunities, Validation Trends, and Implementation Challenges (2020-2025)",
@@ -1332,13 +1332,13 @@
         "review"
       ],
       "summary": "2020〜2025年の医療AIを、clinical opportunityだけでなくvalidation trendとimplementation challengeの観点から整理するreview。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "2020〜2025年の医療AIについて、臨床的用途と外部検証の普及状況、実装を阻む要因を体系的に整理する。",
+      "methods": "PRISMA 2020に従いPubMed、IEEE Xplore、Web of Scienceで2020年1月〜2025年9月の、前向き評価または外部検証を伴う臨床AI原著研究を検索するsystematic review。",
+      "results": "15研究を採用し、深層学習60%、放射線科33.3%、腫瘍20%、循環器13.3%。画像診断モデルのAUC中央値は0.91。規制順守53.3%、説明可能性40.0%、データ品質33.3%、臨床統合26.7%が導入上の障壁。外部検証の報告率は2015〜2019年の23%から46.7%へ上昇と報告。",
       "novelty": "model性能からdeploymentへ視点を移し、実装障壁をまとめている。",
-      "limitations": null,
+      "limitations": "採用研究は15件と少なく、領域横断的なAUC中央値は同一臨床課題での公平な性能比較を意味しない。導入障壁の集計は各論文の報告状況に左右される。",
       "why": "model性能からdeploymentへ視点を移し、実装障壁をまとめている。",
-      "details": "Publication date: 2026-04-20\nread_level: abstract\nTags: ['medical AI', 'validation', 'implementation', 'review']\nSummary: 2020〜2025年の医療AIを、clinical opportunityだけでなくvalidation trendとimplementation challengeの観点から整理するreview。\nObjective: None\nMethods: None\nData and results: None\nNovelty: model性能からdeploymentへ視点を移し、実装障壁をまとめている。\nLimitations: None"
+      "details": "Publication date: 2026-04-20\nread_level: abstract\nTags: ['medical AI', 'validation', 'implementation', 'review']\nSummary: 2020〜2025年の医療AIを、clinical opportunityだけでなくvalidation trendとimplementation challengeの観点から整理するreview。\nObjective: 2020〜2025年の医療AIについて、臨床的用途と外部検証の普及状況、実装を阻む要因を体系的に整理する。\nMethods: PRISMA 2020に従いPubMed、IEEE Xplore、Web of Scienceで2020年1月〜2025年9月の、前向き評価または外部検証を伴う臨床AI原著研究を検索するsystematic review。\nData and results: 15研究を採用し、深層学習60%、放射線科33.3%、腫瘍20%、循環器13.3%。画像診断モデルのAUC中央値は0.91。規制順守53.3%、説明可能性40.0%、データ品質33.3%、臨床統合26.7%が導入上の障壁。外部検証の報告率は2015〜2019年の23%から46.7%へ上昇と報告。\nNovelty: model性能からdeploymentへ視点を移し、実装障壁をまとめている。\nLimitations: 採用研究は15件と少なく、領域横断的なAUC中央値は同一臨床課題での公平な性能比較を意味しない。導入障壁の集計は各論文の報告状況に左右される。"
     },
     {
       "title": "The role of artificial intelligence in virtual emergency care: a systematic review",
@@ -1356,13 +1356,13 @@
         "systematic review"
       ],
       "summary": "virtual emergency careにおけるAI利用をsystematic reviewし、remote/virtual settingでのclinical decision supportの位置づけを整理。",
-      "objective": null,
-      "methods": null,
-      "results": null,
+      "objective": "バーチャル救急医療におけるAIの臨床有効性、検証品質、現場導入に必要な証拠水準を評価する。",
+      "methods": "Embase、PsycINFO、MEDLINE、PubMed、Scopus、Web of Science、CINAHL、Cochraneを2025年3月まで検索。7,098レコードから重複除去後4,935件をスクリーニングし8研究採用。PROBAST+AI、TRIPOD+AI、GRADEでバイアス・報告品質・確実性を評価。",
+      "results": "8研究・参加者約50万人。正解率77.5〜100%、感度63〜100%、特異度60%（1研究）。すべての臨床研究で深刻なバイアスリスク、TRIPOD+AI平均適合率36.9%（30.9〜48.1%）、GRADEの証拠確実性は非常に低い〜低い。実患者の臨床アウトカムを測定した研究はゼロ。",
       "novelty": "AI医療の中でもdeployment条件が特殊なvirtual emergency careに焦点を当てる。",
-      "limitations": null,
+      "limitations": "著者らは現在の証拠ではバーチャル救急への広範な臨床導入を支持できないと結論。前向き対照試験、臨床転帰測定、報告基準への準拠が不可欠。",
       "why": "AI医療の中でもdeployment条件が特殊なvirtual emergency careに焦点を当てる。",
-      "details": "Publication date: 2026-03-22\nread_level: abstract\nTags: ['emergency care', 'virtual care', 'medical AI', 'systematic review']\nSummary: virtual emergency careにおけるAI利用をsystematic reviewし、remote/virtual settingでのclinical decision supportの位置づけを整理。\nObjective: None\nMethods: None\nData and results: None\nNovelty: AI医療の中でもdeployment条件が特殊なvirtual emergency careに焦点を当てる。\nLimitations: None"
+      "details": "Publication date: 2026-03-22\nread_level: abstract\nTags: ['emergency care', 'virtual care', 'medical AI', 'systematic review']\nSummary: virtual emergency careにおけるAI利用をsystematic reviewし、remote/virtual settingでのclinical decision supportの位置づけを整理。\nObjective: バーチャル救急医療におけるAIの臨床有効性、検証品質、現場導入に必要な証拠水準を評価する。\nMethods: Embase、PsycINFO、MEDLINE、PubMed、Scopus、Web of Science、CINAHL、Cochraneを2025年3月まで検索。7,098レコードから重複除去後4,935件をスクリーニングし8研究採用。PROBAST+AI、TRIPOD+AI、GRADEでバイアス・報告品質・確実性を評価。\nData and results: 8研究・参加者約50万人。正解率77.5〜100%、感度63〜100%、特異度60%（1研究）。すべての臨床研究で深刻なバイアスリスク、TRIPOD+AI平均適合率36.9%（30.9〜48.1%）、GRADEの証拠確実性は非常に低い〜低い。実患者の臨床アウトカムを測定した研究はゼロ。\nNovelty: AI医療の中でもdeployment条件が特殊なvirtual emergency careに焦点を当てる。\nLimitations: 著者らは現在の証拠ではバーチャル救急への広範な臨床導入を支持できないと結論。前向き対照試験、臨床転帰測定、報告基準への準拠が不可欠。"
     },
     {
       "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
