@@ -14344,10 +14344,10 @@
       "summary": "Transformer Hawkes Processはattentionで長い事象履歴を表現する。",
       "objective": "短期・長期の依存を捉え、RNN型の点過程の予測を改善する。",
       "methods": "self-attentionで履歴を符号化し、事象間の関係情報を加えた複数過程の学習も検討する。",
-      "results": "複数データで尤度と事象予測を改善し、関係情報を組み込んだ構成でも改善を報告。",
+      "results": "Retweets、MemeTrack、金融取引、MIMIC-II、StackOverflowなどで尤度・事象予測を評価。911通報・地震ではgraph構造情報の効果も調べる。",
       "novelty": "Transformerの履歴表現を連続時間の強度モデルへ導入する。",
       "limitations": "編者の注意: モデル名にHawkesとあっても、古典的な線形励起カーネルの推定と同じ制約・解釈を持つとは限らない。",
-      "read_level": "abstract",
+      "read_level": "full_text",
       "report": "reports/foundations/06-next-event.md",
       "reportDate": "2026-11-15",
       "fields": [
@@ -14357,7 +14357,9 @@
         "基礎文献",
         "次イベント予測・点過程"
       ],
-      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。",
+      "extraSource": "https://arxiv.org/html/2002.09291v5",
+      "sourceSections": "実験のDatasets・Table 1、尤度と事象予測の評価節"
     },
     {
       "id": "arxiv:2006.02460",
@@ -14898,8 +14900,8 @@
       "methods": "連続時間で進む隠れ状態から、複数種別の条件付き強度を生成する。",
       "results": "実・人工データで尤度と予測精度を評価し、欠測がある設定でも競争力を示す。",
       "novelty": "線形加算の励起に限らず、履歴の神経状態による自己変調を導入する。",
-      "limitations": "編者の注意: 欠測条件での実験は任意の欠測機構への頑健性を保証せず、隠れ状態の成分は直接の機構説明ではない。",
-      "read_level": "abstract",
+      "limitations": "欠測時は未観測事象を明示的に積分せず、不完全列を完全な列として学ぶ。著者は正しい欠測推論が高価なため、隠れ状態が予測的に補うことを期待する方式と説明する。",
+      "read_level": "full_text",
       "report": "reports/foundations/06-next-event.md",
       "reportDate": "2026-11-15",
       "fields": [
@@ -14909,7 +14911,9 @@
         "基礎文献",
         "次イベント予測・点過程"
       ],
-      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。",
+      "extraSource": "https://arxiv.org/html/1612.09328v3",
+      "sourceSections": "実験節とAppendixのMissing Data Discussion"
     },
     {
       "id": "arxiv:2002.07281",
@@ -15258,8 +15262,8 @@
       "methods": "自然言語の事象記述を与え、意味と予測ラベルを分けるsymbolic labelを用いる。",
       "results": "6分野7データ、約15万事象を評価。能力の高いLLMは記述と記号ラベルで改善したが、弱いモデルの利得は小さい。",
       "novelty": "事象の意味情報と、ラベルの語義による偏りを分けて実験する。",
-      "limitations": "モデル能力によって利得が異なる。編者の注意: 世界知識を利用できるという結果から、未知の将来を一般的に予見できるとは結論しない。",
-      "read_level": "abstract",
+      "limitations": "著者は推論能力との相関の因果機構は未確定とする。実験ではLLMが予測ごとに秒単位、専用モデルは数十msで、遅延trade-offがある。記述付きの追加調整や時間の符号化も未解決。",
+      "read_level": "full_text",
       "report": "reports/foundations/06-next-event.md",
       "reportDate": "2026-11-15",
       "fields": [
@@ -15269,7 +15273,9 @@
         "基礎文献",
         "次イベント予測・点過程"
       ],
-      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。",
+      "extraSource": "https://arxiv.org/html/2610.19021v1",
+      "sourceSections": "Sections 5–7、Limitations"
     },
     {
       "id": "arxiv:2401.07237",
@@ -15375,11 +15381,11 @@
       "date": "2024-10-02",
       "summary": "TPP-LLMは事象種別の文章説明と時間埋め込みでLLMを点過程へ適応させる。",
       "objective": "カテゴリ記号だけでは失われる意味を利用しつつ、時間パターンを学ぶ。",
-      "methods": "事象の記述を直接入力し、時間埋め込みとPEFTで少数のパラメータを調整する。",
-      "results": "複数の実データで列モデル化・予測を改善し、計算効率の利点も報告。要旨には費用の絶対値がない。",
+      "methods": "TinyLlama-1.1B・Gemma-2-2Bを4-bit化してLoRA調整。5データに種別記述を補い、時間埋め込みを入力する。強度積分は区間あたり20標本のMonte Carloを用いる。",
+      "results": "StackOverflow・Chicago Crime・NYC Taxi・米地震・Amazonで評価。尤度はLlama版がStackOverflowで最良だが、3データではAttNHP、地震ではSAHPが最良で、一律の勝利ではない。",
       "novelty": "意味の事前学習と連続時間の予測を、効率的な追加調整で接続する。",
-      "limitations": "LLMだけでは時間パターンの把握が弱いという動機に基づく。編者の注意: 記述の質と事前学習由来の漏洩を確認する必要がある。",
-      "read_level": "abstract",
+      "limitations": "本文では比較法にA10/A100、TPP-LLMにH100を使用。編者の注意: 実行速度の単純比較はhardware差を含む。種別の説明文を補う前処理と、近似尤度にも依存する。",
+      "read_level": "full_text",
       "report": "reports/foundations/06-next-event.md",
       "reportDate": "2026-11-15",
       "fields": [
@@ -15389,7 +15395,9 @@
         "基礎文献",
         "次イベント予測・点過程"
       ],
-      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。",
+      "extraSource": "https://arxiv.org/html/2410.02062v2",
+      "sourceSections": "Sections 5.1・5.4・5.5（データ・GPU条件・尤度の内訳）"
     },
     {
       "id": "arxiv:2501.05925",
@@ -16026,8 +16034,8 @@
       "methods": "Californiaの1971–2021年のcatalogを領域・生成方法別に整備し、ETASと尤度・生成指標で比較する。",
       "results": "試した神経点過程5方式はいずれもETASを上回らなかったと報告。",
       "novelty": "機械学習内の比較を、対象分野の実用的なモデル・評価へ接続する。",
-      "limitations": "結論は試した実装とbenchmarkの範囲。編者の注意: あらゆる将来の神経モデルが地震予測に不適という結論ではない。",
-      "read_level": "abstract",
+      "limitations": "神経方式にはmagnitude依存の不足、履歴の切詰め、次事象学習と期間全体simulationの不一致が残ると著者が指摘。3方式はsamplingが遅くCSEP評価を実施できなかった。",
+      "read_level": "full_text",
       "report": "reports/foundations/06-next-event.md",
       "reportDate": "2026-11-15",
       "fields": [
@@ -16037,7 +16045,9 @@
         "基礎文献",
         "次イベント予測・点過程"
       ],
-      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。",
+      "extraSource": "https://arxiv.org/html/2410.08226v3",
+      "sourceSections": "生成評価・Section 5 Discussion and ConclusionのAction 1–3"
     },
     {
       "id": "arxiv:1905.09690",
@@ -16071,11 +16081,11 @@
       "date": "2025-02-11",
       "summary": "Language-TPPは時間差をbyte-tokenへ変え、言語モデルで事象列を扱う。",
       "objective": "文章記述と時間動態を、TPP専用の構造変更を抑えて統合する。",
-      "methods": "連続時間差のbyte-token表現を通常の言語モデルへ組み込み、種別・時刻予測と事象説明生成を評価する。",
-      "results": "電子商取引・SNS・Q&AのWebデータで高い予測成績を報告。時間を加えるとROUGE-Lや感情分布の整合も改善する。",
+      "methods": "時間差をbyte-tokenへ変え、Qwen2.5-0.5Bを単一A40で学習。次事象調整には5万prompt応答を使用し、時間・種別と文章生成を評価する。",
+      "results": "Retweet、StackOverflow、Taobao、Taxi、Amazon Reviewの5データで評価。文章付き事象はAmazonだけで、ROUGE-Lや感情分布の評価もこのデータで行う。",
       "novelty": "時間の符号化をtoken語彙へ寄せ、予測と説明文生成を同じ枠組みに載せる。",
-      "limitations": "編者の注意: 公開時のLanguage-TPPから改題された取得時点の要旨を参照。文章の改善は将来事象の因果的理解の実証ではない。",
-      "read_level": "abstract",
+      "limitations": "著者は長い事象記述によるcontext長の膨張と、超大規模・画像音声を含む列への拡張性を限界とする。現在の改題を反映し、初回公開日と改訂版の内容は区別する。",
+      "read_level": "full_text",
       "report": "reports/foundations/06-next-event.md",
       "reportDate": "2026-11-15",
       "fields": [
@@ -16085,7 +16095,9 @@
         "基礎文献",
         "次イベント予測・点過程"
       ],
-      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。",
+      "extraSource": "https://arxiv.org/html/2502.07139v2",
+      "sourceSections": "Sections 5.2–5.4、ConclusionsのLimitations and future work"
     },
     {
       "id": "arxiv:2501.14291",
@@ -16139,7 +16151,7 @@
       "id": "doi:10.1145/2939672.2939875",
       "title": "Recurrent Marked Temporal Point Processes: Embedding Event History to Vector",
       "source": "Publisher",
-      "url": "https://doi.org/10.1145/2939672.2939875",
+      "url": "https://www.kdd.org/kdd2016/subtopic/view/recurrent-temporal-point-process",
       "date": null,
       "summary": "RMTPPは履歴をRNNのvectorへ埋め込み、次の種別と時刻を予測する。",
       "objective": "手で固定した過程の形への依存を弱め、大量の事象履歴から表現を学ぶ。",
@@ -16147,7 +16159,7 @@
       "results": "人工・実データで固定的な母数モデルより良い予測を報告。要旨は百万規模の事象へ拡張可能と述べる。",
       "novelty": "事象履歴の表現学習とmarked TPPを統合する初期の主要モデル。",
       "limitations": "編者の注意: RNNで履歴を学んでも時間密度のパラメータ化は残るため、仮定不要のモデルとは扱わない。",
-      "read_level": "abstract",
+      "read_level": "full_text",
       "report": "reports/foundations/06-next-event.md",
       "reportDate": "2026-11-15",
       "fields": [
@@ -16157,7 +16169,9 @@
         "基礎文献",
         "次イベント予測・点過程"
       ],
-      "dateNote": "著者版PDFでKDD 2016（8月13〜17日）の会議情報を確認。会期を論文の初回公開日へ流用せず、日単位の正式公開日は未確認として保持。出典: https://people.mpi-sws.org/~manuelgr/pubs/rmtpp.pdf"
+      "dateNote": "著者版PDFでKDD 2016（8月13〜17日）の会議情報を確認。会期を論文の初回公開日へ流用せず、日単位の正式公開日は未確認として保持。出典: https://people.mpi-sws.org/~manuelgr/pubs/rmtpp.pdf",
+      "extraSource": "https://people.mpi-sws.org/~manuelgr/pubs/rmtpp.pdf",
+      "sourceSections": "著者版PDFのSections 1・2・4.2（動機・予測対象・既存モデルの制限）"
     },
     {
       "id": "pmid:32880371",
@@ -16194,8 +16208,8 @@
       "methods": "EM再構築に細胞型・nerve・発生系列・神経伝達物質予測を加え、領域間投射と経路を解析する。",
       "results": "139,255 neuron、約5×10の7乗シナプスを公開。光受容から下行motor経路をたどり、候補の感覚運動機構を示す。",
       "novelty": "複雑な行動を持つ成虫の全脳で、細胞単位の配線を検索・解析可能にする。",
-      "limitations": "編者の注意: 1個体の雌の構造資源であり、配線図の完成は感情・意識や全行動の説明の完成ではない。",
-      "read_level": "abstract",
+      "limitations": "著者は細い突起の付け残し、領域・細胞型で異なるシナプス検出精度を指摘する。化学シナプスの地図で電気シナプスは対象外。1個体の配線図から全行動・感情の説明まで確定しない。",
+      "read_level": "full_text",
       "report": "reports/foundations/07-neuroscience.md",
       "reportDate": "2026-11-15",
       "fields": [
@@ -16205,7 +16219,9 @@
         "基礎文献",
         "神経科学とAI"
       ],
-      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/39358518/"
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/39358518/",
+      "extraSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11446842/",
+      "sourceSections": "DiscussionのElectron microscopy data acquisition and reconstruction・Limitations of our reconstruction"
     },
     {
       "id": "pmid:23925240",
@@ -16240,9 +16256,9 @@
       "summary": "FlyWire全脳に細胞型・発生系列の体系的注釈を付け、別個体の地図と比較する。",
       "objective": "脳間で再同定できる細胞型を定義し、比較connectomicsを可能にする。",
       "methods": "形態と接続を跨ぐ定量比較から細胞型を定義し、FlyWireとhemibrainを共同解析する。",
-      "results": "8,453型を注釈。既提案3,643型、新規4,581型を報告し、hemibrainの提案型の約3分の1は確実な再同定が困難だった。",
+      "results": "8,453型を注釈し、そのうち4,581を新規型として報告。hemibrainで提案された型の約3分の1はFlyWireで確実に再同定できず、脳間比較による再定義を検証する。",
       "novelty": "脳内だけの類似性でなく、脳間の対応による細胞型の定義を検証する。",
-      "limitations": "すべての旧細胞型が安定に対応するわけではない。編者の注意: 注釈総数と既存・新規内訳は原著の分類に従い、単純な和を再定義しない。",
+      "limitations": "すべての旧細胞型が脳間で安定に対応するわけではない。著者は細胞数・接続の定型性と変動の双方を示し、分類の信頼性の基準を提示する。",
       "read_level": "abstract",
       "report": "reports/foundations/07-neuroscience.md",
       "reportDate": "2026-11-15",
@@ -16455,11 +16471,11 @@
       "date": "2024-09-11",
       "summary": "配線で制約したハエ視覚モデルを課題学習し、細胞ごとの活動を予測する。",
       "objective": "接続以外の生物学的詳細が未知でも、計算から活動を推定できるか検証する。",
-      "methods": "運動経路64細胞型の結合を固定し、単一neuron・synapseの未知パラメータを深層学習で最適化する。",
+      "methods": "視覚運動経路64細胞型の配線を固定し、主に非spiking・単一区画のneuronと線形閾値synapseを課題で最適化。細胞型間でパラメータを共有する。",
       "results": "視覚運動課題を学んだ予測が、26研究の活動測定と整合。疎な接続のとき成功しやすいことも示す。",
       "novelty": "connectomeと課題最適化を使い、実験可能な細胞別の機構仮説を生成する。",
-      "limitations": "配線だけから無学習で全活動を復元した研究ではない。生理パラメータは課題で最適化され、疎性にも依存する。",
-      "read_level": "abstract",
+      "limitations": "著者は電気シナプス・非線形化学synapse・神経調節を扱わないとする。課題は運動検出に限られ、同じ配線・課題でも異なる応答のモデルclusterが現れる。",
+      "read_level": "full_text",
       "report": "reports/foundations/07-neuroscience.md",
       "reportDate": "2026-11-15",
       "fields": [
@@ -16469,7 +16485,9 @@
         "基礎文献",
         "神経科学とAI"
       ],
-      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/39261740/"
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/39261740/",
+      "extraSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11525180/",
+      "sourceSections": "DMN of the fly visual system・Predictions cluster across DMN ensemble・Discussion"
     },
     {
       "id": "pmid:21653723",
@@ -16596,7 +16614,7 @@
       "title": "The human connectome: A structural description of the human brain",
       "source": "PubMed",
       "url": "https://pubmed.ncbi.nlm.nih.gov/16201007/",
-      "date": null,
+      "date": "2005-09-30",
       "summary": "人間のconnectomeを収集・保存・共有する研究戦略を提案した概念的基礎論文。",
       "objective": "ほぼ未知だった人間の解剖学的接続行列を、共同研究の目標に据える。",
       "methods": "他の哺乳類の資源と人間の不足を整理し、接続地図を作る研究戦略と影響を論じる。",
@@ -16613,7 +16631,7 @@
         "基礎文献",
         "神経科学とAI"
       ],
-      "dateNote": "PubMedに日単位の電子公開日・冊子刊行日の記録なし。巻号の刊行年月: 2005 Sep。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/16201007/"
+      "dateNote": "出版社PLOSのPublished: September 30, 2005を確認。PubMedの年月だけの記録を補い、論文公開日として採用。出典: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.0010042"
     },
     {
       "id": "pmid:21810475",
@@ -16757,7 +16775,7 @@
         "基礎文献",
         "神経科学とAI"
       ],
-      "dateNote": "PubMedに日単位の電子公開日・冊子刊行日の記録なし。巻号の刊行年月: 2006 Dec。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/17079517/"
+      "dateNote": "PubMedと出版社を照合したが、出版社のPublished表記もDecember 2006までで日単位は未確認。月初を推測で補わない。出典: https://journals.sagepub.com/doi/10.1177/1073858406293182"
     },
     {
       "id": "pmid:26393868",
@@ -17358,6 +17376,1358 @@
         "神経科学とAI"
       ],
       "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/29513219/"
+    },
+    {
+      "id": "pmid:30696881",
+      "title": "Towards reconstructing intelligible speech from the human auditory cortex",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30696881/",
+      "date": "2019-01-29",
+      "summary": "人間の聴覚皮質から、深層回帰と音声合成で聞き取れる音声を再構成する。",
+      "objective": "従来の低品質な音声再構成を改善し、BCIへつなぐ。",
+      "methods": "線形・非線形回帰、spectrogram・合成器パラメータ、低・高周波の神経特徴を比較する。",
+      "results": "閉じた数字認識課題で、全周波数から合成器を推定するDNNが最高成績。線形spectrogram基準に対し明瞭度65%改善と報告。",
+      "novelty": "音響特徴の単純復元から、生成器のパラメータ推定へ接続する。",
+      "limitations": "数字の閉集合の再構成であり、自由な思考や任意の発話を読み取った実証ではない。65%は基準に対する改善値。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/30696881/"
+    },
+    {
+      "id": "pmid:27039703",
+      "title": "Dynamics of scene representations in the human brain revealed by magnetoencephalography and deep neural networks",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27039703/",
+      "date": "2016-04-01",
+      "summary": "MEGとDNNで、sceneの見た目から空間layoutへ至る表現の時間経過を調べる。",
+      "objective": "scene認識で異なる情報がいつ現れるかを定量化する。",
+      "methods": "MEGの多変量patternを解析し、scene分類DNNの内部表現と対応付ける。",
+      "results": "約100msに低次視覚、約250msにsceneの実際の大きさを反映する信号を報告。DNNでも大きさ表現が自然に現れる。",
+      "novelty": "時間分解能の高い脳記録と、課題学習の表現を結ぶ。",
+      "limitations": "編者の注意: 時間的・表現的な対応は同じ回路の証明ではなく、使った静止画像・課題の範囲内で解釈する。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/27039703/"
+    },
+    {
+      "id": "pmid:10195184",
+      "title": "Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10195184/",
+      "date": null,
+      "summary": "階層的な予測と誤差の往復で、視覚皮質の受容野の特徴を説明する。",
+      "objective": "古典的受容野の外側による効果に、feedbackを含む説明を与える。",
+      "methods": "上位から下位へ予測、下位から上位へ残差を送る網を自然画像で学習する。",
+      "results": "単純細胞に似た受容野と、一部の誤差neuronのendstoppingなどをモデルで再現する。",
+      "novelty": "予測誤差を伝える階層的な符号化を、具体的な視覚特性へ対応させる。",
+      "limitations": "編者の注意: 機能的なモデルの再現であり、生体がこの計算法を唯一の方法として使うという実証ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedと出版社を照合したが、出版社のPublished表記もJanuary 1999までで日単位は未確認。月初を推測で補わない。出典: https://www.nature.com/articles/nn0199_79"
+    },
+    {
+      "id": "pmid:7624455",
+      "title": "Why there are complementary learning systems in the hippocampus and neocortex: insights from the successes and failures of connectionist models of learning and memory",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7624455/",
+      "date": null,
+      "summary": "速い海馬学習と遅い新皮質学習が記憶を補完するCLS理論。",
+      "objective": "新しい経験を速く記憶しつつ、既存の構造を壊さず統合する仕組みを説明する。",
+      "methods": "connectionist modelの逐次学習・interleavingの性質から、海馬保存と新皮質への再活性化を考察する。",
+      "results": "緩やかで交互の学習が構造抽出に有利で、海馬が新経験を保持しreinstatementで統合する役割を提案する。",
+      "novelty": "記憶系の二重性を、学習速度と干渉という計算上の課題から説明する。",
+      "limitations": "理論・モデルに基づく説明。編者の注意: 実脳の学習速度が常に二分されるとは限らず、後続の理論更新も読む。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedに日単位の電子公開日・冊子刊行日の記録なし。巻号の刊行年月: 1995 Jul。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/7624455/"
+    },
+    {
+      "id": "pmid:19528002",
+      "title": "Predictive coding under the free-energy principle",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19528002/",
+      "date": "2009-05-12",
+      "summary": "free-energyの枠組みで、知覚を階層的な動的生成モデルの推論として表す。",
+      "objective": "感覚の原因を認識し、感覚状態の列を予測する計算法を導く。",
+      "methods": "モデルevidenceのfree-energy boundを最適化し、階層動的モデルの逆推論の式を導く。",
+      "results": "人工の鳥による鳥歌の認識・分類simulationで説明する。生体脳での一般的な原理の直接証明ではない。",
+      "novelty": "階層、動態、予測誤差を、変分的なモデル推論へ統合する。",
+      "limitations": "脳が階層的な動的モデルを持つという仮定に基づく。編者の注意: simulationの実装可能性と、生物の実際の計算を区別する。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/19528002/"
+    },
+    {
+      "id": "pmid:34737231",
+      "title": "The neural architecture of language: Integrative modeling converges on predictive processing",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34737231/",
+      "date": "2021-11-09",
+      "summary": "多数の言語モデルを、人間の文理解の神経・行動データと比較する。",
+      "objective": "次単語予測が脳の言語表現を説明する計算目的かを検討する。",
+      "methods": "fMRI・皮質電気記録など複数データでbrain scoreを測り、言語課題性能とarchitectureの寄与を見る。",
+      "results": "強いTransformerは文応答の説明可能分散のほぼ100%に達すると報告。神経・行動の適合は次単語予測と強く相関する。",
+      "novelty": "モデル群を横断し、言語の予測目的と脳・行動の適合を統合比較する。",
+      "limitations": "ほぼ100%は対象データの説明可能分散で、全脳活動・全言語能力の100%ではない。相関から学習則の同一性は確定しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/34737231/"
+    },
+    {
+      "id": "pmid:27315762",
+      "title": "What Learning Systems do Intelligent Agents Need? Complementary Learning Systems Theory Updated",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27315762/",
+      "date": null,
+      "summary": "CLS理論を、replay・一般化・速い皮質学習を含む形へ更新する。",
+      "objective": "海馬と新皮質の役割分担を最近の証拠とAI設計へつなぐ。",
+      "methods": "replayによる目的依存の経験重み付け、海馬traceの一般化、既知構造と整合する情報の皮質学習を整理する。",
+      "results": "海馬でも一般化、新皮質でも速い学習が可能な条件を論じ、人工agentとの関連を提示する。",
+      "novelty": "二つの学習系を単純な速い/遅いの固定分類から拡張する。",
+      "limitations": "理論の更新・統合であり、新しい万能agentの実験ではない。replayの役割は経験統計と目標にも依存する。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの巻号情報は2016年7月までで日精度の電子公開日が未記録。出版社版・著者版の追加取得も制限があり、初回公開日の日単位は未確認。索引登録日・会期・月初を代用しない。出典: https://pubmed.ncbi.nlm.nih.gov/27315762/"
+    },
+    {
+      "id": "pmid:16001064",
+      "title": "Dynamic predictive coding by the retina",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16001064/",
+      "date": "2005-07-07",
+      "summary": "網膜が新しい視覚統計へ数秒で適応し、予測的な符号化を変えることを示す。",
+      "objective": "環境の平均統計に固定された符号化を超え、動的適応を調べる。",
+      "methods": "異なる視覚環境で神経節細胞の時空間受容野を測り、可塑的synapseを持つモデルと比較する。",
+      "results": "数秒の受容野変化が新環境の予測符号化を改善し、network modelが多様な適応を説明する。",
+      "novelty": "予測符号化を、進化で固定した戦略だけでなく短期の動的調整へ広げる。",
+      "limitations": "編者の注意: 網膜の局所的な符号化の研究であり、皮質の高次の予測処理と同一の機構を実証するものではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/16001064/"
+    },
+    {
+      "id": "pmid:27824044",
+      "title": "Random synaptic feedback weights support error backpropagation for deep learning",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27824044/",
+      "date": "2016-11-08",
+      "summary": "feedback alignmentは、ランダムな逆向き重みでも多層の誤差学習が可能と示す。",
+      "objective": "backpropに必要とされる、正確に対称な逆向き接続の制約を緩める。",
+      "methods": "固定的なランダムfeedbackで誤差を伝え、多層網を複数の課題で訓練する。",
+      "results": "多くの課題でbackpropに匹敵する成績と、有効な教示信号の伝達をモデル上で示す。",
+      "novelty": "重みの正確な対称性を、深い信用割当の必要条件から外す。",
+      "limitations": "編者の注意: ランダムfeedbackで学べる計算例であり、脳でこのruleが働くことや他の生物学的制約まで解決した証明ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/27824044/"
+    },
+    {
+      "id": "pmid:27917138",
+      "title": "Neural Elements for Predictive Coding",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27917138/",
+      "date": "2016-11-18",
+      "summary": "予測符号化の計算構造を、皮質の層・microcircuitへ対応付ける論考。",
+      "objective": "予測と誤差の往復が、既知の神経要素とどう対応するかを整理する。",
+      "methods": "一般化free-energy式とcanonical microcircuitを合わせ、霊長類視覚皮質・mouseの回路知見で検討する。",
+      "results": "前向き・後向き投射群の分離などを論じ、interneuron多様性や単一細胞の接続から理論を更新する道筋を示す。",
+      "novelty": "抽象的な計算と細胞・層の実装を、双方向に検討するtemplate。",
+      "limitations": "著者はmicrocircuitがまだ完全には記述されていないとする。計算上の対応候補を確定した生理機能と混同しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/27917138/"
+    },
+    {
+      "id": "pmid:36864133",
+      "title": "Evidence of a predictive coding hierarchy in the human brain listening to speech",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36864133/",
+      "date": "2023-03-02",
+      "summary": "言語モデルと脳応答を比べ、複数時間scaleの階層的予測を検証する。",
+      "objective": "近い単語の予測だけで、人間の言語処理を十分説明できるか調べる。",
+      "methods": "短い物語を聞く304人のfMRIへ、通常の言語表現と複数時間scaleの予測表現を線形写像する。",
+      "results": "予測を長いscaleへ広げると脳対応が改善。前頭頭頂は側頭皮質より高次・長距離・文脈的な予測に対応する。",
+      "novelty": "言語モデルの予測範囲と、人間の階層的な処理の関係を実験で調べる。",
+      "limitations": "編者の注意: 線形mappingの改善は同一の学習則の証明ではなく、LLMの全般的な言語能力の不足を一因子で説明しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/36864133/"
+    },
+    {
+      "id": "pmid:12649484",
+      "title": "Discrete coding of reward probability and uncertainty by dopamine neurons",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12649484/",
+      "date": "2003-03-21",
+      "summary": "dopamineの速い応答と持続的変化が、報酬確率と不確実性を別々に反映する。",
+      "objective": "予測誤差に加えて、不確実性がどのように符号化されるかを調べる。",
+      "methods": "刺激で報酬確率を操作し、dopamine neuronのphasic応答と報酬時刻までの漸増活動を測る。",
+      "results": "phasic応答は確率に沿って単調変化し、漸増活動は確率0.5で最大となる不確実性と共変した。",
+      "novelty": "予測される報酬と、その予測の不確実性を時間的に区別する。",
+      "limitations": "編者の注意: reward不確実性の課題であり、任意の認知的不確実性や主観的risk選好を直接説明したものではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/12649484/"
+    },
+    {
+      "id": "pmid:16929307",
+      "title": "Dopamine-dependent prediction errors underpin reward-seeking behaviour in humans",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16929307/",
+      "date": "2006-08-23",
+      "summary": "人間でdopamine機能を薬理操作し、報酬予測誤差と選択を結び付ける。",
+      "objective": "動物の理論を、人間の線条体応答と学習へ対応付ける。",
+      "methods": "L-DOPAとhaloperidolを用い、道具的学習中の線条体信号と行動を行動価値学習モデルで解析する。",
+      "results": "薬物条件で予測誤差信号が変わり、L-DOPA群はhaloperidol群より高報酬の行動を選びやすかった。モデルも選択を再現する。",
+      "novelty": "dopamine・線条体予測誤差・人の選択の間を、薬理操作で検討する。",
+      "limitations": "編者の注意: 薬物には複数の作用があり、fMRI信号の変化を単一neuronの発火へ直接対応付けない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/16929307/"
+    },
+    {
+      "id": "pmid:15996553",
+      "title": "Midbrain dopamine neurons encode a quantitative reward prediction error signal",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15996553/",
+      "date": "2005-07-07",
+      "summary": "dopamine単一細胞の活動が、正の報酬予測誤差を定量的に表すことを示す。",
+      "objective": "強化学習の誤差信号と実際の発火の数値的関係を検証する。",
+      "methods": "juice報酬を得る眼球運動を試行錯誤で学ぶ課題で、報酬履歴とneuron活動を対応付ける。",
+      "results": "現在の報酬と過去報酬の加重平均との差を、期待より良い結果で符号化。行動方策への影響が弱くても信号は続いた。",
+      "novelty": "理論の予測誤差を、報酬履歴に基づく定量的な発火予測へ落とす。",
+      "limitations": "論文の定量結果は正の誤差側が中心。編者の注意: 正負両方向を対称な精度で符号化するという結果へ広げない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/15996553/"
+    },
+    {
+      "id": "pmid:30359611",
+      "title": "What Is a Cognitive Map? Organizing Knowledge for Flexible Behavior",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30359611/",
+      "date": "2018-10-24",
+      "summary": "空間だけでなく、抽象的な関係を整理する認知地図の原理をreviewする。",
+      "objective": "柔軟な一般化を支える共通の知識表現を探る。",
+      "methods": "空間・非空間課題の神経証拠と理論、地図様表現を学ぶ人工agentを比較する。",
+      "results": "異なる領域の関係を統合する原理を示し、人間の抽象化・推論への可能性を議論する。",
+      "novelty": "空間navigationを、一般的な関係知識とagentの柔軟性へ接続する。",
+      "limitations": "著者は人間の極端な一般化への含意を推測として扱う。編者の注意: 地図様表現の類似からすべての知識が同じ符号とは断言しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/30359611/"
+    },
+    {
+      "id": "pmid:10195164",
+      "title": "Dopamine neurons report an error in the temporal prediction of reward during learning",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10195164/",
+      "date": null,
+      "summary": "monkeyのdopamine neuronが、報酬の発生と時刻の予測誤差を表す。",
+      "objective": "報酬学習の進行と、予期した時刻からのずれを調べる。",
+      "methods": "学習の各段階、予期しない時刻の報酬、予期した報酬の省略に対する発火を測定する。",
+      "results": "予測が成立すると報酬時の活性は弱まり、予期しない時刻では活性、予期時刻の省略では抑制が見られた。",
+      "novelty": "何が起きるかに加え、いつ起きるかの誤差を教示信号へ結ぶ。",
+      "limitations": "編者の注意: 報酬の時刻に関する結果であり、脳が一般的な事象時刻分布を同じ信号だけで表すという証明ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedと出版社を照合したが、出版社のPublished表記もAugust 1998までで日単位は未確認。月初を推測で補わない。出典: https://www.nature.com/articles/nn0898_304"
+    },
+    {
+      "id": "pmid:24462094",
+      "title": "Orbitofrontal cortex as a cognitive map of task space",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24462094/",
+      "date": "2014-01-22",
+      "summary": "OFCを、強化学習で必要な潜在課題状態の認知地図として捉える理論。",
+      "objective": "OFCの意思決定への役割を、複数の実験結果に一貫して説明する。",
+      "methods": "観測されない作業記憶などを含む状態labelをOFCが供給すると仮定し、逆転・消去・価値低下や損傷結果を説明する。",
+      "results": "rodentでのOFC損傷とdopamine応答などを統合し、他理論と区別できる実験予測を導く。",
+      "novelty": "価値そのものの保存に限らず、学習が参照する状態表現の役割を提案する。",
+      "limitations": "仮説・理論の論文であり、全OFC機能を同定した研究ではない。生成した予測は後続の操作実験による検証が必要。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/24462094/"
+    },
+    {
+      "id": "pmid:23708143",
+      "title": "A causal link between prediction errors, dopamine neurons and learning",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23708143/",
+      "date": "2013-05-26",
+      "summary": "dopamineの短い活動を操作し、予測誤差とcue–reward学習の因果的な接点を検証する。",
+      "objective": "報酬に応じた発火と学習が、単なる相関を超えて結び付くか調べる。",
+      "methods": "ratのblockingとextinctionで、報酬と同時にoptogeneticにdopamine neuronを活性化する。",
+      "results": "予測誤差を模す活性化が、cueによるreward-seekingを長く増加させるのに十分だった。",
+      "novelty": "理論上の誤差信号を、時間をそろえた神経操作で検証する。",
+      "limitations": "特定の操作が学習を生む十分性の結果。編者の注意: すべてのdopamine活動の機能や感情全体を同定したものではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/23708143/"
+    },
+    {
+      "id": "pmid:10966623",
+      "title": "Competitive Hebbian learning through spike-timing-dependent synaptic plasticity",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10966623/",
+      "date": null,
+      "summary": "STDPによる時間依存の可塑性だけで、入力間の競争が生じるモデルを示す。",
+      "objective": "Hebbian学習に必要な競争を、spikeの相対時刻から説明する。",
+      "methods": "前・後synapseの発火時刻に依存する学習をsimulationし、synapse強度と発火の変化を調べる。",
+      "results": "短い遅延や相関した群の入力が強まり、効きにくい入力は弱まる。不規則で入力時刻に敏感な発火を形成する。",
+      "novelty": "Hebbian強化と競争・balancedな発火を、同じ時刻学習ruleから導く。",
+      "limitations": "モデル研究。編者の注意: 生体で観測したSTDPの存在と、この競争機構がそのまま働く証明は別である。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedと出版社を照合したが、出版社のPublished表記もSeptember 2000までで日単位は未確認。月初を推測で補わない。出典: https://www.nature.com/articles/nn0900_919"
+    },
+    {
+      "id": "pmid:18275283",
+      "title": "Spike timing-dependent plasticity: a Hebbian learning rule",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18275283/",
+      "date": "2008-07-21",
+      "summary": "STDPの細胞機構と、基本的な時間窓を超える複雑さをreviewする。",
+      "objective": "前後spikeの順序で変わる可塑性を、回路機能へ結び付ける。",
+      "methods": "興奮・抑制synapse、樹状突起位置、複雑な列の非線形統合、調節入力とin vivo研究を整理する。",
+      "results": "数十msの窓だけでは足りず、位置・抑制・neuromodulationなどに依存する多層の構造を示す。",
+      "novelty": "単一のHebbian曲線から、回路・細胞contextを持つ学習則へ視野を広げる。",
+      "limitations": "編者の注意: 実装の便宜で使う単純なSTDP曲線を、生体のすべてのsynapseに共通するruleと扱わない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "出版社Annual ReviewsがPublication Date: 21 Jul 2008と明示する刊行日を採用。Volume publicationはJuly 2008。これより先のオンライン先行公開日の日精度は未確認。出典: https://www.annualreviews.org/content/journals/10.1146/annurev.neuro.31.060407.125639"
+    },
+    {
+      "id": "pmid:31776490",
+      "title": "Towards spike-based machine intelligence with neuromorphic computing",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31776490/",
+      "date": "2019-11-27",
+      "summary": "neuromorphic computingのspike符号・event駆動の算法とhardwareを整理する。",
+      "objective": "脳を参考にした計算を、機械知能とエネルギー効率へどうつなぐかを検討する。",
+      "methods": "生物回路のsilicon実装から、spike型algorithmのhardware化までをreviewし、学習と設計の基礎を示す。",
+      "results": "algorithm–hardware共同設計の課題と展望を提示。要旨は特定装置の普遍的な省電力率を報告するものではない。",
+      "novelty": "生体模倣だけでなく、事象駆動表現と実装の整合を研究の中心へ据える。",
+      "limitations": "編者の注意: spikeを使えば自動的に低消費電力・高性能になるわけではなく、符号化、課題、hardware条件で評価する。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/31776490/"
+    },
+    {
+      "id": "pmid:11102489",
+      "title": "Stable Hebbian learning from spike timing-dependent plasticity",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11102489/",
+      "date": "2000-12-01",
+      "summary": "重みに依存するSTDPを使い、安定したHebbian学習をモデル化する。",
+      "objective": "可塑性の安定性に、synapse間競争が必須かを調べる。",
+      "methods": "強いsynapseほど増強が小さく、抑圧は強度に依存しないruleをrandom入力でsimulationする。",
+      "results": "安定・単峰・正の歪みを持つ重み分布が生じる。競争は別の活動依存scale機構で加えられると示す。",
+      "novelty": "安定な可塑性と競争を、常に同居する機構として扱わず分離する。",
+      "limitations": "モデル研究であり、分布の実測との類似が生体の唯一の機構を示すわけではない。重み依存のruleが結果の前提。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/11102489/"
+    },
+    {
+      "id": "pmid:26941637",
+      "title": "Unsupervised learning of digit recognition using spike-timing-dependent plasticity",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26941637/",
+      "date": "2015-08-03",
+      "summary": "教師なしSTDPで、spiking網が数字の特徴を学ぶ例を示す。",
+      "objective": "rate網からの変換に頼らず、spike型の局所学習で認識を行う。",
+      "methods": "conductance synapse、時間依存STDP、側方抑制、適応閾値を組み合わせ、訓練時の教示・class labelを使わない。",
+      "results": "MNISTで95%の精度を報告し、neuron数の増加と異なる4学習ruleへの頑健性も調べる。",
+      "novelty": "複数の比較的生物に近い機構を統合し、教師なしのpattern学習を実装する。",
+      "limitations": "編者の注意: 訓練時の教師なし学習と、評価時のclass対応の決め方は別であり、数字以外への一般性は別途検証する。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/26941637/"
+    },
+    {
+      "id": "pmid:26834568",
+      "title": "Neuromodulated Spike-Timing-Dependent Plasticity, and Theory of Three-Factor Learning Rules",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26834568/",
+      "date": "2016-01-19",
+      "summary": "前後の活動にneuromodulatorを加える三因子学習ruleを整理する。",
+      "objective": "感覚入力と遅れて来る報酬・新規性信号の時間gapを埋める。",
+      "methods": "理論・概念モデルを中心に、前synapse活動、後synapse変数、phasic調節信号のtimingを整理し実験証拠も検討する。",
+      "results": "短い活動をsynapseの機構で保持し、後の調節信号で学習を成立させる枠組みを提示する。",
+      "novelty": "Hebbianな局所相関を、報酬や新規性に応じて学ぶtimingへ接続する。",
+      "limitations": "編者の注意: 三因子ruleは一つの固定式ではなく一群の理論で、特定の生体回路での実装は個別に確認が必要。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/26834568/"
+    },
+    {
+      "id": "pmid:17305422",
+      "title": "Unsupervised learning of visual features through spike timing dependent plasticity",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17305422/",
+      "date": "2007-01-02",
+      "summary": "非同期のspiking視覚網で、STDPから中間的な視覚特徴が生じる。",
+      "objective": "速く選択的な応答を、spike時刻と局所学習で説明する。",
+      "methods": "腹側視覚路を模すfeedforward網へ自然画像を提示し、早く発火する入力の重みを強める。",
+      "results": "目立ち、繰り返し現れる特徴への選択性が形成され、複数分類課題で頑健な物体認識を示す。",
+      "novelty": "時間符号とSTDPを、視覚特徴の自己組織化へつなぐ。",
+      "limitations": "編者の注意: モデルの認識結果であり、脳全体が同じfeedforward ruleだけで認識するという実証ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/17305422/"
+    },
+    {
+      "id": "pmid:23668970",
+      "title": "The minimal preprocessing pipelines for the Human Connectome Project",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23668970/",
+      "date": "2013-05-11",
+      "summary": "HCPの構造・機能・拡散MRIを統合する標準的な前処理を記述する。",
+      "objective": "高品質な大標本データを、共通空間で再利用できるようにする。",
+      "methods": "歪み除去、surface生成、modalities間位置合わせ、標準化を行い、CIFTI/grayordinateで皮質と皮質下を扱う。",
+      "results": "最小限の取得条件と処理手順、実施上の助言を提供。予測モデルの独自精度を主成果としていない。",
+      "novelty": "複数MRIを高い解像度で統合する、connectome解析の共通入口を作る。",
+      "limitations": "HCPの取得条件に合わせたpipelineで、任意の低品質・別protocolデータでも同じ妥当性が得られるとは限らない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/23668970/"
+    },
+    {
+      "id": "pmid:23684880",
+      "title": "The WU-Minn Human Connectome Project: an overview",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23684880/",
+      "date": "2013-05-16",
+      "summary": "WU-Minn HCPの、人間の巨視的回路と行動を測る計画・資源のoverview。",
+      "objective": "大きい健康成人集団で、接続・機能・行動・遺伝性を研究可能にする。",
+      "methods": "5年計画の前半に整えた取得・分析法、確定した前処理とmodalitiesの初期検証を紹介する。",
+      "results": "高品質な初期データと、ConnectomeDBを通じた最初の四半期公開を報告する。",
+      "novelty": "方法・行動・公開基盤を組み合わせた大規模connectome研究資源。",
+      "limitations": "2013年時点の進捗報告であり、人間全脳のシナプス地図ではない。健康成人の範囲と取得法の条件も持つ。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/23684880/"
+    },
+    {
+      "id": "pmid:24695228",
+      "title": "A mesoscale connectome of the mouse brain",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24695228/",
+      "date": "2014-04-02",
+      "summary": "Allen Mouse Brain Connectivity Atlasは、マウスの全脳投射をmesoscaleで地図化する。",
+      "objective": "局所と全体の情報処理を結ぶ標準的な構造資源を作る。",
+      "methods": "EGFPを発現するAAVで領域・細胞型からの軸索を標識し、serial二光子tomographyと共通3D空間へ登録する。",
+      "results": "全脳接続行列を公開し、強度分布・対称性・皮質視床の並列経路の統合と分離を分析する。",
+      "novelty": "系統的なtracingを標準空間で統合した、全脳の投射atlas。",
+      "limitations": "mesoscaleの投射情報であり、すべての細胞・シナプスを復元した全脳connectomeではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/24695228/"
+    },
+    {
+      "id": "pmid:29116093",
+      "title": "The challenge of mapping the human connectome based on diffusion tractography",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29116093/",
+      "date": "2017-11-07",
+      "summary": "拡散tractographyを既知の線維を持つsimulationで比較し、限界を定量化する。",
+      "objective": "非侵襲connectomeの接続がどれだけ信頼できるか調べる。",
+      "methods": "20研究groupから96方式の提出を集め、ground truthのbundleの回収と無効なbundleを評価する。",
+      "results": "多くの方式は真のbundleの90%を一部でも含むが、正しいもの以上に多い無効bundleも作り、その半分はgroup間で系統的だった。",
+      "novelty": "検出率だけでなく、構造推定の多義性と偽の経路を共通のchallengeで示す。",
+      "limitations": "90%は全線維の90%を正確に復元した値ではない。simulationに基づく結果で、生体のground truthを直接網羅したものでもない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/29116093/"
+    },
+    {
+      "id": "pmid:28182017",
+      "title": "Using connectome-based predictive modeling to predict individual behavior from brain connectivity",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28182017/",
+      "date": "2017-02-09",
+      "summary": "CPMは機能・構造結合から、新しい人の行動を予測する実用protocol。",
+      "objective": "脳–行動の関連を、交差検証された個人予測として評価する。",
+      "methods": "特徴選択、要約、線形model構築、有意性検定を交差検証へ組み込み、予測的な辺も可視化する。",
+      "results": "既存の脳–行動予測に匹敵または上回るprotocolを提示。計算目安は構築10–100分、置換検定1–48時間。",
+      "novelty": "複雑な最適化なしに、再利用可能な予測と検定の手順を提供する。",
+      "limitations": "編者の注意: 特徴選択を検証foldの外で行うと漏洩になる。予測的な辺の表示は、その辺の因果的役割の証明ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/28182017/"
+    },
+    {
+      "id": "pmid:23925239",
+      "title": "Connectomic reconstruction of the inner plexiform layer in the mouse retina",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23925239/",
+      "date": "2013-08-08",
+      "summary": "mouse網膜のinner plexiform layerを密に再構築し、局所計算の候補を調べる。",
+      "objective": "広い領域と細かい接続を両立するconnectomicsを実装する。",
+      "methods": "serial block-face EMに、群衆による注釈と機械学習の体積分割を組み合わせる。",
+      "results": "950 neuronと相互contactを復元し、新しいbipolar型と接続による型の細分を示す。局所運動の候補motifも導く。",
+      "novelty": "自動分割と人手注釈から、細胞型と機能仮説を持つ密な哺乳類回路図を作る。",
+      "limitations": "mouse網膜の局所領域であり全脳ではない。編者の注意: contactからの候補機能は生理・操作実験での確認が必要。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/23925239/"
+    },
+    {
+      "id": "pmid:28292907",
+      "title": "Overcoming catastrophic forgetting in neural networks",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28292907/",
+      "date": "2017-03-14",
+      "summary": "EWCは過去課題に重要な重みの変更を遅らせ、逐次学習の忘却を抑える。",
+      "objective": "新課題を学びながら、長く経験していない課題の能力を保持する。",
+      "methods": "重みごとの過去課題への重要性を使い、後続学習での変更に選択的な制約を加える。",
+      "results": "手書き数字の複数分類課題と複数Atari 2600 gameの逐次学習で有効性と拡張性を示す。",
+      "novelty": "記憶を完全に再学習する代わりに、重要なパラメータの保護で干渉を減らす。",
+      "limitations": "編者の注意: 忘却を普遍的に解決した保証ではなく、課題の関係・重要性推定・利用可能な容量に性能が依存する。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/28292907/"
+    },
+    {
+      "id": "pmid:9463459",
+      "title": "Interpreting neuronal population activity by reconstruction: unified framework with application to hippocampal place cells",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9463459/",
+      "date": "1998-02-01",
+      "summary": "population発火から位置などを復元するBayes・基底関数の方法を統一整理する。",
+      "objective": "神経集団に含まれる情報量と、読み出しの精度を定量化する。",
+      "methods": "自由行動ratの海馬place cellで複数decoderを比較し、情報理論的な最小誤差とも対比する。",
+      "results": "連続性制約を持つBayes法が高精度で、最良誤差は理論限界の2倍以内。停止時には推定位置が飛ぶ現象も報告。",
+      "novelty": "decoder比較を、表現の情報限界と共通の神経網実装へ結ぶ。",
+      "limitations": "編者の注意: 連続性の事前情報が精度へ寄与する。decoderで復元できることは脳が同じ読み出しを使う証明ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "出版社Journal of NeurophysiologyにPublished online: 1 February 1998と明示。便宜的な月初補完ではなく、その日付を採用。出典: https://journals.physiology.org/doi/full/10.1152/jn.1998.79.2.1017"
+    },
+    {
+      "id": "pmid:26160946",
+      "title": "PLACE CELLS. Autoassociative dynamics in the generation of sequences of hippocampal place cells",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26160946/",
+      "date": "2015-07-10",
+      "summary": "海馬のsharp-wave ripple中の再活性化列を、離散attractorの連続として捉える。",
+      "objective": "自己持続する記憶系列の生成機構を調べる。",
+      "methods": "place cell集団の活動を時間的に解析し、空間表現の先鋭化と遷移をgamma rhythmと対応付ける。",
+      "results": "各場所の表現が数msで鋭くなった後、非連続な別位置へ急に移り、これが25–50Hzのslow gammaに同期する。",
+      "novelty": "記憶の列を滑らかな再生だけでなく、離散状態の先鋭化・跳躍として記述する。",
+      "limitations": "編者の注意: attractor動態を支持する証拠であり、すべてのreplayや記憶検索が同じ離散機構で動くという結論ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/26160946/"
+    },
+    {
+      "id": "pmid:39358519",
+      "title": "A Drosophila computational brain model reveals sensorimotor processing",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39358519/",
+      "date": "2024-10-02",
+      "summary": "connectomeと伝達物質予測を使うハエ全脳モデルで、摂食・groomingの回路を予測する。",
+      "objective": "配線を計算モデルへ変え、検証可能な感覚運動仮説を生成する。",
+      "methods": "leaky integrate-and-fire網で味覚・機械感覚neuronを活性化し、一部の予測をoptogeneticsと行動実験で検証する。",
+      "results": "摂食・触角groomingの回路を予測し、一部を操作実験で検証。確認可能な164予測の91%が実験と整合、多数の陰性例を含むscreenを除く集計では84%と報告。",
+      "novelty": "大きいシナプス地図を、入力から出力への機構仮説を試すモデルへ接続する。",
+      "limitations": "一律のLIF、基底発火0を仮定し、形態・電気シナプス・非spiking neuron・内部状態・長距離peptideを省く。著者は基底抑制・神経調節の強い回路や精密動態で不良となり得るとする。",
+      "read_level": "full_text",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/39358519/",
+      "extraSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11446845/",
+      "sourceSections": "Connectome models・Drosophila taste coding・MethodsのComputational modelling limitations"
+    },
+    {
+      "id": "pmid:40205214",
+      "title": "Functional connectomics spanning multiple areas of mouse visual cortex",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40205214/",
+      "date": "2025-04-09",
+      "summary": "MICrONSはmouse視覚皮質の大規模な活動記録とシナプス配線を対応付ける。",
+      "objective": "機能的な応答と、それを形作る回路構造を同じ組織で調べる。",
+      "methods": "覚醒mouseの視覚4領域でcalcium imagingを行い、EM再構築へ登録し、一部neuronを詳細校正する。",
+      "results": "約75,000 neuronの機能記録と、20万超の細胞・約5億シナプスを含むEM地図を公開する。",
+      "novelty": "複数視覚領域で活動と超微細構造を結ぶ、公開functional connectomics資源。",
+      "limitations": "著者は軸索分割が樹状突起より不正確で、校正範囲と切れたspineの偏りに注意を促す。深さによる光学artifactとsession間の状態差も残る。全mouse脳の地図ではない。",
+      "read_level": "full_text",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/40205214/",
+      "extraSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11981939/",
+      "sourceSections": "DiscussionのAdvances and limits in large-scale EM"
+    },
+    {
+      "id": "pmid:38723085",
+      "title": "A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38723085/",
+      "date": "2024-05-10",
+      "summary": "人間の側頭皮質約1立方mmを、超微細構造で再構築した公開資源。",
+      "objective": "人間の細胞・シナプスの組織を、高い解像度で調べる。",
+      "methods": "てんかんfocusへ到達するために外科切除された組織を、計算量の大きいEM再構築で解析する。",
+      "results": "約57,000細胞、約1.5億シナプス、1.4PBを報告。gliaはneuronの約2倍で、最大50synapseのまれな強い軸索入力も観察。",
+      "novelty": "人間皮質の局所領域を、petavoxel規模の配線・形態資源へする。",
+      "limitations": "約57,000はneuronだけでなく全細胞の数。1人の局所切除組織であり、人間全脳や健康な全人口を代表する地図ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/38723085/"
+    },
+    {
+      "id": "pmid:42691995",
+      "title": "Sexual dimorphism in the complete Drosophila male central nervous system connectome",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42691995/",
+      "date": "2026-09-03",
+      "summary": "雄ハエの全中枢神経系を作り、雌とのシナプス単位の性差を比較する。",
+      "objective": "性に特異的なneuronが、感覚から運動までの回路へどう組み込まれるかを調べる。",
+      "methods": "脳と神経索の配線を校正・注釈し、fruitless/doublesex発現と細胞型を対応付ける。",
+      "results": "166,700 neuron・11,710型を含む資源を報告。比較では8,069同型、138異型、289雄特異・71雌特異型を示す。",
+      "novelty": "脳だけでなく中枢神経系全体と、雌雄比較をシナプス解像度でつなぐ。",
+      "limitations": "編者の注意: 性特異的接続は高次中枢へ偏るが、構造の性差から個々の行動・感情の差まで自動的に確定しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/42691995/"
+    },
+    {
+      "id": "pmid:42259917",
+      "title": "Distributed control circuits across a brain-and-cord connectome",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42259917/",
+      "date": "2026-06-08",
+      "summary": "ハエの脳と腹側神経索を結ぶ地図から、分散制御の組織を調べる。",
+      "objective": "局所の感覚feedbackと、全身行動を支える長距離制御の関係を明らかにする。",
+      "methods": "密な成虫connectomeで、motor・内分泌・内臓出力への経路と上行・下行neuronのmoduleを解析する。",
+      "results": "同じ身体部位の感覚から出力への局所loopと、複数部位や内臓を結ぶ行動中心moduleを報告。学習・navigation領域が監督する。",
+      "novelty": "単一の脳内中枢より、並列・分散・身体に対応した制御architectureを示す。",
+      "limitations": "標本はlamina・単眼系を欠き、一部の触角感覚神経に損傷があると著者が記す。型の自動matchingは人手で校正される。構造上の影響指標から実際の動態・因果作用まで確定しない。",
+      "read_level": "full_text",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/42259917/",
+      "extraSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13518251/",
+      "sourceSections": "MethodsのSpecimen・Cell-type matching and annotation、AN/DN behaviour-centric modules"
+    },
+    {
+      "id": "pmid:40140576",
+      "title": "Connectome-driven neural inventory of a complete visual system",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40140576/",
+      "date": "2025-03-26",
+      "summary": "雄ハエの右視葉の密な地図から、視覚neuronの型を体系化する。",
+      "objective": "形態・配線と視覚の空間計算を結び、操作のための道具もそろえる。",
+      "methods": "FIB-SEMで再構築し、形態の定量、接続、伝達物質、専門家校正を統合して型分けする。",
+      "results": "約53,000 neuronを732型へ分類し、約半分を新たに命名。対応するsplit-GAL4系統を公開する。",
+      "novelty": "connectome由来の型一覧と、型を標的化する遺伝学的資源を結ぶ。",
+      "limitations": "右視葉の地図であり全脳ではない。編者の注意: 型の命名・操作可能性と、その型の視覚機能の確定は別の到達点。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/40140576/"
+    },
+    {
+      "id": "pmid:29743670",
+      "title": "Vector-based navigation using grid-like representations in artificial agents",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29743670/",
+      "date": "2018-05-09",
+      "summary": "path integrationを学ぶ人工agentにgrid様表現が現れ、navigationへ役立つことを示す。",
+      "objective": "哺乳類の空間表現の計算機能を、柔軟なagent設計へ利用する。",
+      "methods": "RNNに自己運動の積分を学ばせ、得た表現を深層強化学習の目標探索へ組み込む。",
+      "results": "未知・変化する環境で比較agentと熟練者を上回る結果、shortcut行動、vector計算に必要な量の抽出を報告。",
+      "novelty": "grid様表現の自然な出現と、行動上の効用を同じagentで示す。",
+      "limitations": "編者の注意: 比較は設計した仮想環境と課題の範囲であり、哺乳類の全般的なnavigationや学習能力を超えたという意味ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/29743670/"
+    },
+    {
+      "id": "pmid:28967910",
+      "title": "The hippocampus as a predictive map",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28967910/",
+      "date": "2017-10-02",
+      "summary": "海馬の空間表象を、将来の状態を表すpredictive mapとしてモデル化する。",
+      "objective": "place cellの報酬・方策依存を、純粋な幾何地図より広く説明する。",
+      "methods": "将来報酬に有用な表現を強化学習の視点で導き、grid cellをその低次元基底として解釈する。",
+      "results": "従来の幾何地図では説明しにくいplace cell特性を捉え、多scale構造と階層計画への役割を議論する。",
+      "novelty": "認知地図を、経験・方策に依存する将来の予測表現へ拡張する。",
+      "limitations": "編者の注意: 理論的な解釈とモデルによる説明であり、海馬が唯一この算法で全記憶を表すという実証ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/28967910/"
+    },
+    {
+      "id": "pmid:33181068",
+      "title": "The Tolman-Eichenbaum Machine: Unifying Space and Relational Memory through Generalization in the Hippocampal Formation",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33181068/",
+      "date": "2020-11-11",
+      "summary": "TEMは空間と非空間の関係記憶を、共通の海馬–嗅内モデルへ統合する。",
+      "objective": "環境が変わっても移せる構造知識と、個別の感覚経験を結ぶ。",
+      "methods": "嗅内の構造基底と、それを感覚表現へ結び付ける海馬を持つモデルを学習する。",
+      "results": "grid・border・place様細胞などを再現し、非空間課題にも整合。remapping中の構造転移を同時place/grid記録で確認する。",
+      "novelty": "関係構造の一般化を、複数細胞型と環境間転移へ一貫して対応付ける。",
+      "limitations": "編者の注意: 細胞応答の類似を持つ機構モデルで、すべての海馬機能や生体の学習則を同定したものではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/33181068/"
+    },
+    {
+      "id": "pmid:31942076",
+      "title": "A distributional code for value in dopamine-based reinforcement learning",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31942076/",
+      "date": "2020-01-15",
+      "summary": "distributional RLを参考に、dopamineが報酬の平均だけでなく分布を表すと提案する。",
+      "objective": "複数の将来結果を並列に扱う予測の神経基盤を検証する。",
+      "methods": "平均一つの理論と異なる実験予測を導き、mouse腹側被蓋野の単一unit記録で確かめる。",
+      "results": "報酬の確率分布を表す神経的な実装を支持する強い証拠を報告する。要旨にunit数や効果量はない。",
+      "novelty": "AIの分布的強化学習から、生体の価値表現に関する予測を導く。",
+      "limitations": "編者の注意: 対象は報酬分布の表現であり、あらゆる未来事象の分布が同じ細胞群に完全保存されるという主張ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/31942076/"
+    },
+    {
+      "id": "pmid:32303713",
+      "title": "Backpropagation and the brain",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32303713/",
+      "date": "2020-04-17",
+      "summary": "backpropと脳の学習の関係を、feedbackによる局所的な誤差近似から再検討する。",
+      "objective": "多層回路のsynapseが行動改善へどう信用割当するかを整理する。",
+      "methods": "過去・近年の知見を統合し、feedbackで生じる活動差が誤差信号を近似する枠組みを論じる。",
+      "results": "厳密なbackpropの生物学的な難しさを残しつつ、局所的な近似で深い学習が可能となる研究経路を示す。",
+      "novelty": "逆向きに正確な誤差を運ぶ要求から、活動の差を使う局所学習へ焦点を移す。",
+      "limitations": "レビュー・論考であり、皮質で厳密なbackpropが直接確認されたという結果ではない。複数の実装候補と制約が残る。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/32303713/"
+    },
+    {
+      "id": "pmid:32681001",
+      "title": "A solution to the learning dilemma for recurrent networks of spiking neurons",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32681001/",
+      "date": "2020-07-17",
+      "summary": "e-propは再帰spiking網を、局所情報と学習信号でオンライン学習する。",
+      "objective": "時間方向のbackpropが持つ生物学的・hardware実装上の負担を減らす。",
+      "methods": "神経科学の知見と数学的分解を組み合わせ、勾配に基づく逐次学習・強化学習を構成する。",
+      "results": "再帰網の学習でBPTTに近い成績を示すと報告し、chip上の省エネルギー学習への可能性を議論する。",
+      "novelty": "spikeの履歴に依存する局所traceと、後の学習信号を結び付ける。",
+      "limitations": "編者の注意: BPTTへの近さは試した課題の結果で、脳で同じruleが動く証明や全hardwareでの省電力実測ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/32681001/"
+    },
+    {
+      "id": "pmid:29205151",
+      "title": "Towards deep learning with segregated dendrites",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29205151/",
+      "date": "2017-12-05",
+      "summary": "隔てられた樹状突起区画を使い、多層の局所学習をモデル化する。",
+      "objective": "深層学習の信用割当を、皮質錐体細胞に近い形で実装できるか調べる。",
+      "methods": "感覚入力と上位feedbackを電気的に分けたmulti-compartment neuronで、層間のsynapse更新を協調させる。",
+      "results": "単層より良い画像分類と高次表現の獲得を示し、樹状突起の分離が深い学習を支え得ると報告。",
+      "novelty": "細胞内の区画構造を、層間の教示信号を処理する計算資源として使う。",
+      "limitations": "編者の注意: 生物的な着想を持つ計算モデルであり、生体の全区画で同じ学習手順が実行されると確認した研究ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/29205151/"
+    },
+    {
+      "id": "pmid:31659335",
+      "title": "A deep learning framework for neuroscience",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31659335/",
+      "date": "2019-10-28",
+      "summary": "神経科学を、目的関数・学習rule・architectureの三軸で考えるframework。",
+      "objective": "脳が課題を実装する仕組みを、最適化の観点から研究する。",
+      "methods": "AIで設計する三要素を神経科学へ対応付け、理論と実験を進める事例を論じる。",
+      "results": "多様な知覚・認知・運動を研究するための原理的な見方を提案。独自benchmarkの精度比較ではない。",
+      "novelty": "脳に似た構造を使うだけでなく、何をどう学ぶかを同等に重視する。",
+      "limitations": "論考であり脳の唯一の目的関数を同定した結果ではない。課題・rule・構造の寄与は実験で分離する必要がある。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/31659335/"
+    },
+    {
+      "id": "pmid:32970997",
+      "title": "Artificial Neural Networks for Neuroscientists: A Primer",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32970997/",
+      "date": "2020-09-23",
+      "summary": "神経科学でANNを作り・解析するための教育的primer。",
+      "objective": "複雑な行動・活動・接続の仮説を、扱える計算モデルにする。",
+      "methods": "ANNの基礎から、解析・構造・学習の生物学的なcustomizationまで説明し、PyTorchとNotebookの教材を付す。",
+      "results": "神経科学の具体的な問いにANNを使う方法と、手を動かすtutorialを提供する。",
+      "novelty": "ANNをデータ処理だけでなく、神経機構の仮説を作る道具として導入する。",
+      "limitations": "primerであり一つの脳モデルの正しさを検証する論文ではない。既存網の高精度をそのまま神経機構の説明としない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/32970997/"
+    },
+    {
+      "id": "pmid:35173264",
+      "title": "Brains and algorithms partially converge in natural language processing",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35173264/",
+      "date": "2022-02-16",
+      "summary": "言語モデルと脳の表現の部分的な収束を、構造・学習・課題性能から調べる。",
+      "objective": "脳らしい文表現を生むモデルの要因を切り分ける。",
+      "methods": "102人のfMRI・MEGで400文の応答を測り、複数の言語モデルの表現がいつ・どこへ対応するか比較する。",
+      "results": "文脈から単語を予測する能力が主に類似性を説明し、各領域で知覚・語彙・構成的表現の出現と維持を示す。",
+      "novelty": "単一の強いモデルでなく、モデル群の差から脳対応の原理を検討する。",
+      "limitations": "編者の注意: isolated sentenceでの部分的な収束であり、自然会話・理解全般や学習則の同一性を実証したものではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/35173264/"
+    },
+    {
+      "id": "pmid:37127759",
+      "title": "Semantic reconstruction of continuous language from non-invasive brain recordings",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37127759/",
+      "date": "2023-05-01",
+      "summary": "fMRIの意味表現から、連続した言語の内容を再構成する非侵襲decoder。",
+      "objective": "少数の候補語の識別を超え、連続した意味を文章へ読み出す。",
+      "methods": "主要評価3人で各16時間の物語fMRIから意味のencoding modelを学び、言語モデルの候補をbeam searchで脳応答に照合する。",
+      "results": "未見物語の意味を再構成し、想像発話・無音映像にも転用。逐語一致は限定的で、主要評価のWERは0.9243–0.9407。訓練・適用には本人の協力が必要だった。",
+      "novelty": "非侵襲記録と意味を扱う言語decoderを接続し、課題をまたぐ再構成を示す。",
+      "limitations": "主要評価は3人。16時間の個人別学習と低時間分解能のfMRIを使い、逐語転写ではない。他人の学習データではほぼchanceに近く、別の物語を考えるなどで再構成を妨げられる。",
+      "read_level": "full_text",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/37127759/",
+      "extraSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11304553/",
+      "sourceSections": "Introduction・ResultsのLanguage decoder・Privacy implications・Sources of decoding error"
+    },
+    {
+      "id": "pmid:37138088",
+      "title": "Learnable latent embeddings for joint behavioural and neural analysis",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37138088/",
+      "date": "2023-05-03",
+      "summary": "CEBRAは行動と神経記録を併用し、安定した低次元の潜在表現を学ぶ。",
+      "objective": "行動の仮説と教師なしの探索を、非線形の神経表現へ結び付ける。",
+      "methods": "教師あり・自己教師ありのembeddingを単一/複数sessionで学び、一貫性を比較やdecodingへ使う。",
+      "results": "calcium・電気記録、複数種・感覚運動課題で検証。位置・運動・自然videoのdecodingやmodalities間の整合を示す。",
+      "novelty": "行動条件と神経状態を柔軟に組み合わせる、一貫性を重視した表現学習。",
+      "limitations": "編者の注意: 教師あり潜在空間には行動labelの情報が入るため、独立検証や教師なし条件を分けて解釈する。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/37138088/"
+    },
+    {
+      "id": "pmid:27791099",
+      "title": "Situating the default-mode network along a principal gradient of macroscale cortical organization",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27791099/",
+      "date": "2016-10-18",
+      "summary": "default modeを、感覚運動から離れた皮質の主要gradientの端に位置付ける。",
+      "objective": "皮質の空間配置と抽象的な機能の関係を整理する。",
+      "methods": "人間・macaqueの結合データを分解し、皮質上のgeodesic距離と機能meta解析へ対応付ける。",
+      "results": "感覚運動からtransmodalのDMNへ至る軸を報告。DMNは感覚運動landmarkから遠く、複数networkの配置を整理できた。",
+      "novelty": "離散したnetwork群を、共通の連続的な空間軸へ結ぶ。",
+      "limitations": "編者の注意: 空間的位置による機能解釈は支持されるが、gradientだけが抽象思考を起こすという因果証明ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/27791099/"
+    },
+    {
+      "id": "pmid:8036517",
+      "title": "Reactivation of hippocampal ensemble memories during sleep",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8036517/",
+      "date": "1994-07-29",
+      "summary": "経験中に共活動したplace cellが、後の睡眠で再び共活動しやすくなる。",
+      "objective": "記憶固定の理論が予測する睡眠中の再活性化を検証する。",
+      "methods": "rat3匹で多数の海馬細胞を同時記録し、空間課題の前後の徐波睡眠を比較する。",
+      "results": "同じ場所で発火した細胞群だけで、課題後の共発火が増加し、睡眠session中に徐々に弱まった。",
+      "novelty": "行動の経験が、後の睡眠の集団活動へ再表出する証拠を示す。",
+      "limitations": "共発火の再活性化を測った研究で、完全な順序付き軌跡の再生を示したという説明とは区別する。標本は3匹。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/8036517/"
+    },
+    {
+      "id": "pmid:9054347",
+      "title": "A neural substrate of prediction and reward",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9054347/",
+      "date": "1997-03-14",
+      "summary": "dopamine応答を、報酬予測の変化・誤差と適応制御の理論へ結び付ける。",
+      "objective": "行動学習と生理活動に共通する計算上の説明を与える。",
+      "methods": "行動実験と霊長類dopamineの知見を、将来の重要事象の予測を更新する定量理論で統合する。",
+      "results": "変動するdopamine出力を、予測誤差を伝える信号として解釈する枠組みを示す。",
+      "novelty": "強化学習の教示信号と、実際の神経生理を結ぶ主要な統合論文。",
+      "limitations": "統合理論でありdopamineの全機能を単一の報酬誤差に還元する実証ではない。後続の不確実性・分布表現も補う。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/9054347/"
+    },
+    {
+      "id": "pmid:21502525",
+      "title": "Dynamic reconfiguration of human brain networks during learning",
+      "source": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21502525/",
+      "date": "2011-04-18",
+      "summary": "人間の学習に伴う機能networkのmodule変化を、将来の学習量と結び付ける。",
+      "objective": "柔軟な再構成が技能習得へどう関わるかを調べる。",
+      "methods": "単純運動技能の初期から習熟までの機能結合を測り、複数時間scaleの動的communityを解析する。",
+      "results": "moduleへの所属が変わる柔軟性が、後のsessionの相対的な学習量を予測したと報告。",
+      "novelty": "固定したnetwork構造から、学習過程で動くmoduleと個人予測へ展開する。",
+      "limitations": "編者の注意: 将来学習との予測関係は因果を確定せず、単純運動課題から全認知学習へ一般化しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/07-neuroscience.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "神経科学とAI"
+      ],
+      "tags": [
+        "基礎文献",
+        "神経科学とAI"
+      ],
+      "dateNote": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/21502525/"
     }
   ]
 }

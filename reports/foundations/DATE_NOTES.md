@@ -1,6 +1,6 @@
 # 日単位の公開日が未確認の文献
 
-確認日: 2026-11-15。基礎文献568件のうち15件。内容の六項目は記載済みだが、日単位の公開日を推測で埋めない。年・月や会期を便宜的に1日へ変換せず、要約日・索引登録日・PMC収載日も流用しない。
+確認日: 2026-11-15。基礎文献774件のうち23件。内容の六項目は記載済みだが、日単位の公開日を推測で埋めない。年・月や会期を便宜的に1日へ変換せず、要約日・索引登録日・PMC収載日も流用しない。
 
 医療主編7件はPubMedの正確な日付がなく、今回の出版社照合でも確定できなかった。出版社の取得制限がある場合は個別の日付注記にも記載した。古典別冊8件は確認した一次書誌の精度が年・月・季節等までである。
 
@@ -30,6 +30,10 @@
 | 論文 | 未確認の理由・判明範囲 | 一次資料 |
 |---|---|---|
 | Point Spectra of Some Mutually Exciting Point Processes | 出版社で刊行年1971年と巻33・号3を確認。日単位の初回公開日は未確認。後年のウェブ掲載・移管日を採用しない。 | [原著](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1971.tb01530.x) |
-| Recurrent Marked Temporal Point Processes: Embedding Event History to Vector | 著者版PDFでKDD 2016（8月13〜17日）の会議情報を確認。会期を論文の初回公開日へ流用せず、日単位の正式公開日は未確認として保持。 | [原著](https://doi.org/10.1145/2939672.2939875) |
-| The human connectome: A structural description of the human brain | PubMedに日単位の電子公開日・冊子刊行日の記録なし。巻号の刊行年月: 2005 Sep。要約日・索引登録日とは区別。 | [原著](https://pubmed.ncbi.nlm.nih.gov/16201007/) |
-| Small-world brain networks | PubMedに日単位の電子公開日・冊子刊行日の記録なし。巻号の刊行年月: 2006 Dec。要約日・索引登録日とは区別。 | [原著](https://pubmed.ncbi.nlm.nih.gov/17079517/) |
+| Recurrent Marked Temporal Point Processes: Embedding Event History to Vector | 著者版PDFでKDD 2016（8月13〜17日）の会議情報を確認。会期を論文の初回公開日へ流用せず、日単位の正式公開日は未確認として保持。 | [原著](https://www.kdd.org/kdd2016/subtopic/view/recurrent-temporal-point-process) |
+| Small-world brain networks | PubMedと出版社を照合したが、出版社のPublished表記もDecember 2006までで日単位は未確認。月初を推測で補わない。 | [原著](https://pubmed.ncbi.nlm.nih.gov/17079517/) |
+| Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects | PubMedと出版社を照合したが、出版社のPublished表記もJanuary 1999までで日単位は未確認。月初を推測で補わない。 | [原著](https://pubmed.ncbi.nlm.nih.gov/10195184/) |
+| Why there are complementary learning systems in the hippocampus and neocortex: insights from the successes and failures of connectionist models of learning and memory | PubMedに日単位の電子公開日・冊子刊行日の記録なし。巻号の刊行年月: 1995 Jul。要約日・索引登録日とは区別。 | [原著](https://pubmed.ncbi.nlm.nih.gov/7624455/) |
+| What Learning Systems do Intelligent Agents Need? Complementary Learning Systems Theory Updated | PubMedの巻号情報は2016年7月までで日精度の電子公開日が未記録。出版社版・著者版の追加取得も制限があり、初回公開日の日単位は未確認。索引登録日・会期・月初を代用しない。 | [原著](https://pubmed.ncbi.nlm.nih.gov/27315762/) |
+| Dopamine neurons report an error in the temporal prediction of reward during learning | PubMedと出版社を照合したが、出版社のPublished表記もAugust 1998までで日単位は未確認。月初を推測で補わない。 | [原著](https://pubmed.ncbi.nlm.nih.gov/10195164/) |
+| Competitive Hebbian learning through spike-timing-dependent synaptic plasticity | PubMedと出版社を照合したが、出版社のPublished表記もSeptember 2000までで日単位は未確認。月初を推測で補わない。 | [原著](https://pubmed.ncbi.nlm.nih.gov/10966623/) |

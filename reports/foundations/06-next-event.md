@@ -72,14 +72,16 @@
 - Canonical ID: arxiv:1612.09328
 - Publication date: 2016-12-29
 - URL: https://arxiv.org/abs/1612.09328
-- read_level: abstract
+- read_level: full_text
 - Tags: 基礎文献, 次イベント予測・点過程
 - Summary: Neural Hawkesは連続時間LSTMで励起と抑制を伴う事象列を表す。
 - Objective: 過去の事象が将来の確率を複雑に上げ下げする依存を学ぶ。
 - Methods: 連続時間で進む隠れ状態から、複数種別の条件付き強度を生成する。
 - Data and results: 実・人工データで尤度と予測精度を評価し、欠測がある設定でも競争力を示す。
 - Novelty: 線形加算の励起に限らず、履歴の神経状態による自己変調を導入する。
-- Limitations: 編者の注意: 欠測条件での実験は任意の欠測機構への頑健性を保証せず、隠れ状態の成分は直接の機構説明ではない。
+- Limitations: 欠測時は未観測事象を明示的に積分せず、不完全列を完全な列として学ぶ。著者は正しい欠測推論が高価なため、隠れ状態が予測的に補うことを期待する方式と説明する。
+
+本文の照合箇所: [実験節とAppendixのMissing Data Discussion](https://arxiv.org/html/1612.09328v3)。
 
 ### Paper: Learning Hawkes Processes from Short Doubly-Censored Event Sequences
 - Source: arXiv
@@ -366,14 +368,16 @@
 - Canonical ID: arxiv:2002.09291
 - Publication date: 2020-02-21
 - URL: https://arxiv.org/abs/2002.09291
-- read_level: abstract
+- read_level: full_text
 - Tags: 基礎文献, 次イベント予測・点過程
 - Summary: Transformer Hawkes Processはattentionで長い事象履歴を表現する。
 - Objective: 短期・長期の依存を捉え、RNN型の点過程の予測を改善する。
 - Methods: self-attentionで履歴を符号化し、事象間の関係情報を加えた複数過程の学習も検討する。
-- Data and results: 複数データで尤度と事象予測を改善し、関係情報を組み込んだ構成でも改善を報告。
+- Data and results: Retweets、MemeTrack、金融取引、MIMIC-II、StackOverflowなどで尤度・事象予測を評価。911通報・地震ではgraph構造情報の効果も調べる。
 - Novelty: Transformerの履歴表現を連続時間の強度モデルへ導入する。
 - Limitations: 編者の注意: モデル名にHawkesとあっても、古典的な線形励起カーネルの推定と同じ制約・解釈を持つとは限らない。
+
+本文の照合箇所: [実験のDatasets・Table 1、尤度と事象予測の評価節](https://arxiv.org/html/2002.09291v5)。
 
 ### Paper: Learning Multivariate Hawkes Processes at Scale
 - Source: arXiv
@@ -1262,28 +1266,32 @@
 - Canonical ID: arxiv:2410.08226
 - Publication date: 2024-09-27
 - URL: https://arxiv.org/abs/2410.08226
-- read_level: abstract
+- read_level: full_text
 - Tags: 基礎文献, 次イベント予測・点過程
 - Summary: EarthquakeNPPは神経点過程を地震学の強い基準法と比較するbenchmark。
 - Objective: 従来データの漏洩、大きい地震列の欠落、不十分な比較対象を改善する。
 - Methods: Californiaの1971–2021年のcatalogを領域・生成方法別に整備し、ETASと尤度・生成指標で比較する。
 - Data and results: 試した神経点過程5方式はいずれもETASを上回らなかったと報告。
 - Novelty: 機械学習内の比較を、対象分野の実用的なモデル・評価へ接続する。
-- Limitations: 結論は試した実装とbenchmarkの範囲。編者の注意: あらゆる将来の神経モデルが地震予測に不適という結論ではない。
+- Limitations: 神経方式にはmagnitude依存の不足、履歴の切詰め、次事象学習と期間全体simulationの不一致が残ると著者が指摘。3方式はsamplingが遅くCSEP評価を実施できなかった。
+
+本文の照合箇所: [生成評価・Section 5 Discussion and ConclusionのAction 1–3](https://arxiv.org/html/2410.08226v3)。
 
 ### Paper: TPP-LLM: Modeling Temporal Point Processes by Efficiently Fine-Tuning Large Language Models
 - Source: arXiv
 - Canonical ID: arxiv:2410.02062
 - Publication date: 2024-10-02
 - URL: https://arxiv.org/abs/2410.02062
-- read_level: abstract
+- read_level: full_text
 - Tags: 基礎文献, 次イベント予測・点過程
 - Summary: TPP-LLMは事象種別の文章説明と時間埋め込みでLLMを点過程へ適応させる。
 - Objective: カテゴリ記号だけでは失われる意味を利用しつつ、時間パターンを学ぶ。
-- Methods: 事象の記述を直接入力し、時間埋め込みとPEFTで少数のパラメータを調整する。
-- Data and results: 複数の実データで列モデル化・予測を改善し、計算効率の利点も報告。要旨には費用の絶対値がない。
+- Methods: TinyLlama-1.1B・Gemma-2-2Bを4-bit化してLoRA調整。5データに種別記述を補い、時間埋め込みを入力する。強度積分は区間あたり20標本のMonte Carloを用いる。
+- Data and results: StackOverflow・Chicago Crime・NYC Taxi・米地震・Amazonで評価。尤度はLlama版がStackOverflowで最良だが、3データではAttNHP、地震ではSAHPが最良で、一律の勝利ではない。
 - Novelty: 意味の事前学習と連続時間の予測を、効率的な追加調整で接続する。
-- Limitations: LLMだけでは時間パターンの把握が弱いという動機に基づく。編者の注意: 記述の質と事前学習由来の漏洩を確認する必要がある。
+- Limitations: 本文では比較法にA10/A100、TPP-LLMにH100を使用。編者の注意: 実行速度の単純比較はhardware差を含む。種別の説明文を補う前処理と、近似尤度にも依存する。
+
+本文の照合箇所: [Sections 5.1・5.4・5.5（データ・GPU条件・尤度の内訳）](https://arxiv.org/html/2410.02062v2)。
 
 ### Paper: EventFlow: Forecasting Temporal Point Processes with Flow Matching
 - Source: arXiv
@@ -1332,14 +1340,16 @@
 - Canonical ID: arxiv:2502.07139
 - Publication date: 2025-02-11
 - URL: https://arxiv.org/abs/2502.07139
-- read_level: abstract
+- read_level: full_text
 - Tags: 基礎文献, 次イベント予測・点過程
 - Summary: Language-TPPは時間差をbyte-tokenへ変え、言語モデルで事象列を扱う。
 - Objective: 文章記述と時間動態を、TPP専用の構造変更を抑えて統合する。
-- Methods: 連続時間差のbyte-token表現を通常の言語モデルへ組み込み、種別・時刻予測と事象説明生成を評価する。
-- Data and results: 電子商取引・SNS・Q&AのWebデータで高い予測成績を報告。時間を加えるとROUGE-Lや感情分布の整合も改善する。
+- Methods: 時間差をbyte-tokenへ変え、Qwen2.5-0.5Bを単一A40で学習。次事象調整には5万prompt応答を使用し、時間・種別と文章生成を評価する。
+- Data and results: Retweet、StackOverflow、Taobao、Taxi、Amazon Reviewの5データで評価。文章付き事象はAmazonだけで、ROUGE-Lや感情分布の評価もこのデータで行う。
 - Novelty: 時間の符号化をtoken語彙へ寄せ、予測と説明文生成を同じ枠組みに載せる。
-- Limitations: 編者の注意: 公開時のLanguage-TPPから改題された取得時点の要旨を参照。文章の改善は将来事象の因果的理解の実証ではない。
+- Limitations: 著者は長い事象記述によるcontext長の膨張と、超大規模・画像音声を含む列への拡張性を限界とする。現在の改題を反映し、初回公開日と改訂版の内容は区別する。
+
+本文の照合箇所: [Sections 5.2–5.4、ConclusionsのLimitations and future work](https://arxiv.org/html/2502.07139v2)。
 
 ### Paper: Enhancing Temporal Awareness in LLMs for Temporal Point Processes
 - Source: arXiv
@@ -1374,14 +1384,16 @@
 - Canonical ID: arxiv:2610.19021
 - Publication date: 2026-10-13
 - URL: https://arxiv.org/abs/2610.19021
-- read_level: abstract
+- read_level: full_text
 - Tags: 基礎文献, 次イベント予測・点過程
 - Summary: DescribeEventは、LLMが事象の記述から既存知識を予測に使えるかを調べる。
 - Objective: 専用モデルに劣る理由が知識不足か、入力・出力の設計かを検証する。
 - Methods: 自然言語の事象記述を与え、意味と予測ラベルを分けるsymbolic labelを用いる。
 - Data and results: 6分野7データ、約15万事象を評価。能力の高いLLMは記述と記号ラベルで改善したが、弱いモデルの利得は小さい。
 - Novelty: 事象の意味情報と、ラベルの語義による偏りを分けて実験する。
-- Limitations: モデル能力によって利得が異なる。編者の注意: 世界知識を利用できるという結果から、未知の将来を一般的に予見できるとは結論しない。
+- Limitations: 著者は推論能力との相関の因果機構は未確定とする。実験ではLLMが予測ごとに秒単位、専用モデルは数十msで、遅延trade-offがある。記述付きの追加調整や時間の符号化も未解決。
+
+本文の照合箇所: [Sections 5–7、Limitations](https://arxiv.org/html/2610.19021v1)。
 
 ### Paper: Point Spectra of Some Mutually Exciting Point Processes
 - Source: Publisher
@@ -1402,8 +1414,8 @@
 - Source: Publisher
 - Canonical ID: doi:10.1145/2939672.2939875
 - Publication date: 未記載
-- URL: https://doi.org/10.1145/2939672.2939875
-- read_level: abstract
+- URL: https://www.kdd.org/kdd2016/subtopic/view/recurrent-temporal-point-process
+- read_level: full_text
 - Tags: 基礎文献, 次イベント予測・点過程
 - Summary: RMTPPは履歴をRNNのvectorへ埋め込み、次の種別と時刻を予測する。
 - Objective: 手で固定した過程の形への依存を弱め、大量の事象履歴から表現を学ぶ。
@@ -1412,6 +1424,8 @@
 - Novelty: 事象履歴の表現学習とmarked TPPを統合する初期の主要モデル。
 - Limitations: 編者の注意: RNNで履歴を学んでも時間密度のパラメータ化は残るため、仮定不要のモデルとは扱わない。
 - Publication date note: 著者版PDFでKDD 2016（8月13〜17日）の会議情報を確認。会期を論文の初回公開日へ流用せず、日単位の正式公開日は未確認として保持。出典: https://people.mpi-sws.org/~manuelgr/pubs/rmtpp.pdf
+
+本文の照合箇所: [著者版PDFのSections 1・2・4.2（動機・予測対象・既存モデルの制限）](https://people.mpi-sws.org/~manuelgr/pubs/rmtpp.pdf)。
 
 <!-- PAPER_IDS -->
 arxiv:2202.10585
