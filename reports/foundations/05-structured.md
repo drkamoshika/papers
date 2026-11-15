@@ -1,11 +1,11 @@
 # 基礎文献 — 表形式・時系列・因果推論
 
 > schema_version: 1
-> report_date: 2026-11-14
+> report_date: 2026-11-15
 
 ## ダイジェスト
 
-選定119件中、以下は原著照合・編集確認を終えた90件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
+選定119件中、以下は原著照合・編集確認を終えた119件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
 
 研究の流れと2026年論文との接続は [文献集の案内](README.md) を参照。
 
@@ -24,6 +24,34 @@
 - Data and results: 等価クラスの特徴付けとシミュレーション結果を提供。要旨にデータ規模、回復率、検出誤差の数値はない。
 - Novelty: 非定常性を単に障害とせず、局所的な機構変化を因果方向の情報源として利用した。
 - Limitations: 編者の注意: 局所的に変わるという仮定と変化点検出の正しさに依存する。等価クラスの出力は一意な真のDAGの同定とは限らない。
+
+### Paper: Distributionally Robust Logistic Regression
+- Source: arXiv
+- Canonical ID: arxiv:1509.09259
+- Publication date: 2015-09-30
+- URL: https://arxiv.org/abs/1509.09259
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: Wasserstein球内の最悪loglossを最小化し、通常・正則化ロジスティック回帰を包含するDRO。
+- Objective: 経験分布の近傍にある未知の真分布へ、過度に楽観的でない分類器を学ぶ。
+- Methods: 学習標本の一様経験分布の周囲にWasserstein球を構成。最悪期待損失を計算可能な形へ変換し、誤分類確率の上下界も2つの線形計画で求める。
+- Data and results: 適切な半径の下で分布外保証と扱いやすい定式化を示し、人工・実データで検証。要旨に精度や区間幅の具体値はない。
+- Novelty: 分布の距離による不確かさと正則化を結び、推定・評価に共通する頑健な枠組みを示した。
+- Limitations: 編者の注意: 真分布を高確率で含む保証は半径の適切な選択に依存する。球の外の変化を保証せず、頑健性と保守的な予測の交換関係がある。
+
+### Paper: Estimation and Inference of Heterogeneous Treatment Effects using Random Forests
+- Source: arXiv
+- Canonical ID: arxiv:1510.04342
+- Publication date: 2015-10-14
+- URL: https://arxiv.org/abs/1510.04342
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: causal forestはランダムフォレストを異質な処置効果へ拡張し、推定と信頼区間の理論を示す。
+- Objective: 個別化医療などで、平均だけでなく共変量による効果の違いを柔軟に推定する。
+- Methods: 非交絡性を置くpotential outcomesの下で因果森を構成。点ごとの一致性、中心化した漸近Gaussian分布、分散と区間推定を解析した。
+- Data and results: 理論条件下の推論を示し、実験では特に無関係な共変量がある場合に近傍matchingより強い結果を報告。要旨に効果誤差や人数の数値はない。
+- Novelty: 森を柔軟な予測器として使うだけでなく、異質効果に対する統計的な推論保証を整えた。
+- Limitations: 編者の注意: 非交絡性・重なり・森の構成などの仮定が必要。条件付き平均効果の推定を、個人の観測できない両方の転帰の確定予測と解釈しない。
 
 ### Paper: Private Causal Inference
 - Source: arXiv
@@ -66,6 +94,34 @@
 - Data and results: 比較した最良の先行法を有意に上回ったと報告。要旨にデータ名、反事実誤差の具体値や識別仮定の詳細はない。
 - Novelty: 処置選択による群間分布差を、転移・領域適応の問題として表現学習へ接続した。
 - Limitations: 編者の注意: 実観測では個人の反事実を同時に確認できない。表現を揃えることだけで未測定交絡や重なり不足を解消したとは言えず、評価データの作り方が重要。
+
+### Paper: Unsupervised Feature Extraction by Time-Contrastive Learning and Nonlinear ICA
+- Source: arXiv
+- Canonical ID: arxiv:1605.06336
+- Publication date: 2016-05-20
+- URL: https://arxiv.org/abs/1605.06336
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: TCLは時間区間を識別する表現を学び、非定常性を利用して非線形ICAの識別を可能にする。
+- Objective: 一般には一意に決まらない非線形の独立成分を、ラベルなし系列から復元する。
+- Methods: 時間窓を最適に判別する深層表現を学習し、linear ICAと組み合わせる。時間的に変化するsourceを持つ非線形ICAとして理論解析した。
+- Data and results: モデル仮定の下で、sourceごとの点変換まで非線形ICAを一意に推定できると証明。要旨に実験スコアはない。
+- Novelty: 非定常性を扱いにくさではなく識別のための追加情報にし、教師なし表現へ構成的な理論を与えた。
+- Limitations: 編者の注意: 非定常な生成機構などの条件付き結果で、任意データの一意分解ではない。sourceごとの変換の曖昧さが残り、因果構造の完全同定とも異なる。
+
+### Paper: Recurrent Neural Networks for Multivariate Time Series with Missing Values
+- Source: arXiv
+- Canonical ID: arxiv:1606.01865
+- Publication date: 2016-06-06
+- URL: https://arxiv.org/abs/1606.01865
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: GRU-Dは値だけでなく欠損マスクと観測間隔を使い、欠け方自体が持つ予測情報を学ぶ。
+- Objective: 臨床などで予測対象と関連するinformative missingnessを、単なる穴埋めで捨てず利用する。
+- Methods: GRUへ観測のmaskと時間間隔の2表現を組み込み、長期依存と欠損パターンを統合。MIMIC-III、PhysioNet、人工系列の分類で評価した。
+- Data and results: 実臨床と人工データの時系列分類で最良水準を報告。要旨に患者数、AUC、補完誤差の数値はない。
+- Novelty: 補完後の値だけを入力する手法から、測定されなかった事実と経過時間も表現するモデルへ進めた。
+- Limitations: 編者の注意: 欠損は測定方針を反映するため、施設や運用が変わると有益な相関が崩れ得る。分類性能の改善と、真の欠損値の正確な復元は異なる。
 
 ### Paper: Ancestral Causal Inference
 - Source: arXiv
@@ -125,6 +181,20 @@
 - Novelty: 関数形を狭める代わりに、外生変数の情報量へ非対称性の仮定を置いた。
 - Limitations: 編者の注意: 真方向のノイズが単純という仮定が根幹で、観測分布だけから無仮定で方向が決まるわけではない。局所最適性と大域最適性も異なる。
 
+### Paper: Counterfactual Prediction with Deep Instrumental Variables Networks
+- Source: arXiv
+- Canonical ID: arxiv:1612.09596
+- Publication date: 2016-12-30
+- URL: https://arxiv.org/abs/1612.09596
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: Deep IVは操作変数による因果推定を、処置分布と結果の2つの深層予測課題へ分解する。
+- Objective: 柔軟な機械学習を使いながら、単純な観測相関でない効果の推定を行う。
+- Methods: 第1段で処置の条件付き分布を推定し、第2段の結果モデルの損失にその分布上の積分を入れる。SGD、標本外検証、dropoutと分割による推論も設計した。
+- Data and results: 既存MLを大きく作り変えずに使うIV枠組みと、Bayes・頻度論の推論手順を提示。要旨に実証効果量や予測誤差はない。
+- Novelty: 操作変数の構造を保ちながら、2段階推定を非線形なニューラル予測へ一般化した。
+- Limitations: 編者の注意: 操作変数の関連性・外生性・排除制約などが必要で、ネットワークが有効なIVを自動生成するわけではない。予測精度だけで識別の強さは分からない。
+
 ### Paper: Double/Debiased/Neyman Machine Learning of Treatment Effects
 - Source: arXiv
 - Canonical ID: arxiv:1701.08687
@@ -181,6 +251,20 @@
 - Novelty: 未測定交絡を単に無視せず、代理観測を使う潜在生成モデルとして表現した。
 - Limitations: 編者の注意: 潜在変数を置くだけで因果効果が識別されるわけではない。proxyの情報量、因果構造・分布の仮定に依存し、任意の未測定交絡を解消する保証はない。
 
+### Paper: CatBoost: unbiased boosting with categorical features
+- Source: arXiv
+- Canonical ID: arxiv:1706.09516
+- Publication date: 2017-06-28
+- URL: https://arxiv.org/abs/1706.09516
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: CatBoostはordered boostingとカテゴリ処理で、目的変数の漏洩による予測のずれを抑える。
+- Objective: 既存のブースティングで生じるtarget leakageの一形態を分析し、精度を改善する。
+- Methods: 順列に基づくordered boostingと新しいカテゴリ特徴処理を組み合わせ、prediction shiftを理論的に分析。複数データで既存実装と比較した。
+- Data and results: 提案手順が問題を効果的に抑え、多様なデータで公開boosting実装より良好な品質を報告。要旨にデータ数や改善値はない。
+- Novelty: モデルの表現力だけでなく、学習時の目的情報の使い方が作る分布のずれへ対処した。
+- Limitations: 編者の注意: 題名のunbiasedは対象とする予測シフトの文脈であり、一般的な因果推定の無偏性ではない。データ漏洩全般や、どんな前処理でも安全である保証でもない。
+
 ### Paper: DAGs with NO TEARS: Continuous Optimization for Structure Learning
 - Source: arXiv
 - Canonical ID: arxiv:1803.01422
@@ -196,6 +280,36 @@
 - Limitations: 著者は非凸性、滑らかなスコアの必要性、行列指数のO(d³)費用を指摘。編者の注意: 最適化上の非巡回性は、観測データからの因果方向の識別保証とは異なる。
 
 本文の照合箇所: [Theorem 1、Section 4、Discussionの非凸性・計算量](https://proceedings.neurips.cc/paper_files/paper/2018/file/e347c51419ffb23ca3fd5050202f9c3d-Paper.pdf)。
+
+### Paper: BRITS: Bidirectional Recurrent Imputation for Time Series
+- Source: arXiv
+- Canonical ID: arxiv:1805.10572
+- Publication date: 2018-05-27
+- URL: https://arxiv.org/abs/1805.10572
+- read_level: full_text
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: BRITSは補完値を双方向RNNの計算グラフ内の変数として扱い、下流課題と同時に更新する。
+- Objective: 相関する多変量系列の欠損を、線形な動態や単純な平滑化へ限定せず推定する。
+- Methods: 前後の再帰から遅延勾配と整合性制約を与え、欠損値もbackpropagationで更新。分類・回帰を同じグラフで共同学習する。
+- Data and results: 空気質、医療、人活動の位置情報という3実データで、補完と分類・回帰の双方で比較法を上回った。要旨に具体的な誤差値はない。
+- Novelty: 一度補った値を定数にせず、前後の観測と下流の教師信号から修正できるようにした。
+- Limitations: 編者の注意: 双方向の補完は後の観測を使える設定で、未来を使えない実時間予測と同一条件ではない。特定の線形仮定を不要にしても、任意の欠損機構での正しさは保証しない。
+
+本文の照合箇所: [Introductionの技術的貢献、Sections 3–4.1の欠損値・遅延勾配の定義。欠けた要旨文を原著で確認](https://arxiv.org/pdf/1805.10572v1)。
+
+### Paper: Wasserstein Distributionally Robust Kalman Filtering
+- Source: arXiv
+- Canonical ID: arxiv:1809.08830
+- Publication date: 2018-09-24
+- URL: https://arxiv.org/abs/1809.08830
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: 正規分布だけを含むWasserstein集合で最悪推定誤差を抑え、頑健なKalman filterを構成する。
+- Objective: 状態推定で仮定した分布がずれるモデルリスクへ対処する。
+- Methods: 非凸なWasserstein曖昧集合上の平均二乗誤差推定を、凸計画へ等価変換。推定器と最悪分布のNash均衡を示し、準閉形式の方向探索を持つFrank–Wolfe法を導入した。
+- Data and results: 扱いやすい凸定式化と、これを基礎にした分布頑健Kalman filterを提示。要旨に追跡誤差や速度の具体値はない。
+- Novelty: 分布のずれを最悪条件で扱う推定問題を、逐次状態推定へ組み込んだ。
+- Limitations: 編者の注意: 曖昧集合は正規分布へ限定され、任意の非Gaussian外れ値への保証ではない。集合の半径やモデル化した不確かさの選択に依存する。
 
 ### Paper: Synthesizing Tabular Data using Generative Adversarial Networks
 - Source: arXiv
@@ -226,6 +340,20 @@
 - Limitations: 要旨の『directed cyclic graphs (DAGs)』は本文の非巡回定義に従って整理。編者の注意: 出力は混合関係の要約で、全時点の完全な機構を一意に回復する意味ではない。
 
 本文の照合箇所: [v2（2020-09-05）のIntroduction・Fig.1、DAG混合の定義と改訂内容](https://arxiv.org/pdf/1901.09475v2)。
+
+### Paper: DAG-GNN: DAG Structure Learning with Graph Neural Networks
+- Source: arXiv
+- Canonical ID: arxiv:1904.10098
+- Publication date: 2019-04-22
+- URL: https://arxiv.org/abs/1904.10098
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: DAG-GNNは連続的な非巡回制約とグラフVAEを組み合わせ、非線形の構造学習を行う。
+- Objective: NOTEARSの線形SEMと二乗損失を超え、離散・ベクトル変数も扱う。
+- Methods: graph neural networkでパラメータ化するVAEへ、非巡回性を表す構造制約の変種を導入。非線形人工データと離散変数の基準で評価した。
+- Data and results: 非線形生成データでより正確なグラフを得て、離散基準では大域最適に近い結果を報告。要旨に辺誤差や対象ノード数はない。
+- Novelty: 微分可能なDAG制約を、より柔軟な深層生成モデルへ組み込み、変数型の範囲も広げた。
+- Limitations: 編者の注意: よい観測適合や非巡回性だけでは真の因果方向を識別できない。非凸最適化、潜在交絡、生成モデルの仮定に関する条件を分けて確認する。
 
 ### Paper: N-BEATS: Neural basis expansion analysis for interpretable time series forecasting
 - Source: arXiv
@@ -268,6 +396,20 @@
 - Data and results: 人工・実データで探索能力の改善と柔軟なスコア利用を示した。要旨にグラフ数や構造誤差・実行時間の絶対値はない。
 - Novelty: 新環境で使う方策を得る通常のRLと異なり、候補グラフの組合せ探索を目的にRLを利用した。
 - Limitations: 編者の注意: 高いスコアのグラフが真の因果構造とは限らず、スコアと識別仮定に依存する。非巡回ペナルティや探索の計算量も含めた評価が必要。
+
+### Paper: Distributionally Robust Counterfactual Risk Minimization
+- Source: arXiv
+- Canonical ID: arxiv:1906.06211
+- Publication date: 2019-06-14
+- URL: https://arxiv.org/abs/1906.06211
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: DROの視点で反事実リスク最小化を統一し、KL divergenceによる頑健な目的を導く。
+- Objective: ログから意思決定を評価・改善する際の、不確かなリスク推定を原理的に扱う。
+- Methods: CRMの標本分散penaltyを一般DROの一例として整理し、距離・divergenceで不確かさを表現。KLを使う新しい目的関数を4基準データで比較した。
+- Data and results: 既存最良法を上回り、別の不確かさ尺度が有用なことを示した。要旨に各データ名、リスクや改善率はない。
+- Novelty: 既存の反事実評価のpenaltyを分布の頑健化として捉え、異なる不確かさ設計を比較可能にした。
+- Limitations: 編者の注意: DROはログの支持不足や誤った処置確率を自動解消しない。反事実的な政策リスク評価を、個人の因果効果の無仮定推定と混同しない。
 
 ### Paper: Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting
 - Source: arXiv
@@ -313,6 +455,34 @@
 - Novelty: 単一分布の平均誤差最小化から、環境間で予測則が共通であるという学習目標へ進めた。
 - Limitations: 編者の注意: 観測した環境間の不変性が任意の未知環境へ続くとは限らない。理想の目的と実用的な近似を区別し、後続の失敗例・比較研究と併読する。
 
+### Paper: Variational Autoencoders and Nonlinear ICA: A Unifying Framework
+- Source: arXiv
+- Canonical ID: arxiv:1907.04809
+- Publication date: 2019-07-10
+- URL: https://arxiv.org/abs/1907.04809
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: 補助観測に条件付けた潜在事前分布で、VAEと非線形ICAの識別理論を統合する。
+- Objective: 観測分布へよく合うだけでなく、真の潜在変数とのjointも推定できる条件を得る。
+- Methods: 追加の観測変数に条件付けてfactorizeする潜在事前分布を仮定。ノイズ・低次元潜在・離散観測も含め、非線形ICAを最尤学習の枠組みへ広げた。
+- Data and results: 広い深層潜在モデルで、単純な変換までjointを識別できる理論を示した。識別可能なflowも特殊例となるが、要旨に数値実験結果はない。
+- Novelty: 無条件のVAEでは解消しない非識別性を、観測された補助情報と条件付き潜在独立性で扱った。
+- Limitations: 編者の注意: 任意のVAEで自動的にdisentanglementを保証する結果ではない。補助変数・分布族・識別の条件と、残る変換の曖昧さがある。
+
+### Paper: Distributionally Robust Optimization: A Review
+- Source: arXiv
+- Canonical ID: arxiv:1908.05659
+- Publication date: 2019-08-13
+- URL: https://arxiv.org/abs/1908.05659
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: DROの主要概念を、頑健最適化・リスク回避・機会制約・正則化との関係から整理したレビュー。
+- Objective: operations researchと統計学習の双方で発展した分布頑健最適化の関係を見通す。
+- Methods: DROの主要な概念と研究貢献を文献横断で概説し、関連する最適化・統計学習の枠組みとのつながりを説明する。
+- Data and results: 分布に関する不確かさを扱うDROの概念地図を提供。要旨に新しいデータセットや統合性能値はなく、文献レビューである。
+- Novelty: 個別の不確かさモデルを並べるだけでなく、リスク・制約・正則化の見方を統合して整理した。
+- Limitations: 編者の注意: 同じデータで全手法を比較した実証研究ではない。対象文献の範囲と以後の研究を区別し、個別保証は各手法の仮定まで確認する必要がある。
+
 ### Paper: TabNet: Attentive Interpretable Tabular Learning
 - Source: arXiv
 - Canonical ID: arxiv:1908.07442
@@ -327,6 +497,34 @@
 - Novelty: 表データ専用の段階的な特徴選択と、未ラベルデータからの学習を一つの構造へ統合した。
 - Limitations: 編者の注意: 選定ベンチマークの結果をすべての木モデルへの優越性としない。attentionによる特徴寄与は、変数の因果効果を示す説明ではない。
 
+### Paper: Distributionally Robust Language Modeling
+- Source: arXiv
+- Canonical ID: arxiv:1909.02060
+- Publication date: 2019-09-04
+- URL: https://arxiv.org/abs/1909.02060
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: topic CVaRは話題の最悪混合を考えるDROで、未知の話題分布への言語モデルの頑健性を狙う。
+- Objective: 訓練に無関係な文章を加えると、対象分布の性能が下がるMLEの問題を減らす。
+- Methods: 訓練と十分に重なる話題混合のうち、最悪の損失を小さくする分布頑健目的を導出。Yelpレビューとニュースの混合学習を評価した。
+- Data and results: レビューだけのテストで、MLEよりperplexityを5.5低減した。これは5.5ポイントのperplexity差で、5.5%という表記ではない。
+- Novelty: 平均的な訓練話題の損失だけでなく、未知の話題配分に対する最悪条件を学習へ組み込んだ。
+- Limitations: 編者の注意: 想定する話題混合と訓練の重なりの範囲内を扱い、完全に新しい意味・言語への保証ではない。perplexity改善と下流の意思決定の利益は異なる。
+
+### Paper: InceptionTime: Finding AlexNet for Time Series Classification
+- Source: arXiv
+- Canonical ID: arxiv:1909.04939
+- Publication date: 2019-09-11
+- URL: https://arxiv.org/abs/1909.04939
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: InceptionTimeはInception型CNNの集合で、高精度な系列分類を大きいデータへ拡張する。
+- Objective: 高精度だが計算の重いHIVE-COTEに近い分類を、実務で使える学習時間で得る。
+- Methods: Inception-v4に着想を得た深いCNNをアンサンブルし、精度と訓練のスケーラビリティを比較した。
+- Data and results: HIVE-COTEに匹敵するaccuracyを報告。1,500系列を1時間、800万系列を13時間で学習し、比較法では難しい規模を扱った。
+- Novelty: 系列分類の精度と大規模化を両立する、畳み込み系の強い公開基準を示した。
+- Limitations: 編者の注意: 時間は当時の測定環境・並列化条件に依存し、accuracyの一致を全データの同点と解釈しない。分類以外の用途や分布変化は別評価が必要。
+
 ### Paper: Neural Oblivious Decision Ensembles for Deep Learning on Tabular Data
 - Source: arXiv
 - Canonical ID: arxiv:1909.06312
@@ -340,6 +538,20 @@
 - Data and results: 多くの比較課題で競合法を上回ったと報告。要旨にデータ数、平均改善量、探索・計算予算は記載されない。
 - Novelty: 木とニューラルモデルを別々に使う代わりに、木のアンサンブルを深い微分可能なモデルへ一般化した。
 - Limitations: 編者の注意: 『多くの課題』はすべての表への優越性ではない。調整の費用、特徴の型、学習データ量を揃えた比較が必要である。
+
+### Paper: ROCKET: Exceptionally fast and accurate time series classification using random convolutional kernels
+- Source: arXiv
+- Canonical ID: arxiv:1910.13051
+- Publication date: 2019-10-29
+- URL: https://arxiv.org/abs/1910.13051
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: ROCKETはランダム畳み込みの特徴と単純な線形分類器で、高速な系列分類を行う。
+- Objective: 強い分類法が小データでも長い訓練を要する問題を、低費用の変換で改善する。
+- Methods: ランダムなconvolutional kernelで系列を特徴化し、その変換上で線形分類器を学習。形状だけ・周波数だけの専用特徴に限定しない構成を評価した。
+- Data and results: 既存最良水準のaccuracyを、計算費用の小さな一部で得たと報告。要旨にデータ数、精度、速度倍率はない。
+- Novelty: 畳み込みフィルタを深く訓練する代わりに、豊富なランダム変換と軽い分類器を組み合わせた。
+- Limitations: 編者の注意: 元論文は分類であり、予測や確率推定の基準ではない。低い計算費用でも特徴変換・保存の費用は残り、後続MiniRocket等とは区別する。
 
 ### Paper: Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting
 - Source: arXiv
@@ -410,6 +622,20 @@
 - Data and results: 広い実験で全結合ネットを有意かつ一貫して上回り、各設計要素の寄与を示した。要旨に課題数やスコアはない。
 - Novelty: 単なる層増加ではなく、論理的な判断の組合せと局所性を深層モデルの設計へ組み込んだ。
 - Limitations: 編者の注意: 主な結論は全結合ネットとの比較で、すべての木モデルより優れるという結果ではない。softな論理構造は、離散ルールの完全な解釈性保証とは異なる。
+
+### Paper: Kernel Distributionally Robust Optimization
+- Source: arXiv
+- Canonical ID: arxiv:2006.06981
+- Publication date: 2020-06-12
+- URL: https://arxiv.org/abs/2006.06981
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: Kernel DROはRKHSを使い、不確かな分布上の最悪最適化を関数の双対問題へ置き換える。
+- Objective: 多様な曖昧集合と損失を扱える、分布頑健最適化の共通理論・計算法を得る。
+- Methods: RKHSで凸な分布集合を作り、積分確率距離や有限次モーメントへ一般化。モーメント問題の双対定理を拡張し、batch凸解法と確率的関数勾配の算法を提案した。
+- Data and results: universal RKHSを使う広い損失で双対化でき、従来の多項式損失や既知Lipschitz定数の制限を緩めた。要旨に実験スコアはない。
+- Novelty: 分布についての探索をRKHS関数についての探索へ変換し、複数の頑健・確率最適化を統一した。
+- Limitations: 編者の注意: 曖昧集合・kernel・半径の選択と計算近似に依存する。双対定理の広さは、任意の分布変化や有限データでの性能保証とは異なる。
 
 ### Paper: In Search of Lost Domain Generalization
 - Source: arXiv
@@ -537,6 +763,20 @@
 - Novelty: 不変性の目的だけでは残る特定の偽相関を、条件付き分布の一致で補う。
 - Limitations: 編者の注意: 特定の相関構造を対象とする修正で、任意の未知領域への保証ではない。半人工の色付き数字実験から実務の全分布変化への有効性は確定しない。
 
+### Paper: MultiRocket: Multiple pooling operators and transformations for fast and effective time series classification
+- Source: arXiv
+- Canonical ID: arxiv:2102.00457
+- Publication date: 2021-01-31
+- URL: https://arxiv.org/abs/2102.00457
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: MultiRocketは元系列と差分に複数poolingを使い、MiniRocketの特徴の多様性を増やす。
+- Objective: 複雑なアンサンブルを避けつつ、固定畳み込みによる高速分類の精度を高める。
+- Methods: 生系列と1階差分の両方を畳み込み変換し、出力へ4種のpoolingを適用。UCRの分類基準でMiniRocketやHIVE-COTE 2.0と比較した。
+- Data and results: MiniRocketより有意に高精度で、HIVE-COTE 2.0に競争的ながら数桁速いと報告。要旨に全体精度や時間の絶対値はない。
+- Novelty: 単一の集約特徴に限定せず、変換とpoolingの組合せで低費用の分類表現を強化した。
+- Limitations: 編者の注意: UCR分類の比較で、任意の長さ・多変量・分布変化への性能を保証しない。速度は計算環境・データ規模に依存する。
+
 ### Paper: Automatic Double Machine Learning for Continuous Treatment Effects
 - Source: arXiv
 - Canonical ID: arxiv:2104.10334
@@ -663,6 +903,20 @@
 - Novelty: 広い表分類へ使える単純な特徴破損を、対照表現学習の共通操作として示した。
 - Limitations: 編者の注意: 特徴の破損が意味的に妥当かはデータ次第である。既存ラベルを一部隠す評価と、実務での選択的ラベル欠損は同じではない。
 
+### Paper: CSDI: Conditional Score-based Diffusion Models for Probabilistic Time Series Imputation
+- Source: arXiv
+- Canonical ID: arxiv:2107.03502
+- Publication date: 2021-07-07
+- URL: https://arxiv.org/abs/2107.03502
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: CSDIは観測済みの時系列を条件とするscore-based拡散で、欠損値の分布を補完する。
+- Objective: 観測間の相関を活かし、点推定に限らず不確実性を含めた補完を行う。
+- Methods: 補完向けに条件付き拡散を明示的に訓練。医療・環境データで確率補完と決定的補完を比較し、補間・確率予測にも適用した。
+- Data and results: 既存の確率補完指標を40–65%、決定的な補完誤差を5–20%改善と報告。補間と確率予測でも競争的だった。
+- Novelty: 無条件生成からの転用だけでなく、観測値を条件として欠損を推定する拡散過程を直接学んだ。
+- Limitations: 編者の注意: 改善率は対象指標・欠損設定に依存し、全機構での不偏補完や区間校正を保証しない。反復的なサンプリングの計算費用も考慮する。
+
 ### Paper: LocalGLMnet: interpretable deep learning for tabular data
 - Source: arXiv
 - Canonical ID: arxiv:2107.11059
@@ -677,6 +931,34 @@
 - Novelty: 後から説明器を加えるだけでなく、説明可能な分解をモデル構造へ組み込んだ。
 - Limitations: 編者の注意: 加法分解ができても各項は因果効果ではない。GLMに似た形から古典的GLMと同じ統計的推論保証が自動で得られるわけではない。
 
+### Paper: Efficiently Modeling Long Sequences with Structured State Spaces
+- Source: arXiv
+- Canonical ID: arxiv:2111.00396
+- Publication date: 2021-10-31
+- URL: https://arxiv.org/abs/2111.00396
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: S4は構造化した状態空間モデルを効率計算し、非常に長い系列の依存を扱う。
+- Objective: 1万ステップ以上で負担が増すRNN・CNN・Transformerに代わる共通系列モデルを作る。
+- Methods: 状態行列Aに低rank補正を用いて安定に対角化し、計算をCauchy kernelへ帰着。分類、生成、Long Range Arenaで評価した。
+- Data and results: 逐次CIFAR-10で追加拡張・補助損失なしにaccuracy91%。長さ16kのPath-Xを解き、画像・言語生成で60倍の高速化も報告した。
+- Novelty: 長期記憶の数学的性質を持つSSMを、構造化パラメータと効率的なkernel計算で実用化した。
+- Limitations: 編者の注意: 課題ごとの結果と速度倍率を、全種類の推論へ一般化しない。長い依存を扱えることと、内容依存の選択的な記憶が得意なことは異なる。
+
+### Paper: Transformers Can Do Bayesian Inference
+- Source: arXiv
+- Canonical ID: arxiv:2112.10510
+- Publication date: 2021-12-20
+- URL: https://arxiv.org/abs/2112.10510
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: PFNは事前分布から多数の課題を作り、例の集合からBayes的な予測を1回で近似する。
+- Objective: 明示的な事前知識と不確実性を扱う推論を、深層モデルで高速に実行する。
+- Methods: 事前から関数・学習例を繰り返し生成し、1ラベルを隠して残りの集合から確率予測するよう学習。GP、Bayes neural network、少数表分類・画像分類を評価した。
+- Data and results: Gaussian processをほぼ再現し、複数設定で既存法より200倍超高速な推論を報告。扱いにくい問題でも効率的な近似を示した。
+- Novelty: 課題ごとに事後推論を解く代わりに、事前からの訓練で推論手続き自体を償却し、後のTabPFNにつながった。
+- Limitations: 編者の注意: 事前から課題をサンプルできることが前提で、学習外の分布の事後を厳密に出す保証ではない。推論の速度比較と事前学習を含む全費用は異なる。
+
 ### Paper: FEDformer: Frequency Enhanced Decomposed Transformer for Long-term Series Forecasting
 - Source: arXiv
 - Canonical ID: arxiv:2201.12740
@@ -690,6 +972,20 @@
 - Data and results: 系列長に線形の計算量を示し、既存最良法に対し多変量14.8%、単変量22.6%の予測誤差低下を報告。
 - Novelty: 時間領域の分解と、周波数領域で少数成分を使う表現を長期予測器へ統合した。
 - Limitations: 編者の注意: 相対的な誤差低下を絶対精度の増分に読み替えない。周波数疎性や分解が適する範囲と、実測の速度・メモリはデータ依存である。
+
+### Paper: N-HiTS: Neural Hierarchical Interpolation for Time Series Forecasting
+- Source: arXiv
+- Canonical ID: arxiv:2201.12886
+- Publication date: 2022-01-30
+- URL: https://arxiv.org/abs/2201.12886
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: N-HiTSは階層補間と異なる率の標本化で、多周波数・多尺度の長期予測を組み立てる。
+- Objective: 長期予測の不安定さと計算負担を減らす。
+- Methods: 入力を分解しながら、異なる周波数・尺度の成分の予測を逐次合成。滑らかさの下で長い予測区間を近似する理論と、大規模系列の比較実験を行った。
+- Data and results: 当時のTransformer群に対し平均でほぼ20%の精度改善、計算時間50倍の高速化を報告。要旨に課題別の絶対誤差はない。
+- Novelty: すべての将来時点を同じ解像度で直接予測する代わりに、階層的な補間と成分合成を利用した。
+- Limitations: 編者の注意: 理論は滑らかさを前提とし、任意の急変を高精度に近似する保証ではない。速度倍率と平均改善は対象モデル・データ・実装に依存する。
 
 ### Paper: CoST: Contrastive Learning of Disentangled Seasonal-Trend Representations for Time Series Forecasting
 - Source: arXiv
@@ -718,6 +1014,20 @@
 - Data and results: 異なる推定法の相対性能を評価できることを示した。要旨に分布一致や順位予測の具体値はない。
 - Novelty: 観測分布の現実性と、反事実の真値を指定できる実験環境を組み合わせた。
 - Limitations: 編者の注意: 合成データで指定した反事実が現実の真実とは限らない。観測分布に似ていても因果構造は一意でなく、評価は指定した効果・交絡のシナリオに条件付く。
+
+### Paper: SAITS: Self-Attention-based Imputation for Time Series
+- Source: arXiv
+- Canonical ID: arxiv:2202.08516
+- Publication date: 2022-02-17
+- URL: https://arxiv.org/abs/2202.08516
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: SAITSは2つの対角mask付きself-attentionを重み付きで統合し、多変量系列を補完する。
+- Objective: 時間依存と特徴間相関を利用し、補完精度と学習速度を改善する。
+- Methods: joint optimizationで2つのDMSAブロックを学習。attention mapと欠損情報に応じた重みで、異なる表現を動的に組み合わせた。
+- Data and results: 定量・定性実験で既存の最良法を効率的に上回り、不完全系列での認識モデルも改善する可能性を示した。要旨にデータ数・数値指標はない。
+- Novelty: 再帰処理とは異なり、attentionによる時間・特徴関係と欠損依存の表現統合を補完に特化した。
+- Limitations: 編者の注意: 補完誤差と下流性能は別々に評価すべきで、値依存の欠損での不偏性は示さない。後の観測も使える補完と実時間予測は利用情報が異なる。
 
 ### Paper: CTAB-GAN+: Enhancing Tabular Data Synthesis
 - Source: arXiv
@@ -989,6 +1299,34 @@
 - Novelty: Bayes的な動機だけでなく、PFNの統計的挙動を固定予測器の頻度論的性質として説明した。
 - Limitations: 編者の注意: 任意分布での一致性やバイアス消失を保証する結論ではない。入力表が大きいだけでは局所化条件を満たさず、有限標本の精度も別に評価する。
 
+### Paper: On the Usefulness of Synthetic Tabular Data Generation
+- Source: arXiv
+- Canonical ID: arxiv:2306.15636
+- Publication date: 2023-06-27
+- URL: https://arxiv.org/abs/2306.15636
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: 合成表が機械学習を実際に改善するか、共有・拡張・均衡化・要約の4用途で検証した。
+- Objective: データ交換に使えることと、学習精度を高めることを分けて有用性を評価する。
+- Methods: 4種類の用途で合成表を使った機械学習性能をベンチマークし、生成の進歩が下流の改善へつながるか比較した。
+- Data and results: 一部データのクラス均衡化で小さな改善を観察したが、学習用合成表の有用性を広く主張するには証拠が不足すると結論した。要旨に数値はない。
+- Novelty: もっともらしい分布の生成から、具体的な使い方ごとの下流利益へ評価の問いを移した。
+- Limitations: 編者の注意: 証拠不足という結論はあらゆる合成法の無効性を証明しない。保護目的の共有と精度向上目的の拡張は異なり、利用条件を分けて読む。
+
+### Paper: TabR: Tabular Deep Learning Meets Nearest Neighbors in 2023
+- Source: arXiv
+- Canonical ID: arxiv:2307.14338
+- Publication date: 2023-07-26
+- URL: https://arxiv.org/abs/2307.14338
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: TabRはfeed-forwardモデルの中で近傍の学習例とラベルを参照し、表予測を改善する。
+- Objective: 強いGBDTに対して、効率的な検索拡張で深層表モデルを強化する。
+- Methods: 中間に独自のkNN型部品を置き、attentionに似た機構で近傍を探して特徴・ラベルから信号を得る。数百万例までの公開基準で比較した。
+- Data and results: 深層法の平均で最良、複数データで新しい最良水準、GBDTに有利な基準でもGBDTを上回ったと報告。要旨に絶対スコアはない。
+- Novelty: 単純なfeed-forward予測器へ、標本ごとに必要な学習例を検索する機構を効率的に統合した。
+- Limitations: 編者の注意: ラベルを参照する検索集合は学習分に限定する必要がある。近傍索引・保存・取得の費用と、稀な例や分布変化での性能も考慮する。
+
 ### Paper: ReMasker: Imputing Tabular Data with Masked Autoencoding
 - Source: arXiv
 - Canonical ID: arxiv:2309.13793
@@ -1061,6 +1399,20 @@
 - Novelty: 系列の過去値の構造を利用し、単変量の予測分布を多数データで共有する設計を示した。
 - Limitations: 編者の注意: 最良平均という主張には微調整条件が含まれ、zero-shotの結果とは区別する。単変量の確率出力が多変量依存や全集団の校正を保証するわけではない。
 
+### Paper: Mixed-Type Tabular Data Synthesis with Score-based Diffusion in Latent Space
+- Source: arXiv
+- Canonical ID: arxiv:2310.09656
+- Publication date: 2023-10-14
+- URL: https://arxiv.org/abs/2310.09656
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: TabSynはVAEの共通潜在空間でscore-based拡散を学び、異種列の表を生成する。
+- Objective: 列の型と分布の多様性をまとめて扱い、少ない逆拡散ステップで高品質な表を得る。
+- Methods: 列間関係を捉えるVAEで混合型データを共通空間へ写し、潜在分布を拡散学習向けに整える。6データ、5指標で既存法と比較した。
+- Data and results: 最も競争的な基準に対し、列単独分布の推定誤差を86%、列対相関の推定誤差を67%減らしたと報告。既存拡散より少ない逆ステップを用いた。
+- Novelty: 異種列へ個別の拡散を当てるだけでなく、学習した連続潜在表現で生成をまとめた。
+- Limitations: 編者の注意: 86%・67%は指定指標の相対誤差減少で、全下流課題の精度改善ではない。VAEの再構成と情報保護の誤差・保証も別に確認が必要。
+
 ### Paper: A decoder-only foundation model for time-series forecasting
 - Source: arXiv
 - Canonical ID: arxiv:2310.10688
@@ -1104,6 +1456,20 @@
 - Data and results: 要約法による挙動と従来モデルとの相違を初期調査として報告。要旨にデータ数、最良の要約法、精度・速度の数値はない。
 - Novelty: モデル重みの訓練ではなく、in-context推論に渡す学習データの要約を最適化対象にした。
 - Limitations: 編者の注意: 探索的な初期版TabPFNの研究であり、汎用的な大規模化の解決を保証しない。要約による少数クラスや希少特徴の消失も確認が必要。
+
+### Paper: Mamba: Linear-Time Sequence Modeling with Selective State Spaces
+- Source: arXiv
+- Canonical ID: arxiv:2312.00752
+- Publication date: 2023-12-01
+- URL: https://arxiv.org/abs/2312.00752
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: Mambaは入力に依存して状態空間の情報保持を変え、attentionなしで長い系列を処理する。
+- Objective: 従来の準二次時間モデルが苦手だった、内容に応じた選択・推論を効率的に扱う。
+- Methods: SSMのパラメータを入力の関数にし、選択的に伝達・忘却。畳み込みを使えなくなる部分をハードウェア対応の並列recurrent計算で処理する。
+- Data and results: 系列長への線形拡張、Transformer比5倍の推論throughput、実データで百万長までの改善を報告。Mamba-3Bは同規模Transformerを上回り、倍規模に匹敵した。
+- Novelty: 固定の状態遷移を入力依存に変え、内容選択と効率的なscan計算を統合した。
+- Limitations: 編者の注意: 5倍は比較した構成・計算環境の結果。百万長で改善する実験を、全タスクで百万tokenの情報を正確に再現できる保証と解釈しない。
 
 ### Paper: Benchmarking Distribution Shift in Tabular Data with TableShift
 - Source: arXiv
@@ -1193,6 +1559,22 @@
 
 本文の照合箇所: [Sections 3.2–3.3・4、Appendix FのResults Sources](https://arxiv.org/html/2402.03885v1)。
 
+### Paper: Systematic Assessment of Tabular Data Synthesis
+- Source: arXiv
+- Canonical ID: arxiv:2402.06806
+- Publication date: 2024-02-09
+- URL: https://arxiv.org/abs/2402.06806
+- read_level: full_text
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: 表生成を忠実度・保護・効用の3軸で調べ、統計法と深層法の得意条件を比較した。
+- Objective: 評価指標や調整条件の違いにより、生成器の優劣が食い違う問題を改善する。
+- Methods: Wasserstein距離、membership disclosure、下流予測・queryの評価と統一調整をSynMeterへ実装。8種類の生成器を12データで比較した。
+- Data and results: 単一の勝者はなく、TabDDPMは忠実度・効用で強いがmembershipリスクが大きかった。DPが必要な条件では統計法が深層法を上回った。
+- Novelty: 新旧の生成器を、デフォルト値だけに頼らず調整と3軸の共通基準で評価した。
+- Limitations: 編者の注意: v1の表と本文で一部のDP/HP分類が一致しないため、保証の有無は各手法の原著を優先する。実験上の情報漏洩評価を形式的DP保証と混同しない。
+
+本文の照合箇所: [v1（初版題名Towards Principled Assessment...）のIntroduction・Main Findings・評価設計、Table 1とHPの本文記述](https://arxiv.org/html/2402.06806v1)。
+
 ### Paper: TuneTables: Context Optimization for Scalable Prior-Data Fitted Networks
 - Source: arXiv
 - Canonical ID: arxiv:2402.11137
@@ -1251,6 +1633,20 @@
 
 本文の照合箇所: [v2のSections 5.1・5.5.2（脚注4）・5.7、15対27の評価区分](https://arxiv.org/html/2403.07815v2)。
 
+### Paper: Structured Evaluation of Synthetic Tabular Data
+- Source: arXiv
+- Canonical ID: arxiv:2403.10424
+- Publication date: 2024-03-15
+- URL: https://arxiv.org/abs/2403.10424
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: 合成表が元表と同じ分布に従うという共通目標から、生成評価指標を構造的に整理する。
+- Objective: 多数の忠実度・効用指標を、何を測り何を見落とすか一貫して解釈する。
+- Methods: 単一の数学的目標を構造分解し、既存の分布・下流・モデル依存の指標を統合。指標集合の完全性、新指標群、モデル不要の基準を考察した。
+- Data and results: 表の構造を明示する生成器が、特に小データで他法を上回った。要旨にデータ数や分布距離の具体値はない。
+- Novelty: 指標の羅列ではなく、共通分布目標の分解として評価の網羅性を論じた。
+- Limitations: 編者の注意: 観測標本の分布への適合と、真の母集団への適合は異なる。同分布の再現を目指しても個人情報保護は自動達成されず、別評価が必要。
+
 ### Paper: TabPFGen -- Tabular Data Generation with TabPFN
 - Source: arXiv
 - Canonical ID: arxiv:2406.05216
@@ -1279,6 +1675,20 @@
 - Novelty: 論文ごとに分散した実装と処理手順を、拡張可能な共通比較基盤へまとめた。
 - Limitations: 編者の注意: 実装が共通でも、探索予算・早期停止・分割の違いを揃える必要がある。収録法数は公開時点の情報であり、現在のツール仕様を示す記述ではない。
 
+### Paper: Better by Default: Strong Pre-Tuned MLPs and Boosted Trees on Tabular Data
+- Source: arXiv
+- Canonical ID: arxiv:2407.04491
+- Publication date: 2024-07-05
+- URL: https://arxiv.org/abs/2407.04491
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: RealMLPと木モデルの強い既定値を、メタ訓練と独立評価で作り、表ごとの探索負担を減らす。
+- Objective: 深層法の大量調整と、実務での速い木モデルという比較条件の差を見直す。
+- Methods: 118データのmeta-trainでMLPと既定値を調整し、別90データとGBDT-friendly基準で評価。1,000–500,000例を扱い、RealMLPとGBDTの組合せも検討した。
+- Data and results: RealMLPは良好な時間・精度の交換関係でGBDTに競争的。改善既定値を持つ両者の組合せは、表ごとの探索なしで高性能だった。
+- Novelty: 新構造だけでなく、異なる表群で事前調整した既定値を独立表で検証し、実用的な基準を強化した。
+- Limitations: 編者の注意: 『探索なし』でも既定値作成のメタ調整はある。選定した中・大規模データの結果で、少数例・極端な欠損・新領域では再評価が必要。
+
 ### Paper: TabM: Advancing Tabular Deep Learning with Parameter-Efficient Ensembling
 - Source: arXiv
 - Canonical ID: arxiv:2410.24210
@@ -1295,33 +1705,49 @@
 
 <!-- PAPER_IDS -->
 arxiv:1301.2312
+arxiv:1509.09259
+arxiv:1510.04342
 arxiv:1512.05469
 arxiv:1603.02754
 arxiv:1605.03661
+arxiv:1605.06336
+arxiv:1606.01865
 arxiv:1606.07035
 arxiv:1608.00060
 arxiv:1610.01271
 arxiv:1611.04035
+arxiv:1612.09596
 arxiv:1701.08687
 arxiv:1702.07306
 arxiv:1704.04110
 arxiv:1705.08821
+arxiv:1706.09516
 arxiv:1803.01422
+arxiv:1805.10572
+arxiv:1809.08830
 arxiv:1811.11264
 arxiv:1901.09475
+arxiv:1904.10098
 arxiv:1905.10437
 arxiv:1906.02120
 arxiv:1906.04477
+arxiv:1906.06211
 arxiv:1907.00235
 arxiv:1907.00503
 arxiv:1907.02893
+arxiv:1907.04809
+arxiv:1908.05659
 arxiv:1908.07442
+arxiv:1909.02060
+arxiv:1909.04939
 arxiv:1909.06312
+arxiv:1910.13051
 arxiv:1912.09363
 arxiv:2002.12710
 arxiv:2003.03191
 arxiv:2006.04697
 arxiv:2006.06465
+arxiv:2006.06981
 arxiv:2007.01434
 arxiv:2009.14461
 arxiv:2010.05761
@@ -1331,6 +1757,7 @@ arxiv:2012.07436
 arxiv:2012.08791
 arxiv:2101.01134
 arxiv:2101.07732
+arxiv:2102.00457
 arxiv:2104.10334
 arxiv:2105.02584
 arxiv:2106.00750
@@ -1340,10 +1767,15 @@ arxiv:2106.11959
 arxiv:2106.13008
 arxiv:2106.14112
 arxiv:2106.15147
+arxiv:2107.03502
 arxiv:2107.11059
+arxiv:2111.00396
+arxiv:2112.10510
 arxiv:2201.12740
+arxiv:2201.12886
 arxiv:2202.01575
 arxiv:2202.04208
+arxiv:2202.08516
 arxiv:2204.00401
 arxiv:2205.13504
 arxiv:2206.00664
@@ -1363,25 +1795,32 @@ arxiv:2303.11580
 arxiv:2304.08424
 arxiv:2304.13188
 arxiv:2305.11097
+arxiv:2306.15636
+arxiv:2307.14338
 arxiv:2309.13793
 arxiv:2310.01728
 arxiv:2310.03589
 arxiv:2310.06625
 arxiv:2310.08278
+arxiv:2310.09656
 arxiv:2310.10688
 arxiv:2310.20447
 arxiv:2311.10609
+arxiv:2312.00752
 arxiv:2312.07577
 arxiv:2312.06089
 arxiv:2312.16702
 arxiv:2402.02368
 arxiv:2402.02592
 arxiv:2402.03885
+arxiv:2402.06806
 arxiv:2402.11137
 arxiv:2402.14335
 arxiv:2403.00131
 arxiv:2403.07815
+arxiv:2403.10424
 arxiv:2406.05216
 arxiv:2407.04057
+arxiv:2407.04491
 arxiv:2410.24210
 <!-- /PAPER_IDS -->

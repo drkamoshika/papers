@@ -1,7 +1,7 @@
 # 基礎文献 — 医療・生体信号・創薬AI
 
 > schema_version: 1
-> report_date: 2026-11-14
+> report_date: 2026-11-15
 
 ## ダイジェスト
 
@@ -25,6 +25,21 @@
 - Novelty: 人の解釈自体に不一致があることを踏まえ、自動抽出の妥当性を相対的に評価した。
 - Limitations: 著者も胸部画像レポートの6所見に限定された領域とする。編者の注意: 画像の診断研究ではなく文章の抽出研究で、他の記録形式への一般化は未確定。
 
+### Paper: Use of natural language processing to translate clinical information from a database of 889,921 chest radiographic reports
+- Source: PubMed
+- Canonical ID: pmid:12091676
+- Publication date: 2002-07-01
+- URL: https://pubmed.ncbi.nlm.nih.gov/12091676/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 約89万件の胸部X線レポートを構造化し、抽出精度と大規模な所見分布を検証した。
+- Objective: 文章の画像診断記録を研究用データベースへ変換し、コード情報より豊かな病態把握を得る。
+- Methods: 単一都市部大学病院の10年分、251,186人の889,921レポートをNLPでコード化。150件を手動確認し、24状態の頻度・併存と既報の疫学傾向を比較した。
+- Data and results: 手動比較で感度0.81、特異度0.99。別の気胸確認ではNLP感度1.00対退院会計コード0.17、特異度は双方0.996。肺癌の右左比3:2など既報との一致も報告した。
+- Novelty: 小標本の抽出評価に加え、大規模な文章由来データの内的・外的な整合性を検証した。
+- Limitations: 編者の注意: 疫学的な傾向の一致は各記録の正確さを保証しない。単施設の画像報告書が対象であり、実画像の診断や未記録疾患の検出を行うものではない。
+- Publication date note: RSNAの掲載履歴Published online: Jul 1 2002を採用。推測の月初日ではなく出版社の明示日。出典: https://pubs.rsna.org/doi/10.1148/radiol.2241011118
+
 ### Paper: Automated encoding of clinical documents based on natural language processing
 - Source: PubMed
 - Canonical ID: pmid:15187068
@@ -38,6 +53,21 @@
 - Data and results: 全用語のコード再現率0.77、対応UMLSコードのある用語では0.83。用語抽出の再現率0.84、コード適合率0.89で、専門家間の性能範囲に近かった。
 - Novelty: 単語にコードを貼るだけでなく、構造化された臨床所見と関連修飾をコード化へ接続した。
 - Limitations: 編者の注意: 再現率・適合率は異なる文集合で測定され、文書全体の正確さとは異なる。辞書にコードがない用語の扱いと他施設への適用は別途検討が必要。
+
+### Paper: Noninvasive brain-actuated control of a mobile robot by human EEG
+- Source: PubMed
+- Canonical ID: pmid:15188874
+- Publication date: 2004-06-30
+- URL: https://pubmed.ncbi.nlm.nih.gov/15188874/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 非侵襲EEGの3状態分類とロボット側の自律性を組み合わせ、室間の移動制御を実演した。
+- Objective: 遅いと考えられていた非侵襲信号でも、移動ロボットの複雑な動きを制御できるか調べる。
+- Methods: 非同期EEG解析と機械学習で3つの精神状態を認識し、高度なロボティクスと統合。2人が思考のみで複数の部屋を移動させ、手動制御と比較した。
+- Data and results: 2被験者が移動を達成し、手動制御との性能比0.74を報告。要旨に比の詳細な定義、所要時間、試行数はない。
+- Novelty: 連続した低位の運動指令を脳から送る代わりに、EEGの少数状態とロボット制御を組み合わせた。
+- Limitations: 編者の注意: 2人の実演であり、患者集団や屋外環境の一般的な実用性は未検証。0.74を分類精度74%へ読み替えない。
+- Publication date note: IEEEのDate of Publication: 30 June 2004を採用。出典: https://ieeexplore.ieee.org/abstract/document/1300798/authors
 
 ### Paper: Causal protein-signaling networks derived from multiparameter single-cell data
 - Source: PubMed
@@ -178,6 +208,21 @@
 - Data and results: 開発群と検証群を分け、識別と校正の評価を実演。絶対確率の校正には最も詳しい第3段階の情報が必要と説明する。
 - Novelty: 係数だけの移植で済ませず、公開情報不足が外部検証のどの部分を制約するか明示した。
 - Limitations: 編者の注意: 欠けた基準関数の近似には情報と仮定が要る。乳癌の実例の結果を他疾患のモデル性能と扱わず、比例ハザード等のモデル仮定も確認する。
+
+### Paper: Improving case definition of Crohn's disease and ulcerative colitis in electronic medical records using natural language processing: a novel informatics approach
+- Source: PubMed
+- Canonical ID: pmid:23567779
+- Publication date: 2013-04-04
+- URL: https://pubmed.ncbi.nlm.nih.gov/23567779/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 炎症性腸疾患の症例同定に、診断コードと診療ノートのNLP特徴を組み合わせた。
+- Objective: 行政コードだけでは一貫しなかったCrohn病・潰瘍性大腸炎のEHR上の症例定義を改善する。
+- Methods: 2大学施設でICD-9コードを持つ患者を抽出し、各疾患600人の記録レビューを基準に開発・検証。コード・処方・文章特徴をadaptive LASSO回帰で選択した。
+- Data and results: 確認症例はCrohn病399人、潰瘍性大腸炎378人。統合AUC0.95・0.94に対しコードのみ0.89・0.86。同じ精度で6–12%多くの患者を分類できた。
+- Novelty: コード化データと自由記載を相補的に使い、研究コホートの症例数と精度を両立した。
+- Limitations: 編者の注意: 既に少なくとも1つ診断コードがある集団の症例同定であり、一般集団での新規診断や発症予測ではない。コードのない症例の捕捉性能は分からない。
+- Publication date note: 出版社版PDFに明記されたPublished online 4 April 2013を採用。巻号の2013年6月と区別。出典: https://academic.oup.com/ibdjournal/article-pdf/19/7/1411/23424044/ibd1411.pdf
 
 ### Paper: Development and evaluation of a de-identification procedure for a case register sourced from mental health electronic records
 - Source: PubMed
@@ -1837,21 +1882,6 @@
 
 本文の照合箇所: [Methodsのモデル・症例・評価、DiscussionのLimitations、刊行日](https://pmc.ncbi.nlm.nih.gov/articles/PMC11519755/)。
 
-### Paper: Use of natural language processing to translate clinical information from a database of 889,921 chest radiographic reports
-- Source: PubMed
-- Canonical ID: pmid:12091676
-- Publication date: 未記載
-- URL: https://pubmed.ncbi.nlm.nih.gov/12091676/
-- read_level: abstract
-- Tags: 基礎文献, 医療・生体信号・創薬AI
-- Summary: 約89万件の胸部X線レポートを構造化し、抽出精度と大規模な所見分布を検証した。
-- Objective: 文章の画像診断記録を研究用データベースへ変換し、コード情報より豊かな病態把握を得る。
-- Methods: 単一都市部大学病院の10年分、251,186人の889,921レポートをNLPでコード化。150件を手動確認し、24状態の頻度・併存と既報の疫学傾向を比較した。
-- Data and results: 手動比較で感度0.81、特異度0.99。別の気胸確認ではNLP感度1.00対退院会計コード0.17、特異度は双方0.996。肺癌の右左比3:2など既報との一致も報告した。
-- Novelty: 小標本の抽出評価に加え、大規模な文章由来データの内的・外的な整合性を検証した。
-- Limitations: 編者の注意: 疫学的な傾向の一致は各記録の正確さを保証しない。単施設の画像報告書が対象であり、実画像の診断や未記録疾患の検出を行うものではない。
-- Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2002 Jul。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/12091676/
-
 ### Paper: External validation is necessary in prediction research: a clinical example
 - Source: PubMed
 - Canonical ID: pmid:14505766
@@ -1865,7 +1895,7 @@
 - Data and results: AUCは開発データで0.83、bootstrap補正で0.76、外部では0.57。外部AUCの95%CIは0.47–0.67だった。
 - Novelty: 内部の楽観性補正と、新しい状況への移植性の検証が同じではないと臨床例で示した。
 - Limitations: 著者は比較的小さなデータでの例とする。編者の注意: 1モデルの事例であり、bootstrapが常に無用という結論ではなく、外部の分布変化は別に確認すべき問題である。
-- Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2003 Sep。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/14505766/
+- Publication date note: 判明した巻号年月: 2003 Sep。PubMedは刊行年月のみ。今回の出版社資料の照合でも日単位の公開日を確認できなかった。便宜的な月初日や索引登録日は採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/14505766/ ; https://doi.org/10.1016/s0895-4356(03)00207-5
 
 ### Paper: The interaction of domain knowledge and linguistic structure in natural language processing: interpreting hypernymic propositions in biomedical text
 - Source: PubMed
@@ -1880,22 +1910,7 @@
 - Data and results: Chemicals and Drugs意味グループに基づく予備評価で適合率83%。要旨に標本数や再現率はなく、誤り分析と改善案を報告する。
 - Novelty: 言語的な構造だけでも辞書照合だけでもなく、医学概念の互換性と階層を統合して意味命題を解釈した。
 - Limitations: 編者の注意: 化学物質・薬剤の予備評価であり、臨床全域の関係抽出性能ではない。適合率のみから抽出漏れを判断できず、情報検索などの応用は提案段階。
-- Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2003 Dec。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/14759819/
-
-### Paper: Noninvasive brain-actuated control of a mobile robot by human EEG
-- Source: PubMed
-- Canonical ID: pmid:15188874
-- Publication date: 未記載
-- URL: https://pubmed.ncbi.nlm.nih.gov/15188874/
-- read_level: abstract
-- Tags: 基礎文献, 医療・生体信号・創薬AI
-- Summary: 非侵襲EEGの3状態分類とロボット側の自律性を組み合わせ、室間の移動制御を実演した。
-- Objective: 遅いと考えられていた非侵襲信号でも、移動ロボットの複雑な動きを制御できるか調べる。
-- Methods: 非同期EEG解析と機械学習で3つの精神状態を認識し、高度なロボティクスと統合。2人が思考のみで複数の部屋を移動させ、手動制御と比較した。
-- Data and results: 2被験者が移動を達成し、手動制御との性能比0.74を報告。要旨に比の詳細な定義、所要時間、試行数はない。
-- Novelty: 連続した低位の運動指令を脳から送る代わりに、EEGの少数状態とロボット制御を組み合わせた。
-- Limitations: 編者の注意: 2人の実演であり、患者集団や屋外環境の一般的な実用性は未検証。0.74を分類精度74%へ読み替えない。
-- Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2004 Jun。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/15188874/
+- Publication date note: 判明した巻号年月: 2003 Dec。PubMedは刊行年月のみ。今回の出版社資料の照合でも日単位の公開日を確認できなかった。便宜的な月初日や索引登録日は採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/14759819/ ; https://doi.org/10.1016/j.jbi.2003.11.003
 
 ### Paper: Substantial effective sample sizes were required for external validation studies of predictive logistic regression models
 - Source: PubMed
@@ -1910,7 +1925,7 @@
 - Data and results: 予測oddsが平均1.5倍過大な場合の検出に111イベント、C統計量0.83→0.73の低下には81–106イベントを要した。最低100イベント・100非イベントを目安とした。
 - Novelty: 外部検証の標本数を、検出したいモデルの不適合とイベント数から考える枠組みを示した。
 - Limitations: 著者も仮説次第でさらに大きな標本が必要とする。編者の注意: 100/100は当時の具体的な設定の目安で、すべての校正・部分集団評価に十分な万能基準ではない。
-- Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2005 May。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/15845334/
+- Publication date note: 判明した巻号年月: 2005 May。PubMedは刊行年月のみ。今回の出版社資料の照合でも日単位の公開日を確認できなかった。便宜的な月初日や索引登録日は採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/15845334/ ; https://doi.org/10.1016/j.jclinepi.2004.06.017
 
 ### Paper: Spatio-spectral filters for improving the classification of single trial EEG
 - Source: PubMed
@@ -1925,22 +1940,7 @@
 - Data and results: 試行あたりのbitsで測る情報伝達率が改善し、より頑健な分類を報告。要旨に被験者数、分類精度、改善量はない。
 - Novelty: 空間フィルタだけでなく、時間遅延を介して周波数選択もデータから調整する方向を示した。
 - Limitations: 編者の注意: 想像運動の特定EEG実験での検証であり、全BCI課題の性能を示さない。個別調整の必要量と新規被験者への汎化は別途確認が必要。
-- Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2005 Sep。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/16189967/
-
-### Paper: Improving case definition of Crohn's disease and ulcerative colitis in electronic medical records using natural language processing: a novel informatics approach
-- Source: PubMed
-- Canonical ID: pmid:23567779
-- Publication date: 未記載
-- URL: https://pubmed.ncbi.nlm.nih.gov/23567779/
-- read_level: abstract
-- Tags: 基礎文献, 医療・生体信号・創薬AI
-- Summary: 炎症性腸疾患の症例同定に、診断コードと診療ノートのNLP特徴を組み合わせた。
-- Objective: 行政コードだけでは一貫しなかったCrohn病・潰瘍性大腸炎のEHR上の症例定義を改善する。
-- Methods: 2大学施設でICD-9コードを持つ患者を抽出し、各疾患600人の記録レビューを基準に開発・検証。コード・処方・文章特徴をadaptive LASSO回帰で選択した。
-- Data and results: 確認症例はCrohn病399人、潰瘍性大腸炎378人。統合AUC0.95・0.94に対しコードのみ0.89・0.86。同じ精度で6–12%多くの患者を分類できた。
-- Novelty: コード化データと自由記載を相補的に使い、研究コホートの症例数と精度を両立した。
-- Limitations: 編者の注意: 既に少なくとも1つ診断コードがある集団の症例同定であり、一般集団での新規診断や発症予測ではない。コードのない症例の捕捉性能は分からない。
-- Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2013 Jun。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/23567779/
+- Publication date note: 判明した巻号年月: 2005 Sep。PubMedは刊行年月のみ。今回の出版社資料の照合でも日単位の公開日を確認できなかった。便宜的な月初日や索引登録日は採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/16189967/ ; https://doi.org/10.1109/tbme.2005.851521
 
 ### Paper: MySurgeryRisk: Development and Validation of a Machine-learning Risk Algorithm for Major Complications and Death After Surgery
 - Source: PubMed
@@ -1955,7 +1955,7 @@
 - Data and results: 合併症のAUCは0.82–0.94、術後1・3・6・12・24か月の死亡は0.77–0.83。要旨は99%信頼区間も報告する。
 - Novelty: 個別の術後リスク評価を、既存の術前診療情報から自動で複数転帰へ拡張した。
 - Limitations: 著者は実時間の臨床業務への導入可能性に追加検証が必要とする。編者の注意: 単施設での識別性能であり、手術方針変更の利益は評価していない。
-- Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2019 Apr。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/29489489/
+- Publication date note: 判明した巻号年月: 2019 Apr。PubMedは刊行年月のみ。今回の出版社資料の照合でも日単位の公開日を確認できなかった。出版社本文の取得はアクセス制限で不可。便宜的な月初日や索引登録日は採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/29489489/ ; https://doi.org/10.1097/sla.0000000000002706
 
 ### Paper: Predicting Pressure Injury in Critical Care Patients: A Machine-Learning Model
 - Source: PubMed
@@ -1970,7 +1970,7 @@
 - Data and results: ステージ1以上は516人（8.1%）、2以上は257人（4.0%）。両モデルのテストAUROCは0.79だった。
 - Novelty: Braden尺度などへの追加入力を必要とせず、すでにEHRにある情報でリスクを計算する。
 - Limitations: 著者は独立標本での検証と特異度を調整する校正を次の課題とする。編者の注意: 予防用ベッドを割り当てた際の褥瘡減少は検証していない。
-- Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2018 Nov。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/30385537/
+- Publication date note: 判明した巻号年月: 2018 Nov。PubMedは刊行年月のみ。今回の出版社資料の照合でも日単位の公開日を確認できなかった。便宜的な月初日や索引登録日は採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/30385537/ ; https://doi.org/10.4037/ajcc2018525
 
 ### Paper: GRAM: Graph-based Attention Model for Healthcare Representation Learning
 - Source: PubMed
@@ -1985,11 +1985,13 @@
 - Data and results: 希少な疾患の予測精度を10%改善。心不全では1桁少ない学習データでAUROCを3%改善と要旨は報告し、下位概念のデータ不足時に上位概念を利用する挙動を示した。
 - Novelty: 知識階層を固定特徴として加えるだけでなく、データ量に応じて概念の抽象度を学習する。
 - Limitations: 編者の注意: 精度・AUROCの%は原著表記で、絶対ポイントに変換しない。オントロジーとの整合は臨床上の因果説明や安全な介入を保証しない。
-- Publication date note: 日単位の公開日は一次書誌に未記録。巻号の刊行年月は 2017 Aug。索引登録日や便宜的な月初日は公開日として採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/33717639/
+- Publication date note: 判明した巻号年月: 2017 Aug。PubMedは刊行年月のみ。今回の出版社資料の照合でも日単位の公開日を確認できなかった。ACMページは取得制限があり、会期を公開日へ流用しない。便宜的な月初日や索引登録日は採用しない。出典: https://pubmed.ncbi.nlm.nih.gov/33717639/ ; https://doi.org/10.1145/3097983.3098126
 
 <!-- PAPER_IDS -->
 pmid:7702231
+pmid:12091676
 pmid:15187068
+pmid:15188874
 pmid:15845847
 pmid:16359928
 pmid:18031824
@@ -2000,6 +2002,7 @@ pmid:22400967
 pmid:22397946
 pmid:22934236
 pmid:23496923
+pmid:23567779
 pmid:23842533
 pmid:25179855
 pmid:25441703
@@ -2117,13 +2120,10 @@ pmid:38713466
 pmid:39039250
 pmid:39232164
 pmid:39466245
-pmid:12091676
 pmid:14505766
 pmid:14759819
-pmid:15188874
 pmid:15845334
 pmid:16189967
-pmid:23567779
 pmid:29489489
 pmid:30385537
 pmid:33717639
