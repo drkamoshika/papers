@@ -272,6 +272,11 @@
       "source_url": "https://arxiv.org/abs/2610.06156",
       "basis": "arxiv-v1"
     },
+    "arxiv:2610.37684": {
+      "date": "2026-10-13",
+      "source_url": "https://arxiv.org/abs/2610.37684",
+      "basis": "arxiv-v1"
+    },
     "arxiv:2611.01527": {
       "date": "2026-11-01",
       "source_url": "https://arxiv.org/abs/2611.01527",
@@ -1272,6 +1277,11 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42957896/",
       "basis": "pubmed-article-electronic"
     },
+    "pmid:42967232": {
+      "date": "2026-11-01",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42967232/",
+      "basis": "pubmed-article-electronic"
+    },
     "pmid:42980310": {
       "date": "2026-11-04",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42980310/",
@@ -1286,6 +1296,16 @@
       "date": "2026-11-04",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42982942/",
       "basis": "pubmed-article-electronic"
+    },
+    "pmid:42984375": {
+      "date": "2026-11-12",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42984375/",
+      "basis": "pubmed-journal-issue"
+    },
+    "pmid:42985999": {
+      "date": "2026-11-12",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42985999/",
+      "basis": "pubmed-journal-issue"
     },
     "pmid:42987417": {
       "date": "2026-11-05",

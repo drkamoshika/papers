@@ -5474,6 +5474,102 @@
       "limitations": "単なる医師の判断模倣は臨床的に真に最適な診断を意味しない。オーダー推薦の精度は限定的で、現場介入試験は未実施。",
       "why": "医師の集合的意思決定を模倣学習に転換し、識別性能だけでなく校正・臨床判断との同等性で評価する構成。",
       "details": "Publication date: 2026-09-24\nread_level: abstract\nTags: ['imitation learning', 'clinical decision support', 'calibration']\nSummary: 医師の実際の診断・指示行動を教師信号に用い、専門家が確定した正解ラベルを作らずに多診断の支援モデルを構築。\nObjective: 診断正解ラベルの収集困難と対象疾患の狭さを克服し、現場の判断に近い推薦を学習する。\nMethods: 65歳以上のプライマリケアEHRで構造化・非構造化入力から多ラベル神経ネットを学習。時期を分けたテストと無作為化・盲検の同等性評価を実施。診断669種、オーダー1000種を扱う。\nData and results: 707,598受診を利用。診断micro c-statistic 0.995・macro F1 0.384・ICI 0.0025。オーダーmicro c-statistic 0.812・macro F1 0.0286・ICI 0.0145。診断不一致は医師実践と統計的に同等、オーダーは同等でなかった。\nNovelty: 医師の集合的意思決定を模倣学習に転換し、識別性能だけでなく校正・臨床判断との同等性で評価する構成。\nLimitations: 単なる医師の判断模倣は臨床的に真に最適な診断を意味しない。オーダー推薦の精度は限定的で、現場介入試験は未実施。"
+    },
+    {
+      "title": "An Introduction to Large Language Models for Scientists and Professionals",
+      "report": "reports/daily/2026-11-16.md",
+      "reportDate": "2026-11-16",
+      "source": "arXiv",
+      "id": "arxiv:2610.37684",
+      "date": "2026-10-13",
+      "url": "https://arxiv.org/abs/2610.37684",
+      "read_level": "abstract",
+      "tags": [
+        "LLM",
+        "科学研究",
+        "RAG",
+        "評価"
+      ],
+      "summary": "科学者・専門職向けにLLMの基本、検索拡張、エージェント、検証と安全性を体系化した講義資料。",
+      "objective": "LLMの仕組みと科学的利用の限界を非専門家にも説明する。",
+      "methods": "トークン化、埋め込み、推論、RAG、ツール利用を概説し、OllamaとOpen WebUIによる論文検索演習を示す。",
+      "results": "実証的な比較実験・定量結果は未記載。教育的解説書。",
+      "novelty": "検索結果の出典照合、不確実性、研究間の不一致を扱う実践演習を重視。",
+      "limitations": "新規アルゴリズムの検証研究ではなく、モデル性能改善の根拠にはならない。",
+      "why": "検索結果の出典照合、不確実性、研究間の不一致を扱う実践演習を重視。",
+      "details": "Publication date: 2026-10-13\nread_level: abstract\nTags: ['LLM', '科学研究', 'RAG', '評価']\nSummary: 科学者・専門職向けにLLMの基本、検索拡張、エージェント、検証と安全性を体系化した講義資料。\nObjective: LLMの仕組みと科学的利用の限界を非専門家にも説明する。\nMethods: トークン化、埋め込み、推論、RAG、ツール利用を概説し、OllamaとOpen WebUIによる論文検索演習を示す。\nData and results: 実証的な比較実験・定量結果は未記載。教育的解説書。\nNovelty: 検索結果の出典照合、不確実性、研究間の不一致を扱う実践演習を重視。\nLimitations: 新規アルゴリズムの検証研究ではなく、モデル性能改善の根拠にはならない。"
+    },
+    {
+      "title": "From Generative Molecular Design to Agentic Artificial Intelligence in Drug Discovery",
+      "report": "reports/daily/2026-11-16.md",
+      "reportDate": "2026-11-16",
+      "source": "PubMed",
+      "id": "pmid:42984375",
+      "date": "2026-11-12",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42984375/",
+      "read_level": "abstract",
+      "tags": [
+        "創薬",
+        "生成AI",
+        "エージェント",
+        "レビュー"
+      ],
+      "summary": "分子生成モデルからエージェント型AIへの創薬研究の展開と、モデル理解・実装上の課題を論じるレビュー。",
+      "objective": "初期創薬のAI技術の可能性と課題を整理する。",
+      "methods": "標的評価、低分子・生物製剤設計、生成モデルと人間・機械協働に関する文献レビュー。",
+      "results": "定量的な統合効果量や臨床評価結果は未記載。",
+      "novelty": "分子生成とエージェント型計算システムを連続的な研究課題として整理する点。",
+      "limitations": "レビューであり、エージェント型AIの優位性を直接検証する比較試験ではない。",
+      "why": "分子生成とエージェント型計算システムを連続的な研究課題として整理する点。",
+      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: ['創薬', '生成AI', 'エージェント', 'レビュー']\nSummary: 分子生成モデルからエージェント型AIへの創薬研究の展開と、モデル理解・実装上の課題を論じるレビュー。\nObjective: 初期創薬のAI技術の可能性と課題を整理する。\nMethods: 標的評価、低分子・生物製剤設計、生成モデルと人間・機械協働に関する文献レビュー。\nData and results: 定量的な統合効果量や臨床評価結果は未記載。\nNovelty: 分子生成とエージェント型計算システムを連続的な研究課題として整理する点。\nLimitations: レビューであり、エージェント型AIの優位性を直接検証する比較試験ではない。"
+    },
+    {
+      "title": "Machine Learning Classification of Bipolar Disorder Across Mood States Using Natural Language Processing and Speech Analysis: Observational Study",
+      "report": "reports/daily/2026-11-16.md",
+      "reportDate": "2026-11-16",
+      "source": "PubMed",
+      "id": "pmid:42967232",
+      "date": "2026-11-01",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42967232/",
+      "read_level": "abstract",
+      "tags": [
+        "医療AI",
+        "音声",
+        "NLP",
+        "精神医学"
+      ],
+      "summary": "発話の言語・音響特徴を用いて双極性障害の診断および気分状態分類を検討した観察研究。",
+      "objective": "双極性障害と健常対照、さらに気分状態間の識別可能性を調べる。",
+      "methods": "観察研究。言語特徴と音響特徴を用いる機械学習分類と状態間の特徴比較。前向き・後ろ向きの区分は確認範囲で未記載。",
+      "results": "サンプル数、主要評価指標の数値、外部検証の有無は確認範囲で未記載。",
+      "novelty": "診断だけでなく病相間の違いを音声と言語から調べる点。",
+      "limitations": "観察研究であり、臨床導入に必要な外部検証・前向き評価は確認できない。",
+      "why": "診断だけでなく病相間の違いを音声と言語から調べる点。",
+      "details": "Publication date: 2026-11-01\nread_level: abstract\nTags: ['医療AI', '音声', 'NLP', '精神医学']\nSummary: 発話の言語・音響特徴を用いて双極性障害の診断および気分状態分類を検討した観察研究。\nObjective: 双極性障害と健常対照、さらに気分状態間の識別可能性を調べる。\nMethods: 観察研究。言語特徴と音響特徴を用いる機械学習分類と状態間の特徴比較。前向き・後ろ向きの区分は確認範囲で未記載。\nData and results: サンプル数、主要評価指標の数値、外部検証の有無は確認範囲で未記載。\nNovelty: 診断だけでなく病相間の違いを音声と言語から調べる点。\nLimitations: 観察研究であり、臨床導入に必要な外部検証・前向き評価は確認できない。"
+    },
+    {
+      "title": "Coiled Coils as a Programmable Platform for Computational Biosensor Design",
+      "report": "reports/daily/2026-11-16.md",
+      "reportDate": "2026-11-16",
+      "source": "PubMed",
+      "id": "pmid:42985999",
+      "date": "2026-11-12",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42985999/",
+      "read_level": "abstract",
+      "tags": [
+        "バイオセンサー",
+        "タンパク質設計",
+        "機械学習",
+        "レビュー"
+      ],
+      "summary": "コイルドコイルの配列・構造規則を利用したプログラム可能なバイオセンサー設計を整理するレビュー。",
+      "objective": "高選択性・高親和性の分子認識部品を計算的に設計する方法を整理する。",
+      "methods": "合理的設計、実験的最適化、機械学習・AIによるタンパク質設計を比較する文献レビュー。",
+      "results": "統一ベンチマークによる性能値は未記載。",
+      "novelty": "分子認識とスイッチング機構を設計可能な部品として捉える視点。",
+      "limitations": "原著の比較実験ではなく、応用別の性能一般化はできない。",
+      "why": "分子認識とスイッチング機構を設計可能な部品として捉える視点。",
+      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: ['バイオセンサー', 'タンパク質設計', '機械学習', 'レビュー']\nSummary: コイルドコイルの配列・構造規則を利用したプログラム可能なバイオセンサー設計を整理するレビュー。\nObjective: 高選択性・高親和性の分子認識部品を計算的に設計する方法を整理する。\nMethods: 合理的設計、実験的最適化、機械学習・AIによるタンパク質設計を比較する文献レビュー。\nData and results: 統一ベンチマークによる性能値は未記載。\nNovelty: 分子認識とスイッチング機構を設計可能な部品として捉える視点。\nLimitations: 原著の比較実験ではなく、応用別の性能一般化はできない。"
     }
   ]
 }
