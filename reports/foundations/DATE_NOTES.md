@@ -23,3 +23,9 @@
 | [GRAM: Graph-based Attention Model for Healthcare Representation Learning](https://github.com/drkamoshika/papers/blob/main/reports/foundations/04-medical.md) | 2017 Aug | PubMedは年月のみ。出版社照合でも日精度を確定できず。ACM取得制限。会期を転用しない。 [一次資料](https://pubmed.ncbi.nlm.nih.gov/33717639/) |
 
 正式な日付を確認できた場合に限って更新する。残件は「未調査の論文」ではなく、公開日の精度が未確定な書誌事項である。
+
+
+## 追加2分野の日単位の公開日が未確認の文献
+
+| 論文 | 未確認の理由・判明範囲 | 一次資料 |
+|---|---|---|

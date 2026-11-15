@@ -1,11 +1,11 @@
 {
-  "main_selected_unique": 556,
-  "main_published_unique": 556,
+  "main_selected_unique": 762,
+  "main_published_unique": 576,
   "appendix_unique": 12,
-  "total_published_unique": 568,
-  "remaining_main_unique": 0,
+  "total_published_unique": 588,
+  "remaining_main_unique": 186,
   "full_text_unique": 36,
-  "abstract_only_unique": 532,
+  "abstract_only_unique": 552,
   "completed_with_unknown_exact_date": 15,
   "document_counts": {
     "01-language.md": 101,
@@ -13,7 +13,9 @@
     "03-trust.md": 104,
     "04-medical.md": 139,
     "05-structured.md": 119,
-    "00-prehistory.md": 12
+    "00-prehistory.md": 12,
+    "06-next-event.md": 20,
+    "07-neuroscience.md": 0
   },
   "groups": {
     "language": {
@@ -40,7 +42,34 @@
       "selected": 119,
       "published": 119,
       "remaining": 0
+    },
+    "events": {
+      "selected": 100,
+      "published": 20,
+      "remaining": 80
+    },
+    "neuro": {
+      "selected": 106,
+      "published": 0,
+      "remaining": 106
     }
   },
-  "content_field_issues": []
+  "content_field_issues": [],
+  "expansion_2026_11_15": {
+    "selected": 206,
+    "published": 20,
+    "remaining": 186,
+    "groups": {
+      "events": {
+        "selected": 100,
+        "published": 20,
+        "remaining": 80
+      },
+      "neuro": {
+        "selected": 106,
+        "published": 0,
+        "remaining": 106
+      }
+    }
+  }
 }
