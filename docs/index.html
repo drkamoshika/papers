@@ -57,7 +57,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid 
     <button type="button" class="collection-tab" data-collection="" aria-pressed="false">両方</button>
   </nav>
   <p class="collection-note" id="collection-note">定期レポートで紹介した新着論文を掲載しています。</p>
-  <section class="field-panel" aria-labelledby="field-heading">
+  <section class="field-panel" id="field-panel" aria-labelledby="field-heading" hidden>
     <h3 class="field-heading" id="field-heading">基礎文献の分野</h3>
     <nav class="field-filters" id="field-filters" aria-label="分野で絞り込む"></nav>
     <p class="field-note" id="field-note">分野を読み込み中...</p>
@@ -100,7 +100,7 @@ const initialCollection = initialParams.get("collection");
 let papers = [], selected = null, sourceFilter = "", collectionLoadWarning = "";
 let collectionFilter = initialCollection === "all" ? "" : initialCollection === "foundations" ? "foundations" : "daily";
 let fieldFilter = fieldDefinitions.some(f=>f.key===initialParams.get("field")) ? initialParams.get("field") : "";
-if(fieldFilter && collectionFilter === "daily") collectionFilter = "foundations";
+if(fieldFilter && collectionFilter !== "foundations") collectionFilter = "foundations";
 const $ = id => document.getElementById(id);
 const tagList = p => Array.isArray(p.tags) ? p.tags : String(p.tags || "").split(",").map(s => s.trim()).filter(Boolean);
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -129,7 +129,7 @@ function syncUrl() {
 }
 function chooseField(key) {
   fieldFilter = key;
-  if(key && collectionFilter === "daily") { collectionFilter="foundations"; sourceFilter=""; }
+  if(key && collectionFilter !== "foundations") { collectionFilter="foundations"; sourceFilter=""; }
   renderList();
 }
 $("field-filters").innerHTML = [{key:"",label:"すべての分野"},...fieldDefinitions].map(f=>
@@ -161,6 +161,7 @@ function compareDate(a,b,key,descending) {
   return (descending ? db.localeCompare(da) : da.localeCompare(db)) || a.title.localeCompare(b.title);
 }
 function renderList() {
+  $("field-panel").hidden = collectionFilter !== "foundations";
   const q = $("search").value.trim().toLowerCase(), sort=$("sort").value;
   const base = papers.filter(p => hasCollection(p,collectionFilter));
   const fieldBase = base.filter(p=>hasField(p,fieldFilter));
@@ -196,9 +197,7 @@ function renderList() {
     e.querySelector(".field-count").textContent=fieldCountsBase.filter(p=>hasField(p,e.dataset.filterField)).length;
   }
   for(const e of $("detail").querySelectorAll("[data-detail-field]")) e.setAttribute("aria-pressed",String(e.dataset.detailField===fieldFilter));
-  $("field-note").textContent = collectionFilter === "daily" ?
-    "分野を選ぶと、基礎文献に切り替えて絞り込みます。複数分野の論文はそれぞれに含まれます。" :
-    "分野ラベルで絞り込み、検索・出典と組み合わせられます。複数分野の論文はそれぞれの件数に含まれます。";
+  $("field-note").textContent = "分野ラベルで絞り込み、検索・出典と組み合わせられます。複数分野の論文はそれぞれの件数に含まれます。";
   $("collection-note").innerHTML = collectionFilter === "foundations" ?
     '最新研究の前提となる手法・評価・研究の転換点をまとめています。<a href="'+repo+'reports/foundations/README.md" target="_blank" rel="noopener noreferrer">研究の流れと読み順 ↗</a>' :
     collectionFilter === "daily" ? '定期レポートで紹介した新着論文を掲載しています。' : '新着論文と基礎文献をまとめて検索できます。';
@@ -207,7 +206,7 @@ function renderList() {
 }
 for (const e of document.querySelectorAll("[data-collection]")) e.onclick = () => {
   collectionFilter=e.dataset.collection; sourceFilter="";
-  if(collectionFilter === "daily") fieldFilter="";
+  if(collectionFilter !== "foundations") fieldFilter="";
   renderList();
 };
 for (const e of document.querySelectorAll("[data-source]")) e.onclick = () => {sourceFilter=e.dataset.source;renderList()};
