@@ -5,7 +5,7 @@
 
 ## ダイジェスト
 
-選定139件中、以下は原著照合・編集確認を終えた66件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
+選定139件中、以下は原著照合・編集確認を終えた100件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
 
 研究の流れと2026年論文との接続は [文献集の案内](README.md) を参照。
 
@@ -39,6 +39,48 @@
 - Novelty: 単語にコードを貼るだけでなく、構造化された臨床所見と関連修飾をコード化へ接続した。
 - Limitations: 編者の注意: 再現率・適合率は異なる文集合で測定され、文書全体の正確さとは異なる。辞書にコードがない用語の扱いと他施設への適用は別途検討が必要。
 
+### Paper: Causal protein-signaling networks derived from multiparameter single-cell data
+- Source: PubMed
+- Canonical ID: pmid:15845847
+- Publication date: 2005-04-22
+- URL: https://pubmed.ncbi.nlm.nih.gov/15845847/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 単一細胞の多項目測定と分子介入から、シグナル伝達の因果ネットワークを推定した。
+- Objective: 細胞内経路の方向付きの影響を、個別の既知経路に限定せずデータから再構成する。
+- Methods: 数千の一次ヒト免疫細胞で複数のリン酸化タンパク質・リン脂質を同時計測。分子介入の情報とベイズネットワークを使い、経路の結び付きを推定した。
+- Data and results: 既報の関係の多くを回復し、新しい経路間の因果関係を予測して実験確認した。要旨に辺ごとの精度や測定項目数はない。
+- Novelty: 集団平均の相関ではなく、単一細胞の多変量分布と介入を因果探索へ接続した代表例。
+- Limitations: 編者の注意: 因果解釈は介入の特異性、測定した変数、ネットワーク仮定に依存する。免疫細胞の条件下での結果を全組織・全シグナルへ一般化しない。
+
+### Paper: Natural language processing to extract medical problems from electronic clinical documents: performance evaluation
+- Source: PubMed
+- Canonical ID: pmid:16359928
+- Publication date: 2005-12-05
+- URL: https://pubmed.ncbi.nlm.nih.gov/16359928/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: MetaMapと否定検出から問題リスト候補を抽出し、施設用語への調整の効果を測った。
+- Objective: 診療文章から病態を拾い、患者の問題リストをより完全で新しい状態に保つ。
+- Methods: UMLS MetaMap Transfer（MMTx）とNegExを使い、施設で頻用される80の問題を抽出。既定の辞書データと用途に絞った独自サブセットを比較した。
+- Data and results: 既定では再現率0.740、適合率0.756。独自サブセットで速度が上がり、再現率は0.896へ有意に改善、適合率の低下は非有意だった。
+- Novelty: 概念辞書と否定文の解釈を組み合わせ、施設に合わせた語彙範囲の調整が有効と示した。
+- Limitations: 編者の注意: 対象は施設で選んだ80病態で、自由な全疾患抽出ではない。問題リスト候補の抽出性能と、医師が承認した最終リストの正確さは異なる。
+
+### Paper: Automatic classification of artifactual ICA-components for artifact removal in EEG signals
+- Source: PubMed
+- Canonical ID: pmid:21810266
+- Publication date: 2011-08-02
+- URL: https://pubmed.ncbi.nlm.nih.gov/21810266/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: ICAで分けたEEG成分を6特徴の線形分類器で判定し、アーチファクト除去を自動化した。
+- Objective: 目・筋由来などの妨害成分を、人や電極配置が変わっても取り除く。
+- Methods: TDSEPで成分分離し、周波数・空間・時間特徴からLPMで選択。12人の640注釈成分で学習、1,080成分でテストし、別ERP18人とBCI80人でも汎化を評価した。
+- Data and results: 6特徴だけで専門家間の不一致の水準に近い性能を報告。異なる研究・電極設定でも動作したが、要旨の数値結果は一部欠落しており誤り率は補わない。
+- Novelty: 個人のアーチファクト専用記録に依存せず、解釈しやすい少数の線形特徴で成分を選別した。
+- Limitations: 編者の注意: 成分の判定一致は、必要な脳信号を失わない保証ではない。適用先での電極、課題、専門家ラベルの差を点検する必要がある。
+
 ### Paper: Automated identification of postoperative complications within an electronic medical record using natural language processing
 - Source: PubMed
 - Canonical ID: pmid:21862746
@@ -52,6 +94,34 @@
 - Data and results: 感度はNLP対コードで腎不全82%対38%、肺炎64%対5%、敗血症89%対34%、心筋梗塞91%対89%。双方とも高い特異度だが、NLPは相対的に低かった。
 - Novelty: 診断コードに記録されにくい合併症を、文章を使う追加監視経路で捕捉した。
 - Limitations: 編者の注意: 過去の合併症を同定する研究であり、発症前の予測ではない。VHAの記録に基づく感度向上と、特異度低下・確認作業の増加を併せて評価する必要がある。
+
+### Paper: Fast and accurate modeling of molecular atomization energies with machine learning
+- Source: PubMed
+- Canonical ID: pmid:22400967
+- Publication date: 2012-01-31
+- URL: https://pubmed.ncbi.nlm.nih.gov/22400967/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 核電荷と原子位置から分子の原子化エネルギーを回帰し、量子計算を近似した初期研究。
+- Objective: 分子のSchrödinger方程式を毎回解く代わりに、低い計算負担でエネルギーを推定する。
+- Methods: 有機分子の幾何と元素情報を入力し、hybrid密度汎関数理論による原子化エネルギーを非線形回帰で学習。7,000超の分子で交差検証した。
+- Data and results: 平均絶対誤差は約10kcal/mol。分子の原子化ポテンシャルエネルギー曲線の予測も示した。
+- Novelty: 量子化学の計算結果を分子間で学ぶ統計的な近似器へ置き換える方向を示した。
+- Limitations: 編者の注意: 正解も特定の密度汎関数計算であり、実験値への誤差と同じではない。学習外の元素・分子規模・構造での精度は別途必要。
+
+### Paper: The feasibility of using natural language processing to extract clinical information from breast pathology reports
+- Source: PubMed
+- Canonical ID: pmid:22934236
+- Publication date: 2012-06-30
+- URL: https://pubmed.ncbi.nlm.nih.gov/22934236/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 3施設の多数の乳房病理報告を構造化し、同じ診断や否定の多様な表現を分析した。
+- Objective: 自由記載の乳房病理情報を、研究や意思決定支援に使える形式へ変換できるか調べる。
+- Methods: 76,000超の報告をNLPで解析し、手術日・左右・記録番号で表へ整理。診断ごとの表現を調べ、専門家コードと感度・特異度を比較した。
+- Data and results: 浸潤性乳管癌の表現124通り、小葉癌95通り、乳管癌がない表現は4,000超。専門家との比較で感度99.1%、特異度96.5%だった。
+- Novelty: 大規模な複数施設の病理文章で、表現と否定の多様性を定量的に示しながら構造化した。
+- Limitations: 編者の注意: 要旨には性能評価用標本数や診断別誤差はない。全報告数をそのまま手動検証数と読み替えず、別施設の文章への適用は再評価が必要。
 
 ### Paper: Development and evaluation of a de-identification procedure for a case register sourced from mental health electronic records
 - Source: PubMed
@@ -80,6 +150,34 @@
 - Data and results: 索引付け12チーム46実行のうち1チームがNLMのMTIを継続的に上回った。QAは3チーム11実行で、ideal回答の手動評価が良好と報告。要旨に数値スコアはない。
 - Novelty: 索引、文書・断片・知識検索、短答、要約を、医学QAの一連の構成要素として共通評価した。
 - Limitations: 編者の注意: 初回競技の限られた質問と参加数の結果である。医学専門家向けQAの性能を患者への個別助言の安全性と同一視できない。
+
+### Paper: Challenges in clinical natural language processing for automated disorder normalization
+- Source: PubMed
+- Canonical ID: pmid:26187250
+- Publication date: 2015-07-14
+- URL: https://pubmed.ncbi.nlm.nih.gov/26187250/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: DNorm-Cは臨床文章の多様な疾患表現を抽出し、対応する標準概念へ正規化する。
+- Objective: 医学論文より臨床記録で疾患抽出・正規化が難しい理由と、語彙的な改善方法を調べる。
+- Methods: 語彙の豊かさを比較し、CRFで言及範囲を認識、pairwise learning to rankで語の変形と概念の対応を学習。ShARe/CLEF臨床文章で評価した。
+- Data and results: 範囲のみの厳密F1は0.753、範囲と概念の一致は0.672。改善は各0.039、0.036。認識誤りは正規化誤りの4倍超で、略語が頻繁な原因だった。
+- Novelty: 抽出と概念対応の誤りを分解し、臨床特有の語彙変動を学習する正規化法を提案した。
+- Limitations: 高再現率版では正規化再現率0.744に上がる一方、適合率が下がる。編者の注意: 標準語彙に概念がない例もあり、辞書照合だけで解消できる問題ではない。
+
+### Paper: Searching molecular structure databases with tandem mass spectra using CSI:FingerID
+- Source: PubMed
+- Canonical ID: pmid:26392543
+- Publication date: 2015-09-21
+- URL: https://pubmed.ncbi.nlm.nih.gov/26392543/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: CSI:FingerIDは質量スペクトルから分子指紋を推定し、構造データベースを検索する。
+- Objective: 未知の代謝物が多数残る非標的メタボローム解析で、小分子の同定を改善する。
+- Methods: tandem MSから観測を説明するfragmentation treeを作り、機械学習で構造fingerprintを予測。その指紋でPubChemなどの分子構造データベースを検索する。
+- Data and results: 計算による代謝物同定で競合法を大きく上回ったと報告。要旨に正解率、候補順位、標本数はない。
+- Novelty: スペクトルから直接構造を生成するのではなく、学習した構造指紋を介して既知構造候補を探索する。
+- Limitations: 編者の注意: 検索可能な候補データベースへの依存があり、候補にない分子の確定構造決定とは異なる。スペクトル条件や異性体の識別性能も確認が必要。
 
 ### Paper: Locality Sensitive Deep Learning for Detection and Classification of Nuclei in Routine Colon Cancer Histology Images
 - Source: PubMed
@@ -166,6 +264,20 @@
 - Limitations: 編者の注意: 12・18か月は入力する履歴の長さであり、予測の先行時間ではない。単一医療システムの症例対照設計で、実診療での陽性的中率や転帰改善は未検証。
 - Publication date note: 出版社PDFのAdvance Access Publication Dateを採用。巻号の2017年3月と区別する。出典: https://academic.oup.com/jamia/article/24/2/361/2631499
 
+### Paper: Molecular graph convolutions: moving beyond fingerprints
+- Source: PubMed
+- Canonical ID: pmid:27558503
+- Publication date: 2016-08-24
+- URL: https://pubmed.ncbi.nlm.nih.gov/27558503/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 分子を固定fingerprintへ変換する代わりに、グラフから特徴を学ぶ初期の畳み込み法。
+- Objective: 手設計の分子指紋が捨てる情報を減らし、予測に必要な構造特徴をデータから選ぶ。
+- Methods: 原子、結合、距離などを符号化した無向分子グラフにgraph convolutionを適用し、固定fingerprintを使う手法と比較した。
+- Data and results: 分子グラフからの表現学習の可能性を示す一方、すべてのfingerprint法を上回らないと明記。要旨にデータ数や指標値はない。
+- Novelty: 下流モデルだけを学ぶ枠組みから、分子構造の表現自体も学ぶグラフ学習へ移行した。
+- Limitations: 著者自身が固定fingerprintへの一律の優越性を否定する。編者の注意: 構造からの活性予測と、候補化合物の実験的な薬効確認は別である。
+
 ### Paper: Improved Automated Detection of Diabetic Retinopathy on a Publicly Available Dataset Through Integration of Deep Learning
 - Source: PubMed
 - Canonical ID: pmid:27701631
@@ -194,6 +306,20 @@
 - Novelty: 大規模な複数医師のラベルと独立画像群を使い、紹介判断に直結する動作点を評価した。
 - Limitations: 著者は臨床導入の実行可能性とケア・転帰改善の追加検証を求める。編者の注意: 評価可能な画像上の検出性能と、撮影不良を含む実運用の性能を区別する。
 - Publication date note: 著者所属機関が公開する出版社版PDFのPublished Online November 29, 2016を採用。12月13日の巻号・訂正日と区別。出典: https://storage.googleapis.com/gweb-research2023-media/pubtools/3679.pdf
+
+### Paper: Accurate De Novo Prediction of Protein Contact Map by Ultra-Deep Learning Model
+- Source: PubMed
+- Canonical ID: pmid:28056090
+- Publication date: 2017-01-05
+- URL: https://pubmed.ncbi.nlm.nih.gov/28056090/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 深い残差モデルで残基接触を予測し、相同配列が少ない場合の構造推定を改善した。
+- Objective: 従来の共進化解析で難しかった接触予測を、配列保存性との統合で高精度化する。
+- Methods: 1次元残差モデルで系列を変換し、その出力と進化カップリング・残基対情報を2次元残差モデルへ入力。CASP11、CAMEO難例、膜タンパク質の計579例で検証した。
+- Data and results: 上位Lの長距離接触精度は0.47、CCMpred0.21、MetaPSICOV0.30。接触制約でTM-score>0.6の折り畳みは203/579、比較法79・62例だった。
+- Novelty: 残基対を独立に扱わず、深い2次元モデルで接触パターンと系列・構造の関係を学んだ。
+- Limitations: 編者の注意: 接触の順位精度と完成構造の精度は異なる。正しい折り畳みは全例ではなく、相同配列が少なくても性能が不変という結果ではない。
 
 ### Paper: Natural language processing to extract symptoms of severe mental illness from clinical text: the Clinical Record Interactive Search Comprehensive Data Extraction (CRIS-CODE) project
 - Source: PubMed
@@ -251,6 +377,90 @@
 - Novelty: 核分割アルゴリズムに加え、汎化を促す公開注釈と統一した評価指標を揃えた。
 - Limitations: 編者の注意: 多様な収集元は汎化の期待を高めるが、任意のH&E画像で調整不要という保証ではない。注釈基準と臓器別誤差を確認する必要がある。
 
+### Paper: DeepSleepNet: A Model for Automatic Sleep Stage Scoring Based on Raw Single-Channel EEG
+- Source: PubMed
+- Canonical ID: pmid:28678710
+- Publication date: 2017-06-28
+- URL: https://pubmed.ncbi.nlm.nih.gov/28678710/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: DeepSleepNetは生の単一チャネルEEGから特徴と睡眠段階間の遷移を学習する。
+- Objective: 睡眠知識を使う手設計特徴を減らし、異なる記録条件でも自動睡眠判定を行う。
+- Methods: CNNで時間位置に依存しにくい特徴、双方向LSTMで段階遷移を学習し、2段階で訓練。異なる導出・標準を持つMASSとSleep-EDFで評価した。
+- Data and results: accuracy/macro-F1はMASS86.2%/81.7%、Sleep-EDF82.0%/76.9%。比較法は各85.9%/80.5%、78.9%/73.7%だった。
+- Novelty: 信号特徴と前後の睡眠段階の文脈を統合し、同じ構造・学習手順を複数データへ使った。
+- Limitations: 編者の注意: 同じ設計で各データを学習できることと、学習なしの機器間転移は異なる。双方向の文脈を使う処理を、未来情報なしの実時間判定と混同しない。
+
+### Paper: Deep learning with convolutional neural networks for EEG decoding and visualization
+- Source: PubMed
+- Canonical ID: pmid:28782865
+- Publication date: 2017-08-07
+- URL: https://pubmed.ncbi.nlm.nih.gov/28782865/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 生EEGから運動課題を読むCNNの学習法と、周波数・空間特徴の可視化を検討した。
+- Objective: 手設計の特徴を使わずEEGを識別し、モデルが何を利用したか理解できるようにする。
+- Methods: 想像・実行課題に複数CNN構造を比較し、batch normalization、ELU、cropped trainingの効果を評価。学習特徴を周波数帯と頭皮上の位置で可視化した。
+- Data and results: 平均分類accuracyはFBCSP82.1%、深層CNN84.0%。α・β・高γ帯のパワー変化をCNNが利用することを確認した。
+- Novelty: EEG向け学習設計と特徴可視化をセットにし、生信号の表現学習を従来法と比較した。
+- Limitations: 編者の注意: 運動関連課題の復号であり、疾患診断の精度ではない。モデル入力への寄与の可視化を、生物学的な脳機構の因果解明と同一視しない。
+
+### Paper: Challenges in adapting existing clinical natural language processing systems to multiple, diverse health care settings
+- Source: PubMed
+- Canonical ID: pmid:28419261
+- Publication date: 2017-09-01
+- URL: https://pubmed.ncbi.nlm.nih.gov/28419261/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 既存の内視鏡NLPを4つの医療環境へ移す作業で、想定以上の調整負担が生じた。
+- Objective: 臨床NLPの高精度な試作品を、異なる施設へ展開する際の障害を明らかにする。
+- Methods: 2013–2015年の内視鏡・病理報告を使い、地域、診療形態、報酬構造、EHRの異なる4環境で品質測定システムを適応した。
+- Data and results: 適応は成功したが、コーパス整備、報告形式、独特の表現の違いにより時間と労力が予想を大きく超えた。要旨には工数や精度の数値はない。
+- Novelty: 抽出器単体の性能より、実際の複数施設への移植過程と必要な組織知識を分析対象にした。
+- Limitations: 編者の注意: 1種類の品質測定用途の経験で、すべてのNLPの移植費用を定量化する研究ではない。著者は地域のEHR専門家、現実的な期間、反復開発の必要性を示す。
+
+### Paper: Deep convolutional neural network for the automated detection and diagnosis of seizure using EEG signals
+- Source: PubMed
+- Canonical ID: pmid:28974302
+- Publication date: 2017-09-27
+- URL: https://pubmed.ncbi.nlm.nih.gov/28974302/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 13層CNNでEEGを正常・発作前・発作に分類する自動解析を検討した。
+- Objective: 視覚的なEEG確認の負担と判定の変動を減らす、機械的な信号分類器を開発する。
+- Methods: EEG信号へ13層の深い畳み込みモデルを適用し、正常、preictal、seizureの3クラスを識別した。要旨に患者数や学習・テストの分割法はない。
+- Data and results: accuracy88.67%、specificity90.00%、sensitivity95.00%を報告。クラス別の詳細や患者間汎化は要旨から確認できない。
+- Novelty: 手作業の判別特徴に代わり、深層CNNをEEGの発作関連状態の分類に利用した。
+- Limitations: 編者の注意: 区間分類の性能を長時間の連続記録での発作予告・警報性能へ換算できない。患者独立分割と偽警報頻度が不明なため、臨床的な検出能力は確定しない。
+
+### Paper: MoleculeNet: a benchmark for molecular machine learning
+- Source: PubMed
+- Canonical ID: pmid:29629118
+- Publication date: 2017-10-31
+- URL: https://pubmed.ncbi.nlm.nih.gov/29629118/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: MoleculeNetは分子学習の公開データ、指標、基準実装を揃え、手法比較を標準化した。
+- Objective: 異なるデータで評価されていた分子予測法を、共通の条件で比較可能にする。
+- Methods: 複数の公開分子データを整備して評価指標を定め、既存の特徴量・学習法をDeepChemの実装として提供した。
+- Data and results: 学習可能な表現が広く高性能だった一方、少数データ・強いクラス不均衡では難しさが残る。量子・生物物理課題ではアルゴリズム選択より物理に即した特徴が重要な場合があった。
+- Novelty: 個別の分子モデル提案に加え、課題をまたいで特徴表現と学習器を比較する基盤を作った。
+- Limitations: 編者の注意: 要旨にデータセット数や具体的スコアはない。学習表現が常に最善とは結論しておらず、評価分割やデータの希少性を伴って比較する必要がある。
+
+### Paper: DeepLoc: prediction of protein subcellular localization using deep learning
+- Source: PubMed
+- Canonical ID: pmid:29036616
+- Publication date: 2017-11-01
+- URL: https://pubmed.ncbi.nlm.nih.gov/29036616/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: DeepLocはタンパク質の全配列を読み、細胞内の局在と膜結合性を予測する。
+- Objective: 注釈済み相同配列に頼れない新規タンパク質や配列変異でも、配列だけで性質を推定する。
+- Methods: RNNで全長配列を処理し、attentionで局在に重要な領域を捉える。厳しい基準で実験注釈を選んだUniProtデータで学習・評価した。
+- Data and results: 10カテゴリの局在accuracy78%、膜結合対可溶性92%。相同情報を使う手法を含む比較法を上回った。
+- Novelty: 相同タンパク質の注釈転写に代わり、全配列から局在を決める特徴を直接学ぶ。
+- Limitations: 編者の注意: 真核タンパク質の分類で、全生物種への成績ではない。attentionが示す領域を輸送機構の因果的証明とみなさず、実験注釈の偏りも考慮する。
+
 ### Paper: Fully Automated Detection and Quantification of Macular Fluid in OCT Using Deep Learning
 - Source: PubMed
 - Canonical ID: pmid:29224926
@@ -306,6 +516,20 @@
 - Data and results: AUCは後ろ向き0.917、前向き0.870。翌年の診断率は最低リスク層1.19%、最高リスク層50.93%で、実時間の予測モデルを州内で導入したと報告する。
 - Novelty: 州規模の共有記録と時間を分けた検証を使い、翌年発症リスクの運用を検討した。
 - Limitations: 編者の注意: 前向きの予測検証や導入は、介入の無作為試験とは異なる。利用頻度・社会経済指標の関連から高血圧の因果的要因を確定できない。
+
+### Paper: Using Clinical Notes and Natural Language Processing for Automated HIV Risk Assessment
+- Source: PubMed
+- Canonical ID: pmid:29084046
+- Publication date: 2018-02-01
+- URL: https://pubmed.ncbi.nlm.nih.gov/29084046/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: HIV診断前の記録にある行動・社会情報をNLPで加え、検査対象のリスク識別を改善した。
+- Objective: 構造化項目にない情報を診療ノートから取り出し、対象を絞るHIVスクリーニングに活用する。
+- Methods: 単施設で診断前に受診したHIV陽性181人と傾向スコアで選んだ陰性543人を比較。構造化データのみ、トピック追加、臨床キーワード追加の3モデルを作った。
+- Data and results: F値は構造化のみ0.59、トピック追加0.63、キーワード追加0.74。後者は性行動・薬物関連の記録と既存のリスク情報を利用した。
+- Novelty: 文章に偏在する社会・行動情報を取り込み、構造化EHRだけのリスク評価を補った。
+- Limitations: 編者の注意: 診断前でも記録に検査への疑いやHIVの言及が含まれ得る。症例対照評価のF値は一般集団での検査効率や公平性の保証ではない。
 
 ### Paper: CLAMP - a toolkit for efficiently building customized clinical natural language processing pipelines
 - Source: PubMed
@@ -476,6 +700,20 @@
 - Novelty: 系列単位の画像表現を検査単位へ統合し、外部移植と人との協働を含めて評価した。
 - Limitations: 著者は前向きの臨床有用性検証を求める。外部データは撮像系列も異なり、移植と再学習の成績を混同しない。医師が上回る感度・特異度の項目もあった。
 
+### Paper: Cardiologist-level arrhythmia detection and classification in ambulatory electrocardiograms using a deep neural network
+- Source: PubMed
+- Canonical ID: pmid:30617320
+- Publication date: 2019-01-07
+- URL: https://pubmed.ncbi.nlm.nih.gov/30617320/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 単誘導の携帯心電図から12種類のリズムを分類し、循環器医と同じテストで比較した。
+- Objective: 多数の不整脈をend-to-endで識別し、専門家による確認作業を支援する。
+- Methods: 53,549人の91,232単誘導ECGで深層モデルを開発。独立テストを循環器医委員会が合意判定し、平均AUC・F1と同じ特異度での感度を比較した。
+- Data and results: 平均AUC0.97、F1はモデル0.837対医師平均0.780。医師平均の特異度に固定すると、全リズムクラスでモデルの感度が高かった。
+- Novelty: 単一の不整脈検出にとどまらず、携帯単誘導ECGの広い診断群を同じモデルで評価した。
+- Limitations: 著者は臨床環境での確認を条件とする。編者の注意: 特定の携帯機器の単誘導記録で、12誘導や別機器、導入後の誤診減少を直接実証したわけではない。
+
 ### Paper: Real-time automatic detection system increases colonoscopic polyp and adenoma detection rates: a prospective randomised controlled study
 - Source: PubMed
 - Canonical ID: pmid:30814121
@@ -549,6 +787,20 @@
 
 本文の照合箇所: [Resultsの透析転帰・集団偏り、MethodsのData Description・Ground Truth Labels](https://pmc.ncbi.nlm.nih.gov/articles/PMC6722431/)。
 
+### Paper: An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction
+- Source: PubMed
+- Canonical ID: pmid:31378392
+- Publication date: 2019-08-01
+- URL: https://pubmed.ncbi.nlm.nih.gov/31378392/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 洞調律中の短い12誘導ECGから、心房細動を持つ患者を識別する研究。
+- Objective: 長時間のモニタリングを全員に行わず、追加検査の候補となる心房細動患者を見つける。
+- Methods: 成人180,922人の洞調律ECG649,931件を使い、心房細動・粗動記録の有無をラベル化。CNNを7:1:2の学習・検証・テストで評価した。
+- Data and results: 単一ECGのAUC0.87、感度79.0%、特異度79.5%、F1 39.2%。期間内の複数ECGを使うとAUC0.90、F1 45.4%へ改善した。
+- Novelty: 異常リズムが記録された瞬間だけでなく、正常リズムの信号に残る患者の特徴を利用した。
+- Limitations: 編者の注意: テスト陽性群には洞調律ECGより前に心房細動が確認された患者が含まれ、純粋な将来新規発症予測ではない。AUROCの高さと低いF1を併記して読む。
+
 ### Paper: MultiResUNet : Rethinking the U-Net architecture for multimodal biomedical image segmentation
 - Source: PubMed
 - Canonical ID: pmid:31536901
@@ -562,6 +814,20 @@
 - Data and results: 5データの相対改善は10.15%、5.07%、2.63%、1.41%、0.62%。理想的画像での改善は小さく、難しい画像で大きいと報告した。
 - Novelty: 共通のencoder–decoderを維持しつつ、難例の扱いを改善するU-Net拡張の一例を示した。
 - Limitations: 編者の注意: 改善率を絶対ポイントと読み替えない。要旨に指標名・データ別対応がなく、全課題で同じ幅の改善やU-Netの一般的な置換を主張できない。
+
+### Paper: Unified rational protein engineering with sequence-based deep representation learning
+- Source: PubMed
+- Canonical ID: pmid:31636460
+- Publication date: 2019-10-21
+- URL: https://pubmed.ncbi.nlm.nih.gov/31636460/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: UniRepは未ラベルのタンパク質配列から汎用表現を学び、機能・安定性の予測へ使った。
+- Objective: 配列に含まれる構造・進化・生物物理情報を、タンパク質工学で再利用可能な表現へまとめる。
+- Methods: 未ラベルのアミノ酸系列に深層学習を適用し、得た表現上に単純な予測器を構築。天然・新規設計の安定性と多様な変異体の定量的機能を評価した。
+- Data and results: 未経験の配列空間でも比較法に匹敵する予測を示し、1つの工学課題で2桁の効率改善を報告。要旨に対象数や各課題の絶対スコアはない。
+- Novelty: 課題ごとの専用特徴から、ラベルなし配列で学ぶ共通表現を多数の工学課題へ転用した。
+- Limitations: 編者の注意: 100倍相当の改善は特定課題の効率に関する結果で、全タンパク質の精度や実験数削減の保証ではない。機能確認には実験が残る。
 
 ### Paper: A data-driven approach to predicting diabetes and cardiovascular disease with machine learning
 - Source: PubMed
@@ -591,6 +857,20 @@
 - Novelty: 単独の抽出精度と関係分類精度を、実際の一連の抽出処理の精度と分けて比較した。
 - Limitations: 著者は局所文脈だけではReasonsやADEを見落とすと指摘し、広い文脈や外部知識の利用を提案。全体F1の高さを全概念の高性能と解釈できない。
 
+### Paper: Improved protein structure prediction using predicted interresidue orientations
+- Source: PubMed
+- Canonical ID: pmid:31896580
+- Publication date: 2020-01-02
+- URL: https://pubmed.ncbi.nlm.nih.gov/31896580/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: trRosettaにつながる手法は、残基間距離に向きの情報を加えて構造推定を改善した。
+- Objective: 共進化から得る残基対の幾何学情報を増やし、より速く正確な構造最適化を行う。
+- Methods: 深い残差モデルで距離と相対配向を予測し、Rosettaの制約付きエネルギー最小化で構造化。CASP13とCAMEO由来のセットで比較した。
+- Data and results: 比較した既報の構造予測法を上回った。天然タンパク質のみで学習したモデルが新規設計に高い確率を与え、折り畳みを決める残基の評価にも使えた。要旨に絶対スコアはない。
+- Novelty: 単なる接触・距離だけでなく、残基の配向を学習制約へ組み込み、予測と設計の評価へ接続した。
+- Limitations: 編者の注意: 計算上の構造・確率の評価は、新規タンパク質の機能や安定性の実験的保証ではない。既報との優越性は当時の比較対象とベンチマークに限る。
+
 ### Paper: Artificial intelligence for diagnosis and grading of prostate cancer in biopsies: a population-based, diagnostic study
 - Source: PubMed
 - Canonical ID: pmid:31926806
@@ -618,6 +898,34 @@
 - Data and results: 妊娠開始時AUROCは0.85、基準リスクスコアは0.68。9質問モデルは0.80。以前の妊娠時の糖負荷検査結果などが予測に寄与した。
 - Novelty: 妊娠初期の縦断履歴を活用し、時期・地域を分けた検証と簡易質問票への展開を行った。
 - Limitations: 著者は前向き研究と他集団の研究を求める。低リスク群で検査を省略しても安全か、母児の転帰が改善するかは予測精度だけでは示せない。
+
+### Paper: Improved protein structure prediction using potentials from deep learning
+- Source: PubMed
+- Canonical ID: pmid:31942072
+- Publication date: 2020-01-15
+- URL: https://pubmed.ncbi.nlm.nih.gov/31942072/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 初期AlphaFoldは残基間距離からポテンシャルを作り、勾配法で構造を求めた。
+- Objective: 接触の有無より豊かな距離情報を用い、複雑な標本探索なしにタンパク質構造を改善する。
+- Methods: 深層モデルで残基対の距離を予測して平均力ポテンシャルへ変換し、勾配降下で最適化。盲検のCASP13で比較した。
+- Data and results: free modellingの43ドメイン中24でTM-score≥0.7の高精度構造を得た。接触情報と探索を使う次点手法は14/43だった。
+- Novelty: 二値の残基接触から距離分布へ進み、学習した幾何学的制約を直接構造最適化へ使った。
+- Limitations: 編者の注意: CASP13の特定ドメイン群の結果であり、後年のAlphaFold2と同じ構造や精度ではない。高いTM-scoreも機能・動態の完全な再現を示さない。
+
+### Paper: A Deep Learning Approach to Antibiotic Discovery
+- Source: PubMed
+- Canonical ID: pmid:32084340
+- Publication date: 2020-02-20
+- URL: https://pubmed.ncbi.nlm.nih.gov/32084340/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 抗菌活性を予測する深層モデルからhalicinなどの候補を見つけ、実験へつなげた。
+- Objective: 既知抗菌薬と構造の異なる活性分子を、大規模な化合物空間から探索する。
+- Methods: 抗菌活性を学習したモデルで複数ライブラリを探索。Drug Repurposing Hubのhalicinをin vitro・マウス感染で検証し、ZINC15の1億700万超の分子もスクリーニングした。
+- Data and results: halicinは広い菌群で殺菌活性を示し、マウスのC. difficileと汎耐性A. baumannii感染を治療。ZINC15から選んだ23予測候補の実験で8抗菌化合物を得た。
+- Novelty: 既知薬に近い構造の探索だけでなく、予測モデルによる候補選別と生物学的検証を結び付けた。
+- Limitations: 編者の注意: 選択した23候補の結果を全ライブラリの的中率と扱わない。試験管・マウスでの活性であり、ヒトでの薬効・安全性や臨床使用を確立しない。
 
 ### Paper: Dynamic and explainable machine learning prediction of mortality in patients in the intensive care unit: a retrospective study of high-frequency data in electronic patient records
 - Source: PubMed
@@ -703,6 +1011,20 @@
 - Novelty: 大きな医学語彙の抽出と、現場の人が継続的に修正する運用環境を組み合わせた。
 - Limitations: 編者の注意: 公開データと実臨床データのF1は評価範囲が異なり直接比較しない。高い転用成績から任意施設での調整不要や未検証言語への性能を推論できない。
 
+### Paper: Med7: A transferable clinical natural language processing model for electronic health records
+- Source: PubMed
+- Canonical ID: pmid:34412834
+- Publication date: 2021-05-18
+- URL: https://pubmed.ncbi.nlm.nih.gov/34412834/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: Med7は薬剤に関する7種の項目を抽出し、米国ICUから英国精神科への転用を検証した。
+- Objective: 少数の正解注釈で臨床情報を構造化し、別領域への転移学習の条件を調べる。
+- Methods: MIMIC-IIIの200万記録で次語予測を事前学習し、薬剤名、経路、頻度、用量、強度、剤形、期間のNERへ微調整。英国CRISへ直接適用し、少量追加学習も評価した。
+- Data and results: 元領域のmicro-F1は0.957。CRISへの直接移植では0.762へ低下し、少量のCRISで微調整すると0.944へ回復した。
+- Novelty: 自己教師あり表現の有用性に加え、似た抽出課題でも医療領域が変わると追加調整が重要と示した。
+- Limitations: 編者の注意: 領域適応後の高精度を調整不要の汎化と混同しない。薬剤の言及抽出は実際の服用状態や処方の安全性評価とは異なる。
+
 ### Paper: Med-BERT: pretrained contextualized embeddings on large-scale structured electronic health records for disease prediction
 - Source: PubMed
 - Canonical ID: pmid:34017034
@@ -716,6 +1038,80 @@
 - Data and results: 要旨はAUCの改善を1.21–6.14%と報告。少数データ条件では20%超の改善、または事前学習なしで10倍の学習例を使うモデルに匹敵するAUCを報告した。
 - Novelty: 自然言語の事前学習・微調整という流れを、大規模な構造化EHRの転移学習へ展開した。
 - Limitations: 編者の注意: 改善率は原著の%表記を保持し、百分率ポイントへ読み替えない。10倍のデータ効率は特定実験の結果で、あらゆる疾患・施設への保証ではない。
+
+### Paper: Highly accurate protein structure prediction with AlphaFold
+- Source: PubMed
+- Canonical ID: pmid:34265844
+- Publication date: 2021-07-15
+- URL: https://pubmed.ncbi.nlm.nih.gov/34265844/
+- read_level: full_text
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: AlphaFold2は進化情報と幾何学的な構造を統合し、CASP14で原子精度に近い予測を示した。
+- Objective: 既知の類似構造がないタンパク質でも、アミノ酸配列から高精度な3次元構造を求める。
+- Methods: Evoformerで多重配列アラインメントと残基対の表現を更新。構造モジュールで座標を出し、recyclingで反復改良する。盲検CASP14と後発PDBで評価した。
+- Data and results: CASP14の87ドメインで骨格のr.m.s.d._95中央値0.96Å、次点2.8Å。全原子では1.5Å対3.5Åで、残基ごとの信頼度も推定した。
+- Novelty: 距離予測後の探索から、進化・残基対・座標を一体で更新するend-to-end構造予測へ進めた。
+- Limitations: 著者はMSAの深さが約30配列未満での低下と、異種鎖の接触に強く依存する構造での弱さを指摘。構造予測を折り畳み過程の解明と同一視しない。
+
+本文の照合箇所: [Fig.1・Accuracy、Evoformer、End-to-end structure prediction、MSA depth and cross-chain contacts](https://pmc.ncbi.nlm.nih.gov/articles/PMC8371605/)。
+
+### Paper: Highly accurate protein structure prediction for the human proteome
+- Source: PubMed
+- Canonical ID: pmid:34293799
+- Publication date: 2021-07-22
+- URL: https://pubmed.ncbi.nlm.nih.gov/34293799/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: AlphaFoldをヒトのほぼ全タンパク質へ適用し、構造と領域別の信頼度を公開した。
+- Objective: 実験構造で覆われていないヒト配列へ、研究に使える構造仮説を大規模に提供する。
+- Methods: AlphaFoldでヒトプロテオームを予測し、信頼度の指標で多ドメイン構造や無秩序の可能性のある領域を解釈。生物学的仮説の事例も示した。
+- Data and results: ヒトタンパク質の98.5%を対象とし、全残基の58%に信頼できる予測、36%に非常に高い信頼度の予測を提供。既存実験構造の全残基カバー率は17%だった。
+- Novelty: 構造予測法の競技成績から、プロテオーム全体に配布可能な研究資源へ展開した。
+- Limitations: 編者の注意: 98.5%はタンパク質数の対象範囲で、全残基が高精度という意味ではない。予測の信頼度と実験的な確証、疾患変異や創薬への有効性は区別する。
+
+### Paper: SignalP 6.0 predicts all five types of signal peptides using protein language models
+- Source: PubMed
+- Canonical ID: pmid:34980915
+- Publication date: 2022-01-03
+- URL: https://pubmed.ncbi.nlm.nih.gov/34980915/
+- read_level: full_text
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: SignalP 6.0はタンパク質言語表現から、5種類のシグナルペプチドと切断位置を推定する。
+- Objective: 既存法が扱えなかった希少な種類も含め、分泌・輸送のシグナルを配列から識別する。
+- Methods: BERT型表現とCRFを接続し、領域・種類を同時予測。相同配列を同じ分割に置く3分割nested交差検証で評価した。
+- Data and results: 5種類を同時検出。特にSec/SPIII（113例）とTat/SPII（36例）で改善し、学習配列との同一性60%未満でも旧版を上回った。
+- Novelty: 大量の未ラベル配列で学ぶ表現を、少数例のシグナルと構造化された領域予測へ転用した。
+- Limitations: 一部の専用予測器が得意課題で上回る。著者は他の公開サービスの比較で相同性を揃えられないバイアスも指摘し、全条件での優越性は主張しない。
+
+本文の照合箇所: [Fig.1–2、Methodsのdata partitioning・Evaluation and benchmarking](https://pmc.ncbi.nlm.nih.gov/articles/PMC9287161/)。
+
+### Paper: Harnessing protein folding neural networks for peptide-protein docking
+- Source: PubMed
+- Canonical ID: pmid:35013344
+- Publication date: 2022-01-10
+- URL: https://pubmed.ncbi.nlm.nih.gov/35013344/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 単量体用に作られたAlphaFold2を、ペプチドとタンパク質のドッキングへ応用した。
+- Objective: 結合に伴う受容体の変形も含め、ペプチド複合体を迅速にモデル化する。
+- Methods: ペプチド側の多重配列アラインメントを要求しない簡単なAlphaFold2実装を評価。記憶と学習の役割を検討し、PIPER-FlexPepDockと具体例を比較した。
+- Data and results: 迅速で正確な複合体モデルと、結合に誘導される受容体変形への対応を報告。要旨に成功率や構造誤差の値はない。
+- Novelty: 単体の折り畳み予測器が、相互作用構造のモデリングにも使えることを示した。
+- Limitations: 編者の注意: 要求しないのはペプチド側のMSAで、全入力で進化情報が不要という主張ではない。結合構造の予測は親和性・薬効の保証でもない。
+
+### Paper: ProteinBERT: a universal deep-learning model of protein sequence and function
+- Source: PubMed
+- Canonical ID: pmid:35020807
+- Publication date: 2022-04-12
+- URL: https://pubmed.ncbi.nlm.nih.gov/35020807/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: ProteinBERTは局所・全体表現と機能注釈の事前学習を備えた、効率重視のタンパク質モデル。
+- Objective: 文章向けモデルの転用を超え、長い配列と少量ラベルに適した共通予測基盤を作る。
+- Methods: 配列言語モデルの学習とGene Ontology注釈予測を併用し、残基ごとの局所表現と全体表現を統合。構造、翻訳後修飾、生物物理特性のベンチマークで評価した。
+- Data and results: 比較モデルより小さく高速な構成で、複数課題の最良法に近い性能、一部では上回る性能を報告。要旨にサイズ・速度・精度の具体値はない。
+- Novelty: 機能の全体ラベルと配列の局所情報を同じ事前学習へ組み込み、用途の異なる出力を扱う。
+- Limitations: 編者の注意: GO注釈を使うため、すべての事前学習がラベル不要という意味ではない。効率の主張は比較条件に依存し、全課題で最大精度を狙う設計ではない。
 
 ### Paper: Identifying who has long COVID in the USA: a machine learning approach using N3C data
 - Source: PubMed
@@ -731,6 +1127,62 @@
 - Novelty: 確定した病名定義が乏しい段階で、専門外来の利用を代理指標として大規模EHRから候補を探索した。
 - Limitations: 著者は出力を専門外来での診療を要する可能性の指標と解釈する。編者の注意: 確定診断ではなく、医療アクセスや受診行動の違いを反映する可能性がある。
 
+### Paper: Robust deep learning-based protein sequence design using ProteinMPNN
+- Source: PubMed
+- Canonical ID: pmid:36108050
+- Publication date: 2022-09-15
+- URL: https://pubmed.ncbi.nlm.nih.gov/36108050/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: ProteinMPNNは与えた骨格に適合する配列を設計し、複数の構造・機能実験で検証した。
+- Objective: 物理ベース設計に代わる深層学習で、望むタンパク質骨格を実現する配列を得る。
+- Methods: 単鎖・複数鎖の位置間の配列を結び付けて設計。天然骨格の配列回復率でRosettaと比較し、X線、cryo-EM、機能解析で新規設計を検証した。
+- Data and results: 天然骨格での配列回復率は52.4%、Rosetta32.9%。単量体、環状集合体、四面体粒子、結合タンパク質で従来失敗した設計を救済した。
+- Novelty: 構造から配列を求める逆向きの問題に、複数鎖の制約を含めて深層学習を実用化した。
+- Limitations: 編者の注意: 天然配列の回復率と機能する新規配列の成功率は異なる。骨格が与えられる設計であり、骨格自体を生成するRFdiffusionなどとは役割が異なる。
+
+### Paper: Large language models generate functional protein sequences across diverse families
+- Source: PubMed
+- Canonical ID: pmid:36702895
+- Publication date: 2023-01-26
+- URL: https://pubmed.ncbi.nlm.nih.gov/36702895/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: ProGenは特性タグ付きの配列生成を行い、天然配列と離れた人工酵素の活性を検証した。
+- Objective: 多様なタンパク質ファミリーで、機能を制御した新しい配列を生成する。
+- Methods: 19,000超のファミリー、2億8,000万配列で言語モデルを学習し、特性タグを付加。整備したファミリー配列で微調整し、5種のリゾチーム群などを検証した。
+- Data and results: 人工リゾチームで天然に近い触媒効率を示し、天然配列との同一性は最低31.4%。chorismate mutaseとmalate dehydrogenaseへの適応も示した。
+- Novelty: 文章の条件付き生成の考え方を、実験で機能する酵素配列の条件付き設計へ広げた。
+- Limitations: 著者は十分な相同配列のあるファミリーでの微調整と条件付ける。編者の注意: 一部生成物の活性は全候補の成功率や未知の機能の自由設計を保証しない。
+
+### Paper: Evolutionary-scale prediction of atomic-level protein structure with a language model
+- Source: PubMed
+- Canonical ID: pmid:36927031
+- Publication date: 2023-03-16
+- URL: https://pubmed.ncbi.nlm.nih.gov/36927031/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: ESMFoldはタンパク質言語モデルを構造予測へ使い、メタゲノム規模の構造カタログを作成した。
+- Objective: 多重配列の進化情報に依存する予測より高速に、一次配列から原子レベルの構造を推定する。
+- Methods: 最大150億パラメータへ拡大した配列言語モデルの表現を構造推定に利用し、大規模なメタゲノム配列へ適用した。
+- Data and results: 高解像度予測の1桁の高速化を報告。6億1,700万超の配列の構造を予測し、うち2億2,500万超が高信頼度のESM Metagenomic Atlasを構築した。
+- Novelty: 大きな配列モデルに現れる構造情報を利用し、配列検索を伴う従来の処理から高速な直接推定へ広げた。
+- Limitations: 編者の注意: 高信頼度の計算予測は実験による構造決定ではない。全予測が同じ精度ではなく、速度比較の計算条件と信頼度の低い領域も確認する必要がある。
+
+### Paper: Fine-tuning large neural language models for biomedical natural language processing
+- Source: PubMed
+- Canonical ID: pmid:37123444
+- Publication date: 2023-04-14
+- URL: https://pubmed.ncbi.nlm.nih.gov/37123444/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 医学NLPでの微調整の不安定さを調べ、モデルや課題ごとに異なる有効な対策を示した。
+- Objective: 少数ラベルの医学課題で、大きい事前学習モデルを安定して調整する方法を得る。
+- Methods: 事前学習条件の影響と、下位層の凍結、層別の学習率減衰、上位層の再初期化などを体系的に比較した。
+- Data and results: BERT-BASEは下位層凍結、BERT-LARGE・ELECTRAは層別減衰が有効。少数例のBIOSSES類似度では上位層再初期化が最良。要旨にスコアや試行間分散の数値はない。
+- Novelty: 単一の微調整手順を推奨せず、事前学習・モデル規模・下流課題の組合せに応じた安定化を検証した。
+- Limitations: 編者の注意: 特定モデル群と課題の実験であり、すべてのモデルへ同じ調整則を適用できない。最良スコアだけでなく乱数や少数ラベル選択による変動の確認が必要。
+
 ### Paper: ChatDoctor: A Medical Chat Model Fine-Tuned on a Large Language Model Meta-AI (LLaMA) Using Medical Domain Knowledge
 - Source: PubMed
 - Canonical ID: pmid:37492832
@@ -744,6 +1196,20 @@
 - Data and results: 実対話による微調整と検索で患者理解・応答精度の改善を報告するが、要旨に評価例数、比較スコア、統計的な改善幅はない。
 - Novelty: 公開基盤モデルの専門対話調整に、更新可能な外部知識の参照を加えた初期の医療LLM例。
 - Limitations: 編者の注意: 原著の改善という結論を、臨床試験による助言の安全性証明へ拡張しない。収集対話の質、検索情報の信頼性、匿名化の残余リスクは別々の課題である。
+
+### Paper: De novo design of protein structure and function with RFdiffusion
+- Source: PubMed
+- Canonical ID: pmid:37433327
+- Publication date: 2023-07-11
+- URL: https://pubmed.ncbi.nlm.nih.gov/37433327/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: RFdiffusionは構造のノイズ除去を学び、指定条件からタンパク質骨格を生成・実験検証した。
+- Objective: 結合体、対称構造、活性部位の足場など、多様なタンパク質設計を共通の方法で扱う。
+- Methods: RoseTTAFoldを構造のノイズ除去課題で微調整。無条件・トポロジー制約・結合・対称性・機能モチーフの設計を行い、数百の設計物の構造と機能を評価した。
+- Data and results: 対称集合体、金属結合タンパク質、標的結合体の実験検証を報告。インフルエンザHAと結合体の複合体cryo-EM構造は設計モデルに極めて近かった。
+- Novelty: 既存配列の構造予測器を、条件を満たす新規骨格を作る拡散生成器へ転用した。
+- Limitations: 編者の注意: 検証成功した設計の存在は全生成物の成功率や任意標的の解決を保証しない。機能の確認と治療薬としての安全性・薬効の検証は別段階である。
 
 ### Paper: A foundation model for generalizable disease detection from retinal images
 - Source: PubMed
@@ -800,6 +1266,20 @@
 - Data and results: 開発試験内では高精度だったが、別試験では偶然を上回らず、複数試験の統合でも改善しなかった。要旨に試験数や精度の具体値はない。
 - Novelty: 内部検証の成功と、臨床状況をまたぐ汎化の間の隔たりを独立試験群で直接検証した。
 - Limitations: 編者の注意: 統合失調症治療という検証範囲の結果であり、すべての医療予測器が汎化不能とする証拠ではない。予測対象と試験条件を伴って読む必要がある。
+
+### Paper: An Empirical Evaluation of Prompting Strategies for Large Language Models in Zero-Shot Clinical Natural Language Processing: Algorithm Development and Validation Study
+- Source: PubMed
+- Canonical ID: pmid:38587879
+- Publication date: 2024-04-08
+- URL: https://pubmed.ncbi.nlm.nih.gov/38587879/
+- read_level: abstract
+- Tags: 基礎文献, 医療・生体信号・創薬AI
+- Summary: 臨床NLPの5課題でプロンプト形式を比較し、課題に合わせた指示の重要性を検証した。
+- Objective: 専用の学習例が少ない条件で、どの指示方法が臨床情報抽出を改善するか調べる。
+- Methods: 単純指示、穴埋め、CoT、anticipatory、heuristic、ensembleをGPT-3.5・Gemini・LLaMA-2で比較。語義曖昧性、医学根拠、共参照、薬剤状態・属性の課題でzero/few-shotを評価した。
+- Data and results: GPT-3.5のheuristic指示で語義判別accuracy0.96、医学根拠抽出0.94。few-shotは複雑な課題を改善し、実験ではGPT-3.5が他の2モデルを上回った。
+- Novelty: モデルの比較だけでなく、医学課題ごとの指示設計と複数指示の統合を体系的に比較した。
+- Limitations: 編者の注意: 特定バージョン・課題・指示の組合せに関する結果で、以後のモデルの順位を示さない。zero-shotはプロンプト開発の調整まで不要という意味ではない。
 
 ### Paper: Use of a Large Language Model to Assess Clinical Acuity of Adults in the Emergency Department
 - Source: PubMed
@@ -954,25 +1434,41 @@
 <!-- PAPER_IDS -->
 pmid:7702231
 pmid:15187068
+pmid:15845847
+pmid:16359928
+pmid:21810266
 pmid:21862746
+pmid:22400967
+pmid:22934236
 pmid:23842533
 pmid:25925131
+pmid:26187250
+pmid:26392543
 pmid:26863654
 pmid:26679719
 pmid:26955021
 pmid:27185194
 pmid:27212078
 pmid:27521897
+pmid:27558503
 pmid:27701631
 pmid:27898976
+pmid:28056090
 pmid:28096249
 pmid:28117445
 pmid:27784047
 pmid:28287963
+pmid:28678710
+pmid:28782865
+pmid:28419261
+pmid:28974302
+pmid:29629118
+pmid:29036616
 pmid:29224926
 pmid:29234806
 pmid:29500022
 pmid:29382633
+pmid:29084046
 pmid:29186491
 pmid:29709069
 pmid:29801159
@@ -985,29 +1481,47 @@ pmid:30224757
 pmid:30348771
 pmid:30457988
 pmid:30481176
+pmid:30617320
 pmid:30814121
 pmid:30834436
 pmid:30843824
 pmid:31209213
 pmid:31367026
+pmid:31378392
 pmid:31536901
+pmid:31636460
 pmid:31694707
 pmid:31584655
+pmid:31896580
 pmid:31926806
 pmid:31932807
+pmid:31942072
+pmid:32084340
 pmid:33328078
 pmid:32346050
 pmid:32371116
 pmid:33763651
 pmid:33288961
 pmid:34127232
+pmid:34412834
 pmid:34017034
+pmid:34265844
+pmid:34293799
+pmid:34980915
+pmid:35013344
+pmid:35020807
 pmid:35589549
+pmid:36108050
+pmid:36702895
+pmid:36927031
+pmid:37123444
 pmid:37492832
+pmid:37433327
 pmid:37704728
 pmid:37793630
 pmid:37973919
 pmid:38207039
+pmid:38587879
 pmid:38713466
 pmid:39039250
 pmid:39232164
