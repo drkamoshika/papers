@@ -31,3 +31,5 @@
 |---|---|---|
 | Point Spectra of Some Mutually Exciting Point Processes | 出版社で刊行年1971年と巻33・号3を確認。日単位の初回公開日は未確認。後年のウェブ掲載・移管日を採用しない。 | [原著](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1971.tb01530.x) |
 | Recurrent Marked Temporal Point Processes: Embedding Event History to Vector | 著者版PDFでKDD 2016（8月13〜17日）の会議情報を確認。会期を論文の初回公開日へ流用せず、日単位の正式公開日は未確認として保持。 | [原著](https://doi.org/10.1145/2939672.2939875) |
+| The human connectome: A structural description of the human brain | PubMedに日単位の電子公開日・冊子刊行日の記録なし。巻号の刊行年月: 2005 Sep。要約日・索引登録日とは区別。 | [原著](https://pubmed.ncbi.nlm.nih.gov/16201007/) |
+| Small-world brain networks | PubMedに日単位の電子公開日・冊子刊行日の記録なし。巻号の刊行年月: 2006 Dec。要約日・索引登録日とは区別。 | [原著](https://pubmed.ncbi.nlm.nih.gov/17079517/) |

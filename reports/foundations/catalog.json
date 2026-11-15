@@ -7447,10 +7447,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/32880371/",
         "date": "2020-09-07",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/32880371/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:39358518",
@@ -7458,10 +7458,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39358518/",
         "date": "2024-10-02",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/39358518/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:23925240",
@@ -7469,10 +7469,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/23925240/",
         "date": "2013-08-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/23925240/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:39358521",
@@ -7480,10 +7480,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39358521/",
         "date": "2024-10-02",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/39358521/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:28796202",
@@ -7491,10 +7491,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/28796202/",
         "date": "2017-08-09",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/28796202/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:33315010",
@@ -7502,10 +7502,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/33315010/",
         "date": "2020-12-14",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/33315010/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:34696823",
@@ -7513,10 +7513,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/34696823/",
         "date": "2021-10-26",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/34696823/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:36893230",
@@ -7524,10 +7524,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/36893230/",
         "date": "2023-03-10",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/36893230/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:34949809",
@@ -7535,10 +7535,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/34949809/",
         "date": "2021-12-23",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/34949809/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:34032214",
@@ -7546,10 +7546,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/34032214/",
         "date": "2021-05-25",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/34032214/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:39358527",
@@ -7557,10 +7557,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39358527/",
         "date": "2024-10-02",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/39358527/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:39358525",
@@ -7568,10 +7568,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39358525/",
         "date": "2024-10-02",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/39358525/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:39261740",
@@ -7579,10 +7579,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/39261740/",
         "date": "2024-09-11",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/39261740/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:21653723",
@@ -7590,10 +7590,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/21653723/",
         "date": "2011-06-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/21653723/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:12506194",
@@ -7601,10 +7601,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/12506194/",
         "date": "2002-12-27",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/12506194/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:19188601",
@@ -7612,10 +7612,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/19188601/",
         "date": "2009-02-02",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/19188601/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:19211893",
@@ -7623,10 +7623,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/19211893/",
         "date": "2009-02-11",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/19211893/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:26457551",
@@ -7634,10 +7634,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/26457551/",
         "date": "2015-10-12",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/26457551/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:16201007",
@@ -7645,10 +7645,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/16201007/",
         "date": null,
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedに日単位の電子公開日・冊子刊行日の記録なし。巻号の刊行年月: 2005 Sep。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/16201007/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:21810475",
@@ -7656,10 +7656,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/21810475/",
         "date": "2011-07-23",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/21810475/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:22049421",
@@ -7667,10 +7667,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/22049421/",
         "date": "2011-11-02",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/22049421/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:18403396",
@@ -7678,10 +7678,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/18403396/",
         "date": "2008-04-09",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/18403396/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:28302591",
@@ -7689,10 +7689,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/28302591/",
         "date": "2017-03-14",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/28302591/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:21251014",
@@ -7700,10 +7700,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/21251014/",
         "date": "2011-01-04",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/21251014/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:17079517",
@@ -7711,10 +7711,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/17079517/",
         "date": null,
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedに日単位の電子公開日・冊子刊行日の記録なし。巻号の刊行年月: 2006 Dec。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/17079517/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:26393868",
@@ -7722,10 +7722,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/26393868/",
         "date": "2015-09-21",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/26393868/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:29203085",
@@ -7733,10 +7733,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/29203085/",
         "date": "2017-12-01",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/29203085/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:32989295",
@@ -7744,10 +7744,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/32989295/",
         "date": "2020-09-28",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/32989295/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:21151783",
@@ -7755,10 +7755,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/21151783/",
         "date": "2010-12-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/21151783/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:27655008",
@@ -7766,10 +7766,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/27655008/",
         "date": "2016-09-21",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/27655008/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:32139786",
@@ -7777,10 +7777,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/32139786/",
         "date": "2020-03-05",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/32139786/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:22722855",
@@ -7788,10 +7788,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/22722855/",
         "date": "2012-07-05",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/22722855/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:31551604",
@@ -7799,10 +7799,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/31551604/",
         "date": "2019-09-24",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/31551604/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:32640928",
@@ -7810,10 +7810,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/32640928/",
         "date": "2020-07-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/32640928/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:30224673",
@@ -7821,10 +7821,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/30224673/",
         "date": "2018-09-17",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/30224673/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:25971509",
@@ -7832,10 +7832,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/25971509/",
         "date": "2015-05-14",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの正確な冊子刊行日（先行電子公開日の日単位記録は未確認）。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/25971509/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:27067378",
@@ -7843,10 +7843,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/27067378/",
         "date": "2016-04-12",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/27067378/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:19357332",
@@ -7854,10 +7854,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/19357332/",
         "date": "2009-04-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/19357332/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:30315158",
@@ -7865,10 +7865,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/30315158/",
         "date": "2018-10-12",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/30315158/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:30877963",
@@ -7876,10 +7876,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/30877963/",
         "date": "2019-03-13",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/30877963/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:29887338",
@@ -7887,10 +7887,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/29887338/",
         "date": "2018-06-07",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/29887338/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:34801787",
@@ -7898,10 +7898,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/34801787/",
         "date": "2021-11-19",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/34801787/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:31320220",
@@ -7909,10 +7909,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/31320220/",
         "date": "2019-07-15",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/31320220/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:32940606",
@@ -7920,10 +7920,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/32940606/",
         "date": "2020-09-17",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/32940606/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:30344047",
@@ -7931,10 +7931,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/30344047/",
         "date": "2018-10-18",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/30344047/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:22096452",
@@ -7942,10 +7942,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/22096452/",
         "date": "2011-11-03",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/22096452/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:27814352",
@@ -7953,10 +7953,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/27814352/",
         "date": "2016-11-04",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/27814352/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:24812127",
@@ -7964,10 +7964,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/24812127/",
         "date": "2014-05-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/24812127/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:29681533",
@@ -7975,10 +7975,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/29681533/",
         "date": "2018-04-19",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/29681533/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:29513219",
@@ -7986,10 +7986,10 @@
         "source": "PubMed",
         "url": "https://pubmed.ncbi.nlm.nih.gov/29513219/",
         "date": "2018-03-07",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "07-neuroscience.md",
         "date_basis": "PubMedの電子公開日。要約日・索引登録日とは区別。出典: https://pubmed.ncbi.nlm.nih.gov/29513219/",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "pmid:30696881",
@@ -8610,8 +8610,8 @@
     ]
   },
   "main_unique_papers": 762,
-  "published_unique_papers": 668,
-  "unreviewed_unique_papers": 106,
+  "published_unique_papers": 718,
+  "unreviewed_unique_papers": 56,
   "historical_appendix": [
     {
       "id": "doi:10.1038/323533a0",
@@ -8767,8 +8767,8 @@
     },
     "neuro": {
       "selected": 106,
-      "published": 0,
-      "remaining": 106
+      "published": 50,
+      "remaining": 56
     }
   },
   "updated": "2026-11-15"
