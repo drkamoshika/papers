@@ -3833,9 +3833,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2107.11059",
         "date": "2021-07-23",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2206.08564",
@@ -3843,9 +3844,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2206.08564",
         "date": "2022-06-17",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2303.11580",
@@ -3853,9 +3855,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2303.11580",
         "date": "2023-03-21",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2106.15147",
@@ -3863,9 +3866,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2106.15147",
         "date": "2021-06-29",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2312.16702",
@@ -3873,9 +3877,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2312.16702",
         "date": "2023-12-27",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1610.01271",
@@ -3883,9 +3888,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1610.01271",
         "date": "2016-10-05",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1803.01422",
@@ -3893,9 +3899,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1803.01422",
         "date": "2018-03-04",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "full_text"
       },
       {
         "id": "arxiv:1701.08687",
@@ -3903,9 +3910,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1701.08687",
         "date": "2017-01-30",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1605.03661",
@@ -3913,19 +3921,21 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1605.03661",
         "date": "2016-05-12",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1608.00060",
-        "title": "Double/Debiased Machine Learning for Treatment and Causal Parameters",
+        "title": "Double/Debiased Machine Learning for Treatment and Structural Parameters",
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1608.00060",
         "date": "2016-07-30",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "full_text"
       },
       {
         "id": "arxiv:1705.08821",
@@ -3933,9 +3943,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1705.08821",
         "date": "2017-05-24",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1906.02120",
@@ -3943,9 +3954,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1906.02120",
         "date": "2019-06-05",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1907.02893",
@@ -3953,9 +3965,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1907.02893",
         "date": "2019-07-05",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2007.01434",
@@ -3963,9 +3976,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2007.01434",
         "date": "2020-07-02",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2101.01134",
@@ -3973,9 +3987,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2101.01134",
         "date": "2021-01-04",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2010.05761",
@@ -3983,9 +3998,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2010.05761",
         "date": "2020-10-12",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1606.07035",
@@ -3993,9 +4009,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1606.07035",
         "date": "2016-06-22",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1301.2312",
@@ -4003,9 +4020,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1301.2312",
         "date": "2013-01-10",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1906.04477",
@@ -4013,9 +4031,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1906.04477",
         "date": "2019-06-11",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1702.07306",
@@ -4023,9 +4042,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1702.07306",
         "date": "2017-02-23",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1512.05469",
@@ -4033,9 +4053,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1512.05469",
         "date": "2015-12-17",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1611.04035",
@@ -4043,9 +4064,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1611.04035",
         "date": "2016-11-12",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2006.04697",
@@ -4053,9 +4075,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2006.04697",
         "date": "2020-06-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2208.05949",
@@ -4063,9 +4086,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2208.05949",
         "date": "2022-08-11",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "full_text"
       },
       {
         "id": "arxiv:2011.08411",
@@ -4073,9 +4097,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2011.08411",
         "date": "2020-11-17",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2202.04208",
@@ -4083,9 +4108,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2202.04208",
         "date": "2022-02-09",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1901.09475",
@@ -4093,9 +4119,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1901.09475",
         "date": "2019-01-28",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "full_text"
       },
       {
         "id": "arxiv:2002.12710",
@@ -4103,9 +4130,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2002.12710",
         "date": "2020-02-28",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2009.14461",
@@ -4113,9 +4141,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2009.14461",
         "date": "2020-09-30",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2003.03191",
@@ -4123,9 +4152,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2003.03191",
         "date": "2020-03-06",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "date_basis": "arXiv initial submission date; not journal publication or revision date",
-        "reason": "Awaiting editorial source review; research resumed 2026-11-15; metadata only"
+        "report": "05-structured.md",
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2104.10334",
@@ -6251,8 +6281,8 @@
     ]
   },
   "main_unique_papers": 556,
-  "published_unique_papers": 479,
-  "unreviewed_unique_papers": 89,
+  "published_unique_papers": 509,
+  "unreviewed_unique_papers": 59,
   "historical_appendix": [
     {
       "id": "doi:10.1038/323533a0",
@@ -6398,8 +6428,8 @@
     },
     "structured": {
       "selected": 119,
-      "published": 30,
-      "remaining": 89
+      "published": 60,
+      "remaining": 59
     }
   },
   "updated": "2026-11-15"
