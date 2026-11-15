@@ -5,7 +5,7 @@
 
 ## ダイジェスト
 
-選定119件中、以下は原著照合・編集確認を終えた60件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
+選定119件中、以下は原著照合・編集確認を終えた90件。選定リストだけの論文を完成済み件数には含めない。原著要旨までの記述と本文確認を区別し、Limitationsの「編者の注意」は著者の自己申告と区別する。
 
 研究の流れと2026年論文との接続は [文献集の案内](README.md) を参照。
 
@@ -153,6 +153,20 @@
 - Novelty: 固定した対象の知識をproxy変数へ写し、確率分布を前提とする探索法に接続した。
 - Limitations: 編者の注意: ここでのproxyは未観測交絡の代理測定とは用途が異なる。proxy間の方向が元対象の因果を表すかは構成仮定と人のラベルに依存する。
 
+### Paper: DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks
+- Source: arXiv
+- Canonical ID: arxiv:1704.04110
+- Publication date: 2017-04-13
+- URL: https://arxiv.org/abs/1704.04110
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: DeepARは関連する多数の系列を共同学習し、将来値の分布を出す自己回帰RNN予測法。
+- Objective: 需要などの予測で、点予測だけでなく不確実性を含む将来分布を得る。
+- Methods: 多くの関連時系列上で自己回帰のrecurrent networkを学習し、各系列の履歴から確率予測を生成。複数の実世界予測データで比較した。
+- Data and results: 最良の既存法に対し約15%の精度改善を報告。要旨にデータ数、誤差指標の絶対値や区間校正の結果はない。
+- Novelty: 系列ごとに個別モデルを作る方法から、関連系列間で情報を共有する確率的なglobalモデルへ進めた。
+- Limitations: 編者の注意: 関連系列を共有学習する設定であり、未知の任意分野へのzero-shot基盤モデルではない。分布を出すことと予測区間が正しく校正されることは別である。
+
 ### Paper: Causal Effect Inference with Deep Latent-Variable Models
 - Source: arXiv
 - Canonical ID: arxiv:1705.08821
@@ -213,6 +227,20 @@
 
 本文の照合箇所: [v2（2020-09-05）のIntroduction・Fig.1、DAG混合の定義と改訂内容](https://arxiv.org/pdf/1901.09475v2)。
 
+### Paper: N-BEATS: Neural basis expansion analysis for interpretable time series forecasting
+- Source: arXiv
+- Canonical ID: arxiv:1905.10437
+- Publication date: 2019-05-24
+- URL: https://arxiv.org/abs/1905.10437
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: N-BEATSは深い全結合層と前後の残差構造で、単変量の点予測を行う。
+- Objective: 領域別の複雑な専用部品に頼らず、幅広い系列を同じ構造で高精度に予測する。
+- Methods: backward・forward residual linkを持つ深いブロックを積層。汎用構成と解釈可能な構成をM3、M4、TOURISMで比較した。
+- Data and results: 対象競技データで両構成が最良水準。要旨は統計基準比11%、当時のM4優勝法比3%の精度改善を報告し、解釈構成でも大きな性能低下を避けた。
+- Novelty: 時系列固有の部品なしの基本構成でも強い予測を得られ、必要に応じて解釈可能な出力を加える設計を示した。
+- Limitations: 編者の注意: 単変量・点予測の対象で、多変量依存や確率校正を実証する結果ではない。改善率は原著の比較条件に限り、絶対ポイントに変換しない。
+
 ### Paper: Adapting Neural Networks for the Estimation of Treatment Effects
 - Source: arXiv
 - Canonical ID: arxiv:1906.02120
@@ -240,6 +268,20 @@
 - Data and results: 人工・実データで探索能力の改善と柔軟なスコア利用を示した。要旨にグラフ数や構造誤差・実行時間の絶対値はない。
 - Novelty: 新環境で使う方策を得る通常のRLと異なり、候補グラフの組合せ探索を目的にRLを利用した。
 - Limitations: 編者の注意: 高いスコアのグラフが真の因果構造とは限らず、スコアと識別仮定に依存する。非巡回ペナルティや探索の計算量も含めた評価が必要。
+
+### Paper: Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting
+- Source: arXiv
+- Canonical ID: arxiv:1907.00235
+- Publication date: 2019-06-29
+- URL: https://arxiv.org/abs/1907.00235
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: LogSparse Transformerは局所文脈を畳み込みで補い、長い系列のattentionのメモリ負担を減らす。
+- Objective: 通常Transformerの局所性の弱さと、系列長の2乗に増えるメモリを改善する。
+- Methods: causal convolutionでquery・keyを生成し、LogSparseな接続で長期関係を扱う。人工・実世界の予測データで比較した。
+- Data and results: O(L(log L)²)のメモリ費用を示し、限られたメモリ下で細粒度・長期依存の系列を良好に予測。要旨に誤差・実測速度の値はない。
+- Novelty: 各時点独立のattention入力へ局所文脈を加え、疎な長期接続と組み合わせた。
+- Limitations: 編者の注意: 漸近的なメモリ量は実測の実行速度と同じではない。疎な接続が拾いにくい依存や、非周期的な変化の性能は別に確認が必要。
 
 ### Paper: Modeling Tabular data using Conditional GAN
 - Source: arXiv
@@ -298,6 +340,20 @@
 - Data and results: 多くの比較課題で競合法を上回ったと報告。要旨にデータ数、平均改善量、探索・計算予算は記載されない。
 - Novelty: 木とニューラルモデルを別々に使う代わりに、木のアンサンブルを深い微分可能なモデルへ一般化した。
 - Limitations: 編者の注意: 『多くの課題』はすべての表への優越性ではない。調整の費用、特徴の型、学習データ量を揃えた比較が必要である。
+
+### Paper: Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting
+- Source: arXiv
+- Canonical ID: arxiv:1912.09363
+- Publication date: 2019-12-19
+- URL: https://arxiv.org/abs/1912.09363
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: TFTは静的属性・既知の未来入力・過去だけの情報を区別し、多期間予測と寄与の説明を行う。
+- Objective: 実務に混在する入力をまとめて扱い、短期・長期の依存と重要特徴を捉える。
+- Methods: recurrent層で局所処理、解釈可能なself-attentionで長期関係を学習。特徴選択とgatingで不要部品を抑え、実データで精度と3つの説明用途を評価した。
+- Data and results: 既存基準への有意な改善と実用的な解釈例を報告。要旨にデータ数・精度の絶対値はない。
+- Novelty: 入力の利用可能時点と種類に合わせた処理を、多期間予測・特徴選択・時間寄与と統合した。
+- Limitations: 編者の注意: 将来入力は予測時点で既知のものに限る。attentionや選択重みは因果効果ではなく、説明の見やすさと真の機構の同定を区別する。
 
 ### Paper: Causal mediation analysis with double machine learning
 - Source: arXiv
@@ -425,6 +481,34 @@
 - Novelty: 文章中の単語の文脈化を、同じ行にあるカテゴリ変数の表現へ適用した。
 - Limitations: 編者の注意: %は原著の表記を保持し、絶対ポイントへ変換しない。欠損・雑音の実験条件を任意の実データの欠損機構へ一般化できない。
 
+### Paper: Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting
+- Source: arXiv
+- Canonical ID: arxiv:2012.07436
+- Publication date: 2020-12-14
+- URL: https://arxiv.org/abs/2012.07436
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: InformerはProbSparse attention、系列の蒸留、一括復号で長い将来系列を効率的に予測する。
+- Objective: 長期予測で通常Transformerの二次計算量・高メモリ・逐次出力の負担を減らす。
+- Methods: O(L log L)のProbSparse機構を用い、層入力を段階的に半減。復号器は1回の前向き処理で長い予測系列をまとめて出力する。
+- Data and results: 4つの大規模データで比較法への有意な改善を報告。要旨に誤差値や実測速度倍率はない。
+- Novelty: attentionの疎化だけでなく、入力圧縮と非逐次の出力を組み合わせて長期予測を設計した。
+- Limitations: 編者の注意: 計算量の主張と全処理時間の削減は別指標。系列の蒸留で消える細部、予測期間、調整予算を揃えて後続の単純な基準とも比較する。
+
+### Paper: MINIROCKET: A Very Fast (Almost) Deterministic Transform for Time Series Classification
+- Source: arXiv
+- Canonical ID: arxiv:2012.08791
+- Publication date: 2020-12-16
+- URL: https://arxiv.org/abs/2012.08791
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: MiniRocketはランダム畳み込み変換をほぼ決定的に再構成し、線形分類を高速化する。
+- Objective: ROCKETに近い分類精度を、さらに少ない計算と高い再現性で得る。
+- Methods: ROCKETの系列特徴変換を再定式化し、ほぼ決定的な出力を線形分類器へ入力。追加費用を払えば完全に決定的にもできる構成を比較した。
+- Data and results: 大きいデータで最大75倍高速化し、ほぼ同じ精度を維持。原著はUCR109データの学習・評価を10分未満と報告する。
+- Novelty: 深いモデルの追加訓練ではなく、強い固定変換の構成と計算を絞って精度・速度を両立した。
+- Limitations: 編者の注意: 最大速度倍率と10分は当時の計算環境の結果で、任意機器での保証ではない。分類の結果を予測や異常検知の性能へ拡張しない。
+
 ### Paper: Does Invariant Risk Minimization Capture Invariance?
 - Source: arXiv
 - Canonical ID: arxiv:2101.01134
@@ -438,6 +522,34 @@
 - Data and results: 線形版が適切な不変性を逃す例に加え、正しい不変性を得ても損失の非不変性で劣る予測器になる場合を示した。有限標本で脆弱さが増した。
 - Novelty: IRMの失敗を単なる調整不足でなく、近似目的と最適化対象のずれとして分析した。
 - Limitations: 編者の注意: 特定の定式化に対する反例であり、不変性に基づく学習全体の不可能性定理ではない。理想IRMとIRMv1に対する結論を分けて読む。
+
+### Paper: Out-of-distribution Prediction with Invariant Risk Minimization: The Limitation and An Effective Fix
+- Source: arXiv
+- Canonical ID: arxiv:2101.07732
+- Publication date: 2021-01-16
+- URL: https://arxiv.org/abs/2101.07732
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: 強い共通原因による見せかけ相関でIRMが劣化する条件を調べ、条件付き分布の整合を加えた。
+- Objective: 元のColored MNISTでは成功するIRMが、より強い環境依存の相関で失敗する理由を明らかにする。
+- Methods: domainがラベルと偽の特徴の双方へ強く影響するΛ型相関を解析。IRMとconditional distribution matchingを組み合わせ、Colored MNIST plusの半人工実験で評価した。
+- Data and results: 強いΛ型相関でのIRMの大きな劣化と、提案する組合せによる改善を示した。要旨に精度値や改善幅はない。
+- Novelty: 不変性の目的だけでは残る特定の偽相関を、条件付き分布の一致で補う。
+- Limitations: 編者の注意: 特定の相関構造を対象とする修正で、任意の未知領域への保証ではない。半人工の色付き数字実験から実務の全分布変化への有効性は確定しない。
+
+### Paper: Automatic Double Machine Learning for Continuous Treatment Effects
+- Source: arXiv
+- Canonical ID: arxiv:2104.10334
+- Publication date: 2021-04-21
+- URL: https://arxiv.org/abs/2104.10334
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: 連続処置の平均用量反応関数を、DMLとautomatic DMLの補正で推定する。
+- Objective: 処置の有無だけでなく、特定の投与量・介入水準における平均結果を柔軟に推定する。
+- Methods: DML・ADMLの道具を組み合わせた新しいdebiasingを導入し、安定性・バランスの理論的性質と漸近正規性を示した。シミュレーションで既存法と比較した。
+- Data and results: 人工実験で良好な比較性能を報告。要旨に誤差値や標本数はなく、非パラメトリックな連続用量関数に対する結果である。
+- Novelty: 二値処置の平均効果から、連続的な処置水準ごとの平均反応へ自動補正の方法を拡張した。
+- Limitations: 編者の注意: 漸近正規性を二値ATEと同じroot-n速度と読み替えない。因果解釈には交絡調整と用量の支持・重なりなどの識別条件が別途必要。
 
 ### Paper: TABBIE: Pretrained Representations of Tabular Data
 - Source: arXiv
@@ -453,6 +565,20 @@
 - Novelty: 文章向け目的を借りるだけでなく、表自体の破損検出から複数粒度の表現を学んだ。
 - Limitations: 編者の注意: 記述表の意味理解と、任意の数値表の教師あり予測は同一課題ではない。定性的な意味の分析だけで計算・論理的一貫性の保証は得られない。
 
+### Paper: Unsupervised Representation Learning for Time Series with Temporal Neighborhood Coding
+- Source: arXiv
+- Canonical ID: arxiv:2106.00750
+- Publication date: 2021-06-01
+- URL: https://arxiv.org/abs/2106.00750
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: TNCは局所的に安定した時間近傍を使い、非定常系列の自己教師あり表現を学ぶ。
+- Objective: 状態が変わる一方でラベルの少ない信号を、分類・クラスタリングに使えるようにする。
+- Methods: 生成過程の局所的滑らかさから時間近傍を定義し、近傍内と外の信号分布を区別するdebiasした対照目的を用いた。複数データで既存の教師なし法と比較した。
+- Data and results: クラスタリングと分類で比較法を上回ったと報告。要旨にデータ数やスコア、患者追跡の実測値はない。
+- Novelty: 全系列が定常とは仮定せず、短い時間近傍に残る安定性を表現学習の教師信号にした。
+- Limitations: 編者の注意: 局所滑らかさが破れる急変や、離れた時点の同じ状態の扱いに注意が要る。医療という動機と、患者の潜在状態を臨床で正しく追跡した証拠は区別する。
+
 ### Paper: SAINT: Improved Neural Networks for Tabular Data via Row Attention and Contrastive Pre-Training
 - Source: arXiv
 - Canonical ID: arxiv:2106.01342
@@ -467,6 +593,20 @@
 - Novelty: 行内の特徴間関係だけでなく、標本間の関係と未ラベルデータの事前学習を統合した。
 - Limitations: 編者の注意: 平均での優位は全データでの勝利ではない。行間attentionの評価時の入力集合、訓練・テスト分離、ラベル利用条件を確認して比較する必要がある。
 
+### Paper: TS2Vec: Towards Universal Representation of Time Series
+- Source: arXiv
+- Canonical ID: arxiv:2106.10466
+- Publication date: 2021-06-19
+- URL: https://arxiv.org/abs/2106.10466
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: TS2Vecは階層的な対照学習で時点表現を学び、部分系列から系列全体まで集約できる。
+- Objective: 任意の長さ・意味粒度で使える時系列表現を、ラベルなしに獲得する。
+- Methods: 拡張した文脈viewを階層的に対照し、各時点の文脈表現を学習。必要な部分の集約を分類・線形予測・教師なし異常検知へ利用した。
+- Data and results: UCR125・UEA29データの分類で既存の教師なし表現を改善し、予測と異常検知でも最良水準を報告。要旨に精度の具体値はない。
+- Novelty: 系列全体に固定長ベクトルを割り当てるだけでなく、時点から任意部分の表現を共有できるようにした。
+- Limitations: 編者の注意: ラベルなしの表現学習と下流予測器の学習条件を区別する。データ拡張で保存する性質が課題に適するか、未来情報やテスト混入がないかも確認が必要。
+
 ### Paper: Revisiting Deep Learning Models for Tabular Data
 - Source: arXiv
 - Canonical ID: arxiv:2106.11959
@@ -480,6 +620,34 @@
 - Data and results: ResNet型は見落とされがちな強い基準、Transformerの適応は多くの課題で他の深層法を上回った。一方、GBDTも含め普遍的な勝者はなかった。要旨に絶対スコアはない。
 - Novelty: 新構造の主張だけでなく、基準モデルの強さと公平な調整手順を表形式研究の中心に置いた。
 - Limitations: 編者の注意: 多数課題の実験でも、任意の表でTransformerが最良とは結論しない。データ規模・特徴型・調整費用に応じた比較が必要。
+
+### Paper: Autoformer: Decomposition Transformers with Auto-Correlation for Long-Term Series Forecasting
+- Source: arXiv
+- Canonical ID: arxiv:2106.13008
+- Publication date: 2021-06-24
+- URL: https://arxiv.org/abs/2106.13008
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: Autoformerは分解を内部ブロックにし、周期性に基づくAuto-Correlationで部分系列の依存を扱う。
+- Objective: 長い将来の複雑なパターンを、点ごとの疎なattentionより効果的に利用する。
+- Methods: 前処理だった系列分解を深層モデル内で段階的に実行。周期性から部分系列の関係を見つけ、表現を集約する機構を設計した。
+- Data and results: エネルギー・交通・経済・天候・疾病の5用途を含む6基準で、38%の相対改善を報告。要旨に各課題の絶対誤差はない。
+- Novelty: 局所時点間のattentionから、分解と周期に基づく部分系列単位の依存推定へ移した。
+- Limitations: 編者の注意: 38%は原著の比較条件による相対改善で、全用途の保証ではない。周期の弱い系列・変化する周期・非定常な突発事象も個別評価が必要。
+
+### Paper: Time-Series Representation Learning via Temporal and Contextual Contrasting
+- Source: arXiv
+- Canonical ID: arxiv:2106.14112
+- Publication date: 2021-06-26
+- URL: https://arxiv.org/abs/2106.14112
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: TS-TCCは時間予測と文脈の対照を組み合わせ、未ラベル系列の特徴を学ぶ。
+- Objective: 動的な系列から、少数ラベルと領域転移に役立つ表現を得る。
+- Methods: 弱い・強い拡張で2viewを作り、cross-viewの時間予測を学習。同じ標本の文脈を近づけ、別標本を離すcontextual contrastも追加した。
+- Data and results: 3実データで、特徴上の線形分類器が教師あり訓練に匹敵。少数ラベル・転移でも高い効率を報告するが、要旨に数値スコアはない。
+- Novelty: 時系列の局所的な動態と、標本全体の識別性を2つの対照目的で分けて学ぶ。
+- Limitations: 編者の注意: 選んだ拡張が元のラベル・意味を保持することに依存する。3データの比較から、すべての生体・産業信号への転用は保証されない。
 
 ### Paper: SCARF: Self-Supervised Contrastive Learning using Random Feature Corruption
 - Source: arXiv
@@ -509,6 +677,34 @@
 - Novelty: 後から説明器を加えるだけでなく、説明可能な分解をモデル構造へ組み込んだ。
 - Limitations: 編者の注意: 加法分解ができても各項は因果効果ではない。GLMに似た形から古典的GLMと同じ統計的推論保証が自動で得られるわけではない。
 
+### Paper: FEDformer: Frequency Enhanced Decomposed Transformer for Long-term Series Forecasting
+- Source: arXiv
+- Canonical ID: arxiv:2201.12740
+- Publication date: 2022-01-30
+- URL: https://arxiv.org/abs/2201.12740
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: FEDformerは季節・トレンド分解と周波数表現を組み合わせ、長期予測を効率化する。
+- Objective: Transformerの局所的詳細に加え、系列全体の形を捉えつつ計算負担を減らす。
+- Methods: 分解で全体傾向、Transformerで細部を扱い、Fourier等での疎な表現を周波数強化へ利用。6つの予測基準で評価した。
+- Data and results: 系列長に線形の計算量を示し、既存最良法に対し多変量14.8%、単変量22.6%の予測誤差低下を報告。
+- Novelty: 時間領域の分解と、周波数領域で少数成分を使う表現を長期予測器へ統合した。
+- Limitations: 編者の注意: 相対的な誤差低下を絶対精度の増分に読み替えない。周波数疎性や分解が適する範囲と、実測の速度・メモリはデータ依存である。
+
+### Paper: CoST: Contrastive Learning of Disentangled Seasonal-Trend Representations for Time Series Forecasting
+- Source: arXiv
+- Canonical ID: arxiv:2202.01575
+- Publication date: 2022-02-03
+- URL: https://arxiv.org/abs/2202.01575
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: CoSTはトレンドと季節性を分けた対照表現を先に学び、単純な回帰で予測する。
+- Objective: 予測器をend-to-endで作る以外の、頑健で転用しやすい時系列学習の枠組みを得る。
+- Methods: 時間領域と周波数領域の対照損失を、傾向・季節性の識別表現へそれぞれ利用。表現の後に回帰を適応し、encoderや回帰器を変えて比較した。
+- Data and results: 多変量基準でMSEを21.3%改善し、異なるbackbone・下流回帰でも頑健な結果を報告した。
+- Novelty: 予測に重要な成分の分離を、時間・周波数の自己教師あり学習として設計した。
+- Limitations: 編者の注意: 因果的な動機付けがあっても、学習した成分が真の因果機構と同一とは限らない。21.3%は比較条件での相対MSE改善である。
+
 ### Paper: Validating Causal Inference Methods
 - Source: arXiv
 - Canonical ID: arxiv:2202.04208
@@ -536,6 +732,20 @@
 - Data and results: 複数データと学習課題で、異なるプライバシー予算下に少なくとも48.16%高い効用を報告。要旨に予算値・指標の絶対値はない。
 - Novelty: 経験的な匿名性評価だけでなく、差分プライバシーの訓練と下流効用を明示的に組み合わせた。
 - Limitations: 編者の注意: 保証は採用したDP定義・予算・実装に依存し、任意の設定で同じではない。48.16%は相対効用の主張で、絶対精度や情報漏洩ゼロを意味しない。
+
+### Paper: Are Transformers Effective for Time Series Forecasting?
+- Source: arXiv
+- Canonical ID: arxiv:2205.13504
+- Publication date: 2022-05-26
+- URL: https://arxiv.org/abs/2205.13504
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: DLinearなど単層の線形基準が、当時の複雑な長期予測Transformerを上回る例を示した。
+- Objective: Transformerの改変による進歩が、十分強い単純な基準との比較でも成り立つか検証する。
+- Methods: LTSF-Linearという単層線形モデル群を導入し、9実データで先行Transformerと比較。時間関係の取り出しに各設計要素が与える影響も分析した。
+- Data and results: 対象9データの比較では線形法がすべてで先行法を上回り、しばしば大差だった。要旨に各誤差の具体値はない。
+- Novelty: 構造の複雑化が必要という前提を問い、時系列の強い単純基準と評価手順の再検討を促した。
+- Limitations: 編者の注意: 当時の選定モデル・データ・設定の結果で、Transformer全般の不可能性を証明しない。時間順序への著者の説明と、構造ごとの実測結果を区別する。
 
 ### Paper: Hopular: Modern Hopfield Networks for Tabular Data
 - Source: arXiv
@@ -625,6 +835,20 @@
 
 本文の照合箇所: [Section 4、DCR・privacy attack評価、Limitations and discussion](https://proceedings.mlr.press/v202/kotelnikov23a/kotelnikov23a.pdf)。
 
+### Paper: TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis
+- Source: arXiv
+- Canonical ID: arxiv:2210.02186
+- Publication date: 2022-10-05
+- URL: https://arxiv.org/abs/2210.02186
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: TimesNetは複数周期に沿って系列を2次元化し、周期内・周期間の変動を共通に学ぶ。
+- Objective: 予測だけに専用化せず、広い時系列課題に共通する複雑な時間変動を表現する。
+- Methods: 多周期性を適応的に見つけ、1次元系列を複数の2次元tensorへ変換。TimesBlockのパラメータ効率のよいinception部品で2方向の変動を抽出した。
+- Data and results: 短期・長期予測、欠損補完、分類、異常検知の5課題で最良水準を報告。要旨に課題別スコアや対象数はない。
+- Novelty: 周期を単なる特徴として足すのではなく、2次元kernelが扱える表現の軸へ変換した。
+- Limitations: 編者の注意: 各課題で強いことと、1つの重みで全課題を無調整に解くことは異なる。周期が曖昧・急変するデータの挙動と評価条件も確認が必要。
+
 ### Paper: STaSy: Score-based Tabular data Synthesis
 - Source: arXiv
 - Canonical ID: arxiv:2210.04018
@@ -667,6 +891,48 @@
 - Novelty: 表の数値構造だけでなく、列名や値の言語的意味を大規模事前知識へ接続した。
 - Limitations: 編者の注意: 本研究のfew-shotは微調整を含み、常に重み更新なしではない。直列化・列名・事前知識に依存し、匿名化された特徴で同じ利点を得るとは限らない。
 
+### Paper: A Time Series is Worth 64 Words: Long-term Forecasting with Transformers
+- Source: arXiv
+- Canonical ID: arxiv:2211.14730
+- Publication date: 2022-11-27
+- URL: https://arxiv.org/abs/2211.14730
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: PatchTSTは時系列をパッチへ分け、チャネルごとに共有Transformerで長期予測する。
+- Objective: 局所パターンを残しながらattention費用を減らし、より長い履歴を利用する。
+- Methods: 部分系列をtoken化し、各チャネルを単変量として埋め込み・重みを共有。教師あり予測、マスク事前学習と微調整、データ間転移を評価した。
+- Data and results: 先行Transformerより高い長期予測精度と、事前学習の有効性を報告。別データへの転移でも最良水準だったが、要旨に誤差値はない。
+- Novelty: 点tokenと複雑なチャネル混合を見直し、パッチ化と独立チャネル処理という単純な設計を強い基準にした。
+- Limitations: 編者の注意: チャネル間の直接相互作用を省く設計なので、その必要性が高い課題は別評価が要る。転移・微調整の成績を未学習zero-shot成績と混同しない。
+
+### Paper: One Fits All:Power General Time Series Analysis by Pretrained LM
+- Source: arXiv
+- Canonical ID: arxiv:2302.11939
+- Publication date: 2023-02-23
+- URL: https://arxiv.org/abs/2302.11939
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: Frozen Pretrained Transformerは言語・画像で学んだ主要層を保ち、時系列の複数課題へ適応する。
+- Objective: 時系列専用の大規模事前学習データ不足を、他モダリティのモデルの再利用で補う。
+- Methods: 事前学習済みのself-attention・feed-forward層を変更せず、時系列課題へ微調整。分類、異常検知、予測等を評価し、attentionとPCAの類似性も理論・実験で検討した。
+- Data and results: 主要時系列課題で競争的または最良水準の性能を報告。要旨に課題別数値、モデル規模、必要な微調整量はない。
+- Novelty: 専用の時系列モデルを設計する流れに対し、他分野で学習した主要変換の再利用を共通基盤として検証した。
+- Limitations: 編者の注意: 凍結するのは指定された主要層で、すべての処理が無学習とは限らない。PCAとの類似分析は、全状況で同じ計算をする証明や全用途の汎化保証ではない。
+
+### Paper: TSMixer: An All-MLP Architecture for Time Series Forecasting
+- Source: arXiv
+- Canonical ID: arxiv:2303.06053
+- Publication date: 2023-03-10
+- URL: https://arxiv.org/abs/2303.06053
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: TSMixerは時間軸と特徴軸を交互に混ぜるMLPで、系列間・補助情報を利用する予測器。
+- Objective: 単変量線形モデルの強さを保ちつつ、実務の多変量相互作用を効率よく扱う。
+- Methods: 時間・特徴方向のmixingを行うMLPを積層。一般的な学術データと、大規模小売のM5で専用モデルと比較した。
+- Data and results: 学術基準で専用最良法に匹敵し、難しいM5では比較法を上回った。要旨にデータ数や誤差の絶対値はない。
+- Novelty: attentionやrecurrent構造なしで、単純なMLPへ系列間・補助情報の利用を組み込んだ。
+- Limitations: 編者の注意: 追加情報を使うモデルと使わないモデルでは入力条件が異なる。M5での優位をすべての分野の多変量予測へ一般化しない。
+
 ### Paper: Efficient Multi-stage Inference on Tabular Data
 - Source: arXiv
 - Canonical ID: arxiv:2303.11580
@@ -680,6 +946,20 @@
 - Data and results: 半数以上の入力を軽量経路で扱える場合が多く、商用基盤でレイテンシを約1/1.3、CPUを30%、前後段の通信を約50%削減した。
 - Novelty: モデル自体の圧縮だけでなく、入力に応じた経路分岐と配置の変更で全体の推論費用を減らす。
 - Limitations: 編者の注意: 削減幅はネットワーク構成と入力分布に依存する。要旨に予測精度の差はなく、軽量経路の誤判定や分布変化も個別に検証が必要。
+
+### Paper: Long-term Forecasting with TiDE: Time-series Dense Encoder
+- Source: arXiv
+- Canonical ID: arxiv:2304.08424
+- Publication date: 2023-04-17
+- URL: https://arxiv.org/abs/2304.08424
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: TiDEはMLP型encoder–decoderで共変量と非線形関係を扱い、長期予測を高速化する。
+- Objective: 線形モデルの単純さ・速度と、実務に必要な非線形性・外部入力への対応を両立する。
+- Methods: denseな時系列encoder–decoderを提案。単純な線形類似モデルを線形動的システム上で理論解析し、一般の構成を長期予測基準で比較した。
+- Data and results: 仮定下で線形類似モデルの近最適な誤差率を証明。実験では先行法に匹敵または優れ、最良の比較Transformerより5–10倍高速だった。
+- Novelty: 線形の強い基準を出発点に、MLPで共変量・非線形予測へ拡張した。
+- Limitations: 編者の注意: 理論保証は線形類似モデルと仮定の範囲で、非線形モデル全体への保証ではない。速度倍率も構成・計算環境を伴う比較である。
 
 ### Paper: TABLET: Learning From Instructions For Tabular Data
 - Source: arXiv
@@ -722,6 +1002,80 @@
 - Data and results: 比較法に匹敵または上回り、欠損率が高いほど優位が増える傾向。欠損に不変な表現を学ぶ理論的説明も示すが、要旨に誤差値はない。
 - Novelty: 自然欠損を直接正解にできない問題を、観測値の再マスクによる自己教師あり課題で扱った。
 - Limitations: 編者の注意: 人工的な再マスクと実際の欠損機構は同じとは限らない。特に値に依存して欠ける場合の不偏性や、補完の不確実性を保証しない。
+
+### Paper: Time-LLM: Time Series Forecasting by Reprogramming Large Language Models
+- Source: arXiv
+- Canonical ID: arxiv:2310.01728
+- Publication date: 2023-10-03
+- URL: https://arxiv.org/abs/2310.01728
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: Time-LLMは時系列を再符号化して凍結LLMへ渡し、その出力から予測する。
+- Objective: 時系列と言語の表現差を埋め、既存LLMの系列処理能力を予測へ転用する。
+- Methods: 時系列patchをtext prototypeでreprogramし、Prompt-as-Prefixで文脈を加える。LLM本体を保ち、変換後のpatchを予測値へ投影した。
+- Data and results: 専用の先行予測器を上回り、few-shot・zero-shotでも良好と報告。要旨に課題数、絶対誤差、推論費用はない。
+- Novelty: 時系列用の巨大モデルを一から訓練する代わりに、既存言語モデルの凍結した計算を適応層から利用した。
+- Limitations: 編者の注意: 本体の凍結と、周辺のreprogram・投影の学習費用を区別する。高性能という結果だけで言語的推論が改善原因とは確定せず、同予算の基準比較が必要。
+
+### Paper: TimeGPT-1
+- Source: arXiv
+- Canonical ID: arxiv:2310.03589
+- Publication date: 2023-10-05
+- URL: https://arxiv.org/abs/2310.03589
+- read_level: full_text
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: TimeGPT-1は大規模時系列で学んだ専用Transformerを、未見データの即時予測へ適用する。
+- Objective: データごとのモデル作成を減らし、多分野の予測を追加訓練なしに提供する。
+- Methods: 履歴窓へ局所位置符号を加えるencoder–decoderと線形出力層を用い、予測誤差を学習。既存の文章LLMを転用するモデルではない。
+- Data and results: 確認したv3は公開時系列由来の1,000億超のデータ点で訓練。統計・ML・深層基準に対するzero-shotの精度・効率上の利点を報告した。
+- Novelty: 時系列専用の大規模共有モデルを、分野をまたぐzero-shot推論へ展開した。
+- Limitations: 編者の注意: 記載は著者の評価であり、確認箇所だけでは同じ学習コーパス・重みでの独立再現性を確定できない。『最初』という優先性の主張は採用せず、現行サービスの仕様とも区別する。
+
+本文の照合箇所: [v3（2024-05-27）のSections 5.1–5.2、既存LLMとは異なる点と学習規模](https://arxiv.org/pdf/2310.03589v3)。
+
+### Paper: iTransformer: Inverted Transformers Are Effective for Time Series Forecasting
+- Source: arXiv
+- Canonical ID: arxiv:2310.06625
+- Publication date: 2023-10-10
+- URL: https://arxiv.org/abs/2310.06625
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: iTransformerは時点でなく変数をtokenにし、attentionで変数間関係を学ぶ。
+- Objective: 異質な測定を同じ時点tokenに混ぜる問題と、長い履歴での性能・計算量の問題を見直す。
+- Methods: 各変数の時間履歴を埋め込んでtoken化し、attentionを変数間、feed-forwardを変数ごとの非線形表現へ適用。基本のTransformer部品は保持した。
+- Data and results: 難しい実データで最良水準、異なる変数への汎化や長い履歴の利用改善を報告。要旨にデータ数と誤差値はない。
+- Novelty: attention自体を改変する代わりに、時間と変数のどちらをtokenとするかを反転した。
+- Limitations: 編者の注意: 多変量token間のattention費用は変数数に依存する。任意の履歴長を扱える設計と、すべての長さ・変数集合で精度が保証されることは異なる。
+
+### Paper: Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting
+- Source: arXiv
+- Canonical ID: arxiv:2310.08278
+- Publication date: 2023-10-12
+- URL: https://arxiv.org/abs/2310.08278
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: Lag-Llamaは遅延値を共変量として使う、単変量の確率予測基盤モデル。
+- Objective: 多分野の事前学習を、新しい系列のzero-shot・少数データ適応へ利用する。
+- Methods: decoder-only Transformerへlag特徴を入力し、多様な分野の系列コーパスで事前学習。未見データで追加学習なしと少量の微調整を分けて比較した。
+- Data and results: zero-shotで強い汎化を示し、少量微調整では先行深層法を上回る平均性能を報告。要旨に課題数、確率予測スコア、計算費用はない。
+- Novelty: 系列の過去値の構造を利用し、単変量の予測分布を多数データで共有する設計を示した。
+- Limitations: 編者の注意: 最良平均という主張には微調整条件が含まれ、zero-shotの結果とは区別する。単変量の確率出力が多変量依存や全集団の校正を保証するわけではない。
+
+### Paper: A decoder-only foundation model for time-series forecasting
+- Source: arXiv
+- Canonical ID: arxiv:2310.10688
+- Publication date: 2023-10-14
+- URL: https://arxiv.org/abs/2310.10688
+- read_level: full_text
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: TimesFMは大量の系列をpatch単位で事前学習する、decoder-only型の予測基盤モデル。
+- Objective: 系列ごとの専用訓練を減らし、異なる履歴長・予測長・頻度へ即座に対応する。
+- Methods: patchを残差MLPで埋め込み、causal attentionのdecoderで処理。出力patchを別MLPで復元し、可変履歴に対応するマスクで事前学習した。
+- Data and results: 確認したv3の主モデルは約2億パラメータ、実・人工を合わせ約1,000億時点で学習。未見の複数分野で、専用学習モデルに近いzero-shot性能を報告した。
+- Novelty: 時系列の予測を、入力patchより大きい出力patchも生成できる共有decoderへまとめた。
+- Limitations: 編者の注意: 当時版はデータ固有の動的・静的共変量を持たない構成で、追加情報のある専用モデルと条件が異なる。zero-shotは事前学習や計算費用が不要という意味ではない。
+
+本文の照合箇所: [v3（2024-02-04）のSections 1・4・7、Appendix A.3–A.4](https://arxiv.org/html/2310.10688v3)。
 
 ### Paper: Efficient Bayesian Learning Curve Extrapolation using Prior-Data Fitted Networks
 - Source: arXiv
@@ -793,6 +1147,52 @@
 - Novelty: 表QAを1種類の推論に固定せず、表の等価な構造と相補的な推論経路を扱った。
 - Limitations: 編者の注意: WikiTableQuestionsの正解率は一般的な表分類や厳密な計算能力の指標ではない。複数経路は推論費用を増やし、誤りが独立とは限らない。
 
+### Paper: Timer: Generative Pre-trained Transformers Are Large Time Series Models
+- Source: arXiv
+- Canonical ID: arxiv:2402.02368
+- Publication date: 2024-02-04
+- URL: https://arxiv.org/abs/2402.02368
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: Timerは系列を共通形式へまとめ、次token予測で予測・補完・異常検知へ適応する。
+- Objective: データが少ない実務で、課題ごとの小モデルを一から学習する制約を減らす。
+- Methods: 最大10億時点の系列をsingle-series sequence（S3）形式へ統一し、GPT型の生成事前学習を実施。3種類の解析を共通生成課題へ変換した。
+- Data and results: 予測・補完・異常検知への適応と、少数例一般化・規模拡張の可能性を示した。要旨に各課題の具体的スコアはない。
+- Novelty: 系列形式と下流課題を生成へ揃え、同じ事前学習から複数用途へ展開した。
+- Limitations: 編者の注意: 下流への適応を含む結果で、すべての課題の無調整zero-shotを意味しない。現在のモデル群と比べるときも、版・学習規模・入力条件を揃える必要がある。
+
+### Paper: Unified Training of Universal Time Series Forecasting Transformers
+- Source: arXiv
+- Canonical ID: arxiv:2402.02592
+- Publication date: 2024-02-04
+- URL: https://arxiv.org/abs/2402.02592
+- read_level: full_text
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: Moiraiは異なる頻度・変数数・分布を持つ系列を一つのmasked encoderで学ぶ。
+- Objective: 1データ1モデルを超え、多様な下流予測へ共通の大規模学習を利用する。
+- Methods: 複数patch長、any-variate attention、混合分布を備える構造と統一学習を提案。9分野・270億超の観測を持つLOTSAで事前学習した。
+- Data and results: 分布内・分布外で確率予測と長期予測を評価し、zero-shotでもfull-shotモデルに匹敵または優位な性能を報告。要旨に課題別の誤差値はない。
+- Novelty: 単変量・単一頻度へ限定せず、異なる変数数や出力分布を共通訓練へまとめた。
+- Limitations: 著者は高次元系列への対応の制限、patch長の設定がheuristicな点、データの領域・頻度の多様性不足を指摘。構造上の柔軟性を無制限の規模対応と解釈しない。
+
+本文の照合箇所: [v1のMethodの構成・Problem Formulation、ConclusionのLimitations & Future Work](https://arxiv.org/html/2402.02592v1)。
+
+### Paper: MOMENT: A Family of Open Time-series Foundation Models
+- Source: arXiv
+- Canonical ID: arxiv:2402.03885
+- Publication date: 2024-02-06
+- URL: https://arxiv.org/abs/2402.03885
+- read_level: full_text
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: MOMENTは公開系列を集め、マスク復元で学んだ表現を複数の時系列課題へ使う公開モデル群。
+- Objective: 共通データ不足と多様な系列の違いを乗り越え、少ない教師情報で汎用解析を行う。
+- Methods: Time-series Pileを構築し、非重複patchをマスクして軽量headで復元するTransformerを学習。予測・分類・異常検知・補完をzero-shotやlinear probing等で評価した。
+- Data and results: 少量データと限定的な課題適応で有効な結果を報告。本文では課題に応じてzero-shotと数epochのlinear probingを使い分けている。
+- Novelty: 単一予測課題だけでなく、公開データ・事前学習・少教師量の多課題評価をまとめて提供した。
+- Limitations: 編者の注意: 全課題が無調整ではない。比較値の一部は既報の値を採用しており、全モデルの完全に同条件の再実装比較ではない点を確認して読む。
+
+本文の照合箇所: [Sections 3.2–3.3・4、Appendix FのResults Sources](https://arxiv.org/html/2402.03885v1)。
+
 ### Paper: TuneTables: Context Optimization for Scalable Prior-Data Fitted Networks
 - Source: arXiv
 - Canonical ID: arxiv:2402.11137
@@ -820,6 +1220,36 @@
 - Data and results: 少量または微調整なしで競争的な性能と大きな速度改善を報告。要旨にデータ数・速度倍率・平均精度はない。
 - Novelty: 予測器を各表で最適化する代わりに、予測器の重みをデータから生成する設計へ移した。
 - Limitations: 編者の注意: 新課題での訓練不要と、メタ訓練の費用が不要であることは異なる。未経験の規模・特徴型への汎化と全体費用は個別評価が必要。
+
+### Paper: UniTS: A Unified Multi-Task Time Series Model
+- Source: arXiv
+- Canonical ID: arxiv:2403.00131
+- Publication date: 2024-02-29
+- URL: https://arxiv.org/abs/2403.00131
+- read_level: abstract
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: UniTSはtask tokenizationで生成・予測の複数時系列課題を一つの枠組みへまとめる。
+- Objective: 予測だけに偏らず、異なる領域と課題の要求へ共通表現を転用する。
+- Methods: 改良Transformerとtask tokenを使い、異なる動態・標本化率・時間尺度で多領域事前学習。38データで4課題、few-shot・prompt適応と単独課題も比較した。
+- Data and results: 予測12、分類20、異常検知18、補完16の比較モデルに対する優位を報告。単独課題でも専用法を上回ったが、要旨に絶対スコアはない。
+- Novelty: 予測専用の事前学習を超え、生成・識別課題をtask tokenで共通の処理へ統合した。
+- Limitations: 編者の注意: 38データでの多課題結果を任意課題への普遍性としない。prompt、few-shot、単独課題は学習・評価条件が異なるため分けて比較する。
+
+### Paper: Chronos: Learning the Language of Time Series
+- Source: arXiv
+- Canonical ID: arxiv:2403.07815
+- Publication date: 2024-03-12
+- URL: https://arxiv.org/abs/2403.07815
+- read_level: full_text
+- Tags: 基礎文献, 表形式・時系列・因果推論
+- Summary: Chronosは数値を語彙へ量子化し、時系列自体で事前学習する確率的な予測基盤モデル。
+- Objective: 異なる分野の系列を共有学習し、新しいデータでも追加学習なしの予測を得る。
+- Methods: scale調整・量子化した値をT5型へ入力し、cross-entropyで学習。公開系列にGaussian processの人工系列を追加し、2,000万–7.1億パラメータを評価した。
+- Data and results: 42データは訓練と重なる15、未見27に分かれる。未見群の集約確率予測でChronosモデルが2・3位となり、多くの課題専用モデルを上回った。
+- Novelty: 言語モデル構造を数値のtoken生成へ利用し、異種系列を横断した確率予測へ展開した。
+- Limitations: 著者は指数トレンドの難しさと短い履歴での傾向過小評価を示す。未見27課題でも厳密な全データの時間分離には注意を付記しており、42件すべてをzero-shot評価と扱わない。
+
+本文の照合箇所: [v2のSections 5.1・5.5.2（脚注4）・5.7、15対27の評価区分](https://arxiv.org/html/2403.07815v2)。
 
 ### Paper: TabPFGen -- Tabular Data Generation with TabPFN
 - Source: arXiv
@@ -874,16 +1304,20 @@ arxiv:1610.01271
 arxiv:1611.04035
 arxiv:1701.08687
 arxiv:1702.07306
+arxiv:1704.04110
 arxiv:1705.08821
 arxiv:1803.01422
 arxiv:1811.11264
 arxiv:1901.09475
+arxiv:1905.10437
 arxiv:1906.02120
 arxiv:1906.04477
+arxiv:1907.00235
 arxiv:1907.00503
 arxiv:1907.02893
 arxiv:1908.07442
 arxiv:1909.06312
+arxiv:1912.09363
 arxiv:2002.12710
 arxiv:2003.03191
 arxiv:2006.04697
@@ -893,34 +1327,60 @@ arxiv:2009.14461
 arxiv:2010.05761
 arxiv:2011.08411
 arxiv:2012.06678
+arxiv:2012.07436
+arxiv:2012.08791
 arxiv:2101.01134
+arxiv:2101.07732
+arxiv:2104.10334
 arxiv:2105.02584
+arxiv:2106.00750
 arxiv:2106.01342
+arxiv:2106.10466
 arxiv:2106.11959
+arxiv:2106.13008
+arxiv:2106.14112
 arxiv:2106.15147
 arxiv:2107.11059
+arxiv:2201.12740
+arxiv:2202.01575
 arxiv:2202.04208
 arxiv:2204.00401
+arxiv:2205.13504
 arxiv:2206.00664
 arxiv:2206.08564
 arxiv:2207.01848
 arxiv:2207.08815
 arxiv:2208.05949
 arxiv:2209.15421
+arxiv:2210.02186
 arxiv:2210.04018
 arxiv:2210.06280
 arxiv:2210.10723
+arxiv:2211.14730
+arxiv:2302.11939
+arxiv:2303.06053
 arxiv:2303.11580
+arxiv:2304.08424
 arxiv:2304.13188
 arxiv:2305.11097
 arxiv:2309.13793
+arxiv:2310.01728
+arxiv:2310.03589
+arxiv:2310.06625
+arxiv:2310.08278
+arxiv:2310.10688
 arxiv:2310.20447
 arxiv:2311.10609
 arxiv:2312.07577
 arxiv:2312.06089
 arxiv:2312.16702
+arxiv:2402.02368
+arxiv:2402.02592
+arxiv:2402.03885
 arxiv:2402.11137
 arxiv:2402.14335
+arxiv:2403.00131
+arxiv:2403.07815
 arxiv:2406.05216
 arxiv:2407.04057
 arxiv:2410.24210

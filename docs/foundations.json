@@ -11120,6 +11120,30 @@
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
     },
     {
+      "title": "DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:1704.04110",
+      "date": "2017-04-13",
+      "url": "https://arxiv.org/abs/1704.04110",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "DeepARは関連する多数の系列を共同学習し、将来値の分布を出す自己回帰RNN予測法。",
+      "objective": "需要などの予測で、点予測だけでなく不確実性を含む将来分布を得る。",
+      "methods": "多くの関連時系列上で自己回帰のrecurrent networkを学習し、各系列の履歴から確率予測を生成。複数の実世界予測データで比較した。",
+      "results": "最良の既存法に対し約15%の精度改善を報告。要旨にデータ数、誤差指標の絶対値や区間校正の結果はない。",
+      "novelty": "系列ごとに個別モデルを作る方法から、関連系列間で情報を共有する確率的なglobalモデルへ進めた。",
+      "limitations": "編者の注意: 関連系列を共有学習する設定であり、未知の任意分野へのzero-shot基盤モデルではない。分布を出すことと予測区間が正しく校正されることは別である。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
       "title": "Causal Effect Inference with Deep Latent-Variable Models",
       "report": "reports/foundations/05-structured.md",
       "reportDate": "2026-11-14",
@@ -11220,6 +11244,30 @@
       "extraSource": "https://arxiv.org/pdf/1901.09475v2"
     },
     {
+      "title": "N-BEATS: Neural basis expansion analysis for interpretable time series forecasting",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:1905.10437",
+      "date": "2019-05-24",
+      "url": "https://arxiv.org/abs/1905.10437",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "N-BEATSは深い全結合層と前後の残差構造で、単変量の点予測を行う。",
+      "objective": "領域別の複雑な専用部品に頼らず、幅広い系列を同じ構造で高精度に予測する。",
+      "methods": "backward・forward residual linkを持つ深いブロックを積層。汎用構成と解釈可能な構成をM3、M4、TOURISMで比較した。",
+      "results": "対象競技データで両構成が最良水準。要旨は統計基準比11%、当時のM4優勝法比3%の精度改善を報告し、解釈構成でも大きな性能低下を避けた。",
+      "novelty": "時系列固有の部品なしの基本構成でも強い予測を得られ、必要に応じて解釈可能な出力を加える設計を示した。",
+      "limitations": "編者の注意: 単変量・点予測の対象で、多変量依存や確率校正を実証する結果ではない。改善率は原著の比較条件に限り、絶対ポイントに変換しない。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
       "title": "Adapting Neural Networks for the Estimation of Treatment Effects",
       "report": "reports/foundations/05-structured.md",
       "reportDate": "2026-11-14",
@@ -11265,6 +11313,30 @@
       "results": "人工・実データで探索能力の改善と柔軟なスコア利用を示した。要旨にグラフ数や構造誤差・実行時間の絶対値はない。",
       "novelty": "新環境で使う方策を得る通常のRLと異なり、候補グラフの組合せ探索を目的にRLを利用した。",
       "limitations": "編者の注意: 高いスコアのグラフが真の因果構造とは限らず、スコアと識別仮定に依存する。非巡回ペナルティや探索の計算量も含めた評価が必要。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:1907.00235",
+      "date": "2019-06-29",
+      "url": "https://arxiv.org/abs/1907.00235",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "LogSparse Transformerは局所文脈を畳み込みで補い、長い系列のattentionのメモリ負担を減らす。",
+      "objective": "通常Transformerの局所性の弱さと、系列長の2乗に増えるメモリを改善する。",
+      "methods": "causal convolutionでquery・keyを生成し、LogSparseな接続で長期関係を扱う。人工・実世界の予測データで比較した。",
+      "results": "O(L(log L)²)のメモリ費用を示し、限られたメモリ下で細粒度・長期依存の系列を良好に予測。要旨に誤差・実測速度の値はない。",
+      "novelty": "各時点独立のattention入力へ局所文脈を加え、疎な長期接続と組み合わせた。",
+      "limitations": "編者の注意: 漸近的なメモリ量は実測の実行速度と同じではない。疎な接続が拾いにくい依存や、非周期的な変化の性能は別に確認が必要。",
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
     },
     {
@@ -11363,6 +11435,30 @@
       "results": "多くの比較課題で競合法を上回ったと報告。要旨にデータ数、平均改善量、探索・計算予算は記載されない。",
       "novelty": "木とニューラルモデルを別々に使う代わりに、木のアンサンブルを深い微分可能なモデルへ一般化した。",
       "limitations": "編者の注意: 『多くの課題』はすべての表への優越性ではない。調整の費用、特徴の型、学習データ量を揃えた比較が必要である。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:1912.09363",
+      "date": "2019-12-19",
+      "url": "https://arxiv.org/abs/1912.09363",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "TFTは静的属性・既知の未来入力・過去だけの情報を区別し、多期間予測と寄与の説明を行う。",
+      "objective": "実務に混在する入力をまとめて扱い、短期・長期の依存と重要特徴を捉える。",
+      "methods": "recurrent層で局所処理、解釈可能なself-attentionで長期関係を学習。特徴選択とgatingで不要部品を抑え、実データで精度と3つの説明用途を評価した。",
+      "results": "既存基準への有意な改善と実用的な解釈例を報告。要旨にデータ数・精度の絶対値はない。",
+      "novelty": "入力の利用可能時点と種類に合わせた処理を、多期間予測・特徴選択・時間寄与と統合した。",
+      "limitations": "編者の注意: 将来入力は予測時点で既知のものに限る。attentionや選択重みは因果効果ではなく、説明の見やすさと真の機構の同定を区別する。",
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
     },
     {
@@ -11582,6 +11678,54 @@
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
     },
     {
+      "title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2012.07436",
+      "date": "2020-12-14",
+      "url": "https://arxiv.org/abs/2012.07436",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "InformerはProbSparse attention、系列の蒸留、一括復号で長い将来系列を効率的に予測する。",
+      "objective": "長期予測で通常Transformerの二次計算量・高メモリ・逐次出力の負担を減らす。",
+      "methods": "O(L log L)のProbSparse機構を用い、層入力を段階的に半減。復号器は1回の前向き処理で長い予測系列をまとめて出力する。",
+      "results": "4つの大規模データで比較法への有意な改善を報告。要旨に誤差値や実測速度倍率はない。",
+      "novelty": "attentionの疎化だけでなく、入力圧縮と非逐次の出力を組み合わせて長期予測を設計した。",
+      "limitations": "編者の注意: 計算量の主張と全処理時間の削減は別指標。系列の蒸留で消える細部、予測期間、調整予算を揃えて後続の単純な基準とも比較する。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "MINIROCKET: A Very Fast (Almost) Deterministic Transform for Time Series Classification",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2012.08791",
+      "date": "2020-12-16",
+      "url": "https://arxiv.org/abs/2012.08791",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "MiniRocketはランダム畳み込み変換をほぼ決定的に再構成し、線形分類を高速化する。",
+      "objective": "ROCKETに近い分類精度を、さらに少ない計算と高い再現性で得る。",
+      "methods": "ROCKETの系列特徴変換を再定式化し、ほぼ決定的な出力を線形分類器へ入力。追加費用を払えば完全に決定的にもできる構成を比較した。",
+      "results": "大きいデータで最大75倍高速化し、ほぼ同じ精度を維持。原著はUCR109データの学習・評価を10分未満と報告する。",
+      "novelty": "深いモデルの追加訓練ではなく、強い固定変換の構成と計算を絞って精度・速度を両立した。",
+      "limitations": "編者の注意: 最大速度倍率と10分は当時の計算環境の結果で、任意機器での保証ではない。分類の結果を予測や異常検知の性能へ拡張しない。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
       "title": "Does Invariant Risk Minimization Capture Invariance?",
       "report": "reports/foundations/05-structured.md",
       "reportDate": "2026-11-14",
@@ -11603,6 +11747,54 @@
       "results": "線形版が適切な不変性を逃す例に加え、正しい不変性を得ても損失の非不変性で劣る予測器になる場合を示した。有限標本で脆弱さが増した。",
       "novelty": "IRMの失敗を単なる調整不足でなく、近似目的と最適化対象のずれとして分析した。",
       "limitations": "編者の注意: 特定の定式化に対する反例であり、不変性に基づく学習全体の不可能性定理ではない。理想IRMとIRMv1に対する結論を分けて読む。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "Out-of-distribution Prediction with Invariant Risk Minimization: The Limitation and An Effective Fix",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2101.07732",
+      "date": "2021-01-16",
+      "url": "https://arxiv.org/abs/2101.07732",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "強い共通原因による見せかけ相関でIRMが劣化する条件を調べ、条件付き分布の整合を加えた。",
+      "objective": "元のColored MNISTでは成功するIRMが、より強い環境依存の相関で失敗する理由を明らかにする。",
+      "methods": "domainがラベルと偽の特徴の双方へ強く影響するΛ型相関を解析。IRMとconditional distribution matchingを組み合わせ、Colored MNIST plusの半人工実験で評価した。",
+      "results": "強いΛ型相関でのIRMの大きな劣化と、提案する組合せによる改善を示した。要旨に精度値や改善幅はない。",
+      "novelty": "不変性の目的だけでは残る特定の偽相関を、条件付き分布の一致で補う。",
+      "limitations": "編者の注意: 特定の相関構造を対象とする修正で、任意の未知領域への保証ではない。半人工の色付き数字実験から実務の全分布変化への有効性は確定しない。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "Automatic Double Machine Learning for Continuous Treatment Effects",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2104.10334",
+      "date": "2021-04-21",
+      "url": "https://arxiv.org/abs/2104.10334",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "連続処置の平均用量反応関数を、DMLとautomatic DMLの補正で推定する。",
+      "objective": "処置の有無だけでなく、特定の投与量・介入水準における平均結果を柔軟に推定する。",
+      "methods": "DML・ADMLの道具を組み合わせた新しいdebiasingを導入し、安定性・バランスの理論的性質と漸近正規性を示した。シミュレーションで既存法と比較した。",
+      "results": "人工実験で良好な比較性能を報告。要旨に誤差値や標本数はなく、非パラメトリックな連続用量関数に対する結果である。",
+      "novelty": "二値処置の平均効果から、連続的な処置水準ごとの平均反応へ自動補正の方法を拡張した。",
+      "limitations": "編者の注意: 漸近正規性を二値ATEと同じroot-n速度と読み替えない。因果解釈には交絡調整と用量の支持・重なりなどの識別条件が別途必要。",
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
     },
     {
@@ -11630,6 +11822,30 @@
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
     },
     {
+      "title": "Unsupervised Representation Learning for Time Series with Temporal Neighborhood Coding",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2106.00750",
+      "date": "2021-06-01",
+      "url": "https://arxiv.org/abs/2106.00750",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "TNCは局所的に安定した時間近傍を使い、非定常系列の自己教師あり表現を学ぶ。",
+      "objective": "状態が変わる一方でラベルの少ない信号を、分類・クラスタリングに使えるようにする。",
+      "methods": "生成過程の局所的滑らかさから時間近傍を定義し、近傍内と外の信号分布を区別するdebiasした対照目的を用いた。複数データで既存の教師なし法と比較した。",
+      "results": "クラスタリングと分類で比較法を上回ったと報告。要旨にデータ数やスコア、患者追跡の実測値はない。",
+      "novelty": "全系列が定常とは仮定せず、短い時間近傍に残る安定性を表現学習の教師信号にした。",
+      "limitations": "編者の注意: 局所滑らかさが破れる急変や、離れた時点の同じ状態の扱いに注意が要る。医療という動機と、患者の潜在状態を臨床で正しく追跡した証拠は区別する。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
       "title": "SAINT: Improved Neural Networks for Tabular Data via Row Attention and Contrastive Pre-Training",
       "report": "reports/foundations/05-structured.md",
       "reportDate": "2026-11-14",
@@ -11654,6 +11870,30 @@
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
     },
     {
+      "title": "TS2Vec: Towards Universal Representation of Time Series",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2106.10466",
+      "date": "2021-06-19",
+      "url": "https://arxiv.org/abs/2106.10466",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "TS2Vecは階層的な対照学習で時点表現を学び、部分系列から系列全体まで集約できる。",
+      "objective": "任意の長さ・意味粒度で使える時系列表現を、ラベルなしに獲得する。",
+      "methods": "拡張した文脈viewを階層的に対照し、各時点の文脈表現を学習。必要な部分の集約を分類・線形予測・教師なし異常検知へ利用した。",
+      "results": "UCR125・UEA29データの分類で既存の教師なし表現を改善し、予測と異常検知でも最良水準を報告。要旨に精度の具体値はない。",
+      "novelty": "系列全体に固定長ベクトルを割り当てるだけでなく、時点から任意部分の表現を共有できるようにした。",
+      "limitations": "編者の注意: ラベルなしの表現学習と下流予測器の学習条件を区別する。データ拡張で保存する性質が課題に適するか、未来情報やテスト混入がないかも確認が必要。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
       "title": "Revisiting Deep Learning Models for Tabular Data",
       "report": "reports/foundations/05-structured.md",
       "reportDate": "2026-11-14",
@@ -11675,6 +11915,54 @@
       "results": "ResNet型は見落とされがちな強い基準、Transformerの適応は多くの課題で他の深層法を上回った。一方、GBDTも含め普遍的な勝者はなかった。要旨に絶対スコアはない。",
       "novelty": "新構造の主張だけでなく、基準モデルの強さと公平な調整手順を表形式研究の中心に置いた。",
       "limitations": "編者の注意: 多数課題の実験でも、任意の表でTransformerが最良とは結論しない。データ規模・特徴型・調整費用に応じた比較が必要。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "Autoformer: Decomposition Transformers with Auto-Correlation for Long-Term Series Forecasting",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2106.13008",
+      "date": "2021-06-24",
+      "url": "https://arxiv.org/abs/2106.13008",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "Autoformerは分解を内部ブロックにし、周期性に基づくAuto-Correlationで部分系列の依存を扱う。",
+      "objective": "長い将来の複雑なパターンを、点ごとの疎なattentionより効果的に利用する。",
+      "methods": "前処理だった系列分解を深層モデル内で段階的に実行。周期性から部分系列の関係を見つけ、表現を集約する機構を設計した。",
+      "results": "エネルギー・交通・経済・天候・疾病の5用途を含む6基準で、38%の相対改善を報告。要旨に各課題の絶対誤差はない。",
+      "novelty": "局所時点間のattentionから、分解と周期に基づく部分系列単位の依存推定へ移した。",
+      "limitations": "編者の注意: 38%は原著の比較条件による相対改善で、全用途の保証ではない。周期の弱い系列・変化する周期・非定常な突発事象も個別評価が必要。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "Time-Series Representation Learning via Temporal and Contextual Contrasting",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2106.14112",
+      "date": "2021-06-26",
+      "url": "https://arxiv.org/abs/2106.14112",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "TS-TCCは時間予測と文脈の対照を組み合わせ、未ラベル系列の特徴を学ぶ。",
+      "objective": "動的な系列から、少数ラベルと領域転移に役立つ表現を得る。",
+      "methods": "弱い・強い拡張で2viewを作り、cross-viewの時間予測を学習。同じ標本の文脈を近づけ、別標本を離すcontextual contrastも追加した。",
+      "results": "3実データで、特徴上の線形分類器が教師あり訓練に匹敵。少数ラベル・転移でも高い効率を報告するが、要旨に数値スコアはない。",
+      "novelty": "時系列の局所的な動態と、標本全体の識別性を2つの対照目的で分けて学ぶ。",
+      "limitations": "編者の注意: 選んだ拡張が元のラベル・意味を保持することに依存する。3データの比較から、すべての生体・産業信号への転用は保証されない。",
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
     },
     {
@@ -11726,6 +12014,54 @@
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
     },
     {
+      "title": "FEDformer: Frequency Enhanced Decomposed Transformer for Long-term Series Forecasting",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2201.12740",
+      "date": "2022-01-30",
+      "url": "https://arxiv.org/abs/2201.12740",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "FEDformerは季節・トレンド分解と周波数表現を組み合わせ、長期予測を効率化する。",
+      "objective": "Transformerの局所的詳細に加え、系列全体の形を捉えつつ計算負担を減らす。",
+      "methods": "分解で全体傾向、Transformerで細部を扱い、Fourier等での疎な表現を周波数強化へ利用。6つの予測基準で評価した。",
+      "results": "系列長に線形の計算量を示し、既存最良法に対し多変量14.8%、単変量22.6%の予測誤差低下を報告。",
+      "novelty": "時間領域の分解と、周波数領域で少数成分を使う表現を長期予測器へ統合した。",
+      "limitations": "編者の注意: 相対的な誤差低下を絶対精度の増分に読み替えない。周波数疎性や分解が適する範囲と、実測の速度・メモリはデータ依存である。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "CoST: Contrastive Learning of Disentangled Seasonal-Trend Representations for Time Series Forecasting",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2202.01575",
+      "date": "2022-02-03",
+      "url": "https://arxiv.org/abs/2202.01575",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "CoSTはトレンドと季節性を分けた対照表現を先に学び、単純な回帰で予測する。",
+      "objective": "予測器をend-to-endで作る以外の、頑健で転用しやすい時系列学習の枠組みを得る。",
+      "methods": "時間領域と周波数領域の対照損失を、傾向・季節性の識別表現へそれぞれ利用。表現の後に回帰を適応し、encoderや回帰器を変えて比較した。",
+      "results": "多変量基準でMSEを21.3%改善し、異なるbackbone・下流回帰でも頑健な結果を報告した。",
+      "novelty": "予測に重要な成分の分離を、時間・周波数の自己教師あり学習として設計した。",
+      "limitations": "編者の注意: 因果的な動機付けがあっても、学習した成分が真の因果機構と同一とは限らない。21.3%は比較条件での相対MSE改善である。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
       "title": "Validating Causal Inference Methods",
       "report": "reports/foundations/05-structured.md",
       "reportDate": "2026-11-14",
@@ -11771,6 +12107,30 @@
       "results": "複数データと学習課題で、異なるプライバシー予算下に少なくとも48.16%高い効用を報告。要旨に予算値・指標の絶対値はない。",
       "novelty": "経験的な匿名性評価だけでなく、差分プライバシーの訓練と下流効用を明示的に組み合わせた。",
       "limitations": "編者の注意: 保証は採用したDP定義・予算・実装に依存し、任意の設定で同じではない。48.16%は相対効用の主張で、絶対精度や情報漏洩ゼロを意味しない。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "Are Transformers Effective for Time Series Forecasting?",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2205.13504",
+      "date": "2022-05-26",
+      "url": "https://arxiv.org/abs/2205.13504",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "DLinearなど単層の線形基準が、当時の複雑な長期予測Transformerを上回る例を示した。",
+      "objective": "Transformerの改変による進歩が、十分強い単純な基準との比較でも成り立つか検証する。",
+      "methods": "LTSF-Linearという単層線形モデル群を導入し、9実データで先行Transformerと比較。時間関係の取り出しに各設計要素が与える影響も分析した。",
+      "results": "対象9データの比較では線形法がすべてで先行法を上回り、しばしば大差だった。要旨に各誤差の具体値はない。",
+      "novelty": "構造の複雑化が必要という前提を問い、時系列の強い単純基準と評価手順の再検討を促した。",
+      "limitations": "編者の注意: 当時の選定モデル・データ・設定の結果で、Transformer全般の不可能性を証明しない。時間順序への著者の説明と、構造ごとの実測結果を区別する。",
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
     },
     {
@@ -11922,6 +12282,30 @@
       "extraSource": "https://proceedings.mlr.press/v202/kotelnikov23a/kotelnikov23a.pdf"
     },
     {
+      "title": "TimesNet: Temporal 2D-Variation Modeling for General Time Series Analysis",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2210.02186",
+      "date": "2022-10-05",
+      "url": "https://arxiv.org/abs/2210.02186",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "TimesNetは複数周期に沿って系列を2次元化し、周期内・周期間の変動を共通に学ぶ。",
+      "objective": "予測だけに専用化せず、広い時系列課題に共通する複雑な時間変動を表現する。",
+      "methods": "多周期性を適応的に見つけ、1次元系列を複数の2次元tensorへ変換。TimesBlockのパラメータ効率のよいinception部品で2方向の変動を抽出した。",
+      "results": "短期・長期予測、欠損補完、分類、異常検知の5課題で最良水準を報告。要旨に課題別スコアや対象数はない。",
+      "novelty": "周期を単なる特徴として足すのではなく、2次元kernelが扱える表現の軸へ変換した。",
+      "limitations": "編者の注意: 各課題で強いことと、1つの重みで全課題を無調整に解くことは異なる。周期が曖昧・急変するデータの挙動と評価条件も確認が必要。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
       "title": "STaSy: Score-based Tabular data Synthesis",
       "report": "reports/foundations/05-structured.md",
       "reportDate": "2026-11-14",
@@ -11994,6 +12378,78 @@
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
     },
     {
+      "title": "A Time Series is Worth 64 Words: Long-term Forecasting with Transformers",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2211.14730",
+      "date": "2022-11-27",
+      "url": "https://arxiv.org/abs/2211.14730",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "PatchTSTは時系列をパッチへ分け、チャネルごとに共有Transformerで長期予測する。",
+      "objective": "局所パターンを残しながらattention費用を減らし、より長い履歴を利用する。",
+      "methods": "部分系列をtoken化し、各チャネルを単変量として埋め込み・重みを共有。教師あり予測、マスク事前学習と微調整、データ間転移を評価した。",
+      "results": "先行Transformerより高い長期予測精度と、事前学習の有効性を報告。別データへの転移でも最良水準だったが、要旨に誤差値はない。",
+      "novelty": "点tokenと複雑なチャネル混合を見直し、パッチ化と独立チャネル処理という単純な設計を強い基準にした。",
+      "limitations": "編者の注意: チャネル間の直接相互作用を省く設計なので、その必要性が高い課題は別評価が要る。転移・微調整の成績を未学習zero-shot成績と混同しない。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "One Fits All:Power General Time Series Analysis by Pretrained LM",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2302.11939",
+      "date": "2023-02-23",
+      "url": "https://arxiv.org/abs/2302.11939",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "Frozen Pretrained Transformerは言語・画像で学んだ主要層を保ち、時系列の複数課題へ適応する。",
+      "objective": "時系列専用の大規模事前学習データ不足を、他モダリティのモデルの再利用で補う。",
+      "methods": "事前学習済みのself-attention・feed-forward層を変更せず、時系列課題へ微調整。分類、異常検知、予測等を評価し、attentionとPCAの類似性も理論・実験で検討した。",
+      "results": "主要時系列課題で競争的または最良水準の性能を報告。要旨に課題別数値、モデル規模、必要な微調整量はない。",
+      "novelty": "専用の時系列モデルを設計する流れに対し、他分野で学習した主要変換の再利用を共通基盤として検証した。",
+      "limitations": "編者の注意: 凍結するのは指定された主要層で、すべての処理が無学習とは限らない。PCAとの類似分析は、全状況で同じ計算をする証明や全用途の汎化保証ではない。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "TSMixer: An All-MLP Architecture for Time Series Forecasting",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2303.06053",
+      "date": "2023-03-10",
+      "url": "https://arxiv.org/abs/2303.06053",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "TSMixerは時間軸と特徴軸を交互に混ぜるMLPで、系列間・補助情報を利用する予測器。",
+      "objective": "単変量線形モデルの強さを保ちつつ、実務の多変量相互作用を効率よく扱う。",
+      "methods": "時間・特徴方向のmixingを行うMLPを積層。一般的な学術データと、大規模小売のM5で専用モデルと比較した。",
+      "results": "学術基準で専用最良法に匹敵し、難しいM5では比較法を上回った。要旨にデータ数や誤差の絶対値はない。",
+      "novelty": "attentionやrecurrent構造なしで、単純なMLPへ系列間・補助情報の利用を組み込んだ。",
+      "limitations": "編者の注意: 追加情報を使うモデルと使わないモデルでは入力条件が異なる。M5での優位をすべての分野の多変量予測へ一般化しない。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
       "title": "Efficient Multi-stage Inference on Tabular Data",
       "report": "reports/foundations/05-structured.md",
       "reportDate": "2026-11-14",
@@ -12015,6 +12471,30 @@
       "results": "半数以上の入力を軽量経路で扱える場合が多く、商用基盤でレイテンシを約1/1.3、CPUを30%、前後段の通信を約50%削減した。",
       "novelty": "モデル自体の圧縮だけでなく、入力に応じた経路分岐と配置の変更で全体の推論費用を減らす。",
       "limitations": "編者の注意: 削減幅はネットワーク構成と入力分布に依存する。要旨に予測精度の差はなく、軽量経路の誤判定や分布変化も個別に検証が必要。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "Long-term Forecasting with TiDE: Time-series Dense Encoder",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2304.08424",
+      "date": "2023-04-17",
+      "url": "https://arxiv.org/abs/2304.08424",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "TiDEはMLP型encoder–decoderで共変量と非線形関係を扱い、長期予測を高速化する。",
+      "objective": "線形モデルの単純さ・速度と、実務に必要な非線形性・外部入力への対応を両立する。",
+      "methods": "denseな時系列encoder–decoderを提案。単純な線形類似モデルを線形動的システム上で理論解析し、一般の構成を長期予測基準で比較した。",
+      "results": "仮定下で線形類似モデルの近最適な誤差率を証明。実験では先行法に匹敵または優れ、最良の比較Transformerより5–10倍高速だった。",
+      "novelty": "線形の強い基準を出発点に、MLPで共変量・非線形予測へ拡張した。",
+      "limitations": "編者の注意: 理論保証は線形類似モデルと仮定の範囲で、非線形モデル全体への保証ではない。速度倍率も構成・計算環境を伴う比較である。",
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
     },
     {
@@ -12088,6 +12568,130 @@
       "novelty": "自然欠損を直接正解にできない問題を、観測値の再マスクによる自己教師あり課題で扱った。",
       "limitations": "編者の注意: 人工的な再マスクと実際の欠損機構は同じとは限らない。特に値に依存して欠ける場合の不偏性や、補完の不確実性を保証しない。",
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2310.01728",
+      "date": "2023-10-03",
+      "url": "https://arxiv.org/abs/2310.01728",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "Time-LLMは時系列を再符号化して凍結LLMへ渡し、その出力から予測する。",
+      "objective": "時系列と言語の表現差を埋め、既存LLMの系列処理能力を予測へ転用する。",
+      "methods": "時系列patchをtext prototypeでreprogramし、Prompt-as-Prefixで文脈を加える。LLM本体を保ち、変換後のpatchを予測値へ投影した。",
+      "results": "専用の先行予測器を上回り、few-shot・zero-shotでも良好と報告。要旨に課題数、絶対誤差、推論費用はない。",
+      "novelty": "時系列用の巨大モデルを一から訓練する代わりに、既存言語モデルの凍結した計算を適応層から利用した。",
+      "limitations": "編者の注意: 本体の凍結と、周辺のreprogram・投影の学習費用を区別する。高性能という結果だけで言語的推論が改善原因とは確定せず、同予算の基準比較が必要。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "TimeGPT-1",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2310.03589",
+      "date": "2023-10-05",
+      "url": "https://arxiv.org/abs/2310.03589",
+      "read_level": "full_text",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "TimeGPT-1は大規模時系列で学んだ専用Transformerを、未見データの即時予測へ適用する。",
+      "objective": "データごとのモデル作成を減らし、多分野の予測を追加訓練なしに提供する。",
+      "methods": "履歴窓へ局所位置符号を加えるencoder–decoderと線形出力層を用い、予測誤差を学習。既存の文章LLMを転用するモデルではない。",
+      "results": "確認したv3は公開時系列由来の1,000億超のデータ点で訓練。統計・ML・深層基準に対するzero-shotの精度・効率上の利点を報告した。",
+      "novelty": "時系列専用の大規模共有モデルを、分野をまたぐzero-shot推論へ展開した。",
+      "limitations": "編者の注意: 記載は著者の評価であり、確認箇所だけでは同じ学習コーパス・重みでの独立再現性を確定できない。『最初』という優先性の主張は採用せず、現行サービスの仕様とも区別する。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。",
+      "sourceSections": "v3（2024-05-27）のSections 5.1–5.2、既存LLMとは異なる点と学習規模",
+      "extraSource": "https://arxiv.org/pdf/2310.03589v3"
+    },
+    {
+      "title": "iTransformer: Inverted Transformers Are Effective for Time Series Forecasting",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2310.06625",
+      "date": "2023-10-10",
+      "url": "https://arxiv.org/abs/2310.06625",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "iTransformerは時点でなく変数をtokenにし、attentionで変数間関係を学ぶ。",
+      "objective": "異質な測定を同じ時点tokenに混ぜる問題と、長い履歴での性能・計算量の問題を見直す。",
+      "methods": "各変数の時間履歴を埋め込んでtoken化し、attentionを変数間、feed-forwardを変数ごとの非線形表現へ適用。基本のTransformer部品は保持した。",
+      "results": "難しい実データで最良水準、異なる変数への汎化や長い履歴の利用改善を報告。要旨にデータ数と誤差値はない。",
+      "novelty": "attention自体を改変する代わりに、時間と変数のどちらをtokenとするかを反転した。",
+      "limitations": "編者の注意: 多変量token間のattention費用は変数数に依存する。任意の履歴長を扱える設計と、すべての長さ・変数集合で精度が保証されることは異なる。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "Lag-Llama: Towards Foundation Models for Probabilistic Time Series Forecasting",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2310.08278",
+      "date": "2023-10-12",
+      "url": "https://arxiv.org/abs/2310.08278",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "Lag-Llamaは遅延値を共変量として使う、単変量の確率予測基盤モデル。",
+      "objective": "多分野の事前学習を、新しい系列のzero-shot・少数データ適応へ利用する。",
+      "methods": "decoder-only Transformerへlag特徴を入力し、多様な分野の系列コーパスで事前学習。未見データで追加学習なしと少量の微調整を分けて比較した。",
+      "results": "zero-shotで強い汎化を示し、少量微調整では先行深層法を上回る平均性能を報告。要旨に課題数、確率予測スコア、計算費用はない。",
+      "novelty": "系列の過去値の構造を利用し、単変量の予測分布を多数データで共有する設計を示した。",
+      "limitations": "編者の注意: 最良平均という主張には微調整条件が含まれ、zero-shotの結果とは区別する。単変量の確率出力が多変量依存や全集団の校正を保証するわけではない。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "A decoder-only foundation model for time-series forecasting",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2310.10688",
+      "date": "2023-10-14",
+      "url": "https://arxiv.org/abs/2310.10688",
+      "read_level": "full_text",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "TimesFMは大量の系列をpatch単位で事前学習する、decoder-only型の予測基盤モデル。",
+      "objective": "系列ごとの専用訓練を減らし、異なる履歴長・予測長・頻度へ即座に対応する。",
+      "methods": "patchを残差MLPで埋め込み、causal attentionのdecoderで処理。出力patchを別MLPで復元し、可変履歴に対応するマスクで事前学習した。",
+      "results": "確認したv3の主モデルは約2億パラメータ、実・人工を合わせ約1,000億時点で学習。未見の複数分野で、専用学習モデルに近いzero-shot性能を報告した。",
+      "novelty": "時系列の予測を、入力patchより大きい出力patchも生成できる共有decoderへまとめた。",
+      "limitations": "編者の注意: 当時版はデータ固有の動的・静的共変量を持たない構成で、追加情報のある専用モデルと条件が異なる。zero-shotは事前学習や計算費用が不要という意味ではない。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。",
+      "sourceSections": "v3（2024-02-04）のSections 1・4・7、Appendix A.3–A.4",
+      "extraSource": "https://arxiv.org/html/2310.10688v3"
     },
     {
       "title": "Efficient Bayesian Learning Curve Extrapolation using Prior-Data Fitted Networks",
@@ -12210,6 +12814,82 @@
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
     },
     {
+      "title": "Timer: Generative Pre-trained Transformers Are Large Time Series Models",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2402.02368",
+      "date": "2024-02-04",
+      "url": "https://arxiv.org/abs/2402.02368",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "Timerは系列を共通形式へまとめ、次token予測で予測・補完・異常検知へ適応する。",
+      "objective": "データが少ない実務で、課題ごとの小モデルを一から学習する制約を減らす。",
+      "methods": "最大10億時点の系列をsingle-series sequence（S3）形式へ統一し、GPT型の生成事前学習を実施。3種類の解析を共通生成課題へ変換した。",
+      "results": "予測・補完・異常検知への適応と、少数例一般化・規模拡張の可能性を示した。要旨に各課題の具体的スコアはない。",
+      "novelty": "系列形式と下流課題を生成へ揃え、同じ事前学習から複数用途へ展開した。",
+      "limitations": "編者の注意: 下流への適応を含む結果で、すべての課題の無調整zero-shotを意味しない。現在のモデル群と比べるときも、版・学習規模・入力条件を揃える必要がある。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "Unified Training of Universal Time Series Forecasting Transformers",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2402.02592",
+      "date": "2024-02-04",
+      "url": "https://arxiv.org/abs/2402.02592",
+      "read_level": "full_text",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "Moiraiは異なる頻度・変数数・分布を持つ系列を一つのmasked encoderで学ぶ。",
+      "objective": "1データ1モデルを超え、多様な下流予測へ共通の大規模学習を利用する。",
+      "methods": "複数patch長、any-variate attention、混合分布を備える構造と統一学習を提案。9分野・270億超の観測を持つLOTSAで事前学習した。",
+      "results": "分布内・分布外で確率予測と長期予測を評価し、zero-shotでもfull-shotモデルに匹敵または優位な性能を報告。要旨に課題別の誤差値はない。",
+      "novelty": "単変量・単一頻度へ限定せず、異なる変数数や出力分布を共通訓練へまとめた。",
+      "limitations": "著者は高次元系列への対応の制限、patch長の設定がheuristicな点、データの領域・頻度の多様性不足を指摘。構造上の柔軟性を無制限の規模対応と解釈しない。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。",
+      "sourceSections": "v1のMethodの構成・Problem Formulation、ConclusionのLimitations & Future Work",
+      "extraSource": "https://arxiv.org/html/2402.02592v1"
+    },
+    {
+      "title": "MOMENT: A Family of Open Time-series Foundation Models",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2402.03885",
+      "date": "2024-02-06",
+      "url": "https://arxiv.org/abs/2402.03885",
+      "read_level": "full_text",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "MOMENTは公開系列を集め、マスク復元で学んだ表現を複数の時系列課題へ使う公開モデル群。",
+      "objective": "共通データ不足と多様な系列の違いを乗り越え、少ない教師情報で汎用解析を行う。",
+      "methods": "Time-series Pileを構築し、非重複patchをマスクして軽量headで復元するTransformerを学習。予測・分類・異常検知・補完をzero-shotやlinear probing等で評価した。",
+      "results": "少量データと限定的な課題適応で有効な結果を報告。本文では課題に応じてzero-shotと数epochのlinear probingを使い分けている。",
+      "novelty": "単一予測課題だけでなく、公開データ・事前学習・少教師量の多課題評価をまとめて提供した。",
+      "limitations": "編者の注意: 全課題が無調整ではない。比較値の一部は既報の値を採用しており、全モデルの完全に同条件の再実装比較ではない点を確認して読む。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。",
+      "sourceSections": "Sections 3.2–3.3・4、Appendix FのResults Sources",
+      "extraSource": "https://arxiv.org/html/2402.03885v1"
+    },
+    {
       "title": "TuneTables: Context Optimization for Scalable Prior-Data Fitted Networks",
       "report": "reports/foundations/05-structured.md",
       "reportDate": "2026-11-14",
@@ -12256,6 +12936,56 @@
       "novelty": "予測器を各表で最適化する代わりに、予測器の重みをデータから生成する設計へ移した。",
       "limitations": "編者の注意: 新課題での訓練不要と、メタ訓練の費用が不要であることは異なる。未経験の規模・特徴型への汎化と全体費用は個別評価が必要。",
       "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "UniTS: A Unified Multi-Task Time Series Model",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2403.00131",
+      "date": "2024-02-29",
+      "url": "https://arxiv.org/abs/2403.00131",
+      "read_level": "abstract",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "UniTSはtask tokenizationで生成・予測の複数時系列課題を一つの枠組みへまとめる。",
+      "objective": "予測だけに偏らず、異なる領域と課題の要求へ共通表現を転用する。",
+      "methods": "改良Transformerとtask tokenを使い、異なる動態・標本化率・時間尺度で多領域事前学習。38データで4課題、few-shot・prompt適応と単独課題も比較した。",
+      "results": "予測12、分類20、異常検知18、補完16の比較モデルに対する優位を報告。単独課題でも専用法を上回ったが、要旨に絶対スコアはない。",
+      "novelty": "予測専用の事前学習を超え、生成・識別課題をtask tokenで共通の処理へ統合した。",
+      "limitations": "編者の注意: 38データでの多課題結果を任意課題への普遍性としない。prompt、few-shot、単独課題は学習・評価条件が異なるため分けて比較する。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。"
+    },
+    {
+      "title": "Chronos: Learning the Language of Time Series",
+      "report": "reports/foundations/05-structured.md",
+      "reportDate": "2026-11-14",
+      "fields": [
+        "表形式・時系列・因果推論"
+      ],
+      "source": "arXiv",
+      "id": "arxiv:2403.07815",
+      "date": "2024-03-12",
+      "url": "https://arxiv.org/abs/2403.07815",
+      "read_level": "full_text",
+      "tags": [
+        "基礎文献",
+        "表形式・時系列・因果推論"
+      ],
+      "summary": "Chronosは数値を語彙へ量子化し、時系列自体で事前学習する確率的な予測基盤モデル。",
+      "objective": "異なる分野の系列を共有学習し、新しいデータでも追加学習なしの予測を得る。",
+      "methods": "scale調整・量子化した値をT5型へ入力し、cross-entropyで学習。公開系列にGaussian processの人工系列を追加し、2,000万–7.1億パラメータを評価した。",
+      "results": "42データは訓練と重なる15、未見27に分かれる。未見群の集約確率予測でChronosモデルが2・3位となり、多くの課題専用モデルを上回った。",
+      "novelty": "言語モデル構造を数値のtoken生成へ利用し、異種系列を横断した確率予測へ展開した。",
+      "limitations": "著者は指数トレンドの難しさと短い履歴での傾向過小評価を示す。未見27課題でも厳密な全データの時間分離には注意を付記しており、42件すべてをzero-shot評価と扱わない。",
+      "dateNote": "論文公開日はarXivの初回提出記録。査読誌の刊行日・最終改訂日とは区別しています。",
+      "sourceSections": "v2のSections 5.1・5.5.2（脚注4）・5.7、15対27の評価区分",
+      "extraSource": "https://arxiv.org/html/2403.07815v2"
     },
     {
       "title": "TabPFGen -- Tabular Data Generation with TabPFN",
