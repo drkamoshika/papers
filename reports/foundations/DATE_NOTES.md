@@ -29,3 +29,5 @@
 
 | 論文 | 未確認の理由・判明範囲 | 一次資料 |
 |---|---|---|
+| Point Spectra of Some Mutually Exciting Point Processes | 出版社で刊行年1971年と巻33・号3を確認。日単位の初回公開日は未確認。後年のウェブ掲載・移管日を採用しない。 | [原著](https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1971.tb01530.x) |
+| Recurrent Marked Temporal Point Processes: Embedding Event History to Vector | 著者版PDFでKDD 2016（8月13〜17日）の会議情報を確認。会期を論文の初回公開日へ流用せず、日単位の正式公開日は未確認として保持。 | [原著](https://doi.org/10.1145/2939672.2939875) |

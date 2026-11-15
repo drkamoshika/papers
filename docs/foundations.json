@@ -14238,6 +14238,1926 @@
         "次イベント予測・点過程"
       ],
       "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2307.08097",
+      "title": "EasyTPP: Towards Open Benchmarking Temporal Point Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2307.08097",
+      "date": "2023-07-16",
+      "summary": "EasyTPPは神経TPPを共通条件で実装・評価する公開基盤。",
+      "objective": "データ形式や評価実装の違いによる比較・再現の難しさを減らす。",
+      "methods": "データの共通interface、評価プログラム、主要モデルと再利用可能な部品を提供する。",
+      "results": "論文の成果は研究資源と評価環境の整備。要旨は新モデルの一律な精度向上を主張するものではない。",
+      "novelty": "事象列モデルを比較・拡張できる共通の実装単位を作る。",
+      "limitations": "編者の注意: 共通基盤の使用だけで、データ漏洩や時間分割、調整予算の差が自動的に解消されるわけではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2410.07430",
+      "title": "EventFlow: Forecasting Temporal Point Processes with Flow Matching",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2410.07430",
+      "date": "2024-10-09",
+      "summary": "EventFlowはflow matchingで将来の事象時刻の同時分布を直接学ぶ。",
+      "objective": "自己回帰予測の誤差累積と短期的な予測への偏りを減らす。",
+      "methods": "非自己回帰生成モデルとして事象列を学習し、標本化時のモデル呼び出しも減らす。",
+      "results": "標準TPPベンチマークで最も近い比較法より予測誤差を20–53%削減したと報告。",
+      "novelty": "flow matchingを可変の事象列の将来生成へ適用する。",
+      "limitations": "編者の注意: 改善率は論文の予測誤差と評価条件に対応し、すべての単発事象の予測精度を表す値ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2308.06094",
+      "title": "Reinforcement Logic Rule Learning for Temporal Point Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2308.06094",
+      "date": "2023-08-11",
+      "summary": "強化学習で時間論理規則を探索し、TPPの説明規則を段階的に増やす。",
+      "objective": "膨大な規則候補から、観測列の尤度を改善するものを選ぶ。",
+      "methods": "既存規則の重みを更新する凸な主問題と、新規則を行動列として探す神経方策を交互に解く。",
+      "results": "人工データと医療データで有望な結果を報告。要旨では絶対スコアや評価集団の規模は不明。",
+      "novelty": "規則探索の組合せ問題を、学習可能な生成方策として扱う。",
+      "limitations": "編者の注意: 主問題の凸性は探索全体の最適性を保証せず、尤度を説明する規則は介入因果そのものではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2106.04465",
+      "title": "Detecting Anomalous Event Sequences with Temporal Point Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2106.04465",
+      "date": "2021-06-08",
+      "summary": "TPPの適合度検定を使い、通常と異なる連続時間の事象列を検出する。",
+      "objective": "既存の検定統計量では見逃す異常列を捉える。",
+      "methods": "事象列の異常検知を分布外検知として定式化し、複数のTPPと組み合わせられる検定を提案する。",
+      "results": "人工・実データで、通常の適合度検定と異常検知の両方における有効性を示す。",
+      "novelty": "モデルの次事象予測を、列が通常の分布に属するかの検査へつなぐ。",
+      "limitations": "編者の注意: 統計的な分布外判定から異常の業務上の重要性や原因まで確定するわけではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2002.09291",
+      "title": "Transformer Hawkes Process",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2002.09291",
+      "date": "2020-02-21",
+      "summary": "Transformer Hawkes Processはattentionで長い事象履歴を表現する。",
+      "objective": "短期・長期の依存を捉え、RNN型の点過程の予測を改善する。",
+      "methods": "self-attentionで履歴を符号化し、事象間の関係情報を加えた複数過程の学習も検討する。",
+      "results": "複数データで尤度と事象予測を改善し、関係情報を組み込んだ構成でも改善を報告。",
+      "novelty": "Transformerの履歴表現を連続時間の強度モデルへ導入する。",
+      "limitations": "編者の注意: モデル名にHawkesとあっても、古典的な線形励起カーネルの推定と同じ制約・解釈を持つとは限らない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2006.02460",
+      "title": "Shallow Neural Hawkes: Non-parametric kernel estimation for Hawkes processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2006.02460",
+      "date": "2020-06-03",
+      "summary": "Shallow Neural Hawkesは浅い神経網で励起カーネルを柔軟に推定する。",
+      "objective": "Hawkesの解釈を保ちながら、固定形状でない時間的影響を学ぶ。",
+      "methods": "尤度推定の不偏推定量を導き、単一隠れ層の網と確率勾配法でカーネルを推定する。",
+      "results": "人工・実データで既存推定法と同等以上の成績を報告。要旨には速度や誤差の数値がない。",
+      "novelty": "非標準の励起形状を小さい神経網で学び、Hawkesの構造を維持する。",
+      "limitations": "編者の注意: カーネルの柔軟性が増しても、モデルの励起構造や観測条件に関する仮定は残る。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2104.07932",
+      "title": "Interval-censored Hawkes processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2104.07932",
+      "date": "2021-04-16",
+      "summary": "正確な時刻がなく、時間窓ごとの件数だけがあるHawkes推定を扱う。",
+      "objective": "通常の点過程尤度を計算できない集約観測からパラメータを求める。",
+      "methods": "Hawkesとパラメータが対応するMean Behavior Poisson Processを作り、区間打切りPoisson尤度と近似法で推定する。",
+      "results": "人工・実データで検証し、既存のHawkes Intensity Processを提案方式の特例として位置付ける。",
+      "novelty": "時刻観測と件数観測の違いを明示した平均挙動モデル。",
+      "limitations": "編者の注意: Poisson化した平均挙動からの推定は、失われた個々の時刻を観測したことにはならず、近似条件の確認が必要。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1907.07561",
+      "title": "Self-Attentive Hawkes Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1907.07561",
+      "date": "2019-07-17",
+      "summary": "SAHPはself-attentionで事象履歴を集約し、次の種別と時刻を予測する。",
+      "objective": "長い履歴の依存を表現し、寄与をたどりやすくする。",
+      "methods": "多変量点過程の強度をattentionに基づいて構成し、過去事象の重みを表示する。",
+      "results": "実データ4種類で有効性を検証。要旨には個別の予測誤差やデータ規模はない。",
+      "novelty": "再帰計算の代わりに、過去の事象間のattentionを使う。",
+      "limitations": "編者の注意: attention重みはモデル内部の寄与であり、事象を取り除く介入の因果効果を保証しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1810.03730",
+      "title": "Efficient Non-parametric Bayesian Hawkes Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1810.03730",
+      "date": "2018-10-08",
+      "summary": "分岐表現を使い、柔軟なHawkesカーネルと不確実性を効率的に推定する。",
+      "objective": "非母数Bayes推定の計算量を抑え、大きい拡散データに対応する。",
+      "methods": "有限の影響時間を仮定し、block GibbsとEMによるMAP推定を導く。",
+      "results": "人工データでカーネルを復元し、Twitter拡散2データで適合度改善とデータ量に線形の計算量を報告。",
+      "novelty": "分岐構造によるPoissonのcluster分解を計算効率へ利用する。",
+      "limitations": "有限supportが効率性の仮定。編者の注意: 動画ジャンル別のカーネル差は内容の寿命を反映する解釈で、独立した因果実証ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2006.07506",
+      "title": "Uncertainty Quantification for Inferring Hawkes Networks",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2006.07506",
+      "date": "2020-06-12",
+      "summary": "Hawkesネットワークの最大尤度推定に有限標本の信頼集合を与える。",
+      "objective": "推定された事象間関係の不確実性を定量化する。",
+      "methods": "連続時間martingaleの集中不等式を使い、Granger関係を表す有向グラフの推論を構成する。",
+      "results": "従来の漸近的な区間と比較し、神経接続の復元で利点を示す。要旨には区間幅の具体値がない。",
+      "novelty": "漸近近似だけに依存しないHawkesネットワークの不確実性評価。",
+      "limitations": "編者の注意: Granger関係はモデルと観測範囲に依存し、解剖学的シナプスや介入因果との同一視はできない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2002.12501",
+      "title": "Learning Multivariate Hawkes Processes at Scale",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2002.12501",
+      "date": "2020-02-28",
+      "summary": "疎な拡散事象の構造を使い、大規模な多変量Hawkesを学ぶ。",
+      "objective": "ネットワークの次元による尤度・勾配の計算負荷を抑える。",
+      "methods": "実データの疎なパターンを利用し、周囲の全次元に依存せず正確な尤度と勾配を求めるモデルを構成する。",
+      "results": "人工・実データで予測成績を保ち、疎な列では標準法より計算時間を数桁短縮したと報告。",
+      "novelty": "解釈可能な潜在変数・影響構造と大規模計算を両立する。",
+      "limitations": "編者の注意: 速度の利点は疎な事象列の構造に依存し、密な相互作用でも同じ短縮が得られるとは限らない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1602.04511",
+      "title": "Learning Granger Causality for Hawkes Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1602.04511",
+      "date": "2016-02-14",
+      "summary": "Hawkesの影響カーネルの疎性からGrangerグラフを学ぶ。",
+      "objective": "どの種別の過去が別種別の発生を予測するかを抽出する。",
+      "methods": "基底関数で影響を表し、最大尤度にsparse-group-lassoを加える。基底の適応選択も検討する。",
+      "results": "人工・実データでGrangerグラフと発火を促す時間パターンを同時推定できると報告。",
+      "novelty": "カーネル係数のgroup疎性とGranger関係を結び付ける。",
+      "limitations": "編者の注意: Granger因果の解釈にはモデル化と観測範囲の仮定が必要で、隠れた交絡を除いた介入効果ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1607.06333",
+      "title": "Uncovering Causality from Multivariate Hawkes Integrated Cumulants",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1607.06333",
+      "date": "2016-07-21",
+      "summary": "積分された高次cumulantから、Hawkesの影響の総量を推定する。",
+      "objective": "カーネル形状を決めたり推定したりせず、節点間の関係を捉える。",
+      "methods": "三次までの積分cumulantを利用するmoment matchingで、積分カーネル行列を求める。",
+      "results": "数値実験で形状への頑健性を示し、MemeTrackerでも有望な結果を報告。",
+      "novelty": "時間的な影響の形ではなく、総量を非母数的に同定する。",
+      "limitations": "編者の注意: 積分量は遅れの詳細を捨てる。論文の因果という表現はHawkesモデル内の関係として読む。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2407.05302",
+      "title": "Mamba Hawkes Process for Event Sequence Modeling",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2407.05302",
+      "date": "2024-07-07",
+      "summary": "Mamba Hawkesは選択的状態空間モデルで長い事象履歴を処理する。",
+      "objective": "RNNやattentionの計算負荷を抑え、長距離の依存を捉える。",
+      "methods": "時間依存の状態遷移と入力gateを使い、拡張版では時間scale調整と内容・時間の二つの遷移経路を加える。",
+      "results": "人工・実データ、特に長い列で予測改善を報告。古典的多指数Hawkesと減衰gate付きRNNを含む表現力も示す。",
+      "novelty": "線形の列長計算を持つ選択的状態空間表現をTPPへ接続する。",
+      "limitations": "編者の注意: 理論的な包含関係は実データでの一律な優位性ではない。記述は取得時点の改訂版要旨による。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1710.05115",
+      "title": "Benefits from Superposed Hawkes Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1710.05115",
+      "date": "2017-10-14",
+      "summary": "Hawkes過程の重ね合わせが推定に役立つ条件を調べる。",
+      "objective": "複数列の情報共有によって推定誤差を減らす。",
+      "methods": "最小二乗推定の枠組みで超過riskの上界を解析し、成立する典型的な条件を検討する。",
+      "results": "人工データで利点を確認し、推薦のcold-start問題への可能性を実データで示す。",
+      "novelty": "重ね合わせを単なる数学的操作から、推定精度の改善手段へつなぐ。",
+      "limitations": "改善は一定の条件下の上界と実験による。編者の注意: 異質な列を無条件に混ぜればよいという結果ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2208.07961",
+      "title": "Online Learning for Mixture of Multivariate Hawkes Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2208.07961",
+      "date": "2022-08-16",
+      "summary": "多変量Hawkesの混合をオンラインで学び、主体の潜在構造と事象相互作用を表す。",
+      "objective": "流れるデータの中でcluster構造と相互作用を共に捉える。",
+      "methods": "混合多変量Hawkesをオンライン学習する方式を提案。要旨には更新式や計算量の詳細はない。",
+      "results": "人工・実データで有効性を報告し、医療・金融を動機に挙げる。要旨からデータ別の規模は確認できない。",
+      "novelty": "主体の潜在clusterと豊かな事象間相互作用を同時に扱う。",
+      "limitations": "編者の注意: 概念変化の速さや観測欠落に対する頑健性は、要旨だけでは判断できない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1911.00292",
+      "title": "Learning Hawkes Processes from a Handful of Events",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1911.00292",
+      "date": "2019-11-01",
+      "summary": "少ない事象からHawkesネットワークを学ぶため、正則化と不確実性を適応させる。",
+      "objective": "短い観測列での過適合と、単一の共有正則化係数の制約を減らす。",
+      "methods": "変分EMで拡張したhyperparameter集合を最適化し、パラメータの事後分布も学習する。",
+      "results": "人工・実データの短い観測設定で、既存法を大きく上回ると報告。",
+      "novelty": "データ不足を、柔軟な正則化とパラメータ分布の推定で扱う。",
+      "limitations": "編者の注意: 少数事象からの復元は事前分布・正則化に影響され、任意の疎観測で識別可能になるわけではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2112.14472",
+      "title": "Temporal Attention Augmented Transformer Hawkes Process",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2112.14472",
+      "date": "2021-12-29",
+      "summary": "TAA-THPはattention計算へ時刻情報を直接組み込む。",
+      "objective": "単に入力へ位置符号を足す以上に、非同期な発生時刻を利用する。",
+      "methods": "通常の内積attentionを変更し、時間符号をattention構造へ導入する。",
+      "results": "人工・実データで尤度・種別・時刻予測を改善し、時間attentionの除去実験で寄与を確認する。",
+      "novelty": "連続時間情報を履歴選択の重み計算へ明示的に入れる。",
+      "limitations": "編者の注意: 評価指標の改善は報告されるが、要旨には各課題の絶対成績や不確実性が示されない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1708.09252",
+      "title": "THAP: A Matlab Toolkit for Learning with Hawkes Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1708.09252",
+      "date": "2017-08-28",
+      "summary": "THAPはHawkesとその変種の学習・分析をまとめたMatlabツール。",
+      "objective": "古典から近年のアルゴリズムまで再利用しやすくする。",
+      "methods": "複数の学習アルゴリズムと分析機能を共通のtoolkitとして実装・公開する。",
+      "results": "研究・教育用の実装資源を提供。要旨は新しい一つの予測器の精度比較を主成果としていない。",
+      "novelty": "Hawkes研究の推定手法を一つの利用可能な環境へ集約する。",
+      "limitations": "編者の注意: 2017年の対象範囲であり、後発の神経TPP・LLMや現在の実行環境への対応は別途確認が必要。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1702.07013",
+      "title": "Learning Hawkes Processes from Short Doubly-Censored Event Sequences",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1702.07013",
+      "date": "2017-02-22",
+      "summary": "短く、始端・終端とも観測が切れた事象列からHawkesを学ぶ。",
+      "objective": "観測窓の外の履歴と続きが欠けることによる推定劣化を減らす。",
+      "methods": "候補列から前後の事象をsamplingし、接続して長い訓練列を合成する。尤度に基づき妥当性を議論する。",
+      "results": "人工・実データで、時不変・時変のHawkesの両方における学習改善を報告。",
+      "novelty": "打切りを単なる短い系列として扱わず、前後の補助列で補う。",
+      "limitations": "編者の注意: 接続された履歴は合成であり、元の未観測の事象を実測・確定したものではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2202.01869",
+      "title": "Flexible Triggering Kernels for Hawkes Process Modeling",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2202.01869",
+      "date": "2022-02-03",
+      "summary": "柔軟な励起カーネルで、重い多層attentionを置き換える点過程。",
+      "objective": "計算とメモリを減らし、時間局所的な影響を捉える。",
+      "methods": "種別・時刻埋め込みからカーネルを学び、sigmoid gateで局所の励起を表し履歴表現の重みに使う。",
+      "results": "人工・実データとCOVID-19の共変量付き設定で、予測・効率・解釈の利点を報告。",
+      "novelty": "attentionに似た役割を、直接解釈できる時間カーネルへ持たせる。",
+      "limitations": "編者の注意: 解釈可能なカーネルでも観測外の要因は残り、疫学データから介入効果が確定するわけではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1802.04725",
+      "title": "Superposition-Assisted Stochastic Optimization for Hawkes Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1802.04725",
+      "date": "2018-02-13",
+      "summary": "多主体Hawkesの重ね合わせを使い、確率的最適化を改善する。",
+      "objective": "共有する内因的影響を学び、特にデータの少ない主体を補う。",
+      "methods": "外因強度は主体別、影響関数は共有とし、多様性に基づく重ね合わせを確率的最大尤度へ導入する。",
+      "results": "条件付きのrisk上界改善を示し、人工データと逐次推薦のcold-startで検証する。",
+      "novelty": "重ね合わせの選び方を、学習と収束性の改善へ組み込む。",
+      "limitations": "内因的な影響を共有するモデルが前提。編者の注意: 異質な主体への適用では共有仮定を確かめる必要がある。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1501.00725",
+      "title": "Sparse and low-rank multivariate Hawkes processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1501.00725",
+      "date": "2015-01-04",
+      "summary": "Hawkes相互作用に疎性と低rankを課し、時刻列から潜在ネットワークを推定する。",
+      "objective": "少ない接続と共通構造を利用して高次元推定を安定させる。",
+      "methods": "最小二乗損失にL1・trace normを加え、観測可能な分散を使うmatrix martingaleの集中不等式から係数を調整する。",
+      "results": "理論解析と数値実験で、データ依存の正則化による改善を示す。要旨に実データの規模はない。",
+      "novelty": "疎性・低rankの両方を誘導する正則化を理論的に調整する。",
+      "limitations": "編者の注意: 推定構造は正則化仮定に依存する。時刻の依存から解剖学的接続や介入因果を直接確定しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2409.18158",
+      "title": "Decomposable Transformer Point Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2409.18158",
+      "date": "2024-09-26",
+      "summary": "Decomposable Transformer TPPは時間とマークの条件分布を分け、高速に予測する。",
+      "objective": "attentionの利点を保ち、thinningによる推論の計算負荷を避ける。",
+      "methods": "時間差をMarkov性を持つlog-normal混合、マーク分布をTransformerで表す。",
+      "results": "次事象予測で高い性能を示し、長期専用の比較法より良い予測と短い推論時間を報告。",
+      "novelty": "待ち時間の直接分布とattentionによる種別予測を分解して組み合わせる。",
+      "limitations": "編者の注意: Markov性を課す時間モデルの制約と、長期評価に用いた比較法の条件を確認する必要がある。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2305.12403",
+      "title": "Spatio-temporal Diffusion Point Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2305.12403",
+      "date": "2023-05-21",
+      "summary": "拡散モデルで位置と時刻の同時分布を学ぶ時空間点過程。",
+      "objective": "位置と時刻を条件付き独立に分けることによる表現制限を減らす。",
+      "methods": "Gaussian段階の拡散過程と、時空間のco-attentionで両者の依存を学ぶ。",
+      "results": "疫学・地震・犯罪・移動のデータで比較し、平均50%超の改善を報告。ただし要旨から指標別の内訳は不明。",
+      "novelty": "拡散によって時空間の複雑な結合分布を直接表現する。",
+      "limitations": "編者の注意: 平均改善率を時刻誤差や尤度のすべてに同じ割合で当てはめず、指標と集計方法を本文で確認する。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2112.06351",
+      "title": "Neural Point Process for Learning Spatiotemporal Event Dynamics",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2112.06351",
+      "date": "2021-12-12",
+      "summary": "DeepSTPPは潜在過程に駆動される時空間強度を変分学習する。",
+      "objective": "不規則な空間・時間の事象を、密度計算しやすく柔軟に予測する。",
+      "methods": "密度の積分を閉形式で扱う非母数強度を設計し、深層網によるamortized変分推論で潜在状態を推定する。",
+      "results": "人工データでは真の強度を復元し、実ベンチマークでは既存法より高い性能を報告。",
+      "novelty": "計算可能な時空間強度と潜在状態の不確実性を結ぶ。",
+      "limitations": "編者の注意: 変分事後分布は近似であり、潜在不確実性を持つことだけで予測区間の校正が保証されるわけではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2106.10773",
+      "title": "Neural Spectral Marked Point Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2106.10773",
+      "date": "2021-06-20",
+      "summary": "Neural Spectral MPPは、文脈を含む非定常な影響カーネルを学ぶ。",
+      "objective": "一定の時間差だけで決まらない、複雑な時空間依存を表す。",
+      "methods": "神経網による柔軟な非定常カーネルを導入し、理論的性質と人工・実データの性能を検証する。",
+      "results": "比較法に対する良好な性能を報告。要旨には保証の具体的な仮定や課題別数値がない。",
+      "novelty": "マークの文脈を取り込める非定常な影響関数の設計。",
+      "limitations": "編者の注意: 理論保証の適用範囲は本文の仮定次第で、任意の非定常データへの保証として読まない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1612.09328",
+      "title": "The Neural Hawkes Process: A Neurally Self-Modulating Multivariate Point Process",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1612.09328",
+      "date": "2016-12-29",
+      "summary": "Neural Hawkesは連続時間LSTMで励起と抑制を伴う事象列を表す。",
+      "objective": "過去の事象が将来の確率を複雑に上げ下げする依存を学ぶ。",
+      "methods": "連続時間で進む隠れ状態から、複数種別の条件付き強度を生成する。",
+      "results": "実・人工データで尤度と予測精度を評価し、欠測がある設定でも競争力を示す。",
+      "novelty": "線形加算の励起に限らず、履歴の神経状態による自己変調を導入する。",
+      "limitations": "編者の注意: 欠測条件での実験は任意の欠測機構への頑健性を保証せず、隠れ状態の成分は直接の機構説明ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2002.07281",
+      "title": "Deep Fourier Kernel for Self-Attentive Point Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2002.07281",
+      "date": "2020-02-17",
+      "summary": "Deep Fourier Kernelは、複雑な類似性を持つattentionを点過程へ導入する。",
+      "objective": "通常の内積では捉えにくい非線形な時間依存を表す。",
+      "methods": "スペクトルを神経網で表すFourierカーネルをattention scoreと条件付き強度へ組み込む。",
+      "results": "理論的性質を解析し、人工・実データで既存法に対し競争力のある成績を報告。",
+      "novelty": "attentionの類似性尺度そのものを学習可能なスペクトルで拡張する。",
+      "limitations": "編者の注意: 要旨では理論の前提やカーネル設定の詳細が分からず、すべての非線形依存を復元する保証とは扱わない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2205.10624",
+      "title": "CEP3: Community Event Prediction with Neural Point Process on Graph",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2205.10624",
+      "date": "2022-05-21",
+      "summary": "CEP3は動的グラフのcommunity内で、複数の将来辺と時刻を同時予測する。",
+      "objective": "時刻既知のlink予測や、事象既知の時刻予測という条件を緩める。",
+      "methods": "GNNとmarked TPPを結合し、結合予測を三つの条件付き確率問題へ分解して規模に対応する。",
+      "results": "専用のbenchmarkと指標を設け、精度と学習効率の改善を報告する。",
+      "novelty": "どの主体間にいつ事象が起こるかを共同で評価する。",
+      "limitations": "編者の注意: 時刻や候補辺が既知の従来設定と、そのままスコアを比較せず、候補集合と予測地平をそろえる。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2310.06179",
+      "title": "Automatic Integration for Spatiotemporal Neural Point Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2310.06179",
+      "date": "2023-10-09",
+      "summary": "AutoSTPPは時空間点過程の尤度に必要な積分を計算しやすくする。",
+      "objective": "三重積分の数値誤差と、固定的な強度形状の制約を減らす。",
+      "methods": "積分を表すdual networkを三次元へ拡張し、ProdNetによる分解可能な積分網を構成する。",
+      "results": "一致性を証明し、人工・実データ、特に局所的に鋭い強度の復元で利点を報告。",
+      "novelty": "一変量の自動積分を、計算可能な分解を用いて時空間へ広げる。",
+      "limitations": "編者の注意: 一致性は論文の仮定下の結果で、有限データでの強度復元や予測の完全性を保証しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2106.00901",
+      "title": "A Differentiable Point Process with Its Application to Spiking Neural Networks",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2106.00901",
+      "date": "2021-06-02",
+      "summary": "微分可能な点過程を作り、隠れたspiking neuronを持つ確率モデルを学ぶ。",
+      "objective": "score-function勾配の高分散による学習の難しさを減らす。",
+      "methods": "点過程の実現を微分できる構成を導き、SNNの変分推論へpath-wise勾配推定を適用する。",
+      "results": "数値simulationで勾配推定の有効性を調べる。要旨は生体脳や大規模な実課題での検証を示していない。",
+      "novelty": "事象時刻の確率モデルと、spiking網の勾配学習を接続する。",
+      "limitations": "編者の注意: 数値モデルの学習可能性を示す研究であり、生物学的に同じ勾配計算が行われるという実証ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2005.08665",
+      "title": "Spatio-Temporal Point Processes with Attention for Traffic Congestion Event Modeling",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2005.08665",
+      "date": "2020-05-15",
+      "summary": "道路の方向と過去の事故情報を使い、渋滞事象の時空間依存を学ぶ。",
+      "objective": "既存渋滞と交通事故が後続の渋滞へ与える異なる影響を表す。",
+      "methods": "sensor件数と警察報告を組み合わせ、attention付き点過程と道路向けtail-up空間モデルを使う。",
+      "results": "人工・実データで既存法より高い性能を報告。要旨には事故の収集期間や予測誤差の値はない。",
+      "novelty": "多種の観測と道路の方向構造を、事象の励起モデルへ統合する。",
+      "limitations": "編者の注意: 事故報告の記録時刻と実際の予測時点での利用可能時刻の差は、漏洩の確認事項になる。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2311.08635",
+      "title": "Spatio-Temporal Graph Neural Point Process for Traffic Congestion Event Prediction",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2311.08635",
+      "date": "2023-11-15",
+      "summary": "STGNPPは次の渋滞が起こる時刻と続く時間を同時予測する。",
+      "objective": "等間隔の交通量予測では扱いにくい、疎な連続時間の渋滞事象を捉える。",
+      "methods": "道路と過去の状態をgraph学習し、連続GRUと周期gateを持つ強度へ入力する。",
+      "results": "実データ2種類で既存法より良い予測を報告。要旨には絶対誤差や改善幅がない。",
+      "novelty": "graph由来の交通状態と周期性を事象の開始・持続の予測へ使う。",
+      "limitations": "編者の注意: 渋滞の閾値や持続時間の定義が評価を左右し、交通量予測とは指標をそのまま比較できない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1705.08982",
+      "title": "Modeling The Intensity Function Of Point Process Via Recurrent Neural Networks",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1705.08982",
+      "date": "2017-05-24",
+      "summary": "背景の変化と過去事象の影響を、二つのRNNで表す点過程。",
+      "objective": "固定間隔の背景と非同期の履歴をそれぞれの時間構造で学ぶ。",
+      "methods": "背景用RNNは時間index、履歴用RNNは事象indexへ合わせ、種類・時刻予測まで一括学習する。",
+      "results": "北米に本拠を置く銀行の1,000台超のATMログで予防保全へ適用。要旨に予測成績の値はない。",
+      "novelty": "二種類の時間軸を分けて強度の背景と履歴成分へ対応させる。",
+      "limitations": "編者の注意: 予防保全への適用を、保全介入の費用削減や故障減少の実証へ読み替えない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2109.02715",
+      "title": "Individual Mobility Prediction via Attentive Marked Temporal Point Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2109.02715",
+      "date": "2021-09-06",
+      "summary": "AMTPPは次の移動の開始時刻・出発地・目的地を共同予測する。",
+      "objective": "場所の並びだけでなく、移動全体の時空間依存を捉える。",
+      "methods": "日週周期の埋め込みを持つattention、非対称log-Laplace混合の時刻分布、OD行列学習を組み合わせる。",
+      "results": "大規模な地下鉄移動2データで既存法を上回ると報告。要旨に利用者数や絶対誤差はない。",
+      "novelty": "移動の三属性を一つのmarked TPPとして学習する。",
+      "limitations": "編者の注意: 地下鉄で観測される移動の性能から、徒歩・自動車を含む全移動の予測性能は確定しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1705.08051",
+      "title": "Wasserstein Learning of Deep Generative Point Process Models",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1705.08051",
+      "date": "2017-05-23",
+      "summary": "Wasserstein距離を使い、強度や尤度を明示しない生成点過程を学ぶ。",
+      "objective": "固定的な強度形や多峰性のある列分布の尤度学習の制約を減らす。",
+      "methods": "元となる確率過程を目標過程へ変換し、列分布間のWasserstein距離を利用して訓練する。",
+      "results": "複数の人工・実データで通常の点過程モデルに対する利点を示す。要旨には個別の数値がない。",
+      "novelty": "待ち時間の密度だけでなく、列全体の分布距離を学習目的へ持ち込む。",
+      "limitations": "編者の注意: 尤度を使わない方式は、尤度値を主指標とする方式との比較で目的関数の差を明示する必要がある。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2007.14082",
+      "title": "UNIPoint: Universally Approximating Point Processes Intensities",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2007.14082",
+      "date": "2020-07-28",
+      "summary": "UNIPointは有効な強度関数を普遍近似できる関数族から作る。",
+      "objective": "神経TPPの柔軟性を理論的に説明し、単純な実装で活用する。",
+      "methods": "非負関数の近似と動的系・RNNを結び、事象ごとに基底関数の和のパラメータを更新する。",
+      "results": "普遍近似の証明に加え、人工・実データでHawkes変種や複雑な神経モデルへの予測上の利点を報告。",
+      "novelty": "強度の表現力の理論と基底関数型RNNの設計を接続する。",
+      "limitations": "編者の注意: 近似できることは有限標本で学べることや、最適化で正しい強度へ到達することの保証ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2306.14072",
+      "title": "Intensity-free Convolutional Temporal Point Process: Incorporating Local and Global Event Contexts",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2306.14072",
+      "date": "2023-06-24",
+      "summary": "連続時間convolutionとRNNを併用する、強度を直接使わないTPP。",
+      "objective": "局所の事象contextと長い履歴のcontextを両方利用する。",
+      "methods": "連続時間に対応させた畳み込みencoderをRNNと統合し、待ち時間・事象予測へ用いる。",
+      "results": "確率的系列のモデル化と事象予測の改善を報告。要旨にはデータ別の規模や成績はない。",
+      "novelty": "等間隔の画像・系列で使われる局所畳み込みを非同期事象へ拡張する。",
+      "limitations": "編者の注意: 局所contextの設計や観測密度への依存は、未知のデータで別途検証する必要がある。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1806.00221",
+      "title": "Lecture Notes: Temporal Point Processes and the Conditional Intensity Function",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1806.00221",
+      "date": "2018-06-01",
+      "summary": "条件付き強度から時間点過程を定義する短い講義ノート。",
+      "objective": "時間の不規則な事象列を扱うための共通の数学を導入する。",
+      "methods": "強度による定義、尤度推論、simulation、residual解析を順に説明する。",
+      "results": "教育的な整理が成果であり、実データ上の新しい予測器の成績を提示する研究ではない。",
+      "novelty": "モデルを読む際に繰り返し現れる強度・尤度・残差を一つの入口へまとめる。",
+      "limitations": "入門ノートのため高度な神経構造やLLMは対象外。編者の注意: 基本定義と特定モデルの実験的優位は区別する。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2308.02360",
+      "title": "Intensity-free Integral-based Learning of Marked Temporal Point Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2308.02360",
+      "date": "2023-08-04",
+      "summary": "IFIBは事象間時間とマークの条件付き同時密度を直接学ぶ。",
+      "objective": "強度形状の選択を避け、離散マークと多次元連続マークを扱う。",
+      "methods": "積分に基づく強度非明示の枠組みで密度を表し、必要な数学的制約を課す。",
+      "results": "理論的性質と、人工・実データでの良好な実験結果を報告。要旨には指標別の成績がない。",
+      "novelty": "時間とマークを別々に分けず、結合密度を直接構成する。",
+      "limitations": "編者の注意: 結合密度の妥当性と、実データの分布変化や外挿での精度は異なる問題である。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2601.00845",
+      "title": "Enhancing Temporal Awareness in LLMs for Temporal Point Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2601.00845",
+      "date": "2025-12-29",
+      "summary": "TPP-TALはLLM入力の前に時間動態と事象の意味を整合させる。",
+      "objective": "単なる時刻・種別埋め込みの連結では捉えにくい相互作用を学ぶ。",
+      "methods": "plug-and-play方式で時間と意味の表現を明示的に合わせ、長い履歴の依存をLLMへ伝える。",
+      "results": "複数のベンチマークで時間尤度と事象予測精度の改善を報告。要旨には絶対値がない。",
+      "novelty": "LLMの時間認識を、入力interfaceの整合から改善する。",
+      "limitations": "編者の注意: 大きいLLMへの適用が自動的に効率的とは限らず、モデルサイズ・調整予算・推論費用を比較条件に含める。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2610.19021",
+      "title": "Can LLMs Access their World Knowledge for Event Prediction?",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2610.19021",
+      "date": "2026-10-13",
+      "summary": "DescribeEventは、LLMが事象の記述から既存知識を予測に使えるかを調べる。",
+      "objective": "専用モデルに劣る理由が知識不足か、入力・出力の設計かを検証する。",
+      "methods": "自然言語の事象記述を与え、意味と予測ラベルを分けるsymbolic labelを用いる。",
+      "results": "6分野7データ、約15万事象を評価。能力の高いLLMは記述と記号ラベルで改善したが、弱いモデルの利得は小さい。",
+      "novelty": "事象の意味情報と、ラベルの語義による偏りを分けて実験する。",
+      "limitations": "モデル能力によって利得が異なる。編者の注意: 世界知識を利用できるという結果から、未知の将来を一般的に予見できるとは結論しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2401.07237",
+      "title": "Distilling Event Sequence Knowledge From Large Language Models",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2401.07237",
+      "date": "2024-01-14",
+      "summary": "LLMから事象列を生成し、確率的な事象モデルの知識源にする。",
+      "objective": "清潔な構造化列が少ない場面で、知識graphの不足を補う。",
+      "methods": "部分的な因果関係を持つ概念graphで列生成を誘導し、pattern miningと確率モデルへ利用する。",
+      "results": "高品質な列の生成と入力graphの知識gapの補完を報告し、生成コード・評価枠組み・corpusを公開する。",
+      "novelty": "LLMを最終予測器だけでなく、事象列の知識の抽出元として使う。",
+      "limitations": "編者の注意: 生成列は実際に観測した履歴ではなく、LLMの常識や偏りを含む。因果らしい並びを因果実証としない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2406.10492",
+      "title": "Large Language Models as Interpolated and Extrapolated Event Predictors",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2406.10492",
+      "date": "2024-06-15",
+      "summary": "LEAPはLLMを使い、時間知識graphの対象推定と複数事象予測を扱う。",
+      "objective": "四つ組・説明文付き五つ組からの事象予測の構成を簡潔にする。",
+      "methods": "対象予測はQA形式でencoder-decoderを調整し、複数事象予測は固定LLM埋め込みとattention headで行う。",
+      "results": "複数の実データ・指標で有効性を示す。要旨にはデータ別の絶対成績はない。",
+      "novelty": "一つのLLM利用法に固定せず、予測課題に応じて調整型と固定表現型を使い分ける。",
+      "limitations": "編者の注意: 補間の対象推定と、観測期間より先の外挿予測は別の課題であり、結果を混ぜない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2404.17513",
+      "title": "A Comprehensive Evaluation on Event Reasoning of Large Language Models",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2404.17513",
+      "date": "2024-04-26",
+      "summary": "EV2はLLMの事象schema知識と具体例に対する推論を分けて評価する。",
+      "objective": "事象間関係や推論形式による能力の偏りを調べる。",
+      "methods": "schemaとinstanceの二層を持つbenchmarkを作り、関係・推論形式を幅広く比較する。",
+      "results": "一定の能力はあるが性能は不十分で不均衡と報告。schemaを記憶として利用する誘導で改善を示す。",
+      "novelty": "事象推論の知識の保有と、その知識の利用方法を別々に検査する。",
+      "limitations": "知識の利用は人間と十分整合しないと著者が指摘。編者の注意: 推論benchmarkの成績を実時間の次事象予測へ直結させない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2407.11638",
+      "title": "A Comprehensive Evaluation of Large Language Models on Temporal Event Forecasting",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2407.11638",
+      "date": "2024-07-16",
+      "summary": "MidEast-TE-miniを作り、LLMによる時間事象予測を入力・検索条件別に評価する。",
+      "objective": "graphと文章を併用するLLMが、将来への外挿に何を使えるかを調べる。",
+      "methods": "入力形式、文章による調整、RAGなどの基準法を比較する。",
+      "results": "生文章をそのまま足すzero-shotでは改善せず、調整では改善。検索は時間関係に役立つが、人気偏重とlong-tailが残る。",
+      "novelty": "LLMへ情報を渡す形式・調整・検索の寄与を切り分ける。",
+      "limitations": "著者は人気偏重・希少事象の問題、特にRAGでの残存を指摘。地域・データ設定の範囲にも注意が必要。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2410.02062",
+      "title": "TPP-LLM: Modeling Temporal Point Processes by Efficiently Fine-Tuning Large Language Models",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2410.02062",
+      "date": "2024-10-02",
+      "summary": "TPP-LLMは事象種別の文章説明と時間埋め込みでLLMを点過程へ適応させる。",
+      "objective": "カテゴリ記号だけでは失われる意味を利用しつつ、時間パターンを学ぶ。",
+      "methods": "事象の記述を直接入力し、時間埋め込みとPEFTで少数のパラメータを調整する。",
+      "results": "複数の実データで列モデル化・予測を改善し、計算効率の利点も報告。要旨には費用の絶対値がない。",
+      "novelty": "意味の事前学習と連続時間の予測を、効率的な追加調整で接続する。",
+      "limitations": "LLMだけでは時間パターンの把握が弱いという動機に基づく。編者の注意: 記述の質と事前学習由来の漏洩を確認する必要がある。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2501.05925",
+      "title": "Navigating Tomorrow: Reliably Assessing Large Language Models Performance on Future Event Prediction",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2501.05925",
+      "date": "2025-01-10",
+      "summary": "ニュースに基づき、LLMの未来事象予測を複数の質問形式で評価する。",
+      "objective": "訓練cutoff前後と対象の人気によって、見かけの予測能力がどう変わるかを調べる。",
+      "methods": "entity種別・人気で記事を分類し、肯定/尤度質問、推論、反実仮想の三設定を比較する。",
+      "results": "将来予測の可能性と限界を報告。要旨ではモデル別の成績や校正の具体値を確認できない。",
+      "novelty": "訓練cutoffと対象の人気を予測評価の設計へ含める。",
+      "limitations": "編者の注意: cutoff後の記事でも、検索や後日のモデル改訂で情報が入る可能性があり、評価時の情報源の固定が重要。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2408.04388",
+      "title": "MM-Forecast: A Multimodal Approach to Temporal Event Forecasting with Large Language Models",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2408.04388",
+      "date": "2024-08-08",
+      "summary": "MM-Forecastは画像の役割を言語化し、時間事象予測へ利用する。",
+      "objective": "画像が事象の強調・補足にどう役立つかを調べる。",
+      "methods": "multimodal LLMで画像の機能を記述し、その説明をLLM予測器へ入力する。既存データへ画像を加えたMidEast-TE-mmを作る。",
+      "results": "画像の役割の識別と、説明文を加えた予測の改善を実験で報告。",
+      "novelty": "画像を直接混ぜるだけでなく、予測における機能を文章化して渡す。",
+      "limitations": "編者の注意: 後から公開された画像やcaptionを使うと未来情報が入り得るため、予測時点の可用性をそろえる必要がある。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2003.11268",
+      "title": "Predictive Business Process Monitoring via Generative Adversarial Nets: The Case of Next Event Prediction",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2003.11268",
+      "date": "2020-03-25",
+      "summary": "敵対的学習を業務ログの次事象予測へ適用する。",
+      "objective": "データ不足やモデル構成による一般化の弱さを改善する。",
+      "methods": "時系列向けにGANを適応し、二つの網を対抗させて次事象を学ぶ。非敵対設定との最悪精度の関係も解析する。",
+      "results": "実験では精度と予測の早さを改善し、case長による成績変動にも頑健と報告。",
+      "novelty": "複雑な特徴設計より、敵対的な訓練目的で次事象予測を改善する。",
+      "limitations": "編者の注意: 理論上の最悪精度の主張には前提があり、任意の学習・分布変化でGANが常に優位とは読まない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2008.10748",
+      "title": "An empirical investigation of different classifiers, encoding and ensemble schemes for next event prediction using business process event logs",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2008.10748",
+      "date": "2020-08-24",
+      "summary": "業務ログの次事象予測で、分類器・履歴窓・ensembleを比較する。",
+      "objective": "ログの性質に応じた手法と特徴量の選択を支援する。",
+      "methods": "異なる符号化窓とensemble構成を共通benchmarkで評価する。",
+      "results": "最適な履歴長はログごとに異なる。ensembleはSVMなどを改善するが、強い木系分類器では追加利得がなかった。",
+      "novelty": "次事象予測におけるensembleの効果と履歴窓の関係を調べる。",
+      "limitations": "万能な履歴窓やensembleは見いだしていない。編者の注意: 平均精度だけで全ログへの推奨を決めない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1709.06033",
+      "title": "Sequence to Sequence Learning for Event Prediction",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1709.06033",
+      "date": "2017-09-18",
+      "summary": "先行文から次の事象の説明文を生成するseq2seqモデル。",
+      "objective": "文章中の次事象を、固定カテゴリの選択以外の形で予測する。",
+      "methods": "双方向多層RNNを用い、BLEUに加えて正解事象の言い換え注釈を使う評価を行う。",
+      "results": "WikiHowとDeScript由来の2データで従来研究よりBLEUを改善したと報告。",
+      "novelty": "自由文の次事象生成に、表面的な語一致を補う言い換え評価を組み合わせる。",
+      "limitations": "著者はBLEUの事象予測指標としての解釈の難しさを指摘。実時間の発生時刻予測とは別の課題。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2401.15621",
+      "title": "SNAP: Semantic Stories for Next Activity Prediction",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2401.15621",
+      "date": "2024-01-28",
+      "summary": "SNAPは業務ログを意味のある物語に変え、言語基盤モデルで次活動を予測する。",
+      "objective": "カテゴリ符号化だけでは使い切れない文章の意味を利用する。",
+      "methods": "過去のprocess event logから文脈付きstoryを組み立て、次活動分類へ入力する。",
+      "results": "6ベンチマークで9モデルと比較し、特に意味内容の豊かなデータで大きい改善を報告。",
+      "novelty": "事象履歴の意味を、言語モデルが扱える連続した記述へ変換する。",
+      "limitations": "改善は意味情報の豊かさに依存。編者の注意: story作成へ未来の属性や最終結果を混入させないことが重要。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1712.04165",
+      "title": "Temporal Stability in Predictive Process Monitoring",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1712.04165",
+      "date": "2017-12-12",
+      "summary": "同じ業務caseへの予測が時間とともに揺れる程度を評価する。",
+      "objective": "精度だけでなく、人が行動を決める際の予測の安定性を改善する。",
+      "methods": "二値の結果予測について時間安定性を定義し、分類器の調整と時系列平滑化を比較する。",
+      "results": "XGBoost・LSTMが高い安定性を示し、調整や平滑化でさらに改善。ただし平滑化は精度を少し下げる。",
+      "novelty": "逐次更新される予測の一貫性を、運用上の独立した評価軸へ加える。",
+      "limitations": "安定性と精度のtrade-offがある。編者の注意: 安定して間違う予測もあり、安定性だけを最適化しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2309.09618",
+      "title": "A Discussion on Generalization in Next-Activity Prediction",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2309.09618",
+      "date": "2023-09-18",
+      "summary": "次活動予測の公開ログにあるexample leakageと一般化の評価を再検討する。",
+      "objective": "深層モデルの成績が、新しいcaseへの能力を本当に示すかを問う。",
+      "methods": "一般的なevent logで重複・漏洩の影響と簡単な予測法を調べ、必要な一般化の種類を分ける。",
+      "results": "著者が調べた通常のログでは漏洩が大量にあり、単純な方法でも深層法に近い成績となると報告。",
+      "novelty": "次活動予測の評価を、未知データという言葉の具体的な意味から見直す。",
+      "limitations": "編者の注意: 調べたログでの結論であり、あらゆる業務データで深層学習が不要という主張へ拡張しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1707.06766",
+      "title": "Outcome-Oriented Predictive Process Monitoring: Review and Benchmark",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1707.06766",
+      "date": "2017-07-21",
+      "summary": "業務caseの最終結果を途中履歴から予測する手法のレビューと比較。",
+      "objective": "異なるデータ・基準法による従来研究の比較困難を減らす。",
+      "methods": "体系的レビューと分類を行い、実ログ9種類に基づく24課題で11手法を比較する。",
+      "results": "共通benchmarkによる実験的比較と、各方式の適用性を整理する。要旨に一つの勝者の数値はない。",
+      "novelty": "結果予測を共通条件で整理する評価資源を提供する。",
+      "limitations": "次活動ではなくcaseの結果分類が対象。編者の注意: 最終結果・残り時間・次事象の精度を混同しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1711.03822",
+      "title": "LSTM Networks for Data-Aware Remaining Time Prediction of Business Process Instances",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1711.03822",
+      "date": "2017-11-10",
+      "summary": "事象に付随する属性を使い、進行中caseの完了までの時間をLSTMで予測する。",
+      "objective": "service level agreement下で、完了の遅れを早く見通す。",
+      "methods": "単一事象に関連する任意の情報を取り込む深層再帰モデルを構成する。",
+      "results": "実データで提案方式を検証。要旨には課題数や平均誤差の絶対値がない。",
+      "novelty": "活動ラベルだけでなく、事象属性を残り時間の予測へ利用する。",
+      "limitations": "編者の注意: 完了時刻の予測は次事象時刻と異なる。結果を知った後に記録される属性を入力へ入れない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2008.07993",
+      "title": "XNAP: Making LSTM-based Next Activity Predictions Explainable by Using LRP",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2008.07993",
+      "date": "2020-08-18",
+      "summary": "XNAPはLSTMの次活動予測に、活動ごとの関連度を付ける。",
+      "objective": "process analystが予測の根拠を理解できるようにする。",
+      "methods": "layer-wise relevance propagationをLSTMへ統合し、入力活動へrelevanceを割り当てる。",
+      "results": "実際のevent log2種類で有用性を示す。要旨は介入による業務改善まで実証していない。",
+      "novelty": "深層の次活動予測を、履歴活動の寄与へ分解する。",
+      "limitations": "編者の注意: LRPはモデルの予測説明であり、関連度の高い活動を変更した場合の因果効果を直接示さない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1804.02422",
+      "title": "Predictive Process Monitoring Methods: Which One Suits Me Best?",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1804.02422",
+      "date": "2018-04-06",
+      "summary": "予測process monitoringを、利用価値から選ぶための分類枠組み。",
+      "objective": "手元のデータから何を予測でき、どの方法が適するかを整理する。",
+      "methods": "既存研究を体系的に抽出・分類・分析し、価値を基準とするframeworkへまとめる。",
+      "results": "新しい予測器の実験成績ではなく、組織が手法と用途を選ぶための見取り図を提供する。",
+      "novelty": "技術名の一覧を、意思決定に結び付く価値の分類へ変える。",
+      "limitations": "レビューであり費用対効果をすべての現場で測った研究ではない。対象は2018年時点までの研究範囲。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1805.02896",
+      "title": "Survey and cross-benchmark comparison of remaining time prediction methods in business process monitoring",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1805.02896",
+      "date": "2018-05-08",
+      "summary": "業務processの残り時間予測を体系的に整理し、共通データで比較する。",
+      "objective": "異なる実験条件のため不明だった各方式の相対的な長所を明らかにする。",
+      "methods": "文献レビューと分類を行い、異業種の実データ16種類で16手法をcross-benchmark比較する。",
+      "results": "残り時間予測の共通実験を提供。要旨には一律に優位な方式や誤差の絶対値はない。",
+      "novelty": "残り時間という特定の目的に焦点を当て、方式選択の比較基盤を作る。",
+      "limitations": "編者の注意: 残り時間の誤差と、次活動の分類精度や次の待ち時間の誤差は異なる尺度である。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2404.06267",
+      "title": "PGTNet: A Process Graph Transformer Network for Remaining Time Prediction of Business Process Instances",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2404.06267",
+      "date": "2024-04-09",
+      "summary": "PGTNetはevent logをgraph化し、processの残り時間を予測する。",
+      "objective": "複雑な制御flowと長い活動依存を捉える。",
+      "methods": "事象ログをgraph datasetへ変換し、複数のprocess視点を考慮するProcess Graph Transformerを学習する。",
+      "results": "公開実ログ20種類で既存の深層方式を上回り、特に複雑なprocessに有望と報告。",
+      "novelty": "activityの順序だけでなく、graphとしての制御関係を表現へ組み込む。",
+      "limitations": "編者の注意: graph化にcase全体の未来情報を利用しないこと、processの複雑さ別に性能を確認することが重要。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2606.15868",
+      "title": "David vs. Goliath in Next Activity Prediction: Argmax vs. LSTM, Transformer, and LLM",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2606.15868",
+      "date": "2026-06-14",
+      "summary": "次活動予測で、LLMから単純な頻度のargmaxまでを直接比較する。",
+      "objective": "大きな事前学習モデルが、この課題で本当に必要かを検証する。",
+      "methods": "語彙適応LLM、scratch Transformer、蒸留Transformer、LSTMと数え上げの基準法を実ログ7種類で評価する。",
+      "results": "事前学習の一貫した利得はなく、サイズの効果も小さい。多くのデータでargmaxが十億規模LLMに近い成績を示す。",
+      "novelty": "複雑なモデルと強い単純基準を同じ系列予測設定へ載せる。",
+      "limitations": "編者の注意: ラベル列中心の次活動課題での結果であり、豊富な自然言語属性を使う予測すべてへ一般化しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2402.14382",
+      "title": "Chain-of-History Reasoning for Temporal Knowledge Graph Forecasting",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2402.14382",
+      "date": "2024-02-22",
+      "summary": "Chain-of-Historyは高次の履歴を段階的に探索し、時間知識graphの予測へ使う。",
+      "objective": "履歴不足と大量の履歴によるLLMの推論劣化を同時に減らす。",
+      "methods": "高次履歴を段階的に利用する推論moduleを作り、既存graphモデルへ追加できる形で設計する。",
+      "results": "3データと複数backboneで有効性を検証。要旨には指標別の絶対成績がない。",
+      "novelty": "LLM単独の予測能力だけでなく、graph方式を補助する履歴探索として組み込む。",
+      "limitations": "編者の注意: 高次履歴を増やす効果は入力予算や検索品質に左右され、過去以外の情報の混入を避ける必要がある。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2012.15537",
+      "title": "xERTE: Explainable Reasoning on Temporal Knowledge Graphs for Forecasting Future Links",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2012.15537",
+      "date": "2020-12-31",
+      "summary": "xERTEは問い合わせに関連する時間部分graphをたどって将来linkを予測する。",
+      "objective": "埋め込みだけの予測に、人が読める根拠を与える。",
+      "methods": "時間・関係attentionと逆向き表現更新により、時間的な隣接節点をsamplingして部分graphを拡張する。",
+      "results": "4ベンチマークでHits@1を最大20%相対改善と報告。53人の調査で抽出根拠と人の理解の整合も検証する。",
+      "novelty": "時間的構造を予測と説明の両方に使う部分graph探索。",
+      "limitations": "編者の注意: 根拠の理解しやすさは因果的正しさと別。20%は相対改善で20ポイントではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2101.05151",
+      "title": "Temporal Knowledge Graph Forecasting with Neural ODE",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2101.05151",
+      "date": "2021-01-13",
+      "summary": "Neural ODEで時間知識graphの連続的な埋め込み変化を表す。",
+      "objective": "離散snapshotだけでは表しにくい、時間の連続性を利用する。",
+      "methods": "多関係GCNをNeural ODEへ拡張し、辺の生成・消失を扱うgraph transition層を加える。",
+      "results": "5ベンチマークで将来link予測を評価し、高い性能を報告。要旨に絶対スコアはない。",
+      "novelty": "連続時間の表現進化と、graphの構造変化を同時にモデル化する。",
+      "limitations": "編者の注意: 連続表現を使っても、観測されたtimestampの粒度や欠落した事象を自動的に解決するわけではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2109.04101",
+      "title": "TimeTraveler: Reinforcement Learning for Temporal Knowledge Graph Forecasting",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2109.04101",
+      "date": "2021-09-09",
+      "summary": "TimeTravelerは履歴graph内を移動する強化学習で将来の事実を予測する。",
+      "objective": "時間差と、後から出現する未見entityの推論を扱う。",
+      "methods": "相対時間符号、Dirichlet分布に基づく時間reward、未見entityの表現を導入する。",
+      "results": "4ベンチマークで性能を改善し、説明可能性・計算・パラメータ数の利点も報告。",
+      "novelty": "将来linkの候補を、時間を考慮したpath探索として学習する。",
+      "limitations": "編者の注意: 未見entityの表現に利用できる情報と、予測時点で実際に観測可能な情報をそろえて評価する。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2305.10613",
+      "title": "Temporal Knowledge Graph Forecasting Without Knowledge Using In-Context Learning",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2305.10613",
+      "date": "2023-05-17",
+      "summary": "LLMのin-context学習が、意味ラベルなしでも時間graph予測に使えるか調べる。",
+      "objective": "成績が事前の意味知識によるのか、履歴内のpatternによるのかを切り分ける。",
+      "methods": "関連履歴をpromptへ変え、token確率で候補を順位付け。名前を数字に置き換えた条件も比較する。",
+      "results": "専用TKGモデルと同等の成績を示し、意味を隠してもHit@1の変化は±0.4%と報告。",
+      "novelty": "意味の知識と、その場の履歴patternの学習を実験的に分離する。",
+      "limitations": "編者の注意: このbenchmarkで意味が不要でも、説明文のある別分野や希少事象で同じとは限らない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2404.16726",
+      "title": "History repeats Itself: A Baseline for Temporal Knowledge Graph Forecasting",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2404.16726",
+      "date": "2024-04-25",
+      "summary": "事実の繰り返しだけを使う、時間知識graph予測の単純な基準法。",
+      "objective": "大きいモデルの進歩が、単純な反復予測を超えているか確認する。",
+      "methods": "反復事実を予測する方式を作り、ほぼ調整不要・反復学習なしで既存11手法と比較する。",
+      "results": "5データ中3つで1位または3位となり、従来法の相対的評価が変わると報告。",
+      "novelty": "強い反復基準によって、複雑なモデルの失敗や見かけの改善を検出する。",
+      "limitations": "編者の注意: 反復率が低い・新しいentityが多い分布では事情が変わる。すべての時間graphで十分という結果ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2104.10353",
+      "title": "Temporal Knowledge Graph Reasoning Based on Evolutional Representation Learning",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2104.10353",
+      "date": "2021-04-21",
+      "summary": "RE-GCNはgraph構造と時系列変化を再帰的に学び、将来の事実を予測する。",
+      "objective": "同時刻の構造依存と隣接時刻のpatternを効率的に統合する。",
+      "methods": "関係対応GCN、gate付き再帰更新、entityの静的属性を使うgraph制約を組み合わせる。",
+      "results": "6ベンチマークで精度・効率を改善。最大11.46%のMRR改善と最大82倍の高速化を報告。",
+      "novelty": "entityとrelationの表現を、snapshot列全体の進化として学ぶ。",
+      "limitations": "編者の注意: 最大改善値と最大速度は各評価条件での値であり、全課題で同時に得られるとは限らない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2003.13432",
+      "title": "Graph Hawkes Neural Network for Forecasting on Temporal Knowledge Graphs",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2003.13432",
+      "date": "2020-03-30",
+      "summary": "Graph Hawkes Neural Networkは、多関係graphの変化を神経点過程で学ぶ。",
+      "objective": "すべての候補linkを別の種別とすると巨大になる事象空間へ対応する。",
+      "methods": "神経的に自己変調するHawkesをgraphへ拡張し、将来時点の事実の発生を予測する。",
+      "results": "大規模な時間知識graphを含む多関係データで有効性を報告。要旨には規模や精度の絶対値がない。",
+      "novelty": "節点間の関係の組合せを扱える形で、事象の強度モデルを拡張する。",
+      "limitations": "編者の注意: link候補数と負例の作り方で難度が変わるため、他のTPPと同じ予測課題だと仮定しない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2310.07793",
+      "title": "GenTKG: Generative Forecasting on Temporal Knowledge Graph with Large Language Models",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2310.07793",
+      "date": "2023-10-11",
+      "summary": "GenTKGは時間論理に基づく検索とLLMの少数例調整で将来の事実を生成する。",
+      "objective": "大きい時間graphをLLMへ渡す構造・計算の隔たりを減らす。",
+      "methods": "時間論理規則で履歴を検索し、PEFTによるinstruction tuningを組み合わせる。",
+      "results": "最少16例の調整で既存法を上回る結果と、再学習しない未見データへの転移を報告。",
+      "novelty": "構造を意識した検索と、少数例の生成的予測を統合する。",
+      "limitations": "編者の注意: 16例は調整用の例数であり、検索に使う履歴全体や事前学習の情報量が16件という意味ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1305.3409",
+      "title": "Calibration diagnostics for point process models via the probability integral transform",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1305.3409",
+      "date": "2013-05-15",
+      "summary": "PITを使い、点過程の予測分布が校正されているかを診断する。",
+      "objective": "強度や相互作用構造に潜む不整合を検出する。",
+      "methods": "PoissonではPITを明示計算し、一般の過程ではモデルからの標本を使って評価する。",
+      "results": "多次元の点過程にも適用できる校正診断を提案。要旨には特定の予測モデルの精度競争はない。",
+      "novelty": "確率積分変換を、点patternのモデル検証へ適用する。",
+      "limitations": "編者の注意: 校正の診断はモデル間の識別力や業務上の効用と同一ではなく、十分な標本が必要。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2103.11884",
+      "title": "Comparative evaluation of point process forecasts",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2103.11884",
+      "date": "2021-03-22",
+      "summary": "点過程の予測をproper scoring ruleなどの原理に沿って比較する。",
+      "objective": "社会的な判断に使う確率予測を、適切な目標量に対応した尺度で測る。",
+      "methods": "consistent scoreとproper scoreを点過程へ拡張し、既存の地震予測評価を整理する。",
+      "results": "simulationとイタリアの運用地震予測で検証。Poisson対数尤度がcell期待値の比較に適することを示す。",
+      "novelty": "真の分布全体とcellごとの期待値など、評価対象に合うscoreを区別する。",
+      "limitations": "編者の注意: Poisson対数尤度が期待値比較に使えることは、真の事象列がPoisson過程であるという証明ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2410.08226",
+      "title": "EarthquakeNPP: A Benchmark for Earthquake Forecasting with Neural Point Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2410.08226",
+      "date": "2024-09-27",
+      "summary": "EarthquakeNPPは神経点過程を地震学の強い基準法と比較するbenchmark。",
+      "objective": "従来データの漏洩、大きい地震列の欠落、不十分な比較対象を改善する。",
+      "methods": "Californiaの1971–2021年のcatalogを領域・生成方法別に整備し、ETASと尤度・生成指標で比較する。",
+      "results": "試した神経点過程5方式はいずれもETASを上回らなかったと報告。",
+      "novelty": "機械学習内の比較を、対象分野の実用的なモデル・評価へ接続する。",
+      "limitations": "結論は試した実装とbenchmarkの範囲。編者の注意: あらゆる将来の神経モデルが地震予測に不適という結論ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:1905.09690",
+      "title": "Fully Neural Network based Model for General Temporal Point Processes",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/1905.09690",
+      "date": "2019-05-23",
+      "summary": "強度の積分を神経網で表し、その微分として柔軟な強度を得る。",
+      "objective": "固定的な時間減衰形と、尤度積分の数値近似を避ける。",
+      "methods": "RNNの履歴に条件付けたfeedforward網で累積強度をモデル化し、自動微分で強度を計算する。",
+      "results": "人工・実データで既存法と同等以上の成績を報告。尤度を数値積分なしに計算できる点が核となる。",
+      "novelty": "積分しやすい強度を探す代わりに、積分量を直接パラメータ化する。",
+      "limitations": "編者の注意: 後続研究が累積ハザードの完全な制約を問題にしており、柔軟さと数学的な妥当性を分けて確認する。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2502.07139",
+      "title": "Byte-token Enhanced Language Models for Temporal Point Processes Analysis",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2502.07139",
+      "date": "2025-02-11",
+      "summary": "Language-TPPは時間差をbyte-tokenへ変え、言語モデルで事象列を扱う。",
+      "objective": "文章記述と時間動態を、TPP専用の構造変更を抑えて統合する。",
+      "methods": "連続時間差のbyte-token表現を通常の言語モデルへ組み込み、種別・時刻予測と事象説明生成を評価する。",
+      "results": "電子商取引・SNS・Q&AのWebデータで高い予測成績を報告。時間を加えるとROUGE-Lや感情分布の整合も改善する。",
+      "novelty": "時間の符号化をtoken語彙へ寄せ、予測と説明文生成を同じ枠組みに載せる。",
+      "limitations": "編者の注意: 公開時のLanguage-TPPから改題された取得時点の要旨を参照。文章の改善は将来事象の因果的理解の実証ではない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "arxiv:2501.14291",
+      "title": "Advances in Temporal Point Processes: Bayesian, Neural, and LLM Approaches",
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2501.14291",
+      "date": "2025-01-24",
+      "summary": "Bayes・神経モデル・LLMの三つの視点からTPPを整理するレビュー。",
+      "objective": "長い統計的蓄積と近年の意味情報の利用をつなぐ。",
+      "methods": "基礎概念、設計、パラメータ推定、応用を三つの枠組みで解説し、未解決課題を整理する。",
+      "results": "独自予測器の実験ではなく、古典的な応用と最近の学習方式を横断する見取り図を提供する。",
+      "novelty": "Bayesと深層学習に、LLMの文脈理解を含めた比較の軸を加える。",
+      "limitations": "レビューであり各方式の同条件での優位を保証しない。編者の注意: 掲載後の個別研究は一次資料でも確認する。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "arXiv初回提出記録。査読誌の刊行日・最終改訂日とは区別。"
+    },
+    {
+      "id": "doi:10.1111/j.2517-6161.1971.tb01530.x",
+      "title": "Point Spectra of Some Mutually Exciting Point Processes",
+      "source": "Publisher",
+      "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1971.tb01530.x",
+      "date": null,
+      "summary": "相互に励起する点過程のpoint spectral matrixを導く古典。",
+      "objective": "事象の相互励起を周波数領域の二次的な関係として記述する。",
+      "methods": "Wiener–Hopf積分方程式の解法に似た方法で、対象となる過程のスペクトル行列を求める。",
+      "results": "出版社要旨で確認できる結果はスペクトル行列の導出。予測benchmarkや実データの数値は記されていない。",
+      "novelty": "後続のHawkes研究を読む入口となる、相互励起のスペクトル解析。",
+      "limitations": "本文は未確認で、適用条件・導出式の細部は断言しない。刊行年1971年は確認、日単位の公開日は未確認。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "出版社で刊行年1971年と巻33・号3を確認。日単位の初回公開日は未確認。後年のウェブ掲載・移管日を採用しない。出典: https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1971.tb01530.x"
+    },
+    {
+      "id": "doi:10.1145/2939672.2939875",
+      "title": "Recurrent Marked Temporal Point Processes: Embedding Event History to Vector",
+      "source": "Publisher",
+      "url": "https://doi.org/10.1145/2939672.2939875",
+      "date": null,
+      "summary": "RMTPPは履歴をRNNのvectorへ埋め込み、次の種別と時刻を予測する。",
+      "objective": "手で固定した過程の形への依存を弱め、大量の事象履歴から表現を学ぶ。",
+      "methods": "履歴の非線形表現で条件付き強度とマークをモデル化し、確率勾配法で学習する。",
+      "results": "人工・実データで固定的な母数モデルより良い予測を報告。要旨は百万規模の事象へ拡張可能と述べる。",
+      "novelty": "事象履歴の表現学習とmarked TPPを統合する初期の主要モデル。",
+      "limitations": "編者の注意: RNNで履歴を学んでも時間密度のパラメータ化は残るため、仮定不要のモデルとは扱わない。",
+      "read_level": "abstract",
+      "report": "reports/foundations/06-next-event.md",
+      "reportDate": "2026-11-15",
+      "fields": [
+        "次イベント予測・点過程"
+      ],
+      "tags": [
+        "基礎文献",
+        "次イベント予測・点過程"
+      ],
+      "dateNote": "著者版PDFでKDD 2016（8月13〜17日）の会議情報を確認。会期を論文の初回公開日へ流用せず、日単位の正式公開日は未確認として保持。出典: https://people.mpi-sws.org/~manuelgr/pubs/rmtpp.pdf"
     }
   ]
 }

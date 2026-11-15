@@ -6565,10 +6565,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2307.08097",
         "date": "2023-07-16",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2410.07430",
@@ -6576,10 +6576,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2410.07430",
         "date": "2024-10-09",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2308.06094",
@@ -6587,10 +6587,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2308.06094",
         "date": "2023-08-11",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2106.04465",
@@ -6598,10 +6598,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2106.04465",
         "date": "2021-06-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2002.09291",
@@ -6609,10 +6609,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2002.09291",
         "date": "2020-02-21",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2006.02460",
@@ -6620,10 +6620,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2006.02460",
         "date": "2020-06-03",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2104.07932",
@@ -6631,10 +6631,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2104.07932",
         "date": "2021-04-16",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1907.07561",
@@ -6642,10 +6642,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1907.07561",
         "date": "2019-07-17",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1810.03730",
@@ -6653,10 +6653,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1810.03730",
         "date": "2018-10-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2006.07506",
@@ -6664,10 +6664,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2006.07506",
         "date": "2020-06-12",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2002.12501",
@@ -6675,10 +6675,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2002.12501",
         "date": "2020-02-28",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1602.04511",
@@ -6686,10 +6686,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1602.04511",
         "date": "2016-02-14",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1607.06333",
@@ -6697,10 +6697,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1607.06333",
         "date": "2016-07-21",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2407.05302",
@@ -6708,10 +6708,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2407.05302",
         "date": "2024-07-07",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1710.05115",
@@ -6719,10 +6719,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1710.05115",
         "date": "2017-10-14",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2208.07961",
@@ -6730,10 +6730,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2208.07961",
         "date": "2022-08-16",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1911.00292",
@@ -6741,10 +6741,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1911.00292",
         "date": "2019-11-01",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2112.14472",
@@ -6752,10 +6752,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2112.14472",
         "date": "2021-12-29",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1708.09252",
@@ -6763,10 +6763,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1708.09252",
         "date": "2017-08-28",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1702.07013",
@@ -6774,10 +6774,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1702.07013",
         "date": "2017-02-22",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2202.01869",
@@ -6785,10 +6785,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2202.01869",
         "date": "2022-02-03",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1802.04725",
@@ -6796,10 +6796,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1802.04725",
         "date": "2018-02-13",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1501.00725",
@@ -6807,10 +6807,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1501.00725",
         "date": "2015-01-04",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2409.18158",
@@ -6818,10 +6818,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2409.18158",
         "date": "2024-09-26",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2305.12403",
@@ -6829,10 +6829,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2305.12403",
         "date": "2023-05-21",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2112.06351",
@@ -6840,10 +6840,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2112.06351",
         "date": "2021-12-12",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2106.10773",
@@ -6851,10 +6851,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2106.10773",
         "date": "2021-06-20",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1612.09328",
@@ -6862,10 +6862,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1612.09328",
         "date": "2016-12-29",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2002.07281",
@@ -6873,10 +6873,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2002.07281",
         "date": "2020-02-17",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2205.10624",
@@ -6884,10 +6884,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2205.10624",
         "date": "2022-05-21",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2310.06179",
@@ -6895,10 +6895,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2310.06179",
         "date": "2023-10-09",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2106.00901",
@@ -6906,10 +6906,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2106.00901",
         "date": "2021-06-02",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2005.08665",
@@ -6917,10 +6917,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2005.08665",
         "date": "2020-05-15",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2311.08635",
@@ -6928,10 +6928,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2311.08635",
         "date": "2023-11-15",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1705.08982",
@@ -6939,10 +6939,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1705.08982",
         "date": "2017-05-24",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2109.02715",
@@ -6950,10 +6950,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2109.02715",
         "date": "2021-09-06",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1705.08051",
@@ -6961,10 +6961,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1705.08051",
         "date": "2017-05-23",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2007.14082",
@@ -6972,10 +6972,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2007.14082",
         "date": "2020-07-28",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2306.14072",
@@ -6983,10 +6983,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2306.14072",
         "date": "2023-06-24",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1806.00221",
@@ -6994,10 +6994,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1806.00221",
         "date": "2018-06-01",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2308.02360",
@@ -7005,10 +7005,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2308.02360",
         "date": "2023-08-04",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2601.00845",
@@ -7016,10 +7016,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2601.00845",
         "date": "2025-12-29",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2610.19021",
@@ -7027,10 +7027,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2610.19021",
         "date": "2026-10-13",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2401.07237",
@@ -7038,10 +7038,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2401.07237",
         "date": "2024-01-14",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2406.10492",
@@ -7049,10 +7049,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2406.10492",
         "date": "2024-06-15",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2404.17513",
@@ -7060,10 +7060,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2404.17513",
         "date": "2024-04-26",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2407.11638",
@@ -7071,10 +7071,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2407.11638",
         "date": "2024-07-16",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2410.02062",
@@ -7082,10 +7082,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2410.02062",
         "date": "2024-10-02",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2501.05925",
@@ -7093,10 +7093,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2501.05925",
         "date": "2025-01-10",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2408.04388",
@@ -7104,10 +7104,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2408.04388",
         "date": "2024-08-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2003.11268",
@@ -7115,10 +7115,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2003.11268",
         "date": "2020-03-25",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2008.10748",
@@ -7126,10 +7126,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2008.10748",
         "date": "2020-08-24",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1709.06033",
@@ -7137,10 +7137,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1709.06033",
         "date": "2017-09-18",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2401.15621",
@@ -7148,10 +7148,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2401.15621",
         "date": "2024-01-28",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1712.04165",
@@ -7159,10 +7159,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1712.04165",
         "date": "2017-12-12",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2309.09618",
@@ -7170,10 +7170,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2309.09618",
         "date": "2023-09-18",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1707.06766",
@@ -7181,10 +7181,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1707.06766",
         "date": "2017-07-21",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1711.03822",
@@ -7192,10 +7192,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1711.03822",
         "date": "2017-11-10",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2008.07993",
@@ -7203,10 +7203,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2008.07993",
         "date": "2020-08-18",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1804.02422",
@@ -7214,10 +7214,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1804.02422",
         "date": "2018-04-06",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1805.02896",
@@ -7225,10 +7225,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1805.02896",
         "date": "2018-05-08",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2404.06267",
@@ -7236,10 +7236,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2404.06267",
         "date": "2024-04-09",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2606.15868",
@@ -7247,10 +7247,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2606.15868",
         "date": "2026-06-14",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2402.14382",
@@ -7258,10 +7258,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2402.14382",
         "date": "2024-02-22",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2012.15537",
@@ -7269,10 +7269,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2012.15537",
         "date": "2020-12-31",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2101.05151",
@@ -7280,10 +7280,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2101.05151",
         "date": "2021-01-13",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2109.04101",
@@ -7291,10 +7291,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2109.04101",
         "date": "2021-09-09",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2305.10613",
@@ -7302,10 +7302,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2305.10613",
         "date": "2023-05-17",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2404.16726",
@@ -7313,10 +7313,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2404.16726",
         "date": "2024-04-25",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2104.10353",
@@ -7324,10 +7324,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2104.10353",
         "date": "2021-04-21",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2003.13432",
@@ -7335,10 +7335,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2003.13432",
         "date": "2020-03-30",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2310.07793",
@@ -7346,10 +7346,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2310.07793",
         "date": "2023-10-11",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1305.3409",
@@ -7357,10 +7357,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1305.3409",
         "date": "2013-05-15",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2103.11884",
@@ -7368,10 +7368,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2103.11884",
         "date": "2021-03-22",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2410.08226",
@@ -7379,10 +7379,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2410.08226",
         "date": "2024-09-27",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:1905.09690",
@@ -7390,10 +7390,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/1905.09690",
         "date": "2019-05-23",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2502.07139",
@@ -7401,10 +7401,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2502.07139",
         "date": "2025-02-11",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "arxiv:2501.14291",
@@ -7412,10 +7412,10 @@
         "source": "arXiv",
         "url": "https://arxiv.org/abs/2501.14291",
         "date": "2025-01-24",
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "arXiv初回提出記録。査読誌刊行日・改訂日とは別。",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "doi:10.1111/j.2517-6161.1971.tb01530.x",
@@ -7423,10 +7423,10 @@
         "source": "Publisher",
         "url": "https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1971.tb01530.x",
         "date": null,
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "出版社で刊行年1971年と巻33・号3を確認。日単位の初回公開日は未確認。後年のウェブ掲載・移管日を採用しない。出典: https://rss.onlinelibrary.wiley.com/doi/10.1111/j.2517-6161.1971.tb01530.x",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       },
       {
         "id": "doi:10.1145/2939672.2939875",
@@ -7434,10 +7434,10 @@
         "source": "Publisher",
         "url": "https://doi.org/10.1145/2939672.2939875",
         "date": null,
-        "status": "unreviewed",
+        "status": "reviewed_published",
         "report": "06-next-event.md",
         "date_basis": "著者版PDFでKDD 2016（8月13〜17日）の会議情報を確認。会期を論文の初回公開日へ流用せず、日単位の正式公開日は未確認として保持。出典: https://people.mpi-sws.org/~manuelgr/pubs/rmtpp.pdf",
-        "reason": "一次資料の編集照合中。候補は完成件数に含めず、ダッシュボードへ未掲載。"
+        "read_level": "abstract"
       }
     ],
     "neuro": [
@@ -8610,8 +8610,8 @@
     ]
   },
   "main_unique_papers": 762,
-  "published_unique_papers": 588,
-  "unreviewed_unique_papers": 186,
+  "published_unique_papers": 668,
+  "unreviewed_unique_papers": 106,
   "historical_appendix": [
     {
       "id": "doi:10.1038/323533a0",
@@ -8762,8 +8762,8 @@
     },
     "events": {
       "selected": 100,
-      "published": 20,
-      "remaining": 80
+      "published": 100,
+      "remaining": 0
     },
     "neuro": {
       "selected": 106,
