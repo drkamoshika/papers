@@ -1,0 +1,46 @@
+{
+  "main_selected_unique": 556,
+  "main_published_unique": 556,
+  "appendix_unique": 12,
+  "total_published_unique": 568,
+  "remaining_main_unique": 0,
+  "full_text_unique": 36,
+  "abstract_only_unique": 532,
+  "completed_with_unknown_exact_date": 15,
+  "document_counts": {
+    "01-language.md": 101,
+    "02-agents.md": 112,
+    "03-trust.md": 104,
+    "04-medical.md": 139,
+    "05-structured.md": 119,
+    "00-prehistory.md": 12
+  },
+  "groups": {
+    "language": {
+      "selected": 101,
+      "published": 101,
+      "remaining": 0
+    },
+    "agents": {
+      "selected": 112,
+      "published": 112,
+      "remaining": 0
+    },
+    "trust": {
+      "selected": 104,
+      "published": 104,
+      "remaining": 0
+    },
+    "medical": {
+      "selected": 139,
+      "published": 139,
+      "remaining": 0
+    },
+    "structured": {
+      "selected": 119,
+      "published": 119,
+      "remaining": 0
+    }
+  },
+  "content_field_issues": []
+}
