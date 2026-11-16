@@ -1,244 +1,159 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Paper Watch | Research Library</title><style>
-:root{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;color:#1d2939;background:#f5f7fa}
-*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}
-header{background:#12283b;color:white;padding:24px max(20px,calc((100vw - 1160px)/2))}
-header h1{font-size:25px;margin:0 0 5px;letter-spacing:-.5px}header p{font-size:13px;margin:0;color:#bacbd8}
-.wrap{max-width:1160px;margin:auto;padding:22px 20px}
-.catalog-top{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:13px}
-.catalog-top h2{font-size:18px;margin:0}.total{font-size:13px;color:#64748b}
-.collection-switch{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.collection-tab{border:1px solid #cbd5e1;background:white;border-radius:9px;padding:11px 16px;cursor:pointer;color:#40546b;font-weight:600}.collection-tab[aria-pressed="true"]{background:#163e5c;color:white;border-color:#163e5c}.collection-note{font-size:13px;line-height:1.8;color:#52667a;margin:0 0 16px}.collection-note a{color:#1768a3}.source-label.other{background:#f3ecdf;color:#805c22}[hidden]{display:none!important}
-.source-switch{display:flex;gap:5px;flex-wrap:wrap;background:#e8edf3;border-radius:11px;padding:5px;margin-bottom:12px}
-.source-tab{border:0;background:transparent;border-radius:8px;color:#40546b;cursor:pointer;padding:10px 17px;font-weight:600;font-size:14px}
-.source-tab:hover{background:#f7fafc}.source-tab[aria-pressed="true"]{background:#fff;color:#123e63;box-shadow:0 1px 5px #102b3a1c}
-.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px}
-input,select{background:white;border:1px solid #cbd5e1;border-radius:9px;padding:11px 12px;color:inherit}
-input{flex:1;min-width:220px}select{min-width:185px}
-.toolbar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 10px;font-size:13px;color:#64748b}
-.button{border:1px solid #cbd5e1;border-radius:7px;background:#fff;padding:7px 11px;cursor:pointer}.button:hover{background:#f0f5fa}
-.layout{display:grid;grid-template-columns:minmax(260px,0.85fr) minmax(0,1.4fr);gap:14px;align-items:start}
-.panel{background:white;border:1px solid #dfe7ee;border-radius:12px;overflow:hidden}
-.list{max-height:72vh;overflow-y:auto}
-.paper{display:block;width:100%;padding:13px 16px;border:0;border-bottom:1px solid #edf0f5;background:white;color:inherit;text-align:left;cursor:pointer}
-.paper:last-child{border-bottom:0}.paper:hover{background:#f6f9fc}.paper.active{background:#edf5fc;box-shadow:inset 3px 0 #2274ae}
-.paper-meta{display:flex;align-items:center;gap:9px;margin-bottom:5px;flex-wrap:wrap}
-.source-label{display:inline-block;border-radius:5px;background:#e7f1fb;color:#185681;font-size:11px;font-weight:700;padding:3px 7px}
-.source-label.pubmed{background:#e6f4ed;color:#176a4a}
-.field-panel{background:#fff;border:1px solid #dfe7ee;border-radius:12px;padding:15px 16px;margin-bottom:16px}
-.field-heading{font-size:14px;margin:0 0 10px}.field-filters{display:flex;flex-wrap:wrap;gap:7px}
-.field-filter,.field-badge{--field-color:#52667a;--field-bg:#eef2f6;color:var(--field-color);background:var(--field-bg);border:1px solid transparent;border-radius:7px;font-size:12px;line-height:1.5}
-.field-filter{display:inline-flex;align-items:center;gap:8px;padding:7px 10px;text-align:left;cursor:pointer}
-.field-filter:hover,.field-badge:is(button):hover{border-color:var(--field-color)}
-.field-filter[aria-pressed="true"]{border-color:var(--field-color);box-shadow:inset 0 0 0 1px var(--field-color);font-weight:700}
-.field-count{font-variant-numeric:tabular-nums;opacity:.8}.field-note{font-size:12px;color:#64748b;margin:10px 0 0;line-height:1.7}
-.field-badges{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.field-badge{display:inline-block;padding:3px 7px}.field-badge:is(button){cursor:pointer}
-[data-field-key="language"]{--field-color:#24558a;--field-bg:#eaf2fc}
-[data-field-key="agents"]{--field-color:#6b4691;--field-bg:#f1ecf8}
-[data-field-key="trust"]{--field-color:#925b16;--field-bg:#fcf2df}
-[data-field-key="medical"]{--field-color:#176a4a;--field-bg:#e6f4ed}
-[data-field-key="structured"]{--field-color:#176879;--field-bg:#e6f3f6}
-[data-field-key="events"]{--field-color:#994654;--field-bg:#fbeef0}
-[data-field-key="neuroscience"]{--field-color:#665b22;--field-bg:#f5f2df}
-button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #69a8d8;outline-offset:3px}
-.paper-date,.meta{color:#64748b;font-size:12px}
-.paper-title{display:block;font-size:14px;font-weight:600;line-height:1.6;overflow-wrap:anywhere}
-.detail{padding:24px;max-height:72vh;overflow-y:auto}
-.detail h2{font-size:21px;line-height:1.5;margin:10px 0 14px;overflow-wrap:anywhere}
-.detail h4{margin:22px 0 7px}.detail p{line-height:1.8;white-space:pre-wrap;font-size:14px}
-.detail a{color:#1768a3}.tag{display:inline-block;background:#eaf2f8;color:#345a78;border-radius:5px;font-size:11px;padding:3px 6px;margin:3px 4px 0 0}
-.empty{padding:32px 20px;text-align:center;color:#64748b}.notice{font-size:12px;color:#64748b;margin-top:18px}
-@media(max-width:750px){header{padding:20px}.wrap{padding:16px 12px}.layout{grid-template-columns:1fr}.list{max-height:43vh}.detail{max-height:none}.source-tab{flex:1;padding:10px 9px}.detail{padding:18px}.paper{padding:12px 14px}select{flex:1}}
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Paper Watch | 論文ライブラリ</title>
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;color:#243442;background:#f6f7f9}*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button,summary{cursor:pointer}[hidden]{display:none!important}a{color:#185f91;text-underline-offset:3px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #72acd5;outline-offset:4px}
+.site-header{background:#142e42;color:#fff;padding:18px max(24px,calc((100vw - 1000px)/2))}.brand{font-size:21px;font-weight:700}.site-header p{margin:4px 0 0;color:#c1d0db;font-size:12px}.wrap{max-width:1048px;margin:auto;padding:22px 24px 60px}.catalog-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:14px}.catalog-top h1{margin:0;font-size:23px}.total,.collection-note,.toolbar,.notice{color:#596b7d;font-size:13px;line-height:1.7}
+.collection-switch{display:flex;gap:7px;flex-wrap:wrap}.collection-tab{border:1px solid #c9d5df;background:#fff;border-radius:8px;padding:10px 17px;color:#3d566d;font-weight:600;font-size:14px}.collection-tab[aria-pressed="true"]{background:#174763;border-color:#174763;color:#fff}.collection-note{margin:10px 0 14px}.search-wrap{display:block}.search-wrap input{width:100%;border:1px solid #bbcbd8;border-radius:9px;padding:12px 15px;color:inherit;background:#fff;font-size:15px}input::placeholder{color:#6b7f91}.filter-options{margin:6px 0}.filter-options>summary{width:fit-content;color:#49657b;font-size:13px;padding:5px 0}.filter-content{display:flex;gap:18px;align-items:start;flex-wrap:wrap;padding:14px 16px;margin-top:8px;background:#eef2f6;border-radius:9px}.filter-label{display:block;font-size:12px;color:#566d80;margin-bottom:7px}.source-switch{display:flex;gap:4px;flex-wrap:wrap}.source-tab{border:1px solid transparent;background:transparent;border-radius:6px;color:#405c72;padding:7px 9px;font-size:13px}.source-tab[aria-pressed="true"]{background:#fff;border-color:#becfdd;color:#123e63}.sort-control select{max-width:100%;border:1px solid #c2d0db;border-radius:6px;padding:7px 9px;background:#fff;color:inherit;font-size:13px}
+.field-panel{background:#fff;border:1px solid #dce4eb;border-radius:10px;padding:14px 16px;margin-bottom:18px}.field-heading{font-size:13px;margin:0 0 10px}.field-filters{display:flex;flex-wrap:wrap;gap:7px}.field-filter,.field-badge{--field-color:#52667a;--field-bg:#eef2f6;color:var(--field-color);background:var(--field-bg);border:1px solid transparent;border-radius:6px;font-size:12px;line-height:1.5}.field-filter{display:inline-flex;align-items:center;gap:8px;padding:7px 10px;text-align:left}.field-filter:hover,button.field-badge:hover{border-color:var(--field-color)}.field-filter[aria-pressed="true"]{border-color:var(--field-color);box-shadow:inset 0 0 0 1px var(--field-color);font-weight:700}.field-count{font-variant-numeric:tabular-nums;opacity:.8}.field-note{font-size:12px;color:#62778a;margin:10px 0 0;line-height:1.7}.field-badges{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}.field-badge{display:inline-block;padding:3px 7px}
+[data-field-key="language"]{--field-color:#24558a;--field-bg:#eaf2fc}[data-field-key="agents"]{--field-color:#6b4691;--field-bg:#f1ecf8}[data-field-key="trust"]{--field-color:#925b16;--field-bg:#fcf2df}[data-field-key="medical"]{--field-color:#176a4a;--field-bg:#e6f4ed}[data-field-key="structured"]{--field-color:#176879;--field-bg:#e6f3f6}[data-field-key="events"]{--field-color:#994654;--field-bg:#fbeef0}[data-field-key="neuroscience"]{--field-color:#665b22;--field-bg:#f5f2df}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:8px 0 10px}.button{border:1px solid #c5d2dd;border-radius:7px;background:#fff;color:#35536a;padding:8px 12px;font-size:13px}.button:hover{background:#edf4f9}.list{background:#fff;border:1px solid #dce4eb;border-radius:12px;overflow:hidden}.paper{display:block;padding:22px 26px;border-bottom:1px solid #e7ecf1;text-decoration:none;color:inherit}.paper:last-child{border-bottom:0}.paper:hover{background:#f5f9fc}.paper-meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;color:#607387;font-size:12px;margin-bottom:9px}.source-label{display:inline-block;border-radius:4px;background:#eaf2fa;color:#235d86;font-size:11px;font-weight:600;padding:2px 6px}.source-label.pubmed{background:#e6f4ed;color:#176a4a}.source-label.other{background:#f3eddf;color:#805c22}.paper-description{font-size:17px;font-weight:600;line-height:1.8;margin:0 0 7px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;overflow-wrap:anywhere}.paper-title{font-size:14px;font-weight:400;line-height:1.65;margin:0;color:#546b80;overflow-wrap:anywhere}.load-more{display:block;margin:22px auto 0;padding:11px 28px}.empty{padding:40px 24px;text-align:center;color:#63778a;line-height:1.8}.notice{font-size:12px;margin-top:20px}
+.reader-shell{max-width:820px;margin:auto}.reader-nav{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:20px;font-size:14px}.back-button{padding:8px 0;background:none;border:0;color:#315f80}.reader{background:#fff;border:1px solid #e0e6ed;border-radius:12px;padding:42px 48px}.reader-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;color:#607387;font-size:13px}.reader h1{font-size:25px;line-height:1.55;letter-spacing:-.3px;margin:15px 0 0;overflow-wrap:anywhere}.reader-section{margin-top:30px}.reader-section h2{font-size:15px;color:#365d78;margin:0 0 10px;line-height:1.6}.reader-section p{font-size:17px;line-height:1.95;letter-spacing:.015em;margin:0;white-space:pre-wrap;overflow-wrap:anywhere;line-break:strict}.reader-section.lead{padding-bottom:28px;border-bottom:1px solid #e3eaf0}.reader-section.lead p{font-size:18px}.reader-section.missing p{color:#6b7d8e}.reader-sources{margin-top:35px;padding-top:23px;border-top:1px solid #e3eaf0}.reader-sources h2{font-size:14px;margin:0 0 12px}.source-links{display:flex;gap:12px 20px;flex-wrap:wrap;font-size:14px;line-height:1.7}.verification{margin-top:24px;color:#5b7083;font-size:13px;line-height:1.8}.verification summary{padding:4px 0}.verification dl{margin:14px 0 0;display:grid;grid-template-columns:100px minmax(0,1fr);gap:9px 16px}.verification dt{color:#6a7d8d}.verification dd{margin:0;overflow-wrap:anywhere}.verification p{margin:13px 0 0}.tag{display:inline-block;border-radius:5px;background:#eff3f7;padding:2px 7px;margin:4px 5px 0 0;font-size:12px;color:#516a80}.reader-bottom{display:flex;justify-content:center;margin-top:24px}
+@media(min-width:751px){.filter-content{justify-content:space-between}}@media(max-width:750px){.site-header{padding:16px 20px}.brand{font-size:20px}.wrap{padding:22px 16px 42px}.catalog-top{margin-bottom:15px}.catalog-top h1{font-size:21px}.collection-tab{padding:10px 12px;font-size:13px}.collection-note{font-size:12px}.field-panel{padding:13px 12px}.field-filter{font-size:11px;padding:7px 8px}.paper{padding:20px 18px}.paper-description{font-size:16px}.paper-title{font-size:13px}.reader-nav{margin-bottom:13px}.reader{padding:27px 22px;border-radius:10px}.reader h1{font-size:22px}.reader-section p,.reader-section.lead p{font-size:16px}.reader-section{margin-top:26px}.verification dl{grid-template-columns:1fr;gap:3px}.verification dd{margin-bottom:9px}.total{font-size:12px}}
 </style></head><body>
-<header><h1>Paper Watch <span style="font-weight:400;opacity:.65">/ Research Library</span></h1><p>機械学習・LLM・医療AIの論文アーカイブ</p></header>
-<main class="wrap">
-  <div class="catalog-top"><h2>論文一覧</h2><span class="total" id="total">読み込み中...</span></div>
-  <nav class="collection-switch" aria-label="文献集">
-    <button type="button" class="collection-tab" data-collection="daily" aria-pressed="true">新着論文 <span id="daily-count"></span></button>
-    <button type="button" class="collection-tab" data-collection="foundations" aria-pressed="false">基礎文献 <span id="foundations-count"></span></button>
-    <button type="button" class="collection-tab" data-collection="" aria-pressed="false">両方</button>
-  </nav>
-  <p class="collection-note" id="collection-note">定期レポートで紹介した新着論文を掲載しています。</p>
-  <section class="field-panel" id="field-panel" aria-labelledby="field-heading" hidden>
-    <h3 class="field-heading" id="field-heading">基礎文献の分野</h3>
-    <nav class="field-filters" id="field-filters" aria-label="分野で絞り込む"></nav>
-    <p class="field-note" id="field-note">分野を読み込み中...</p>
-  </section>
-  <nav class="source-switch" aria-label="論文の出典">
-    <button type="button" class="source-tab" data-source="" aria-pressed="true">すべて <span id="all-count"></span></button>
-    <button type="button" class="source-tab" data-source="arXiv" aria-pressed="false">arXiv <span id="arxiv-count"></span></button>
-    <button type="button" class="source-tab" data-source="PubMed" aria-pressed="false">PubMed <span id="pubmed-count"></span></button>
-    <button type="button" class="source-tab" data-source="other" aria-pressed="false">出版社・その他 <span id="other-count"></span></button>
-  </nav>
-  <div class="filters">
-    <input id="search" type="search" aria-label="論文検索" placeholder="タイトル・論文ID・本文などを検索">
-    <select id="sort" aria-label="並び替え">
-      <option value="date-new">論文公開日：新しい順</option>
-      <option value="date-old">論文公開日：古い順</option>
-      <option value="report-new">レポート日：新しい順</option>
-      <option value="report-old">レポート日：古い順</option>
-      <option value="title">タイトル順</option>
-    </select>
-  </div>
-  <div class="toolbar"><span id="count">読み込み中...</span><button class="button" type="button" id="clear">条件をクリア</button></div>
-  <div class="layout">
-    <div class="panel list" id="list" aria-label="論文一覧"></div>
-    <article class="panel detail" id="detail"><div class="empty">論文を選択すると詳細を表示します。</div></article>
-  </div>
-  <p class="notice">一覧に分野ラベル・出典・論文公開日・レポート日・タイトルを表示。論文を選ぶと要約と出典を読めます。公開日未確認の論文は公開日順では末尾になります。</p>
-</main><script>
-const fieldDefinitions = [
-  {key:"language",label:"言語モデルの学習・推論・効率化"},
-  {key:"agents",label:"エージェント・検索・記憶・協調"},
-  {key:"trust",label:"評価・安全性・解釈可能性"},
-  {key:"medical",label:"医療・生体信号・創薬AI"},
-  {key:"structured",label:"表形式・時系列・因果推論"},
-  {key:"events",label:"次イベント予測・点過程"},
-  {key:"neuroscience",label:"神経科学とAI"},
-  {key:"classics",label:"主要な出発点",display:"古典・共通基礎（別冊）"}
+<header class="site-header"><div class="brand">Paper Watch</div><p>機械学習・LLM・医療AIの論文ライブラリ</p></header>
+<main class="wrap"><section id="catalog" aria-labelledby="catalog-heading">
+<div class="catalog-top"><h1 id="catalog-heading">論文一覧</h1><span class="total" id="total">読み込み中...</span></div>
+<nav class="collection-switch" aria-label="文献集">
+<button type="button" class="collection-tab" data-collection="daily" aria-pressed="true">新着論文 <span id="daily-count"></span></button>
+<button type="button" class="collection-tab" data-collection="foundations" aria-pressed="false">基礎文献 <span id="foundations-count"></span></button>
+<button type="button" class="collection-tab" data-collection="" aria-pressed="false">両方</button></nav>
+<p class="collection-note" id="collection-note">定期レポートで紹介した新着論文を掲載しています。</p>
+<section class="field-panel" id="field-panel" aria-labelledby="field-heading" hidden><h2 class="field-heading" id="field-heading">基礎文献の分野</h2><nav class="field-filters" id="field-filters" aria-label="分野で絞り込む"></nav><p class="field-note" id="field-note">分野を読み込み中...</p></section>
+<label class="search-wrap"><input id="search" type="search" aria-label="論文検索" placeholder="気になるテーマ・タイトル・論文IDで検索"></label>
+<details class="filter-options" id="filter-options"><summary>出典・並び順 <span id="filter-status"></span></summary><div class="filter-content"><div><span class="filter-label" id="source-heading">出典</span><nav class="source-switch" aria-labelledby="source-heading">
+<button type="button" class="source-tab" data-source="" aria-pressed="true">すべて <span id="all-count"></span></button><button type="button" class="source-tab" data-source="arXiv" aria-pressed="false">arXiv <span id="arxiv-count"></span></button><button type="button" class="source-tab" data-source="PubMed" aria-pressed="false">PubMed <span id="pubmed-count"></span></button><button type="button" class="source-tab" data-source="other" aria-pressed="false">出版社・その他 <span id="other-count"></span></button></nav></div>
+<label class="sort-control"><span class="filter-label">並び順</span><select id="sort"><option value="date-new">論文公開日：新しい順</option><option value="date-old">論文公開日：古い順</option><option value="report-new">レポート日：新しい順</option><option value="report-old">レポート日：古い順</option><option value="title">タイトル順</option></select></label></div></details>
+<div class="toolbar"><span id="count" role="status" aria-live="polite">読み込み中...</span><button class="button" type="button" id="clear">条件をクリア</button></div>
+<div class="list" id="list" aria-label="論文一覧"></div><button class="button load-more" type="button" id="load-more" hidden>さらに30件を表示</button><p class="notice">日本語の概要から論文を選ぶと、目的・手法・結果を読めます。公開日未確認の論文は公開日順では末尾に表示します。</p></section>
+<section class="reader-shell" id="reader-view" aria-label="論文を読む" hidden><nav class="reader-nav" aria-label="読書画面"><button class="back-button" type="button" id="back">← 一覧に戻る</button><a id="reader-original" target="_blank" rel="noopener noreferrer">論文原文 ↗</a></nav><article class="reader" id="detail"></article><div class="reader-bottom"><button class="button" type="button" id="back-bottom">一覧に戻る</button></div></section></main>
+<script>
+const fieldDefinitions=[
+ {key:"language",label:"言語モデルの学習・推論・効率化"},{key:"agents",label:"エージェント・検索・記憶・協調"},
+ {key:"trust",label:"評価・安全性・解釈可能性"},{key:"medical",label:"医療・生体信号・創薬AI"},
+ {key:"structured",label:"表形式・時系列・因果推論"},{key:"events",label:"次イベント予測・点過程"},
+ {key:"neuroscience",label:"神経科学とAI"},{key:"classics",label:"主要な出発点",display:"古典・共通基礎（別冊）"}
 ];
-const initialParams = new URLSearchParams(window.location.search);
-const initialCollection = initialParams.get("collection");
-let papers = [], selected = null, sourceFilter = "", collectionLoadWarning = "";
-let collectionFilter = initialCollection === "all" ? "" : initialCollection === "foundations" ? "foundations" : "daily";
-let fieldFilter = fieldDefinitions.some(f=>f.key===initialParams.get("field")) ? initialParams.get("field") : "";
-if(fieldFilter && collectionFilter !== "foundations") collectionFilter = "foundations";
-const $ = id => document.getElementById(id);
-const tagList = p => Array.isArray(p.tags) ? p.tags : String(p.tags || "").split(",").map(s => s.trim()).filter(Boolean);
-const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const repo = "https://github.com/drkamoshika/papers/blob/main/";
-const validDate = value => /^\d{4}-\d{2}-\d{2}$/.test(String(value || "")) ? value : "";
-const sourceName = p => p.source || "出典未確認";
-const sourceClass = p => p.source === "PubMed" ? "pubmed" : p.source === "arXiv" ? "" : "other";
-const readLevel = p => ({abstract:"要旨確認",full_text:"本文の関連箇所確認",bibliographic:"書誌情報のみ"}[p.read_level] || "確認範囲未記載");
-const hasCollection = (p,c) => !c || p.collections.includes(c);
-const paperFields = p => fieldDefinitions.filter(f=>(p.fields || []).includes(f.label));
-const hasField = (p,key) => !key || paperFields(p).some(f=>f.key===key);
-const safeUrl = url => /^https:\/\//.test(String(url || "")) ? url : "#";
-function fieldBadges(p,interactive=false) {
-  return paperFields(p).map(f => interactive ?
-    '<button type="button" class="field-badge" data-field-key="'+f.key+'" data-detail-field="'+f.key+'" aria-label="'+esc(f.label)+'で絞り込む" aria-pressed="'+(fieldFilter===f.key)+'">'+esc(f.display || f.label)+'</button>' :
-    '<span class="field-badge" data-field-key="'+f.key+'">'+esc(f.display || f.label)+'</span>'
-  ).join("");
+const $=id=>document.getElementById(id);
+const tagList=p=>Array.isArray(p.tags)?p.tags:String(p.tags||"").split(",").map(s=>s.trim()).filter(Boolean);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const repo="https://github.com/drkamoshika/papers/blob/main/";
+const validDate=v=>/^\d{4}-\d{2}-\d{2}$/.test(String(v||""))?v:"";
+const sourceName=p=>p.source||"出典未確認";
+const sourceClass=p=>p.source==="PubMed"?"pubmed":p.source==="arXiv"?"":"other";
+const readLevel=p=>({abstract:"要旨確認",full_text:"本文の関連箇所確認",bibliographic:"書誌情報のみ"}[p.read_level]||"確認範囲未記載");
+const hasCollection=(p,c)=>!c||p.collections.includes(c);
+const paperFields=p=>fieldDefinitions.filter(f=>(p.fields||[]).includes(f.label));
+const hasField=(p,key)=>!key||paperFields(p).some(f=>f.key===key);
+const safeUrl=url=>/^https:\/\//.test(String(url||""))?url:"#";
+const sortOptions=["date-new","date-old","report-new","report-old","title"];
+let papers=[],selected=null,collectionFilter="daily",fieldFilter="",sourceFilter="",collectionLoadWarning="",visibleLimit=30,ready=false,available=[];
+if("scrollRestoration" in history) history.scrollRestoration="manual";
+function readFilters(){
+ const params=new URLSearchParams(location.search),c=params.get("collection");
+ collectionFilter=c==="all"?"":c==="foundations"?"foundations":"daily";
+ fieldFilter=fieldDefinitions.some(f=>f.key===params.get("field"))?params.get("field"):"";
+ if(fieldFilter)collectionFilter="foundations";
+ sourceFilter=["arXiv","PubMed","other"].includes(params.get("source"))?params.get("source"):"";
+ $("search").value=params.get("q")||"";
+ $("sort").value=sortOptions.includes(params.get("sort"))?params.get("sort"):"date-new";
 }
-function syncUrl() {
-  const url = new URL(window.location.href);
-  if(collectionFilter === "daily") url.searchParams.delete("collection");
-  else url.searchParams.set("collection",collectionFilter || "all");
-  if(fieldFilter) url.searchParams.set("field",fieldFilter);
-  else url.searchParams.delete("field");
-  if(url.href !== window.location.href) window.history.replaceState(null,"",url);
+function viewUrl(paperId=null){
+ const url=new URL(location.href);
+ for(const k of ["collection","field","source","q","sort","paper"])url.searchParams.delete(k);
+ if(collectionFilter!=="daily")url.searchParams.set("collection",collectionFilter||"all");
+ if(fieldFilter)url.searchParams.set("field",fieldFilter);
+ if(sourceFilter)url.searchParams.set("source",sourceFilter);
+ if($("search").value.trim())url.searchParams.set("q",$("search").value.trim());
+ if($("sort").value!=="date-new")url.searchParams.set("sort",$("sort").value);
+ if(paperId)url.searchParams.set("paper",paperId);
+ return url;
 }
-function chooseField(key) {
-  fieldFilter = key;
-  if(key && collectionFilter !== "foundations") { collectionFilter="foundations"; sourceFilter=""; }
-  renderList();
+function fieldBadges(p,interactive=false){return paperFields(p).map(f=>interactive?
+ '<button type="button" class="field-badge" data-field-key="'+f.key+'" data-detail-field="'+f.key+'" aria-label="'+esc(f.label)+'で絞り込む">'+esc(f.display||f.label)+'</button>':
+ '<span class="field-badge" data-field-key="'+f.key+'">'+esc(f.display||f.label)+'</span>').join("");}
+$("field-filters").innerHTML=[{key:"",label:"すべての分野"},...fieldDefinitions].map(f=>'<button type="button" class="field-filter" data-filter-field="'+f.key+'" data-field-key="'+f.key+'" aria-pressed="false"><span>'+esc(f.display||f.label)+'</span><span class="field-count"></span></button>').join("");
+function synopsis(p){
+ const text=String(p.summary||p.objective||"日本語の概要は未記載です。").trim(),stop=text.indexOf("。");
+ return stop>=0?text.slice(0,stop+1):text;
 }
-$("field-filters").innerHTML = [{key:"",label:"すべての分野"},...fieldDefinitions].map(f=>
-  '<button type="button" class="field-filter" data-filter-field="'+f.key+'" data-field-key="'+f.key+'" aria-pressed="false"><span>'+esc(f.display || f.label)+'</span><span class="field-count"></span></button>'
-).join("");
-for(const e of $("field-filters").querySelectorAll("[data-filter-field]")) e.onclick=()=>chooseField(e.dataset.filterField);
-function detail(p) {
-  if (!p) return;
-  selected = p.id;
-  const fields = [["研究目的",p.objective],["手法・研究デザイン",p.methods],["実験・主な結果",p.results],["新規性",p.novelty],["限界",p.limitations]];
-  const sections = fields.map(([label,val]) => "<h4>"+esc(label)+"</h4><p>"+esc(val || "未記載")+"</p>").join("");
-  $("detail").innerHTML =
-    '<div class="meta">'+esc(sourceName(p))+' · 論文公開日 '+esc(validDate(p.date) || "未確認")+' · レポート日 '+esc(p.reportDate || "未確認")+' · '+esc(p.id)+' · '+esc(readLevel(p))+'</div>'+
-    '<h2>'+esc(p.title)+'</h2>'+
-    '<div class="field-badges">'+fieldBadges(p,true)+'</div>'+
-    '<div>'+tagList(p).filter(t=>!paperFields(p).some(f=>f.label===t)).map(t => '<span class="tag">'+esc(t)+'</span>').join("")+'</div>'+
-    '<h4>概要</h4><p>'+esc(p.summary || "未記載")+'</p>'+sections+
-    (p.dateNote ? '<p class="meta">'+esc(p.dateNote)+'</p>' : '')+
-    (p.sourceSections ? '<p class="meta">本文の確認箇所: '+esc(p.sourceSections)+'</p>' : '')+
-    '<p><a href="'+esc(safeUrl(p.url))+'" target="_blank" rel="noopener noreferrer">論文原文 ↗</a>　<a href="'+esc(repo+encodeURI(p.report))+'" target="_blank" rel="noopener noreferrer">元レポート ↗</a>'+
-    (p.extraSource ? '　<a href="'+esc(safeUrl(p.extraSource))+'" target="_blank" rel="noopener noreferrer">確認した本文 ↗</a>' : '')+'</p>';
-  for(const e of $("detail").querySelectorAll("[data-detail-field]")) e.onclick=()=>chooseField(e.dataset.detailField);
-  renderList();
+function readerSections(p){
+ const fields=[["概要",p.summary],["研究目的",p.objective],["手法・研究デザイン",p.methods],["データ・主な結果",p.results],["この研究の新しさ",p.novelty],["限界・解釈上の注意",p.limitations]],groups=[];
+ for(const [label,value]of fields){
+  const text=String(value||"").trim(),same=text&&groups.find(g=>g.text===text);
+  if(same)same.labels.push(label);else groups.push({labels:[label],text});
+ }
+ return groups.map(g=>'<section class="reader-section '+(g.labels.includes("概要")?'lead ':'')+(!g.text?'missing':'')+'"><h2>'+esc(g.labels.join(" / "))+'</h2><p>'+esc(g.text||"元レポートに記載がありません。")+'</p></section>').join("");
 }
-function compareDate(a,b,key,descending) {
-  const da=validDate(a[key]), db=validDate(b[key]);
-  if (!da && db) return 1;
-  if (da && !db) return -1;
-  return (descending ? db.localeCompare(da) : da.localeCompare(db)) || a.title.localeCompare(b.title);
+function renderReader(p){
+ selected=p.id;$("catalog").hidden=true;$("reader-view").hidden=false;document.title=p.title+" | Paper Watch";$("reader-original").href=safeUrl(p.url);
+ const tags=tagList(p).filter(t=>!paperFields(p).some(f=>f.label===t));
+ $("detail").innerHTML='<div class="reader-meta"><span class="source-label '+sourceClass(p)+'">'+esc(sourceName(p))+'</span><span>論文公開日 '+esc(validDate(p.date)||"未確認")+'</span></div>'+
+ '<h1 id="reader-title" tabindex="-1">'+esc(p.title)+'</h1>'+(paperFields(p).length?'<div class="field-badges">'+fieldBadges(p,true)+'</div>':'')+readerSections(p)+
+ '<section class="reader-sources"><h2>出典</h2><div class="source-links"><a href="'+esc(safeUrl(p.url))+'" target="_blank" rel="noopener noreferrer">論文原文 ↗</a><a href="'+esc(repo+encodeURI(p.report))+'" target="_blank" rel="noopener noreferrer">元レポート ↗</a>'+
+ (p.extraSource?'<a href="'+esc(safeUrl(p.extraSource))+'" target="_blank" rel="noopener noreferrer">確認した本文 ↗</a>':'')+'</div></section>'+
+ '<details class="verification"><summary>書誌情報・確認範囲</summary><dl><dt>論文ID</dt><dd>'+esc(p.id)+'</dd><dt>論文公開日</dt><dd>'+esc(validDate(p.date)||"未確認")+'</dd><dt>レポート日</dt><dd>'+esc(p.reportDate||"未確認")+'</dd><dt>確認範囲</dt><dd>'+esc(readLevel(p))+'</dd></dl>'+
+ (p.dateNote?'<p>'+esc(p.dateNote)+'</p>':'')+(p.sourceSections?'<p>確認した箇所：'+esc(p.sourceSections)+'</p>':'')+
+ (tags.length?'<div>'+tags.map(t=>'<span class="tag">'+esc(t)+'</span>').join("")+'</div>':'')+'</details>';
+ for(const e of $("detail").querySelectorAll("[data-detail-field]"))e.onclick=()=>chooseField(e.dataset.detailField);
 }
-function renderList() {
-  $("field-panel").hidden = collectionFilter !== "foundations";
-  const q = $("search").value.trim().toLowerCase(), sort=$("sort").value;
-  const base = papers.filter(p => hasCollection(p,collectionFilter));
-  const fieldBase = base.filter(p=>hasField(p,fieldFilter));
-  const list = fieldBase.filter(p =>
-    (!sourceFilter || (sourceFilter === "other" ? !["arXiv","PubMed"].includes(p.source) : p.source === sourceFilter)) &&
-    (!q || [p.title,p.id,tagList(p).join(" "),paperFields(p).map(f=>f.display || f.label).join(" "),p.summary,p.objective,p.methods,p.results,p.novelty,p.limitations].join(" ").toLowerCase().includes(q))
-  );
-  list.sort((a,b) => sort === "title" ? a.title.localeCompare(b.title) :
-    compareDate(a,b,sort.startsWith("report") ? "reportDate" : "date",sort.endsWith("new")));
-  if (selected && !list.some(p => p.id === selected)) { selected = null; $("detail").innerHTML = '<div class="empty">論文を選択すると詳細を表示します。</div>'; }
-  $("count").textContent = list.length + " 件を表示";
-  $("list").innerHTML = list.length ? list.map(p => {
-    const d=validDate(p.date);
-    return '<button type="button" class="paper '+(p.id===selected?"active":"")+'" data-id="'+esc(p.id)+'" aria-pressed="'+(p.id===selected)+'">'+
-      '<span class="paper-meta"><span class="source-label '+sourceClass(p)+'">'+esc(sourceName(p))+'</span>'+
-      '<span class="paper-date">論文公開日 '+(d ? esc(d) : "未確認")+'</span><span class="paper-date">レポート日 '+esc(p.reportDate || "未確認")+'</span></span>'+
-      '<span class="paper-title">'+esc(p.title)+'</span>'+
-      '<span class="field-badges">'+fieldBadges(p)+'</span></button>';
-  }).join("") : '<div class="empty">該当する論文がありません。</div>';
-  for (const e of $("list").querySelectorAll("[data-id]")) e.onclick = () => {
-    detail(papers.find(p => p.id === e.dataset.id));
-    if (window.matchMedia("(max-width:750px)").matches) $("detail").scrollIntoView({behavior:"smooth",block:"start"});
-  };
-  for (const e of document.querySelectorAll("[data-source]")) e.setAttribute("aria-pressed",String(e.dataset.source === sourceFilter));
-  for (const e of document.querySelectorAll("[data-collection]")) e.setAttribute("aria-pressed",String(e.dataset.collection === collectionFilter));
-  $("all-count").textContent = "("+fieldBase.length+")";
-  $("arxiv-count").textContent = "("+fieldBase.filter(p=>p.source==="arXiv").length+")";
-  $("pubmed-count").textContent = "("+fieldBase.filter(p=>p.source==="PubMed").length+")";
-  $("other-count").textContent = "("+fieldBase.filter(p=>!["arXiv","PubMed"].includes(p.source)).length+")";
-  const fieldCountsBase = collectionFilter === "daily" ? papers.filter(p=>hasCollection(p,"foundations")) : base;
-  for(const e of $("field-filters").querySelectorAll("[data-filter-field]")) {
-    e.setAttribute("aria-pressed",String(e.dataset.filterField===fieldFilter));
-    e.querySelector(".field-count").textContent=fieldCountsBase.filter(p=>hasField(p,e.dataset.filterField)).length;
-  }
-  for(const e of $("detail").querySelectorAll("[data-detail-field]")) e.setAttribute("aria-pressed",String(e.dataset.detailField===fieldFilter));
-  $("field-note").textContent = "分野ラベルで絞り込み、検索・出典と組み合わせられます。複数分野の論文はそれぞれの件数に含まれます。";
-  $("collection-note").innerHTML = collectionFilter === "foundations" ?
-    '最新研究の前提となる手法・評価・研究の転換点をまとめています。<a href="'+repo+'reports/foundations/README.md" target="_blank" rel="noopener noreferrer">研究の流れと読み順 ↗</a>' :
-    collectionFilter === "daily" ? '定期レポートで紹介した新着論文を掲載しています。' : '新着論文と基礎文献をまとめて検索できます。';
-  if(collectionLoadWarning) $("collection-note").textContent=collectionLoadWarning;
-  syncUrl();
+function showCatalog(){selected=null;$("catalog").hidden=false;$("reader-view").hidden=true;document.title="Paper Watch | 論文ライブラリ";}
+function openPaper(p){
+ if(!p)return;
+ history.replaceState({...history.state,catalogScroll:window.scrollY,visibleLimit,focusId:p.id},"",viewUrl());
+ history.pushState({readerEntry:true},"",viewUrl(p.id));renderReader(p);window.scrollTo(0,0);$("reader-title").focus({preventScroll:true});
 }
-for (const e of document.querySelectorAll("[data-collection]")) e.onclick = () => {
-  collectionFilter=e.dataset.collection; sourceFilter="";
-  if(collectionFilter !== "foundations") fieldFilter="";
-  renderList();
-};
-for (const e of document.querySelectorAll("[data-source]")) e.onclick = () => {sourceFilter=e.dataset.source;renderList()};
-$("search").addEventListener("input",renderList);
-$("sort").addEventListener("change",renderList);
-$("clear").onclick = () => {sourceFilter="";$("search").value="";fieldFilter="";$("sort").value="date-new";renderList()};
-const loadCollection = async (file,collection) => {
-  const r=await fetch(file);if(!r.ok)throw Error(file+": "+r.status);
-  const data=await r.json();if(!Array.isArray(data.papers))throw Error(file+": invalid papers");
-  return data.papers.map(p=>({...p,collections:[collection]}));
-};
-Promise.allSettled([loadCollection("./papers.json","daily"),loadCollection("./foundations.json","foundations")])
-  .then(results=>{
-    const merged=new Map();
-    for (const result of results) if(result.status==="fulfilled") for(const p of result.value) {
-      const old=merged.get(p.id);
-      if(old) merged.set(p.id,{...old,collections:[...new Set([...old.collections,...p.collections])],fields:[...new Set([...(old.fields||[]),...(p.fields||[])])]});
-      else merged.set(p.id,p);
-    }
-    papers = [...merged.values()];
-    if(!papers.length)throw Error("文献データを読み込めませんでした");
-    $("total").textContent = "全 " + papers.length + " 件";
-    $("daily-count").textContent = "("+papers.filter(p=>hasCollection(p,"daily")).length+")";
-    $("foundations-count").textContent = "("+papers.filter(p=>hasCollection(p,"foundations")).length+")";
-    if(results[0].status==="rejected")collectionFilter="foundations";
-    if(results[1].status==="rejected") { collectionFilter="daily"; fieldFilter=""; }
-    if(results.some(r=>r.status==="rejected"))collectionLoadWarning="一部の文献集を読み込めませんでした。読み込めた文献を表示しています。再読み込みで再試行できます。";
-    renderList();
-  })
-  .catch(e=>{
-    $("count").textContent="読み込み失敗";
-    $("list").innerHTML='<div class="empty">文献データを読み込めませんでした。ページを再読み込みしてください。</div>';
-    console.error(e);
-  });
+function backToList(){
+ if(history.state?.readerEntry)history.back();
+ else{history.replaceState({},"",viewUrl());showCatalog();renderList();window.scrollTo(0,0);$("search").focus({preventScroll:true});}
+}
+function compareDate(a,b,key,descending){
+ const da=validDate(a[key]),db=validDate(b[key]);if(!da&&db)return 1;if(da&&!db)return -1;
+ return(descending?db.localeCompare(da):da.localeCompare(db))||a.title.localeCompare(b.title);
+}
+function renderList(){
+ if(ready&&collectionFilter&&!available.includes(collectionFilter)){collectionFilter=available[0];fieldFilter="";}
+ $("field-panel").hidden=collectionFilter!=="foundations";
+ const q=$("search").value.trim().toLowerCase(),sort=$("sort").value,base=papers.filter(p=>hasCollection(p,collectionFilter)),fieldBase=base.filter(p=>hasField(p,fieldFilter));
+ const list=fieldBase.filter(p=>(!sourceFilter||(sourceFilter==="other"?!["arXiv","PubMed"].includes(p.source):p.source===sourceFilter))&&(!q||[p.title,p.id,tagList(p).join(" "),paperFields(p).map(f=>f.display||f.label).join(" "),p.summary,p.objective,p.methods,p.results,p.novelty,p.limitations].join(" ").toLowerCase().includes(q)));
+ list.sort((a,b)=>sort==="title"?a.title.localeCompare(b.title):compareDate(a,b,sort.startsWith("report")?"reportDate":"date",sort.endsWith("new")));
+ const shown=list.slice(0,visibleLimit);$("count").textContent=list.length+" 件"+(shown.length<list.length?" · "+shown.length+" 件を表示":"を表示");
+ $("list").innerHTML=shown.length?shown.map(p=>'<a class="paper" data-id="'+esc(p.id)+'" href="'+esc(viewUrl(p.id).href)+'"><div class="paper-meta"><span class="source-label '+sourceClass(p)+'">'+esc(sourceName(p))+'</span><span>公開 '+esc(validDate(p.date)||"未確認")+'</span></div><p class="paper-description">'+esc(synopsis(p))+'</p><h2 class="paper-title">'+esc(p.title)+'</h2>'+(paperFields(p).length?'<div class="field-badges">'+fieldBadges(p)+'</div>':'')+'</a>').join(""):'<div class="empty">該当する論文がありません。<br>検索語や絞り込み条件を変えてみてください。</div>';
+ for(const e of $("list").querySelectorAll("[data-id]"))e.onclick=event=>{
+  if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+  event.preventDefault();openPaper(papers.find(p=>p.id===e.dataset.id));
+ };
+ $("load-more").hidden=shown.length>=list.length;$("load-more").textContent="さらに"+Math.min(30,list.length-shown.length)+"件を表示";
+ for(const e of document.querySelectorAll("[data-source]"))e.setAttribute("aria-pressed",String(e.dataset.source===sourceFilter));
+ for(const e of document.querySelectorAll("[data-collection]"))e.setAttribute("aria-pressed",String(e.dataset.collection===collectionFilter));
+ $("all-count").textContent="("+fieldBase.length+")";$("arxiv-count").textContent="("+fieldBase.filter(p=>p.source==="arXiv").length+")";$("pubmed-count").textContent="("+fieldBase.filter(p=>p.source==="PubMed").length+")";$("other-count").textContent="("+fieldBase.filter(p=>!["arXiv","PubMed"].includes(p.source)).length+")";
+ for(const e of $("field-filters").querySelectorAll("[data-filter-field]")){e.setAttribute("aria-pressed",String(e.dataset.filterField===fieldFilter));e.querySelector(".field-count").textContent=base.filter(p=>hasField(p,e.dataset.filterField)).length;}
+ $("field-note").textContent="複数分野の論文は、それぞれの件数に含まれます。検索・出典と組み合わせて絞り込めます。";
+ $("filter-status").textContent=[sourceFilter==="other"?"出版社・その他":sourceFilter,$("sort").value!=="date-new"?$("sort").selectedOptions[0].textContent:""].filter(Boolean).map(s=>" · "+s).join("");
+ $("collection-note").innerHTML=collectionFilter==="foundations"?'最新研究の基盤となる手法・評価・転換点を読む。<a href="'+repo+'reports/foundations/README.md" target="_blank" rel="noopener noreferrer">研究の流れと読み順 ↗</a>':collectionFilter==="daily"?'定期レポートで紹介した新着論文。日本語の概要から探せます。':'新着論文と基礎文献をまとめて検索できます。';
+ if(collectionLoadWarning)$("collection-note").textContent=collectionLoadWarning;
+}
+function filtersChanged(){visibleLimit=30;showCatalog();renderList();history.replaceState({},"",viewUrl());}
+function chooseField(key){fieldFilter=key;if(key&&collectionFilter!=="foundations"){collectionFilter="foundations";sourceFilter="";}const wasReading=selected!==null;filtersChanged();if(wasReading){window.scrollTo(0,0);$("search").focus({preventScroll:true});}}
+for(const e of $("field-filters").querySelectorAll("[data-filter-field]"))e.onclick=()=>chooseField(e.dataset.filterField);
+for(const e of document.querySelectorAll("[data-collection]"))e.onclick=()=>{collectionFilter=e.dataset.collection;sourceFilter="";if(collectionFilter!=="foundations")fieldFilter="";filtersChanged();};
+for(const e of document.querySelectorAll("[data-source]"))e.onclick=()=>{sourceFilter=e.dataset.source;filtersChanged();};
+$("search").addEventListener("input",filtersChanged);$("sort").addEventListener("change",filtersChanged);
+$("clear").onclick=()=>{sourceFilter="";fieldFilter="";$("search").value="";$("sort").value="date-new";filtersChanged();};
+$("load-more").onclick=()=>{visibleLimit+=30;renderList();};$("back").onclick=backToList;$("back-bottom").onclick=backToList;
+window.addEventListener("popstate",()=>{
+ if(!ready)return;readFilters();visibleLimit=history.state?.visibleLimit||30;renderList();
+ const p=papers.find(p=>p.id===new URLSearchParams(location.search).get("paper"));
+ if(p){renderReader(p);window.scrollTo(0,0);$("reader-title").focus({preventScroll:true});}
+ else{showCatalog();const saved=history.state||{};requestAnimationFrame(()=>{const card=[...$("list").querySelectorAll("[data-id]")].find(e=>e.dataset.id===saved.focusId);if(card)card.focus({preventScroll:true});window.scrollTo(0,saved.catalogScroll||0);});}
+});
+const loadCollection=async(file,collection)=>{const r=await fetch(file,{cache:"no-cache"});if(!r.ok)throw Error(file+": "+r.status);const data=await r.json();if(!Array.isArray(data.papers))throw Error(file+": invalid papers");return data.papers.map(p=>({...p,collections:[collection]}));};
+readFilters();
+Promise.allSettled([loadCollection("./papers.json","daily"),loadCollection("./foundations.json","foundations")]).then(results=>{
+ const merged=new Map();available=results.flatMap((r,i)=>r.status==="fulfilled"?[["daily","foundations"][i]]:[]);
+ for(const result of results)if(result.status==="fulfilled")for(const p of result.value){const old=merged.get(p.id);if(old)merged.set(p.id,{...old,collections:[...new Set([...old.collections,...p.collections])],fields:[...new Set([...(old.fields||[]),...(p.fields||[])])]});else merged.set(p.id,p);}
+ papers=[...merged.values()];if(!papers.length)throw Error("文献データを読み込めませんでした");
+ $("total").textContent="全 "+papers.length+" 件";$("daily-count").textContent="("+papers.filter(p=>hasCollection(p,"daily")).length+")";$("foundations-count").textContent="("+papers.filter(p=>hasCollection(p,"foundations")).length+")";
+ if(results.some(r=>r.status==="rejected"))collectionLoadWarning="一部の文献集を読み込めませんでした。読み込めた文献を表示しています。再読み込みで再試行できます。";
+ ready=true;renderList();const p=papers.find(p=>p.id===new URLSearchParams(location.search).get("paper"));if(p)renderReader(p);else{showCatalog();history.replaceState({},"",viewUrl());}
+}).catch(e=>{$("count").textContent="読み込み失敗";$("list").innerHTML='<div class="empty">文献データを読み込めませんでした。ページを再読み込みしてください。</div>';console.error(e);});
 </script></body></html>
