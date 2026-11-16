@@ -5570,6 +5570,122 @@
       "limitations": "原著の比較実験ではなく、応用別の性能一般化はできない。",
       "why": "分子認識とスイッチング機構を設計可能な部品として捉える視点。",
       "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: ['バイオセンサー', 'タンパク質設計', '機械学習', 'レビュー']\nSummary: コイルドコイルの配列・構造規則を利用したプログラム可能なバイオセンサー設計を整理するレビュー。\nObjective: 高選択性・高親和性の分子認識部品を計算的に設計する方法を整理する。\nMethods: 合理的設計、実験的最適化、機械学習・AIによるタンパク質設計を比較する文献レビュー。\nData and results: 統一ベンチマークによる性能値は未記載。\nNovelty: 分子認識とスイッチング機構を設計可能な部品として捉える視点。\nLimitations: 原著の比較実験ではなく、応用別の性能一般化はできない。"
+    },
+    {
+      "title": "Tracing Knowledge and Reasoning in LLM",
+      "report": "reports/daily/2026-11-17.md",
+      "reportDate": "2026-11-17",
+      "source": "arXiv",
+      "id": "arxiv:2611.17461",
+      "date": "2026-11-12",
+      "url": "https://arxiv.org/abs/2611.17461",
+      "read_level": "abstract",
+      "tags": [
+        "LLM",
+        "評価",
+        "解釈可能性"
+      ],
+      "summary": "ベンチマークの点数だけでなく、内部の注意・活性化・表現から知識検索と推論の処理傾向を捉える。",
+      "objective": "異なるベンチマークがモデル内部でどのような処理を引き起こすかを評価する。",
+      "methods": "注意・活性化・表現指標を組み合わせ、検索優位から推論優位までタスクを位置づける。",
+      "results": "16モデル・24ベンチマークを評価し、知識中心と推論中心のタスクで内部処理の系統的な差を観測。定量的な改善率は要旨に未記載。",
+      "novelty": "正答率を内部処理の特徴づけで補完するタスク中心の評価枠組み。",
+      "limitations": "内部状態分析は代表的なモデル・タスクに限定され、内部指標の因果的解釈は要旨から確定できない。",
+      "why": "正答率を内部処理の特徴づけで補完するタスク中心の評価枠組み。",
+      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: ['LLM', '評価', '解釈可能性']\nSummary: ベンチマークの点数だけでなく、内部の注意・活性化・表現から知識検索と推論の処理傾向を捉える。\nObjective: 異なるベンチマークがモデル内部でどのような処理を引き起こすかを評価する。\nMethods: 注意・活性化・表現指標を組み合わせ、検索優位から推論優位までタスクを位置づける。\nData and results: 16モデル・24ベンチマークを評価し、知識中心と推論中心のタスクで内部処理の系統的な差を観測。定量的な改善率は要旨に未記載。\nNovelty: 正答率を内部処理の特徴づけで補完するタスク中心の評価枠組み。\nLimitations: 内部状態分析は代表的なモデル・タスクに限定され、内部指標の因果的解釈は要旨から確定できない。"
+    },
+    {
+      "title": "Benchmarks Don't Talk Back: Learning Through Self-Disagreement",
+      "report": "reports/daily/2026-11-17.md",
+      "reportDate": "2026-11-17",
+      "source": "arXiv",
+      "id": "arxiv:2611.17563",
+      "date": "2026-11-12",
+      "url": "https://arxiv.org/abs/2611.17563",
+      "read_level": "abstract",
+      "tags": [
+        "LLM",
+        "強化学習",
+        "推論",
+        "頑健性"
+      ],
+      "summary": "反論を受けたときに正答を守り誤答を修正する能力を、モデル自身が生成する反論で学習する。",
+      "objective": "単発の正答率とは異なる対話的な判断の頑健性を獲得する。",
+      "methods": "モデルが主張、反論、判定を生成し、正解照合に基づく検証可能な報酬で強化学習する。追加の報酬モデルや人手注釈を使わない。",
+      "results": "未学習の反論者やより強い反論者に対しても能力が転移し、初回回答の精度を犠牲にしないと報告。要旨に具体的数値なし。",
+      "novelty": "反論生成と判定の訓練を一つのモデル内で完結させる。",
+      "limitations": "効果量やタスクごとの再現性は要旨のみでは確認できない。",
+      "why": "反論生成と判定の訓練を一つのモデル内で完結させる。",
+      "details": "Publication date: 2026-11-12\nread_level: abstract\nTags: ['LLM', '強化学習', '推論', '頑健性']\nSummary: 反論を受けたときに正答を守り誤答を修正する能力を、モデル自身が生成する反論で学習する。\nObjective: 単発の正答率とは異なる対話的な判断の頑健性を獲得する。\nMethods: モデルが主張、反論、判定を生成し、正解照合に基づく検証可能な報酬で強化学習する。追加の報酬モデルや人手注釈を使わない。\nData and results: 未学習の反論者やより強い反論者に対しても能力が転移し、初回回答の精度を犠牲にしないと報告。要旨に具体的数値なし。\nNovelty: 反論生成と判定の訓練を一つのモデル内で完結させる。\nLimitations: 効果量やタスクごとの再現性は要旨のみでは確認できない。"
+    },
+    {
+      "title": "LoRAWeaver: Directional Adapter Routing in LoRA Representation Space",
+      "report": "reports/daily/2026-11-17.md",
+      "reportDate": "2026-11-17",
+      "source": "arXiv",
+      "id": "arxiv:2611.17340",
+      "date": "2026-09-01",
+      "url": "https://arxiv.org/abs/2611.17340",
+      "read_level": "abstract",
+      "tags": [
+        "LoRA",
+        "ルーティング",
+        "転移学習"
+      ],
+      "summary": "LoRAアダプタの出力表現とタスクプロトタイプの方向的整合性で、追加学習なしにアダプタを選ぶ。",
+      "objective": "アダプタが増え続ける環境で再学習不要の選択方式を得る。",
+      "methods": "アダプタ条件付きクエリ表現とタスクプロトタイプのコサイン類似度を比較する。",
+      "results": "LLaMA-2-7B/13B、FLAN-v2の48タスクと分布外タスクで評価。学習不要なベースラインを上回り、学習済み検索エンコーダに近い性能と報告。",
+      "novelty": "アダプタ出力空間の方向情報を利用した訓練不要の選択。",
+      "limitations": "評価対象は記載のモデル・タスク群であり、汎用的な大規模運用の検証は要旨に未記載。",
+      "why": "アダプタ出力空間の方向情報を利用した訓練不要の選択。",
+      "details": "Publication date: 2026-09-01\nread_level: abstract\nTags: ['LoRA', 'ルーティング', '転移学習']\nSummary: LoRAアダプタの出力表現とタスクプロトタイプの方向的整合性で、追加学習なしにアダプタを選ぶ。\nObjective: アダプタが増え続ける環境で再学習不要の選択方式を得る。\nMethods: アダプタ条件付きクエリ表現とタスクプロトタイプのコサイン類似度を比較する。\nData and results: LLaMA-2-7B/13B、FLAN-v2の48タスクと分布外タスクで評価。学習不要なベースラインを上回り、学習済み検索エンコーダに近い性能と報告。\nNovelty: アダプタ出力空間の方向情報を利用した訓練不要の選択。\nLimitations: 評価対象は記載のモデル・タスク群であり、汎用的な大規模運用の検証は要旨に未記載。"
+    },
+    {
+      "title": "Artificial Intelligence-Based Urine Volatomic Assay for Multi-Cancer Detection: A Multicentric Case-Control Discovery and Internal Validation Study",
+      "report": "reports/daily/2026-11-17.md",
+      "reportDate": "2026-11-17",
+      "source": "PubMed",
+      "id": "pmid:43006187",
+      "date": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43006187/",
+      "read_level": "abstract",
+      "tags": [
+        "医療AI",
+        "がん検出",
+        "バイオマーカー"
+      ],
+      "summary": "尿中揮発性有機化合物のプロファイルをAIで解析し、既知のがん患者と健常対照の識別を調べる。",
+      "objective": "非侵襲的な多がん種検出の探索的な可能性を検証する。",
+      "methods": "多施設後ろ向き症例対照研究。GC-MSで尿中の揮発性成分を測定し、AIによる識別、原発臓器と病期の探索的分類を検討。",
+      "results": "治療前の10種類のがん患者491人と健常対照200人。主要な性能指標は確認できた要旨抜粋に未記載。外部検証は未確認。",
+      "novelty": "複数がん種を横断する尿由来の揮発性成分とAIの組合せ。",
+      "limitations": "症例対照・内部検証段階であり、前向きスクリーニング性能や外部妥当性は確認できない。",
+      "why": "複数がん種を横断する尿由来の揮発性成分とAIの組合せ。",
+      "details": "Publication date: None\nread_level: abstract\nTags: ['医療AI', 'がん検出', 'バイオマーカー']\nSummary: 尿中揮発性有機化合物のプロファイルをAIで解析し、既知のがん患者と健常対照の識別を調べる。\nObjective: 非侵襲的な多がん種検出の探索的な可能性を検証する。\nMethods: 多施設後ろ向き症例対照研究。GC-MSで尿中の揮発性成分を測定し、AIによる識別、原発臓器と病期の探索的分類を検討。\nData and results: 治療前の10種類のがん患者491人と健常対照200人。主要な性能指標は確認できた要旨抜粋に未記載。外部検証は未確認。\nNovelty: 複数がん種を横断する尿由来の揮発性成分とAIの組合せ。\nLimitations: 症例対照・内部検証段階であり、前向きスクリーニング性能や外部妥当性は確認できない。"
+    },
+    {
+      "title": "Evaluating mathematical complexity and incremental clinical value in complete blood count-derived indices",
+      "report": "reports/daily/2026-11-17.md",
+      "reportDate": "2026-11-17",
+      "source": "PubMed",
+      "id": "pmid:43031444",
+      "date": "2026-11-16",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43031444/",
+      "read_level": "abstract",
+      "tags": [
+        "医療予測",
+        "特徴量設計",
+        "評価方法"
+      ],
+      "summary": "血算由来の複雑な合成指標が、単純な比率や元の測定値に対して臨床的な増分価値を持つかを批判的に検討する。",
+      "objective": "特徴量の複雑化が予測・意思決定の改善を保証するかを検証する。",
+      "methods": "数式の同値性、分母依存、単位、分析誤差、生物学的変動を整理し、既存研究の比較を評価するナラティブレビュー。",
+      "results": "複雑な指標の優位性は一貫せず、元の成分や既存モデルに対する増分価値の証拠は限定的。外部校正と前向き影響評価は稀と報告。",
+      "novelty": "名前の異なる指標の数学的重複と臨床的増分価値を切り分ける。",
+      "limitations": "原著の前向き検証ではなくレビュー。採用すべき意思決定閾値の一般化は未確立。",
+      "why": "名前の異なる指標の数学的重複と臨床的増分価値を切り分ける。",
+      "details": "Publication date: 2026-11-16\nread_level: abstract\nTags: ['医療予測', '特徴量設計', '評価方法']\nSummary: 血算由来の複雑な合成指標が、単純な比率や元の測定値に対して臨床的な増分価値を持つかを批判的に検討する。\nObjective: 特徴量の複雑化が予測・意思決定の改善を保証するかを検証する。\nMethods: 数式の同値性、分母依存、単位、分析誤差、生物学的変動を整理し、既存研究の比較を評価するナラティブレビュー。\nData and results: 複雑な指標の優位性は一貫せず、元の成分や既存モデルに対する増分価値の証拠は限定的。外部校正と前向き影響評価は稀と報告。\nNovelty: 名前の異なる指標の数学的重複と臨床的増分価値を切り分ける。\nLimitations: 原著の前向き検証ではなくレビュー。採用すべき意思決定閾値の一般化は未確立。"
     }
   ]
 }
