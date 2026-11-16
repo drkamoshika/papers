@@ -1,0 +1,94 @@
+{
+  "snapshot": {
+    "dailyCount": 264,
+    "foundationCount": 774,
+    "uniqueCount": 1038,
+    "referenceCount": 165,
+    "latestPaperDate": "2026-11-12",
+    "latestReportDate": "2026-11-16",
+    "primaryRechecks": 22
+  },
+  "fieldCounts": [
+    {
+      "key": "language",
+      "foundations": 101,
+      "citedFoundations": 21,
+      "citedDaily": 4,
+      "references": 25,
+      "capabilities": 4
+    },
+    {
+      "key": "agents",
+      "foundations": 112,
+      "citedFoundations": 18,
+      "citedDaily": 7,
+      "references": 25,
+      "capabilities": 4
+    },
+    {
+      "key": "trust",
+      "foundations": 104,
+      "citedFoundations": 16,
+      "citedDaily": 8,
+      "references": 24,
+      "capabilities": 4
+    },
+    {
+      "key": "medical",
+      "foundations": 139,
+      "citedFoundations": 18,
+      "citedDaily": 8,
+      "references": 26,
+      "capabilities": 4
+    },
+    {
+      "key": "structured",
+      "foundations": 119,
+      "citedFoundations": 24,
+      "citedDaily": 4,
+      "references": 28,
+      "capabilities": 4
+    },
+    {
+      "key": "events",
+      "foundations": 100,
+      "citedFoundations": 25,
+      "citedDaily": 2,
+      "references": 27,
+      "capabilities": 5
+    },
+    {
+      "key": "neuroscience",
+      "foundations": 106,
+      "citedFoundations": 30,
+      "citedDaily": 3,
+      "references": 33,
+      "capabilities": 5
+    }
+  ],
+  "missingReferences": [],
+  "primaryRechecked": [
+    "arxiv:2611.13410",
+    "arxiv:2611.09474",
+    "arxiv:2611.17320",
+    "arxiv:2611.17041",
+    "arxiv:2611.14320",
+    "arxiv:2611.03412",
+    "arxiv:2611.14661",
+    "arxiv:2611.17280",
+    "arxiv:2609.17895",
+    "arxiv:2611.15009",
+    "arxiv:2611.13001",
+    "arxiv:2610.19021",
+    "arxiv:2606.15868",
+    "arxiv:2611.14220",
+    "arxiv:2611.17031",
+    "pmid:42957896",
+    "pmid:42995166",
+    "pmid:43019548",
+    "pmid:42691995",
+    "pmid:42259917",
+    "pmid:40205214",
+    "pmid:38723085"
+  ]
+}
