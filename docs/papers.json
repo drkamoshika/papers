@@ -5686,6 +5686,121 @@
       "limitations": "原著の前向き検証ではなくレビュー。採用すべき意思決定閾値の一般化は未確立。",
       "why": "名前の異なる指標の数学的重複と臨床的増分価値を切り分ける。",
       "details": "Publication date: 2026-11-16\nread_level: abstract\nTags: ['医療予測', '特徴量設計', '評価方法']\nSummary: 血算由来の複雑な合成指標が、単純な比率や元の測定値に対して臨床的な増分価値を持つかを批判的に検討する。\nObjective: 特徴量の複雑化が予測・意思決定の改善を保証するかを検証する。\nMethods: 数式の同値性、分母依存、単位、分析誤差、生物学的変動を整理し、既存研究の比較を評価するナラティブレビュー。\nData and results: 複雑な指標の優位性は一貫せず、元の成分や既存モデルに対する増分価値の証拠は限定的。外部校正と前向き影響評価は稀と報告。\nNovelty: 名前の異なる指標の数学的重複と臨床的増分価値を切り分ける。\nLimitations: 原著の前向き検証ではなくレビュー。採用すべき意思決定閾値の一般化は未確立。"
+    },
+    {
+      "title": "V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations",
+      "report": "reports/daily/2026-11-18.md",
+      "reportDate": "2026-11-18",
+      "source": "arXiv",
+      "id": "arxiv:2611.17831",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.17831",
+      "read_level": "abstract",
+      "tags": [
+        "video",
+        "multimodal",
+        "representation learning"
+      ],
+      "summary": "動画の速度や順序を符号化した表現が言語モデルへの接続後に活用されない問題を検証。反実仮想的な映像変換による教師信号で動的特徴を読み出す。",
+      "objective": "動画理解で静的な外観ではなく運動情報を回答へ反映する。",
+      "methods": "V-JEPAとSigLIPの表現を比較し、映像のピクセル変換で正解が変わる対照サンプルを生成して学習。",
+      "results": "公開サンプル453万件、11動画ベンチマーク。4Bモデルは平均72.1、比較対象のオープン4Bモデル61.1。対応する制御実験では平均4.5ポイント、速度問題で38ポイント改善。",
+      "novelty": "エンコーダに存在する情報と、教師信号により実際に読み出せる情報を分離して分析した点。",
+      "limitations": "報告値は論文記載のベンチマーク条件に依存し、実世界の連続センシングへの転移は未検証。",
+      "why": "エンコーダに存在する情報と、教師信号により実際に読み出せる情報を分離して分析した点。",
+      "details": "Publication date: 2026-11-13\nread_level: abstract\nTags: ['video', 'multimodal', 'representation learning']\nSummary: 動画の速度や順序を符号化した表現が言語モデルへの接続後に活用されない問題を検証。反実仮想的な映像変換による教師信号で動的特徴を読み出す。\nObjective: 動画理解で静的な外観ではなく運動情報を回答へ反映する。\nMethods: V-JEPAとSigLIPの表現を比較し、映像のピクセル変換で正解が変わる対照サンプルを生成して学習。\nData and results: 公開サンプル453万件、11動画ベンチマーク。4Bモデルは平均72.1、比較対象のオープン4Bモデル61.1。対応する制御実験では平均4.5ポイント、速度問題で38ポイント改善。\nNovelty: エンコーダに存在する情報と、教師信号により実際に読み出せる情報を分離して分析した点。\nLimitations: 報告値は論文記載のベンチマーク条件に依存し、実世界の連続センシングへの転移は未検証。"
+    },
+    {
+      "title": "Interactive Program Induction with Language Model Priors",
+      "report": "reports/daily/2026-11-18.md",
+      "reportDate": "2026-11-18",
+      "source": "arXiv",
+      "id": "arxiv:2611.18485",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18485",
+      "read_level": "abstract",
+      "tags": [
+        "Bayesian learning",
+        "active learning",
+        "program induction"
+      ],
+      "summary": "少数の入出力例からプログラムを復元する曖昧性を、言語モデル事前分布と能動的な問い合わせで減らす。",
+      "objective": "少数例から未知入力に汎化する規則を特定する。",
+      "methods": "ベイズ的事前分布、重要度サンプリングによる情報量推定、貪欲な問い合わせ選択。近似同値性について問い合わせ数の理論保証を提示。",
+      "results": "CodeARCで言語モデル単独エージェント比、精度最大22ポイント改善、観測例を最大10.5件削減。",
+      "novelty": "生成を一方向に繰り返す代わりに、識別力の高い観測を能動的に選ぶ枠組み。",
+      "limitations": "問い合わせ可能なオラクルを想定し、質問コストや回答誤りへの頑健性は要検証。",
+      "why": "生成を一方向に繰り返す代わりに、識別力の高い観測を能動的に選ぶ枠組み。",
+      "details": "Publication date: 2026-11-13\nread_level: abstract\nTags: ['Bayesian learning', 'active learning', 'program induction']\nSummary: 少数の入出力例からプログラムを復元する曖昧性を、言語モデル事前分布と能動的な問い合わせで減らす。\nObjective: 少数例から未知入力に汎化する規則を特定する。\nMethods: ベイズ的事前分布、重要度サンプリングによる情報量推定、貪欲な問い合わせ選択。近似同値性について問い合わせ数の理論保証を提示。\nData and results: CodeARCで言語モデル単独エージェント比、精度最大22ポイント改善、観測例を最大10.5件削減。\nNovelty: 生成を一方向に繰り返す代わりに、識別力の高い観測を能動的に選ぶ枠組み。\nLimitations: 問い合わせ可能なオラクルを想定し、質問コストや回答誤りへの頑健性は要検証。"
+    },
+    {
+      "title": "ARCHER: From Rationale Imitation to Executable Reasoning in Small Language Models",
+      "report": "reports/daily/2026-11-18.md",
+      "reportDate": "2026-11-18",
+      "source": "arXiv",
+      "id": "arxiv:2611.18494",
+      "date": "2026-11-13",
+      "url": "https://arxiv.org/abs/2611.18494",
+      "read_level": "abstract",
+      "tags": [
+        "small language models",
+        "reinforcement learning",
+        "verification"
+      ],
+      "summary": "自然言語の思考過程を、計算機呼び出しや検証を含む実行可能なアクショントレースに変換して学習する。",
+      "objective": "小型言語モデルの数学的推論の正確性と監査可能性を高める。",
+      "methods": "説明文を型付き行動列へ変換する段階と、正答・ツール根拠・手順整合性などを条件付き報酬で強化学習する段階を組み合わせる。",
+      "results": "10B未満の5モデルで最強のツール併用ベースライン比、平均5.51ポイント改善。MATH-500で8.95ポイント、AIME-2024/2025で5.33/5.34ポイント改善。",
+      "novelty": "文章の模倣より実行可能な推論手順を学習対象にする点。",
+      "limitations": "数学的問題を中心とした評価であり、医療判断や長期イベント予測への一般化は未確認。",
+      "why": "文章の模倣より実行可能な推論手順を学習対象にする点。",
+      "details": "Publication date: 2026-11-13\nread_level: abstract\nTags: ['small language models', 'reinforcement learning', 'verification']\nSummary: 自然言語の思考過程を、計算機呼び出しや検証を含む実行可能なアクショントレースに変換して学習する。\nObjective: 小型言語モデルの数学的推論の正確性と監査可能性を高める。\nMethods: 説明文を型付き行動列へ変換する段階と、正答・ツール根拠・手順整合性などを条件付き報酬で強化学習する段階を組み合わせる。\nData and results: 10B未満の5モデルで最強のツール併用ベースライン比、平均5.51ポイント改善。MATH-500で8.95ポイント、AIME-2024/2025で5.33/5.34ポイント改善。\nNovelty: 文章の模倣より実行可能な推論手順を学習対象にする点。\nLimitations: 数学的問題を中心とした評価であり、医療判断や長期イベント予測への一般化は未確認。"
+    },
+    {
+      "title": "Replicating and Extending Weight-Space Programming: Frontier LLMs Compile Programs into Weights and Read Input Layers",
+      "report": "reports/daily/2026-11-18.md",
+      "reportDate": "2026-11-18",
+      "source": "arXiv",
+      "id": "arxiv:2611.21449",
+      "date": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21449",
+      "read_level": "abstract",
+      "tags": [
+        "LLM",
+        "interpretability",
+        "neural network weights"
+      ],
+      "summary": "LLMによる小規模ニューラルネットワーク重みの直接生成・読解を追試し、可能なことと限界を切り分ける。",
+      "objective": "重み空間を直接操作・監査するLLMの能力を検証する。",
+      "methods": "Breakout制御ネットワーク生成、手書き数字分類、ゲーム識別、汚染モデル検出などを比較。",
+      "results": "Breakoutの生成ネットワークの得点は514、550、307。数字分類は平均50%で単純分類器82%を下回る。悪意あるアダプタの検出は32件中23件で、発火条件の特定には至らない。",
+      "novelty": "重み生成がプログラムのコンパイルに近く、重み読解は入力層の情報に大きく依存するという境界を実証的に示す。",
+      "limitations": "短期間の探索的追試で、小規模ネットワーク中心。広いモデル群への一般化は限定的。",
+      "why": "重み生成がプログラムのコンパイルに近く、重み読解は入力層の情報に大きく依存するという境界を実証的に示す。",
+      "details": "Publication date: 2026-11-16\nread_level: abstract\nTags: ['LLM', 'interpretability', 'neural network weights']\nSummary: LLMによる小規模ニューラルネットワーク重みの直接生成・読解を追試し、可能なことと限界を切り分ける。\nObjective: 重み空間を直接操作・監査するLLMの能力を検証する。\nMethods: Breakout制御ネットワーク生成、手書き数字分類、ゲーム識別、汚染モデル検出などを比較。\nData and results: Breakoutの生成ネットワークの得点は514、550、307。数字分類は平均50%で単純分類器82%を下回る。悪意あるアダプタの検出は32件中23件で、発火条件の特定には至らない。\nNovelty: 重み生成がプログラムのコンパイルに近く、重み読解は入力層の情報に大きく依存するという境界を実証的に示す。\nLimitations: 短期間の探索的追試で、小規模ネットワーク中心。広いモデル群への一般化は限定的。"
+    },
+    {
+      "title": "Rubric-Based AES with LLM Ensembles: Scoring of Student Responses in Critical Online Reasoning Using Ensembles of LLMs",
+      "report": "reports/daily/2026-11-18.md",
+      "reportDate": "2026-11-18",
+      "source": "arXiv",
+      "id": "arxiv:2611.21422",
+      "date": "2026-11-16",
+      "url": "https://arxiv.org/abs/2611.21422",
+      "read_level": "abstract",
+      "tags": [
+        "LLM evaluation",
+        "ensemble",
+        "medical education"
+      ],
+      "summary": "複数LLMと採点ルーブリックを組み合わせ、人間評価者との一致度を検証。",
+      "objective": "記述式答案の採点負荷を減らしつつ人間採点との整合性を保つ。",
+      "methods": "ドイツ語回答631件、103基準、15オープンウェイトLLM、523プロンプト設定。Krippendorffのalphaと代替評価者テストで検証。",
+      "results": "人間評価者1名を最良のLLM設定に置き換えた場合、103基準中91基準で一致度を維持または改善。90基準で代替評価者テストに合格。",
+      "novelty": "単一モデルの正解率ではなく、人間との採点一致性を基準単位で評価した点。",
+      "limitations": "ドイツ語・経済学および医学教育の回答に限定。独立した教育現場での前向き検証は未記載。",
+      "why": "単一モデルの正解率ではなく、人間との採点一致性を基準単位で評価した点。",
+      "details": "Publication date: 2026-11-16\nread_level: abstract\nTags: ['LLM evaluation', 'ensemble', 'medical education']\nSummary: 複数LLMと採点ルーブリックを組み合わせ、人間評価者との一致度を検証。\nObjective: 記述式答案の採点負荷を減らしつつ人間採点との整合性を保つ。\nMethods: ドイツ語回答631件、103基準、15オープンウェイトLLM、523プロンプト設定。Krippendorffのalphaと代替評価者テストで検証。\nData and results: 人間評価者1名を最良のLLM設定に置き換えた場合、103基準中91基準で一致度を維持または改善。90基準で代替評価者テストに合格。\nNovelty: 単一モデルの正解率ではなく、人間との採点一致性を基準単位で評価した点。\nLimitations: ドイツ語・経済学および医学教育の回答に限定。独立した教育現場での前向き検証は未記載。"
     }
   ]
 }
