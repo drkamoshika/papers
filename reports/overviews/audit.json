@@ -1,94 +1,210 @@
 {
+  "revisionDate": "2026-11-18",
+  "corpusSnapshotDate": "2026-11-16",
   "snapshot": {
     "dailyCount": 264,
     "foundationCount": 774,
     "uniqueCount": 1038,
-    "referenceCount": 165,
+    "referenceCount": 192,
     "latestPaperDate": "2026-11-12",
     "latestReportDate": "2026-11-16",
-    "primaryRechecks": 22
+    "primaryRechecks": 38,
+    "revisionPrimaryRechecks": 25
   },
-  "fieldCounts": [
+  "fields": [
     {
       "key": "language",
-      "foundations": 101,
-      "citedFoundations": 21,
-      "citedDaily": 4,
-      "references": 25,
-      "capabilities": 4
+      "beforeChars": 1452,
+      "afterChars": 5094,
+      "chapters": 4,
+      "comparisonRows": 5,
+      "caseStudies": 2,
+      "references": 35
     },
     {
       "key": "agents",
-      "foundations": 112,
-      "citedFoundations": 18,
-      "citedDaily": 7,
-      "references": 25,
-      "capabilities": 4
+      "beforeChars": 1483,
+      "afterChars": 4977,
+      "chapters": 4,
+      "comparisonRows": 5,
+      "caseStudies": 2,
+      "references": 27
     },
     {
       "key": "trust",
-      "foundations": 104,
-      "citedFoundations": 16,
-      "citedDaily": 8,
-      "references": 24,
-      "capabilities": 4
+      "beforeChars": 1476,
+      "afterChars": 4900,
+      "chapters": 4,
+      "comparisonRows": 5,
+      "caseStudies": 2,
+      "references": 30
     },
     {
       "key": "medical",
-      "foundations": 139,
-      "citedFoundations": 18,
-      "citedDaily": 8,
-      "references": 26,
-      "capabilities": 4
+      "beforeChars": 1520,
+      "afterChars": 5576,
+      "chapters": 5,
+      "comparisonRows": 5,
+      "caseStudies": 2,
+      "references": 31
     },
     {
       "key": "structured",
-      "foundations": 119,
-      "citedFoundations": 24,
-      "citedDaily": 4,
-      "references": 28,
-      "capabilities": 4
+      "beforeChars": 1448,
+      "afterChars": 5567,
+      "chapters": 5,
+      "comparisonRows": 5,
+      "caseStudies": 2,
+      "references": 34
     },
     {
       "key": "events",
-      "foundations": 100,
-      "citedFoundations": 25,
-      "citedDaily": 2,
-      "references": 27,
-      "capabilities": 5
+      "beforeChars": 1674,
+      "afterChars": 5698,
+      "chapters": 5,
+      "comparisonRows": 6,
+      "caseStudies": 2,
+      "references": 29
     },
     {
       "key": "neuroscience",
-      "foundations": 106,
-      "citedFoundations": 30,
-      "citedDaily": 3,
-      "references": 33,
-      "capabilities": 5
+      "beforeChars": 1726,
+      "afterChars": 6312,
+      "chapters": 5,
+      "comparisonRows": 6,
+      "caseStudies": 3,
+      "references": 39
     }
   ],
+  "totalChapters": 32,
+  "totalCases": 15,
+  "totalComparisonRows": 37,
   "missingReferences": [],
-  "primaryRechecked": [
-    "arxiv:2611.13410",
-    "arxiv:2611.09474",
-    "arxiv:2611.17320",
-    "arxiv:2611.17041",
-    "arxiv:2611.14320",
-    "arxiv:2611.03412",
-    "arxiv:2611.14661",
-    "arxiv:2611.17280",
-    "arxiv:2609.17895",
-    "arxiv:2611.15009",
-    "arxiv:2611.13001",
-    "arxiv:2610.19021",
-    "arxiv:2606.15868",
-    "arxiv:2611.14220",
-    "arxiv:2611.17031",
-    "pmid:42957896",
-    "pmid:42995166",
-    "pmid:43019548",
-    "pmid:42691995",
-    "pmid:42259917",
-    "pmid:40205214",
-    "pmid:38723085"
+  "revisionChecks": [
+    {
+      "id": "arxiv:2305.18290",
+      "url": "https://arxiv.org/html/2305.18290v3",
+      "scope": "本文§3–4、RLHFとDPOの目的・導出"
+    },
+    {
+      "id": "arxiv:2203.15556",
+      "url": "https://arxiv.org/abs/2203.15556",
+      "scope": "要旨、計算量とデータ配分"
+    },
+    {
+      "id": "arxiv:2211.17192",
+      "url": "https://arxiv.org/abs/2211.17192",
+      "scope": "要旨、推測的デコードと分布の維持"
+    },
+    {
+      "id": "arxiv:2611.17041",
+      "url": "https://arxiv.org/html/2611.17041v1",
+      "scope": "本文Introduction・Method概要、寄与の信用割当"
+    },
+    {
+      "id": "arxiv:2005.11401",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "scope": "要旨、RAGの構成と二方式"
+    },
+    {
+      "id": "arxiv:2307.13702",
+      "url": "https://arxiv.org/abs/2307.13702",
+      "scope": "要旨、推論文への介入と忠実性"
+    },
+    {
+      "id": "arxiv:2207.01848",
+      "url": "https://arxiv.org/abs/2207.01848",
+      "scope": "要旨、合成事前分布・元の評価条件"
+    },
+    {
+      "id": "arxiv:1608.00060",
+      "url": "https://arxiv.org/abs/1608.00060v7",
+      "scope": "要旨、直交スコアと交差適合"
+    },
+    {
+      "id": "arxiv:2202.13415",
+      "url": "https://arxiv.org/abs/2202.13415v5",
+      "scope": "要旨、交換可能性と分布変化"
+    },
+    {
+      "id": "arxiv:1806.00221",
+      "url": "https://arxiv.org/pdf/1806.00221",
+      "scope": "本文§2.3・§3.1、強度・生存確率・尤度"
+    },
+    {
+      "id": "arxiv:1909.12127",
+      "url": "https://arxiv.org/abs/1909.12127",
+      "scope": "要旨、待ち時間分布の直接モデル"
+    },
+    {
+      "id": "arxiv:2611.14661",
+      "url": "https://arxiv.org/abs/2611.14661v1",
+      "scope": "要旨、棄権率と閾値への反応"
+    },
+    {
+      "id": "arxiv:2611.08417",
+      "url": "https://arxiv.org/abs/2611.08417",
+      "scope": "要旨、採点器・版・資源予算の影響"
+    },
+    {
+      "id": "arxiv:0706.3188",
+      "url": "https://arxiv.org/abs/0706.3188",
+      "scope": "要旨、予測集合と保証の条件"
+    },
+    {
+      "id": "pmid:39358519",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11446845/fullTextXML",
+      "scope": "公開論文本文Connectome models・Computational modelling limitations・164予測の集計"
+    },
+    {
+      "id": "pmid:37127759",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11304553/",
+      "scope": "PMC・出版社の検索掲載本文Experimental tasks・データ量。既存の本文確認記録も参照"
+    },
+    {
+      "id": "pmid:43019548",
+      "url": "https://medinform.jmir.org/2026/1/e107092/",
+      "scope": "出版社本文の要旨・Methods。初版の本文確認記録も参照"
+    },
+    {
+      "id": "pmid:32346050",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32346050/",
+      "scope": "要旨・図の説明、EHR入力とMLM事前学習"
+    },
+    {
+      "id": "pmid:37433327",
+      "url": "https://www.nature.com/articles/s41586-023-06415-8",
+      "scope": "出版社の検索掲載本文、構造のノイズ除去と生成手順"
+    },
+    {
+      "id": "arxiv:2611.17320",
+      "url": "https://arxiv.org/abs/2611.17320v1",
+      "scope": "要旨、事例の方法・実験条件・報告値"
+    },
+    {
+      "id": "arxiv:2611.13410",
+      "url": "https://arxiv.org/abs/2611.13410v1",
+      "scope": "要旨、事例の方法・実験条件・報告値"
+    },
+    {
+      "id": "arxiv:2611.14320",
+      "url": "https://arxiv.org/abs/2611.14320v1",
+      "scope": "要旨、事例の方法・実験条件・報告値"
+    },
+    {
+      "id": "arxiv:2611.03412",
+      "url": "https://arxiv.org/abs/2611.03412v3",
+      "scope": "要旨、事例の方法・実験条件・報告値"
+    },
+    {
+      "id": "arxiv:2611.14220",
+      "url": "https://arxiv.org/abs/2611.14220v1",
+      "scope": "要旨、事例の方法・実験条件・報告値"
+    },
+    {
+      "id": "arxiv:2611.17031",
+      "url": "https://arxiv.org/abs/2611.17031v1",
+      "scope": "要旨、事例の方法・実験条件・報告値"
+    }
   ]
 }
