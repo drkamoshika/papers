@@ -1,0 +1,364 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-19",
+  "current_week": "2026-W47",
+  "title": "研究動向レビュー",
+  "scope_note": "基礎774件＋日次278件（登録延べ1,052件）。既存の7テーマ詳細レビューを継承し、直近14件の追加分を再整理した。全1,052報を今回独立に全文再読したわけではありません。",
+  "stats": {
+    "foundation": 774,
+    "daily": 278,
+    "total": 1052,
+    "latest_added": 14,
+    "reference_in_existing_review": 192
+  },
+  "summary": "単なる新着論文一覧ではなく、テーマごとに技術の系譜・今の到達点・検証の強さ・未解決課題を継続更新します。",
+  "cross_cutting": [
+    {
+      "title": "証拠が最終決定まで届くか",
+      "text": "協調エージェントの検索量は増えても、受渡しで情報が失われると矛盾検出が悪化する。",
+      "ids": [
+        "arxiv:2611.22245"
+      ]
+    },
+    {
+      "title": "表現を使える知識に変える",
+      "text": "動的情報を保持した特徴があっても、適切な教師信号が無ければその情報は読み出せない。",
+      "ids": [
+        "arxiv:2611.17831",
+        "arxiv:2611.18485"
+      ]
+    },
+    {
+      "title": "説明と検証可能な実行を分離",
+      "text": "自然言語の推論を行動列・実行コード・監査ログへ接続し、正確性を別途検証する。",
+      "ids": [
+        "arxiv:2611.18494",
+        "pmid:42954875"
+      ]
+    }
+  ],
+  "weeks": [
+    {
+      "week": "2026-W47",
+      "date": "2026-11-19",
+      "label": "初回レビュー（11月17〜19日分）",
+      "href": "https://github.com/drkamoshika/papers/blob/main/reports/weekly/2026-W47.md",
+      "paper_count": 14
+    }
+  ],
+  "living_url": "https://github.com/drkamoshika/papers/blob/main/reports/trends/overview.md",
+  "existing_map_url": "https://drkamoshika.github.io/papers/?view=map",
+  "themes": [
+    {
+      "key": "language",
+      "title": "言語モデルの学習・推論・効率化",
+      "state": "推論手順を実行可能な形にする段階",
+      "shift": "正解を出すモデルから、誤りを検証・修正できる処理系へ",
+      "summary": "Transformer、事前学習、指示調整、選好学習、推論時探索という発展を経て、現在のボトルネックは「推論を長く生成すること」から「何を検証し、どの実行を信じるか」へ移っている。検証器付き探索やアダプタ切替は、重みの一律拡大とは別の改良経路である。",
+      "update": "ARCHERは自然言語の思考列を型付きの電卓呼び出し・検証を含む行動列へ変換して小型モデルを訓練し、比較対象に対する数学ベンチマークの改善を報告した。Self-Disagreementは自ら生成した反論へ応じる訓練を扱い、LoRAWeaverは追加学習なしのアダプタ選択を試みる。これらは学習段階、推論時制御、運用時ルーティングという異なる制御点を操作する。",
+      "boundary": "ARCHERの評価は主に数学、Self-Disagreementは対話的な正誤維持、LoRAWeaverは特定のモデル・タスク群である。改善率を同じ尺度で合算できない。生成した手順の監査可能性と、その手順が実際の判断の因果過程を反映することも異なる。",
+      "gap": "実行トレース、外部検証器、自己反論を同じ課題・同じ推論予算で比較し、どの失敗類型にどの制御が効くかを層別化する。検証器自体の誤り、呼び出し回数、遅延を必ず測る。",
+      "refs": [
+        {
+          "id": "arxiv:1706.03762",
+          "title": "Attention Is All You Need",
+          "url": "https://arxiv.org/abs/1706.03762"
+        },
+        {
+          "id": "arxiv:2106.09685",
+          "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+          "url": "https://arxiv.org/abs/2106.09685"
+        },
+        {
+          "id": "arxiv:2611.17320",
+          "title": "Learning When Diffusion Language Models Should Regenerate",
+          "url": "https://arxiv.org/abs/2611.17320"
+        },
+        {
+          "id": "arxiv:2611.17563",
+          "title": "Benchmarks Don't Talk Back: Learning Through Self-Disagreement",
+          "url": "https://arxiv.org/abs/2611.17563"
+        },
+        {
+          "id": "arxiv:2611.17340",
+          "title": "LoRAWeaver: Directional Adapter Routing in LoRA Representation Space",
+          "url": "https://arxiv.org/abs/2611.17340"
+        },
+        {
+          "id": "arxiv:2611.18494",
+          "title": "ARCHER: From Rationale Imitation to Executable Reasoning in Small Language Models",
+          "url": "https://arxiv.org/abs/2611.18494"
+        },
+        {
+          "id": "arxiv:2611.21449",
+          "title": "Replicating and Extending Weight-Space Programming: Frontier LLMs Compile Programs into Weights and Read Input Layers",
+          "url": "https://arxiv.org/abs/2611.21449"
+        }
+      ],
+      "map_url": "https://drkamoshika.github.io/papers/?view=map&topic=language"
+    },
+    {
+      "key": "agents",
+      "title": "エージェント・検索・記憶・協調",
+      "state": "協調の情報損失が定量化され始めた",
+      "shift": "作業の並列化より、根拠が最終判断まで届くかを測る",
+      "summary": "RAG、ReAct、記憶、マルチエージェントは、単発のモデルを環境に接続するための異なる機構である。局所的な成功が増えても、情報が引き継がれなければ全体の正確性は落ちる。分業の利益は並列性と責任分離にあるが、証拠の連結、更新された状態、最終統合の品質を別途測る必要がある。",
+      "update": "Multi-Agent Memory Inconsistencyは、必須委譲により矛盾する主張の両方を取得する割合が50.2%から68.7%に増えた一方、矛盾検出率が16.2%から13.2%へ下がったと報告。取得できた証拠対のうちワーカー報告へ両方が残ったのは35.2%。以前のCoLFAの失敗位置特定、DeliverBenchの依存成果物評価と合わせ、問題を取得・受渡し・統合・検証へ分解する方向が見える。",
+      "boundary": "この値は限られた文書レビューの制御された矛盾事例であり、あらゆるエージェントタスクで分業が劣るという一般則ではない。エージェント数ではなく、情報経路の構造と予算が効果を左右する。",
+      "gap": "単独、独立並列、共有メモリ、証拠対を必ず保持する構造化ハンドオフを同じ予算で比較する。各段で情報保持率、矛盾検出率、最終納品の整合性と費用を計測する。",
+      "refs": [
+        {
+          "id": "arxiv:2005.11401",
+          "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+          "url": "https://arxiv.org/abs/2005.11401"
+        },
+        {
+          "id": "arxiv:2210.03629",
+          "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+          "url": "https://arxiv.org/abs/2210.03629"
+        },
+        {
+          "id": "arxiv:2611.03412",
+          "title": "DeliverBench: Benchmarking AI Agents on Delivering Realistic Multi-Stage Professional Projects",
+          "url": "https://arxiv.org/abs/2611.03412"
+        },
+        {
+          "id": "arxiv:2611.14980",
+          "title": "CoLFA: Collaboration-Guided Lightweight Failure Attribution for LLM-Based Multi-Agent Systems",
+          "url": "https://arxiv.org/abs/2611.14980"
+        },
+        {
+          "id": "arxiv:2611.22245",
+          "title": "Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents",
+          "url": "https://arxiv.org/abs/2611.22245"
+        }
+      ],
+      "map_url": "https://drkamoshika.github.io/papers/?view=map&topic=agents"
+    },
+    {
+      "key": "trust",
+      "title": "評価・安全性・解釈可能性",
+      "state": "正解率から証拠・安定性・介入へ",
+      "shift": "『回答した／棄権した』と『正しい規則に従った』の区別",
+      "summary": "平均正答率やAUROCだけでは、校正、棄権方策、根拠の保持、再現性、隠れた情報経路を捉えられない。内部活性化を用いた評価はモデル内の表現を記述できるが、それが回答の因果的な理由かは介入により別途確かめる必要がある。",
+      "update": "Tracing Knowledge and Reasoningは16モデル・24ベンチマークを内部表現から比較した。Rubric-Based AESは631回答・103基準・15モデルなどを使い人間採点との一致を測る。Weight-Space Programmingの追試は、重み生成の一部成功と重み読解の限界を切り分ける。Self-Disagreementは反論への頑健性を直接訓練する。新規報告の多くは『評価対象を細分化する』という流れに位置づく。",
+      "boundary": "説明の妥当性と介入の因果性、採点一致と実環境での安全性、リスク閾値の指定と本当の閾値遵守は区別すべき。モデルの検証結果だけで下流の実行システムが安全とは言えない。",
+      "gap": "評価対象を正解・校正・継続実行の整合性・証拠来歴に分解し、個別の閾値を固定して見せかけの棄権と実際の選択的予測を比較する。説明文の変化ではなく、介入時の行動変化も検査する。",
+      "refs": [
+        {
+          "id": "arxiv:2211.09110",
+          "title": "Holistic Evaluation of Language Models",
+          "url": "https://arxiv.org/abs/2211.09110"
+        },
+        {
+          "id": "arxiv:2307.13702",
+          "title": "Measuring Faithfulness in Chain-of-Thought Reasoning",
+          "url": "https://arxiv.org/abs/2307.13702"
+        },
+        {
+          "id": "arxiv:2611.14661",
+          "title": "Abstention Is Not Threshold Compliance: Stated Scoring Rules in Open Language Models",
+          "url": "https://arxiv.org/abs/2611.14661"
+        },
+        {
+          "id": "arxiv:2611.17461",
+          "title": "Tracing Knowledge and Reasoning in LLM",
+          "url": "https://arxiv.org/abs/2611.17461"
+        },
+        {
+          "id": "arxiv:2611.21422",
+          "title": "Rubric-Based AES with LLM Ensembles: Scoring of Student Responses in Critical Online Reasoning Using Ensembles of LLMs",
+          "url": "https://arxiv.org/abs/2611.21422"
+        },
+        {
+          "id": "arxiv:2611.21449",
+          "title": "Replicating and Extending Weight-Space Programming: Frontier LLMs Compile Programs into Weights and Read Input Layers",
+          "url": "https://arxiv.org/abs/2611.21449"
+        },
+        {
+          "id": "arxiv:2611.17563",
+          "title": "Benchmarks Don't Talk Back: Learning Through Self-Disagreement",
+          "url": "https://arxiv.org/abs/2611.17563"
+        }
+      ],
+      "map_url": "https://drkamoshika.github.io/papers/?view=map&topic=trust"
+    },
+    {
+      "key": "medical",
+      "title": "医療・生体信号・創薬AI",
+      "state": "探索的識別と臨床価値の間を厳密に分ける",
+      "shift": "新しい指標の性能より、既存指標からの増分価値を問う",
+      "summary": "医療AIではデータ取得・症例抽出・診断・予後予測・介入を同一の『高精度』で語れない。診断や記述支援の性能が高くても、将来状態の予測と患者アウトカムの改善は別課題。施設差、時間分割、校正、患者単位の安定性、外部検証という関門が残る。",
+      "update": "尿中揮発性成分AIの多がん種検出は10がん種491例と健常200例の多施設症例対照・内部検証研究で、一般集団スクリーニングでの有用性を示したものではない。血算由来の複雑な指標のレビューは数学的重複と既存測定値への増分価値を問う。Compliance by DesignはLLMを定量分析の設計・説明に用いつつ、解析仕様と検証可能な実行を分離する提言で、効果量を実証した臨床試験ではない。",
+      "boundary": "尿アッセイは陽性・陰性の事前有病率や外部の患者集団への移転が未解決。血算指標レビューは実証的な治療効果ではない。AIに解析を説明させるだけでは監査可能性や統計的妥当性の保証にはならない。",
+      "gap": "新規バイオマーカーは『元の変数のみ→複合特徴→新規センサー』の増分利益を、施設外・時期外・患者中心の指標で評価する。LLMは文章化と仮説形成を担い、実行可能な統計仕様・ログ・コード検証を別系統で固定する。",
+      "refs": [
+        {
+          "id": "pmid:35585198",
+          "title": "Reporting guideline for the early-stage clinical evaluation of decision support systems driven by artificial intelligence: DECIDE-AI",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/35585198/"
+        },
+        {
+          "id": "pmid:43019548",
+          "title": "Performance of a Large Language Model for Predicting Clinical and Radiographic Outcomes in Knee Osteoarthritis: Single-Center Prospective Observational Study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43019548/"
+        },
+        {
+          "id": "pmid:43006187",
+          "title": "Artificial Intelligence-Based Urine Volatomic Assay for Multi-Cancer Detection: A Multicentric Case-Control Discovery and Internal Validation Study",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43006187/"
+        },
+        {
+          "id": "pmid:43031444",
+          "title": "Evaluating mathematical complexity and incremental clinical value in complete blood count-derived indices",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43031444/"
+        },
+        {
+          "id": "pmid:42954875",
+          "title": "Compliance by Design: Governing AI-Augmented Quantitative Analysis in Clinical and Translational Research",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42954875/"
+        },
+        {
+          "id": "pmid:42995166",
+          "title": "Large language models are unstable as autonomous medical evaluators across clinical tasks",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42995166"
+        }
+      ],
+      "map_url": "https://drkamoshika.github.io/papers/?view=map&topic=medical"
+    },
+    {
+      "key": "structured",
+      "title": "表形式・時系列・因果推論",
+      "state": "複雑なモデルより情報の観測設計が争点",
+      "shift": "『情報がある』と『識別可能・利用可能』を区別する",
+      "summary": "XGBoostなどの木の基準、TabPFNなどの事前学習、時系列基盤モデルは用途ごとに利益が異なる。予測誤差を小さくするだけで、因果効果や機構が識別できるわけではない。教師信号、観測窓、分布外テスト、何を入力できるかが優先される。",
+      "update": "微生物群集の機構推定では、ランダムな群集と培地の組み合わせが、機構の識別可能性を左右し、LASSOのような単純手法でも役割を回復できると報告。コウモリの反響定位音では単発の分類より音列の情報が識別に寄与。V-JEPA-LMでは凍結された動画表現に速度情報が存在しても、適切な教師信号なしでは言語側が読み出さないことを示した。",
+      "boundary": "微生物の実験設計、コウモリの制御環境、動画ベンチマークという別領域の結果を同一の性能改善として扱わない。因果的な識別可能性、表現の可読性、時系列の予測精度は異なる数学的対象。",
+      "gap": "入力摂動・情報取得の能動設計・出力検証を別要素として比較する。ラベル精度に加えて時系列の校正と長期の整合性を測り、モデルを高度化する前に観測の識別可能性を検証する。",
+      "refs": [
+        {
+          "id": "arxiv:1603.02754",
+          "title": "XGBoost: A Scalable Tree Boosting System",
+          "url": "https://arxiv.org/abs/1603.02754"
+        },
+        {
+          "id": "arxiv:2207.01848",
+          "title": "TabPFN: A Transformer That Solves Small Tabular Classification Problems in a Second",
+          "url": "https://arxiv.org/abs/2207.01848"
+        },
+        {
+          "id": "arxiv:2403.07815",
+          "title": "Chronos: Learning the Language of Time Series",
+          "url": "https://arxiv.org/abs/2403.07815"
+        },
+        {
+          "id": "arxiv:2611.15009",
+          "title": "From Forecasting to World Modeling: Can Temporal Foundation Models Recover Causal Response?",
+          "url": "https://arxiv.org/abs/2611.15009"
+        },
+        {
+          "id": "arxiv:2611.17831",
+          "title": "V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations",
+          "url": "https://arxiv.org/abs/2611.17831"
+        },
+        {
+          "id": "pmid:42864600",
+          "title": "Deep learning reveals persistent individual signatures in bat echolocation calls of the greater leaf-nosed bat",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42864600/"
+        },
+        {
+          "id": "pmid:42869071",
+          "title": "Learning the mechanism of collective microbial function via random community-media pairing",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42869071/"
+        }
+      ],
+      "map_url": "https://drkamoshika.github.io/papers/?view=map&topic=structured"
+    },
+    {
+      "key": "events",
+      "title": "次イベント予測・点過程",
+      "state": "次イベントの精度と長期系列の整合性が分岐点",
+      "shift": "新規直接論文なし。隣接研究が観測と制約の設計を後押し",
+      "summary": "頻度基準・Markov的遷移からHawkes過程、ニューラル点過程、待ち時間分布、系列拡散まで、予測対象はラベル・時刻・個数・系列全体と拡張されている。ここへLLMを足す意味は意味情報の増分にあり、単に言語モデルが巨大なこと自体は根拠にならない。",
+      "update": "11月17〜19日の14件には、新たな点過程の直接比較研究は採用されていない。ただしInteractive Program Inductionは情報が足りないときに識別力の高い問い合わせを選ぶ設計、ARCHERは推論結果を実行可能な行動に変える設計、V-JEPA-LMは観測表現から必要な動的情報を読み出す設計を示す。長期イベント生成の制約・観測計画を考える際の隣接知見として重要。",
+      "boundary": "行動トレースはイベントの発生時刻を予測したものではなく、動画の速度認識も点過程の強度校正を実証しない。関連づけは編者の方法論的な仮説である。",
+      "gap": "まず独立なラベル頻度/直近遷移、強度型・待ち時間型、LLM併用を同じ情報量で比較する。長期生成には発生数・発生間隔・論理条件・観測可能なセンサー系列の整合性を別々に測る。ハード制約とソフト修正の費用/成功率を分離する。",
+      "refs": [
+        {
+          "id": "arxiv:1612.09328",
+          "title": "The Neural Hawkes Process: A Neurally Self-Modulating Multivariate Point Process",
+          "url": "https://arxiv.org/abs/1612.09328"
+        },
+        {
+          "id": "arxiv:1909.12127",
+          "title": "Intensity-Free Learning of Temporal Point Processes",
+          "url": "https://arxiv.org/abs/1909.12127"
+        },
+        {
+          "id": "arxiv:2606.15868",
+          "title": "David vs. Goliath in Next Activity Prediction: Argmax vs. LSTM, Transformer, and LLM",
+          "url": "https://arxiv.org/abs/2606.15868"
+        },
+        {
+          "id": "arxiv:2610.19021",
+          "title": "Can LLMs Access their World Knowledge for Event Prediction?",
+          "url": "https://arxiv.org/abs/2610.19021"
+        },
+        {
+          "id": "arxiv:2611.18485",
+          "title": "Interactive Program Induction with Language Model Priors",
+          "url": "https://arxiv.org/abs/2611.18485"
+        },
+        {
+          "id": "arxiv:2611.18494",
+          "title": "ARCHER: From Rationale Imitation to Executable Reasoning in Small Language Models",
+          "url": "https://arxiv.org/abs/2611.18494"
+        },
+        {
+          "id": "arxiv:2611.17831",
+          "title": "V-JEPA-LM: Video-Language Models That Read Dynamics Beyond Static, Text-Aligned Representations",
+          "url": "https://arxiv.org/abs/2611.17831"
+        }
+      ],
+      "map_url": "https://drkamoshika.github.io/papers/?view=map&topic=events"
+    },
+    {
+      "key": "neuroscience",
+      "title": "神経科学とAI",
+      "state": "構造地図から動的な機構仮説へ",
+      "shift": "対象週の直接的大進展は確認されず。前週までの到達点を維持",
+      "summary": "電子顕微鏡の局所接続、MRIの広域相関、神経集団の低次元動態、機能的結合は測るものが異なる。ハエの全脳回路地図など大規模な構造資源は確立したが、接続図だけから内的状態・学習・感情・全行動を復元できるわけではない。",
+      "update": "今回14件には神経回路の構造・機能を直接更新する重要論文は採用されていない。コウモリの個体音響識別は非侵襲センシングと個体差の分析として隣接するが、神経回路の解明を示した研究ではない。そのためトレンドの解釈を強引に変更しない。",
+      "boundary": "ハエ・マウス・ヒトでデータの単位、解像度、収録範囲が異なる。構造の一致や活動の相関から機構の因果性まで言えない。",
+      "gap": "ニューロンの接続・活動・行動を同時に持つ標本で、学習や内的状態を変える介入を行い、構造からの予測を検証する。個体をまたいだ再現性と観測の交絡を計測する。",
+      "refs": [
+        {
+          "id": "pmid:39358518",
+          "title": "Neuronal wiring diagram of an adult brain",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39358518/"
+        },
+        {
+          "id": "pmid:39358519",
+          "title": "A Drosophila computational brain model reveals sensorimotor processing",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39358519/"
+        },
+        {
+          "id": "pmid:40205214",
+          "title": "Functional connectomics spanning multiple areas of mouse visual cortex",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40205214/"
+        },
+        {
+          "id": "pmid:37127759",
+          "title": "Semantic reconstruction of continuous language from non-invasive brain recordings",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37127759/"
+        },
+        {
+          "id": "pmid:42864600",
+          "title": "Deep learning reveals persistent individual signatures in bat echolocation calls of the greater leaf-nosed bat",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42864600/"
+        }
+      ],
+      "map_url": "https://drkamoshika.github.io/papers/?view=map&topic=neuroscience"
+    }
+  ]
+}
