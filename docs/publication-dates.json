@@ -2,6 +2,31 @@
   "schema_version": 1,
   "policy": "arXiv v1 submitted date; PubMed earliest exact electronic publication date, then exact journal issue date; NEVER reportDate.",
   "records": {
+    "arxiv:2205.15317": {
+      "date": "2022-05-30",
+      "source_url": "https://arxiv.org/abs/2205.15317",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2306.09316": {
+      "date": "2023-06-15",
+      "source_url": "https://arxiv.org/abs/2306.09316",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2309.06180": {
+      "date": "2023-09-12",
+      "source_url": "https://arxiv.org/abs/2309.06180",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2402.03300": {
+      "date": "2024-02-05",
+      "source_url": "https://arxiv.org/abs/2402.03300",
+      "basis": "arxiv-v1"
+    },
+    "arxiv:2406.13692": {
+      "date": "2024-06-19",
+      "source_url": "https://arxiv.org/abs/2406.13692",
+      "basis": "arxiv-v1"
+    },
     "arxiv:2608.06253": {
       "date": "2026-08-06",
       "source_url": "https://arxiv.org/abs/2608.06253",
@@ -1217,6 +1242,11 @@
       "source_url": "https://aapm.onlinelibrary.wiley.com/doi/10.1002/acm2.70709",
       "basis": "publisher-first-published"
     },
+    "pmid:42485960": {
+      "date": "2026-07-19",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42485960/",
+      "basis": "pubmed-article-electronic"
+    },
     "pmid:42492159": {
       "date": "2026-07-18",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42492159/",
@@ -1372,6 +1402,11 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42869071/",
       "basis": "pubmed-article-electronic"
     },
+    "pmid:42909890": {
+      "date": "2026-09-23",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42909890/",
+      "basis": "pubmed-article-electronic"
+    },
     "pmid:42957896": {
       "date": "2026-10-29",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42957896/",
@@ -1380,6 +1415,16 @@
     "pmid:42967232": {
       "date": "2026-11-01",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42967232/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42971410": {
+      "date": "2026-11-02",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42971410/",
+      "basis": "pubmed-article-electronic"
+    },
+    "pmid:42977646": {
+      "date": "2026-11-04",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42977646/",
       "basis": "pubmed-article-electronic"
     },
     "pmid:42980310": {
@@ -1407,6 +1452,11 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42984493/",
       "basis": "pubmed-article-electronic"
     },
+    "pmid:42985432": {
+      "date": "2026-10-12",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/42985432/",
+      "basis": "pubmed-article-electronic"
+    },
     "pmid:42985999": {
       "date": "2026-11-12",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42985999/",
@@ -1427,6 +1477,11 @@
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/42995166/",
       "basis": "pubmed-article-electronic"
     },
+    "pmid:43002404": {
+      "date": "2026-11-02",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/43002404/",
+      "basis": "pubmed-article-electronic"
+    },
     "pmid:43019548": {
       "date": "2026-11-12",
       "source_url": "https://pubmed.ncbi.nlm.nih.gov/43019548/",
@@ -1440,6 +1495,7 @@
   },
   "unresolved": {
     "pmid:42954875": "No exact online publication date in PubMed page metadata",
+    "pmid:42992946": "No exact online publication date in PubMed page metadata",
     "pmid:43006187": "No exact online publication date in PubMed page metadata"
   }
 }
