@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-22",
+  "current_week": "2026-W47",
+  "stats": {
+    "daily_reports": 7,
+    "weekly_papers": 52,
+    "primary_rechecked_this_run": 2,
+    "scope_note": "2026-11-16〜22の日次7件。遡及採用を含む。"
+  },
+  "summary": "研究領域マップと動向レビューを統合。7テーマの長期的到達点を維持しつつ、形式保証と意味保証の差、臨床行動と患者転帰の差、エージェントの証拠保持を今週の比較軸として更新。",
+  "cross_cutting": [
+    {
+      "title": "形式保証と意味保証",
+      "summary": "有限オートマトンによる構造適合と数値・意味整合性は異なる。",
+      "url": "https://github.com/drkamoshika/papers/blob/main/reports/weekly/2026-W47.md"
+    },
+    {
+      "title": "予測から臨床転帰へ",
+      "summary": "処方増加と患者転帰改善は別のエンドポイント。",
+      "url": "https://github.com/drkamoshika/papers/blob/main/reports/weekly/2026-W47.md"
+    },
+    {
+      "title": "情報保持と人間協働",
+      "summary": "取得した証拠が最終判断まで残るかを評価する。",
+      "url": "https://github.com/drkamoshika/papers/blob/main/reports/weekly/2026-W47.md"
+    }
+  ],
+  "weeks": [
+    {
+      "week": "2026-W47",
+      "url": "https://github.com/drkamoshika/papers/blob/main/reports/weekly/2026-W47.md",
+      "period": "2026-11-16〜2026-11-22",
+      "summary": "日次52件、7テーマ、4横断潮流を比較"
+    }
+  ],
+  "themes": [
+    {
+      "key": "language",
+      "title": "言語モデル",
+      "summary": "事前学習・指示調整・推論時探索から形式制約・実行検証へ。計算効率と意味的信頼性は別軸。",
+      "update": "拡散型LLMの有限オートマトン制約はBFCL-LiveのDream-7Bサンプリング正解率22.3%→69.0%（原著要旨）。",
+      "boundary": "構文妥当率100%でも意味的誤りが残り、臨床やイベント列への一般化は未実証。",
+      "gap": "同一予算で文法マスク、外部数値スコア、時間制約付き探索を比較する。",
+      "updated_at": "2026-11-22",
+      "weekly_url": "https://github.com/drkamoshika/papers/blob/main/reports/weekly/2026-W47.md",
+      "refs": [
+        {
+          "id": "arxiv:2607.07026",
+          "title": "Constrained Decoding for Diffusion Language Models via Efficient Inference over Finite Automata",
+          "url": "https://arxiv.org/abs/2607.07026"
+        }
+      ]
+    },
+    {
+      "key": "agents",
+      "title": "エージェント",
+      "summary": "RAG・ツール利用・分業・メモリが進む一方、証拠の受渡しで情報欠落が起こる。",
+      "update": "矛盾証拠の取得50.2%→68.7%でも検出16.2%→13.2%と報告。",
+      "boundary": "制御された文書レビュー課題での結果であり、全分業タスクへの一般化はできない。",
+      "gap": "証拠保持率と最終整合性を単独・共有メモリ・構造化委譲で比較。",
+      "updated_at": "2026-11-22",
+      "weekly_url": "https://github.com/drkamoshika/papers/blob/main/reports/weekly/2026-W47.md",
+      "refs": [
+        {
+          "id": "arxiv:2611.22245",
+          "title": "Multi-Agent Memory Inconsistency",
+          "url": "https://arxiv.org/abs/2611.22245"
+        }
+      ]
+    },
+    {
+      "key": "trust",
+      "title": "評価・安全性",
+      "summary": "最終正答率から過程の情報保持、校正、形式保証と意味保証の分離へ評価が拡張。",
+      "update": "小規模LLMの構造化生成で形式妥当率100%でも意味的失敗が残る（日次abstract）。",
+      "boundary": "有限オートマトンは連続数値・因果・患者安全性を保証しない。",
+      "gap": "保証範囲を形式・数値・時間・意味で分けて測定。",
+      "updated_at": "2026-11-22",
+      "weekly_url": "https://github.com/drkamoshika/papers/blob/main/reports/weekly/2026-W47.md",
+      "refs": [
+        {
+          "id": "arxiv:2609.23742",
+          "title": "Constrained Decoding Eliminates Structural Failures in Small LLMs",
+          "url": "https://arxiv.org/abs/2609.23742"
+        }
+      ]
+    },
+    {
+      "key": "medical",
+      "title": "医療AI",
+      "summary": "モデル精度、外部検証、臨床行動、患者転帰は異なる証拠階層。",
+      "update": "台湾2病院のAI-ECGクラスターRCTで抗凝固薬処方23.3%対12.0%、HR1.85（原著要旨）。",
+      "boundary": "脳卒中・死亡に有意差はなく、処方増加が長期患者利益を証明しない。",
+      "gap": "提示→採用→治療→転帰を段階別に測り、施設外検証を実施。",
+      "updated_at": "2026-11-22",
+      "weekly_url": "https://github.com/drkamoshika/papers/blob/main/reports/weekly/2026-W47.md",
+      "refs": [
+        {
+          "id": "pmid:40611485",
+          "title": "AI-ECG Atrial Fibrillation Pragmatic Randomized Trial",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40611485/"
+        }
+      ]
+    },
+    {
+      "key": "structured",
+      "title": "表形式・時系列・因果",
+      "summary": "予測誤差の低減と機構の識別可能性は異なる。観測設計・校正・分布外検証が鍵。",
+      "update": "今週は直接の大きな更新なし。微生物群集の条件組合せによる識別可能性を既存見解として維持。",
+      "boundary": "制御実験の結果を一般の時系列予測や因果推論へそのまま移せない。",
+      "gap": "観測条件を変えた識別可能性と予測校正を分けて評価。",
+      "updated_at": "2026-11-22",
+      "weekly_url": "https://github.com/drkamoshika/papers/blob/main/reports/weekly/2026-W47.md",
+      "refs": [
+        {
+          "id": "pmid:42869071",
+          "title": "Learning the mechanism of collective microbial function via random community-media pairing",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42869071/"
+        }
+      ]
+    },
+    {
+      "key": "events",
+      "title": "次イベント予測",
+      "summary": "点過程・待ち時間・系列生成の目的を区別し、長期生成の数値的・時間的整合性が未解決。",
+      "update": "直接の点過程の大きな更新なし。制約生成の研究を隣接知見として追加。",
+      "boundary": "文法制約の改善はハザード確率やイベント発生時刻の校正を保証しない。",
+      "gap": "ハザード予測を条件に、API候補選択とlogits制約の実装条件・精度を比較。",
+      "updated_at": "2026-11-22",
+      "weekly_url": "https://github.com/drkamoshika/papers/blob/main/reports/weekly/2026-W47.md",
+      "refs": [
+        {
+          "id": "arxiv:2610.19021",
+          "title": "Can LLMs Access their World Knowledge for Event Prediction?",
+          "url": "https://arxiv.org/abs/2610.19021"
+        }
+      ]
+    },
+    {
+      "key": "neuroscience",
+      "title": "神経科学",
+      "summary": "回路構造、神経活動、行動の関連づけには解像度・介入・個体差の課題が残る。",
+      "update": "今週の直接的な大きな更新なし。",
+      "boundary": "構造相関だけでは因果的な機構は同定できない。",
+      "gap": "接続・活動・行動を同時観測し介入で検証。",
+      "updated_at": "2026-11-22",
+      "weekly_url": "https://github.com/drkamoshika/papers/blob/main/reports/weekly/2026-W47.md",
+      "refs": [
+        {
+          "id": "pmid:39358519",
+          "title": "A Drosophila computational brain model reveals sensorimotor processing",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39358519/"
+        }
+      ]
+    }
+  ],
+  "living_url": "https://github.com/drkamoshika/papers/blob/main/reports/trends/overview.md",
+  "existing_map_url": "https://drkamoshika.github.io/papers/?view=map"
+}
