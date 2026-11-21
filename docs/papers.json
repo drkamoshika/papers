@@ -1213,12 +1213,12 @@
       ],
       "summary": "2019〜2026年2月のsystematic review/meta-analysisを俯瞰し、医療AIの実装領域・データ種別・研究集中を整理。368 reviewsを採用。",
       "objective": "医療AIに関する系統的レビューの研究分野・使用データ・臨床用途・倫理的論点を俯瞰し、実装に必要な研究課題を整理する。",
-      "methods": "2019年〜2026年2月にPubMed、Web of Science、Scopus、IEEE Xplore、CINAHLで発表された英語査読付きの系統的レビュー・メタ解析を検索するmapping review。",
-      "results": "368レビューを採用。画像、EHR、バイオマーカー・検査値が学習データの68%、診断・予後・治療がAI用途の80%超。倫理的問題はレビューの78.5%が言及。刊行数は2025年をピークに増加。",
-      "novelty": "個別AI modelではなく、医療AI分野全体がどこまで成熟しているかを俯瞰できる。",
-      "limitations": "一次試験の新たな統合効果量を推定する研究ではなく、英語査読済みレビューを対象とするため、レビュー間の重複や出版バイアスがあり得る。",
-      "why": "個別AI modelではなく、医療AI分野全体がどこまで成熟しているかを俯瞰できる。",
-      "details": "Publication date: 2026-07-18\nread_level: abstract\nTags: ['medical AI', 'mapping review', 'evidence synthesis', 'implementation']\nSummary: 2019〜2026年2月のsystematic review/meta-analysisを俯瞰し、医療AIの実装領域・データ種別・研究集中を整理。368 reviewsを採用。\nObjective: 医療AIに関する系統的レビューの研究分野・使用データ・臨床用途・倫理的論点を俯瞰し、実装に必要な研究課題を整理する。\nMethods: 2019年〜2026年2月にPubMed、Web of Science、Scopus、IEEE Xplore、CINAHLで発表された英語査読付きの系統的レビュー・メタ解析を検索するmapping review。\nData and results: 368レビューを採用。画像、EHR、バイオマーカー・検査値が学習データの68%、診断・予後・治療がAI用途の80%超。倫理的問題はレビューの78.5%が言及。刊行数は2025年をピークに増加。\nNovelty: 個別AI modelではなく、医療AI分野全体がどこまで成熟しているかを俯瞰できる。\nLimitations: 一次試験の新たな統合効果量を推定する研究ではなく、英語査読済みレビューを対象とするため、レビュー間の重複や出版バイアスがあり得る。"
+      "methods": "2019年から2026年2月までのPubMed、Web of Science、Scopus、IEEE Xplore、CINAHLを対象に、医療AIの系統的レビュー・メタ解析を検索するmapping review。個々の患者症例を再解析するのではなく、既存レビューが扱ったデータ様式、用途、倫理上の論点を分類し、研究の集中と空白を調べた。",
+      "results": "採用したレビューは368件。画像・EHR・バイオマーカー／検査値がデータの約68%、診断・予後・治療用途が80%超を占め、倫理的問題への言及は78.5%。数の多い用途が明確になった一方、これらの比率は研究テーマや報告内容の分布であり、個々のAI製品が治療に有効だった割合ではない。",
+      "novelty": "個別モデルのベンチマークを超えて、レビューを単位に研究領域の偏り・証拠成熟度の空白を可視化した。今後の研究計画では『多く発表されている課題』と『外部検証・前向き介入が蓄積している課題』を別々に数える必要がある。",
+      "limitations": "レビューをレビューする方法は同じ原著が複数のレビューで数えられることがあり、368報を独立した実験368件と解釈できない。英語の査読済み文献への選択と出版バイアス、異質な研究間の測定軸の差もある。",
+      "why": "個別モデルのベンチマークを超えて、レビューを単位に研究領域の偏り・証拠成熟度の空白を可視化した。今後の研究計画では『多く発表されている課題』と『外部検証・前向き介入が蓄積している課題』を別々に数える必要がある。",
+      "details": "Publication date: 2026-07-18\nread_level: abstract\nTags: ['medical AI', 'mapping review', 'evidence synthesis', 'implementation']\nSummary: 2019〜2026年2月のsystematic review/meta-analysisを俯瞰し、医療AIの実装領域・データ種別・研究集中を整理。368 reviewsを採用。\nObjective: 医療AIに関する系統的レビューの研究分野・使用データ・臨床用途・倫理的論点を俯瞰し、実装に必要な研究課題を整理する。\nMethods: 2019年から2026年2月までのPubMed、Web of Science、Scopus、IEEE Xplore、CINAHLを対象に、医療AIの系統的レビュー・メタ解析を検索するmapping review。個々の患者症例を再解析するのではなく、既存レビューが扱ったデータ様式、用途、倫理上の論点を分類し、研究の集中と空白を調べた。\nData and results: 採用したレビューは368件。画像・EHR・バイオマーカー／検査値がデータの約68%、診断・予後・治療用途が80%超を占め、倫理的問題への言及は78.5%。数の多い用途が明確になった一方、これらの比率は研究テーマや報告内容の分布であり、個々のAI製品が治療に有効だった割合ではない。\nNovelty: 個別モデルのベンチマークを超えて、レビューを単位に研究領域の偏り・証拠成熟度の空白を可視化した。今後の研究計画では『多く発表されている課題』と『外部検証・前向き介入が蓄積している課題』を別々に数える必要がある。\nLimitations: レビューをレビューする方法は同じ原著が複数のレビューで数えられることがあり、368報を独立した実験368件と解釈できない。英語の査読済み文献への選択と出版バイアス、異質な研究間の測定軸の差もある。"
     },
     {
       "title": "Human-AI Collaboration in Healthcare: A Scoping Review",
@@ -1237,12 +1237,12 @@
       ],
       "summary": "healthcareのhuman-AI collaboration実証研究をscoping review。17,463 recordsから140 studiesを採用し、診断解釈に研究が偏ることを示した。",
       "objective": "医療現場での人間とAIの共同作業が、どの臨床課題で、どの指標を用いて評価されているかを整理する。",
-      "methods": "Joanna Briggs Institute法とPRISMA-ScRに準拠し、2015年1月〜2025年10月の実証研究を対象とするscoping review。17,463レコードから140研究を採用。",
-      "results": "研究は診断画像などの解釈に偏り、スクリーニング・トリアージ、治療判断、事務運用の評価は少ない。診断解釈では人間-AIチームの利点を報告する研究が多かったが、効果は作業適合性・ワークフロー統合・訓練・信頼の校正に依存。患者・システム転帰まで評価する研究は少なかった。",
-      "novelty": "AI単体性能ではなくhuman-AI teamとしての効果とworkflow integrationを中心に整理。",
-      "limitations": "採用研究間で共同作業の『有効性』定義や測定指標が不統一。ほとんどが短期タスク指標で、責任・患者安全などの倫理的課題の実証評価は乏しい。",
-      "why": "AI単体性能ではなくhuman-AI teamとしての効果とworkflow integrationを中心に整理。",
-      "details": "Publication date: 2026-06-20\nread_level: abstract\nTags: ['human-AI collaboration', 'clinical workflow', 'scoping review', 'trust']\nSummary: healthcareのhuman-AI collaboration実証研究をscoping review。17,463 recordsから140 studiesを採用し、診断解釈に研究が偏ることを示した。\nObjective: 医療現場での人間とAIの共同作業が、どの臨床課題で、どの指標を用いて評価されているかを整理する。\nMethods: Joanna Briggs Institute法とPRISMA-ScRに準拠し、2015年1月〜2025年10月の実証研究を対象とするscoping review。17,463レコードから140研究を採用。\nData and results: 研究は診断画像などの解釈に偏り、スクリーニング・トリアージ、治療判断、事務運用の評価は少ない。診断解釈では人間-AIチームの利点を報告する研究が多かったが、効果は作業適合性・ワークフロー統合・訓練・信頼の校正に依存。患者・システム転帰まで評価する研究は少なかった。\nNovelty: AI単体性能ではなくhuman-AI teamとしての効果とworkflow integrationを中心に整理。\nLimitations: 採用研究間で共同作業の『有効性』定義や測定指標が不統一。ほとんどが短期タスク指標で、責任・患者安全などの倫理的課題の実証評価は乏しい。"
+      "methods": "Joanna Briggs Instituteの手引きとPRISMA-ScRに従うスコーピングレビュー。2015年1月〜2025年10月の17,463件の検索レコードから140実証研究を選び、人間とAIが同じ臨床タスクを実行する際の役割分担、ワークフローへの接続、評価指標や参加者を分類した。異質な患者転帰を一つの統合効果量に換算するメタ解析ではない。",
+      "results": "140研究は診断画像の解釈に集中し、トリアージ、治療選択、病院運営まで扱う比較は少なかった。診断解釈で人間・AIチームの優位を報告する研究は多いが、その利益は導入先のワークフロー、事前訓練、AIに対する適切な信頼などに左右される。患者転帰や医療システム全体の効果を測る研究は少数だった。",
+      "novelty": "AI単独の正解率ではなく、人間と組むことでどの仕事に純粋な利益が出るのかを評価単位へ置いた。二者の成績を比較する際は人間単独、AI単独、人間+AIの対照を揃えることが、技術の寄与を明らかにするうえで重要である。",
+      "limitations": "『共同作業が有効』の定義が研究間で統一されていない。人間の信頼度、監督負荷や安全責任は測定されない場合があり、短期タスクでの成績向上が長期的な患者利益へ結びつくとは限らない。",
+      "why": "AI単独の正解率ではなく、人間と組むことでどの仕事に純粋な利益が出るのかを評価単位へ置いた。二者の成績を比較する際は人間単独、AI単独、人間+AIの対照を揃えることが、技術の寄与を明らかにするうえで重要である。",
+      "details": "Publication date: 2026-06-20\nread_level: abstract\nTags: ['human-AI collaboration', 'clinical workflow', 'scoping review', 'trust']\nSummary: healthcareのhuman-AI collaboration実証研究をscoping review。17,463 recordsから140 studiesを採用し、診断解釈に研究が偏ることを示した。\nObjective: 医療現場での人間とAIの共同作業が、どの臨床課題で、どの指標を用いて評価されているかを整理する。\nMethods: Joanna Briggs Instituteの手引きとPRISMA-ScRに従うスコーピングレビュー。2015年1月〜2025年10月の17,463件の検索レコードから140実証研究を選び、人間とAIが同じ臨床タスクを実行する際の役割分担、ワークフローへの接続、評価指標や参加者を分類した。異質な患者転帰を一つの統合効果量に換算するメタ解析ではない。\nData and results: 140研究は診断画像の解釈に集中し、トリアージ、治療選択、病院運営まで扱う比較は少なかった。診断解釈で人間・AIチームの優位を報告する研究は多いが、その利益は導入先のワークフロー、事前訓練、AIに対する適切な信頼などに左右される。患者転帰や医療システム全体の効果を測る研究は少数だった。\nNovelty: AI単独の正解率ではなく、人間と組むことでどの仕事に純粋な利益が出るのかを評価単位へ置いた。二者の成績を比較する際は人間単独、AI単独、人間+AIの対照を揃えることが、技術の寄与を明らかにするうえで重要である。\nLimitations: 『共同作業が有効』の定義が研究間で統一されていない。人間の信頼度、監督負荷や安全責任は測定されない場合があり、短期タスクでの成績向上が長期的な患者利益へ結びつくとは限らない。"
     },
     {
       "title": "Real-world evaluation of large language model for patients medical and administrative queries in nuclear medicine",
@@ -1261,12 +1261,12 @@
       ],
       "summary": "実患者からprospectively収集したmedical/admin queriesに対し、ChatGPT v4.1と医師・事務スタッフの回答を比較評価。",
       "objective": "核医学の実患者から寄せられた医療・事務質問に、ChatGPT-4.1が医師・事務スタッフに比べどの程度適切に回答できるか検証する。",
-      "methods": "患者質問を前向き収集し、核医学医師・事務職員とChatGPT-4.1の回答を比較。医療・事務専門家と独立非専門評価者がQUEST枠組み17軸中15軸をLikert評価し、二項検定とPABAK一致率を解析。",
-      "results": "薬剤相互作用339件、医療42件、事務76件を解析。医療質問では10評価軸中8軸でLLM回答の76〜98%が医療専門家により人間回答と同等以上（p<0.001）。事務質問は非専門家の97%が情報量、86%が総合選好でLLMを評価。医療回答はLLMの方が情報量を評価される一方、人間回答の方が理解しやすいとする評価もあった。",
-      "novelty": "benchmark問題ではなく、実際の患者問い合わせを使ったreal-world LLM evaluation。",
-      "limitations": "核医学領域の実患者質問で、LLM回答の臨床的安全性・患者転帰を前向き介入として検証したわけではない。評価者間の選好差も大きく、臨床利用には追加の検証が必要。",
-      "why": "benchmark問題ではなく、実際の患者問い合わせを使ったreal-world LLM evaluation。",
-      "details": "Publication date: 2026-06-17\nread_level: abstract\nTags: ['clinical LLM', 'real-world evaluation', 'patient queries', 'nuclear medicine']\nSummary: 実患者からprospectively収集したmedical/admin queriesに対し、ChatGPT v4.1と医師・事務スタッフの回答を比較評価。\nObjective: 核医学の実患者から寄せられた医療・事務質問に、ChatGPT-4.1が医師・事務スタッフに比べどの程度適切に回答できるか検証する。\nMethods: 患者質問を前向き収集し、核医学医師・事務職員とChatGPT-4.1の回答を比較。医療・事務専門家と独立非専門評価者がQUEST枠組み17軸中15軸をLikert評価し、二項検定とPABAK一致率を解析。\nData and results: 薬剤相互作用339件、医療42件、事務76件を解析。医療質問では10評価軸中8軸でLLM回答の76〜98%が医療専門家により人間回答と同等以上（p<0.001）。事務質問は非専門家の97%が情報量、86%が総合選好でLLMを評価。医療回答はLLMの方が情報量を評価される一方、人間回答の方が理解しやすいとする評価もあった。\nNovelty: benchmark問題ではなく、実際の患者問い合わせを使ったreal-world LLM evaluation。\nLimitations: 核医学領域の実患者質問で、LLM回答の臨床的安全性・患者転帰を前向き介入として検証したわけではない。評価者間の選好差も大きく、臨床利用には追加の検証が必要。"
+      "methods": "核医学で実際に寄せられた患者問い合わせを前向きに収集し、医師・事務担当者とChatGPT-4.1の回答を比較。医療・事務の専門職と非専門の独立評価者がQUEST枠組みに基づく複数の評価軸をLikert尺度で判定し、二項検定と評価者間一致を検討した。試験用の人工的なQAだけでなく患者の実際の質問を使った点が特徴。",
+      "results": "薬剤相互作用339、医療質問42、事務質問76件を扱った。医療質問の10評価軸中8軸で、LLM回答の76〜98%が専門家に人間回答と同等以上と評価された。事務質問では非専門家の97%が情報量、86%が総合選好でLLMを評価したが、人間回答を分かりやすいとする評価もあった。文章量・選好は正確性と同義でない。",
+      "novelty": "患者からのリアルな質問を臨床職・事務職の回答と比較し、専門性の要求が異なる業務を分けて評価した。患者が知りたい情報を詳しく説明する能力と、実際に治療方針を正しく決定する能力は別である。",
+      "limitations": "回答の評価者による主観的判定であり、実際に患者へ回答を提供した際の誤解・受診行動・患者転帰の変化を測定していない。核医学の特定の問い合わせに限った結果である。",
+      "why": "患者からのリアルな質問を臨床職・事務職の回答と比較し、専門性の要求が異なる業務を分けて評価した。患者が知りたい情報を詳しく説明する能力と、実際に治療方針を正しく決定する能力は別である。",
+      "details": "Publication date: 2026-06-17\nread_level: abstract\nTags: ['clinical LLM', 'real-world evaluation', 'patient queries', 'nuclear medicine']\nSummary: 実患者からprospectively収集したmedical/admin queriesに対し、ChatGPT v4.1と医師・事務スタッフの回答を比較評価。\nObjective: 核医学の実患者から寄せられた医療・事務質問に、ChatGPT-4.1が医師・事務スタッフに比べどの程度適切に回答できるか検証する。\nMethods: 核医学で実際に寄せられた患者問い合わせを前向きに収集し、医師・事務担当者とChatGPT-4.1の回答を比較。医療・事務の専門職と非専門の独立評価者がQUEST枠組みに基づく複数の評価軸をLikert尺度で判定し、二項検定と評価者間一致を検討した。試験用の人工的なQAだけでなく患者の実際の質問を使った点が特徴。\nData and results: 薬剤相互作用339、医療質問42、事務質問76件を扱った。医療質問の10評価軸中8軸で、LLM回答の76〜98%が専門家に人間回答と同等以上と評価された。事務質問では非専門家の97%が情報量、86%が総合選好でLLMを評価したが、人間回答を分かりやすいとする評価もあった。文章量・選好は正確性と同義でない。\nNovelty: 患者からのリアルな質問を臨床職・事務職の回答と比較し、専門性の要求が異なる業務を分けて評価した。患者が知りたい情報を詳しく説明する能力と、実際に治療方針を正しく決定する能力は別である。\nLimitations: 回答の評価者による主観的判定であり、実際に患者へ回答を提供した際の誤解・受診行動・患者転帰の変化を測定していない。核医学の特定の問い合わせに限った結果である。"
     },
     {
       "title": "General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",
@@ -1285,12 +1285,12 @@
       ],
       "summary": "OpenEvidence / UpToDate Expert AIとfrontier general-purpose LLMを、MedQA、HealthBench、real clinical queriesで比較し、general-purpose modelsが全評価で上回ったと報告。",
       "objective": "医療特化LLMツールが汎用の最先端LLMに比べて優位であるか、独立した医療ベンチマークと実臨床由来質問で評価する。",
-      "methods": "OpenEvidence、UpToDate Expert AIと、GPT-5.2、Gemini 3.1 Pro、Claude Opus 4.6を比較。MedQA 500問、HealthBench 500問、実診療の匿名化医師質問100問からなるRCQを使用し、RCQは米国の臨床医12人がランダム化盲検採点（計1,800のモデル×質問の評価）。",
-      "results": "3つの評価すべてで汎用最先端LLMが医療特化AIツールを上回った。RCQにおける医療特化ツールの成績はGoogle SearchのAI Overview自動有効設定と同程度と報告。要旨に各モデルの絶対スコアはない。",
-      "novelty": "「医療特化modelなら一般modelより強い」という前提を独立比較で検証している。",
-      "limitations": "対象ツールの特定バージョンとベンチマークに依存し、実患者の転帰に直結する比較ではない。著者らは医療現場導入前の独立実証の必要性を強調。",
-      "why": "「医療特化modelなら一般modelより強い」という前提を独立比較で検証している。",
-      "details": "Publication date: 2026-06-12\nread_level: abstract\nTags: ['medical LLM', 'clinical AI', 'benchmark', 'real clinical queries']\nSummary: OpenEvidence / UpToDate Expert AIとfrontier general-purpose LLMを、MedQA、HealthBench、real clinical queriesで比較し、general-purpose modelsが全評価で上回ったと報告。\nObjective: 医療特化LLMツールが汎用の最先端LLMに比べて優位であるか、独立した医療ベンチマークと実臨床由来質問で評価する。\nMethods: OpenEvidence、UpToDate Expert AIと、GPT-5.2、Gemini 3.1 Pro、Claude Opus 4.6を比較。MedQA 500問、HealthBench 500問、実診療の匿名化医師質問100問からなるRCQを使用し、RCQは米国の臨床医12人がランダム化盲検採点（計1,800のモデル×質問の評価）。\nData and results: 3つの評価すべてで汎用最先端LLMが医療特化AIツールを上回った。RCQにおける医療特化ツールの成績はGoogle SearchのAI Overview自動有効設定と同程度と報告。要旨に各モデルの絶対スコアはない。\nNovelty: 「医療特化modelなら一般modelより強い」という前提を独立比較で検証している。\nLimitations: 対象ツールの特定バージョンとベンチマークに依存し、実患者の転帰に直結する比較ではない。著者らは医療現場導入前の独立実証の必要性を強調。"
+      "methods": "医療専用ツールOpenEvidenceとUpToDate Expert AI、汎用モデルGPT-5.2、Gemini 3.1 Pro、Claude Opus 4.6を比較。MedQAとHealthBench各500問に加え、匿名化された実臨床由来の医師質問100件を使うRCQを用意。RCQは米国の臨床医12人がランダム化・盲検の条件で採点し、モデルごとの回答品質を比較した。",
+      "results": "3つの評価データで汎用の最先端LLMが医療特化ツールを上回ったと報告。実臨床由来のRCQでも特化ツールの成績は自動AI概要を有効にしたGoogle検索と同程度だった。確認できた要旨には全モデルの絶対得点や差の信頼区間はなく、実際の患者アウトカムを比較した研究ではない。",
+      "novelty": "『医療特化製品なら医療の質問で必ず有利』という仮説を、専門家による盲検評価と医療ベンチマークの複数条件で試した。特化が必要な場合を議論するには、外部ガイドラインへのアクセスや安全な実行機能など、何を追加したかを分解して比較する必要がある。",
+      "limitations": "対象製品・モデルの版が変わればランキングが変わり得る。医師質問への回答の順位は診療での安全性・患者利益を直接保証せず、独立した運用試験が必要。",
+      "why": "『医療特化製品なら医療の質問で必ず有利』という仮説を、専門家による盲検評価と医療ベンチマークの複数条件で試した。特化が必要な場合を議論するには、外部ガイドラインへのアクセスや安全な実行機能など、何を追加したかを分解して比較する必要がある。",
+      "details": "Publication date: 2026-06-12\nread_level: abstract\nTags: ['medical LLM', 'clinical AI', 'benchmark', 'real clinical queries']\nSummary: OpenEvidence / UpToDate Expert AIとfrontier general-purpose LLMを、MedQA、HealthBench、real clinical queriesで比較し、general-purpose modelsが全評価で上回ったと報告。\nObjective: 医療特化LLMツールが汎用の最先端LLMに比べて優位であるか、独立した医療ベンチマークと実臨床由来質問で評価する。\nMethods: 医療専用ツールOpenEvidenceとUpToDate Expert AI、汎用モデルGPT-5.2、Gemini 3.1 Pro、Claude Opus 4.6を比較。MedQAとHealthBench各500問に加え、匿名化された実臨床由来の医師質問100件を使うRCQを用意。RCQは米国の臨床医12人がランダム化・盲検の条件で採点し、モデルごとの回答品質を比較した。\nData and results: 3つの評価データで汎用の最先端LLMが医療特化ツールを上回ったと報告。実臨床由来のRCQでも特化ツールの成績は自動AI概要を有効にしたGoogle検索と同程度だった。確認できた要旨には全モデルの絶対得点や差の信頼区間はなく、実際の患者アウトカムを比較した研究ではない。\nNovelty: 『医療特化製品なら医療の質問で必ず有利』という仮説を、専門家による盲検評価と医療ベンチマークの複数条件で試した。特化が必要な場合を議論するには、外部ガイドラインへのアクセスや安全な実行機能など、何を追加したかを分解して比較する必要がある。\nLimitations: 対象製品・モデルの版が変わればランキングが変わり得る。医師質問への回答の順位は診療での安全性・患者利益を直接保証せず、独立した運用試験が必要。"
     },
     {
       "title": "Integrating large language models for enhanced predictive analytics in healthcare",
@@ -1309,12 +1309,12 @@
       ],
       "summary": "structured EHRをlanguage-model形式で扱い、7B LLaMA architectureをclinical/operational predictionのmulti-task engineとして利用するHopkins LLMを提案。",
       "objective": "構造化EHRの異なる臨床・運用予測タスクを、複数の専用モデルを作る代わりに一つのLLMで扱えるようにする。",
-      "methods": "LLaMA 7Bを基盤とするHopkins LLMを作成し、Johns Hopkins Health Systemの42,160患者データで事前学習後、臨床予測タスクへ微調整。異なる外部医療システム3つ、合計1,329患者で30日再入院、90日死亡、30日ICU入室、治療推奨を評価。",
-      "results": "4つの外部予測タスクの平均ROC-AUCは0.84［0.82, 0.88］、ゼロショット汎用LLM基準より0.28高い（p<0.05）と報告。",
-      "novelty": "LLMを自由文生成ではなく、structured EHRの汎用predictive engineとして使う設計。",
-      "limitations": "外部検証は行われたが、検証対象は4タスクと1,329患者。長期的な実装、患者転帰や他診療領域での汎化は要旨では検証されていない。",
-      "why": "LLMを自由文生成ではなく、structured EHRの汎用predictive engineとして使う設計。",
-      "details": "Publication date: 2026-04-02\nread_level: abstract\nTags: ['EHR', 'clinical LLM', 'predictive analytics', 'multi-task learning']\nSummary: structured EHRをlanguage-model形式で扱い、7B LLaMA architectureをclinical/operational predictionのmulti-task engineとして利用するHopkins LLMを提案。\nObjective: 構造化EHRの異なる臨床・運用予測タスクを、複数の専用モデルを作る代わりに一つのLLMで扱えるようにする。\nMethods: LLaMA 7Bを基盤とするHopkins LLMを作成し、Johns Hopkins Health Systemの42,160患者データで事前学習後、臨床予測タスクへ微調整。異なる外部医療システム3つ、合計1,329患者で30日再入院、90日死亡、30日ICU入室、治療推奨を評価。\nData and results: 4つの外部予測タスクの平均ROC-AUCは0.84［0.82, 0.88］、ゼロショット汎用LLM基準より0.28高い（p<0.05）と報告。\nNovelty: LLMを自由文生成ではなく、structured EHRの汎用predictive engineとして使う設計。\nLimitations: 外部検証は行われたが、検証対象は4タスクと1,329患者。長期的な実装、患者転帰や他診療領域での汎化は要旨では検証されていない。"
+      "methods": "構造化EHRを入力にする汎用予測器としてLLaMA 7B由来のHopkins LLMを構成し、Johns Hopkinsの42,160人の記録で学習・微調整。30日再入院、90日死亡、30日ICU入室、治療推薦という異なる4課題を評価し、3つの外部医療システム、合計1,329人で汎用LLMのゼロショット利用と比較した。",
+      "results": "4つの外部予測課題の平均ROC-AUCは0.84（95% CI 0.82〜0.88）で、汎用LLMゼロショット基準より0.28高かったと報告。複数の転帰で予測のためにEHRデータへ適応する意味を示したが、AUCの平均は異なる疾患・転帰にまたがるので個別課題の成功率ではない。",
+      "novelty": "言語モデルを自由記述の医学QAへ使うのではなく、EHRの表・時系列データへ適応させて複数の臨床予測を共有する試み。研究上の比較では、同じ入力を使うXGBoost等の専門モデル、校正、時期外検証に対する増分を調べる必要がある。",
+      "limitations": "外部患者1,329人・4転帰の範囲であり、別の予測幅・疾病・病院におけるAUCや校正の維持は不明。医師が介入した場合の転帰改善や臨床実装による効果も示されていない。",
+      "why": "言語モデルを自由記述の医学QAへ使うのではなく、EHRの表・時系列データへ適応させて複数の臨床予測を共有する試み。研究上の比較では、同じ入力を使うXGBoost等の専門モデル、校正、時期外検証に対する増分を調べる必要がある。",
+      "details": "Publication date: 2026-04-02\nread_level: abstract\nTags: ['EHR', 'clinical LLM', 'predictive analytics', 'multi-task learning']\nSummary: structured EHRをlanguage-model形式で扱い、7B LLaMA architectureをclinical/operational predictionのmulti-task engineとして利用するHopkins LLMを提案。\nObjective: 構造化EHRの異なる臨床・運用予測タスクを、複数の専用モデルを作る代わりに一つのLLMで扱えるようにする。\nMethods: 構造化EHRを入力にする汎用予測器としてLLaMA 7B由来のHopkins LLMを構成し、Johns Hopkinsの42,160人の記録で学習・微調整。30日再入院、90日死亡、30日ICU入室、治療推薦という異なる4課題を評価し、3つの外部医療システム、合計1,329人で汎用LLMのゼロショット利用と比較した。\nData and results: 4つの外部予測課題の平均ROC-AUCは0.84（95% CI 0.82〜0.88）で、汎用LLMゼロショット基準より0.28高かったと報告。複数の転帰で予測のためにEHRデータへ適応する意味を示したが、AUCの平均は異なる疾患・転帰にまたがるので個別課題の成功率ではない。\nNovelty: 言語モデルを自由記述の医学QAへ使うのではなく、EHRの表・時系列データへ適応させて複数の臨床予測を共有する試み。研究上の比較では、同じ入力を使うXGBoost等の専門モデル、校正、時期外検証に対する増分を調べる必要がある。\nLimitations: 外部患者1,329人・4転帰の範囲であり、別の予測幅・疾病・病院におけるAUCや校正の維持は不明。医師が介入した場合の転帰改善や臨床実装による効果も示されていない。"
     },
     {
       "title": "Artificial Intelligence in Health Care: Clinical Opportunities, Validation Trends, and Implementation Challenges (2020-2025)",
@@ -1333,12 +1333,12 @@
       ],
       "summary": "2020〜2025年の医療AIを、clinical opportunityだけでなくvalidation trendとimplementation challengeの観点から整理するreview。",
       "objective": "2020〜2025年の医療AIについて、臨床的用途と外部検証の普及状況、実装を阻む要因を体系的に整理する。",
-      "methods": "PRISMA 2020に従いPubMed、IEEE Xplore、Web of Scienceで2020年1月〜2025年9月の、前向き評価または外部検証を伴う臨床AI原著研究を検索するsystematic review。",
-      "results": "15研究を採用し、深層学習60%、放射線科33.3%、腫瘍20%、循環器13.3%。画像診断モデルのAUC中央値は0.91。規制順守53.3%、説明可能性40.0%、データ品質33.3%、臨床統合26.7%が導入上の障壁。外部検証の報告率は2015〜2019年の23%から46.7%へ上昇と報告。",
-      "novelty": "model性能からdeploymentへ視点を移し、実装障壁をまとめている。",
-      "limitations": "採用研究は15件と少なく、領域横断的なAUC中央値は同一臨床課題での公平な性能比較を意味しない。導入障壁の集計は各論文の報告状況に左右される。",
-      "why": "model性能からdeploymentへ視点を移し、実装障壁をまとめている。",
-      "details": "Publication date: 2026-04-20\nread_level: abstract\nTags: ['medical AI', 'validation', 'implementation', 'review']\nSummary: 2020〜2025年の医療AIを、clinical opportunityだけでなくvalidation trendとimplementation challengeの観点から整理するreview。\nObjective: 2020〜2025年の医療AIについて、臨床的用途と外部検証の普及状況、実装を阻む要因を体系的に整理する。\nMethods: PRISMA 2020に従いPubMed、IEEE Xplore、Web of Scienceで2020年1月〜2025年9月の、前向き評価または外部検証を伴う臨床AI原著研究を検索するsystematic review。\nData and results: 15研究を採用し、深層学習60%、放射線科33.3%、腫瘍20%、循環器13.3%。画像診断モデルのAUC中央値は0.91。規制順守53.3%、説明可能性40.0%、データ品質33.3%、臨床統合26.7%が導入上の障壁。外部検証の報告率は2015〜2019年の23%から46.7%へ上昇と報告。\nNovelty: model性能からdeploymentへ視点を移し、実装障壁をまとめている。\nLimitations: 採用研究は15件と少なく、領域横断的なAUC中央値は同一臨床課題での公平な性能比較を意味しない。導入障壁の集計は各論文の報告状況に左右される。"
+      "methods": "PRISMA 2020に沿ってPubMed、IEEE Xplore、Web of Scienceの2020年1月〜2025年9月の医療AI研究を検索。外部検証または前向き評価を持つ臨床AI原著を抽出し、画像診断・予後などの用途、研究デザイン、実装上の制約を分類した。全医療AI研究の無作為抽出ではなく、強い証拠を持つ研究に絞ったレビュー。",
+      "results": "採用15研究の60%が深層学習、33.3%が放射線科、20%が腫瘍領域、13.3%が循環器領域。画像診断のAUC中央値0.91を報告した一方、規制対応53.3%、説明可能性40.0%、データ品質33.3%、臨床統合26.7%といった問題が文献で指摘された。AUC中央値は異なる医療課題の平均順位を意味しない。",
+      "novelty": "モデルの識別性能を並べるだけでなく、規制、説明可能性、データ品質、現場運用を一体で整理した。実用化可能性は開発時スコアとは別の複数条件で決まることが分かる。",
+      "limitations": "15研究と小規模で研究分野が偏り、障壁の割合は文献が何を記載したかに依存する。複数領域のAUCを一つに集約して、方法論ごとの優位性を論じることはできない。",
+      "why": "モデルの識別性能を並べるだけでなく、規制、説明可能性、データ品質、現場運用を一体で整理した。実用化可能性は開発時スコアとは別の複数条件で決まることが分かる。",
+      "details": "Publication date: 2026-04-20\nread_level: abstract\nTags: ['medical AI', 'validation', 'implementation', 'review']\nSummary: 2020〜2025年の医療AIを、clinical opportunityだけでなくvalidation trendとimplementation challengeの観点から整理するreview。\nObjective: 2020〜2025年の医療AIについて、臨床的用途と外部検証の普及状況、実装を阻む要因を体系的に整理する。\nMethods: PRISMA 2020に沿ってPubMed、IEEE Xplore、Web of Scienceの2020年1月〜2025年9月の医療AI研究を検索。外部検証または前向き評価を持つ臨床AI原著を抽出し、画像診断・予後などの用途、研究デザイン、実装上の制約を分類した。全医療AI研究の無作為抽出ではなく、強い証拠を持つ研究に絞ったレビュー。\nData and results: 採用15研究の60%が深層学習、33.3%が放射線科、20%が腫瘍領域、13.3%が循環器領域。画像診断のAUC中央値0.91を報告した一方、規制対応53.3%、説明可能性40.0%、データ品質33.3%、臨床統合26.7%といった問題が文献で指摘された。AUC中央値は異なる医療課題の平均順位を意味しない。\nNovelty: モデルの識別性能を並べるだけでなく、規制、説明可能性、データ品質、現場運用を一体で整理した。実用化可能性は開発時スコアとは別の複数条件で決まることが分かる。\nLimitations: 15研究と小規模で研究分野が偏り、障壁の割合は文献が何を記載したかに依存する。複数領域のAUCを一つに集約して、方法論ごとの優位性を論じることはできない。"
     },
     {
       "title": "The role of artificial intelligence in virtual emergency care: a systematic review",
@@ -1357,12 +1357,12 @@
       ],
       "summary": "virtual emergency careにおけるAI利用をsystematic reviewし、remote/virtual settingでのclinical decision supportの位置づけを整理。",
       "objective": "バーチャル救急医療におけるAIの臨床有効性、検証品質、現場導入に必要な証拠水準を評価する。",
-      "methods": "Embase、PsycINFO、MEDLINE、PubMed、Scopus、Web of Science、CINAHL、Cochraneを2025年3月まで検索。7,098レコードから重複除去後4,935件をスクリーニングし8研究採用。PROBAST+AI、TRIPOD+AI、GRADEでバイアス・報告品質・確実性を評価。",
-      "results": "8研究・参加者約50万人。正解率77.5〜100%、感度63〜100%、特異度60%（1研究）。すべての臨床研究で深刻なバイアスリスク、TRIPOD+AI平均適合率36.9%（30.9〜48.1%）、GRADEの証拠確実性は非常に低い〜低い。実患者の臨床アウトカムを測定した研究はゼロ。",
-      "novelty": "AI医療の中でもdeployment条件が特殊なvirtual emergency careに焦点を当てる。",
-      "limitations": "著者らは現在の証拠ではバーチャル救急への広範な臨床導入を支持できないと結論。前向き対照試験、臨床転帰測定、報告基準への準拠が不可欠。",
-      "why": "AI医療の中でもdeployment条件が特殊なvirtual emergency careに焦点を当てる。",
-      "details": "Publication date: 2026-03-22\nread_level: abstract\nTags: ['emergency care', 'virtual care', 'medical AI', 'systematic review']\nSummary: virtual emergency careにおけるAI利用をsystematic reviewし、remote/virtual settingでのclinical decision supportの位置づけを整理。\nObjective: バーチャル救急医療におけるAIの臨床有効性、検証品質、現場導入に必要な証拠水準を評価する。\nMethods: Embase、PsycINFO、MEDLINE、PubMed、Scopus、Web of Science、CINAHL、Cochraneを2025年3月まで検索。7,098レコードから重複除去後4,935件をスクリーニングし8研究採用。PROBAST+AI、TRIPOD+AI、GRADEでバイアス・報告品質・確実性を評価。\nData and results: 8研究・参加者約50万人。正解率77.5〜100%、感度63〜100%、特異度60%（1研究）。すべての臨床研究で深刻なバイアスリスク、TRIPOD+AI平均適合率36.9%（30.9〜48.1%）、GRADEの証拠確実性は非常に低い〜低い。実患者の臨床アウトカムを測定した研究はゼロ。\nNovelty: AI医療の中でもdeployment条件が特殊なvirtual emergency careに焦点を当てる。\nLimitations: 著者らは現在の証拠ではバーチャル救急への広範な臨床導入を支持できないと結論。前向き対照試験、臨床転帰測定、報告基準への準拠が不可欠。"
+      "methods": "2025年3月までのEmbase、PsycINFO、MEDLINE、PubMed、Scopus、Web of Science、CINAHL、Cochrane等を検索。7,098レコード、重複除外後4,935件をスクリーニングして仮想救急ケアのAI研究8件を選択。PROBAST+AI、TRIPOD+AI、GRADEを使いバイアス・報告の透明性・エビデンスの確実性を別に評価した。",
+      "results": "対象8研究で約50万人の参加者を扱ったが、報告された正解率77.5〜100%、感度63〜100%、特異度60%（1研究）という数値のばらつきが大きい。すべての臨床研究に深刻なバイアスリスクがあり、TRIPOD+AIの平均適合率36.9%、GRADEは非常に低い〜低い。患者の実際の転帰を測った研究はゼロだった。",
+      "novelty": "仮想救急のAIに限定して、数値精度の高さとエビデンスの確実性の低さを分けて実証的に整理した。臨床利用の判断はAUC・正解率だけでなく、研究デザインと患者関連アウトカムの有無に依存する。",
+      "limitations": "8研究の異質な目的・参照基準を横断するため、精度範囲を直接のモデル順位と解釈できない。前向きの実患者試験と安全性の観測が不足し、広範な導入を積極的に支持できない。",
+      "why": "仮想救急のAIに限定して、数値精度の高さとエビデンスの確実性の低さを分けて実証的に整理した。臨床利用の判断はAUC・正解率だけでなく、研究デザインと患者関連アウトカムの有無に依存する。",
+      "details": "Publication date: 2026-03-22\nread_level: abstract\nTags: ['emergency care', 'virtual care', 'medical AI', 'systematic review']\nSummary: virtual emergency careにおけるAI利用をsystematic reviewし、remote/virtual settingでのclinical decision supportの位置づけを整理。\nObjective: バーチャル救急医療におけるAIの臨床有効性、検証品質、現場導入に必要な証拠水準を評価する。\nMethods: 2025年3月までのEmbase、PsycINFO、MEDLINE、PubMed、Scopus、Web of Science、CINAHL、Cochrane等を検索。7,098レコード、重複除外後4,935件をスクリーニングして仮想救急ケアのAI研究8件を選択。PROBAST+AI、TRIPOD+AI、GRADEを使いバイアス・報告の透明性・エビデンスの確実性を別に評価した。\nData and results: 対象8研究で約50万人の参加者を扱ったが、報告された正解率77.5〜100%、感度63〜100%、特異度60%（1研究）という数値のばらつきが大きい。すべての臨床研究に深刻なバイアスリスクがあり、TRIPOD+AIの平均適合率36.9%、GRADEは非常に低い〜低い。患者の実際の転帰を測った研究はゼロだった。\nNovelty: 仮想救急のAIに限定して、数値精度の高さとエビデンスの確実性の低さを分けて実証的に整理した。臨床利用の判断はAUC・正解率だけでなく、研究デザインと患者関連アウトカムの有無に依存する。\nLimitations: 8研究の異質な目的・参照基準を横断するため、精度範囲を直接のモデル順位と解釈できない。前向きの実患者試験と安全性の観測が不足し、広範な導入を積極的に支持できない。"
     },
     {
       "title": "CritICL: Inference-Time Weak-to-Strong Generalization from Small Language Model Failure Modes",
@@ -1669,12 +1669,12 @@
       ],
       "summary": "2,077件のpsychosis-risk interview assessor notesからModernBERT、LLaMA-4、GPT-4.1 miniでリスク指標を抽出し、CHR判定と将来conversion予測への追加価値を評価。",
       "objective": "精神病発症の臨床的高リスク（CHR）を面接時の評価者メモから自動抽出し、既存のリスクスコアや将来の発症転帰の予測を補助できるか検証する。",
-      "methods": "Structured Interview for Psychosis-risk Syndromesの2,077面接の評価メモを対象に、教師ありModernBERT、ゼロ・few-shotのLLaMA-4とGPT-4.1 miniでリスク指標を生成。臨床CHR判定、SHARP・NAPLSリスクスコアとの関係、将来の移行予測への追加効果を調べる。",
-      "results": "ModernBERTによるCHR分類正解率82.67%、κ=0.63。CHR陽性判定はSHARP・NAPLSスコアそれぞれ+0.69・+0.85標準偏差と関連。decoderのリスクスコア1SD増加は従来スコア+0.24〜0.47SDに対応。将来移行予測の改善はSHARPを含むモデルで確認、NAPLSでは確認されなかった。",
-      "novelty": "構造化検査だけでなく、既に臨床で残される自由記述noteからリスク情報を補助的に取り出す現実的な使い方。",
-      "limitations": "一つの研究コンソーシアム由来の評価者メモでの概念実証であり、施設間転移や臨床での意思決定支援を前向きに検証していない。",
-      "why": "構造化検査だけでなく、既に臨床で残される自由記述noteからリスク情報を補助的に取り出す現実的な使い方。",
-      "details": "Publication date: 2026-08-06\nread_level: abstract\nTags: ['medical AI', 'psychiatry', 'LLM', 'clinical risk prediction']\nSummary: 2,077件のpsychosis-risk interview assessor notesからModernBERT、LLaMA-4、GPT-4.1 miniでリスク指標を抽出し、CHR判定と将来conversion予測への追加価値を評価。\nObjective: 精神病発症の臨床的高リスク（CHR）を面接時の評価者メモから自動抽出し、既存のリスクスコアや将来の発症転帰の予測を補助できるか検証する。\nMethods: Structured Interview for Psychosis-risk Syndromesの2,077面接の評価メモを対象に、教師ありModernBERT、ゼロ・few-shotのLLaMA-4とGPT-4.1 miniでリスク指標を生成。臨床CHR判定、SHARP・NAPLSリスクスコアとの関係、将来の移行予測への追加効果を調べる。\nData and results: ModernBERTによるCHR分類正解率82.67%、κ=0.63。CHR陽性判定はSHARP・NAPLSスコアそれぞれ+0.69・+0.85標準偏差と関連。decoderのリスクスコア1SD増加は従来スコア+0.24〜0.47SDに対応。将来移行予測の改善はSHARPを含むモデルで確認、NAPLSでは確認されなかった。\nNovelty: 構造化検査だけでなく、既に臨床で残される自由記述noteからリスク情報を補助的に取り出す現実的な使い方。\nLimitations: 一つの研究コンソーシアム由来の評価者メモでの概念実証であり、施設間転移や臨床での意思決定支援を前向きに検証していない。"
+      "methods": "Structured Interview for Psychosis-risk Syndromes（SIPS）の評価メモ2,077件から、ModernBERTの教師あり分類器とLLaMA-4・GPT-4.1 miniのゼロ／few-shot抽出を比較。生成したCHR陽性指標と既存のSHARP・NAPLSリスクスコアの関連を検討し、さらに将来の精神病への移行予測をどの程度上積みできるかを解析した。",
+      "results": "ModernBERTのCHR分類正解率は82.67%、Cohen κ=0.63。CHR陽性は既存SHARP・NAPLSリスクスコアとそれぞれ約0.69、0.85標準偏差の差を示した。将来移行予測の追加的利益はSHARPを含むモデルでは見られたがNAPLSでは確認されなかった。文章からの分類精度と将来転帰への増分価値は異なる。",
+      "novelty": "既に臨床で記録される評価者の自由記述からリスクを抽出し、独立した予後スコアへ情報を加える可能性を測った。『面接メモを正しくラベル化する』タスクと『未来の疾患発症を予測する』タスクの区別が重要。",
+      "limitations": "特定の臨床研究に由来するメモへの依存があり、医療者の記述スタイルや施設による変化への頑健性は不明。実際に早期介入の成績が改善するかを試したものではない。",
+      "why": "既に臨床で記録される評価者の自由記述からリスクを抽出し、独立した予後スコアへ情報を加える可能性を測った。『面接メモを正しくラベル化する』タスクと『未来の疾患発症を予測する』タスクの区別が重要。",
+      "details": "Publication date: 2026-08-06\nread_level: abstract\nTags: ['medical AI', 'psychiatry', 'LLM', 'clinical risk prediction']\nSummary: 2,077件のpsychosis-risk interview assessor notesからModernBERT、LLaMA-4、GPT-4.1 miniでリスク指標を抽出し、CHR判定と将来conversion予測への追加価値を評価。\nObjective: 精神病発症の臨床的高リスク（CHR）を面接時の評価者メモから自動抽出し、既存のリスクスコアや将来の発症転帰の予測を補助できるか検証する。\nMethods: Structured Interview for Psychosis-risk Syndromes（SIPS）の評価メモ2,077件から、ModernBERTの教師あり分類器とLLaMA-4・GPT-4.1 miniのゼロ／few-shot抽出を比較。生成したCHR陽性指標と既存のSHARP・NAPLSリスクスコアの関連を検討し、さらに将来の精神病への移行予測をどの程度上積みできるかを解析した。\nData and results: ModernBERTのCHR分類正解率は82.67%、Cohen κ=0.63。CHR陽性は既存SHARP・NAPLSリスクスコアとそれぞれ約0.69、0.85標準偏差の差を示した。将来移行予測の追加的利益はSHARPを含むモデルでは見られたがNAPLSでは確認されなかった。文章からの分類精度と将来転帰への増分価値は異なる。\nNovelty: 既に臨床で記録される評価者の自由記述からリスクを抽出し、独立した予後スコアへ情報を加える可能性を測った。『面接メモを正しくラベル化する』タスクと『未来の疾患発症を予測する』タスクの区別が重要。\nLimitations: 特定の臨床研究に由来するメモへの依存があり、医療者の記述スタイルや施設による変化への頑健性は不明。実際に早期介入の成績が改善するかを試したものではない。"
     },
     {
       "title": "Enhancing antimicrobial stewardship using a retrieval-augmented generation large language model for infectious disease management",
@@ -1693,12 +1693,12 @@
       ],
       "summary": "Hospital Israelita Albert Einsteinの抗菌薬guideをRAG化し、institutional protocolへ沿った回答検索とusabilityを評価。",
       "objective": "施設内抗菌薬投与指針に沿った回答を、検索拡張LLMで提供し、プロトコル遵守と使いやすさを改善する。",
-      "methods": "ブラジルのHospital Israelita Albert Einsteinの抗菌薬ガイドを手作業でチャンク化してvector databaseへ格納。文書処理・検索質問処理・LLM・プロンプト管理の4モジュールからなるRAGを構築。医師による10症例・使用感を検索成績とSystem Usability Scaleで評価。",
-      "results": "SUS使用性スコア82で高い評価。20人の医師の合計120応答のうち、適切な指針は100件（83%）で検索され、そのうち71%が正しい内容と判断された。",
-      "novelty": "general medical knowledgeではなく、施設内guidelineをgrounding sourceにしてprotocol adherenceを狙う実装。",
-      "limitations": "ガイドに含まれない／複雑な症例では検索できない場合があり、83%の検索ヒットを安全な治療推奨の正解率と同一視できない。10ケースでの試行評価であり患者転帰は未検証。",
-      "why": "general medical knowledgeではなく、施設内guidelineをgrounding sourceにしてprotocol adherenceを狙う実装。",
-      "details": "Publication date: 2026-08-03\nread_level: abstract\nTags: ['medical AI', 'RAG', 'antimicrobial stewardship', 'clinical guideline']\nSummary: Hospital Israelita Albert Einsteinの抗菌薬guideをRAG化し、institutional protocolへ沿った回答検索とusabilityを評価。\nObjective: 施設内抗菌薬投与指針に沿った回答を、検索拡張LLMで提供し、プロトコル遵守と使いやすさを改善する。\nMethods: ブラジルのHospital Israelita Albert Einsteinの抗菌薬ガイドを手作業でチャンク化してvector databaseへ格納。文書処理・検索質問処理・LLM・プロンプト管理の4モジュールからなるRAGを構築。医師による10症例・使用感を検索成績とSystem Usability Scaleで評価。\nData and results: SUS使用性スコア82で高い評価。20人の医師の合計120応答のうち、適切な指針は100件（83%）で検索され、そのうち71%が正しい内容と判断された。\nNovelty: general medical knowledgeではなく、施設内guidelineをgrounding sourceにしてprotocol adherenceを狙う実装。\nLimitations: ガイドに含まれない／複雑な症例では検索できない場合があり、83%の検索ヒットを安全な治療推奨の正解率と同一視できない。10ケースでの試行評価であり患者転帰は未検証。"
+      "methods": "ブラジルのHospital Israelita Albert Einsteinの施設内抗菌薬ガイドを人手で文書チャンクへ分割し、ベクトル検索＋LLM回答を構築。文書処理、問いの処理、検索・生成、プロンプト管理を接続する4モジュールを用い、医師が10症例に対して検索適切性、回答正確性、System Usability Scale（SUS）を評価した。",
+      "results": "20名の医師による合計120応答のうち、適切なガイドライン部分が検索されたのは100件（83%）。その検索部分に基づく回答のうち内容を正しいと評価された割合は71%。SUSは82で使いやすさは高かった。83%は検索ヒット率であり、患者への抗菌薬投与推奨が83%正しいという意味ではない。",
+      "novelty": "汎用医学知識で生成するのでなく、特定施設の処方プロトコルを根拠として検索・提示する設計。検索の成否と回答の正しさを別段階で評価したことが現場導入上重要。",
+      "limitations": "10症例に由来する試行で、ガイド未収録例や複雑な併存疾患への対応は不明。医師が参照した後の処方・耐性菌・患者転帰の改善を示さない。",
+      "why": "汎用医学知識で生成するのでなく、特定施設の処方プロトコルを根拠として検索・提示する設計。検索の成否と回答の正しさを別段階で評価したことが現場導入上重要。",
+      "details": "Publication date: 2026-08-03\nread_level: abstract\nTags: ['medical AI', 'RAG', 'antimicrobial stewardship', 'clinical guideline']\nSummary: Hospital Israelita Albert Einsteinの抗菌薬guideをRAG化し、institutional protocolへ沿った回答検索とusabilityを評価。\nObjective: 施設内抗菌薬投与指針に沿った回答を、検索拡張LLMで提供し、プロトコル遵守と使いやすさを改善する。\nMethods: ブラジルのHospital Israelita Albert Einsteinの施設内抗菌薬ガイドを人手で文書チャンクへ分割し、ベクトル検索＋LLM回答を構築。文書処理、問いの処理、検索・生成、プロンプト管理を接続する4モジュールを用い、医師が10症例に対して検索適切性、回答正確性、System Usability Scale（SUS）を評価した。\nData and results: 20名の医師による合計120応答のうち、適切なガイドライン部分が検索されたのは100件（83%）。その検索部分に基づく回答のうち内容を正しいと評価された割合は71%。SUSは82で使いやすさは高かった。83%は検索ヒット率であり、患者への抗菌薬投与推奨が83%正しいという意味ではない。\nNovelty: 汎用医学知識で生成するのでなく、特定施設の処方プロトコルを根拠として検索・提示する設計。検索の成否と回答の正しさを別段階で評価したことが現場導入上重要。\nLimitations: 10症例に由来する試行で、ガイド未収録例や複雑な併存疾患への対応は不明。医師が参照した後の処方・耐性菌・患者転帰の改善を示さない。"
     },
     {
       "title": "Large Language Model-Based Clinical Decision Support for Antibiotic Selection and Dose Recommendation in Hospitalized Patients With Pneumonia: Multicenter Retrospective Study",
@@ -1718,12 +1718,12 @@
       ],
       "summary": "pneumonia入院患者で、類似症例retrieval + guideline knowledge graph + clinician rule constraintを組み合わせたLLMに抗菌薬選択とdose recommendationを行わせ、多施設外部validation。",
       "objective": "肺炎入院患者への抗菌薬選択と用量推奨を、施設間で検証可能な根拠付きLLM意思決定支援として構築する。",
-      "methods": "中国2病院の入院患者331人（開発233、外部検証98）のEHR叙述、薬剤注文、腎・肝機能指標を使い、類似症例vector検索とガイドライン知識グラフのdual-branch検索、臨床医定義の規則制約、LLM推論を組み合わせる。DeepSeek-V3、GLM-4.6、GPT-4oでF1とJaccardを比較。",
-      "results": "DeepSeek-V3で内部検証の抗菌薬選択F1 0.8110、選択＋用量F1 0.7538。外部検証では抗菌薬選択F1 0.8605（95% CI 0.7891〜0.9252）、選択＋用量F1 0.8503（95% CI 0.7789〜0.9150）。規則発火と根拠を提示可能。",
-      "novelty": "LLMを自由生成させず、clinical ruleとretrievalを組み合わせ、外部施設で性能を検証している。",
-      "limitations": "2病院331人の後ろ向き評価で、異なる耐性菌環境への一般化、実患者への前向き投薬安全性と治療転帰は未検証。",
-      "why": "LLMを自由生成させず、clinical ruleとretrievalを組み合わせ、外部施設で性能を検証している。",
-      "details": "Publication date: 2026-08-04\nread_level: abstract\nTags: ['medical AI', 'LLM', 'antibiotics', 'RAG', 'knowledge graph']\nSummary: pneumonia入院患者で、類似症例retrieval + guideline knowledge graph + clinician rule constraintを組み合わせたLLMに抗菌薬選択とdose recommendationを行わせ、多施設外部validation。\nObjective: 肺炎入院患者への抗菌薬選択と用量推奨を、施設間で検証可能な根拠付きLLM意思決定支援として構築する。\nMethods: 中国2病院の入院患者331人（開発233、外部検証98）のEHR叙述、薬剤注文、腎・肝機能指標を使い、類似症例vector検索とガイドライン知識グラフのdual-branch検索、臨床医定義の規則制約、LLM推論を組み合わせる。DeepSeek-V3、GLM-4.6、GPT-4oでF1とJaccardを比較。\nData and results: DeepSeek-V3で内部検証の抗菌薬選択F1 0.8110、選択＋用量F1 0.7538。外部検証では抗菌薬選択F1 0.8605（95% CI 0.7891〜0.9252）、選択＋用量F1 0.8503（95% CI 0.7789〜0.9150）。規則発火と根拠を提示可能。\nNovelty: LLMを自由生成させず、clinical ruleとretrievalを組み合わせ、外部施設で性能を検証している。\nLimitations: 2病院331人の後ろ向き評価で、異なる耐性菌環境への一般化、実患者への前向き投薬安全性と治療転帰は未検証。"
+      "methods": "中国2病院の肺炎入院患者331人（開発233、施設外検証98）を対象にEHR記述、既存処方、腎・肝機能を整理。類似症例のベクトル検索と抗菌薬ガイドラインの知識グラフ検索を二系統で使い、医師が定めた投薬規則でLLM出力を制限する。DeepSeek-V3、GLM-4.6、GPT-4oを使って選択薬剤と用量の一致をF1・Jaccardで評価した。",
+      "results": "DeepSeek-V3の内部検証F1は薬剤選択0.8110、薬剤＋用量0.7538。別病院での検証では選択0.8605［95% CI 0.7891〜0.9252］、選択＋用量0.8503［0.7789〜0.9150］を報告。内部・外部の患者数や構成が違うためF1が外部で高いことだけで『分布外で性能が向上した』と解釈できない。",
+      "novelty": "臨床で意味を持つ知識検索と投薬上のルールを自由生成の周囲に配置し、薬剤の名前だけでなく用量まで評価した。LLMの説明文がもっともらしくても薬剤と用量を独立に検査する必要があることを示す。",
+      "limitations": "後ろ向きの2施設・331人で、耐性菌パターン、病院ルール、患者集団が大きく変わる環境では追加検証が必要。実際に自動処方して安全性・治療転帰を評価した試験ではない。",
+      "why": "臨床で意味を持つ知識検索と投薬上のルールを自由生成の周囲に配置し、薬剤の名前だけでなく用量まで評価した。LLMの説明文がもっともらしくても薬剤と用量を独立に検査する必要があることを示す。",
+      "details": "Publication date: 2026-08-04\nread_level: abstract\nTags: ['medical AI', 'LLM', 'antibiotics', 'RAG', 'knowledge graph']\nSummary: pneumonia入院患者で、類似症例retrieval + guideline knowledge graph + clinician rule constraintを組み合わせたLLMに抗菌薬選択とdose recommendationを行わせ、多施設外部validation。\nObjective: 肺炎入院患者への抗菌薬選択と用量推奨を、施設間で検証可能な根拠付きLLM意思決定支援として構築する。\nMethods: 中国2病院の肺炎入院患者331人（開発233、施設外検証98）を対象にEHR記述、既存処方、腎・肝機能を整理。類似症例のベクトル検索と抗菌薬ガイドラインの知識グラフ検索を二系統で使い、医師が定めた投薬規則でLLM出力を制限する。DeepSeek-V3、GLM-4.6、GPT-4oを使って選択薬剤と用量の一致をF1・Jaccardで評価した。\nData and results: DeepSeek-V3の内部検証F1は薬剤選択0.8110、薬剤＋用量0.7538。別病院での検証では選択0.8605［95% CI 0.7891〜0.9252］、選択＋用量0.8503［0.7789〜0.9150］を報告。内部・外部の患者数や構成が違うためF1が外部で高いことだけで『分布外で性能が向上した』と解釈できない。\nNovelty: 臨床で意味を持つ知識検索と投薬上のルールを自由生成の周囲に配置し、薬剤の名前だけでなく用量まで評価した。LLMの説明文がもっともらしくても薬剤と用量を独立に検査する必要があることを示す。\nLimitations: 後ろ向きの2施設・331人で、耐性菌パターン、病院ルール、患者集団が大きく変わる環境では追加検証が必要。実際に自動処方して安全性・治療転帰を評価した試験ではない。"
     },
     {
       "title": "Reporting Quality of Large Language Model Studies: A Cross-Sectional Audit of High-Ranking Radiology and Medical Imaging Journals",
@@ -1742,12 +1742,12 @@
       ],
       "summary": "2025年の上位radiology/imaging誌に掲載されたLLM研究102本をMI-CLEAR-LLMで監査し、再現性に必要な情報がどこまで報告されているか評価。",
       "objective": "放射線・画像診断分野のLLM研究が、再現に必要な情報を国際報告基準に沿って十分記載しているか監査する。",
-      "methods": "2025年にQ1放射線系誌へ掲載されたLLM原著201件から、雑誌掲載数に応じて102件を抽出。MI-CLEAR-LLM 2025版への準拠を一次評価・二次評価・必要に応じた合議で判定し、雑誌差をKruskal–Wallis検定などで比較。",
-      "results": "平均準拠率51.2±14.7%（22.2〜84.2%）。テスト独立性80.2%に対しprompt実行設定29.4%、確率的出力管理33.1%、学習データカットオフ9.8%、prompt表現の理由15.6%。誌間差p=0.011、KJR平均72.8±2.7%。",
-      "novelty": "LLM性能そのものではなく、研究結果を再現・比較できるレベルで報告されているかを定量化している。",
-      "limitations": "2025年の一部Q1誌を対象とした横断監査で、論文記載の有無を測るものでモデル性能の真偽や臨床妥当性を直接判定しない。",
-      "why": "LLM性能そのものではなく、研究結果を再現・比較できるレベルで報告されているかを定量化している。",
-      "details": "Publication date: 2026-08-04\nread_level: abstract\nTags: ['medical AI', 'LLM evaluation', 'reproducibility', 'reporting quality']\nSummary: 2025年の上位radiology/imaging誌に掲載されたLLM研究102本をMI-CLEAR-LLMで監査し、再現性に必要な情報がどこまで報告されているか評価。\nObjective: 放射線・画像診断分野のLLM研究が、再現に必要な情報を国際報告基準に沿って十分記載しているか監査する。\nMethods: 2025年にQ1放射線系誌へ掲載されたLLM原著201件から、雑誌掲載数に応じて102件を抽出。MI-CLEAR-LLM 2025版への準拠を一次評価・二次評価・必要に応じた合議で判定し、雑誌差をKruskal–Wallis検定などで比較。\nData and results: 平均準拠率51.2±14.7%（22.2〜84.2%）。テスト独立性80.2%に対しprompt実行設定29.4%、確率的出力管理33.1%、学習データカットオフ9.8%、prompt表現の理由15.6%。誌間差p=0.011、KJR平均72.8±2.7%。\nNovelty: LLM性能そのものではなく、研究結果を再現・比較できるレベルで報告されているかを定量化している。\nLimitations: 2025年の一部Q1誌を対象とした横断監査で、論文記載の有無を測るものでモデル性能の真偽や臨床妥当性を直接判定しない。"
+      "methods": "2025年の高評価放射線医学誌に掲載されたLLM原著201件から102件を雑誌別の件数に応じて抽出。MI-CLEAR-LLM 2025の報告項目を満たしているかを独立評価者が監査し、異議は合議で整理。雑誌ごとの準拠率もKruskal–Wallis検定で比較した。これはモデル性能を再実行する監査ではなく、論文に書かれた情報の網羅性を測る研究。",
+      "results": "平均の報告基準準拠は51.2±14.7%、範囲22.2〜84.2%。テスト独立性は80.2%が記述した一方、プロンプト実行条件29.4%、確率出力の管理33.1%、学習データのカットオフ9.8%、プロンプト記述の根拠15.6%と低かった。雑誌間差はP=0.011。これらは実験の再現可能性を読者が確認しづらいことを示す。",
+      "novelty": "医学LLM論文で不足しやすい情報を性能結果から切り離して測った。研究ノートやダッシュボードでも、モデル名だけでなく版、プロンプト、ランダム性、評価分割、データ時点を残すことが後からの比較可能性を左右する。",
+      "limitations": "記述がないことは実験を実施していないことと同義ではなく、報告品質と手法の実際の妥当性は異なる。2025年・選定された上位誌に限った監査である。",
+      "why": "医学LLM論文で不足しやすい情報を性能結果から切り離して測った。研究ノートやダッシュボードでも、モデル名だけでなく版、プロンプト、ランダム性、評価分割、データ時点を残すことが後からの比較可能性を左右する。",
+      "details": "Publication date: 2026-08-04\nread_level: abstract\nTags: ['medical AI', 'LLM evaluation', 'reproducibility', 'reporting quality']\nSummary: 2025年の上位radiology/imaging誌に掲載されたLLM研究102本をMI-CLEAR-LLMで監査し、再現性に必要な情報がどこまで報告されているか評価。\nObjective: 放射線・画像診断分野のLLM研究が、再現に必要な情報を国際報告基準に沿って十分記載しているか監査する。\nMethods: 2025年の高評価放射線医学誌に掲載されたLLM原著201件から102件を雑誌別の件数に応じて抽出。MI-CLEAR-LLM 2025の報告項目を満たしているかを独立評価者が監査し、異議は合議で整理。雑誌ごとの準拠率もKruskal–Wallis検定で比較した。これはモデル性能を再実行する監査ではなく、論文に書かれた情報の網羅性を測る研究。\nData and results: 平均の報告基準準拠は51.2±14.7%、範囲22.2〜84.2%。テスト独立性は80.2%が記述した一方、プロンプト実行条件29.4%、確率出力の管理33.1%、学習データのカットオフ9.8%、プロンプト記述の根拠15.6%と低かった。雑誌間差はP=0.011。これらは実験の再現可能性を読者が確認しづらいことを示す。\nNovelty: 医学LLM論文で不足しやすい情報を性能結果から切り離して測った。研究ノートやダッシュボードでも、モデル名だけでなく版、プロンプト、ランダム性、評価分割、データ時点を残すことが後からの比較可能性を左右する。\nLimitations: 記述がないことは実験を実施していないことと同義ではなく、報告品質と手法の実際の妥当性は異なる。2025年・選定された上位誌に限った監査である。"
     },
     {
       "title": "Large language model-based simulated patient training for heart failure palliative care communication: a pilot study",
@@ -1766,12 +1766,12 @@
       ],
       "summary": "advanced heart failureのpalliative care communicationを日本語LLM simulated patientで訓練し、自動framework-based feedbackを返すweb appのpilot評価。",
       "objective": "日本語LLM模擬患者による心不全緩和ケアの対話練習が実施可能で、医師のコミュニケーション自己効力感へ初期的効果があるか検証する。",
-      "methods": "進行心不全を想定した日本語Webアプリで、医師が1回の模擬患者会話を行い枠組みに沿った自動フィードバックを受ける単群pilot試験。実施前後の自己効力感を質問紙で比較。",
-      "results": "10セッションを分析。平均7.6±2.0発話往復、LLM応答約3秒、フィードバック約17秒。緩和ケアコミュニケーション知識+1.7（補正p<0.01）、会話自信+1.2（補正p=0.03）の改善。他領域は有意差なし。",
-      "novelty": "medical LLMを診断支援ではなく、反復可能な対話訓練環境として使う具体的応用。",
-      "limitations": "小規模・単群・1回の訓練で、対照群がなく練習効果と真のスキル向上を切り分けられない。患者との実対話や長期転帰は未検証。",
-      "why": "medical LLMを診断支援ではなく、反復可能な対話訓練環境として使う具体的応用。",
-      "details": "Publication date: 2026-07-22\nread_level: abstract\nTags: ['medical education', 'LLM', 'simulated patient', 'palliative care']\nSummary: advanced heart failureのpalliative care communicationを日本語LLM simulated patientで訓練し、自動framework-based feedbackを返すweb appのpilot評価。\nObjective: 日本語LLM模擬患者による心不全緩和ケアの対話練習が実施可能で、医師のコミュニケーション自己効力感へ初期的効果があるか検証する。\nMethods: 進行心不全を想定した日本語Webアプリで、医師が1回の模擬患者会話を行い枠組みに沿った自動フィードバックを受ける単群pilot試験。実施前後の自己効力感を質問紙で比較。\nData and results: 10セッションを分析。平均7.6±2.0発話往復、LLM応答約3秒、フィードバック約17秒。緩和ケアコミュニケーション知識+1.7（補正p<0.01）、会話自信+1.2（補正p=0.03）の改善。他領域は有意差なし。\nNovelty: medical LLMを診断支援ではなく、反復可能な対話訓練環境として使う具体的応用。\nLimitations: 小規模・単群・1回の訓練で、対照群がなく練習効果と真のスキル向上を切り分けられない。患者との実対話や長期転帰は未検証。"
+      "methods": "日本語の進行心不全・緩和ケア場面を想定したWeb上のLLM模擬患者と医師が1回の会話を行い、コミュニケーション技術の枠組みに沿う自動フィードバックを受ける単群pilot研究。医師の実行負担と、訓練前後の知識・会話自信を質問紙で比べた。別の教育法をランダムに割り付けた対照試験ではない。",
+      "results": "10セッションで平均7.6±2.0往復、LLM応答約3秒、フィードバック約17秒と実行可能性を示した。緩和ケアの会話知識は+1.7（補正P＜0.01）、会話自信は+1.2（P=0.03）、他の評価領域では有意差がなかった。改善は自己評価・知識の短期変化であり、実患者への対応技能や転帰の向上を直接測ったものではない。",
+      "novelty": "医学的回答を生成するのでなく、訓練相手として何度も使える模擬患者へLLMを応用した。学習支援の評価では、応答の自然さだけでなく医師が実患者に接する場面での技能転移を測る必要がある。",
+      "limitations": "10セッションの小規模・単群評価で、通常のロールプレイとの差、練習への慣れ、長期保持が分からない。患者への利用を前向きに評価する研究ではない。",
+      "why": "医学的回答を生成するのでなく、訓練相手として何度も使える模擬患者へLLMを応用した。学習支援の評価では、応答の自然さだけでなく医師が実患者に接する場面での技能転移を測る必要がある。",
+      "details": "Publication date: 2026-07-22\nread_level: abstract\nTags: ['medical education', 'LLM', 'simulated patient', 'palliative care']\nSummary: advanced heart failureのpalliative care communicationを日本語LLM simulated patientで訓練し、自動framework-based feedbackを返すweb appのpilot評価。\nObjective: 日本語LLM模擬患者による心不全緩和ケアの対話練習が実施可能で、医師のコミュニケーション自己効力感へ初期的効果があるか検証する。\nMethods: 日本語の進行心不全・緩和ケア場面を想定したWeb上のLLM模擬患者と医師が1回の会話を行い、コミュニケーション技術の枠組みに沿う自動フィードバックを受ける単群pilot研究。医師の実行負担と、訓練前後の知識・会話自信を質問紙で比べた。別の教育法をランダムに割り付けた対照試験ではない。\nData and results: 10セッションで平均7.6±2.0往復、LLM応答約3秒、フィードバック約17秒と実行可能性を示した。緩和ケアの会話知識は+1.7（補正P＜0.01）、会話自信は+1.2（P=0.03）、他の評価領域では有意差がなかった。改善は自己評価・知識の短期変化であり、実患者への対応技能や転帰の向上を直接測ったものではない。\nNovelty: 医学的回答を生成するのでなく、訓練相手として何度も使える模擬患者へLLMを応用した。学習支援の評価では、応答の自然さだけでなく医師が実患者に接する場面での技能転移を測る必要がある。\nLimitations: 10セッションの小規模・単群評価で、通常のロールプレイとの差、練習への慣れ、長期保持が分からない。患者への利用を前向きに評価する研究ではない。"
     },
     {
       "title": "Image-based evaluation of a commercial AI synthetic CT generator for brain and prostate MR-only radiotherapy",
@@ -1790,12 +1790,12 @@
       ],
       "summary": "FDA 510(k) clearedのTheraPanacea synthetic CTをbrain/prostate MR-only planningで画像・幾何学的に評価。",
       "objective": "FDA 510(k)認可の商用synthetic CT生成AIが、脳・前立腺のMR単独放射線治療計画で骨・空気・インプラントを含む画像と幾何学を適切に再現するか評価する。",
-      "methods": "脳20人、前立腺20人の同日CT/MRペアを後ろ向きに比較。TheraPanaceaのsCTと参照CTで軟部組織HU、臓器輪郭体積、重心差、境界距離、骨ランドマーク、インプラント周囲を定量評価。",
-      "results": "軟部組織の平均HU差は50HU未満、構造重心ずれ2mm未満、境界MDA 5mm未満、骨ランドマーク1mm未満。骨では最大347±14 HU（大腿骨頭）や455±50HU（仙骨）の圧縮、歯科インプラントはCT比で約9,000HU過小評価。",
-      "novelty": "research prototypeでなくcommercial cleared AIを、implantやboneなど失敗しやすい条件まで含めて検証している。",
-      "limitations": "骨・空気境界・インプラントで系統的なHU誤差があり、部位・施設固有の線量検証と小構造の手動確認が必要。40人の画像比較だけで臨床実装の安全性は証明できない。",
-      "why": "research prototypeでなくcommercial cleared AIを、implantやboneなど失敗しやすい条件まで含めて検証している。",
-      "details": "Publication date: 2026-08-03\nread_level: abstract\nTags: ['medical imaging', 'synthetic CT', 'radiotherapy', 'commercial AI']\nSummary: FDA 510(k) clearedのTheraPanacea synthetic CTをbrain/prostate MR-only planningで画像・幾何学的に評価。\nObjective: FDA 510(k)認可の商用synthetic CT生成AIが、脳・前立腺のMR単独放射線治療計画で骨・空気・インプラントを含む画像と幾何学を適切に再現するか評価する。\nMethods: 脳20人、前立腺20人の同日CT/MRペアを後ろ向きに比較。TheraPanaceaのsCTと参照CTで軟部組織HU、臓器輪郭体積、重心差、境界距離、骨ランドマーク、インプラント周囲を定量評価。\nData and results: 軟部組織の平均HU差は50HU未満、構造重心ずれ2mm未満、境界MDA 5mm未満、骨ランドマーク1mm未満。骨では最大347±14 HU（大腿骨頭）や455±50HU（仙骨）の圧縮、歯科インプラントはCT比で約9,000HU過小評価。\nNovelty: research prototypeでなくcommercial cleared AIを、implantやboneなど失敗しやすい条件まで含めて検証している。\nLimitations: 骨・空気境界・インプラントで系統的なHU誤差があり、部位・施設固有の線量検証と小構造の手動確認が必要。40人の画像比較だけで臨床実装の安全性は証明できない。"
+      "methods": "脳20人、前立腺20人の同日CT・MRIを後ろ向きに収集。FDA 510(k)認可の商用AIでMRIから合成CT（sCT）を生成し、実測CTとのHU差だけでなく輪郭体積・重心・境界距離、骨ランドマーク、歯科インプラント周辺を比較した。平均誤差と特定構造での最悪の差を分ける設計。",
+      "results": "軟部組織の平均HU差は50未満、重心位置ずれは2mm未満、境界平均距離は5mm未満で、一般的な軟部組織の幾何学は概ね一致。一方、大腿骨頭・仙骨ではHUが大きく過小表現され、歯科インプラントはCTに対して約9,000HU過小評価。平均的な類似性が良くても線量計算に重要な高密度物質で失敗する。",
+      "novelty": "研究室内のモデルではなく実配備候補の商用AIを、局所の骨・インプラントという安全上の弱点まで掘り下げて試験した。どの指標を臨床的な許容誤差へ対応させるかが重要という示唆。",
+      "limitations": "40患者・2部位の画像比較であり、実際の治療計画の線量誤差や患者転帰の差を前向きに評価していない。施設ごとの撮像条件、金属体、低頻度の特殊な構造への追加検証が必要。",
+      "why": "研究室内のモデルではなく実配備候補の商用AIを、局所の骨・インプラントという安全上の弱点まで掘り下げて試験した。どの指標を臨床的な許容誤差へ対応させるかが重要という示唆。",
+      "details": "Publication date: 2026-08-03\nread_level: abstract\nTags: ['medical imaging', 'synthetic CT', 'radiotherapy', 'commercial AI']\nSummary: FDA 510(k) clearedのTheraPanacea synthetic CTをbrain/prostate MR-only planningで画像・幾何学的に評価。\nObjective: FDA 510(k)認可の商用synthetic CT生成AIが、脳・前立腺のMR単独放射線治療計画で骨・空気・インプラントを含む画像と幾何学を適切に再現するか評価する。\nMethods: 脳20人、前立腺20人の同日CT・MRIを後ろ向きに収集。FDA 510(k)認可の商用AIでMRIから合成CT（sCT）を生成し、実測CTとのHU差だけでなく輪郭体積・重心・境界距離、骨ランドマーク、歯科インプラント周辺を比較した。平均誤差と特定構造での最悪の差を分ける設計。\nData and results: 軟部組織の平均HU差は50未満、重心位置ずれは2mm未満、境界平均距離は5mm未満で、一般的な軟部組織の幾何学は概ね一致。一方、大腿骨頭・仙骨ではHUが大きく過小表現され、歯科インプラントはCTに対して約9,000HU過小評価。平均的な類似性が良くても線量計算に重要な高密度物質で失敗する。\nNovelty: 研究室内のモデルではなく実配備候補の商用AIを、局所の骨・インプラントという安全上の弱点まで掘り下げて試験した。どの指標を臨床的な許容誤差へ対応させるかが重要という示唆。\nLimitations: 40患者・2部位の画像比較であり、実際の治療計画の線量誤差や患者転帰の差を前向きに評価していない。施設ごとの撮像条件、金属体、低頻度の特殊な構造への追加検証が必要。"
     },
     {
       "title": "AI-assisted VMAT planning incorporating deep learning-based dose prediction for head and neck cancer",
@@ -1814,12 +1814,12 @@
       ],
       "summary": "deep-learning dose predictionを使うRatoGuideでHNC VMAT planを作成し、複雑症例ではphysicistがhotspotを手修正するhuman-in-the-loop workflowを評価。",
       "objective": "頭頸部癌の複雑なVMAT照射計画で、AI線量予測と人による再最適化を組み合わせると治療品質を標準化・省力化できるか検証する。",
-      "methods": "患者11人の12計画（大きな腫瘍や破裂後形状変化を含む）を対象に、専門プランナーの臨床計画とRatoGuideの深層学習線量予測に基づく計画を比較。hotspotが施設制約Dmax<115%を超えた場合は物理士が手動調整。標的と臓器リスク・適合度・作業時間を比較。",
-      "results": "標的カバーを維持し脊髄PRV最大線量は27.50→23.97Gyへ低下。12計画中3件の初期hotspotは人手調整で施設基準に収まり、平均計画時間は約2時間→30分に短縮。",
-      "novelty": "「完全自動化」ではなく、AIが苦手な不規則症例を人が補正する現実的運用を定量評価。",
-      "limitations": "単施設の患者11人・12計画という小規模検証で、治療結果や長期安全性の実証ではない。難症例では手動再最適化が必要。",
-      "why": "「完全自動化」ではなく、AIが苦手な不規則症例を人が補正する現実的運用を定量評価。",
-      "details": "Publication date: 2026-07-26\nread_level: abstract\nTags: ['radiotherapy planning', 'deep learning', 'human-in-the-loop', 'head and neck cancer']\nSummary: deep-learning dose predictionを使うRatoGuideでHNC VMAT planを作成し、複雑症例ではphysicistがhotspotを手修正するhuman-in-the-loop workflowを評価。\nObjective: 頭頸部癌の複雑なVMAT照射計画で、AI線量予測と人による再最適化を組み合わせると治療品質を標準化・省力化できるか検証する。\nMethods: 患者11人の12計画（大きな腫瘍や破裂後形状変化を含む）を対象に、専門プランナーの臨床計画とRatoGuideの深層学習線量予測に基づく計画を比較。hotspotが施設制約Dmax<115%を超えた場合は物理士が手動調整。標的と臓器リスク・適合度・作業時間を比較。\nData and results: 標的カバーを維持し脊髄PRV最大線量は27.50→23.97Gyへ低下。12計画中3件の初期hotspotは人手調整で施設基準に収まり、平均計画時間は約2時間→30分に短縮。\nNovelty: 「完全自動化」ではなく、AIが苦手な不規則症例を人が補正する現実的運用を定量評価。\nLimitations: 単施設の患者11人・12計画という小規模検証で、治療結果や長期安全性の実証ではない。難症例では手動再最適化が必要。"
+      "methods": "頭頸部癌の11患者から12のVMAT照射計画を対象とし、熟練プランナーが作成した臨床計画と、深層学習線量予測RatoGuideを基にしたAI支援計画を比較。標的のカバーと脊髄などリスク臓器への線量、計画作業時間を測り、施設基準Dmax＜115%を満たさないhotspotは人間の医療物理士が修正した。",
+      "results": "標的カバーを保ったまま脊髄PRV最大線量は27.50Gyから23.97Gyへ減少。12計画中3計画で初期hotspotが発生したが人手調整により制約へ収めた。平均作業時間は約2時間から30分へ短縮。AIだけで12/12を無調整で完了したわけではなく、人間の再最適化を含む成果である。",
+      "novelty": "完全自律化を目指すのではなく、難しい不規則症例を臨床家が調整する協働手順としてAIの時間短縮と計画品質を評価した。AIと人間の作業を分離し、どの症例で再計算・監督が必要になるかを検証する方向につながる。",
+      "limitations": "患者11人・12計画の小規模評価で、別施設のプランナーや新しい装置に対する再現性は未確認。線量分布の改善は患者転帰・副作用の減少を証明しない。",
+      "why": "完全自律化を目指すのではなく、難しい不規則症例を臨床家が調整する協働手順としてAIの時間短縮と計画品質を評価した。AIと人間の作業を分離し、どの症例で再計算・監督が必要になるかを検証する方向につながる。",
+      "details": "Publication date: 2026-07-26\nread_level: abstract\nTags: ['radiotherapy planning', 'deep learning', 'human-in-the-loop', 'head and neck cancer']\nSummary: deep-learning dose predictionを使うRatoGuideでHNC VMAT planを作成し、複雑症例ではphysicistがhotspotを手修正するhuman-in-the-loop workflowを評価。\nObjective: 頭頸部癌の複雑なVMAT照射計画で、AI線量予測と人による再最適化を組み合わせると治療品質を標準化・省力化できるか検証する。\nMethods: 頭頸部癌の11患者から12のVMAT照射計画を対象とし、熟練プランナーが作成した臨床計画と、深層学習線量予測RatoGuideを基にしたAI支援計画を比較。標的のカバーと脊髄などリスク臓器への線量、計画作業時間を測り、施設基準Dmax＜115%を満たさないhotspotは人間の医療物理士が修正した。\nData and results: 標的カバーを保ったまま脊髄PRV最大線量は27.50Gyから23.97Gyへ減少。12計画中3計画で初期hotspotが発生したが人手調整により制約へ収めた。平均作業時間は約2時間から30分へ短縮。AIだけで12/12を無調整で完了したわけではなく、人間の再最適化を含む成果である。\nNovelty: 完全自律化を目指すのではなく、難しい不規則症例を臨床家が調整する協働手順としてAIの時間短縮と計画品質を評価した。AIと人間の作業を分離し、どの症例で再計算・監督が必要になるかを検証する方向につながる。\nLimitations: 患者11人・12計画の小規模評価で、別施設のプランナーや新しい装置に対する再現性は未確認。線量分布の改善は患者転帰・副作用の減少を証明しない。"
     },
     {
       "title": "Scanner-agnostic artificial intelligence approach for fast bone scintigraphy",
@@ -1838,12 +1838,12 @@
       ],
       "summary": "scanner-specific retrainingを不要にするadaptive-diffusion U-Netで、骨シンチのhalf-time / half-dose画像をreconstruct。multi-vendor retrospective dataに加え、未学習scannerを含むprospective validationを実施。",
       "objective": "ガンマカメラの機種ごとに再学習せず、骨シンチグラフィーの撮影時間・投与量を半分にしても診断品質を維持する。",
-      "methods": "4機種からの多施設後ろ向き3,635検査を10〜70%のカウントへPoisson間引きし、diffusion層を含むU-Netを学習。182枚でSSIM等を評価し、未学習Philips機種20例を含む前向き60患者で専門医3人による盲検5段階評価。",
-      "results": "50%カウントでSSIM 0.903±0.045→0.963±0.032、PSNR 30.50±4.13→40.85±4.55dB（p<0.001）。倍速AI画像の主観スコア4.4±0.7は通常撮影4.5±0.5と同程度で、診断上の不一致は報告なし。",
-      "novelty": "医療画像AIで重要なscanner/domain shiftを、未学習vendorを含むprospective testで正面から評価している。",
-      "limitations": "前向き評価は60例であり、広範な病変・機種での検証には追加症例が必要。著者にAI提供会社との利害関係が開示されている。",
-      "why": "医療画像AIで重要なscanner/domain shiftを、未学習vendorを含むprospective testで正面から評価している。",
-      "details": "Publication date: 2026-07-22\nread_level: abstract\nTags: ['nuclear medicine', 'denoising', 'multicenter AI', 'prospective validation']\nSummary: scanner-specific retrainingを不要にするadaptive-diffusion U-Netで、骨シンチのhalf-time / half-dose画像をreconstruct。multi-vendor retrospective dataに加え、未学習scannerを含むprospective validationを実施。\nObjective: ガンマカメラの機種ごとに再学習せず、骨シンチグラフィーの撮影時間・投与量を半分にしても診断品質を維持する。\nMethods: 4機種からの多施設後ろ向き3,635検査を10〜70%のカウントへPoisson間引きし、diffusion層を含むU-Netを学習。182枚でSSIM等を評価し、未学習Philips機種20例を含む前向き60患者で専門医3人による盲検5段階評価。\nData and results: 50%カウントでSSIM 0.903±0.045→0.963±0.032、PSNR 30.50±4.13→40.85±4.55dB（p<0.001）。倍速AI画像の主観スコア4.4±0.7は通常撮影4.5±0.5と同程度で、診断上の不一致は報告なし。\nNovelty: 医療画像AIで重要なscanner/domain shiftを、未学習vendorを含むprospective testで正面から評価している。\nLimitations: 前向き評価は60例であり、広範な病変・機種での検証には追加症例が必要。著者にAI提供会社との利害関係が開示されている。"
+      "methods": "4機種から収集した後ろ向き骨シンチグラフィー3,635件をPoisson間引きで10〜70%カウントに減らし、diffusion層を含むU-Netでノイズ除去・再構成を学習。182画像でSSIM・PSNRを検証し、学習に含まれないPhilips装置20例を含む前向き患者60人で放射線専門医3人の盲検画像品質評価を行った。",
+      "results": "50%カウントの条件でSSIMは0.903±0.045→0.963±0.032、PSNRは30.50±4.13→40.85±4.55dB（P＜0.001）。前向きの専門家による評価では倍速撮影のAI画像4.4±0.7点、通常撮影4.5±0.5点で、診断上の不一致を報告していない。ただし少数例での不一致なしが全病変での安全性を保証するわけではない。",
+      "novelty": "機種依存の画像改善を、異なるベンダーも含む前向き試験へ接続した。入力信号を半分にしても診断に必要な画質を確保できるかという実務的制約に対し、画像指標と読影評価を分けて示した点が重要。",
+      "limitations": "前向き評価60例で低頻度病変や特殊装置に対する統計的保証は限定的。提供会社との利害関係開示があり、独立した大規模な外部追試が望まれる。",
+      "why": "機種依存の画像改善を、異なるベンダーも含む前向き試験へ接続した。入力信号を半分にしても診断に必要な画質を確保できるかという実務的制約に対し、画像指標と読影評価を分けて示した点が重要。",
+      "details": "Publication date: 2026-07-22\nread_level: abstract\nTags: ['nuclear medicine', 'denoising', 'multicenter AI', 'prospective validation']\nSummary: scanner-specific retrainingを不要にするadaptive-diffusion U-Netで、骨シンチのhalf-time / half-dose画像をreconstruct。multi-vendor retrospective dataに加え、未学習scannerを含むprospective validationを実施。\nObjective: ガンマカメラの機種ごとに再学習せず、骨シンチグラフィーの撮影時間・投与量を半分にしても診断品質を維持する。\nMethods: 4機種から収集した後ろ向き骨シンチグラフィー3,635件をPoisson間引きで10〜70%カウントに減らし、diffusion層を含むU-Netでノイズ除去・再構成を学習。182画像でSSIM・PSNRを検証し、学習に含まれないPhilips装置20例を含む前向き患者60人で放射線専門医3人の盲検画像品質評価を行った。\nData and results: 50%カウントの条件でSSIMは0.903±0.045→0.963±0.032、PSNRは30.50±4.13→40.85±4.55dB（P＜0.001）。前向きの専門家による評価では倍速撮影のAI画像4.4±0.7点、通常撮影4.5±0.5点で、診断上の不一致を報告していない。ただし少数例での不一致なしが全病変での安全性を保証するわけではない。\nNovelty: 機種依存の画像改善を、異なるベンダーも含む前向き試験へ接続した。入力信号を半分にしても診断に必要な画質を確保できるかという実務的制約に対し、画像指標と読影評価を分けて示した点が重要。\nLimitations: 前向き評価60例で低頻度病変や特殊装置に対する統計的保証は限定的。提供会社との利害関係開示があり、独立した大規模な外部追試が望まれる。"
     },
     {
       "title": "Subgroup Differences in Agreement Between an Algorithm Guided Large Language Model and Routine Emergency Department Triage",
