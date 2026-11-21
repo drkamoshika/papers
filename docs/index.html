@@ -152,7 +152,17 @@ window.addEventListener("popstate",()=>{
  if(p){renderReader(p);window.scrollTo(0,0);$("reader-title").focus({preventScroll:true});}
  else{showCatalog();const saved=history.state||{};requestAnimationFrame(()=>{const card=overviewState.active?[...$("overview").querySelectorAll("[data-map-paper]")].find(e=>e.dataset.mapPaper===saved.focusId):[...$("list").querySelectorAll("[data-id]")].find(e=>e.dataset.id===saved.focusId);if(card)card.focus({preventScroll:true});window.scrollTo(0,saved.catalogScroll||0);});}
 });
-const loadCollection=async(file,collection)=>{const r=await fetch(file,{cache:"no-cache"});if(!r.ok)throw Error(file+": "+r.status);const data=await r.json();if(!Array.isArray(data.papers))throw Error(file+": invalid papers");return data.papers.map(p=>({...p,collections:[collection]}));};
+const loadCollection=async(file,collection)=>{
+ const r=await fetch(file,{cache:"no-cache"});if(!r.ok)throw Error(file+": "+r.status);
+ const data=await r.json();if(!Array.isArray(data.papers))throw Error(file+": invalid papers");
+ if(collection==="foundations"){
+  try{
+   const response=await fetch("./foundation-review-overrides.json",{cache:"no-cache"});
+   if(response.ok){const patch=await response.json();const updates=patch.overrides||{};for(const p of data.papers)if(Object.prototype.hasOwnProperty.call(updates,p.id))Object.assign(p,updates[p.id]);}
+  }catch(error){console.warn("基礎文献の改稿データは未読込。元の要約を表示します。",error);}
+ }
+ return data.papers.map(p=>({...p,collections:[collection]}));
+};
 readFilters();initializeOverview();syncOverviewMode();
 Promise.allSettled([loadCollection("./papers.json","daily"),loadCollection("./foundations.json","foundations")]).then(results=>{
  const merged=new Map();available=results.flatMap((r,i)=>r.status==="fulfilled"?[["daily","foundations"][i]]:[]);
