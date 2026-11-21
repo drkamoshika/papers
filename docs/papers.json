@@ -1863,12 +1863,12 @@
       ],
       "summary": "1,960件の成人救急受診で、標準化promptからLLMに5段階triageを割り当てさせ、routine ED triageとの一致度とsubgroup差を評価した。5段階accuracyは71.3%、weighted κ=0.824。urgent/non-urgentではAUC 0.768、sensitivity 0.630、specificity 0.906だった。",
       "objective": "アルゴリズム誘導LLMによる救急重症度分類と通常トリアージの一致度を測定し、患者属性ごとの危険な過小評価の偏りを確認する。",
-      "methods": "成人救急受診1,960件の後ろ向き研究。年齢、性別、主訴、既往、血圧、脈拍、SpO2、体温、GCSを定型promptに入力し5段階ESI相当区分をLLMに割り当て、通常の救急トリアージと一致率、weighted κ、AUC、群別不一致を比較。",
-      "results": "5段階正解率71.3%、weighted κ=0.824。緊急／非緊急のAUC 0.768、感度0.630、特異度0.906。通常より低い緊急度に判定する割合9.8%、高い緊急度18.9%。過小判定は高齢・外傷・糖尿病群で多い。",
-      "novelty": "単純な平均精度ではなく、年齢・糖尿病・外傷などで「低くtriageしてしまう」discordanceが偏る点を示しており、臨床LLMの安全性評価として実務的。",
-      "limitations": "比較基準は実際の通常トリアージであり独立した臨床的正解ではない。患者転帰との照合や前向き安全性評価は未実施。",
-      "why": "単純な平均精度ではなく、年齢・糖尿病・外傷などで「低くtriageしてしまう」discordanceが偏る点を示しており、臨床LLMの安全性評価として実務的。",
-      "details": "Publication date: 2026-08-26\nread_level: abstract\nTags: ['emergency medicine', 'triage', 'LLM', 'safety', 'subgroup analysis']\nSummary: 1,960件の成人救急受診で、標準化promptからLLMに5段階triageを割り当てさせ、routine ED triageとの一致度とsubgroup差を評価した。5段階accuracyは71.3%、weighted κ=0.824。urgent/non-urgentではAUC 0.768、sensitivity 0.630、specificity 0.906だった。\nObjective: アルゴリズム誘導LLMによる救急重症度分類と通常トリアージの一致度を測定し、患者属性ごとの危険な過小評価の偏りを確認する。\nMethods: 成人救急受診1,960件の後ろ向き研究。年齢、性別、主訴、既往、血圧、脈拍、SpO2、体温、GCSを定型promptに入力し5段階ESI相当区分をLLMに割り当て、通常の救急トリアージと一致率、weighted κ、AUC、群別不一致を比較。\nData and results: 5段階正解率71.3%、weighted κ=0.824。緊急／非緊急のAUC 0.768、感度0.630、特異度0.906。通常より低い緊急度に判定する割合9.8%、高い緊急度18.9%。過小判定は高齢・外傷・糖尿病群で多い。\nNovelty: 単純な平均精度ではなく、年齢・糖尿病・外傷などで「低くtriageしてしまう」discordanceが偏る点を示しており、臨床LLMの安全性評価として実務的。\nLimitations: 比較基準は実際の通常トリアージであり独立した臨床的正解ではない。患者転帰との照合や前向き安全性評価は未実施。"
+      "methods": "成人救急受診1,960件を後ろ向きに抽出。年齢、性別、主訴、既往、血圧、心拍、SpO2、体温、意識レベルなどを構造化プロンプトでLLMへ渡し、5段階の救急重症度を割り当てた。通常の看護師等のトリアージとの一致率・重み付きκ、緊急／非緊急二値のAUROC・感度・特異度を算出し、患者背景別の過小判定を検討。",
+      "results": "5段階一致率71.3%、重み付きκ=0.824。緊急度二値ではAUROC 0.768、感度0.630、特異度0.906。通常の判定より低緊急度にした割合は9.8%、高緊急度にした割合は18.9%で、過小判定は高齢・外傷・糖尿病群に集中。平均的な一致が良くても、緊急例の見逃しと群別偏りは別に評価すべき。",
+      "novelty": "通常のトリアージとの総合一致だけでなく、危険な過小評価が起きやすいサブグループを特定した。医療AIの安全性を論じる際には、平均AUROCと、重大なケースに対する感度・見逃し方向を分ける必要がある。",
+      "limitations": "参照ラベルは通常の救急トリアージで、独立した臨床的真値や患者転帰ではない。単一の後ろ向きデータであり、導入により救急患者の予後が改善することは未実証。",
+      "why": "通常のトリアージとの総合一致だけでなく、危険な過小評価が起きやすいサブグループを特定した。医療AIの安全性を論じる際には、平均AUROCと、重大なケースに対する感度・見逃し方向を分ける必要がある。",
+      "details": "Publication date: 2026-08-26\nread_level: abstract\nTags: ['emergency medicine', 'triage', 'LLM', 'safety', 'subgroup analysis']\nSummary: 1,960件の成人救急受診で、標準化promptからLLMに5段階triageを割り当てさせ、routine ED triageとの一致度とsubgroup差を評価した。5段階accuracyは71.3%、weighted κ=0.824。urgent/non-urgentではAUC 0.768、sensitivity 0.630、specificity 0.906だった。\nObjective: アルゴリズム誘導LLMによる救急重症度分類と通常トリアージの一致度を測定し、患者属性ごとの危険な過小評価の偏りを確認する。\nMethods: 成人救急受診1,960件を後ろ向きに抽出。年齢、性別、主訴、既往、血圧、心拍、SpO2、体温、意識レベルなどを構造化プロンプトでLLMへ渡し、5段階の救急重症度を割り当てた。通常の看護師等のトリアージとの一致率・重み付きκ、緊急／非緊急二値のAUROC・感度・特異度を算出し、患者背景別の過小判定を検討。\nData and results: 5段階一致率71.3%、重み付きκ=0.824。緊急度二値ではAUROC 0.768、感度0.630、特異度0.906。通常の判定より低緊急度にした割合は9.8%、高緊急度にした割合は18.9%で、過小判定は高齢・外傷・糖尿病群に集中。平均的な一致が良くても、緊急例の見逃しと群別偏りは別に評価すべき。\nNovelty: 通常のトリアージとの総合一致だけでなく、危険な過小評価が起きやすいサブグループを特定した。医療AIの安全性を論じる際には、平均AUROCと、重大なケースに対する感度・見逃し方向を分ける必要がある。\nLimitations: 参照ラベルは通常の救急トリアージで、独立した臨床的真値や患者転帰ではない。単一の後ろ向きデータであり、導入により救急患者の予後が改善することは未実証。"
     },
     {
       "title": "A bimodal large language model reduces misalignment in patient education: A double-blinded randomized trial",
@@ -1888,12 +1888,12 @@
       ],
       "summary": "textだけでなくaudio cueも統合するbimodal LLM「Dolphin」を構築し、16,583 patient education cases由来64,200 utterancesで評価。555患者のdouble-blind randomized trialでは、text-only LLMより満足度、suggestion acceptance、proactive disclosureが高く、7日以内のunplanned recontactも少なかった。",
       "objective": "患者教育でテキストだけのLLMが見落とす感情・意味的ニーズを、音声情報を統合したbimodal LLMで改善する。",
-      "methods": "6診療科・3施設の16,583教育症例に由来する64,200発話を使いtext-onlyの感情・意味不一致を分析。テキスト＋音声のDolphinを開発し、感情認識、意味整合、ablations、対照text-only LLMとの555患者二重盲検ランダム化試験を実施。",
-      "results": "text-onlyの感情不一致36.7%、意味不一致28.3%。Dolphinの感情認識0.886対0.713、意味整合84.9%対82.1%。ランダム化試験では満足度98.6%対93.8%、提案受容76.1%対58.9%、自発情報開示44.6%対26.5%、7日以内の予定外再相談12.9%対22.9%（p=0.002）。",
-      "novelty": "「医療LLMは言語が正しければよい」ではなく、音声に含まれる感情cueまで使ってmisalignmentを減らすという、multimodal clinical communicationの強い実証研究。",
-      "limitations": "評価は設定された患者教育シナリオと対象施設に依存。短期満足・相談行動の改善は示されたが長期疾患転帰への影響は未確認。",
-      "why": "「医療LLMは言語が正しければよい」ではなく、音声に含まれる感情cueまで使ってmisalignmentを減らすという、multimodal clinical communicationの強い実証研究。",
-      "details": "Publication date: 2026-08-17\nread_level: abstract\nTags: ['multimodal LLM', 'patient education', 'audio', 'randomized trial', 'communication']\nSummary: textだけでなくaudio cueも統合するbimodal LLM「Dolphin」を構築し、16,583 patient education cases由来64,200 utterancesで評価。555患者のdouble-blind randomized trialでは、text-only LLMより満足度、suggestion acceptance、proactive disclosureが高く、7日以内のunplanned recontactも少なかった。\nObjective: 患者教育でテキストだけのLLMが見落とす感情・意味的ニーズを、音声情報を統合したbimodal LLMで改善する。\nMethods: 6診療科・3施設の16,583教育症例に由来する64,200発話を使いtext-onlyの感情・意味不一致を分析。テキスト＋音声のDolphinを開発し、感情認識、意味整合、ablations、対照text-only LLMとの555患者二重盲検ランダム化試験を実施。\nData and results: text-onlyの感情不一致36.7%、意味不一致28.3%。Dolphinの感情認識0.886対0.713、意味整合84.9%対82.1%。ランダム化試験では満足度98.6%対93.8%、提案受容76.1%対58.9%、自発情報開示44.6%対26.5%、7日以内の予定外再相談12.9%対22.9%（p=0.002）。\nNovelty: 「医療LLMは言語が正しければよい」ではなく、音声に含まれる感情cueまで使ってmisalignmentを減らすという、multimodal clinical communicationの強い実証研究。\nLimitations: 評価は設定された患者教育シナリオと対象施設に依存。短期満足・相談行動の改善は示されたが長期疾患転帰への影響は未確認。"
+      "methods": "6診療科・3施設の16,583教育症例から得た64,200発話を使い、文字情報だけの応答が患者の感情的・意味的要求を取り違えるパターンを分析。発話音声と文字列を組み合わせるDolphinを開発し、テキスト専用LLMと感情識別・意味整合を比較。555人の患者を対象とする二重盲検ランダム化試験では患者満足、提案受容、情報開示、7日以内の再相談を評価した。",
+      "results": "従来の文字列のみの条件では感情不一致36.7%、意味的不一致28.3%。Dolphinでは感情認識0.886対0.713、意味整合84.9%対82.1%。患者試験で満足度98.6%対93.8%、提案受容76.1%対58.9%、自発的情報開示44.6%対26.5%、7日以内の予定外再相談12.9%対22.9%（P=0.002）。行動に近いアウトカムまで測った点が重要。",
+      "novelty": "医療対話の良し悪しを文章の医学的正確性だけでなく、声の感情的な手掛かりと対話相手の意図との整合へ広げ、患者をランダムに割り付けて検証した。音声が存在する場面で、テキスト変換によって失う情報の臨床的な重要性を示唆する。",
+      "limitations": "評価されたのは特定の患者教育シナリオと短期の満足・相談行動であり、疾患の長期予後や治療遵守の持続的改善を測ったわけではない。感情推定や声の特徴は言語・患者群・文化によって変わり得る。",
+      "why": "医療対話の良し悪しを文章の医学的正確性だけでなく、声の感情的な手掛かりと対話相手の意図との整合へ広げ、患者をランダムに割り付けて検証した。音声が存在する場面で、テキスト変換によって失う情報の臨床的な重要性を示唆する。",
+      "details": "Publication date: 2026-08-17\nread_level: abstract\nTags: ['multimodal LLM', 'patient education', 'audio', 'randomized trial', 'communication']\nSummary: textだけでなくaudio cueも統合するbimodal LLM「Dolphin」を構築し、16,583 patient education cases由来64,200 utterancesで評価。555患者のdouble-blind randomized trialでは、text-only LLMより満足度、suggestion acceptance、proactive disclosureが高く、7日以内のunplanned recontactも少なかった。\nObjective: 患者教育でテキストだけのLLMが見落とす感情・意味的ニーズを、音声情報を統合したbimodal LLMで改善する。\nMethods: 6診療科・3施設の16,583教育症例から得た64,200発話を使い、文字情報だけの応答が患者の感情的・意味的要求を取り違えるパターンを分析。発話音声と文字列を組み合わせるDolphinを開発し、テキスト専用LLMと感情識別・意味整合を比較。555人の患者を対象とする二重盲検ランダム化試験では患者満足、提案受容、情報開示、7日以内の再相談を評価した。\nData and results: 従来の文字列のみの条件では感情不一致36.7%、意味的不一致28.3%。Dolphinでは感情認識0.886対0.713、意味整合84.9%対82.1%。患者試験で満足度98.6%対93.8%、提案受容76.1%対58.9%、自発的情報開示44.6%対26.5%、7日以内の予定外再相談12.9%対22.9%（P=0.002）。行動に近いアウトカムまで測った点が重要。\nNovelty: 医療対話の良し悪しを文章の医学的正確性だけでなく、声の感情的な手掛かりと対話相手の意図との整合へ広げ、患者をランダムに割り付けて検証した。音声が存在する場面で、テキスト変換によって失う情報の臨床的な重要性を示唆する。\nLimitations: 評価されたのは特定の患者教育シナリオと短期の満足・相談行動であり、疾患の長期予後や治療遵守の持続的改善を測ったわけではない。感情推定や声の特徴は言語・患者群・文化によって変わり得る。"
     },
     {
       "title": "A large language model-driven multidisciplinary AI agent system predicts delirium in emergency critically ill patients",
@@ -1913,12 +1913,12 @@
       ],
       "summary": "DeLiriuMAgentsは、ML risk model、救急・神経・精神科のLLM virtual specialists、RAG medical evidenceを統合したmulti-agent delirium prediction system。MIMIC-IVでderivation/internal validation、PKU 2病院とeICU-CRDでexternal validationした。",
       "objective": "救急重症患者のせん妄リスクを、予測モデル・専門家型LLM・医学根拠検索の共同判断で説明可能に予測する。",
-      "methods": "DeLiriuMAgentsではMLリスクスコア、救急・神経・精神科のLLM仮想専門医、RAG医学根拠を統合。MIMIC-IVで構築・内部検証し、中国2病院のPKUコホートとeICU-CRDで外部評価。",
-      "results": "正解率／感度／特異度はMIMIC-IVで0.749／0.762／0.747、PKUで0.731／0.708／0.736、eICU-CRDで0.670／0.708／0.665。チャートレビューと臨床医評価で説明の有用性も検証。",
-      "novelty": "「LLMが単独で診断する」のではなく、予測モデル・専門家agent・evidence retrievalを分業させ、外部validationまで行っている。",
-      "limitations": "外部コホートでの正解率低下があり、前向き臨床導入によるせん妄発症予防効果は示されていない。",
-      "why": "「LLMが単独で診断する」のではなく、予測モデル・専門家agent・evidence retrievalを分業させ、外部validationまで行っている。",
-      "details": "Publication date: 2026-08-13\nread_level: abstract\nTags: ['multi-agent', 'delirium', 'emergency medicine', 'RAG', 'risk prediction']\nSummary: DeLiriuMAgentsは、ML risk model、救急・神経・精神科のLLM virtual specialists、RAG medical evidenceを統合したmulti-agent delirium prediction system。MIMIC-IVでderivation/internal validation、PKU 2病院とeICU-CRDでexternal validationした。\nObjective: 救急重症患者のせん妄リスクを、予測モデル・専門家型LLM・医学根拠検索の共同判断で説明可能に予測する。\nMethods: DeLiriuMAgentsではMLリスクスコア、救急・神経・精神科のLLM仮想専門医、RAG医学根拠を統合。MIMIC-IVで構築・内部検証し、中国2病院のPKUコホートとeICU-CRDで外部評価。\nData and results: 正解率／感度／特異度はMIMIC-IVで0.749／0.762／0.747、PKUで0.731／0.708／0.736、eICU-CRDで0.670／0.708／0.665。チャートレビューと臨床医評価で説明の有用性も検証。\nNovelty: 「LLMが単独で診断する」のではなく、予測モデル・専門家agent・evidence retrievalを分業させ、外部validationまで行っている。\nLimitations: 外部コホートでの正解率低下があり、前向き臨床導入によるせん妄発症予防効果は示されていない。"
+      "methods": "MIMIC-IVを主な開発対象とし、数値予測モデルによるせん妄リスク、救急・神経・精神科を模したLLM専門家群、医学文献RAGを組み合わせるDeLiriuMAgentsを構築。MIMIC-IVで内部検証し、中国2病院に由来するPKUコホートとeICU-CRDを施設外データとして正解率・感度・特異度の移転を比較した。",
+      "results": "内部MIMIC-IVでは正解率0.749、感度0.762、特異度0.747。外部PKUでは0.731／0.708／0.736、eICU-CRDでは0.670／0.708／0.665へ低下。RAGを備えた分業構成でも、病院や症例構成が変わると予測成績が移動するため、外部コホート別に確認する必要がある。",
+      "novelty": "LLMに数値リスクを自由生成させる代わりに、既存予測器、医学根拠、複数役割の推論を分けて組み合わせ、外部施設での成績も報告した。設計の価値を判断するには、予測器単体、RAG追加、エージェント追加の比較が重要になる。",
+      "limitations": "後ろ向きの評価であり、予測した高リスク患者に予防処置を行うことでせん妄発症率が下がるかは未検証。エージェントの自然言語の説明も因果的な医学的妥当性を保証しない。",
+      "why": "LLMに数値リスクを自由生成させる代わりに、既存予測器、医学根拠、複数役割の推論を分けて組み合わせ、外部施設での成績も報告した。設計の価値を判断するには、予測器単体、RAG追加、エージェント追加の比較が重要になる。",
+      "details": "Publication date: 2026-08-13\nread_level: abstract\nTags: ['multi-agent', 'delirium', 'emergency medicine', 'RAG', 'risk prediction']\nSummary: DeLiriuMAgentsは、ML risk model、救急・神経・精神科のLLM virtual specialists、RAG medical evidenceを統合したmulti-agent delirium prediction system。MIMIC-IVでderivation/internal validation、PKU 2病院とeICU-CRDでexternal validationした。\nObjective: 救急重症患者のせん妄リスクを、予測モデル・専門家型LLM・医学根拠検索の共同判断で説明可能に予測する。\nMethods: MIMIC-IVを主な開発対象とし、数値予測モデルによるせん妄リスク、救急・神経・精神科を模したLLM専門家群、医学文献RAGを組み合わせるDeLiriuMAgentsを構築。MIMIC-IVで内部検証し、中国2病院に由来するPKUコホートとeICU-CRDを施設外データとして正解率・感度・特異度の移転を比較した。\nData and results: 内部MIMIC-IVでは正解率0.749、感度0.762、特異度0.747。外部PKUでは0.731／0.708／0.736、eICU-CRDでは0.670／0.708／0.665へ低下。RAGを備えた分業構成でも、病院や症例構成が変わると予測成績が移動するため、外部コホート別に確認する必要がある。\nNovelty: LLMに数値リスクを自由生成させる代わりに、既存予測器、医学根拠、複数役割の推論を分けて組み合わせ、外部施設での成績も報告した。設計の価値を判断するには、予測器単体、RAG追加、エージェント追加の比較が重要になる。\nLimitations: 後ろ向きの評価であり、予測した高リスク患者に予防処置を行うことでせん妄発症率が下がるかは未検証。エージェントの自然言語の説明も因果的な医学的妥当性を保証しない。"
     },
     {
       "title": "An Electronic Health Record-Integrated, Large Language Model-Powered Tool to Triage Surgical Patients",
@@ -1939,12 +1939,12 @@
       ],
       "summary": "Stanford Health CareでEHR-integrated LLM tool「SCM Navigator」をprospectiveに運用し、6,193 surgical casesをtriage。hospitalist comanagement適応の同定でsensitivity 0.94、specificity 0.74を示した。",
       "objective": "手術患者が内科医による周術期共同管理（SCM）を必要とするか、EHRに統合したLLMで選別できるか検証する。",
-      "methods": "Stanford Health Careで2025年9月〜2026年2月にprospective・非盲検の品質改善研究。SCM Navigatorが術前記録・構造化データ・合併症基準を用いて適応候補を分類し、担当医が人手判定・異議申し立て・自由記述を提供。偽陰性は全件レビュー。",
-      "results": "参加医師14/16名、手術6,193件（SCM推奨1,582件＝25.5%）。担当医の判断を参照にすると、要約に記載された感度0.94、特異度0.74。",
-      "novelty": "retrospective benchmarkではなく、実際のEHR workflowへhuman-in-the-loopで組み込み、臨床医feedbackをreferenceとしてprospective評価している。",
-      "limitations": "単施設・非盲検の実装研究で、参照基準が担当医判断であり真の患者アウトカムではない。予測結果を医師が検討するhuman-in-the-loopを前提とする。",
-      "why": "retrospective benchmarkではなく、実際のEHR workflowへhuman-in-the-loopで組み込み、臨床医feedbackをreferenceとしてprospective評価している。",
-      "details": "Publication date: 2026-08-03\nread_level: abstract\nTags: ['EHR', 'LLM', 'surgery', 'triage', 'human-in-the-loop', 'prospective implementation']\nSummary: Stanford Health CareでEHR-integrated LLM tool「SCM Navigator」をprospectiveに運用し、6,193 surgical casesをtriage。hospitalist comanagement適応の同定でsensitivity 0.94、specificity 0.74を示した。\nObjective: 手術患者が内科医による周術期共同管理（SCM）を必要とするか、EHRに統合したLLMで選別できるか検証する。\nMethods: Stanford Health Careで2025年9月〜2026年2月にprospective・非盲検の品質改善研究。SCM Navigatorが術前記録・構造化データ・合併症基準を用いて適応候補を分類し、担当医が人手判定・異議申し立て・自由記述を提供。偽陰性は全件レビュー。\nData and results: 参加医師14/16名、手術6,193件（SCM推奨1,582件＝25.5%）。担当医の判断を参照にすると、要約に記載された感度0.94、特異度0.74。\nNovelty: retrospective benchmarkではなく、実際のEHR workflowへhuman-in-the-loopで組み込み、臨床医feedbackをreferenceとしてprospective評価している。\nLimitations: 単施設・非盲検の実装研究で、参照基準が担当医判断であり真の患者アウトカムではない。予測結果を医師が検討するhuman-in-the-loopを前提とする。"
+      "methods": "Stanford Health Careで2025年9月〜2026年2月に実施した前向き・非盲検の品質改善研究。EHRに統合したSCM Navigatorが術前記録や患者の合併症・手術関連情報を参照し、内科的共同管理が必要な手術患者を識別。担当医の判定・異議申立てを参照に、感度・特異度と偽陰性を点検するhuman-in-the-loop運用を行った。",
+      "results": "手術6,193件のうち共同管理を推奨されたのは1,582件（25.5%）。16人中14人の医師が参加し、担当医の判断を参照とした感度0.94、特異度0.74を報告。これは医師が共同管理すべきと考える患者をどれだけ拾えたかを示し、入院中の合併症リスクの真値に対する感度とは異なる。",
+      "novelty": "実際のEHRワークフローにLLMを組み込み、モデルと医師の判断の不一致を現場で確認できる構造を前向きに評価した。単発のQA成績より、誰が最終判定し、どこでエラーを訂正できるかが実装の価値になる。",
+      "limitations": "単施設・非盲検・参照基準が担当医の判断という研究で、患者転帰や業務時間の改善をランダム化比較したものではない。高感度でも誤陽性が増える可能性があり業務負荷と合わせた検証が必要。",
+      "why": "実際のEHRワークフローにLLMを組み込み、モデルと医師の判断の不一致を現場で確認できる構造を前向きに評価した。単発のQA成績より、誰が最終判定し、どこでエラーを訂正できるかが実装の価値になる。",
+      "details": "Publication date: 2026-08-03\nread_level: abstract\nTags: ['EHR', 'LLM', 'surgery', 'triage', 'human-in-the-loop', 'prospective implementation']\nSummary: Stanford Health CareでEHR-integrated LLM tool「SCM Navigator」をprospectiveに運用し、6,193 surgical casesをtriage。hospitalist comanagement適応の同定でsensitivity 0.94、specificity 0.74を示した。\nObjective: 手術患者が内科医による周術期共同管理（SCM）を必要とするか、EHRに統合したLLMで選別できるか検証する。\nMethods: Stanford Health Careで2025年9月〜2026年2月に実施した前向き・非盲検の品質改善研究。EHRに統合したSCM Navigatorが術前記録や患者の合併症・手術関連情報を参照し、内科的共同管理が必要な手術患者を識別。担当医の判定・異議申立てを参照に、感度・特異度と偽陰性を点検するhuman-in-the-loop運用を行った。\nData and results: 手術6,193件のうち共同管理を推奨されたのは1,582件（25.5%）。16人中14人の医師が参加し、担当医の判断を参照とした感度0.94、特異度0.74を報告。これは医師が共同管理すべきと考える患者をどれだけ拾えたかを示し、入院中の合併症リスクの真値に対する感度とは異なる。\nNovelty: 実際のEHRワークフローにLLMを組み込み、モデルと医師の判断の不一致を現場で確認できる構造を前向きに評価した。単発のQA成績より、誰が最終判定し、どこでエラーを訂正できるかが実装の価値になる。\nLimitations: 単施設・非盲検・参照基準が担当医の判断という研究で、患者転帰や業務時間の改善をランダム化比較したものではない。高感度でも誤陽性が増える可能性があり業務負荷と合わせた検証が必要。"
     },
     {
       "title": "Noninvasive Intracranial Pressure Estimation Using Subspace System Identification and Machine Learning Algorithms: A Learning-to-Rank Approach",
@@ -1964,12 +1964,12 @@
       ],
       "summary": "ABP、cerebral blood velocity、R-R intervalなどの非侵襲signalからmean ICPを推定するため、subspace system identificationとranking-constrained optimizationを統合したML frameworkを提案した。",
       "objective": "侵襲的モニタリングを使わず、血圧や脳血流波形などから平均頭蓋内圧を推定する。",
-      "methods": "動脈血圧、脳血流速度、R-R間隔の信号からsubspace system identificationで脳循環動態をモデル化し、非線形マッピングの推定誤差と特徴の関係をrank制約付き凸最適化で学習。複数臨床設定の患者を訓練・テストに分割。",
-      "results": "テストの31.88%が誤差2mmHg以内、34.07%が2〜6mmHg以内。非侵襲推定の概念実証としての実行可能性を示した。",
-      "novelty": "deep learning一辺倒ではなく、生理系のsystem identificationとlearning-to-rank制約を組み合わせたmedical MLで、方法論的に面白い。",
-      "limitations": "誤差6mmHg超となる事例も残り、著者らは精度、コホート多様性、施設間外部妥当性に課題を明記。多施設前向き検証が必要。",
-      "why": "deep learning一辺倒ではなく、生理系のsystem identificationとlearning-to-rank制約を組み合わせたmedical MLで、方法論的に面白い。",
-      "details": "Publication date: 2026-08-12\nread_level: abstract\nTags: ['machine learning', 'intracranial pressure', 'physiological signals', 'system identification', 'critical care']\nSummary: ABP、cerebral blood velocity、R-R intervalなどの非侵襲signalからmean ICPを推定するため、subspace system identificationとranking-constrained optimizationを統合したML frameworkを提案した。\nObjective: 侵襲的モニタリングを使わず、血圧や脳血流波形などから平均頭蓋内圧を推定する。\nMethods: 動脈血圧、脳血流速度、R-R間隔の信号からsubspace system identificationで脳循環動態をモデル化し、非線形マッピングの推定誤差と特徴の関係をrank制約付き凸最適化で学習。複数臨床設定の患者を訓練・テストに分割。\nData and results: テストの31.88%が誤差2mmHg以内、34.07%が2〜6mmHg以内。非侵襲推定の概念実証としての実行可能性を示した。\nNovelty: deep learning一辺倒ではなく、生理系のsystem identificationとlearning-to-rank制約を組み合わせたmedical MLで、方法論的に面白い。\nLimitations: 誤差6mmHg超となる事例も残り、著者らは精度、コホート多様性、施設間外部妥当性に課題を明記。多施設前向き検証が必要。"
+      "methods": "動脈血圧・脳血流速度・心拍R-R間隔といった非侵襲信号を入力とし、部分空間システム同定によって脳循環の動態を表現。そこから得られた状態を非線形な頭蓋内圧推定へ写像し、誤差の順序情報を利用するlearning-to-rankの凸最適化を組み合わせた。独立に測った侵襲的頭蓋内圧を比較基準に、患者を分離したテストで絶対誤差を評価した。",
+      "results": "検証例の31.88%で平均頭蓋内圧の誤差が2mmHg以内、34.07%で2〜6mmHg以内だった。二つを合わせても約3分の1は6mmHgを超える誤差範囲に残り、非侵襲的な計測の可能性は示しても、全患者で安全な代替測定が可能と示したわけではない。",
+      "novelty": "単純なブラックボックス回帰ではなく生理信号の動的な構造を先にシステム同定し、推定誤差の順位関係も使って学習するハイブリッド設計。生理的な過程の知識を予測器へ組み込むアプローチとして意義がある。",
+      "limitations": "誤差6mmHg超のケースが残り、治療判断に必要な異常な圧力変化を検出できるか、別装置・多施設で再現するかは未確認。侵襲測定を全面的に置き換える臨床試験ではない。",
+      "why": "単純なブラックボックス回帰ではなく生理信号の動的な構造を先にシステム同定し、推定誤差の順位関係も使って学習するハイブリッド設計。生理的な過程の知識を予測器へ組み込むアプローチとして意義がある。",
+      "details": "Publication date: 2026-08-12\nread_level: abstract\nTags: ['machine learning', 'intracranial pressure', 'physiological signals', 'system identification', 'critical care']\nSummary: ABP、cerebral blood velocity、R-R intervalなどの非侵襲signalからmean ICPを推定するため、subspace system identificationとranking-constrained optimizationを統合したML frameworkを提案した。\nObjective: 侵襲的モニタリングを使わず、血圧や脳血流波形などから平均頭蓋内圧を推定する。\nMethods: 動脈血圧・脳血流速度・心拍R-R間隔といった非侵襲信号を入力とし、部分空間システム同定によって脳循環の動態を表現。そこから得られた状態を非線形な頭蓋内圧推定へ写像し、誤差の順序情報を利用するlearning-to-rankの凸最適化を組み合わせた。独立に測った侵襲的頭蓋内圧を比較基準に、患者を分離したテストで絶対誤差を評価した。\nData and results: 検証例の31.88%で平均頭蓋内圧の誤差が2mmHg以内、34.07%で2〜6mmHg以内だった。二つを合わせても約3分の1は6mmHgを超える誤差範囲に残り、非侵襲的な計測の可能性は示しても、全患者で安全な代替測定が可能と示したわけではない。\nNovelty: 単純なブラックボックス回帰ではなく生理信号の動的な構造を先にシステム同定し、推定誤差の順位関係も使って学習するハイブリッド設計。生理的な過程の知識を予測器へ組み込むアプローチとして意義がある。\nLimitations: 誤差6mmHg超のケースが残り、治療判断に必要な異常な圧力変化を検出できるか、別装置・多施設で再現するかは未確認。侵襲測定を全面的に置き換える臨床試験ではない。"
     },
     {
       "title": "Retrieval-Augmented Generation-Enabled Multimodal Large Language Model for Histopathologic Grading of Cutaneous Squamous Cell Carcinoma and Melanocytic Nevi",
@@ -1989,12 +1989,12 @@
       ],
       "summary": "Claude 4.5 Opus + ChromaDB RAGで、60 cSCCと67 melanocytic neviをgrading。同じRAG architectureでもcSCC concordance 90.0% (κ=0.85)に対し、nevus dysplasiaは44.8% (κ=0.072)と大きく差が出た。",
       "objective": "同じRAG付きマルチモーダルLLMが、皮膚扁平上皮癌の分化度と色素性母斑の異形成度の両方を安定して判定できるか検証する。",
-      "methods": "Claude 4.5 OpusとChromaDBの疾患別文献を用いる独立RAG経路で、cSCC 60症例、母斑67症例をそれぞれ3回分類し多数決を参照皮膚病理医と照合。Wilson 95%CIとCohen κで評価。",
-      "results": "cSCCの一致率90.0%（95%CI 79.9〜95.3%）、κ=0.85。母斑の一致率44.8%（95%CI 33.5〜56.6%）、κ=0.072。重度異形成母斑は6例中0例が参照と一致しなかった。",
-      "novelty": "「RAGを付ければ医療LLMが安定する」という単純な期待に反し、同一architectureでもtask definitionの曖昧さ・human agreementの低さに強く依存することを示す。",
-      "limitations": "同一RAGでも異形成度の主観的な境界や参照評価者間一致の影響が大きく、母斑判定は臨床での独立利用に適さない。",
-      "why": "「RAGを付ければ医療LLMが安定する」という単純な期待に反し、同一architectureでもtask definitionの曖昧さ・human agreementの低さに強く依存することを示す。",
-      "details": "Publication date: 2026-08-06\nread_level: abstract\nTags: ['RAG', 'multimodal LLM', 'pathology', 'dermatology', 'task-specific validation']\nSummary: Claude 4.5 Opus + ChromaDB RAGで、60 cSCCと67 melanocytic neviをgrading。同じRAG architectureでもcSCC concordance 90.0% (κ=0.85)に対し、nevus dysplasiaは44.8% (κ=0.072)と大きく差が出た。\nObjective: 同じRAG付きマルチモーダルLLMが、皮膚扁平上皮癌の分化度と色素性母斑の異形成度の両方を安定して判定できるか検証する。\nMethods: Claude 4.5 OpusとChromaDBの疾患別文献を用いる独立RAG経路で、cSCC 60症例、母斑67症例をそれぞれ3回分類し多数決を参照皮膚病理医と照合。Wilson 95%CIとCohen κで評価。\nData and results: cSCCの一致率90.0%（95%CI 79.9〜95.3%）、κ=0.85。母斑の一致率44.8%（95%CI 33.5〜56.6%）、κ=0.072。重度異形成母斑は6例中0例が参照と一致しなかった。\nNovelty: 「RAGを付ければ医療LLMが安定する」という単純な期待に反し、同一architectureでもtask definitionの曖昧さ・human agreementの低さに強く依存することを示す。\nLimitations: 同一RAGでも異形成度の主観的な境界や参照評価者間一致の影響が大きく、母斑判定は臨床での独立利用に適さない。"
+      "methods": "Claude 4.5 OpusにChromaDBの疾患別文献を検索させる二つの独立RAG経路を構築。皮膚扁平上皮癌（cSCC）60例の分化度分類と色素性母斑67例の異形成度分類をそれぞれ3回行い多数決で集約。参照皮膚病理医との一致率・Wilson信頼区間・Cohen κを測り、同じ設計が別の病理分類にも有効かを比較した。",
+      "results": "cSCCでは一致率90.0%［95% CI 79.9〜95.3%］、κ=0.85。ところが母斑の異形成度は44.8%［33.5〜56.6%］、κ=0.072で偶然一致と大差なく、重度異形成は6例中0例の一致。同じRAG付きLLMでも対象疾患・分類境界が違えば成績が大きく崩れる。",
+      "novelty": "RAGの技術要素を固定して2種類の病理タスクを比べ、検索付きLLMが万能な診断器ではないことを実例で示した。医学的なラベルの客観性や評価者間一致が、モデルの有効性を左右する研究設計上の重要な要因になる。",
+      "limitations": "cSCCと母斑の症例数は60／67と少なく、とりわけ重度異形成は6例。人間側の基準ラベルにもばらつきがあり得る。母斑の診断支援へ安全に利用できる根拠とは言えない。",
+      "why": "RAGの技術要素を固定して2種類の病理タスクを比べ、検索付きLLMが万能な診断器ではないことを実例で示した。医学的なラベルの客観性や評価者間一致が、モデルの有効性を左右する研究設計上の重要な要因になる。",
+      "details": "Publication date: 2026-08-06\nread_level: abstract\nTags: ['RAG', 'multimodal LLM', 'pathology', 'dermatology', 'task-specific validation']\nSummary: Claude 4.5 Opus + ChromaDB RAGで、60 cSCCと67 melanocytic neviをgrading。同じRAG architectureでもcSCC concordance 90.0% (κ=0.85)に対し、nevus dysplasiaは44.8% (κ=0.072)と大きく差が出た。\nObjective: 同じRAG付きマルチモーダルLLMが、皮膚扁平上皮癌の分化度と色素性母斑の異形成度の両方を安定して判定できるか検証する。\nMethods: Claude 4.5 OpusにChromaDBの疾患別文献を検索させる二つの独立RAG経路を構築。皮膚扁平上皮癌（cSCC）60例の分化度分類と色素性母斑67例の異形成度分類をそれぞれ3回行い多数決で集約。参照皮膚病理医との一致率・Wilson信頼区間・Cohen κを測り、同じ設計が別の病理分類にも有効かを比較した。\nData and results: cSCCでは一致率90.0%［95% CI 79.9〜95.3%］、κ=0.85。ところが母斑の異形成度は44.8%［33.5〜56.6%］、κ=0.072で偶然一致と大差なく、重度異形成は6例中0例の一致。同じRAG付きLLMでも対象疾患・分類境界が違えば成績が大きく崩れる。\nNovelty: RAGの技術要素を固定して2種類の病理タスクを比べ、検索付きLLMが万能な診断器ではないことを実例で示した。医学的なラベルの客観性や評価者間一致が、モデルの有効性を左右する研究設計上の重要な要因になる。\nLimitations: cSCCと母斑の症例数は60／67と少なく、とりわけ重度異形成は6例。人間側の基準ラベルにもばらつきがあり得る。母斑の診断支援へ安全に利用できる根拠とは言えない。"
     },
     {
       "title": "AdaK: adaptive KV cache budget estimation framework for analyzing long-context large language model inference",
@@ -2014,12 +2014,12 @@
       ],
       "summary": "long-context LLMのKV cache budgetを固定値ではなく動的に推定するAdaKを提案。entropy threshold、task-aware lookup table、lightweight policy networkの3戦略を評価し、16 settingsでfixed k=2048比最大17.9%の推定cache reductionを報告。",
       "objective": "長文LLMのKVキャッシュ量を固定上限ではなく、入力タスクに応じて動的に見積もり、推論メモリを節約する。",
-      "methods": "AdaKはエントロピー閾値、タスク別lookup table、軽量policy networkの3方式でKVキャッシュ必要量の予算上限を推定。Qwen3-4B、Qwen3-8B、Mistral-7Bの16設定で固定k=2048と比較。",
-      "results": "固定k=2048に対して推定KVキャッシュ予算を最大17.9%削減。下流の疎注意実装に入力できる予算の上限推定として設計。",
-      "novelty": "long-context推論のメモリ問題を「cacheをどう削るか」ではなく「どのbudgetまで安全に削れそうかを事前推定する」問題として分離している。",
-      "limitations": "報告値は推定上限の削減率であり、実装した疎注意kernelでの壁時計速度やメモリ実測の改善をそのまま保証するものではない。",
-      "why": "long-context推論のメモリ問題を「cacheをどう削るか」ではなく「どのbudgetまで安全に削れそうかを事前推定する」問題として分離している。",
-      "details": "Publication date: 2026-08-05\nread_level: abstract\nTags: ['LLM inference', 'KV cache', 'long context', 'efficiency', 'sparse attention']\nSummary: long-context LLMのKV cache budgetを固定値ではなく動的に推定するAdaKを提案。entropy threshold、task-aware lookup table、lightweight policy networkの3戦略を評価し、16 settingsでfixed k=2048比最大17.9%の推定cache reductionを報告。\nObjective: 長文LLMのKVキャッシュ量を固定上限ではなく、入力タスクに応じて動的に見積もり、推論メモリを節約する。\nMethods: AdaKはエントロピー閾値、タスク別lookup table、軽量policy networkの3方式でKVキャッシュ必要量の予算上限を推定。Qwen3-4B、Qwen3-8B、Mistral-7Bの16設定で固定k=2048と比較。\nData and results: 固定k=2048に対して推定KVキャッシュ予算を最大17.9%削減。下流の疎注意実装に入力できる予算の上限推定として設計。\nNovelty: long-context推論のメモリ問題を「cacheをどう削るか」ではなく「どのbudgetまで安全に削れそうかを事前推定する」問題として分離している。\nLimitations: 報告値は推定上限の削減率であり、実装した疎注意kernelでの壁時計速度やメモリ実測の改善をそのまま保証するものではない。"
+      "methods": "長文LLMのKVキャッシュを一律に固定量保持する設定に対し、入力とタスクの特性に合わせて必要な予算を推定するAdaKを提案。エントロピー閾値、タスク別ルックアップ表、軽量方策ネットワークという3つの予算推定方式を、Qwen3-4B／8B、Mistral-7Bの複数設定で固定上限k=2048と比較した。",
+      "results": "固定k=2048に対する推定KVキャッシュ予算の上限を最大17.9%削減できたと報告。これは実メモリ確保やGPU上の推論速度を17.9%改善した数値ではなく、下流の疎注意処理で使うキャッシュ割当の事前推定に関する改善である。",
+      "novelty": "キャッシュの切捨てアルゴリズムそのものではなく、その前段の『どの入力にいくら必要か』という資源予測を独立の問題にした。モデルを動かす計算資源と課題の難度が一様でない場合の設計につながる。",
+      "limitations": "推定した上限と実際のピークVRAM、壁時計速度、長文問題の正解率は別である。疎注意やサービングエンジンとの統合による利益は改めて検証が必要。",
+      "why": "キャッシュの切捨てアルゴリズムそのものではなく、その前段の『どの入力にいくら必要か』という資源予測を独立の問題にした。モデルを動かす計算資源と課題の難度が一様でない場合の設計につながる。",
+      "details": "Publication date: 2026-08-05\nread_level: abstract\nTags: ['LLM inference', 'KV cache', 'long context', 'efficiency', 'sparse attention']\nSummary: long-context LLMのKV cache budgetを固定値ではなく動的に推定するAdaKを提案。entropy threshold、task-aware lookup table、lightweight policy networkの3戦略を評価し、16 settingsでfixed k=2048比最大17.9%の推定cache reductionを報告。\nObjective: 長文LLMのKVキャッシュ量を固定上限ではなく、入力タスクに応じて動的に見積もり、推論メモリを節約する。\nMethods: 長文LLMのKVキャッシュを一律に固定量保持する設定に対し、入力とタスクの特性に合わせて必要な予算を推定するAdaKを提案。エントロピー閾値、タスク別ルックアップ表、軽量方策ネットワークという3つの予算推定方式を、Qwen3-4B／8B、Mistral-7Bの複数設定で固定上限k=2048と比較した。\nData and results: 固定k=2048に対する推定KVキャッシュ予算の上限を最大17.9%削減できたと報告。これは実メモリ確保やGPU上の推論速度を17.9%改善した数値ではなく、下流の疎注意処理で使うキャッシュ割当の事前推定に関する改善である。\nNovelty: キャッシュの切捨てアルゴリズムそのものではなく、その前段の『どの入力にいくら必要か』という資源予測を独立の問題にした。モデルを動かす計算資源と課題の難度が一様でない場合の設計につながる。\nLimitations: 推定した上限と実際のピークVRAM、壁時計速度、長文問題の正解率は別である。疎注意やサービングエンジンとの統合による利益は改めて検証が必要。"
     },
     {
       "title": "Digital twin-supported behavioral intention in mothers of young children to prevent childhood obesity: a large language model-based intervention study",
@@ -2039,12 +2039,12 @@
       ],
       "summary": "childhood overweight digital twinと、nutrition guidance向けにfine-tuneしたLlama 3-70Bを組み合わせ、121 mothersでrisk visualization + chat consultationを評価。fine-tuned modelは30問中appropriate responseが18→27へ改善し、参加者の受容性・behavioral intentionも高かった。",
       "objective": "小児肥満リスクを将来予測するdigital twinとLLM栄養相談を組み合わせ、保護者の生活習慣改善意図につなげる。",
-      "methods": "東北メディカル・メガバンク由来の36〜47か月、6歳、11歳、14歳の過体重リスクモデルを可視化し、日本の食品成分表でSFTしたLlama 3-70Bの相談機能を付加。30栄養質問を管理栄養士3人が評価し、14歳未満の子を持つ母親121人が1回使用。",
-      "results": "30問中の適切回答は元のLlama 3-70Bで平均18、微調整後は27。主要5段階評価は平均4.9超、121人中112人が推奨習慣の段階的実施を可能と回答。",
-      "novelty": "risk predictionモデルとLLM counselingを一体化し、「予測した後どう行動につなげるか」まで設計している。",
-      "limitations": "介入は単回の可視化＋チャット試験で、報告は受容性・自己申告意図が中心。実際の生活行動や児童肥満率の長期変化は未評価。",
-      "why": "risk predictionモデルとLLM counselingを一体化し、「予測した後どう行動につなげるか」まで設計している。",
-      "details": "Publication date: 2026-08-06\nread_level: abstract\nTags: ['digital twin', 'LLM', 'preventive medicine', 'nutrition', 'behavior change']\nSummary: childhood overweight digital twinと、nutrition guidance向けにfine-tuneしたLlama 3-70Bを組み合わせ、121 mothersでrisk visualization + chat consultationを評価。fine-tuned modelは30問中appropriate responseが18→27へ改善し、参加者の受容性・behavioral intentionも高かった。\nObjective: 小児肥満リスクを将来予測するdigital twinとLLM栄養相談を組み合わせ、保護者の生活習慣改善意図につなげる。\nMethods: 東北メディカル・メガバンク由来の36〜47か月、6歳、11歳、14歳の過体重リスクモデルを可視化し、日本の食品成分表でSFTしたLlama 3-70Bの相談機能を付加。30栄養質問を管理栄養士3人が評価し、14歳未満の子を持つ母親121人が1回使用。\nData and results: 30問中の適切回答は元のLlama 3-70Bで平均18、微調整後は27。主要5段階評価は平均4.9超、121人中112人が推奨習慣の段階的実施を可能と回答。\nNovelty: risk predictionモデルとLLM counselingを一体化し、「予測した後どう行動につなげるか」まで設計している。\nLimitations: 介入は単回の可視化＋チャット試験で、報告は受容性・自己申告意図が中心。実際の生活行動や児童肥満率の長期変化は未評価。"
+      "methods": "東北メディカル・メガバンクなどの情報から学習した子どもの年齢別肥満リスクモデルをdigital twinの可視化に用い、食品成分表を使って微調整したLlama 3-70Bの食生活相談を組み合わせた。管理栄養士3人が30問の回答品質を比較し、14歳未満の子を持つ母親121人の単回利用で受容性・行動意図を調査。",
+      "results": "30問の適切回答数は微調整前平均18問、微調整後27問。主要な5段階評価は平均4.9点超と高く、121人中112人が提示された食習慣を段階的に実施できそうだと回答した。これは『行動する意向』であり、実際の食事の変化や子どものBMI改善を測った結果ではない。",
+      "novelty": "将来リスクの数値化と、本人が行動を選ぶための対話型支援を同じシステムに組み込んだ。予測精度と意思決定支援の有用性を別々に測る必要を示唆する。",
+      "limitations": "単回利用の受容性調査であり、比較対照群の有無や長期アウトカムを十分確認できない。育児環境・健康状態・食品文化が異なる集団での継続的な検証が必要。",
+      "why": "将来リスクの数値化と、本人が行動を選ぶための対話型支援を同じシステムに組み込んだ。予測精度と意思決定支援の有用性を別々に測る必要を示唆する。",
+      "details": "Publication date: 2026-08-06\nread_level: abstract\nTags: ['digital twin', 'LLM', 'preventive medicine', 'nutrition', 'behavior change']\nSummary: childhood overweight digital twinと、nutrition guidance向けにfine-tuneしたLlama 3-70Bを組み合わせ、121 mothersでrisk visualization + chat consultationを評価。fine-tuned modelは30問中appropriate responseが18→27へ改善し、参加者の受容性・behavioral intentionも高かった。\nObjective: 小児肥満リスクを将来予測するdigital twinとLLM栄養相談を組み合わせ、保護者の生活習慣改善意図につなげる。\nMethods: 東北メディカル・メガバンクなどの情報から学習した子どもの年齢別肥満リスクモデルをdigital twinの可視化に用い、食品成分表を使って微調整したLlama 3-70Bの食生活相談を組み合わせた。管理栄養士3人が30問の回答品質を比較し、14歳未満の子を持つ母親121人の単回利用で受容性・行動意図を調査。\nData and results: 30問の適切回答数は微調整前平均18問、微調整後27問。主要な5段階評価は平均4.9点超と高く、121人中112人が提示された食習慣を段階的に実施できそうだと回答した。これは『行動する意向』であり、実際の食事の変化や子どものBMI改善を測った結果ではない。\nNovelty: 将来リスクの数値化と、本人が行動を選ぶための対話型支援を同じシステムに組み込んだ。予測精度と意思決定支援の有用性を別々に測る必要を示唆する。\nLimitations: 単回利用の受容性調査であり、比較対照群の有無や長期アウトカムを十分確認できない。育児環境・健康状態・食品文化が異なる集団での継続的な検証が必要。"
     },
     {
       "title": "Leveraging a Large Language Model in Competency Development: Advancing Standardization and Optimizing Operational Efficiency",
@@ -2064,12 +2064,12 @@
       ],
       "summary": "nursing professional developmentのorientation competency standardizationにLLMを導入し、manual standardization effortを76%削減したと報告。",
       "objective": "看護教育のオリエンテーション能力要件を病院間で標準化するための手作業をLLMで削減する。",
-      "methods": "看護専門能力開発担当者と情報技術チームがLLMを共同開発し、入職時コンピテンシーの整理・整合を従来の手作業と運用実装後で比較。",
-      "results": "導入後、コンピテンシー標準化に要した手作業量を76%削減と報告。要旨には実務者数・作業時間の絶対値は記載なし。",
-      "novelty": "clinical diagnosisではなく、医療組織のknowledge/workflow standardizationでLLMのROIを定量化した実装例。",
-      "limitations": "組織内の業務改善報告であり、他の病院群への一般化や長期の看護能力・患者アウトカムの改善は示していない。",
-      "why": "clinical diagnosisではなく、医療組織のknowledge/workflow standardizationでLLMのROIを定量化した実装例。",
-      "details": "Publication date: 2026-08-17\nread_level: abstract\nTags: ['LLM', 'nursing', 'workflow automation', 'standardization', 'operational efficiency']\nSummary: nursing professional developmentのorientation competency standardizationにLLMを導入し、manual standardization effortを76%削減したと報告。\nObjective: 看護教育のオリエンテーション能力要件を病院間で標準化するための手作業をLLMで削減する。\nMethods: 看護専門能力開発担当者と情報技術チームがLLMを共同開発し、入職時コンピテンシーの整理・整合を従来の手作業と運用実装後で比較。\nData and results: 導入後、コンピテンシー標準化に要した手作業量を76%削減と報告。要旨には実務者数・作業時間の絶対値は記載なし。\nNovelty: clinical diagnosisではなく、医療組織のknowledge/workflow standardizationでLLMのROIを定量化した実装例。\nLimitations: 組織内の業務改善報告であり、他の病院群への一般化や長期の看護能力・患者アウトカムの改善は示していない。"
+      "methods": "医療機関の看護師の入職時能力・コンピテンシーを標準化する業務を対象に、教育担当者と情報システム担当者が協力しLLM支援の整理手順を導入。従来の人手による文書分類と能力項目の統合作業を導入前後で比較した。医学的な診断モデルの評価ではなく、院内の知識管理と作業時間の研究。",
+      "results": "業務導入後、コンピテンシー標準化に要する手作業量を76%削減したと報告した。確認できる抄録では、職員数・タスクあたりの実時間・評価対象の施設数や項目数の完全な内訳がない。節約できたのは対象業務の労力であり、看護能力の習得率や患者転帰の改善幅ではない。",
+      "novelty": "LLMの利用価値を医療診断の精度だけでなく、人手による文書の整理・業務知識の統一という作業効率で測った実装例。現場向けAIでは誰が出力を検証するかを運用に含める必要がある。",
+      "limitations": "一つの組織や手順に依存する改善幅で、別病院に導入すれば同じ76%削減が再現する保証はない。内容の正しさや教育成果への影響も別途評価が必要。",
+      "why": "LLMの利用価値を医療診断の精度だけでなく、人手による文書の整理・業務知識の統一という作業効率で測った実装例。現場向けAIでは誰が出力を検証するかを運用に含める必要がある。",
+      "details": "Publication date: 2026-08-17\nread_level: abstract\nTags: ['LLM', 'nursing', 'workflow automation', 'standardization', 'operational efficiency']\nSummary: nursing professional developmentのorientation competency standardizationにLLMを導入し、manual standardization effortを76%削減したと報告。\nObjective: 看護教育のオリエンテーション能力要件を病院間で標準化するための手作業をLLMで削減する。\nMethods: 医療機関の看護師の入職時能力・コンピテンシーを標準化する業務を対象に、教育担当者と情報システム担当者が協力しLLM支援の整理手順を導入。従来の人手による文書分類と能力項目の統合作業を導入前後で比較した。医学的な診断モデルの評価ではなく、院内の知識管理と作業時間の研究。\nData and results: 業務導入後、コンピテンシー標準化に要する手作業量を76%削減したと報告した。確認できる抄録では、職員数・タスクあたりの実時間・評価対象の施設数や項目数の完全な内訳がない。節約できたのは対象業務の労力であり、看護能力の習得率や患者転帰の改善幅ではない。\nNovelty: LLMの利用価値を医療診断の精度だけでなく、人手による文書の整理・業務知識の統一という作業効率で測った実装例。現場向けAIでは誰が出力を検証するかを運用に含める必要がある。\nLimitations: 一つの組織や手順に依存する改善幅で、別病院に導入すれば同じ76%削減が再現する保証はない。内容の正しさや教育成果への影響も別途評価が必要。"
     },
     {
       "title": "Avian influenza risk mapping in India using machine learning",
@@ -2089,12 +2089,12 @@
       ],
       "summary": "2006–2024のIndia HPAI outbreak recordsと94 predictorsを用い、H3 hexagon上でspatial risk mapping。8 base classifiersはいずれもAUC>0.76、Gaussian-process stacked meta-learnerはAUC 0.853で、Random Forest 0.851との差は小さく非有意だったが、uncertainty layerを提供した。",
       "objective": "インドの高病原性鳥インフルエンザ発生リスクを相対的な空間分布として予測し、監視優先地域を不確実性も含めて示す。",
-      "methods": "2006年1月〜2024年4月の発生記録、94環境・家畜・土地・人口指標、H3 resolution-7六角形と擬似非発生点を使用。空間ブロック5分割交差検証で8分類器を学習し、Gaussian-process stacked meta-learnerとRFを比較。",
-      "results": "全8分類器でAUC>0.76。stacked modelはAUC 0.853、RF AUC 0.851（Brier 0.155、ECE 0.079）で差は非有意。予測不確実性とモデル間差の相関r=0.74（p<0.001）。東部・北東部・沿岸などを監視優先候補として表示。",
-      "novelty": "単に最良AUCを競うのではなく、surveillance planningに使えるprediction uncertaintyを同時に地図化している点が実用的。",
-      "limitations": "受動的な発生報告の偏り、説明変数の多重共線性、擬似陰性の作成方法による影響があり、リスク地図は前向き監視での検証が必要。",
-      "why": "単に最良AUCを競うのではなく、surveillance planningに使えるprediction uncertaintyを同時に地図化している点が実用的。",
-      "details": "Publication date: 2026-08-05\nread_level: abstract\nTags: ['machine learning', 'spatial epidemiology', 'One Health', 'uncertainty', 'influenza']\nSummary: 2006–2024のIndia HPAI outbreak recordsと94 predictorsを用い、H3 hexagon上でspatial risk mapping。8 base classifiersはいずれもAUC>0.76、Gaussian-process stacked meta-learnerはAUC 0.853で、Random Forest 0.851との差は小さく非有意だったが、uncertainty layerを提供した。\nObjective: インドの高病原性鳥インフルエンザ発生リスクを相対的な空間分布として予測し、監視優先地域を不確実性も含めて示す。\nMethods: 2006年1月〜2024年4月の発生記録、94環境・家畜・土地・人口指標、H3 resolution-7六角形と擬似非発生点を使用。空間ブロック5分割交差検証で8分類器を学習し、Gaussian-process stacked meta-learnerとRFを比較。\nData and results: 全8分類器でAUC>0.76。stacked modelはAUC 0.853、RF AUC 0.851（Brier 0.155、ECE 0.079）で差は非有意。予測不確実性とモデル間差の相関r=0.74（p<0.001）。東部・北東部・沿岸などを監視優先候補として表示。\nNovelty: 単に最良AUCを競うのではなく、surveillance planningに使えるprediction uncertaintyを同時に地図化している点が実用的。\nLimitations: 受動的な発生報告の偏り、説明変数の多重共線性、擬似陰性の作成方法による影響があり、リスク地図は前向き監視での検証が必要。"
+      "methods": "インドの2006年〜2024年4月の高病原性鳥インフルエンザ発生情報を集め、94の環境・家畜・人口・地理特徴とH3 resolution-7の六角形地域単位へ変換。擬似非発生点を用意し、空間ブロック5分割で複数の分類器を評価、Random ForestとGaussian processによるstackingを比較。AUROC・Brier・校正誤差・不確実性を地図化した。",
+      "results": "8分類器のAUROCはいずれも0.76超。stacked model 0.853、Random Forest 0.851で差は統計的に明確でなく、RFのBrierは0.155、ECEは0.079。モデル間の不一致と予測不確実性の相関はr=0.74（P＜0.001）で、東部・北東部・沿岸部に監視優先候補が分布した。わずかなAUROC差だけでは複雑なensembleを選ぶ合理性を示せない。",
+      "novelty": "地域ごとの予測だけでなく、検査が不足している地域を選ぶための不確実性マップと空間分割による検証を採用した。単純なランダム分割で隣接地域の情報を漏らすことを避け、実務の監視資源配分につなげる設計が重要。",
+      "limitations": "発生記録の報告密度は地域により異なり、擬似非発生点を真の非感染地域と見なすとバイアスが生じる。将来の独立したアウトブレイクを使った時間外予測の有効性は未確認。",
+      "why": "地域ごとの予測だけでなく、検査が不足している地域を選ぶための不確実性マップと空間分割による検証を採用した。単純なランダム分割で隣接地域の情報を漏らすことを避け、実務の監視資源配分につなげる設計が重要。",
+      "details": "Publication date: 2026-08-05\nread_level: abstract\nTags: ['machine learning', 'spatial epidemiology', 'One Health', 'uncertainty', 'influenza']\nSummary: 2006–2024のIndia HPAI outbreak recordsと94 predictorsを用い、H3 hexagon上でspatial risk mapping。8 base classifiersはいずれもAUC>0.76、Gaussian-process stacked meta-learnerはAUC 0.853で、Random Forest 0.851との差は小さく非有意だったが、uncertainty layerを提供した。\nObjective: インドの高病原性鳥インフルエンザ発生リスクを相対的な空間分布として予測し、監視優先地域を不確実性も含めて示す。\nMethods: インドの2006年〜2024年4月の高病原性鳥インフルエンザ発生情報を集め、94の環境・家畜・人口・地理特徴とH3 resolution-7の六角形地域単位へ変換。擬似非発生点を用意し、空間ブロック5分割で複数の分類器を評価、Random ForestとGaussian processによるstackingを比較。AUROC・Brier・校正誤差・不確実性を地図化した。\nData and results: 8分類器のAUROCはいずれも0.76超。stacked model 0.853、Random Forest 0.851で差は統計的に明確でなく、RFのBrierは0.155、ECEは0.079。モデル間の不一致と予測不確実性の相関はr=0.74（P＜0.001）で、東部・北東部・沿岸部に監視優先候補が分布した。わずかなAUROC差だけでは複雑なensembleを選ぶ合理性を示せない。\nNovelty: 地域ごとの予測だけでなく、検査が不足している地域を選ぶための不確実性マップと空間分割による検証を採用した。単純なランダム分割で隣接地域の情報を漏らすことを避け、実務の監視資源配分につなげる設計が重要。\nLimitations: 発生記録の報告密度は地域により異なり、擬似非発生点を真の非感染地域と見なすとバイアスが生じる。将来の独立したアウトブレイクを使った時間外予測の有効性は未確認。"
     },
     {
       "title": "Co-Evolving Harnesses and Models: On-Policy Correction Helps Weaker Models Catch Up Where Imitation Fails",
