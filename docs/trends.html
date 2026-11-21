@@ -3,112 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="機械学習・LLM・医療AIのテーマ別研究動向を、基礎文献から新着研究まで俯瞰する">
-<title>研究動向レビュー | Paper Watch</title>
-<style>
-:root{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;color:#243442;background:#f6f7f9}
-*{box-sizing:border-box}body{margin:0}button{font:inherit;cursor:pointer}a{color:#185f91;text-underline-offset:3px}a:focus-visible,button:focus-visible{outline:3px solid #72acd5;outline-offset:3px}
-header{background:#142e42;color:#fff;padding:20px max(22px,calc((100vw - 1080px)/2))}
-.brand{color:#fff;text-decoration:none;font-size:21px;font-weight:750}header p{font-size:13px;color:#c1d0db;margin:5px 0 0}
-.wrap{max-width:1080px;margin:auto;padding:26px 24px 70px}
-nav.global{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}
-nav.global a{padding:10px 15px;background:#fff;border:1px solid #cbd7e2;border-radius:8px;text-decoration:none;font-size:14px}
-nav.global a.active{background:#174763;border-color:#174763;color:#fff}
-h1{font-size:26px;margin:0 0 8px}h2{font-size:20px;margin:28px 0 14px}h3{font-size:16px;line-height:1.6;margin:0 0 8px}
-p{line-height:1.9}p.lead{font-size:16px;margin:0 0 12px;color:#456075}small,.meta{color:#5d7285;font-size:12px;line-height:1.8}.meta{margin:0 0 18px}
-.summary{background:#fff;border:1px solid #dce4eb;border-radius:12px;padding:24px;margin:14px 0 26px}
-.summary p{margin:10px 0}
-.summary-nav{display:flex;gap:12px;flex-wrap:wrap;font-size:14px;margin-top:15px}
-.columns{display:grid;grid-template-columns:265px minmax(0,1fr);gap:22px;align-items:start}
-.sidebar{background:#fff;border:1px solid #dce4eb;border-radius:12px;padding:17px;position:sticky;top:16px}
-.sidebar h2{font-size:14px;margin:0 0 13px}
-.topic-list{display:grid;gap:7px}
-.topic-button{display:block;text-align:left;border:1px solid #d8e2ea;border-radius:8px;padding:12px 11px;background:#fafbfd;color:#2b4b62;font-size:13px;line-height:1.5}
-.topic-button[aria-pressed="true"]{background:#e6f0f8;border-color:#457da4;color:#164a69;font-weight:700}
-.topic-button:hover{background:#edf5fb}
-.article{background:#fff;border:1px solid #dce4eb;border-radius:12px;padding:32px 36px;min-width:0}
-.eyebrow{color:#587990;font-size:12px;font-weight:700;letter-spacing:.06em;margin:0 0 6px}
-.article h2{font-size:24px;line-height:1.5;margin:0 0 16px}
-.article h3{margin:28px 0 9px;color:#315875}
-.article p{font-size:16px;line-height:1.98;overflow-wrap:anywhere;white-space:pre-wrap;margin:0 0 16px}
-.article .thesis{font-size:18px;font-weight:600;color:#254f67;line-height:1.8}
-.article .state{margin:0 0 16px;padding:9px 12px;border-left:3px solid #4b809c;background:#f2f7fa;color:#38566a;font-size:13px}
-.citations{border-top:1px solid #e4e9ee;margin-top:26px;padding-top:18px}
-.citations ul{margin:10px 0 0;padding-left:20px}.citations li{margin:8px 0;line-height:1.65;font-size:13px;overflow-wrap:anywhere}.citations code{color:#647b8a;font-size:11px}
-.link-row{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;margin-top:18px}
-.cross{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.cross-item{background:#fff;border:1px solid #dce4eb;padding:18px;border-radius:10px}
-.cross-item p{font-size:14px;margin:4px 0 0}
-.weeks{background:#fff;border:1px solid #dce4eb;border-radius:10px;padding:18px 22px}.weeks a{line-height:1.8}
-.notice{border-top:1px solid #d8e1e8;margin-top:30px;padding-top:15px;font-size:12px;color:#63778a}
-.hidden{display:none!important}
-@media(max-width:800px){.columns{display:block}.sidebar{position:static;margin-bottom:14px}.topic-list{display:flex;overflow-x:auto;gap:8px;padding-bottom:5px}.topic-button{flex:0 0 180px}.article{padding:25px 19px}.cross{grid-template-columns:1fr}.wrap{padding:20px 16px 45px}h1{font-size:23px}.article h2{font-size:21px}}
-</style>
+<meta name="robots" content="noindex">
+<title>研究マップ・動向レビューへ移動します | Paper Watch</title>
+<script>
+const target=new URL("./index.html",location.href);
+target.searchParams.set("view","map");
+const topic=new URLSearchParams(location.search).get("topic");
+if(topic)target.searchParams.set("topic",topic);
+location.replace(target);
+</script>
 </head>
 <body>
-<header><a class="brand" href="./index.html">Paper Watch</a><p>論文を蓄積し、研究テーマごとの理解を更新する</p></header>
-<main class="wrap">
-<nav class="global" aria-label="主要画面">
-<a href="./index.html">論文一覧</a><a href="./index.html?view=map">全体マップ</a><a href="./trends.html" class="active" aria-current="page">研究動向レビュー</a>
-</nav>
-<h1>テーマ別・研究動向レビュー</h1>
-<p class="lead">基礎から現在までの研究をつなぎ、成果と限界、次に解くべき課題を継続して更新します。</p>
-<p class="meta" id="meta">レビュー情報を読み込み中...</p>
-<div id="loading" role="status">データを読み込んでいます...</div>
-<section id="content" class="hidden">
-<section class="summary">
-<strong>研究の流れを横断して読む</strong>
-<p id="intro"></p>
-<div class="summary-nav"><a id="living" target="_blank" rel="noopener noreferrer">累積レビューのMarkdownを読む ↗</a><a id="oldmap">基礎からの全体マップ ↗</a></div>
-</section>
-<div class="columns">
-<aside class="sidebar"><h2>7つの研究テーマ</h2><nav class="topic-list" id="topics" aria-label="研究テーマを選択"></nav></aside>
-<article class="article" aria-live="polite" id="article"></article>
-</div>
-<section aria-labelledby="crossheading"><h2 id="crossheading">テーマをまたぐ論点</h2><div class="cross" id="cross"></div></section>
-<section aria-labelledby="weekheading"><h2 id="weekheading">週次レポートの履歴</h2><div class="weeks" id="weeks"></div></section>
-<p class="notice" id="scope"></p>
-</section>
-</main>
-<script>
-"use strict";
-const $=id=>document.getElementById(id);
-let info=null;
-const esc=x=>String(x==null?"":x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const https=x=>/^https:\/\//.test(String(x))?x:"#";
-function choose(key,changeUrl=true){
-if(!info)return;
-const t=info.themes.find(x=>x.key===key)||info.themes[0];
-if(!t)return;
-for(const el of $("topics").querySelectorAll("button"))el.setAttribute("aria-pressed",String(el.dataset.key===t.key));
-const cite=t.refs.map(p=>'<li><a href="'+esc(https(p.url))+'" target="_blank" rel="noopener noreferrer">'+esc(p.title)+'</a> <code>'+esc(p.id)+'</code></li>').join("");
-$("article").innerHTML='<p class="eyebrow">THEME · '+esc(info.updated_at)+'</p>'+
-'<h2 id="topic-title" tabindex="-1">'+esc(t.title)+'</h2>'+
-'<p class="state">'+esc(t.state)+'</p>'+
-'<p class="thesis">'+esc(t.shift)+'</p>'+
-'<h3>研究の流れと現在地</h3><p>'+esc(t.summary)+'</p>'+
-'<h3>今回加わった証拠</h3><p>'+esc(t.update)+'</p>'+
-'<h3>まだ言えないこと・比較上の注意</h3><p>'+esc(t.boundary)+'</p>'+
-'<h3>次の研究機会</h3><p>'+esc(t.gap)+'</p>'+
-'<div class="citations"><h3>代表文献と原文</h3><ul>'+cite+'</ul></div>'+
-'<div class="link-row"><a href="'+esc(https(t.map_url))+'">この分野の技術詳説・比較表へ ↗</a><a href="'+esc(https(info.living_url))+'" target="_blank" rel="noopener noreferrer">累積レポートを読む ↗</a></div>';
-if(changeUrl){const u=new URL(location.href);u.searchParams.set("topic",t.key);history.pushState({topic:t.key},"",u);}
-}
-window.addEventListener("popstate",()=>{if(info)choose(new URLSearchParams(location.search).get("topic"),false)});
-fetch("./trends.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(data=>{
-if(!Array.isArray(data.themes)||!data.themes.length)throw Error("データ形式が不正です");
-info=data;
-$("meta").textContent="改訂 "+data.updated_at+" · "+data.stats.total.toLocaleString()+"件の登録文献 · テーマ "+data.themes.length+"分野";
-$("intro").textContent=data.summary;
-$("scope").textContent=data.scope_note;
-$("living").href=https(data.living_url);
-$("oldmap").href=https(data.existing_map_url);
-$("topics").innerHTML=data.themes.map(t=>'<button type="button" class="topic-button" data-key="'+esc(t.key)+'" aria-pressed="false">'+esc(t.title)+'</button>').join("");
-for(const el of $("topics").querySelectorAll("button"))el.addEventListener("click",()=>choose(el.dataset.key));
-$("cross").innerHTML=data.cross_cutting.map(x=>'<section class="cross-item"><h3>'+esc(x.title)+'</h3><p>'+esc(x.text)+'</p><small>関連：'+esc(x.ids.join(" / "))+'</small></section>').join("");
-$("weeks").innerHTML=data.weeks.map(w=>'<p><a href="'+esc(https(w.href))+'" target="_blank" rel="noopener noreferrer">'+esc(w.week)+' '+esc(w.label)+'</a><br><small>対象論文 '+w.paper_count+'件 · '+esc(w.date)+'時点</small></p>').join("");
-$("loading").classList.add("hidden");$("content").classList.remove("hidden");
-choose(new URLSearchParams(location.search).get("topic"),false);
-}).catch(e=>{$("loading").textContent="研究動向データを読み込めませんでした。再読み込みをお試しください。詳細レポートはGitHubの reports/trends/overview.md に保存されています。";console.error(e)});
-</script>
-</body></html>
+<p><a href="./index.html?view=map">研究領域マップ・動向レビューへ移動する</a></p>
+</body>
+</html>

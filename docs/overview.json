@@ -1,18 +1,18 @@
 {
-  "schema_version": 2,
-  "title": "基礎から現在への全体マップ",
-  "reviewDate": "2026-11-18",
+  "schema_version": 3,
+  "title": "研究領域マップ・動向レビュー",
+  "reviewDate": "2026-11-21",
   "snapshot": {
-    "dailyCount": 264,
+    "dailyCount": 301,
     "foundationCount": 774,
-    "uniqueCount": 1038,
+    "uniqueCount": 1073,
     "referenceCount": 192,
-    "latestPaperDate": "2026-11-12",
-    "latestReportDate": "2026-11-16",
+    "latestPaperDate": "2026-11-18",
+    "latestReportDate": "2026-11-21",
     "primaryRechecks": 38,
     "revisionPrimaryRechecks": 25
   },
-  "scope": "基礎論文と直近研究をつなぎ、手法の仕組み、実験の比べ方、何ができて何が残るかを分野別に詳しく読むレビューです。",
+  "scope": "分野全体の体系・手法・研究間の関係を保ちながら、直近の進展、根拠の強さ、重要文献、未解決課題を週次で更新するリビングレビューです。",
   "methodology": [
     "対象は2026-11-16時点の収録スナップショット（基礎774件・新着264件）です。2026-11-18の改稿は、この範囲の技術・比較・事例の詳説です。",
     "全論文を同じ重さで引用する系統的レビューではなく、基盤・転換点・直近の検証を選ぶ横断レビューです。基礎・新着は収録先の区別で、古さは個々の公開日から確認できます。",
@@ -496,7 +496,43 @@
             "arxiv:2611.09474"
           ]
         }
-      ]
+      ],
+      "currentUpdate": {
+        "reviewedAt": "2026-11-21",
+        "state": "検証可能性・学習・推論資源を同時に設計する段階",
+        "shift": "正解率だけでなく、生成中の忠実性、強化学習の効率、配信時のメモリまでを一つの処理系として測る",
+        "summary": "Transformer以降の能力拡大に、実行可能トレース、外部検証、効率的な最適化、配信基盤が加わった。最新の焦点は、長く生成すること自体ではなく、どの時点で誤りを検出し、限られた計算資源をどこへ配分するかにある。",
+        "evidence": "SynCheck/FODはRAGの生成途中で忠実性を監視して復号へ介入する。DeepSeekMathは数学データ選別とGRPOを、PagedAttentionはKVキャッシュ管理を扱い、学習・生成・配信という異なる層で性能と効率を改善した。AutoQSは量子化戦略の探索自体をLLMへ委ねる。",
+        "boundary": "数学推論の成績、RAGの忠実性、サーバーのスループットは同じ指標ではない。生成途中の監視が事実性全般を保証するわけではなく、効率改善も出力品質や全用途での再現性を自動的に保証しない。",
+        "gap": "同じモデル・推論予算で、外部検証器、自己反論、生成中監視を失敗類型別に比較する。品質に加えて遅延、メモリ、検証器の誤り、介入回数を同時に測る。",
+        "refs": [
+          {
+            "id": "arxiv:2406.13692",
+            "title": "Synchronous Faithfulness Monitoring for Trustworthy Retrieval-Augmented Generation",
+            "url": "https://arxiv.org/abs/2406.13692"
+          },
+          {
+            "id": "arxiv:2309.06180",
+            "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+            "url": "https://arxiv.org/abs/2309.06180"
+          },
+          {
+            "id": "arxiv:2402.03300",
+            "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+            "url": "https://arxiv.org/abs/2402.03300"
+          },
+          {
+            "id": "arxiv:2611.18494",
+            "title": "ARCHER: From Rationale Imitation to Executable Reasoning in Small Language Models",
+            "url": "https://arxiv.org/abs/2611.18494"
+          },
+          {
+            "id": "arxiv:2611.11975",
+            "title": "AutoQS: Automated Quantization Strategy Design with Large Language Models",
+            "url": "https://arxiv.org/abs/2611.11975"
+          }
+        ]
+      }
     },
     {
       "key": "agents",
@@ -953,7 +989,38 @@
             "arxiv:2611.16872"
           ]
         }
-      ]
+      ],
+      "currentUpdate": {
+        "reviewedAt": "2026-11-21",
+        "state": "改善手順と根拠を状態として保持する段階",
+        "shift": "エージェント数を増やすことから、改善履歴・証拠・評価文脈を次の判断へ引き継ぐことへ",
+        "summary": "RAG、道具使用、記憶、協調に加え、エージェント自身が改善手順を設計し、その理由と評価文脈を再利用する研究が現れた。ボトルネックは自律性の宣言ではなく、更新された状態と根拠が後続タスクで正しく使われるかにある。",
+        "evidence": "自己改善エージェントは固定LLMでも学習手順を設計できるかをゲーム環境で検証し、Self-Improvement Memoryは改善履歴の保存による別タスク・別モデルへの移転を扱った。材料研究ベンチマークは新しい実験証拠で判断を更新できるかを評価する。既存の協調研究では、取得した矛盾証拠が受渡しで失われる問題も定量化された。",
+        "boundary": "ゲームや材料研究での自己改善は、任意の実務を無監督で改善できることを示さない。保存された履歴が誤った方針を固定する可能性、モデル間移転の条件、改善に使う評価器の妥当性が残る。",
+        "gap": "単独実行、共有メモリ、理由付き改善履歴、構造化ハンドオフを同じ予算で比較し、証拠保持率、改善の持続性、誤りの累積、費用を測る。",
+        "refs": [
+          {
+            "id": "arxiv:2611.22245",
+            "title": "Multi-Agent Memory Inconsistency: Where Factual Conflicts Disappear in LLM Agents",
+            "url": "https://arxiv.org/abs/2611.22245"
+          },
+          {
+            "id": "arxiv:2611.23219",
+            "title": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
+            "url": "https://arxiv.org/abs/2611.23219"
+          },
+          {
+            "id": "arxiv:2611.18856",
+            "title": "Self-Improvement Memory Enables Continual Recursive Self-Improvement",
+            "url": "https://arxiv.org/abs/2611.18856"
+          },
+          {
+            "id": "arxiv:2611.12014",
+            "title": "Benchmarking language models and agents for scientific reasoning in evolving materials laboratories",
+            "url": "https://arxiv.org/abs/2611.12014"
+          }
+        ]
+      }
     },
     {
       "key": "trust",
@@ -1406,7 +1473,38 @@
             "arxiv:2611.08285"
           ]
         }
-      ]
+      ],
+      "currentUpdate": {
+        "reviewedAt": "2026-11-21",
+        "state": "説明後の監査から、処理中の監視と介入へ",
+        "shift": "平均正答率やもっともらしい説明から、失敗の発生時点・証拠来歴・介入効果を測る",
+        "summary": "評価・解釈研究は、出力後の採点だけでなく、生成中の忠実性監視、モデル内部の機構、更新後の能力保持へ広がった。安全性を主張するには、観測した相関と介入による因果的な改善を分ける必要がある。",
+        "evidence": "SynCheckはRAG生成の途中で忠実性を推定して復号へ介入する。機構解釈可能性レビューは内部理解が実際の安全向上へつながった証拠を整理し、材料研究ベンチマークは新しい証拠への判断更新を測る。",
+        "boundary": "忠実性監視は取得文書への整合性を扱うもので、世界知識上の真実性全般とは異なる。内部表現の記述も、それが出力の因果的理由であることや実運用の安全性を単独では証明しない。",
+        "gap": "正解、校正、忠実性、更新への頑健性、介入後の行動変化を別々に測る。監視器自身の分布外性能と、誤検知・見逃しが下流判断へ与える影響を評価する。",
+        "refs": [
+          {
+            "id": "arxiv:2406.13692",
+            "title": "Synchronous Faithfulness Monitoring for Trustworthy Retrieval-Augmented Generation",
+            "url": "https://arxiv.org/abs/2406.13692"
+          },
+          {
+            "id": "arxiv:2611.08438",
+            "title": "Understanding AI from the Inside: The State of Mechanistic Interpretability for AI Safety",
+            "url": "https://arxiv.org/abs/2611.08438"
+          },
+          {
+            "id": "arxiv:2611.17461",
+            "title": "Tracing Knowledge and Reasoning in LLM",
+            "url": "https://arxiv.org/abs/2611.17461"
+          },
+          {
+            "id": "arxiv:2611.12014",
+            "title": "Benchmarking language models and agents for scientific reasoning in evolving materials laboratories",
+            "url": "https://arxiv.org/abs/2611.12014"
+          }
+        ]
+      }
     },
     {
       "key": "medical",
@@ -1892,7 +1990,53 @@
             "pmid:42995166"
           ]
         }
-      ]
+      ],
+      "currentUpdate": {
+        "reviewedAt": "2026-11-21",
+        "state": "精度報告から、外部検証・比較試験・実装準備度へ",
+        "shift": "研究数や分類精度ではなく、患者集団をまたぐ妥当性と臨床的利益の証拠階層を問う",
+        "summary": "医療AIは画像・記録・生体信号で高い性能を示す段階から、外部検証、ランダム化比較試験、介入試験、導入責任を同じ見取り図で評価する段階へ進んだ。用途ごとに診断性能、業務支援、患者アウトカムを分ける必要がある。",
+        "evidence": "循環器AIのRCT系統レビューは臨床的利益とバイアス懸念を併記し、心臓領域のエビデンスマップは研究量と外部検証の成熟度を分けた。ClinicalTrials.govの横断研究は介入試験でのAI利用を調べ、TRIAGE-AIはがん診療への実装準備度を6領域で評価する。神経AI・臨床EEGのレビューも、装置差、ラベル、状況文脈を精度とは別に扱う。",
+        "boundary": "レビューや実装フレームワークは、新しいAI介入の効果を直接実証する試験ではない。RCTが存在しても対象・介入・評価指標の異質性やバイアスが残り、論文数の多さは患者利益の強さを意味しない。",
+        "gap": "外部施設・時間外データで校正を確認し、標準診療との比較で患者中心アウトカム、作業負荷、害、費用を前向きに測る。導入後の性能変化と責任分担も継続監視する。",
+        "refs": [
+          {
+            "id": "pmid:42985432",
+            "title": "Artificial intelligence in cardiovascular medicine: systematic review of randomized controlled trials",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42985432/"
+          },
+          {
+            "id": "pmid:42909890",
+            "title": "Artificial intelligence in cardiology: an evidence map across subspecialties, 2014-26",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42909890/"
+          },
+          {
+            "id": "pmid:42992946",
+            "title": "Artificial Intelligence in Neurology: A Critical Narrative Review of Clinical Evidence, Translation, and Responsible Implementation",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42992946/"
+          },
+          {
+            "id": "pmid:42971410",
+            "title": "Beyond classification accuracy: Building trustworthy artificial intelligence for clinical electroencephalography",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42971410/"
+          },
+          {
+            "id": "pmid:43002404",
+            "title": "Artificial Intelligence Use in Interventional Clinical Trials Registered on ClinicalTrials.gov",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/43002404/"
+          },
+          {
+            "id": "pmid:42485960",
+            "title": "TRIAGE-AI: A clinician-facing implementation-readiness framework for evaluating artificial intelligence in cancer pathways",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42485960/"
+          },
+          {
+            "id": "pmid:42977646",
+            "title": "Context is built, not given: context readiness as the next benchmark for clinical use of artificial intelligence",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42977646/"
+          }
+        ]
+      }
     },
     {
       "key": "structured",
@@ -2385,7 +2529,33 @@
             "arxiv:2609.17895"
           ]
         }
-      ]
+      ],
+      "currentUpdate": {
+        "reviewedAt": "2026-11-21",
+        "state": "予測器だけでなく、観測・状態・制御を共同設計する段階",
+        "shift": "表現が情報を持つかから、部分観測下でその情報を状態推定と行動へ使えるかへ",
+        "summary": "表・時系列の予測に加え、能動的な情報取得、因果応答、部分観測下の世界モデルが接続し始めた。高度なモデルより先に、何が観測でき、どの状態が識別可能かを定義する必要がある。",
+        "evidence": "K-PWMは部分観測の系列から予測と制御に使う確率的潜在状態を学ぶ。微生物研究はランダムな群集・培地設計が機構の識別可能性を左右することを示し、動画表現研究は情報が存在しても教師信号なしでは読み出せないことを示した。",
+        "boundary": "制御用世界モデル、微生物の機構推定、動画質問応答は異なる対象で、改善値を直接比較できない。潜在状態の予測精度だけで因果機構や安全な制御が確立したとは言えない。",
+        "gap": "観測設計、状態推定、予測、介入を別要素として同じ環境で比較する。分布外条件と長期ロールアウトで、校正、識別可能性、制御性能を同時に測る。",
+        "refs": [
+          {
+            "id": "arxiv:2611.15009",
+            "title": "From Forecasting to World Modeling: Can Temporal Foundation Models Recover Causal Response?",
+            "url": "https://arxiv.org/abs/2611.15009"
+          },
+          {
+            "id": "arxiv:2611.11521",
+            "title": "K-PWM: Control-Oriented Structured Bilinear World Models under Partial Observation",
+            "url": "https://arxiv.org/abs/2611.11521"
+          },
+          {
+            "id": "pmid:42869071",
+            "title": "Learning the mechanism of collective microbial function via random community-media pairing",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42869071/"
+          }
+        ]
+      }
     },
     {
       "key": "events",
@@ -2887,7 +3057,28 @@
         ]
       },
       "readingChars": 5698,
-      "additionalRecent": []
+      "additionalRecent": [],
+      "currentUpdate": {
+        "reviewedAt": "2026-11-21",
+        "state": "次イベント精度と長期系列・制御の整合性を分ける段階",
+        "shift": "今週も直接比較の新規論文はなく、部分観測と制約設計の隣接知見を既存体系へ追加",
+        "summary": "頻度基準、点過程、待ち時間分布、系列生成、意味情報を使うLLMという系譜は維持された。今週の追加研究は、イベント予測そのものより、部分観測下の状態推定と実行可能な制約という周辺条件を強める。",
+        "evidence": "K-PWMは部分観測から制御可能な潜在状態を学び、Interactive Program Inductionは不足情報を能動的に問い合わせ、ARCHERは推論を実行可能な行動列へ変える。これらは長期イベント生成の観測・制約設計に関連するが、点過程の直接比較ではない。",
+        "boundary": "制御モデルや行動トレースの成功は、イベント時刻の強度校正、発生数、長期系列の整合性を実証しない。関連づけは方法論的な仮説である。",
+        "gap": "頻度・直近遷移、強度型、待ち時間型、LLM併用を同じ情報量で比較する。発生種類、時刻、個数、論理制約、長期整合性を別指標で評価する。",
+        "refs": [
+          {
+            "id": "arxiv:2611.11521",
+            "title": "K-PWM: Control-Oriented Structured Bilinear World Models under Partial Observation",
+            "url": "https://arxiv.org/abs/2611.11521"
+          },
+          {
+            "id": "arxiv:2611.18485",
+            "title": "Interactive Program Induction with Language Model Priors",
+            "url": "https://arxiv.org/abs/2611.18485"
+          }
+        ]
+      }
     },
     {
       "key": "neuroscience",
@@ -3436,7 +3627,28 @@
             "pmid:38723085"
           ]
         }
-      ]
+      ],
+      "currentUpdate": {
+        "reviewedAt": "2026-11-21",
+        "state": "基礎回路の到達点を維持し、臨床神経AIの証拠成熟度を追加",
+        "shift": "神経回路の直接的新証拠はなし。臨床神経・EEGでは精度から外部妥当性と実装条件へ焦点が移る",
+        "summary": "構造地図、神経活動、行動を結ぶ基礎神経科学の到達点は維持された。一方、臨床神経AIとEEGでは、装置差、アーチファクト、ラベル定義、状況文脈を含む実装可能性の評価が前面に出た。",
+        "evidence": "神経AIの批判的レビューは6領域を技術性能から臨床実装まで整理し、臨床EEGのレビューは分類精度だけでは信頼性を評価できないと論じる。これらは臨床応用の証拠整理であり、神経回路機構の直接的な更新ではない。",
+        "boundary": "レビューは新しい神経回路の因果機構や患者アウトカム改善を実証しない。ハエ・マウス・ヒトの構造・活動データと臨床AIの評価は、対象・解像度・目的が異なる。",
+        "gap": "基礎側では接続・活動・行動を同一標本で測る介入研究、臨床側では装置・施設をまたぐ外部検証と患者中心アウトカムを進め、両者を安易に同一視しない。",
+        "refs": [
+          {
+            "id": "pmid:42992946",
+            "title": "Artificial Intelligence in Neurology: A Critical Narrative Review of Clinical Evidence, Translation, and Responsible Implementation",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42992946/"
+          },
+          {
+            "id": "pmid:42971410",
+            "title": "Beyond classification accuracy: Building trustworthy artificial intelligence for clinical electroencephalography",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42971410/"
+          }
+        ]
+      }
     }
   ],
   "references": {
@@ -6346,5 +6558,48 @@
     }
   },
   "initialReviewDate": "2026-11-16",
-  "corpusSnapshotDate": "2026-11-16"
+  "corpusSnapshotDate": "2026-11-21",
+  "livingReview": {
+    "currentWeek": "2026-W47",
+    "summary": "基礎からの体系を保ちながら、11月17〜21日の追加研究を統合した。今週は、生成中の忠実性監視、改善履歴を持つエージェント、推論資源の管理、医療AIの外部検証・ランダム化試験・実装準備度が重要な進展として加わった。",
+    "scopeNote": "基礎774件＋日次301件、重複を除く1,073件。既存の7テーマ詳細レビューを継承し、11月17〜21日の週次追加38件を再整理した。全1,073報を今回独立に全文再読したわけではありません。",
+    "crossCutting": [
+      {
+        "title": "検証を生成後から処理中へ移す",
+        "text": "RAGの忠実性を生成途中で監視する研究と、医療AIを外部検証・比較試験・実装準備度で評価する研究は、最終精度だけでなく失敗を早期に検出する設計へ収束する。",
+        "ids": [
+          "arxiv:2406.13692",
+          "pmid:42985432",
+          "pmid:42485960"
+        ]
+      },
+      {
+        "title": "状態と根拠を保持して更新する",
+        "text": "改善履歴を理由付きで保存するエージェント、部分観測下の世界モデル、協調時の証拠保持は、現在状態だけでなく更新過程を監査可能にする必要を示す。",
+        "ids": [
+          "arxiv:2611.18856",
+          "arxiv:2611.11521",
+          "arxiv:2611.22245"
+        ]
+      },
+      {
+        "title": "性能と導入可能性を分ける",
+        "text": "推論・推論基盤・臨床AIのいずれでも、ベンチマーク性能、計算効率、外部妥当性、実運用の利益は別の証拠として評価する。",
+        "ids": [
+          "arxiv:2309.06180",
+          "arxiv:2402.03300",
+          "pmid:42909890"
+        ]
+      }
+    ],
+    "weeklyReports": [
+      {
+        "week": "2026-W47",
+        "date": "2026-11-21",
+        "label": "11月17〜21日統合レビュー",
+        "href": "https://github.com/drkamoshika/papers/blob/main/reports/weekly/2026-W47.md",
+        "paperCount": 38
+      }
+    ]
+  }
 }

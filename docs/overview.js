@@ -3,7 +3,7 @@ function readOverviewParams(params){overviewState.active=params.get("view")==="m
 function applyOverviewParams(url,paperId){url.searchParams.delete("view");url.searchParams.delete("topic");if(overviewState.active&&!paperId){for(const key of ["collection","field","source","q","sort"])url.searchParams.delete(key);url.searchParams.set("view","map");if(overviewState.topic)url.searchParams.set("topic",overviewState.topic);}}
 function syncOverviewMode(){
  $("paper-browser").hidden=overviewState.active;$("overview").hidden=!overviewState.active;
- $("catalog-heading").textContent=overviewState.active?"全体マップ":"論文一覧";
+ $("catalog-heading").textContent=overviewState.active?"研究領域マップ・動向レビュー":"論文一覧";
  $("overview-tab").setAttribute("aria-pressed",String(overviewState.active));
  if(overviewState.active){for(const e of document.querySelectorAll("[data-collection]"))e.setAttribute("aria-pressed","false");renderOverview();}
 }
@@ -12,16 +12,19 @@ function overviewCitation(id,number){const p=overviewState.data.references[id];r
 function overviewCites(refs,numbers){return '<div class="overview-cites">'+refs.map(id=>overviewCitation(id,numbers?numbers[id]:overviewState.data.references[id].title.split(":")[0])).join(" ")+'</div>';}
 function overviewMethods(){return '<details class="overview-methods"><summary>このマップの収録範囲と読み方</summary><ul>'+overviewState.data.methodology.map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul></details>';}
 function overviewTopicButton(r){return '<button type="button" class="field-badge" data-field-key="'+r.key+'" data-map-topic="'+r.key+'" aria-pressed="'+(overviewState.topic===r.key)+'">'+esc(r.label)+'</button>';}
+function overviewLatestRefs(update){return '<ul class="overview-latest-refs">'+update.refs.map(p=>'<li><a href="'+esc(safeUrl(p.url))+'" target="_blank" rel="noopener noreferrer">'+esc(p.title)+'</a><small>'+esc(p.id)+'</small></li>').join("")+'</ul>';}
+function overviewLatest(update){if(!update)return '';return '<section class="overview-latest" id="overview-latest"><p class="overview-latest-label">最新更新 · '+esc(update.reviewedAt)+'</p><h2>'+esc(update.state)+'</h2><p class="overview-latest-shift">'+esc(update.shift)+'</p><dl><dt>全体像のどこが動いたか</dt><dd>'+esc(update.summary)+'</dd><dt>今回加わった根拠</dt><dd>'+esc(update.evidence)+'</dd><dt>まだ言えないこと</dt><dd>'+esc(update.boundary)+'</dd><dt>次に解くべき課題</dt><dd>'+esc(update.gap)+'</dd></dl><details><summary>今回の重要文献 '+update.refs.length+'件</summary>'+overviewLatestRefs(update)+'</details></section>';}
+function overviewLivingSummary(data){const living=data.livingReview;if(!living)return '';return '<section class="overview-living"><p class="overview-latest-label">更新型レビュー · '+esc(data.reviewDate)+'</p><h2>'+esc(living.currentWeek)+' の更新</h2><p>'+esc(living.summary)+'</p><div class="overview-cross">'+living.crossCutting.map(n=>'<section><h3>'+esc(n.title)+'</h3><p>'+esc(n.text)+'</p></section>').join("")+'</div><details class="overview-weeks"><summary>週次更新の履歴</summary><ul>'+living.weeklyReports.map(w=>'<li><a href="'+esc(safeUrl(w.href))+'" target="_blank" rel="noopener noreferrer">'+esc(w.week)+' · '+esc(w.label)+'</a><small>'+esc(w.date)+' · 対象 '+w.paperCount+'件</small></li>').join("")+'</ul></details></section>';}
 function renderOverview(){
  const root=$("overview");
- if(!overviewState.data){root.innerHTML='<p class="overview-empty">'+esc(overviewState.error||"全体マップを読み込み中...")+'</p>';return;}
+ if(!overviewState.data){root.innerHTML='<p class="overview-empty">'+esc(overviewState.error||"研究マップ・動向レビューを読み込み中...")+'</p>';return;}
  const data=overviewState.data,r=data.fields.find(f=>f.key===overviewState.topic),s=data.snapshot;
  const metadata='改稿 '+data.reviewDate+(data.corpusSnapshotDate?' · 対象文献 '+data.corpusSnapshotDate+'時点':'')+' · 論文公開日上限 '+s.latestPaperDate;
  if(!r){
-  root.innerHTML='<p class="overview-intro">'+esc(data.scope)+'</p><p class="overview-meta">'+esc(metadata)+'<br>基礎 '+s.foundationCount+'件と新着 '+s.dailyCount+'件、計 '+s.uniqueCount+'件を母集団に、代表 '+s.referenceCount+'件を引用。</p>'+
+  root.innerHTML='<p class="overview-intro">'+esc(data.scope)+'</p><p class="overview-meta">'+esc(metadata)+'<br>基礎 '+s.foundationCount+'件と新着 '+s.dailyCount+'件、計 '+s.uniqueCount+'件を母集団に、代表 '+s.referenceCount+'件を引用。</p>'+overviewLivingSummary(data)+
   '<h2>7分野の到達点</h2><table class="overview-matrix"><thead><tr><th scope="col">分野</th><th scope="col">いまできること</th><th scope="col">残る境界</th></tr></thead><tbody>'+data.fields.map(f=>'<tr><td><a href="'+esc(overviewTopicUrl(f.key).href)+'" data-map-topic="'+f.key+'">'+esc(f.label)+' →</a><small>基礎文献 '+f.foundationCount+'件 · このレビューの引用 '+f.referenceIds.length+'件</small></td><td data-label="いまできること">'+esc(f.can)+'</td><td data-label="残る境界">'+esc(f.cannot)+'<div class="overview-row-cites">'+f.summaryRefs.map((id,i)=>overviewCitation(id,i+1)).join(" ")+'</div></td></tr>').join("")+'</tbody></table>'+
   '<h2>分野をまたいで見える変化</h2><div class="overview-themes">'+data.commonThemes.map(n=>'<section class="overview-theme"><h3>'+esc(n.title)+'</h3><p>'+esc(n.text)+'</p>'+overviewCites(n.refs)+'</section>').join("")+'</div>'+overviewMethods()+
-  '<p class="overview-report-link"><a href="'+repo+'reports/overviews/README.md" target="_blank" rel="noopener noreferrer">GitHubで全体レビューを読む ↗</a></p>';
+  '<p class="overview-report-link"><a href="'+repo+'reports/overviews/README.md" target="_blank" rel="noopener noreferrer">GitHubで体系的レビューを読む ↗</a></p>';
  }else{
   const numbers=Object.fromEntries(r.referenceIds.map((id,i)=>[id,i+1]));
   const otherRecent=r.additionalRecent||r.recent;
@@ -30,8 +33,7 @@ function renderOverview(){
   root.innerHTML='<button class="overview-back" type="button" data-map-topic="">← 7分野の一覧へ</button><nav class="overview-topic-nav" aria-label="全体マップの分野">'+data.fields.map(overviewTopicButton).join("")+'</nav><article class="overview-review">'+
   '<h2 class="overview-review-title" id="overview-review-title" tabindex="-1">'+esc(r.label)+'</h2><p class="overview-thesis">'+esc(r.thesis)+'</p><p class="overview-meta">'+esc(metadata)+'<br>収録基礎文献 '+r.foundationCount+'件 · このレビューの引用 '+r.referenceIds.length+'件（基礎 '+r.citedFoundationCount+'・新着 '+r.citedDailyCount+'）</p>'+
   '<div class="overview-takeaways"><div class="overview-takeaway"><strong>いまできること</strong><p>'+esc(r.can)+'</p></div><div class="overview-takeaway"><strong>残る境界</strong><p>'+esc(r.cannot)+'</p></div></div>'+overviewCites(r.summaryRefs,numbers)+
-  '<nav class="overview-toc" aria-label="レビューの目次">'+overviewDeepToc(r)+'<a data-overview-section href="#overview-history">基礎からの積み上げ</a><a data-overview-section href="#overview-capabilities">現在の到達点</a>'+(otherRecent.length?'<a data-overview-section href="#overview-recent">関連する直近研究</a>':'')+'<a data-overview-section href="#overview-questions">次の課題</a><a data-overview-section href="#overview-connections">分野間の接点</a><a data-overview-section href="#overview-reading">読む順番</a></nav>'+
-  overviewDeepContent(r,numbers)+
+  '<nav class="overview-toc" aria-label="レビューの目次">'+(r.currentUpdate?'<a data-overview-section href="#overview-latest">最新更新</a>':'')+overviewDeepToc(r)+'<a data-overview-section href="#overview-history">基礎からの積み上げ</a><a data-overview-section href="#overview-capabilities">現在の到達点</a>'+(otherRecent.length?'<a data-overview-section href="#overview-recent">関連する直近研究</a>':'')+'<a data-overview-section href="#overview-questions">次の課題</a><a data-overview-section href="#overview-connections">分野間の接点</a><a data-overview-section href="#overview-reading">読む順番</a></nav>'+overviewLatest(r.currentUpdate)+overviewDeepContent(r,numbers)+
   '<section class="overview-review-section" id="overview-history"><h2>基礎からの積み上げ</h2>'+r.lineage.map(n=>'<div class="overview-stage">'+prose(n)+'</div>').join("")+'</section>'+
   '<section class="overview-review-section" id="overview-capabilities"><h2>現在の到達点と使える条件</h2>'+r.capabilities.map(n=>'<section class="overview-capability"><span class="overview-status">'+esc(n.status)+'</span><h3>'+esc(n.title)+'</h3><dl><dt>できていること</dt><dd>'+esc(n.can)+'</dd><dt>使える条件</dt><dd>'+esc(n.conditions)+'</dd><dt>残る境界</dt><dd>'+esc(n.boundary)+'</dd></dl>'+overviewCites(n.refs,numbers)+'</section>').join("")+'</section>'+
   (otherRecent.length?'<section class="overview-review-section" id="overview-recent"><h2>関連する直近研究</h2>'+otherRecent.map(prose).join("")+'</section>':'')+
@@ -55,8 +57,8 @@ function openOverview(topic=""){
 function initializeOverview(){
  $("overview-tab").onclick=()=>openOverview();
  fetch("./overview.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw Error(r.status);return r.json();}).then(data=>{
-  if(!Array.isArray(data.fields)||data.fields.length!==7||!data.references)throw Error("invalid overview");overviewState.data=data;if(overviewState.active)renderOverview();
- }).catch(()=>{overviewState.error="全体マップを読み込めませんでした。ページを再読み込みしてください。論文一覧は各タブから利用できます。";if(overviewState.active)renderOverview();});
+  if(!Array.isArray(data.fields)||data.fields.length!==7||!data.references||!data.livingReview)throw Error("invalid overview");overviewState.data=data;if(overviewState.active)renderOverview();
+ }).catch(()=>{overviewState.error="研究マップ・動向レビューを読み込めませんでした。ページを再読み込みしてください。論文一覧は各タブから利用できます。";if(overviewState.active)renderOverview();});
 }
 
 

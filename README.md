@@ -176,3 +176,14 @@ Workflowは推測で処理を続けず失敗します。
 - 最後のgit push
 
 一回失敗してもworkflow自体は無効化されず、次回スケジュールで再実行されます。
+
+## 研究領域マップ・動向レビュー
+
+ダッシュボードの「研究マップ・動向レビュー」は、従来の全体マップと週次の研究動向レビューを統合した単一のリビングレビューです。
+
+- 公開画面: https://drkamoshika.github.io/papers/?view=map
+- 文章版: `reports/overviews/README.md`
+- 正本データ: `docs/overview.json`
+- 週次の変更記録: `reports/weekly/YYYY-Www.md`
+
+週次処理は別の `trends.json` や累積レポートを生成せず、正本と7つの分野別詳細を更新します。更新契約と検証方法は `docs/LIVING_REVIEW.md` に記載しています。
